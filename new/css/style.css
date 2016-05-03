@@ -4,15 +4,6 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-@font-face{
-    font-family: "phantom";
-    src: url("../fonts/aqua.ttf") format("truetype");
-}
-@font-face{
-    font-family: "aqua";
-    src: url("../fonts/phantom regular.otf") format("opentype");
-}
-
 body {
     width: 100%;
     height: 100%;
@@ -39,51 +30,102 @@ html {
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #006461;  
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-    font-size: 30px;  
+    color: #009688;  
+    font-family:Prata;
+    font-size: 30px;
+    padding-left:20px;
+    padding-right:20px; 
+}
+
+.resume-link {
+    border: 1px solid #000;
+    
 }
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
 of those sections to manage the look and feel of the site. */
-.mudmee{
-    padding-left: 50px;
-    padding-right: 50px;
-}
+
+/*Intro Section*/
 .intro-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background-image: url("pic1.JPG");
+    background-image: url("pic1.jpg");
     background-size: cover ; 
 }
 
+/*About Section*/
 .about-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 70px;
     text-align: center;
-    background: #eee;
+    background: #b2dfdb;
 }
 
-.services-section {
+/*Project*/
+.project-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 70px;
     text-align: center;
     background: #fff;
 }
+.greeting-text{
+    font-family: Vidaloka; 
+}
 
-.contact-section {
+/*Experiece*/
+.experience-section{
     height: 100%;
-    padding-top: 150px;
+    padding-top: 70px;
     text-align: center;
-    background: #eee;
+    background: #b2dfdb;
 }
 
-h1 {
-    font-family: phantom;
+/*Shared*/
+h2.section-title{
+    font-family: "Prata";
+    font-size: 45px;
+    color: #009688;
 }
 
-h2{
-    font-family: aqua; 
+hr.section-line, hr.section-line2{
+    margin:25px a;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 5px;
+    text-align: center;
+    border-color: #b6b6b6;   
 }
+hr.section-line:after {
+    content: "\f005 ";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+    z-index: 100;
+    color: #607d8b;
+    background-color: #b2dfdb;
+    z-index: 10;
+} 
+hr.section-line2:after {
+    content: "\f005 ";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+    z-index: 100;
+    color: #607d8b;
+    background-color: #fff;
+    z-index: 10;
+} 
+
+    
+h2, h3 {
+    font-family: "Prata";
+}
+
