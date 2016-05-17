@@ -1,0 +1,327 @@
+body {
+	background-image: url("bg1.jpg");
+	font-family: arial, Helvetica; 
+}
+
+#splash {
+	background-image: url("bg2.jpg");
+}
+
+#winningScreen {
+	background-image: url("winning.jpg");
+	text-align: center;
+}
+
+#losingScreen {
+	background-color: #426cb8;
+}
+
+#losingScreen img {
+	width: 100%;
+	max-width: 100%;
+}
+
+#help,
+#instructions {
+	background-color: rgba(128,128,128,0.7);
+	text-align: center;
+	font-size: 16px;
+}
+
+.message {
+	text-align: left;
+	width: 30%;
+	margin: auto;
+	margin-top: 40px;
+	padding: 30px;
+	border: 3px solid black;
+	/*source: http://www.css3.me */
+	border-radius: 50px;
+	box-shadow: 0px 0px 11px #000000;
+	background-image: -moz-linear-gradient(top, #ffd1bf, #ffc2ee);
+	background-image: -ms-linear-gradient(top, #ffd1bf, #ffc2ee);
+	background-image: -webkit-linear-gradient(top, #ffd1bf, #ffc2ee);
+	background-image: linear-gradient(top, #ffd1bf, #ffc2ee);
+	background-clip: padding-box;
+}
+
+.lightbox {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+	min-width: 100%;
+	min-height: 100%;
+	padding-bottom: 60px;
+}
+
+#splash-banner {
+	width: 70%;
+}
+
+.hidden {
+	display: none;
+}
+
+#instruction {
+	font-size: 20px;
+	color: #ffffff;
+}
+
+#chooselevelContainer {
+	display:inline-block;
+	color: #ffffff;
+	font-size: 20px;
+}
+
+/*button generator source:
+http://www.bestcssbuttongenerator.com */
+#goButton {
+	background-color:#44c767;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial, Helvetica;
+	font-size:22px;
+	padding:10px 4px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+#level {
+	border: none;
+	font-size: 14px;
+}
+
+#top {
+	text-align: center;
+}
+
+#welcome {
+	font-size: 30px;
+	color: #4f3fff;
+}
+
+#showLevel{
+	font-size: 20px;
+	color: #ff0000;
+	margin-top: 10px; 
+}
+
+#timer {
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+#timerBox {
+	border: 2px solid #333333;	 
+	font-size: 20px;
+}
+
+#middle {
+	margin-top: 30px;
+}
+
+.copyright {
+	color: #ffffff;
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+#goal {
+	font-size: 30px;
+
+}
+
+#left {
+	width: 49%;
+	float:left;
+	text-align: center;
+}
+
+#right {
+	width: 49%;
+	float: right;
+	text-align: center;
+}
+
+#left1,
+#middle1,
+#right1 {
+	width: 33%;
+	float:left;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#calculator {	
+	background-color: #b4ffb5;
+	height: 310px;
+	width: 250px;
+	border-radius: 10px;
+	position: relative;
+	border: thick solid black;
+    margin: auto;
+}
+
+.hide{
+	display: none;
+}
+
+.show{
+	display: block;
+}
+
+
+/* Calculator container */
+
+#display {
+	background-color: #222222;
+	width: 220px;
+	position: relative;
+	top: 20px;
+	left: 15px;
+	height: 40px;
+}
+
+#d {
+	position: relative;
+	left: 2px;
+	top: 2px;
+	height: 35px;
+	color: black;
+	background-color: #c8e4ce;
+	font-size: 21px;
+	text-align: right;
+	width: 210px;
+}
+
+#keys {
+	position: relative; 
+	top: 25px;
+}
+
+.line {
+	padding-top: 12px;
+	padding-bottom: 5px;
+	line-height: 10px; 
+}
+
+.button {
+	width: 40px;
+	height: 30px;
+	border: none;
+	outline: none;
+	border-radius: 8px;
+	margin-left: 15px; 	
+	cursor: pointer; 	
+	visibility: hidden;
+}
+
+.button.active {
+	visibility: visible;
+}
+
+.gray {
+color: black;
+background-color: #f1fea1;
+border-bottom: 2px solid black;
+}
+
+.pink {
+	color: black;
+	background-color: #ff7b82;
+	border-bottom: 2px solid black;
+}
+
+.black {
+	color: white;
+	background-color: #83b9d5;
+	border-bottom: 2px solid black;
+}
+
+.orange {
+	color: black;
+	background-color: #fc9a7a; 
+	border-bottom: 2px solid black;
+}
+
+.gray:active{
+	background-color: #ffffcc;
+}
+
+.pink:active{
+	background-color: #ecc9ee;
+}
+
+.black:active{
+	background-color: #badbdc;
+}
+
+.orange:active{
+	background-color: #ffcc99;
+}
+
+#numberBox {
+	border: 2px solid black; 
+	text-align: left;
+	font-weight: bold;
+	font-size: 20px;
+	margin: auto;
+	margin-top: 20px;
+	width: 350px; 
+	/*source: http://www.css3.me */
+	border-radius: 50px;
+	box-shadow: 0px 0px 11px #000000;
+	background-image: -moz-linear-gradient(top, #ffd1bf, #ffc2ee);
+	background-image: -ms-linear-gradient(top, #ffd1bf, #ffc2ee);
+	background-image: -webkit-linear-gradient(top, #ffd1bf, #ffc2ee);
+	background-image: linear-gradient(top, #ffd1bf, #ffc2ee);
+	background-clip: padding-box;
+	opacity: 0.7;
+}
+
+#numberBox ul {
+	list-style-type: circle;
+}
+.crossed {
+	text-decoration: line-through;
+	list-style-type: disc;	
+}
+
+
+/*button generator source:
+http://www.bestcssbuttongenerator.com */
+.toolButton {
+	font-size: 16px;
+	-moz-box-shadow: 3px 4px 0px 0px #899599;
+	-webkit-box-shadow: 3px 4px 0px 0px #899599;
+	box-shadow: 3px 4px 0px 0px #899599;
+	background-color:#ffeed1;
+	-moz-border-radius:16px;
+	-webkit-border-radius:16px;
+	border-radius:16px;
+	border:2px solid #c4f5ba;
+	display:inline-block;
+	cursor:pointer;
+	color:#103461;
+	padding:10px 21px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+
+.toolButton:hover {
+	background-color:#e9b8fc;
+}
+
+.toolButton:active {
+	position:relative;
+	top:1px;
+}
+

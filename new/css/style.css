@@ -14,6 +14,14 @@ html {
     height: 100%;
 }
 
+.float-box
+{
+    position: relative;
+    top: 400px;
+    left: 300px;
+    
+}
+
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
@@ -30,12 +38,11 @@ html {
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #009688;  
-    font-family:Prata;
+    color: #607d8b;  
+    font-family:"Poiret One";
     font-size: 30px;
-    padding-left:20px;
-    padding-right:20px; 
 }
+
 
 .resume-link {
     border: 1px solid #000;
@@ -51,8 +58,25 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background-image: url("pic1.jpg");
-    background-size: cover ; 
+    background-image: url("pic3.jpg");
+    background-size: cover; 
+    background-position: center center;
+    position: relative;
+}
+
+#intro-mobile-fade {
+    display: none;
+    background-color: rgba(255,255,255,0.6);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-top: -150px;
+}
+@media (max-width: 480px) {
+    #intro-mobile-fade {
+        display: block;
+    }
+    
 }
 
 /*About Section*/
@@ -71,7 +95,7 @@ of those sections to manage the look and feel of the site. */
     background: #fff;
 }
 .greeting-text{
-    font-family: Vidaloka; 
+    font-family: Roboto; 
 }
 
 /*Experiece*/
@@ -84,7 +108,7 @@ of those sections to manage the look and feel of the site. */
 
 /*Shared*/
 h2.section-title{
-    font-family: "Prata";
+    font-family: "Poiret One";
     font-size: 45px;
     color: #009688;
 }
@@ -126,6 +150,6 @@ hr.section-line2:after {
 
     
 h2, h3 {
-    font-family: "Prata";
+    font-family: "Poiret One";
 }
 
