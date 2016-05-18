@@ -152,7 +152,12 @@ h3.greeting-text{
     color:#46494c;
     font-size: 14px;
     margin-left:15px; 
-    
+    margin-bottom: 0; 
+}
+
+.signature{
+    max-width: 40%;
+    margin-top: 0; 
 }
 /*Project*/
 .project-section {
