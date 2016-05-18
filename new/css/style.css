@@ -64,7 +64,7 @@ html {
 
 .navbar-default .navbar-nav>li>a {
     color: #46494c;  
-    font-family:"Cabin";
+    font-family:"Josefin Sans";
 }
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
@@ -93,20 +93,32 @@ li.letterM{
     margin-top: 5px;
 }
 h1.mudmie-name{
-    font-family: Cabin;
-    font-size: 90px;
+    font-family: "Josefin Sans";
+    font-size: 55px;
     color: #75CAFF;
 }
 h2.chatchanok{
-  font-family: Cabin;
-  font-size: 50px;
+  font-family: "Josefin Sans";
+  font-size: 30px;
   color: #46494c;   
 }
 h3.SYDE{
-    font-family: Cabin;
-    font-size: 30px;
+    font-family: "Josefin Sans";
+    font-size: 20px;
     color: #75CAFF;
     margin-top: 25px;
+    text-align: center;
+}
+@media(min-widht:480px){
+    h1.mudmie-name{
+        font-size: 90px;
+    }
+    h2.chatchanok{
+        font-size: 50px;
+    }
+    h3.SYDE{
+        font-size: 30px;
+    }
 }
 /*.btn-default{
     border: solid 2px #c5c3c6;
@@ -161,6 +173,7 @@ h3.greeting-text{
     margin-bottom:20px;
     margin-left: 15px; 
 }
+
 /*Project*/
 .project-section {
     height: 100%;
@@ -173,7 +186,7 @@ h3.greeting-text{
 
 /*Shared*/
 h2.section-title{
-    font-family: "Cabin";
+    font-family: "Josefin Sans";
     font-size: 45px;
     color: #75CAFF;
 }
