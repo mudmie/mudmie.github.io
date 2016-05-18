@@ -73,11 +73,12 @@ of those sections to manage the look and feel of the site. */
 
 /*Intro Section*/
 .intro-section {
-    height: 100%;
+    min-height: 90%;
     padding-top: 150px;
     text-align: center;
-    background-image: url("../img/1.png");
+    background-image: url("../img/0.png");
     background-size: cover; 
+    transition: background-image 1s ease;
     /*
     background-position: center center;
     position: relative;
@@ -91,6 +92,29 @@ li.letterM{
     max-width: 70%;
     margin-top: 5px;
 }
+h1.mudmie-name{
+    font-family: Cabin;
+    font-size: 90px;
+    color: #75CAFF;
+}
+h2.chatchanok{
+  font-family: Cabin;
+  font-size: 50px;
+  color: #46494c;   
+}
+h3.SYDE{
+    font-family: Cabin;
+    font-size: 30px;
+    color: #75CAFF;
+    margin-top: 25px;
+}
+/*.btn-default{
+    border: solid 2px #c5c3c6;
+    font-family: Cabin;
+    font-size: 30px;
+    color: #4c5c68;
+    margin-top: 20px;
+}*/
 
 #intro-mobile-fade {
     display: none;
@@ -104,7 +128,6 @@ li.letterM{
     #intro-mobile-fade {
         display: block;
     }
-    
 }
 
 /*About Section*/
@@ -112,7 +135,7 @@ li.letterM{
     height: 100%;
     padding-top: 70px;
     text-align: center;
-    background: #b2dfdb;
+    background-image:url();
 }
 
 /*Project*/

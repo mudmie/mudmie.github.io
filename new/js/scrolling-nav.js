@@ -33,3 +33,17 @@ if (findHour > 18) {
 
 var el = document.getElementById('greeting');
 el.innerHTML = greetingMessage; //use textContent or innerHTML?
+
+var currentBackgroundImage = 0;
+
+//start function when ready
+// $(function() {})
+// $ === jQuery
+
+$(function(){
+    var $getClass = $('.intro-section');
+    window.setInterval (function () {
+        currentBackgroundImage = (currentBackgroundImage + 1) % 6; 
+        $getClass.css("background-image", "url('img/" + currentBackgroundImage + ".png')");
+    }, 3000);
+});
