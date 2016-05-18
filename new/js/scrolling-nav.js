@@ -24,12 +24,12 @@ var findHour = findDate.getHours();
 var greetingMessage;
 
 if (findHour > 18) {
-    greetingMessage = "Good Evening!";  
+    greetingMessage = "Good Evening,";  
 } else if (findHour > 12) {
-    greetingMessage = "Good Afternoon!";
+    greetingMessage = "Good Afternoon,";
 } else if (findHour >= 0) {
-    greetingMessage = "Good Morning!";
-} else greetingMessage = "Hello!";
+    greetingMessage = "Good Morning,";
+} else greetingMessage = "Hello,";
 
 var el = document.getElementById('greeting');
 el.innerHTML = greetingMessage; //use textContent or innerHTML?

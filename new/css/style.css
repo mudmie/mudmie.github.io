@@ -132,68 +132,48 @@ h3.SYDE{
 
 /*About Section*/
 .about-section {
-    height: 100%;
+    min-height: 100%;
     padding-top: 70px;
-    text-align: center;
-    background-image:url();
+    text-align: left;
+    background-image:url("../img/me.png");
+    background-size:cover; 
+    font-family: Roboto;
+    background-position: center;
 }
 
+h3.greeting-text{
+ 
+    margin-left: 15px;
+    margin-top: 0;
+    font-size: 24px;
+    color: #4C5C68; 
+}
+.text{
+    color:#46494c;
+    font-size: 14px;
+    margin-left:15px; 
+    
+}
 /*Project*/
 .project-section {
     height: 100%;
     padding-top: 70px;
     text-align: center;
-    background: #fff;
+    background-image: url("../img/pic.jpg");
 }
-.greeting-text{
-    font-family: Roboto; 
-}
+
 
 
 /*Shared*/
 h2.section-title{
-    font-family: "Poiret One";
+    font-family: "Cabin";
     font-size: 45px;
-    color: #009688;
+    color: #75CAFF;
 }
 
-hr.section-line, hr.section-line2{
-    margin:25px a;
-    max-width: 250px;
-    border: 0;
-    border-top: solid 5px;
-    text-align: center;
-    border-color: #b6b6b6;   
+.section-line{
+  border-top: 0.3px solid #C5C3C6;
+  width: 500px;
+  margin-top: 0;
+  float: left;
 }
-hr.section-line:after {
-    content: "\f005 ";
-    display: inline-block;
-    position: relative;
-    top: -.8em;
-    padding: 0 .25em;
-    font-family: FontAwesome;
-    font-size: 2em;
-    z-index: 100;
-    color: #607d8b;
-    background-color: #b2dfdb;
-    z-index: 10;
-} 
-hr.section-line2:after {
-    content: "\f005 ";
-    display: inline-block;
-    position: relative;
-    top: -.8em;
-    padding: 0 .25em;
-    font-family: FontAwesome;
-    font-size: 2em;
-    z-index: 100;
-    color: #607d8b;
-    background-color: #fff;
-    z-index: 10;
-} 
-
-    
-h2, h3 {
-    font-family: "Poiret One";
-}
-
