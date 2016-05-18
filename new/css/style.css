@@ -156,8 +156,10 @@ h3.greeting-text{
 }
 
 .signature{
-    max-width: 40%;
-    margin-top: 0; 
+    max-width: 50%;
+    margin-top: 15px; 
+    margin-bottom:20px;
+    margin-left: 15px; 
 }
 /*Project*/
 .project-section {
