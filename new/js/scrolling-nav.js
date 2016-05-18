@@ -27,7 +27,7 @@ if (findHour > 18) {
     greetingMessage = "Good Evening!";  
 } else if (findHour > 12) {
     greetingMessage = "Good Afternoon!";
-} else if (findHour > 0) {
+} else if (findHour >= 0) {
     greetingMessage = "Good Morning!";
 } else greetingMessage = "Hello!";
 
