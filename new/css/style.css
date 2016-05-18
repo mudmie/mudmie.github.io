@@ -157,9 +157,10 @@ h3.greeting-text{
  
     margin-left: 15px;
     margin-top: 0;
-    font-size: 24px;
+    font-size: 16px;
     color: #4C5C68; 
 }
+
 .text{
     color:#46494c;
     font-size: 14px;
@@ -172,6 +173,14 @@ h3.greeting-text{
     margin-top: 15px; 
     margin-bottom:20px;
     margin-left: 15px; 
+}
+@media(min-width:480px){
+    h3.greeting-text{
+        font-size: 24px;
+    }
+    .text{
+        font-size: 10px;
+    }
 }
 
 /*Project*/
@@ -187,10 +196,15 @@ h3.greeting-text{
 /*Shared*/
 h2.section-title{
     font-family: "Josefin Sans";
-    font-size: 45px;
+    font-size: 30px;
     color: #75CAFF;
 }
+@media(min-width:480px){
+    h2.section-title{
+        font-size: 45px;
+    }
 
+}
 .section-line{
   border-top: 0.3px solid #C5C3C6;
   width: 500px;
