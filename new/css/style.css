@@ -145,6 +145,7 @@ h3.SYDE{
 /*About Section*/
 .about-section {
     min-height: 100%;
+    min-width:100%;
     padding-top: 70px;
     text-align: left;
     background-image:url("../img/me.png");
@@ -154,7 +155,6 @@ h3.SYDE{
 }
 
 h3.greeting-text{
- 
     margin-left: 15px;
     margin-top: 0;
     font-size: 16px;
@@ -163,23 +163,43 @@ h3.greeting-text{
 
 .text{
     color:#46494c;
-    font-size: 14px;
+    font-size: 12px;
     margin-left:15px; 
     margin-bottom: 0; 
 }
 
+/*.text-box{
+    background-color: rgba(265, 265, 265, 0.2) ;
+}*/
+
+span.italic{
+    font-style: italic;
+}
 .signature{
     max-width: 50%;
     margin-top: 15px; 
     margin-bottom:20px;
     margin-left: 15px; 
 }
+#aboutus-mobile-fade {
+    display: none;
+    background-color: rgba(255,255,255,0.6);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-top: 0px;
+}
+@media (max-width: 480px) {
+    #aboutus-mobile-fade {
+        display: block;
+    }
+}
 @media(min-width:480px){
     h3.greeting-text{
         font-size: 24px;
     }
     .text{
-        font-size: 10px;
+        font-size: 14px;
     }
 }
 
@@ -187,7 +207,7 @@ h3.greeting-text{
 .project-section {
     height: 100%;
     padding-top: 70px;
-    text-align: center;
+    text-align: left;
     background-image: url("../img/pic.jpg");
 }
 
@@ -196,8 +216,9 @@ h3.greeting-text{
 /*Shared*/
 h2.section-title{
     font-family: "Josefin Sans";
-    font-size: 30px;
+    font-size: 25px;
     color: #75CAFF;
+    margin-left: 15px; 
 }
 @media(min-width:480px){
     h2.section-title{
