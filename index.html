@@ -9,21 +9,24 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Chatchanok Chuthamsatid</title>
+    <title>Mudmie Chuthamsatid</title>
 
-    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/freelancer.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-        <!--favicon-->
-     <link rel="SHORTCUT ICON" HREF="favicon.png">
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+    <!--Goolgle Font-->
+    <!--Roboto-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+    <!--Josefin Sans-->
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:600' rel='stylesheet' type='text/css'>
+    <!--favicon-->
+    <link rel="SHORTCUT ICON" HREF="favicon.png">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,314 +37,262 @@
 
 </head>
 
-<body id="page-top" class="index">
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">Chatchanok Chuthamsatid</a>
             </div>
 
+            <!--pre-loading screen-->
+
+
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
-                        <a href="#page-top"></a>
+                        <a class="page-scroll" href="#page-top"></a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
+                    <li>
+                        <a class="page-scroll" href="#intro">HOME</a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
+                    <li>
+                        <a class="page-scroll" href="#about">ABOUT</a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#location">Contact</a>
+                    <li class="hidden-xs letterM">
+                        <img src="img/m.png" alt="Letter M">
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#project">PROJECTS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="cchutham_resume.pdf" target="underscore_blank">RESUME</a>
                     </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
+        <!-- /.container -->
     </nav>
 
-    <!-- Header -->
-    <header>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div id="intro-mobile-fade"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="mudmie-name">MUDMIE</h1>
+                    <h2 class="chatchanok">Chatchanok Chuthamsatid </h2>
+                    <div class="row col-lg-12">
+                        <h3 class="SYDE">Systems Design Engineering <br> x <br> University of Waterloo</h3>
+                    </div>
+                    <!--<a class="btn btn-default page-scroll" href="#about">Who Am I?</a>-->
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div id="aboutus-mobile-fade"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="img/me.png" alt="">
-                    <div class="intro-text">
-                        <span class="name">Chatchanok Chuthamsatid</span>
-                        <hr class="star-light">
-                        <span class="skills">Web Developer - Systems Design Engineering - Entrepreneur</span>
-                    </div>
+                    <h2 class="section-title">ABOUT ME</h2>
                 </div>
+                <!--col-lg-12-->
             </div>
-        </div>
-    </header>
-    
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
+            <!--row-->
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Hi there, I'm Chatchanok!</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p> As a current undergraduate student in Systems Design Engineering, I am learning a wide range of engineering subjects,
-                        including finance, web development, user experience design, and software development. These areas are all related to my interest. 
-                        Recently, web development and entrepreneurship are two areas that I want to explore the most. </p> 
-                </div>
-                <div class="col-lg-4">
-                    <p> Being a part of University of Waterloo's co-operative program, I am seeking for an internship opportunity during the fall term (Septembet 2016 - December 2016).
-                        If you're looking for someone who is self-motived, creative, and eager to learn , I might be the right person for you!
-                        I'm looking forward to hearing from you soon! <i class ="fa fa-smile-o"></i> </p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="cchutham_resume.pdf" class="btn btn-lg btn-outline">
-                        <i class="fa fa-eye"></i> View Résumé
+                <div class="col-sm-6 ">
+                    <h3 class="greeting-text"><span id="greeting"></span><br>it's nice to have you here!</h3>
+                    <p class="text">
+                        I am a Systems Design Engineering student at the University of Waterloo, and I am very passionate about design and user experience.
+                        While I was in Seattle for an exchange program, I got a chance to visit Google Seattle office, and
+                        it was an eye-opening experience. I began to obsess about how to make software useful for people's
+                        everyday life.
+
+                        <br><br> During my first co-op job, I worked as a website front-end developer at Roundabout Canada, a small startup.
+                        I completely designed and developed their website from scratch.
                         
-                    </a>
+                        <br><br>
+                        I believe that learning is a life-long journey, and I will never stop learning new things.As a systems
+                        design engineer, I highly value quality and good user experience. If you are looking for someone
+                        to excite your customers, ping me!
+
+       
+                    </p>
+                    <img class="signature" src="img/signature1.png" alt="mudmies">
                 </div>
             </div>
+            <!--row-->
         </div>
+        <!--container-->
     </section>
 
-    <!-- Portfolio Grid Section -->
-    <section class="portfoliobox" id="portfolio">
+    <!-- Project Section -->
+    <section id="project" class="project-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-light">
+                <div class="col-lg-12">
+                    <h2 class="section-title">PROJECTS</h2>
                 </div>
             </div>
-            <div class="row">    
-                <div class="col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/lemon.png" class="img-responsive" alt="">
-                    </a>
+            <div class="row project-box">
+                <div class="col-sm-5">
+                    <img class="myproject-image" src="img/roundabout.png">
                 </div>
-                <div class="col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/cal.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/shop.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/web.png" class="img-responsive" alt="">
-                    </a>
+                <div class="col-sm-5">
+                    <div class="project-title">Roundabout Canada <br>Escape Room Website</div>
+                    <div class="project-text">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        <a class="project-link" href="http://www.roundaboutcanada.com">www.roundaboutcanada.com</a>
+                        <br>
+                        <div class="skills">Tools: HTML 5, CSS 3, Bootstrap, JavaScript, Photoshop, Google Analytics</div>
+                        <br> Roundabout Canada is an escape room company, located in Downtown Toronto. During my winter 2016 co-op
+                        term, I worked there as a website front-end developer. My main responsibilities were to redesign
+                        and develop the website as well as performing search engine optimization. The Google search result of the new website went
+                        from rank 19th to 8th, resulted in an increase of over thousands dollars in revenue!
+                        <br>
+                    </div>
+                    <br>
+                    <!--<div class="picture-gallery">
+                        <i class="fa fa-picture-o" aria-hidden="true"></i> View Pictures!
+                    </div>-->
+
                 </div>
             </div>
+
+            <div class="row project-box">
+                <div class="col-sm-5">
+                    <div class="project-title">Jerry Can-Carry</div>
+                    <div class="skills">Skills Developed: SolidWork, Design Concepts</div>
+                    <br>
+                    <div class="project-text">
+                        Water transportation can be a really tough process for people in developing country. Could you immagine yourself walking
+                        for miles and miles with a 25-kilogram jerry can, filled with water? This Jerry Can-Carry is designed
+                        to help improve people's lives in developing country. Instead of carrying one heavy jerry can at a 
+                        time, they can know carry two of them at the same time! The Jerry Can-Carry will provide a support
+                        and stability so that they do not hurt their body while performing such physical intensive activity.
+                        <br><br> This project involves sketching the design of the Jerry Can-Carry, creating QFD chart and
+                        user requirement specifications, building prototypes, testing the product, and simulating
+                        the product with SolidWork.
+                    </div>
+                    <br>
+                    <!--<div class="picture-gallery">
+                        <i class="fa fa-picture-o" aria-hidden="true"></i> View Pictures!
+                    </div>-->
+                </div>
+
+                <div class="col-sm-5">
+                    <img class="myproject-image" src="img/jerrycan.png">
+                </div>
+            </div>
+
+            <div class="row project-box">
+                <div class="col-sm-5">
+                    <img class="myproject-image" src="img/calchaos.png">
+                </div>
+                <div class="col-sm-5">
+                    <div class="project-title">Calculator Chaos</div>
+
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                    <a class="project-link" href="calculator/index.html">Play the Game!</a>
+                    <br>
+                    <div class="skills">Tools: HTML 5, CSS 3, Photoshop, JavaScript</div>
+                    <br>
+                    <div class="project-text">
+                        Calculator Chaos was a project I made in a high school programming course. With some of the given codes, I had to design
+                        the interface and the fucntionality of the game.
+
+                        <br> The objective of the game is too use a broken calculator to calculate to a given number, shown in
+                        a box besides the calculator, within a limited amount of time. Users will first have a choice
+                        to select the level they want to play. Once they click the 'GO' button, the timer will start. When
+                        the timer stops, the game will show the final result whether they win or lose.
+                    </div>
+                    <br>
+                    <!--<div class="picture-gallery">
+                        <i class="fa fa-picture-o" aria-hidden="true"></i> View Pictures!
+                    </div>-->
+                </div>
+            </div>
+
+            <div class="row project-box">
+                <div class="col-sm-5">
+                    <div class="project-title">Eyes-On-Me</div>
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                    <a class="project-link" href="www.instagram.com/eyesonme_preorder">Tour the Shop!</a>
+                    <div class="project-text">
+                        Eyes-On-Me, founded in 2011, is an Instragram-based small business for online shopping.
+                        <br><br> One of my hobbies during high school years included exploring around the city and shopping.
+                        So I decided to start my own e-commerce business which involved getting connected with customers,
+                        taking orders from them, and fulfilling orders. The business generated $600 in profit.
+
+                    </div>
+                </div>
+                <div class="col-sm-offset-1 col-sm-5">
+
+                    <img class="myproject-image" src="img/eyesonme.png">
+
+                </div>
+            </div>
+
+
+            <div class="row project-box">
+                <div class="col-sm-5">
+                    <img class="myproject-image" src="img/lemonade.png">
+                </div>
+                <div class="col-sm-offset-1 col-sm-5">
+                    <div class="project-title">Lemonade Stand</div>
+                    <div class="skills"> Tool: C++</div>
+                    <br>
+                    <div class="project-text">
+                        Lemonade stand is a supply-demand forecasting console game. The main goal of the game is to sell lemonade, and meet the profit
+                        goal that the user has set in the beginning of the game.
+                        <br><br> The game begins by asking users to enter their name, number of days they want to sell lemonade,
+                        and amount of profit they want to make by the end of the game. Before selling lemonade, users are
+                        required to buy the ingredients to make lemonade. There will be market trend information for the
+                        user to determine if the price of the ingredients will go up or down as well as the weather forcast
+                        that predicts the sales of lemonade in that day.
+                        <br>
+                    </div>
+                    <!--<div class="picture-gallery">
+                        <i class="fa fa-picture-o" aria-hidden="true"></i> View Pictures!
+                    </div>-->
+                </div>
+            </div>
+              <!--row-->
         </div>
+        <!--container-->
+    </section>          
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div>Made With <i class="fa fa-heart" aria-hidden="true"></i></div>
+
+                    <div> Mudmie&copy; 2016 </div>
+
+                </div>
+                <!--col-lg-12-->
+            </div>
+            <!--row-->
+        </div>
+        <!--container-->
     </section>
-
-   
-
-
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above" id="location">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4 col-md-offset-4">
-                        <h3>Location</h3>
-                        <p>University of Waterloo<br>200 University Avenue West <br>
-                           Waterloo, ON, Canada N2J4B6</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Chatchanok Chuthamsatid 2015
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll visible-xs visible-sm">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Lemonade Stand</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
-                            <p>Lemonade stand is a supply-demand forecasting console game. </p>
-                            <p>Skill Developed: C++</p> 
-                            <p></p>
-                              <p> The game begins by asking users to enter their name, number of days they want to sell lemonade,
-                               and amount of profit they want to make by the end of the game. </p>
-                            <p> Before selling lemonade, users are required to buy the ingredients to make lemonade. 
-                                There will be market trend information for the user to determine if the price of the 
-                                ingredients will go up or down, and weather forcast to predict the sales of lemonade in 
-                                that day.  
-                            </p>
-                           
-                             <p></p>  
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Calculator Chaos</h2>
-                            <hr class="star-primary">
-                            <img src="img/calgame.png" class="img-responsive img-centered" alt="">
-                            <p>Calculator Chaos is a web-based educational game for practicing arithmatic.<br>
-                            <p> Skills Developed: HTML, CSS, JavaScript, Photoshop</p>
-                           <p> In this project, I have applied the knowledge of user experience design to create 
-                            a game that allows users to complete the objective by using the given calculator to
-                            calculate random numbers shown on the screen.</p>
-                            <p> The users will first have a choice to select the level they want to play. Once they
-                                click the button 'GO', the timer will start. When the timer stops, the game will 
-                                show the final result whether they win or lose.
-                            </p>
-                           
-                            <strong><a href="calculator/index.html" alt=""> 
-                            <i class="fa fa-play-circle"></i>Play The Game </a>
-                            </strong>
-                             <br>
-                             <br>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>E-Commerce</h2>
-                            <hr class="star-primary">
-                            <img src="img/ig.png" class="img-responsive img-centered" alt="">
-                            <p>An Instagram-based small business for online shopping. </p>
-                            <p>Skills Developed: Marketing, problem solving, and customer service. 
-                            <p>Because of my interest in business, traveling, and fashion, I begin to operate my own pre-order 
-                                business since 2011. Instagram is used as a platform to post picture of my products, advertise my store, 
-                                find customers, and communicate with them.</p>
-                            
-                                    <strong><a href="https://instagram.com/eyesonme_preorder/"> <i class="fa fa-eye"></i>Visit the store!</a>
-                                    </strong>
-                                    <p></p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2> Nail Art Mania Blog</h2>
-                            <hr class="star-primary">
-                            <img src="img/nail.png" class="img-responsive img-centered" alt="">
-                            <p> Nail Art Mania is a personal blog, providing turtorials on nail design.</p>
-                            <p> Skills Developed: HTML and CSS
-                            <p>This project was created back when I was really new to HTML and CSS. I used this blog as 
-                                a space to share my nail design tutorials and reviews on different brands of nail polish.
-                                This project might look basic, but it was the beginning of my interest in
-                                web design and development.</p>
-                                    <strong><a href="Nail Web/index.html"><i class="fa fa-eye"></i>Check out the blog!</a>
-                                    </strong>
-                                <p></p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-  
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -349,31 +300,10 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/freelancer.js"></script>
-  
-  <!-- Google Analytics -->  
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    
-    ga('create', 'UA-68361765-1', 'auto');
-    ga('send', 'pageview');
-    </script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
 
 </body>
 
 </html>
-
-

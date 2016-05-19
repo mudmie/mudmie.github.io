@@ -1,0 +1,296 @@
+/*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.float-box
+{
+    position: relative;
+    top: 400px;
+    left: 300px;
+    
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+        background-color: transparent !important;
+        border: none !important; 
+    }
+    
+    .navbar-nav{
+        width: 100%;
+        text-align: center;
+        
+    }
+    
+    .navbar li {
+        display: inline-block;
+        float: none;
+    }
+    
+    .navbar li a {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 24px;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+@media (min-width: 1000px) {
+    .navbar li a {
+        font-size: 30px;
+    }
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #46494c;  
+    font-family:"Josefin Sans";
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+/*Intro Section*/
+.intro-section {
+    min-height: 90%;
+    padding-top: 150px;
+    text-align: center;
+    background-image: url("../img/0.png");
+    background-size: cover; 
+    transition: background-image 1s ease;
+    /*
+    background-position: center center;
+    position: relative;
+    */
+}
+
+li.letterM{
+    max-width: 10%;
+}
+.letterM img{
+    max-width: 70%;
+    margin-top: 5px;
+}
+h1.mudmie-name{
+    font-family: "Josefin Sans";
+    font-size: 55px;
+    color: #75CAFF;
+}
+h2.chatchanok{
+  font-family: "Josefin Sans";
+  font-size: 30px;
+  color: #46494c;   
+}
+h3.SYDE{
+    font-family: "Josefin Sans";
+    font-size: 20px;
+    color: #75CAFF;
+    margin-top: 25px;
+    text-align: center;
+}
+@media(min-width:480px){
+    h1.mudmie-name{
+        font-size: 70px;
+    }
+    h2.chatchanok{
+        font-size: 35px;
+    }
+    h3.SYDE{
+        font-size: 25px;
+    }
+}
+@media(min-width:658px){
+    h1.mudmie-name{
+        font-size: 100px;
+    }
+    h2.chatchanok{
+        font-size: 40px;
+    }
+    h3.SYDE{
+        font-size: 30px;
+    }
+}
+
+@media(min-width:1200px){
+    h1.mudmie-name{
+        font-size: 120px;
+        margin-top: 40px;
+    }
+    h2.chatchanok{
+        font-size: 50px;
+    }
+    h3.SYDE{
+        font-size: 30px;
+    }
+}
+
+
+/*.btn-default{
+    border: solid 2px #c5c3c6;
+    font-family: Cabin;
+    font-size: 30px;
+    color: #4c5c68;
+    margin-top: 20px;
+}*/
+
+#intro-mobile-fade {
+    display: none;
+    background-color: rgba(255,255,255,0.6);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-top: -150px;
+}
+@media (max-width: 480px) {
+    #intro-mobile-fade {
+        display: block;
+    }
+}
+
+/*About Section*/
+.about-section {
+    min-height: 100%;
+    min-width:100%;
+    padding-top: 70px;
+    text-align: left;
+    background-image:url("../img/me.png");
+    background-size:cover; 
+    font-family: Roboto;
+    background-position: center;
+}
+
+h3.greeting-text{
+    margin-left: 15px;
+    margin-top: 0;
+    font-size: 16px;
+    color: #4C5C68; 
+}
+
+.text{
+    color:#46494c;
+    font-size: 12px;
+    margin-left:15px; 
+    margin-bottom: 0; 
+}
+
+/*.text-box{
+    background-color: rgba(265, 265, 265, 0.2) ;
+}*/
+
+span.italic{
+    font-style: italic;
+}
+.signature{
+    max-width: 50%;
+    margin-top: 15px; 
+    margin-bottom:20px;
+    margin-left: 15px; 
+}
+#aboutus-mobile-fade {
+    display: none;
+    background-color: rgba(255,255,255,0.6);
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    margin-top: 0px;
+}
+@media (max-width: 480px) {
+    #aboutus-mobile-fade {
+        display: block;
+    }
+}
+@media(min-width:480px){
+    h3.greeting-text{
+        font-size: 24px;
+    }
+    .text{
+        font-size: 15px;
+    }
+}
+
+/*Project*/
+.project-section {
+    padding-top: 70px;
+    text-align: left;
+    background-image: url("../img/pic.jpg");
+}
+
+.myproject-image{
+    max-width: 100%;
+}
+
+.project-box{
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+.project-title{
+    font-family: "Josefin Sans";
+    color: #75CAFF;
+    font-size: 20px;
+    text-align: left;
+}
+.project-link, .skills{
+    font-family: Roboto;
+    font-size:15px;
+    color: #4C5C68;
+}
+.project-text{
+    font-family:Roboto;
+    font-size: 14px;
+    color: #46494c; 
+}
+.picture-gallery{
+    font-size: 18px;
+    color: #4C5C68;
+    text-align: center;
+    font-family: Roboto;
+}
+
+/*Shared*/
+h2.section-title{
+    font-family: "Josefin Sans";
+    font-size: 25px;
+    color: #75CAFF;
+    margin-left: 15px; 
+}
+@media(min-width:480px){
+    h2.section-title{
+        font-size: 45px;
+    }
+
+}
+.section-line{
+  border-top: 0.3px solid #C5C3C6;
+  width: 500px;
+  margin-top: 0;
+  float: left;
+}
+
+.footer{
+    font-family: Roboto;
+    color: #46494c;
+    background-color: #75CAFF;
+    font-size: 13px;
+    text-align: center;
+}
