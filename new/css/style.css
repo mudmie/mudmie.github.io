@@ -109,9 +109,33 @@ h3.SYDE{
     margin-top: 25px;
     text-align: center;
 }
-@media(min-widht:480px){
+@media(min-width:480px){
     h1.mudmie-name{
-        font-size: 90px;
+        font-size: 70px;
+    }
+    h2.chatchanok{
+        font-size: 35px;
+    }
+    h3.SYDE{
+        font-size: 25px;
+    }
+}
+@media(min-width:658px){
+    h1.mudmie-name{
+        font-size: 100px;
+    }
+    h2.chatchanok{
+        font-size: 40px;
+    }
+    h3.SYDE{
+        font-size: 30px;
+    }
+}
+
+@media(min-width:1200px){
+    h1.mudmie-name{
+        font-size: 120px;
+        margin-top: 40px;
     }
     h2.chatchanok{
         font-size: 50px;
@@ -120,6 +144,8 @@ h3.SYDE{
         font-size: 30px;
     }
 }
+
+
 /*.btn-default{
     border: solid 2px #c5c3c6;
     font-family: Cabin;
@@ -199,7 +225,7 @@ span.italic{
         font-size: 24px;
     }
     .text{
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 
@@ -210,6 +236,16 @@ span.italic{
     text-align: left;
     background-image: url("../img/pic.jpg");
 }
+.myproject{
+
+}
+
+.myproject-image{
+    max-width: 100%;
+    margin-top:10px;
+    margin-bottom: 10px;  
+}
+
 
 
 
@@ -231,4 +267,12 @@ h2.section-title{
   width: 500px;
   margin-top: 0;
   float: left;
+}
+
+.footer{
+    font-family: Roboto;
+    color: #46494c;
+    background-color: #75CAFF;
+    font-size: 13px;
+    text-align: center;
 }
