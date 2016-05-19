@@ -236,18 +236,37 @@ span.italic{
     text-align: left;
     background-image: url("../img/pic.jpg");
 }
-.myproject{
-
-}
 
 .myproject-image{
-    max-width: 100%;
-    margin-top:10px;
-    margin-bottom: 10px;  
+    max-width: 110%;
 }
 
-
-
+.project-box{
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+.project-title{
+    font-family: "Josefin Sans";
+    color: #75CAFF;
+    font-size: 20px;
+    text-align: left;
+}
+.project-link, .skills{
+    font-family: Roboto;
+    font-size:15px;
+    color: #4C5C68;
+}
+.project-text{
+    font-family:Roboto;
+    font-size: 14px;
+    color: #46494c; 
+}
+.picture-gallery{
+    font-size: 18px;
+    color: #4C5C68;
+    text-align: center;
+    font-family: Roboto;
+}
 
 /*Shared*/
 h2.section-title{
