@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CALCULATOR CHAOS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  
+  <body>
+
+    <div id="top">
+      <div id="welcome">
+          Welcome to Calculator Chaos! 
+      </div> <!--welcome-->
+      <div id= "showLevel">
+      </div> <!--showLevel-->
+      <div id="timer">
+        Time Left: 
+        <span id="timerBox">00:00 </span>
+      </div> <!--timer-->
+    </div> <!--top-->
+
+    <div id="middle">
+      <div id="left">
+       <div id="goal"> Try to get these numbers &#9786;</div>
+        <div id="numberBox"> 
+        </div>
+      </div>
+      <div id="right">
+        <div id="calculator">
+        <div id= "display"> 
+          <input type="text" id="d" readonly>
+        </div> <!--display-->
+      
+        <div id="keys">
+          <div class= "line">
+            <input type="button" id="bmrc" class="button gray" value="mrc" onclick='memoryClear()'>
+            <input type="button" id="bmneg" class="button gray" value="m-" onclick='memorySubtract()'>
+            <input type="button" id="bmplus" class="button gray" value="m+" onclick='memoryAdd()'>
+            <input type="button" id="bdiv" class="button pink" value="/" onclick='addToCalc("/")'>
+          </div> <!--line-->
+        
+          <div class= "line">
+            <input type="button" id="b7" class="button black" value="7" onclick='addToCalc("7")'>
+            <input type="button" id="b8" class="button black" value="8" onclick='addToCalc("8")'>
+            <input type="button" id="b9" class="button black" value="9" onclick='addToCalc("9")'>
+            <input type="button" id="bmul" class="button pink" value="*" onclick='addToCalc("*")'>
+          </div> <!--line-->
+        
+          <div class= "line">
+            <input type="button" id="b4" class="button black" value="4" onclick='addToCalc("4")'>
+            <input type="button" id="b5" class="button black" value="5" onclick='addToCalc("5")'>
+            <input type="button" id="b6" class="button black" value="6" onclick='addToCalc("6")'>
+            <input type="button" id="bmin" class="button pink" value="-" onclick='addToCalc("-")'>
+          </div> <!--line-->
+        
+          <div class= "line">
+            <input type="button" id="b1" class="button black" value="1" onclick='addToCalc("1")'>
+            <input type="button" id="b2" class="button black" value="2" onclick='addToCalc("2")'>
+            <input type="button" id="b3" class="button black" value="3" onclick='addToCalc("3")'>
+            <input type="button" id="badd" class="button pink" value="+" onclick='addToCalc("+")'>
+          </div> <!--line-->
+        
+          <div class= "line">
+            <input type="button" id="b0" class="button black" value="0" onclick='addToCalc("0")'>
+            <input type="button" id="bdot" class="button black" value="." onclick='addToCalc(".")'>
+            <input type="button" id="bclear" class="button black" value="C" onclick='output("")'>
+            <input type="button" id="beql" class="button orange" value="=" onclick='calculate()'>
+          </div> <!--line-->
+        </div> <!--keys-->
+
+      </div> <!--calculator-->
+      </div>
+      
+
+      
+      <div style="clear:both"></div>
+    </div> <!-- Middle -->
+    <div id="bottom">
+      <div id="left1">
+      <button id="helpButton" class="toolButton" onclick="javascript:toggle('help');">Help</button>
+    </div> <!--left1-->
+    <div id="middle1">
+      <button id="instructionButton" class="toolButton" onclick="javascript:toggle('instructions');">Instruction</button>
+
+    </div><!--middle-->
+    <div id="right1">
+      <div>
+        <button id="resetButton" class="toolButton" onclick="javascript:reloadSplash()">Reset</button>
+      </div> <!--resetButton--> 
+    </div><!--right1-->
+    <div style="clear:both"></div>
+    </div> <!--middle--> 
+<div class="copyright"> 
+        &copy; 2015 Mudmee C. 
+      </div> <!--footer-->
+    
+    <div id="splash" class="lightbox">
+      <img src="banner.png" alt="Calculator Chaos Banner" id="splash-banner">
+      <div id="chooselevelContainer">
+        <div id = "instruction">
+        <h2>  Wonder How To Play? </h2>
+          <br>
+          Your goal is to use the calculator, with given operating signs (+, -, *, /) and numbers, to calculate the numbers shown in the box beside the calculator.
+        </div> <!--instruction-->
+        <br>
+        Choose the Level 
+        <br>
+        <br>
+        <select id="level">
+          <option value="1"> Level 1 : Greeting the chaos </option>
+          <option value="2"> Level 2 : Getting to know the chaos</option>
+          <option value="3"> Level 3 : Understanding the chaos </option>
+          <option value="4"> Level 4 : Becoming friend with the chaos </option>
+        </select>
+        <br>
+        <br>
+        <button id="goButton" onclick="javascript:begin()"> GO!</button>
+      </div> <!--chooselevelContainer--> 
+      <div class="copyright">
+          <br>
+          &copy; 2015 Mudmee C.
+      </div> <!--copyright-->
+     </div> <!--spalash--> 
+
+      <div id="help" class="lightbox hide">
+        <div class="message">
+          WELCOME TO HELP CENTER!
+          <p>
+          Numbers and operator signs shown in calculator can be used in any combination. 
+          For example, if you have button 2 and 5, you can create numbers such as 255, 522, 525 etc.
+          </p>
+          <p>
+          Buttons Explanation<br>
+          "=" : Equal sign. This button will show the total result after number operation(s).<br>
+          "AC": To clear the screen, but does not erase numbers in memory.<br>
+          "M+": To add the value to memory.<br>
+          "M-": To subtract the valur from the memory.<br>
+          "MRC": To recall and clear the memory.
+          </p>
+          <br>
+          <button onclick="javascript:toggle('help')">Close</button>
+        </div>
+
+        
+      </div> <!--help-->
+    <div id="instructions" class="lightbox hide">
+      <div class="message">Your goal is to use the calculator, with given operating sign and number, 
+      to get numbers shown in the box beside the calculator.<br><br><button onclick="javascript:toggle('instructions')">Close</button></div>
+
+    </div> <!--instruction-->
+     <div id="winningScreen" class="lightbox hidden">
+      <audio src="winning.mp3" id="winningAudio" preload></audio>
+      <img src="alphabet/y.gif" alt = "dancing alphabet Y">
+      <img src="alphabet/o.gif" alt = "dancing alphabet o">
+      <img src="alphabet/u.gif" alt = "dancing alphabet u">
+      <br>
+      <img src="alphabet/w.gif" alt = "dancing alphabet w">
+      <img src="alphabet/i.gif" alt = "dancing alphabet i">
+      <img src="alphabet/n.gif" alt = "dancing alphabet n">
+      <br>
+      <button onclick="javascript:reloadSplash()">Play again</button>
+     </div> <!---winningScreen-->
+
+     <div id="losingScreen" class="lightbox hidden">
+      <img src="lose.jpg" alt="Time's up!">
+      <br>
+      <button onclick="javascript:reloadSplash()">Play again</button>
+     </div>
+
+  </body>
+
+</html>
