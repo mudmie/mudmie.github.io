@@ -51,7 +51,7 @@ $(function(){
 
 // click event
 $(document).ready(function () {
-  $(".port-name").click(function() {
+  $(".port-name").click(function () {
     var $this = $(this);
     var name = $this.data("pivot");
     var $projectBoxes = $(".project-box");
@@ -290,7 +290,7 @@ $(document).ready(function () {
     })
   })
 
-} (jQuery);
+}(jQuery);
 
 
 
@@ -307,3 +307,30 @@ $(document).ready(function () {
 //   $textboxContainer.find(".text-box").hide();
 //   $textboxContainer.find("#text-box-" + slideId).show();
 // })
+
+function enableMainCarouselsCycle(shouldEnable) {
+  $('#project .carousel').carousel(shouldEnable ? 'cycle' : 'pause');
+}
+
+$(function () {
+  $('#forgetDesignsModal').on('show.bs.modal', function () {
+    $('.modal .modal-body').css('overflow-y', 'auto'); 
+    $('.modal .modal-body').css('max-height', $(window).height() * 0.8);
+});
+
+  $("#forgetDesignsModal").on('shown.bs.modal', function (e) {
+    $('#carousel-forget-designs').carousel({
+      interval: 5000
+    });
+  });
+
+  // Stop the main page carousel from cycling
+  $('[data-target="#forgetDesignsModal"]').click(function () {
+    enableMainCarouselsCycle(false);
+  });
+
+  // Resume the main page carousel cycling after the dialog is closed.
+  $("#forgetDesignsModal").on('hidden.bs.modal', function (e) {
+    enableMainCarouselsCycle(true);
+  });
+});
