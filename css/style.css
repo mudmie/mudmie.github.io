@@ -299,13 +299,17 @@ padding-left: 0;
 li.port-name{
     font-size: 12pt;
     font-weight: lighter;
-font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
      color: #353535;
     padding-left: 10px;
     padding-right: 10px;
     display: inline;
 }
 
+h3.carousel-caption, p.carousel-caption{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
 
 /*try stuff*/
 .portfolio-menu{
