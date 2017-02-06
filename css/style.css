@@ -43,7 +43,7 @@ ul.navbar-logo{
 }
 
 .navbar-default {
-    background-color: #e5e5e5;
+    background-color: #d5d5d5;
 }
 @media(min-width:767px) {
     .navbar {
@@ -94,6 +94,10 @@ ul.navbar-logo{
     font-family: 'Montserrat', sans-serif;
 }
 
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: #d5d5d5;
+}
+
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
@@ -107,12 +111,12 @@ of those sections to manage the look and feel of the site. */
     text-align: center;
     /*background: linear-gradient( 
         to right,
-#e5e5e5 0%,
-#e5e5e5 50%,
+#d5d5d5 0%,
+#d5d5d5 50%,
 #353535 50%,
 #353535 100%
     ); */
-    background-color: #e5e5e5;
+    background-color: #d5d5d5;
     /*background-image: url("../img/0.png");*/
     background-size: cover; 
     transition: background-image 1s ease;
@@ -282,7 +286,7 @@ font-family: 'Open Sans', sans-serif;
     min-height: 100%;
     padding-top: 10%;
     text-align: left;
-    background-color: #e5e5e5;
+    background-color: #d5d5d5;
 }
 
 /*try stuff*/
@@ -299,7 +303,7 @@ font-family: 'Montserrat', sans-serif;
      color: #353535;
     padding-left: 10px;
     padding-right: 10px;
-    display: inline;car
+    display: inline;
 }
 
 
@@ -339,19 +343,8 @@ font-family: 'Montserrat', sans-serif;
     max-width: 100%;
 }
 
-.project-box{
+.project-row + .project-row {
     margin-top: 20px;
-    margin-bottom: 20px; 
-    display: none;
-}
-.project-box.active {
-    display: block;
-}
-
-@media (max-width: 767px) {
-    .project-box {
-        display: block;
-    }
 }
 
 .project-title{
@@ -361,22 +354,10 @@ font-family: 'Montserrat', sans-serif;
     text-align: left;
 }
 
-.project-link, .skills{
-    font-family: Roboto;
-    font-size:15px;
+.project-link {
     color: #4C5C68;
 }
-.project-text{
-    font-family:Roboto;
-    font-size: 14px;
-    color: #46494c; 
-}
-.picture-gallery{
-    font-size: 18px;
-    color: #4C5C68;
-    text-align: center;
-    font-family: Roboto;
-}
+
 .arrow{
     font-size: 25pt;
     position: relative;
@@ -388,7 +369,7 @@ font-family: 'Montserrat', sans-serif;
     min-height: 100%;
     padding-top: 10%;
     text-align: left;
-    background-color: #e5e5e5;
+    background-color: #d5d5d5;
 }
 
 .resume{
@@ -417,7 +398,7 @@ h2.section-title{
 .footer{
     font-family: "Montserrat";
     color: #5e5e5e;
-    background-color: #e5e5e5;
+    background-color: #d5d5d5;
     font-size: 10px;
     text-align: center;
     padding: 5px 0px 5px 0px;
