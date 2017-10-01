@@ -18,6 +18,14 @@ $(function () {
   });
 });
 
+// Collapse nav when clicking nav links
+$('[data-collapse-target]').click(function() {
+  var $this = $(this);
+  var target = $this.data("collapse-target");
+  var $target = $(target);
+  $target.collapse('hide');
+})
+
 //for the carousel
 
 +function ($) {
