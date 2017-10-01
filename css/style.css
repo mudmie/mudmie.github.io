@@ -107,19 +107,12 @@ ul.navbar-logo{
 /* ======== Sections ========= */
 
 /*Intro Section*/
-
 .about-section {
-    min-height: 90%;
     padding-top: 20%;
 }
 @media (min-width: 767px) {
     .about-section {
         padding-top: 180px;
-    }
-}
-@media (min-width: 1000px) {
-    .about-section {
-        min-height: auto;
     }
 }
 
@@ -162,11 +155,6 @@ h1.my-name {
 }
 
 /*Project*/
-.project-section {
-    min-height: 100%;
-    padding-top: 100px;
-}
-
 .project-section .col {
     margin-bottom: 40px;
 }
@@ -216,10 +204,6 @@ a.project-link:hover {
 }
 
 /* Resume section */
-.resume-section {
-    min-height: 100%;
-    padding-top: 100px;
-}
 .resume-snapshot {
     border: 1px solid #0067B8;
     max-width: 75%;
@@ -270,6 +254,14 @@ h3.carousel-caption, p.carousel-caption{
 }
 
 /*Shared*/
+section + section {
+    padding-top: 60px;
+}
+@media (min-width: 767px) {
+    section + section {
+        padding-top:100px;
+    }
+}
 .section-line{
   border-top: 0.3px solid #C5C3C6;
   width: 500px;
