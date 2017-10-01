@@ -51,6 +51,15 @@ ul.navbar-logo{
 }
 
 @media(min-width:767px) {
+    .navbar-default {
+        background: none;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+        background: #FFF;
+    }
+
     .navbar {
         padding: 20px 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -58,7 +67,7 @@ ul.navbar-logo{
         transition: background .5s ease-in-out,padding .5s ease-in-out;
         border: none !important; 
     }
-    
+
     .navbar-nav{
         text-align: right;
         float: right;  
@@ -81,10 +90,6 @@ ul.navbar-logo{
     }
     .navbar li.active a {
         border-bottom: 2px solid black;
-    }
-
-    .top-nav-collapse {
-        padding: 0;
     }
 }
 
