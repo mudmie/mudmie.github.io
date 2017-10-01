@@ -119,6 +119,20 @@ ul.navbar-logo{
 .about-section .col {
     margin-bottom: 40px;
 }
+.about-main {
+    text-align: center;
+}
+.about-side {
+    padding-top: 20%;
+}
+@media (min-width: 1000px) {
+    .about-side {
+        padding-top: 240px;
+    }
+}
+.about-side hr {
+    border-top: 2px solid gray;
+}
 .mypic{
     width: 45%;
 }
