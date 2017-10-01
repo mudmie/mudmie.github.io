@@ -18,6 +18,11 @@ html {
     height: 100%;
 }
 
+img.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
 .float-box
 {
     position: relative;
@@ -41,10 +46,10 @@ ul.navbar-logo{
         max-width: 50px;
     }
 }
-
 .navbar-default {
-    background-color: #d5d5d5;
+    background: #FFF;
 }
+
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
@@ -95,189 +100,64 @@ ul.navbar-logo{
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    background-color: #d5d5d5;
+    background: #FFF;
 }
 
 
-/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
-of those sections to manage the look and feel of the site. */
+/* ======== Sections ========= */
 
 /*Intro Section*/
 
-.intro-section {
-    min-height: 90%;
-    padding-top: 180px;
-    text-align: center;
-    /*background: linear-gradient( 
-        to right,
-#d5d5d5 0%,
-#d5d5d5 50%,
-#353535 50%,
-#353535 100%
-    ); */
-    background-color: #d5d5d5;
-    /*background-image: url("../img/0.png");*/
-    background-size: cover; 
-    transition: background-image 1s ease;
-    /* For Responsive Background Image */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover
-} 
-
-
-p.hi-there-text{
-    color: #fff;
-    font-size: 90px;
-    text-align: left;
-    line-height: 1;
-}
-p.hi-there-text .first-line {
-    margin-left: -6px;
-}
-
-@media (max-width: 1023px) {
-    p.hi-there-text{
-    font-size: 80px;
-    }
-}
-
-
-@media (max-width: 767px) {
-    p.hi-there-text{
-    font-size: 48px;
-    }
-}
-
-
-h1.mudmie{
-    color: #353535;
-    font-size: 40px;
-    margin-top: 20px;
-    text-align: left;
-}
-
-h3.school-info, h4.school-info{
-  color: #353535;
-    font-size: 26px;
-    margin: 5px 0 5px 0;
-    text-align: left;
-    line-height: 0.9;
-}
-
-#
-
-.home-box {
-    margin-top: 40px;
-    margin-bottom: 100px;
-}
-
-/*.btn-default{
-    border: solid 2px #c5c3c6;
-    font-family: Cabin;
-    font-size: 30px;
-    color: #4c5c68;
-    margin-top: 20px;
-}*/
-
-/*#intro-mobile-fade {
-    display: none;
-    background-color: rgba(255,255,255,0.6);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    margin-top: -150px;
-}
-@media (max-width: 480px) {
-    #intro-mobile-fade {
-        display: block;
-    }
-}*/
-
-/*About Section*/
-
 .about-section {
-    min-width:100%;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    text-align: left;
-    background-color: #fff;
+    min-height: 90%;
+    padding-top: 30%;
+}
+@media (min-width: 767px) {
+    .about-section {
+        padding-top: 180px;
+    }
+}
+@media (min-width: 1000px) {
+    .about-section {
+        min-height: auto;
+    }
 }
 
-.contact-me{
+.about-section .col {
     margin-bottom: 40px;
 }
-
-h2.chatchanok{
-    color: #353535;
-    font-size: 16pt;
-    text-align: left;
-}
-
-h5.greeting-text{
-    font-family: "Montserrat"; 
-    margin-top: 0;
-    font-size: 14px;
-    color: #353535; 
-}
-
-.text{
-    color:#46494c;
-    font-size: 14px;
-    margin-bottom: 0; 
-}
-.text-last {
-    margin-bottom: 10%;
-}
-
 .mypic{
-    width:45%;
+    width: 45%;
 }
-
-/*.text-box{
-    background-color: rgba(265, 265, 265, 0.2) ;
-}*/
-
-span.italic{
-    font-style: italic;
-}
-
-.miscellaneous{
+h1.my-name {
     font-family: "Open Sans";
-    font-size: 9pt;
+    color: #74B7DA;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 48px;
+}
+@media (min-width: 767px) {
+    h1.my-name {
+        font-size: 60px;
+    }
+}
+.sub-heading {
+    font-size: 20px;
+    font-weight: 700;
 }
 
-h3.text{
-font-family: 'Open Sans', sans-serif;
-    color: #353535;
-    font-size: 14pt;
-    padding-bottom: 10px;
-
+.about-content {
+    border: 2px solid gray;
+    padding: 10px;
 }
-/*#aboutus-mobile-fade {
-    display: none;
-    background-color: rgba(255,255,255,0.6);
-    position: absolute;
-    min-height: 100%;
-    width: 100%;
-    margin-top: 0px;
+@media (min-width: 767px) {
+    .about-content {
+        padding: 20px;
+    }
 }
-@media (max-width: 480px) {
-    #aboutus-mobile-fade {
-        display: block;
-    }
-}*/
-@media(min-width:480px){
-    h5.greeting-text{
-        font-family: "Open Sans";
-        font-size: 47px;
-        color: #353535;
-        font-weight: bolder;
-    }
-    .text{
-        font-size: 16px;
+@media (min-width: 1000px) {
+    .about-content {
+        margin-top: 10%;
     }
 }
 
@@ -285,45 +165,72 @@ font-family: 'Open Sans', sans-serif;
 .project-section {
     min-height: 100%;
     padding-top: 10%;
-    text-align: left;
-    background-color: #d5d5d5;
 }
 
-/*try stuff*/
-ul.portfolio-menu{
-padding-bottom: 0;
-text-align: left;
-padding-left: 0;
+.project-section .section-title {
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 32px;
+}
+@media (min-width: 767px) {
+    .project-section .section-title {
+        font-size: 48px;
+    }
+}
+.project-section .col {
+    margin-bottom: 40px;
 }
 
-li.port-name{
-    font-size: 12pt;
-    font-weight: lighter;
-    font-family: 'Montserrat', sans-serif;
-     color: #353535;
-    padding-left: 10px;
-    padding-right: 10px;
-    display: inline;
+.project-title {
+    font-family: "Open Sans";
+    color: #74B7DA;
+    text-transform: uppercase;
+    font-weight: 400;
 }
+.project-subtitle {
+    font-family: "Open Sans";
+    color: #74B7DA;
+    font-weight: 400;
+}
+
+.project-title, 
+.project-subtitle {
+    font-size: 28px;
+}
+
+@media (min-width: 767px) {
+    .project-title, 
+    .project-subtitle {
+        font-size: 32px;
+    }
+}
+
+.project-description,
+.project-link {
+    margin-top: 30px;
+}
+
+a.project-link {
+    color: #FFF;
+    background-color: #0067B8;
+    padding: 9px 18px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+a.project-link:active,
+a.project-link:focus,
+a.project-link:hover {
+    text-decoration: none;
+    color: #FFF;
+    background-color: #005da6;
+}
+
+
 
 h3.carousel-caption, p.carousel-caption{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-}
-
-/*try stuff*/
-.portfolio-menu{
-padding-bottom: 10px;
-text-align: left;
-}
-
-a.port-name{
-    font-size: 12pt;
-    font-weight: lighter;
-font-family: 'Montserrat', sans-serif;
-     color: #353535;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 .slide-image{
@@ -351,27 +258,6 @@ font-family: 'Montserrat', sans-serif;
     margin-top: 20px;
 }
 
-.project-title{
-    font-family: "Josefin Sans";
-    color: #75CAFF;
-    font-size: 20px;
-    text-align: left;
-}
-
-a.project-link {
-    color: #FFF;
-    background-color: #0067B8;
-    padding: 9px 18px;
-    display: inline-block;
-    box-sizing: border-box;
-}
-a.project-link:active,
-a.project-link:focus,
-a.project-link:hover {
-    text-decoration: none;
-    color: #FFF;
-    background-color: #005da6;
-}
 
 .arrow{
     font-size: 25pt;
@@ -379,30 +265,7 @@ a.project-link:hover {
     top: 50%;
 }
 
-/*Resume section*/
-.resume-section{
-    min-height: 100%;
-    padding-top: 10%;
-    text-align: left;
-    background-color: #d5d5d5;
-}
-
-.resume{
-    min-width:100%;
-}
 /*Shared*/
-h2.section-title{
-    font-family: "Josefin Sans";
-    font-size: 25px;
-    color: #75CAFF;
-    margin-left: 15px; 
-}
-@media(min-width:480px){
-    h2.section-title{
-        font-size: 45px;
-    }
-
-}
 .section-line{
   border-top: 0.3px solid #C5C3C6;
   width: 500px;

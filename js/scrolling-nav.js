@@ -18,49 +18,6 @@ $(function () {
   });
 });
 
-//determine greeting messag
-var findDate = new Date();
-var findHour = findDate.getHours();
-var greetingMessage;
-
-if (findHour > 18) {
-  greetingMessage = "Good Evening,";
-} else if (findHour > 12) {
-  greetingMessage = "Good Afternoon,";
-} else if (findHour >= 0) {
-  greetingMessage = "Good Morning,";
-} else greetingMessage = "Hello,";
-
-var el = document.getElementById('greeting');
-el.innerHTML = greetingMessage; //use textContent or innerHTML?
-
-var currentBackgroundImage = 0;
-
-//start function when ready
-// $(function() {})
-// $ === jQuery
-
-/*
-$(function(){
-    var $getClass = $('.intro-section');
-    window.setInterval (function () {
-        currentBackgroundImage = (currentBackgroundImage + 1) % 6; 
-        $getClass.css("background-image", "url('img/" + currentBackgroundImage + ".png')");
-    }, 3000);
-});*/
-
-// click event
-$(document).ready(function () {
-  $(".port-name").click(function () {
-    var $this = $(this);
-    var name = $this.data("pivot");
-    var $projectBoxes = $(".project-box");
-    $projectBoxes.removeClass("active");
-    var $activeBox = $("#project-box-" + name);
-    $activeBox.addClass("active");
-  });
-});
-
 //for the carousel
 
 +function ($) {
