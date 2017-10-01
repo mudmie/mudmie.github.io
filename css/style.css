@@ -167,16 +167,6 @@ h1.my-name {
     padding-top: 100px;
 }
 
-.project-section .section-title {
-    font-family: "Open Sans";
-    font-weight: 400;
-    font-size: 32px;
-}
-@media (min-width: 767px) {
-    .project-section .section-title {
-        font-size: 48px;
-    }
-}
 .project-section .col {
     margin-bottom: 40px;
 }
@@ -225,7 +215,22 @@ a.project-link:hover {
     background-color: #005da6;
 }
 
+/* Resume section */
+.resume-section {
+    min-height: 100%;
+    padding-top: 100px;
+}
+.resume-snapshot {
+    border: 1px solid #0067B8;
+    max-width: 75%;
+    height: auto;
+}
+.resume-main {
+    text-align: center;
+    margin-top: 30px;
+}
 
+/* Carousel */
 
 h3.carousel-caption, p.carousel-caption{
     font-family: 'Montserrat', sans-serif;
@@ -270,6 +275,17 @@ h3.carousel-caption, p.carousel-caption{
   width: 500px;
   margin-top: 0;
   float: left;
+}
+
+.section-title {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 32px;
+}
+@media (min-width: 767px) {
+    .section-title {
+        font-size: 48px;
+    }
 }
 
 .footer{
