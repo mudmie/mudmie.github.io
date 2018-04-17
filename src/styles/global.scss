@@ -1,0 +1,10 @@
+@import "./_fonts.scss";
+
+:global {
+  html {
+    overflow-y: scroll;
+  }
+  body {
+    font-family: $body-font;
+  }
+}

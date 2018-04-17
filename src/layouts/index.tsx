@@ -22,8 +22,8 @@ export default class DefaultLayout extends React.Component<
           <meta name="keywords" content="" />
           <title>Mudmie Chuthamsatid</title>
           <link
+            href="https://fonts.googleapis.com/css?family=Raleway:300,400,700"
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Aldrich|Work+Sans:400,700,800"
           />
           <script
             src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
