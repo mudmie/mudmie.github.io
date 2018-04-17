@@ -1,1 +1,11 @@
+# Project dependencies
+.cache
+node_modules
+yarn-error.log
+
+# Build directory
+/public
+
+# Temp files
+/src/**/*.scss.d.ts
 .DS_Store
