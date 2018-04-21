@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Mudmie Chuthamsatid",
+    siteUrl: "https://www.mudmie.com",
   },
   plugins: [
     "gatsby-plugin-react-next",
@@ -24,5 +25,15 @@ module.exports = {
     // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-68361765-1",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+    },
   ],
 };
