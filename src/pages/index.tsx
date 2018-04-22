@@ -11,7 +11,10 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
         <Row style={{ position: "relative", minHeight: "500px" }}>
           <BackgroundAnimation />
           <Col>
-            <h1 className="display-3">Hello!</h1>
+            <h1 className="home-main">Mudmie Chuthams</h1>
+            <p className="home-subtitle">
+              a designer with engineering thoughts
+            </p>
           </Col>
         </Row>
       </Container>
