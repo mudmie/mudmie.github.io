@@ -16,7 +16,7 @@ export default class DefaultLayout extends React.Component<
   public render() {
     return (
       <>
-        <Helmet>
+        <Helmet titleTemplate="%s - Mudmie Chuthamsatid">
           <html lang="en" />
           <meta charSet="utf-8" />
           <meta name="description" content="" />

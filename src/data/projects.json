@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Shipment Audit Trail",
+    "subtitle": "Nulogy, Winter 2018",
+    "url": "/projects/shipment-audit-trail"
+  },
+  {
+    "name": "Picking Process Experience",
+    "subtitle": "Nulogy, Winter 2018",
+    "url": "/projects/picking-process"
+  },
+  {
+    "name": "VRulez",
+    "subtitle": "Commercial Website, Winter 2018",
+    "url": "/projects/vrulez"
+  },
+  {
+    "name": "Online Craft Beer Ordering System",
+    "subtitle": "LCBO, Spring 2017",
+    "url": "/projects/craft-beer"
+  },
+  {
+    "name": "Tasting Note Mobile Application",
+    "subtitle": "LCBO, Spring 2017",
+    "url": "/projects/tasting-note"
+  },
+  {
+    "name": "Sales of Data Web Application",
+    "subtitle": "LCBO, Spring 2017",
+    "url": "/projects/sales-of-data"
+  },
+  {
+    "name": "Forget Me Not",
+    "subtitle": "Personal Project, Fall 2016",
+    "url": "/projects/forget-me-not"
+  },
+  {
+    "name": "Escape Room Commercial Website",
+    "subtitle": "Roundabout Canada, Winter 2016",
+    "url": "/projects/roundabout-canada"
+  }
+]
