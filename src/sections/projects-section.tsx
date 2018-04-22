@@ -38,7 +38,9 @@ export class ProjectsSection extends React.Component<ProjectsSectionProps, {}> {
                   />
                 </Link>
                 <CardBody>
-                  <CardTitle>{proj.name}</CardTitle>
+                  <CardTitle>
+                    <Link to={proj.url}>{proj.name}</Link>
+                  </CardTitle>
                   <CardSubtitle>{proj.subtitle}</CardSubtitle>
                 </CardBody>
               </Card>
