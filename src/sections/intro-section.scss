@@ -1,0 +1,16 @@
+@import "../styles/_colors.scss";
+
+.col-name {
+  padding-top: 300px;
+}
+.name {
+  font-weight: bold;
+}
+
+.name-separator {
+  width: 30px;
+  border-top: 3px solid $body-text-color;
+}
+
+.subtitle {
+}

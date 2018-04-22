@@ -6,6 +6,9 @@
   bottom: 0;
   background-image: url("../../static/images/about-brush.png");
   background-position: left top;
-  background-size: 18%;
   background-repeat: no-repeat;
+  background-size: 14%;
+  @media (max-width: 1100px) {
+    background-size: 18%;
+  }
 }

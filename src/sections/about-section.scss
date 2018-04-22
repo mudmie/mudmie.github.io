@@ -1,0 +1,26 @@
+.row-about {
+  background-color: #fcfcfe;
+  background-image: url("../../static/images/me.jpg");
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  min-height: 500px;
+
+  @media (max-width: 1100px) {
+    min-height: 400px;
+  }
+}
+
+.col-about {
+  padding-top: 100px;
+}
+
+h2.about-heading,
+h3.about-heading {
+  font-weight: bold;
+  text-align: right;
+}
+
+.about-para {
+  text-align: justify;
+}
