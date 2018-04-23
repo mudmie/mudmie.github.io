@@ -6,7 +6,7 @@ export class BackgroundAnimation extends React.Component {
     const strokeColor = "#444444";
     return (
       <>
-        <div className={styles.bgTop}>
+        <div className={styles.bgTop} aria-hidden="true">
           <svg
             className={styles.svgTop}
             width="1103px"
@@ -27,7 +27,7 @@ export class BackgroundAnimation extends React.Component {
             </g>
           </svg>
         </div>
-        <div className={styles.bgBottom}>
+        <div className={styles.bgBottom} aria-hidden="true">
           <svg
             width="1008px"
             height="423px"
