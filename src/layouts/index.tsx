@@ -1,9 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import * as React from "react";
-import "../styles/global.scss";
 import Helmet from "react-helmet";
 import { Footer } from "../components/footer";
 import { Header } from "../components/header";
+import "../styles/global.scss";
 
 interface DefaultLayoutProps {
   children: any;
@@ -16,7 +16,7 @@ export default class DefaultLayout extends React.Component<
   public render() {
     return (
       <>
-        <Helmet titleTemplate="%s - Mudmie Chuthamsatid">
+        <Helmet titleTemplate="%s - Projects - Mudmie Chuthamsatid">
           <html lang="en" />
           <meta charSet="utf-8" />
           <meta name="description" content="" />

@@ -1,14 +1,9 @@
 import * as React from "react";
-import { Col, Container, Row, Jumbotron } from "reactstrap";
-import { BackgroundAnimation } from "../components/background-animation";
-import * as styles from "./index.scss";
-import { withPrefix } from "gatsby-link";
-import { AboutBrushBackground } from "../components/about-brush-background";
+import { Helmet } from "react-helmet";
+import { Project } from "../models/project";
 import { AboutSection } from "../sections/about-section";
 import { IntroSection } from "../sections/intro-section";
 import { ProjectsSection } from "../sections/projects-section";
-import { Project } from "../models/project";
-import { Helmet } from "react-helmet";
 
 export interface IndexPageProps {
   data: {
@@ -27,9 +22,10 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
         <Helmet titleTemplate="">
           <title>Mudmie Chuthamsatid</title>
         </Helmet>
-        <IntroSection />
-        <AboutSection />
+        <IntroSection id="home" />
+        <AboutSection id="about" />
         <ProjectsSection
+          id="projects"
           projects={this.props.data.allProjectsJson.edges.map(e => e.node)}
         />
       </>
@@ -45,6 +41,7 @@ export const pageQuery = graphql`
           name
           subtitle
           url
+          image
         }
       }
     }

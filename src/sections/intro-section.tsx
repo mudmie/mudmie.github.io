@@ -1,12 +1,17 @@
 import * as React from "react";
-import * as styles from "./intro-section.scss";
-import { Container, Col, Row } from "reactstrap";
+import { Col, Container, Row } from "reactstrap";
 import { BackgroundAnimation } from "../components/background-animation";
+import * as styles from "./intro-section.scss";
+import * as sharedStyles from "./sections.scss";
 
-export class IntroSection extends React.Component {
+export interface IntroSectionProps {
+  id: string;
+}
+export class IntroSection extends React.Component<IntroSectionProps, {}> {
   public render() {
     return (
       <Container fluid>
+        <a id={this.props.id} className={sharedStyles.sectionAnchor} />
         <Row style={{ position: "relative", minHeight: "500px" }}>
           <BackgroundAnimation />
           <Col md="8" className={`text-center ${styles.colName}`}>

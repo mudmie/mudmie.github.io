@@ -1,7 +1,14 @@
 @import "../styles/_colors.scss";
 
 .navbar {
-  background-color: transparent !important;
+  transition: background-color 0.5s ease-in-out;
+  @media (min-width: 768px) {
+    background-color: transparent !important;
+  }
+}
+
+.scroll {
+  background-color: #f8f9fa !important;
 }
 
 .nav-link {

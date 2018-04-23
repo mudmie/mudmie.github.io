@@ -16,4 +16,10 @@
   .navbar-light .navbar-nav .nav-link:hover {
     color: $body-text-hover-color;
   }
+
+  h1,
+  h2,
+  h3 {
+    font-weight: bold;
+  }
 }

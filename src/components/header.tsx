@@ -1,18 +1,12 @@
+import Link, { withPrefix } from "gatsby-link";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import * as React from "react";
-import {
-  Collapse,
-  Nav,
-  NavItem,
-  NavLink,
-  Navbar,
-  NavbarToggler,
-} from "reactstrap";
+import { Collapse, Nav, NavItem, Navbar, NavbarToggler } from "reactstrap";
 import * as styles from "./header.scss";
-import { withPrefix } from "gatsby-link";
 
 export interface HeaderState {
   isOpen: boolean;
+  isTop: boolean;
 }
 
 export class Header extends React.Component<{}, HeaderState> {
@@ -20,8 +14,10 @@ export class Header extends React.Component<{}, HeaderState> {
     super(props);
     this.state = {
       isOpen: false,
+      isTop: true,
     };
     this.toggle = this.toggle.bind(this);
+    this.collapseNav = this.collapseNav.bind(this);
   }
 
   public toggle() {
@@ -29,11 +25,29 @@ export class Header extends React.Component<{}, HeaderState> {
       isOpen: !this.state.isOpen,
     });
   }
+
+  public collapseNav() {
+    this.setState({
+      isOpen: false,
+    });
+  }
+
+  public componentDidMount() {
+    document.addEventListener("scroll", () => {
+      const isTop = window.scrollY < 100;
+      if (isTop !== this.state.isTop) {
+        this.setState({ isTop });
+      }
+    });
+  }
+
   public render() {
     return (
       <header>
         <Navbar
-          className={styles.navbar}
+          className={`${styles.navbar} ${
+            !this.state.isTop ? styles.scroll : ""
+          }`}
           color="light"
           light
           expand="md"
@@ -43,26 +57,47 @@ export class Header extends React.Component<{}, HeaderState> {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink className={styles.navLink} href="/">
+                <Link
+                  className={`nav-link ${styles.navLink}`}
+                  to="/#home"
+                  onClick={() => {
+                    this.collapseNav();
+                  }}
+                >
                   home
-                </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink className={styles.navLink} href="/components/">
+                <Link
+                  className={`nav-link ${styles.navLink}`}
+                  to="/#about"
+                  onClick={() => {
+                    this.collapseNav();
+                  }}
+                >
                   about
-                </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink className={styles.navLink} href="/components/">
+                <Link
+                  className={`nav-link ${styles.navLink}`}
+                  to="/#projects"
+                  onClick={() => {
+                    this.collapseNav();
+                  }}
+                >
                   projects
-                </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
                 <OutboundLink
                   href={withPrefix("/resume.pdf")}
                   className={`nav-link ${styles.navLink}`}
+                  onClick={() => {
+                    this.collapseNav();
+                  }}
                 >
-                  resume
+                  résumé
                 </OutboundLink>
               </NavItem>
             </Nav>
