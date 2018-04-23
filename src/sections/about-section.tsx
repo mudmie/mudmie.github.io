@@ -8,7 +8,7 @@ export class AboutSection extends React.Component {
     return (
       <Container fluid>
         <Row style={{ position: "relative" }} className={styles.rowAbout}>
-          {/* <AboutBrushBackground /> */}
+          <AboutBrushBackground />
           <Container>
             <Row>
               <Col md="8" className={styles.colAbout}>
