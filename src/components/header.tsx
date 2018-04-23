@@ -53,6 +53,15 @@ export class Header extends React.Component<{}, HeaderState> {
           expand="md"
           fixed="top"
         >
+          <Link
+            to="/"
+            className="navbar-brand"
+            onClick={() => {
+              this.collapseNav();
+            }}
+          >
+            Mudmie
+          </Link>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>

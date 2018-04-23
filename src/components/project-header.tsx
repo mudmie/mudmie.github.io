@@ -1,7 +1,8 @@
 import * as React from "react";
-import { Project } from "../models/project";
 import { Helmet } from "react-helmet";
-import { Container, Row, Col } from "reactstrap";
+import { Col, Container, Row } from "reactstrap";
+import { Project } from "../models/project";
+import * as styles from "./project-header.scss";
 
 export interface ProjectHeaderProps {
   project: Project;
@@ -16,7 +17,7 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
         <Container>
           <Row>
             <Col>
-              <h1>{this.props.project.name}</h1>
+              <h1 className={styles.header}>{this.props.project.name}</h1>
             </Col>
           </Row>
         </Container>
