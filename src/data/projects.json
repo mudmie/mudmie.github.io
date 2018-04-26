@@ -9,13 +9,19 @@
     "name": "Picking Process Experience",
     "subtitle": "Nulogy, Winter 2018",
     "url": "/projects/picking-process",
-    "image": "/images/Picking Process/banner.jpg"
+    "image": "/images/Picking/banner.jpg"
   },
   {
     "name": "VRulez",
     "subtitle": "Commercial Website, Winter 2018",
     "url": "/projects/vrulez",
     "image": "/images/Vrulez/banner.jpg"
+  },
+  {
+    "name": "Daily UI",
+    "subtitle": "Personal Project, Winter 2018",
+    "url": "/projects/DailyUI",
+    "image": "/images/DailyUI/banner.jpg"
   },
   {
     "name": "Craft Beer Ordering System",
