@@ -1,6 +1,6 @@
 import * as React from "react";
 import { ProjectHeader } from "../../components/project-header";
-import { ProjectPageProps } from "../../models/ProjectPageProps";
+import { ProjectPageProps } from "../../models/project-page-props";
 
 export default class RoundaboutCanadaPage extends React.Component<
   ProjectPageProps,
