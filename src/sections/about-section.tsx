@@ -29,8 +29,8 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
                   but the entire experience that sparks people’s joy and
                   simplify their lives.
                 </p>
-                <p className={styles.aboutPara}>
-                  I’m a third year Systems Design Engineering at the Univeristy
+                {/* <p className={styles.aboutPara}>
+                  I’m a third year Systems Design Engineering at the University
                   of Waterloo. My focus for 2018 is to keep learning UX/UI while
                   also catch up with development technology. Since the beginning
                   of the year, I’ve been pushing myself to work harder on visual
@@ -41,7 +41,7 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
                   inspires me to see the world in a broader picture and
                   understand people from different culture. Be a part of my
                   journey.
-                </p>
+                </p> */}
               </Col>
             </Row>
           </Container>

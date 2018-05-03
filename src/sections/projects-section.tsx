@@ -34,15 +34,17 @@ export class ProjectsSection extends React.Component<ProjectsSectionProps, {}> {
           {this.props.projects.map(proj => (
             <Col lg="4" sm="6" className={styles.projectCard} key={proj.name}>
               <Card>
-                <Link to={proj.url}>
-                  <CardImg
-                    src={withPrefix(proj.image)}
-                    alt={`project ${proj.name} image`}
-                  />
-                </Link>
+                {/* <Link to={proj.url}> */}
+                <CardImg
+                  src={withPrefix(proj.image)}
+                  alt={`project ${proj.name} image`}
+                />
+                {/* </Link> */}
                 <CardBody>
                   <CardTitle>
-                    <Link to={proj.url}>{proj.name}</Link>
+                    {/* <Link to={proj.url}> */}
+                    {proj.name}
+                    {/* </Link> */}
                   </CardTitle>
                   <CardSubtitle>{proj.subtitle}</CardSubtitle>
                 </CardBody>
