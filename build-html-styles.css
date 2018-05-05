@@ -29,7 +29,8 @@ html {
   overflow-y: scroll; }
 
 body {
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  color: #444444; }
 
 .navbar-light .navbar-nav .nav-link {
   color: #444444; }
