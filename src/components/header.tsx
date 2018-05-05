@@ -3,6 +3,7 @@ import { OutboundLink } from "gatsby-plugin-google-analytics";
 import * as React from "react";
 import { Collapse, Nav, NavItem, Navbar, NavbarToggler } from "reactstrap";
 import * as styles from "./header.scss";
+import * as logo from "../../static/images/Mudmie.png";
 
 export interface HeaderState {
   isOpen: boolean;
@@ -60,7 +61,7 @@ export class Header extends React.Component<{}, HeaderState> {
               this.collapseNav();
             }}
           >
-            Mudmie
+            <img src={logo} alt="Mudmie" className={styles.logo} />
           </Link>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

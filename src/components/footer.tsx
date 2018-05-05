@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
+import * as styles from "./footer.scss";
 
 export class Footer extends React.Component {
   public render() {
@@ -7,9 +8,10 @@ export class Footer extends React.Component {
       <footer>
         <Container>
           <Row>
-            <Col className="text-center">
-              Made With <i className="fa fa-heart" aria-hidden="true" /> Mudmie
-              © {new Date().getFullYear()}
+            <Col className={`text-center ${styles.footer}`}>
+              - made with love &amp; lots of matcha -
+              <br />
+              Mudmie © {new Date().getFullYear()}
             </Col>
           </Row>
         </Container>

@@ -14,12 +14,13 @@ export class IntroSection extends React.Component<IntroSectionProps, {}> {
         <a id={this.props.id} className={sharedStyles.sectionAnchor} />
         <Row style={{ position: "relative", minHeight: "500px" }}>
           <BackgroundAnimation />
-          <Col md="8" className={`text-center ${styles.colName}`}>
-            <h1 className={styles.name}>Mudmie Chuthamsatid</h1>
-            <hr className={styles.nameSeparator} />
-            <p className={styles.subtitle}>
-              a designer with engineering thoughts
-            </p>
+          <Col md="8" className={styles.colName}>
+            <div className={styles.nameBox}>
+              <h1 className={styles.name}>Mudmie Chuthamsatid</h1>
+              <p className={styles.subtitle}>
+                – a designer with engineering thoughts
+              </p>
+            </div>
           </Col>
         </Row>
       </Container>

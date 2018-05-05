@@ -1,7 +1,7 @@
 @import "../styles/_colors.scss";
 
 .navbar {
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out, opacity 0.5s ease-in-out;
   @media (min-width: 768px) {
     background-color: transparent !important;
   }
@@ -13,4 +13,17 @@
 
 .nav-link {
   font-weight: bold;
+}
+
+.logo {
+  max-width: 200px;
+  opacity: 0;
+
+  @media (max-width: 767px) {
+    opacity: 1;
+  }
+}
+
+.scroll .logo {
+  opacity: 1;
 }

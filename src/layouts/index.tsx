@@ -30,7 +30,6 @@ export default class DefaultLayout extends React.Component<
             src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
             defer
           />
-
           <link
             rel="apple-touch-icon"
             sizes="180x180"
