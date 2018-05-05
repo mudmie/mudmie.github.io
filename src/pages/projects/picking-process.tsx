@@ -1,6 +1,7 @@
 import * as React from "react";
 import { ProjectHeader } from "../../components/project-header";
 import { ProjectPageProps } from "../../models/project-page-props";
+import * as sharedStyles from "./styles.scss";
 
 export default class PickingProcessPage extends React.Component<
   ProjectPageProps,
@@ -8,12 +9,11 @@ export default class PickingProcessPage extends React.Component<
 > {
   public render() {
     return (
-      <>
+      <div className={sharedStyles.themeBrick}>
         <ProjectHeader
           project={this.props.data.allProjectsJson.edges[0].node}
-          color="header3"
         />
-      </>
+      </div>
     );
   }
 }

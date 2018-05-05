@@ -4,29 +4,11 @@
   margin-top: 80px;
 }
 
-.header1 {
-  h1 {
-    color: $project-main-purple;
-  }
-  h2 {
-    color: $project-sub-purple;
-  }
+.subtitle {
+  font-weight: normal;
 }
 
-.header2 {
-  h1 {
-    color: $project-main-orange;
-  }
-  h2 {
-    color: $project-sub-orange;
-  }
-}
-
-.header3 {
-  h1 {
-    color: $project-main-brick;
-  }
-  h2 {
-    color: $project-sub-brick;
-  }
+.small-dash {
+  border-top: 5px solid;
+  width: 50px;
 }

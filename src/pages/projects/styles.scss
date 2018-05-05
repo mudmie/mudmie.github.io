@@ -1,0 +1,47 @@
+@import "../../styles/_colors.scss";
+
+.theme-purple {
+  h1,
+  h3 {
+    color: $project-main-purple;
+  }
+  h2,
+  h4 {
+    color: $project-sub-purple;
+  }
+  hr {
+    border-top-color: $project-sub-purple;
+  }
+}
+
+.theme-orange {
+  h1,
+  h3 {
+    color: $project-main-orange;
+  }
+  h2,
+  h4 {
+    color: $project-sub-orange;
+  }
+  hr {
+    border-top-color: $project-sub-orange;
+  }
+}
+
+.theme-brick {
+  h1,
+  h3 {
+    color: $project-main-brick;
+  }
+  h2,
+  h4 {
+    color: $project-sub-brick;
+  }
+  hr {
+    border-top-color: $project-sub-brick;
+  }
+}
+
+.section-divider {
+  border-top: 2px solid #444;
+}
