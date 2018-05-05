@@ -17,16 +17,14 @@
     "react-helmet": "^5.2.0",
     "reactstrap": "^5.0.0"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "ISC",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.tsx src/**/*.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gatsby build && gh-pages -d public"
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.3",

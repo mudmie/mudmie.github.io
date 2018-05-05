@@ -41,7 +41,7 @@ export const pageQuery = graphql`
           name
           subtitle
           url
-          image
+          imageFolder
         }
       }
     }

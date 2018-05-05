@@ -24,21 +24,22 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
                   It's nice to have you here!
                 </h3>
                 <p className={styles.aboutPara}>
-                  I’m a third year Systems Design Engineering at the University
-                  of Waterloo. I love travelling the world and wandering around
-                  the cities — to eat, learn and get inspired. My perception
-                  towards design back in the days used to focus only around the
-                  aesthetic and the coolness of the products. When I took a
-                  human factor course in my first year, my whole perspective
-                  towards design changes. I realize that design is a lot more
-                  than the visual parts. In fact, good design communicates well,
-                  and therefore, it solve problems well too.
+                  I’m a third year Systems Design Engineering student at the
+                  University of Waterloo. I love travelling the world and
+                  wandering around the cities — to eat, learn, and get inspired.
+                  I used to think that good designs were just about aesthetics,
+                  but after taking a Human Factors in Design course in my first
+                  year, my whole perspective towards design has changed. A good
+                  design communicates clearly and solve problems well.
                 </p>
 
                 <p className={styles.aboutPara}>
                   — My mission as a product designer is not to just design
-                  beautiful stuff, but to design entire experience of products
-                  that sparks people’s joys and simplify people’s lives.
+                  beautiful stuff, but to design{" "}
+                  <i>
+                    an entire product experience that sparks people’s joy and
+                    simplify people’s lives.
+                  </i>
                 </p>
               </Col>
             </Row>

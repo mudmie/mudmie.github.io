@@ -11,6 +11,7 @@ export default class ForgetMeNotPage extends React.Component<
       <>
         <ProjectHeader
           project={this.props.data.allProjectsJson.edges[0].node}
+          color="header2"
         />
       </>
     );
@@ -24,7 +25,9 @@ export const pageQuery = graphql`
         node {
           name
           subtitle
+          description
           url
+          imageFolder
         }
       }
     }

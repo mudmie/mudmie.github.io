@@ -36,7 +36,7 @@ export class ProjectsSection extends React.Component<ProjectsSectionProps, {}> {
               <Card>
                 {/* <Link to={proj.url}> */}
                 <CardImg
-                  src={withPrefix(proj.image)}
+                  src={withPrefix(`/images/${proj.imageFolder}/banner.jpg`)}
                   alt={`project ${proj.name} image`}
                 />
                 {/* </Link> */}
