@@ -6,7 +6,9 @@ import * as sharedStyles from "./styles.scss";
 export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
   public render() {
     return (
-      <div className={sharedStyles.themePurple}>
+      <div
+        className={`${sharedStyles.projectPage} ${sharedStyles.themePurple}`}
+      >
         <ProjectHeader
           project={this.props.data.allProjectsJson.edges[0].node}
         />
@@ -17,7 +19,7 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
 
 export const pageQuery = graphql`
   query DailyUIQuery {
-    allProjectsJson(filter: { url: { eq: "/projects/shipment-audit-trail" } }) {
+    allProjectsJson(filter: { url: { eq: "/projects/daily-ui" } }) {
       edges {
         node {
           name

@@ -9,7 +9,9 @@ export default class ShipmentAuditTrailPage extends React.Component<
 > {
   public render() {
     return (
-      <div className={sharedStyles.themePurple}>
+      <div
+        className={`${sharedStyles.projectPage} ${sharedStyles.themePurple}`}
+      >
         <ProjectHeader
           project={this.props.data.allProjectsJson.edges[0].node}
         />

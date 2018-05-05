@@ -9,7 +9,9 @@ export default class RoundaboutCanadaPage extends React.Component<
 > {
   public render() {
     return (
-      <div className={sharedStyles.themeOrange}>
+      <div
+        className={`${sharedStyles.projectPage} ${sharedStyles.themeOrange}`}
+      >
         <ProjectHeader
           project={this.props.data.allProjectsJson.edges[0].node}
         />

@@ -9,7 +9,7 @@ export default class CraftBeerPage extends React.Component<
 > {
   public render() {
     return (
-      <div className={sharedStyles.themeBrick}>
+      <div className={`${sharedStyles.projectPage} ${sharedStyles.themeBrick}`}>
         <ProjectHeader
           project={this.props.data.allProjectsJson.edges[0].node}
         />

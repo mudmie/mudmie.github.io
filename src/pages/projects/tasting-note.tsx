@@ -11,7 +11,9 @@ export default class TastingNotePage extends React.Component<
 > {
   public render() {
     return (
-      <div className={sharedStyles.themeOrange}>
+      <div
+        className={`${sharedStyles.projectPage} ${sharedStyles.themeOrange}`}
+      >
         <ProjectHeader
           project={this.props.data.allProjectsJson.edges[0].node}
         />
@@ -23,16 +25,31 @@ export default class TastingNotePage extends React.Component<
                 — data is recorded in paper format before it gets transferred to
                 electronic format
               </h4>
-              <p>
-                Since LCBO is one of the world’s largest alcoholic beverage
-                purchasers, there are numbers of new products that need to be
-                evaluated each year. Currently, product consultants meet 3 times
-                a year to sample and document tasting notes of those new
-                products. After tasting the beverages, each consultant has to
-                record the notes in paper forms. The writing team is then
-                responsible to transfer the notes to digital format. This data
-                is important as it will later be used to create product
-                description, content for LCBO’s website and articles.
+              <ul>
+                <li>
+                  LCBO is one of the world's alcoholic beverage purchasers,
+                  there are numbers of new products need to be evaluated yearly.
+                </li>
+                <li>
+                  Product consultants meet 3 times a year to sample and document
+                  tasting notes of new products.
+                </li>
+                <li>
+                  After tasting each product, the consultants have to record the
+                  beverage notes in provided paper form.
+                </li>
+                <li>
+                  At the end of the tasting session, paper forms get transferred
+                  to the writing team to transcript the evaluation notes into
+                  digital format.
+                </li>
+              </ul>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="6">
+              <p className={sharedStyles.imageTitle}>
+                An example of beer evaluation form
               </p>
               <img
                 src={withPrefix(
@@ -50,19 +67,17 @@ export default class TastingNotePage extends React.Component<
               <h3>Identifying Problem</h3>
               <h4>— current process is labour intensive and prone to error</h4>
               <p>
-                After hearing thoughts from product consultants and the writing
-                team, a conclusion that the current process requires a
-                significant amount of manual effort is delivered. The entire
-                process of gathering, delivering paperworks and transferring
-                data requires a significant effort and is prone to error.
-                Because of the large amount of paper, it can be challenging for
-                product consultant to manage and organize all the forms. In
-                addition, it’s the pain for writers to go through piles of
-                paper, validate the quality of notes and manually enter the
-                notes to electronic system.{" "}
+                The existing evaluation method requires a significant amount of
+                manual effort. The entire process of gathering, delivering
+                paperwork and transferring data is time consuming and fallible.
+                While it's challenging for the product consultant to to manage
+                and organize all the evaluation forms, it's a pain for the
+                writing team to go through piles of paper, validate the quality
+                of data and manually enter the notes to electronic system.{" "}
               </p>
             </Col>
           </Row>
+
           <Row>
             <Col>
               <h3>Crafting the Experience</h3>
@@ -75,24 +90,30 @@ export default class TastingNotePage extends React.Component<
                   <b>User Persona — </b>
                   <i>understanding what user is going through </i>
                 </li>
-                <img
-                  src={withPrefix(
-                    `/images/${
-                      this.props.data.allProjectsJson.edges[0].node.imageFolder
-                    }/persona.png`
-                  )}
-                  alt="Tasting Note Evaluation Form"
-                  className="img-fluid"
-                />
-
                 <p>
+                  The beginning of one's worst nightmare —
+                  <br />
                   Imagine that there are at least 15 products to be evaluated by
                   10 consultants in today session. This means a minimum of 150
-                  copies of evaluation forms will be generated at the end of
-                  session. Keep in mind that in reality the tasting session is a
-                  big event, so there is a high possibility that there will be
-                  more that 15 products and 10 consultants.
+                  copies of the evaluation forms will be generated at the end of
+                  session.
                 </p>
+
+                <Row className="justify-content-center">
+                  <Col lg="6">
+                    <img
+                      src={withPrefix(
+                        `/images/${
+                          this.props.data.allProjectsJson.edges[0].node
+                            .imageFolder
+                        }/persona.png`
+                      )}
+                      alt="Tasting Note Evaluation Form"
+                      className="img-fluid"
+                    />
+                  </Col>
+                </Row>
+
                 <li>
                   <b> Wireframes — </b>{" "}
                   <i>
@@ -101,38 +122,46 @@ export default class TastingNotePage extends React.Component<
                     get feedback from stakeholders
                   </i>
                 </li>
-                <img
-                  src={withPrefix(
-                    `/images/${
-                      this.props.data.allProjectsJson.edges[0].node.imageFolder
-                    }/wireframes.jpg`
-                  )}
-                  alt="Tasting Note Evaluation Form"
-                  className="img-fluid"
-                />
                 <p>
-                  After reviewing user’s problem and persona, I decided to
-                  design a mobile application that will allow product consultant
-                  to see list of products that they need to evaluate, select and
-                  evaluate the product and submit the data digitally. - choose
-                  mobile because easy to carry and it’s a device that LCBO staff
-                  already use in store so no new investment in device required I
-                  design the application with an intention that list of products
-                  to be evaluated will be entered to the system prior to the
-                  tasting session. During the session, product consultants will
-                  see the list of products that they have to evaluate then they
-                  can select the item that they are evaluating. I adopt the
-                  concept of multiple choice answers to design the platform for
-                  the user to input the their notes (mimicking the action of
-                  circling answers from original form). With this method, the
-                  user simply tabs buttons that represent the answer of their
-                  choice. After select one answer, they will proceed to the next
-                  question. This eliminates the needs to processing lots of
-                  information at once. For answer that require longer input, the
-                  user will be able to type into text fields. The notes will be
-                  automatically stores to a central database.
+                  After reviewing user’s problem and persona, I decided to to
                 </p>
+                <ul>
+                  <li>
+                    propose that lists of products to be evaluated will be
+                    entered to the system prior to the tasting session and the
+                    notes will be automatically stored in the central database
+                    after submission.
+                  </li>
+                  <li>
+                    choose mobile as a platform device since it's portable and
+                    currently used by some of LCBO staff at the store.
+                  </li>
+                  <li>
+                    design a mobile application that allows product consultants
+                    to see list products that need to be evaluated, select and
+                    evaluate products then submit the forms electronically.
+                  </li>
+
+                  <li>
+                    adopt a concept of multiple choice answers to craft the user
+                    experience. The users will simply tab buttons that represent
+                    their answers before proceeding to the next question. With
+                    this approach, the users can focus on one task without
+                    having to process lots of information at once.
+                  </li>
+                  <li>use text field as a channel to receive longer input </li>
+                </ul>
                 <li>
+                  <img
+                    src={withPrefix(
+                      `/images/${
+                        this.props.data.allProjectsJson.edges[0].node
+                          .imageFolder
+                      }/wireframes.jpg`
+                    )}
+                    alt="Tasting Note Evaluation Form"
+                    className="img-fluid"
+                  />
                   <b> Mockups — </b>{" "}
                   <i>
                     {" "}
@@ -149,7 +178,6 @@ export default class TastingNotePage extends React.Component<
                   alt="Tasting Note Evaluation Form"
                   className="img-fluid"
                 />
-                <p>snake snake fish fish</p>
               </ul>
             </Col>
           </Row>

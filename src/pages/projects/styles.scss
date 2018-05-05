@@ -1,5 +1,17 @@
 @import "../../styles/_colors.scss";
 
+.project-page {
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 16px;
+    font-style: italic;
+  }
+}
 .theme-purple {
   h1,
   h3 {
@@ -42,6 +54,7 @@
   }
 }
 
-.section-divider {
-  border-top: 2px solid #444;
+.image-title {
+  margin: 5px 0 5px 0;
+  text-align: center;
 }

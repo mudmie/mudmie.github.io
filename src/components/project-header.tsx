@@ -28,7 +28,7 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
             <Col lg="10">
               <img
                 src={withPrefix(
-                  `/images/${this.props.project.imageFolder}/main.jpg`
+                  `/images/${this.props.project.imageFolder}/main.png`
                 )}
                 alt="main project image"
                 className="img-fluid"

@@ -6,7 +6,9 @@ import * as sharedStyles from "./styles.scss";
 export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
   public render() {
     return (
-      <div className={sharedStyles.themeOrange}>
+      <div
+        className={`${sharedStyles.projectPage} ${sharedStyles.themeOrange}`}
+      >
         <ProjectHeader
           project={this.props.data.allProjectsJson.edges[0].node}
         />
