@@ -1,0 +1,2 @@
+webpackJsonp([0xd4c318c02e45],{287:function(e,t){e.exports={data:{allProjectsJson:{edges:[{node:{name:"Tasting Note Mobile Application",subtitle:"LCBO, Spring 2017",description:"a data collecting mobile application, designed as an initiative to replace existing paper forms for evaluating beverage products.",url:"/projects/tasting-note",imageFolder:"Tasting Note"}}]}},pathContext:{}}}});
+//# sourceMappingURL=path---projects-tasting-note-c3c4f746efb8cb1bd9d1.js.map
