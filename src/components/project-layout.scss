@@ -1,0 +1,48 @@
+@import "../styles/_colors.scss";
+
+.project-page {
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 16px;
+    font-style: italic;
+  }
+}
+
+@mixin project-theme($primary-color, $secondary-color) {
+  h1 {
+    color: $primary-color;
+  }
+  h2 {
+    color: $secondary-color;
+  }
+  hr {
+    border-top-color: $secondary-color;
+  }
+  :global .btn {
+    color: $primary-color;
+    border-color: $primary-color;
+
+    &:hover,
+    &:active {
+      color: #fff;
+      background-color: $secondary-color;
+    }
+  }
+}
+
+.theme-purple {
+  @include project-theme($project-main-purple, $project-sub-purple);
+}
+
+.theme-orange {
+  @include project-theme($project-main-orange, $project-sub-orange);
+}
+
+.theme-brick {
+  @include project-theme($project-main-brick, $project-sub-brick);
+}

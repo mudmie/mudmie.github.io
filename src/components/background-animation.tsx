@@ -31,7 +31,7 @@ export class BackgroundAnimation extends React.Component {
           <svg
             width="1008px"
             height="423px"
-            viewBox="0 0 1008 405"
+            viewBox="0 -3 1008 405"
             className={styles.svgBottom}
           >
             <path

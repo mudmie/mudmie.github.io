@@ -1,9 +1,8 @@
 import { withPrefix } from "gatsby-link";
 import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
-import { ProjectHeader } from "../../components/project-header";
+import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
-import * as sharedStyles from "./styles.scss";
 
 export default class ForgetMeNotPage extends React.Component<
   ProjectPageProps,
@@ -11,10 +10,11 @@ export default class ForgetMeNotPage extends React.Component<
 > {
   public render() {
     return (
-      <div className={`${sharedStyles.projectPage} ${sharedStyles.themeBrick}`}>
-        <ProjectHeader
-          project={this.props.data.allProjectsJson.edges[0].node}
-        />
+      <ProjectLayout
+        allProjects={this.props.data.allProjects.edges.map(e => e.node)}
+        currentProject={this.props.data.project.edges[0].node}
+        mainImage={this.props.data.mainImage.childImageSharp.sizes}
+      >
         <Container>
           <Row>
             <Col>
@@ -34,7 +34,7 @@ export default class ForgetMeNotPage extends React.Component<
               <img
                 src={withPrefix(
                   `/images/${
-                    this.props.data.allProjectsJson.edges[0].node.imageFolder
+                    this.props.data.project.edges[0].node.imageFolder
                   }/1.png`
                 )}
                 alt="Tasting Note Evaluation Form"
@@ -63,7 +63,7 @@ export default class ForgetMeNotPage extends React.Component<
                 <img
                   src={withPrefix(
                     `/images/${
-                      this.props.data.allProjectsJson.edges[0].node.imageFolder
+                      this.props.data.project.edges[0].node.imageFolder
                     }/2.png`
                   )}
                   alt="Tasting Note Evaluation Form"
@@ -73,23 +73,21 @@ export default class ForgetMeNotPage extends React.Component<
             </Col>
           </Row>
         </Container>
-      </div>
+      </ProjectLayout>
     );
   }
 }
 
 export const pageQuery = graphql`
-  query ForgetMeNotQuery {
-    allProjectsJson(filter: { url: { eq: "/projects/forget-me-not" } }) {
-      edges {
-        node {
-          name
-          subtitle
-          description
-          url
-          imageFolder
-        }
-      }
+  query ForgetMeNotQuery($path: String!) {
+    allProjects: allProjectsJson {
+      ...ProjectFields
+    }
+    project: allProjectsJson(filter: { url: { eq: $path } }) {
+      ...ProjectFields
+    }
+    mainImage: file(relativePath: { eq: "Forget Me Not/main.png" }) {
+      ...MainImageSizes
     }
   }
 `;

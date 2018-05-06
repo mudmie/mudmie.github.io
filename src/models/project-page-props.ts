@@ -2,10 +2,20 @@ import { Project } from "./project";
 
 export interface ProjectPageProps {
   data: {
-    allProjectsJson: {
+    allProjects: {
       edges: {
         node: Project;
       }[];
+    };
+    project: {
+      edges: {
+        node: Project;
+      }[];
+    };
+    mainImage: {
+      childImageSharp: {
+        sizes: any;
+      };
     };
   };
 }

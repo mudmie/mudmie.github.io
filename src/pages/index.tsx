@@ -20,7 +20,9 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
     return (
       <>
         <Helmet titleTemplate="">
-          <title>Mudmie Chuthamsatid - A designer with engineering thoughts</title>
+          <title>
+            Mudmie Chuthamsatid - A designer with engineering thoughts
+          </title>
         </Helmet>
         <IntroSection id="home" />
         <AboutSection id="about" />
@@ -36,14 +38,7 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
 export const pageQuery = graphql`
   query IndexPageQuery {
     allProjectsJson {
-      edges {
-        node {
-          name
-          subtitle
-          url
-          imageFolder
-        }
-      }
+      ...ProjectFields
     }
   }
 `;

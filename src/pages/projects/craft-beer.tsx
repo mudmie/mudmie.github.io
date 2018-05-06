@@ -1,9 +1,8 @@
 import { withPrefix } from "gatsby-link";
 import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
-import { ProjectHeader } from "../../components/project-header";
+import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
-import * as sharedStyles from "./styles.scss";
 
 export default class CraftBeerPage extends React.Component<
   ProjectPageProps,
@@ -11,10 +10,11 @@ export default class CraftBeerPage extends React.Component<
 > {
   public render() {
     return (
-      <div className={`${sharedStyles.projectPage} ${sharedStyles.themeBrick}`}>
-        <ProjectHeader
-          project={this.props.data.allProjectsJson.edges[0].node}
-        />
+      <ProjectLayout
+        allProjects={this.props.data.allProjects.edges.map(e => e.node)}
+        currentProject={this.props.data.project.edges[0].node}
+        mainImage={this.props.data.mainImage.childImageSharp.sizes}
+      >
         <Container>
           <Row>
             <Col>
@@ -158,8 +158,7 @@ export default class CraftBeerPage extends React.Component<
                   <img
                     src={withPrefix(
                       `/images/${
-                        this.props.data.allProjectsJson.edges[0].node
-                          .imageFolder
+                        this.props.data.project.edges[0].node.imageFolder
                       }/wbs.png`
                     )}
                     alt="Tasting Note Evaluation Form"
@@ -188,8 +187,7 @@ export default class CraftBeerPage extends React.Component<
                   <img
                     src={withPrefix(
                       `/images/${
-                        this.props.data.allProjectsJson.edges[0].node
-                          .imageFolder
+                        this.props.data.project.edges[0].node.imageFolder
                       }/wireframes.png`
                     )}
                     alt="Tasting Note Evaluation Form"
@@ -243,8 +241,7 @@ export default class CraftBeerPage extends React.Component<
                   <img
                     src={withPrefix(
                       `/images/${
-                        this.props.data.allProjectsJson.edges[0].node
-                          .imageFolder
+                        this.props.data.project.edges[0].node.imageFolder
                       }/full.png`
                     )}
                     alt="Tasting Note Evaluation Form"
@@ -255,23 +252,21 @@ export default class CraftBeerPage extends React.Component<
             </Col>
           </Row>
         </Container>
-      </div>
+      </ProjectLayout>
     );
   }
 }
 
 export const pageQuery = graphql`
-  query CraftBeerQuery {
-    allProjectsJson(filter: { url: { eq: "/projects/craft-beer" } }) {
-      edges {
-        node {
-          name
-          subtitle
-          description
-          url
-          imageFolder
-        }
-      }
+  query CraftBeerQuery($path: String!) {
+    allProjects: allProjectsJson {
+      ...ProjectFields
+    }
+    project: allProjectsJson(filter: { url: { eq: $path } }) {
+      ...ProjectFields
+    }
+    mainImage: file(relativePath: { eq: "Craft Beer/main.png" }) {
+      ...MainImageSizes
     }
   }
 `;
