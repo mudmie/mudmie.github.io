@@ -3,6 +3,10 @@
 .col-name {
   padding-top: 300px;
   text-align: center;
+
+  @media (max-width: 767px) {
+    padding-top: 190px;
+  }
 }
 .name-box {
   display: inline-block;
