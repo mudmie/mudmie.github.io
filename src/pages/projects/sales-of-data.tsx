@@ -1,7 +1,7 @@
 import * as React from "react";
-import { ProjectHeader } from "../../components/project-header";
+import { Col, Container, Row } from "reactstrap";
+import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
-import * as sharedStyles from "./styles.scss";
 
 export default class SalesOfDataPage extends React.Component<
   ProjectPageProps,
@@ -9,29 +9,33 @@ export default class SalesOfDataPage extends React.Component<
 > {
   public render() {
     return (
-      <div
-        className={`${sharedStyles.projectPage} ${sharedStyles.themePurple}`}
+      <ProjectLayout
+        allProjects={this.props.data.allProjects.edges.map(e => e.node)}
+        project={this.props.data.project.edges[0].node}
+        mainImage={this.props.data.mainImage.childImageSharp.sizes}
       >
-        <ProjectHeader
-          project={this.props.data.allProjectsJson.edges[0].node}
-        />
-      </div>
+        <Container>
+          <Row>
+            <Col>TODO</Col>
+          </Row>
+        </Container>
+      </ProjectLayout>
     );
   }
 }
 
 export const pageQuery = graphql`
   query SalesOfDataQuery {
-    allProjectsJson(filter: { url: { eq: "/projects/sales-of-data" } }) {
-      edges {
-        node {
-          name
-          subtitle
-          description
-          url
-          imageFolder
-        }
-      }
+    allProjects: allProjectsJson {
+      ...ProjectFields
+    }
+    project: allProjectsJson(
+      filter: { url: { eq: "/projects/sales-of-data" } }
+    ) {
+      ...ProjectFields
+    }
+    mainImage: file(relativePath: { eq: "Sales of Data/main.png" }) {
+      ...MainImageSizes
     }
   }
 `;

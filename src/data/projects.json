@@ -5,7 +5,8 @@
     "description":
       "A feature that records activities performed throughout shipping process.",
     "url": "/projects/shipment-audit-trail",
-    "imageFolder": "Audit Trail"
+    "imageFolder": "Audit Trail",
+    "theme": "Purple"
   },
   {
     "name": "Picking Process Experience",
@@ -13,7 +14,8 @@
     "description":
       "A journey of user research to solve Forklift Operator's pain in picking process.",
     "url": "/projects/picking-process",
-    "imageFolder": "Picking"
+    "imageFolder": "Picking",
+    "theme": "Brick"
   },
   {
     "name": "VRulez",
@@ -21,14 +23,16 @@
     "description":
       "A fully responsive commercial website, built with React and Gatsby, for a virtual reality arcade business in Toronto.",
     "url": "/projects/vrulez",
-    "imageFolder": "Vrulez"
+    "imageFolder": "Vrulez",
+    "theme": "Orange"
   },
   {
     "name": "Daily UI",
     "subtitle": "Personal Project, Winter 2018",
     "description": "A collection of my UI design practices.",
     "url": "/projects/daily-ui",
-    "imageFolder": "DailyUI"
+    "imageFolder": "DailyUI",
+    "theme": "Purple"
   },
   {
     "name": "Craft Beer Ordering System",
@@ -36,7 +40,8 @@
     "description":
       "An online craft beer ordering system that connects LCBO employees at the stores with craft brewers. ",
     "url": "/projects/craft-beer",
-    "imageFolder": "Craft Beer"
+    "imageFolder": "Craft Beer",
+    "theme": "Brick"
   },
   {
     "name": "Tasting Note Mobile Application",
@@ -44,7 +49,8 @@
     "description":
       "A data collecting mobile application, designed as an initiative to replace existing paper forms for evaluating beverage products.",
     "url": "/projects/tasting-note",
-    "imageFolder": "Tasting Note"
+    "imageFolder": "Tasting Note",
+    "theme": "Orange"
   },
   {
     "name": "Sales of Data Web Application",
@@ -52,7 +58,8 @@
     "description":
       "A web portal that provides sales insights and analysis to small-medium sized LCBO business partners.",
     "url": "/projects/sales-of-data",
-    "imageFolder": "Sales of Data"
+    "imageFolder": "Sales of Data",
+    "theme": "Purple"
   },
   {
     "name": "Forget Me Not",
@@ -60,7 +67,8 @@
     "description":
       "Forget Me Not is a simple mobile application that acts like one's personal planner. It helps remind the user of their to-dos.",
     "url": "/projects/forget-me-not",
-    "imageFolder": "Forget Me Not"
+    "imageFolder": "Forget Me Not",
+    "theme": "Brick"
   },
   {
     "name": "Escape Room Website",
@@ -68,6 +76,7 @@
     "description":
       "A fully responsive commercial website, built with HTML 5, CSS 3, JavaScript and Boostrap, for an escape room business in Toronto.",
     "url": "/projects/roundabout-canada",
-    "imageFolder": "Roundabout"
+    "imageFolder": "Roundabout",
+    "theme": "Orange"
   }
 ]

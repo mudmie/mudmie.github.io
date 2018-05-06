@@ -1,9 +1,8 @@
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
-import { ProjectHeader } from "../../components/project-header";
+import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
-import * as sharedStyles from "./styles.scss";
 
 export default class RoundaboutCanadaPage extends React.Component<
   ProjectPageProps,
@@ -11,19 +10,18 @@ export default class RoundaboutCanadaPage extends React.Component<
 > {
   public render() {
     return (
-      <div
-        className={`${sharedStyles.projectPage} ${sharedStyles.themeOrange}`}
+      <ProjectLayout
+        allProjects={this.props.data.allProjects.edges.map(e => e.node)}
+        project={this.props.data.project.edges[0].node}
+        mainImage={this.props.data.mainImage.childImageSharp.sizes}
       >
-        <ProjectHeader
-          project={this.props.data.allProjectsJson.edges[0].node}
-        />
         <Container>
           <Row>
             <Col className="text-center">
               <OutboundLink
                 href="http://www.mudmie.com/roundabout"
                 target="_blank"
-                className={`btn ${sharedStyles.btn}`}
+                className="btn"
               >
                 Visit the site
               </OutboundLink>
@@ -160,23 +158,23 @@ export default class RoundaboutCanadaPage extends React.Component<
             </Col>
           </Row>
         </Container>
-      </div>
+      </ProjectLayout>
     );
   }
 }
 
 export const pageQuery = graphql`
   query RoundaboutCanadaQuery {
-    allProjectsJson(filter: { url: { eq: "/projects/roundabout-canada" } }) {
-      edges {
-        node {
-          name
-          subtitle
-          description
-          url
-          imageFolder
-        }
-      }
+    allProjects: allProjectsJson {
+      ...ProjectFields
+    }
+    project: allProjectsJson(
+      filter: { url: { eq: "/projects/roundabout-canada" } }
+    ) {
+      ...ProjectFields
+    }
+    mainImage: file(relativePath: { eq: "Roundabout/main.png" }) {
+      ...MainImageSizes
     }
   }
 `;

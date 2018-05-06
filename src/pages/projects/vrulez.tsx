@@ -1,34 +1,36 @@
 import * as React from "react";
-import { ProjectHeader } from "../../components/project-header";
+import { Col, Container, Row } from "reactstrap";
+import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
-import * as sharedStyles from "./styles.scss";
 
 export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
   public render() {
     return (
-      <div
-        className={`${sharedStyles.projectPage} ${sharedStyles.themeOrange}`}
+      <ProjectLayout
+        allProjects={this.props.data.allProjects.edges.map(e => e.node)}
+        project={this.props.data.project.edges[0].node}
+        mainImage={this.props.data.mainImage.childImageSharp.sizes}
       >
-        <ProjectHeader
-          project={this.props.data.allProjectsJson.edges[0].node}
-        />
-      </div>
+        <Container>
+          <Row>
+            <Col>TODO</Col>
+          </Row>
+        </Container>
+      </ProjectLayout>
     );
   }
 }
 
 export const pageQuery = graphql`
   query VrulezQuery {
-    allProjectsJson(filter: { url: { eq: "/projects/vrulez" } }) {
-      edges {
-        node {
-          name
-          subtitle
-          description
-          url
-          imageFolder
-        }
-      }
+    allProjects: allProjectsJson {
+      ...ProjectFields
+    }
+    project: allProjectsJson(filter: { url: { eq: "/projects/vrulez" } }) {
+      ...ProjectFields
+    }
+    mainImage: file(relativePath: { eq: "Vrulez/main.png" }) {
+      ...MainImageSizes
     }
   }
 `;

@@ -1,7 +1,7 @@
 import { withPrefix } from "gatsby-link";
 import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
-import { ProjectHeader } from "../../components/project-header";
+import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
 import * as sharedStyles from "./styles.scss";
 
@@ -11,12 +11,11 @@ export default class TastingNotePage extends React.Component<
 > {
   public render() {
     return (
-      <div
-        className={`${sharedStyles.projectPage} ${sharedStyles.themeOrange}`}
+      <ProjectLayout
+        allProjects={this.props.data.allProjects.edges.map(e => e.node)}
+        project={this.props.data.project.edges[0].node}
+        mainImage={this.props.data.mainImage.childImageSharp.sizes}
       >
-        <ProjectHeader
-          project={this.props.data.allProjectsJson.edges[0].node}
-        />
         <Container>
           <Row>
             <Col>
@@ -55,7 +54,7 @@ export default class TastingNotePage extends React.Component<
               <img
                 src={withPrefix(
                   `/images/${
-                    this.props.data.allProjectsJson.edges[0].node.imageFolder
+                    this.props.data.project.edges[0].node.imageFolder
                   }/form.png`
                 )}
                 alt="Tasting Note Evaluation Form"
@@ -103,8 +102,7 @@ export default class TastingNotePage extends React.Component<
                     <img
                       src={withPrefix(
                         `/images/${
-                          this.props.data.allProjectsJson.edges[0].node
-                            .imageFolder
+                          this.props.data.project.edges[0].node.imageFolder
                         }/persona.png`
                       )}
                       alt="Tasting Note Evaluation Form"
@@ -150,7 +148,7 @@ export default class TastingNotePage extends React.Component<
                 <img
                   src={withPrefix(
                     `/images/${
-                      this.props.data.allProjectsJson.edges[0].node.imageFolder
+                      this.props.data.project.edges[0].node.imageFolder
                     }/wireframes.jpg`
                   )}
                   alt="Tasting Note Evaluation Form"
@@ -162,7 +160,7 @@ export default class TastingNotePage extends React.Component<
                 <img
                   src={withPrefix(
                     `/images/${
-                      this.props.data.allProjectsJson.edges[0].node.imageFolder
+                      this.props.data.project.edges[0].node.imageFolder
                     }/full.png`
                   )}
                   alt="Tasting Note Evaluation Form"
@@ -172,23 +170,23 @@ export default class TastingNotePage extends React.Component<
             </Col>
           </Row>
         </Container>
-      </div>
+      </ProjectLayout>
     );
   }
 }
 
 export const pageQuery = graphql`
   query TastingNoteQuery {
-    allProjectsJson(filter: { url: { eq: "/projects/tasting-note" } }) {
-      edges {
-        node {
-          name
-          subtitle
-          description
-          url
-          imageFolder
-        }
-      }
+    allProjects: allProjectsJson {
+      ...ProjectFields
+    }
+    project: allProjectsJson(
+      filter: { url: { eq: "/projects/tasting-note" } }
+    ) {
+      ...ProjectFields
+    }
+    mainImage: file(relativePath: { eq: "Tasting Note/main.png" }) {
+      ...MainImageSizes
     }
   }
 `;

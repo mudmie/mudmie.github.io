@@ -1,7 +1,7 @@
 import * as React from "react";
-import { ProjectHeader } from "../../components/project-header";
+import { Col, Container, Row } from "reactstrap";
+import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
-import * as sharedStyles from "./styles.scss";
 
 export default class PickingProcessPage extends React.Component<
   ProjectPageProps,
@@ -9,27 +9,33 @@ export default class PickingProcessPage extends React.Component<
 > {
   public render() {
     return (
-      <div className={`${sharedStyles.projectPage} ${sharedStyles.themeBrick}`}>
-        <ProjectHeader
-          project={this.props.data.allProjectsJson.edges[0].node}
-        />
-      </div>
+      <ProjectLayout
+        allProjects={this.props.data.allProjects.edges.map(e => e.node)}
+        project={this.props.data.project.edges[0].node}
+        mainImage={this.props.data.mainImage.childImageSharp.sizes}
+      >
+        <Container>
+          <Row>
+            <Col>TODO</Col>
+          </Row>
+        </Container>
+      </ProjectLayout>
     );
   }
 }
 
 export const pageQuery = graphql`
   query PickingProcessQuery {
-    allProjectsJson(filter: { url: { eq: "/projects/picking-process" } }) {
-      edges {
-        node {
-          name
-          subtitle
-          description
-          url
-          imageFolder
-        }
-      }
+    allProjects: allProjectsJson {
+      ...ProjectFields
+    }
+    project: allProjectsJson(
+      filter: { url: { eq: "/projects/picking-process" } }
+    ) {
+      ...ProjectFields
+    }
+    mainImage: file(relativePath: { eq: "Picking/main.png" }) {
+      ...MainImageSizes
     }
   }
 `;
