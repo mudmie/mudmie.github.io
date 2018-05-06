@@ -1,8 +1,8 @@
+import { withPrefix } from "gatsby-link";
 import * as React from "react";
+import { Col, Container, Row } from "reactstrap";
 import { ProjectHeader } from "../../components/project-header";
 import { ProjectPageProps } from "../../models/project-page-props";
-import { Container, Row, Col } from "reactstrap";
-import { withPrefix } from "gatsby-link";
 import * as sharedStyles from "./styles.scss";
 
 export default class TastingNotePage extends React.Component<
@@ -27,8 +27,9 @@ export default class TastingNotePage extends React.Component<
               </h4>
               <ul>
                 <li>
-                  LCBO is one of the world's largest alcoholic beverage purchasers,
-                  there are numbers of new products need to be evaluated yearly.
+                  LCBO is one of the world's largest alcoholic beverage
+                  purchasers, there are numbers of new products need to be
+                  evaluated yearly.
                 </li>
                 <li>
                   Product consultants meet 3 times a year to sample and document
@@ -91,10 +92,10 @@ export default class TastingNotePage extends React.Component<
                   <i>understanding what user is going through </i>
                 </li>
                 <p>
-                  The beginning of one's worst nightmare: imagine that there are at least 15 products to be evaluated by
-                  10 consultants in today session. This means a minimum of 150
-                  copies of the evaluation forms will be generated at the end of
-                  session.
+                  The beginning of one's worst nightmare: imagine that there are
+                  at least 15 products to be evaluated by 10 consultants in
+                  today session. This means a minimum of 150 copies of the
+                  evaluation forms will be generated at the end of session.
                 </p>
 
                 <Row className="justify-content-center">
@@ -115,13 +116,11 @@ export default class TastingNotePage extends React.Component<
                 <li>
                   <b> Wireframes — </b>{" "}
                   <i>
-                    creating the first low-fidelity prototype to present ideas &amp;
-                    get feedback from stakeholders
+                    creating the first low-fidelity prototype to present ideas
+                    &amp; get feedback from stakeholders
                   </i>
                 </li>
-                <p>
-                  After reviewing user’s problem and persona, I decided to 
-                </p>
+                <p>After reviewing user’s problem and persona, I decided to</p>
                 <ul>
                   <li>
                     propose that lists of products to be evaluated will be
@@ -149,18 +148,16 @@ export default class TastingNotePage extends React.Component<
                   <li>use text field as a channel to receive longer input </li>
                 </ul>
                 <img
-                    src={withPrefix(
-                      `/images/${
-                        this.props.data.allProjectsJson.edges[0].node
-                          .imageFolder
-                      }/wireframes.jpg`
-                    )}
-                    alt="Tasting Note Evaluation Form"
-                    className="img-fluid"
-                  />
+                  src={withPrefix(
+                    `/images/${
+                      this.props.data.allProjectsJson.edges[0].node.imageFolder
+                    }/wireframes.jpg`
+                  )}
+                  alt="Tasting Note Evaluation Form"
+                  className="img-fluid"
+                />
                 <li>
                   <b> Mockups </b>{" "}
-              
                 </li>
                 <img
                   src={withPrefix(
