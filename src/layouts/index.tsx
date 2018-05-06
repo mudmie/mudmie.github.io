@@ -16,12 +16,11 @@ export default class DefaultLayout extends React.Component<
   public render() {
     return (
       <>
-        <Helmet titleTemplate="%s - Projects - Mudmie Chuthamsatid">
+        <Helmet titleTemplate="%s - Projects - Mudmie Chuthamsatid - A designer with engineering thoughts">
           <html lang="en" />
           <meta charSet="utf-8" />
           <meta name="description" content="" />
           <meta name="keywords" content="" />
-          <title>Mudmie Chuthamsatid</title>
           <link
             href="https://fonts.googleapis.com/css?family=Raleway:300,400,700"
             rel="stylesheet"
