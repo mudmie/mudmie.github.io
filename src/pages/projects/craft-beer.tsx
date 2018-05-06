@@ -258,11 +258,11 @@ export default class CraftBeerPage extends React.Component<
 }
 
 export const pageQuery = graphql`
-  query CraftBeerQuery {
+  query CraftBeerQuery($path: String!) {
     allProjects: allProjectsJson {
       ...ProjectFields
     }
-    project: allProjectsJson(filter: { url: { eq: "/projects/craft-beer" } }) {
+    project: allProjectsJson(filter: { url: { eq: $path } }) {
       ...ProjectFields
     }
     mainImage: file(relativePath: { eq: "Craft Beer/main.png" }) {

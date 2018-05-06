@@ -25,13 +25,11 @@ export default class SalesOfDataPage extends React.Component<
 }
 
 export const pageQuery = graphql`
-  query SalesOfDataQuery {
+  query SalesOfDataQuery($path: String!) {
     allProjects: allProjectsJson {
       ...ProjectFields
     }
-    project: allProjectsJson(
-      filter: { url: { eq: "/projects/sales-of-data" } }
-    ) {
+    project: allProjectsJson(filter: { url: { eq: $path } }) {
       ...ProjectFields
     }
     mainImage: file(relativePath: { eq: "Sales of Data/main.png" }) {

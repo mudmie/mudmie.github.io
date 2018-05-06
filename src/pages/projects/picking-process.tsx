@@ -25,13 +25,11 @@ export default class PickingProcessPage extends React.Component<
 }
 
 export const pageQuery = graphql`
-  query PickingProcessQuery {
+  query PickingProcessQuery($path: String!) {
     allProjects: allProjectsJson {
       ...ProjectFields
     }
-    project: allProjectsJson(
-      filter: { url: { eq: "/projects/picking-process" } }
-    ) {
+    project: allProjectsJson(filter: { url: { eq: $path } }) {
       ...ProjectFields
     }
     mainImage: file(relativePath: { eq: "Picking/main.png" }) {

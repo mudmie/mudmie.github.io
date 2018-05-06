@@ -4,7 +4,7 @@
     "subtitle": "Nulogy, Winter 2018",
     "description":
       "A feature that records activities performed throughout shipping process.",
-    "url": "/projects/shipment-audit-trail",
+    "url": "/projects/shipment-audit-trail/",
     "imageFolder": "Audit Trail",
     "theme": "Purple"
   },
@@ -13,7 +13,7 @@
     "subtitle": "Nulogy, Winter 2018",
     "description":
       "A journey of user research to solve Forklift Operator's pain in picking process.",
-    "url": "/projects/picking-process",
+    "url": "/projects/picking-process/",
     "imageFolder": "Picking",
     "theme": "Brick"
   },
@@ -22,7 +22,7 @@
     "subtitle": "Commercial Website, Winter 2018",
     "description":
       "A fully responsive commercial website, built with React and Gatsby, for a virtual reality arcade business in Toronto.",
-    "url": "/projects/vrulez",
+    "url": "/projects/vrulez/",
     "imageFolder": "Vrulez",
     "theme": "Orange"
   },
@@ -30,7 +30,7 @@
     "name": "Daily UI",
     "subtitle": "Personal Project, Winter 2018",
     "description": "A collection of my UI design practices.",
-    "url": "/projects/daily-ui",
+    "url": "/projects/daily-ui/",
     "imageFolder": "DailyUI",
     "theme": "Purple"
   },
@@ -39,7 +39,7 @@
     "subtitle": "LCBO, Spring 2017",
     "description":
       "An online craft beer ordering system that connects LCBO employees at the stores with craft brewers. ",
-    "url": "/projects/craft-beer",
+    "url": "/projects/craft-beer/",
     "imageFolder": "Craft Beer",
     "theme": "Brick"
   },
@@ -48,7 +48,7 @@
     "subtitle": "LCBO, Spring 2017",
     "description":
       "A data collecting mobile application, designed as an initiative to replace existing paper forms for evaluating beverage products.",
-    "url": "/projects/tasting-note",
+    "url": "/projects/tasting-note/",
     "imageFolder": "Tasting Note",
     "theme": "Orange"
   },
@@ -57,7 +57,7 @@
     "subtitle": "LCBO, Spring 2017",
     "description":
       "A web portal that provides sales insights and analysis to small-medium sized LCBO business partners.",
-    "url": "/projects/sales-of-data",
+    "url": "/projects/sales-of-data/",
     "imageFolder": "Sales of Data",
     "theme": "Purple"
   },
@@ -66,7 +66,7 @@
     "subtitle": "Personal Project, Fall 2016",
     "description":
       "Forget Me Not is a simple mobile application that acts like one's personal planner. It helps remind the user of their to-dos.",
-    "url": "/projects/forget-me-not",
+    "url": "/projects/forget-me-not/",
     "imageFolder": "Forget Me Not",
     "theme": "Brick"
   },
@@ -75,7 +75,7 @@
     "subtitle": "Roundabout Canada, Winter 2016",
     "description":
       "A fully responsive commercial website, built with HTML 5, CSS 3, JavaScript and Boostrap, for an escape room business in Toronto.",
-    "url": "/projects/roundabout-canada",
+    "url": "/projects/roundabout-canada/",
     "imageFolder": "Roundabout",
     "theme": "Orange"
   }

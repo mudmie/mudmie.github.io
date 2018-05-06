@@ -79,13 +79,11 @@ export default class ForgetMeNotPage extends React.Component<
 }
 
 export const pageQuery = graphql`
-  query ForgetMeNotQuery {
+  query ForgetMeNotQuery($path: String!) {
     allProjects: allProjectsJson {
       ...ProjectFields
     }
-    project: allProjectsJson(
-      filter: { url: { eq: "/projects/forget-me-not" } }
-    ) {
+    project: allProjectsJson(filter: { url: { eq: $path } }) {
       ...ProjectFields
     }
     mainImage: file(relativePath: { eq: "Forget Me Not/main.png" }) {

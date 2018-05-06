@@ -22,11 +22,11 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
 }
 
 export const pageQuery = graphql`
-  query DailyUIQuery {
+  query DailyUIQuery($path: String!) {
     allProjects: allProjectsJson {
       ...ProjectFields
     }
-    project: allProjectsJson(filter: { url: { eq: "/projects/daily-ui" } }) {
+    project: allProjectsJson(filter: { url: { eq: $path } }) {
       ...ProjectFields
     }
     mainImage: file(relativePath: { eq: "DailyUI/main.png" }) {

@@ -25,13 +25,11 @@ export default class ShipmentAuditTrailPage extends React.Component<
 }
 
 export const pageQuery = graphql`
-  query ShipmentAuditTrailQuery {
+  query ShipmentAuditTrailQuery($path: String!) {
     allProjects: allProjectsJson {
       ...ProjectFields
     }
-    project: allProjectsJson(
-      filter: { url: { eq: "/projects/shipment-audit-trail" } }
-    ) {
+    project: allProjectsJson(filter: { url: { eq: $path } }) {
       ...ProjectFields
     }
     mainImage: file(relativePath: { eq: "Audit Trail/main.png" }) {

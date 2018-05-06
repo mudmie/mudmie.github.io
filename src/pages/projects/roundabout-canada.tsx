@@ -164,13 +164,11 @@ export default class RoundaboutCanadaPage extends React.Component<
 }
 
 export const pageQuery = graphql`
-  query RoundaboutCanadaQuery {
+  query RoundaboutCanadaQuery($path: String!) {
     allProjects: allProjectsJson {
       ...ProjectFields
     }
-    project: allProjectsJson(
-      filter: { url: { eq: "/projects/roundabout-canada" } }
-    ) {
+    project: allProjectsJson(filter: { url: { eq: $path } }) {
       ...ProjectFields
     }
     mainImage: file(relativePath: { eq: "Roundabout/main.png" }) {

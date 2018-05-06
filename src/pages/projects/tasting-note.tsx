@@ -176,13 +176,11 @@ export default class TastingNotePage extends React.Component<
 }
 
 export const pageQuery = graphql`
-  query TastingNoteQuery {
+  query TastingNoteQuery($path: String!) {
     allProjects: allProjectsJson {
       ...ProjectFields
     }
-    project: allProjectsJson(
-      filter: { url: { eq: "/projects/tasting-note" } }
-    ) {
+    project: allProjectsJson(filter: { url: { eq: $path } }) {
       ...ProjectFields
     }
     mainImage: file(relativePath: { eq: "Tasting Note/main.png" }) {

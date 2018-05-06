@@ -22,11 +22,11 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
 }
 
 export const pageQuery = graphql`
-  query VrulezQuery {
+  query VrulezQuery($path: String!) {
     allProjects: allProjectsJson {
       ...ProjectFields
     }
-    project: allProjectsJson(filter: { url: { eq: "/projects/vrulez" } }) {
+    project: allProjectsJson(filter: { url: { eq: $path } }) {
       ...ProjectFields
     }
     mainImage: file(relativePath: { eq: "Vrulez/main.png" }) {
