@@ -27,16 +27,24 @@
 }
 
 .theme-orange {
-  h1,
-  h3 {
+  h1 {
     color: $project-main-orange;
   }
-  h2,
-  h4 {
+  h2 {
     color: $project-sub-orange;
   }
   hr {
     border-top-color: $project-sub-orange;
+  }
+  .btn {
+    color: $project-main-orange;
+    border-color: $project-main-orange;
+
+    &:hover,
+    &:active {
+      color: #fff;
+      background-color: $project-sub-orange;
+    }
   }
 }
 

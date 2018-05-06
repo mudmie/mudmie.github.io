@@ -2,21 +2,24 @@
   {
     "name": "Shipment Audit Trail",
     "subtitle": "Nulogy, Winter 2018",
-    "description": "A feature that records activities performed throughout shipping process.",
+    "description":
+      "A feature that records activities performed throughout shipping process.",
     "url": "/projects/shipment-audit-trail",
     "imageFolder": "Audit Trail"
   },
   {
     "name": "Picking Process Experience",
     "subtitle": "Nulogy, Winter 2018",
-    "description": "A journey of user research to solve Forklift Operator's pain in picking process.",
+    "description":
+      "A journey of user research to solve Forklift Operator's pain in picking process.",
     "url": "/projects/picking-process",
     "imageFolder": "Picking"
   },
   {
     "name": "VRulez",
     "subtitle": "Commercial Website, Winter 2018",
-    "description": "A fully responsive commercial website, built with React and Gatsby, for a virtual reality arcade business in Toronto.",
+    "description":
+      "A fully responsive commercial website, built with React and Gatsby, for a virtual reality arcade business in Toronto.",
     "url": "/projects/vrulez",
     "imageFolder": "Vrulez"
   },
@@ -30,7 +33,8 @@
   {
     "name": "Craft Beer Ordering System",
     "subtitle": "LCBO, Spring 2017",
-    "description": "An online craft beer ordering system that connects LCBO employees at the stores with craft brewers. ",
+    "description":
+      "An online craft beer ordering system that connects LCBO employees at the stores with craft brewers. ",
     "url": "/projects/craft-beer",
     "imageFolder": "Craft Beer"
   },
@@ -45,21 +49,24 @@
   {
     "name": "Sales of Data Web Application",
     "subtitle": "LCBO, Spring 2017",
-    "description": "A web portal that provides sales insights and analysis to small-medium sized LCBO business partners.",
+    "description":
+      "A web portal that provides sales insights and analysis to small-medium sized LCBO business partners.",
     "url": "/projects/sales-of-data",
     "imageFolder": "Sales of Data"
   },
   {
     "name": "Forget Me Not",
     "subtitle": "Personal Project, Fall 2016",
-    "description": "Forget Me Not is a mobile application that acts like one's personal planner. It helps remind the user of their to-dos.",
+    "description":
+      "Forget Me Not is a simple mobile application that acts like one's personal planner. It helps remind the user of their to-dos.",
     "url": "/projects/forget-me-not",
     "imageFolder": "Forget Me Not"
   },
   {
     "name": "Escape Room Website",
     "subtitle": "Roundabout Canada, Winter 2016",
-    "description": "A fully responsive commercial website, built with HTML 5, CSS 3, JavaScript and Boostrap, for an escape room business in Toronto.",
+    "description":
+      "A fully responsive commercial website, built with HTML 5, CSS 3, JavaScript and Boostrap, for an escape room business in Toronto.",
     "url": "/projects/roundabout-canada",
     "imageFolder": "Roundabout"
   }

@@ -4,6 +4,7 @@ import { ProjectPageProps } from "../../models/project-page-props";
 import * as sharedStyles from "./styles.scss";
 import { withPrefix } from "gatsby-link";
 import { Col, Container, Row } from "reactstrap";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 export default class RoundaboutCanadaPage extends React.Component<
   ProjectPageProps,
@@ -19,7 +20,10 @@ export default class RoundaboutCanadaPage extends React.Component<
         />
         <Container>
           <Row>
-            <Col>
+            <Col className="text-center">
+            <OutboundLink href="http://www.mudmie.com/roundabout" target="_blank" className={`btn ${sharedStyles.btn}`}>Visit the site</OutboundLink>
+            </Col>
+            </Row><Row><Col>
             <h3>Problems</h3>
             <h4>— the old website wasn't responsive, disabling customers to get the information they needed</h4>
             <ul>

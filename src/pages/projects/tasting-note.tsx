@@ -159,11 +159,8 @@ export default class TastingNotePage extends React.Component<
                     className="img-fluid"
                   />
                 <li>
-                  <b> Mockups — </b>{" "}
-                  <i>
-                    creating first low-fidelity prototype to present ideas &amp;
-                    get feedback from stakeholders
-                  </i>
+                  <b> Mockups </b>{" "}
+              
                 </li>
                 <img
                   src={withPrefix(
