@@ -20,7 +20,7 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
     return (
       <>
         <Helmet titleTemplate="">
-          <title>Mudmie Chuthamsatid</title>
+          <title>Mudmie Chuthamsatid - A designer with engineering thoughts</title>
         </Helmet>
         <IntroSection id="home" />
         <AboutSection id="about" />
