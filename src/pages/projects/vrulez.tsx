@@ -14,7 +14,7 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
       >
         <Container>
           <Row>
-            <Col>
+            <Col className="text-center">
               <OutboundLink
                 href="http://www.vrulez.com"
                 target="_blank"
