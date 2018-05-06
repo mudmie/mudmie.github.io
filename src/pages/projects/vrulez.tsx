@@ -1,8 +1,8 @@
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
 import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
   public render() {
@@ -16,7 +16,7 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
           <Row>
             <Col className="text-center">
               <OutboundLink
-                href="http://www.vrulez.com"
+                href="https://vrulez.com"
                 target="_blank"
                 className="btn"
               >
