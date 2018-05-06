@@ -5,7 +5,7 @@ import { ProjectNav } from "./project-nav";
 
 export interface ProjectFooterProps {
   allProjects: Project[];
-  project: Project;
+  currentProject: Project;
 }
 export class ProjectFooter extends React.Component<ProjectFooterProps, {}> {
   public render() {
@@ -13,7 +13,7 @@ export class ProjectFooter extends React.Component<ProjectFooterProps, {}> {
       <Container>
         <ProjectNav
           projects={this.props.allProjects}
-          currentProject={this.props.project}
+          currentProject={this.props.currentProject}
         />
       </Container>
     );

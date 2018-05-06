@@ -8,7 +8,7 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
     return (
       <ProjectLayout
         allProjects={this.props.data.allProjects.edges.map(e => e.node)}
-        project={this.props.data.project.edges[0].node}
+        currentProject={this.props.data.project.edges[0].node}
         mainImage={this.props.data.mainImage.childImageSharp.sizes}
       >
         <Container>
