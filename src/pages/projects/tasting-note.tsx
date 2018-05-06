@@ -27,7 +27,7 @@ export default class TastingNotePage extends React.Component<
               </h4>
               <ul>
                 <li>
-                  LCBO is one of the world's alcoholic beverage purchasers,
+                  LCBO is one of the world's largest alcoholic beverage purchasers,
                   there are numbers of new products need to be evaluated yearly.
                 </li>
                 <li>
@@ -91,9 +91,7 @@ export default class TastingNotePage extends React.Component<
                   <i>understanding what user is going through </i>
                 </li>
                 <p>
-                  The beginning of one's worst nightmare —
-                  <br />
-                  Imagine that there are at least 15 products to be evaluated by
+                  The beginning of one's worst nightmare: imagine that there are at least 15 products to be evaluated by
                   10 consultants in today session. This means a minimum of 150
                   copies of the evaluation forms will be generated at the end of
                   session.
@@ -117,13 +115,12 @@ export default class TastingNotePage extends React.Component<
                 <li>
                   <b> Wireframes — </b>{" "}
                   <i>
-                    {" "}
-                    creating first low-fidelity prototype to present ideas &amp;
+                    creating the first low-fidelity prototype to present ideas &amp;
                     get feedback from stakeholders
                   </i>
                 </li>
                 <p>
-                  After reviewing user’s problem and persona, I decided to to
+                  After reviewing user’s problem and persona, I decided to 
                 </p>
                 <ul>
                   <li>
@@ -151,8 +148,7 @@ export default class TastingNotePage extends React.Component<
                   </li>
                   <li>use text field as a channel to receive longer input </li>
                 </ul>
-                <li>
-                  <img
+                <img
                     src={withPrefix(
                       `/images/${
                         this.props.data.allProjectsJson.edges[0].node
@@ -162,9 +158,9 @@ export default class TastingNotePage extends React.Component<
                     alt="Tasting Note Evaluation Form"
                     className="img-fluid"
                   />
+                <li>
                   <b> Mockups — </b>{" "}
                   <i>
-                    {" "}
                     creating first low-fidelity prototype to present ideas &amp;
                     get feedback from stakeholders
                   </i>

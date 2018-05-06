@@ -1,9 +1,9 @@
+import { withPrefix } from "gatsby-link";
 import * as React from "react";
 import { Helmet } from "react-helmet";
 import { Col, Container, Row } from "reactstrap";
 import { Project } from "../models/project";
 import * as styles from "./project-header.scss";
-import { withPrefix } from "gatsby-link";
 
 export interface ProjectHeaderProps {
   project: Project;
@@ -37,6 +37,7 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
               <hr className={styles.smallDash} />
             </Col>
           </Row>
+        
         </Container>
       </>
     );
