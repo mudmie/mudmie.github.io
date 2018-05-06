@@ -12,8 +12,8 @@ export class ProjectNav extends React.Component<ProjectNavProps, {}> {
   public render() {
     return (
       <Row>
-        <Col sm="6">{this.getPreviousProjectLink()}</Col>
-        <Col sm="6" className="text-right">
+        <Col xs="6">{this.getPreviousProjectLink()}</Col>
+        <Col xs="6" className="text-right">
           {this.getNextProjectLink()}
         </Col>
       </Row>
