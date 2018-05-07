@@ -14,11 +14,11 @@ export default class PickingProcessPage extends React.Component<
         currentProject={this.props.data.project.edges[0].node}
         mainImage={this.props.data.mainImage.childImageSharp.sizes}
       >
-        <Container>
+        {/* <Container>
           <Row>
-            <Col>TODO</Col>
+            <Col></Col>
           </Row>
-        </Container>
+        </Container> */}
       </ProjectLayout>
     );
   }

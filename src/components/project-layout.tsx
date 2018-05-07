@@ -17,6 +17,10 @@ export class ProjectLayout extends React.Component<ProjectLayoutProps, {}> {
       <>
         <Helmet>
           <title>{this.props.currentProject.name}</title>
+          <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700"
+            rel="stylesheet"
+          />
         </Helmet>
         <div
           className={`${styles.projectPage} ${

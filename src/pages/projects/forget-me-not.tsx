@@ -16,10 +16,15 @@ export default class ForgetMeNotPage extends React.Component<
         mainImage={this.props.data.mainImage.childImageSharp.sizes}
       >
         <Container>
-          <Row>
-            <Col>
-              <h3>Overview</h3>
-              <h4>— because important tasks cannot be forgotten.</h4>
+          <Row className="justify-content-center">
+            <Col lg="10">
+              <h3>Overview.</h3>
+              <p>
+                Forget Me Not is the first mobile interface I've ever designed.
+                With belief that <i>important tasks cannot be forgotten</i>, I
+                designed the app to be as simple as possible. Its features
+                include:
+              </p>
               <ul>
                 <li>Quick sign up through Facebook or Email</li>
                 <li>
@@ -32,48 +37,38 @@ export default class ForgetMeNotPage extends React.Component<
                 </li>
               </ul>
               <img
-                src={withPrefix(
-                  `/images/${
-                    this.props.data.project.edges[0].node.imageFolder
-                  }/1.png`
-                )}
-                alt="Tasting Note Evaluation Form"
+                src={this.getImageUrl("1.png")}
+                alt="Forget Me Not Interface Set 1"
                 className="img-fluid"
               />
             </Col>
           </Row>
-
-          <Row>
-            <Col>
-              <h3>Getting a bit extra</h3>
-              <h4>
-                — get notified whenever you're around the location attached to
-                the task
-              </h4>
-              <ul>
-                <li>
-                  If the users choose to attach location when create an event,
-                  the system will remind them to complete the task if they
-                  happen to be around that location.
-                </li>
-                <li>
-                  With embedded Google Map, users can search for locations that
-                  might associate with their events/
-                </li>
-                <img
-                  src={withPrefix(
-                    `/images/${
-                      this.props.data.project.edges[0].node.imageFolder
-                    }/2.png`
-                  )}
-                  alt="Tasting Note Evaluation Form"
-                  className="img-fluid"
-                />
-              </ul>
+          <Row className="justify-content-center">
+            <Col lg="10">
+              <h3>Getting a bit extra.</h3>
+              <p>
+                There are plenty of planner apps in the market, so I decided to
+                create something new. The users can choose to attach location
+                when they create event, and the system will remind them to
+                complete the task if they happen to be around that location.
+                With embedded Google Map, users can search for locations that
+                might associate with their events.
+              </p>
+              <img
+                src={this.getImageUrl("2.png")}
+                alt="Forget Me Not Interface Set 2"
+                className="img-fluid"
+              />
             </Col>
           </Row>
         </Container>
       </ProjectLayout>
+    );
+  }
+
+  private getImageUrl(filename: string) {
+    return withPrefix(
+      `/images/${this.props.data.project.edges[0].node.imageFolder}/${filename}`
     );
   }
 }

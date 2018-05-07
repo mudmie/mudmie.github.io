@@ -19,8 +19,8 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
           projects={this.props.allProjects}
           currentProject={this.props.currentProject}
         />
-        <Row>
-          <Col>
+        <Row className="justify-content-center">
+          <Col lg="10">
             <h1>{this.props.currentProject.name}</h1>
             <h2 className={styles.subtitle}>
               — {this.props.currentProject.subtitle}
@@ -40,6 +40,10 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
                 className="img-fluid"
               />
             )}
+          </Col>
+        </Row>
+        <Row className="justify-content-center mt-3">
+          <Col lg="10">
             <p>{this.props.currentProject.description}</p>
             <hr className={styles.smallDash} />
           </Col>
