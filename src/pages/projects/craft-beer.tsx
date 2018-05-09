@@ -48,7 +48,7 @@ export default class CraftBeerPage extends React.Component<
                 and how many of them to order. There are other factors such as
                 promotion and seasonal items that can affect their estimation.
                 Without a proper guidance, it is almost
-                <i> impossible to order accurate number of product.</i>
+                <i> impossible to order accurate amount of products.</i>
               </p>
               <p>
                 Making phone calls back and forth is also very time consuming,
@@ -76,7 +76,7 @@ export default class CraftBeerPage extends React.Component<
                 what kind of system that they are looking for.
               </p>
               <p>
-                Form sessions, held to capture extra pieces of information from
+                From sessions, held to capture extra pieces of information from
                 LCBO store employees and craft brewers, I learnt that
                 <ul>
                   <li>
