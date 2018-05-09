@@ -30,7 +30,7 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
                   I used to think that good designs were just about aesthetics,
                   but after taking a Human Factors in Design course in my first
                   year, my whole perspective towards design has changed. A good
-                  design communicates clearly and solve problems well.
+                  design communicates clearly and solves problems well.
                 </p>
 
                 <p className={styles.aboutPara}>
@@ -38,7 +38,7 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
                   beautiful stuff, but to design{" "}
                   <i>
                     an entire product experience that sparks people’s joy and
-                    simplify people’s lives.
+                    simplifies people’s lives.
                   </i>
                 </p>
               </Col>
