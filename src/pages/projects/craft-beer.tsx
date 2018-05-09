@@ -44,7 +44,7 @@ export default class CraftBeerPage extends React.Component<
               <h3>Problems.</h3>
               <p>
                 LCBO employees usually rely on{" "}
-                <i> gut's felling and experience </i> to decide what products
+                <i> gut's feeling and experience </i> to decide what products
                 and how many of them to order. There are other factors such as
                 promotion and seasonal items that can affect their estimation.
                 Without a proper guidance, it is almost
