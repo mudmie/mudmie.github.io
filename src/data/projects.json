@@ -1,40 +1,5 @@
 [
   {
-    "name": "Shipment Audit Trail",
-    "subtitle": "Nulogy, Winter 2018",
-    "description":
-      "A feature that records activities performed throughout shipping process.",
-    "url": "/projects/shipment-audit-trail/",
-    "imageFolder": "Audit Trail",
-    "theme": "Purple"
-  },
-  {
-    "name": "Picking Process Experience",
-    "subtitle": "Nulogy, Winter 2018",
-    "description":
-      "A journey of user research to solve Forklift Operator's pain in picking process.",
-    "url": "/projects/picking-process/",
-    "imageFolder": "Picking",
-    "theme": "Brick"
-  },
-  {
-    "name": "VRulez",
-    "subtitle": "Commercial Website, Winter 2018",
-    "description":
-      "A fully responsive commercial website, built with React and Gatsby, for a virtual reality arcade business in Toronto.",
-    "url": "/projects/vrulez/",
-    "imageFolder": "Vrulez",
-    "theme": "Orange"
-  },
-  {
-    "name": "Daily UI",
-    "subtitle": "Personal Project, Winter 2018",
-    "description": "A collection of my UI design practices.",
-    "url": "/projects/daily-ui/",
-    "imageFolder": "DailyUI",
-    "theme": "Purple"
-  },
-  {
     "name": "Craft Beer Ordering System",
     "subtitle": "LCBO, Spring 2017",
     "description":
@@ -59,6 +24,23 @@
       "A web portal that provides sales insights and analysis to small-medium sized LCBO business partners.",
     "url": "/projects/sales-of-data/",
     "imageFolder": "Sales of Data",
+    "theme": "Purple"
+  },
+  {
+    "name": "VRulez",
+    "subtitle": "Commercial Website, Winter 2018",
+    "description":
+      "A fully responsive commercial website, built with React and Gatsby, for a virtual reality arcade business in Toronto.",
+    "url": "/projects/vrulez/",
+    "imageFolder": "Vrulez",
+    "theme": "Orange"
+  },
+  {
+    "name": "Daily UI",
+    "subtitle": "Personal Project, Winter 2018",
+    "description": "A collection of my UI design practices.",
+    "url": "/projects/daily-ui/",
+    "imageFolder": "DailyUI",
     "theme": "Purple"
   },
   {
