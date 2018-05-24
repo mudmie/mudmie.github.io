@@ -1,0 +1,2 @@
+webpackJsonp([0x780e5759fb6a],{278:function(e,n){e.exports={data:{allProjectsJson:{edges:[{node:{name:"Picking Process Experience",subtitle:"Nulogy, Winter 2018",url:"/projects/picking-process"}}]}},pathContext:{}}}});
+//# sourceMappingURL=path---projects-picking-process-90b9ef5b39754f5b64c1.js.map

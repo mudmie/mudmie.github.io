@@ -1,0 +1,2 @@
+webpackJsonp([64576382049166],{276:function(e,t){e.exports={data:{allProjectsJson:{edges:[{node:{name:"Craft Beer Ordering System",subtitle:"LCBO, Spring 2017",url:"/projects/craft-beer"}}]}},pathContext:{}}}});
+//# sourceMappingURL=path---projects-craft-beer-c47a859ab228b6869c76.js.map

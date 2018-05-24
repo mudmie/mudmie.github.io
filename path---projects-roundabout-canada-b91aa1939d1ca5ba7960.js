@@ -1,2 +1,0 @@
-webpackJsonp([20300812866499],{284:function(o,a){o.exports={data:{allProjectsJson:{edges:[{node:{name:"Escape Room Website",subtitle:"Roundabout Canada, Winter 2016",description:null,url:"/projects/roundabout-canada",imageFolder:"Roundabout"}}]}},pathContext:{}}}});
-//# sourceMappingURL=path---projects-roundabout-canada-b91aa1939d1ca5ba7960.js.map

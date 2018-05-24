@@ -1,0 +1,2 @@
+webpackJsonp([0xd4c318c02e45],{282:function(t,e){t.exports={data:{allProjectsJson:{edges:[{node:{name:"Tasting Note Mobile Application",subtitle:"LCBO, Spring 2017",url:"/projects/tasting-note"}}]}},pathContext:{}}}});
+//# sourceMappingURL=path---projects-tasting-note-245743b08e91073e9a8c.js.map

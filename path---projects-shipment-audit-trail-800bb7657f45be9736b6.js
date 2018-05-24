@@ -1,0 +1,2 @@
+webpackJsonp([71847632827465],{281:function(t,e){t.exports={data:{allProjectsJson:{edges:[{node:{name:"Shipment Audit Trail",subtitle:"Nulogy, Winter 2018",url:"/projects/shipment-audit-trail"}}]}},pathContext:{}}}});
+//# sourceMappingURL=path---projects-shipment-audit-trail-800bb7657f45be9736b6.js.map

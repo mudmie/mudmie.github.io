@@ -1,0 +1,2 @@
+webpackJsonp([0x8c07e6060683],{280:function(e,a){e.exports={data:{allProjectsJson:{edges:[{node:{name:"Sales of Data Web Application",subtitle:"LCBO, Spring 2017",url:"/projects/sales-of-data"}}]}},pathContext:{}}}});
+//# sourceMappingURL=path---projects-sales-of-data-edeab2b6f9f077df51de.js.map

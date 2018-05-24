@@ -1,2 +1,0 @@
-webpackJsonp([0xb427e229137b],{288:function(e,t){e.exports={data:{allProjectsJson:{edges:[{node:{name:"VRulez",subtitle:"Commercial Website, Winter 2018",description:null,url:"/projects/vrulez",imageFolder:"Vrulez"}}]}},pathContext:{}}}});
-//# sourceMappingURL=path---projects-vrulez-5e1a4d270451b018bb57.js.map
