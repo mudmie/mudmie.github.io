@@ -8,32 +8,33 @@ export default class ShipmentAuditTrailPage extends React.Component<
   {}
 > {
   public render() {
-    return (
-      <ProjectLayout
-        allProjects={this.props.data.allProjects.edges.map(e => e.node)}
-        currentProject={this.props.data.project.edges[0].node}
-        mainImage={this.props.data.mainImage.childImageSharp.sizes}
-      >
-        {/* <Container>
-          <Row>
-            <Col>TODO</Col>
-          </Row>
-        </Container> */}
-      </ProjectLayout>
-    );
+    return <div></div>;
+    // return (
+    //   <ProjectLayout
+    //     allProjects={this.props.data.allProjects.edges.map(e => e.node)}
+    //     currentProject={this.props.data.project.edges[0].node}
+    //     mainImage={this.props.data.mainImage.childImageSharp.sizes}
+    //   >
+    //     {/* <Container>
+    //       <Row>
+    //         <Col>TODO</Col>
+    //       </Row>
+    //     </Container> */}
+    //   </ProjectLayout>
+    // );
   }
 }
 
-export const pageQuery = graphql`
-  query ShipmentAuditTrailQuery($path: String!) {
-    allProjects: allProjectsJson {
-      ...ProjectFields
-    }
-    project: allProjectsJson(filter: { url: { eq: $path } }) {
-      ...ProjectFields
-    }
-    mainImage: file(relativePath: { eq: "Audit Trail/main.png" }) {
-      ...MainImageSizes
-    }
-  }
-`;
+// export const pageQuery = graphql`
+//   query ShipmentAuditTrailQuery($path: String!) {
+//     allProjects: allProjectsJson {
+//       ...ProjectFields
+//     }
+//     project: allProjectsJson(filter: { url: { eq: $path } }) {
+//       ...ProjectFields
+//     }
+//     mainImage: file(relativePath: { eq: "Audit Trail/main.png" }) {
+//       ...MainImageSizes
+//     }
+//   }
+// `;
