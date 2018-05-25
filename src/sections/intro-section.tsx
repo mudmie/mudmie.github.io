@@ -16,7 +16,7 @@ export class IntroSection extends React.Component<IntroSectionProps, {}> {
           <BackgroundAnimation />
           <Col md="8" className={styles.colName}>
             <div className={styles.nameBox}>
-              <h1 className={styles.name}>Mudmie Chuthamsatid</h1>
+              <h1 className={styles.name}>MUDMIE CHUTHAMSATID</h1>
               <p className={styles.subtitle}>
                 – a designer with engineering thoughts
               </p>

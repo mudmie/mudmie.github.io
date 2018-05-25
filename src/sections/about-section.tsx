@@ -23,23 +23,23 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
                 <h3 className={styles.aboutHeading}>
                   It's nice to have you here!
                 </h3>
+
                 <p className={styles.aboutPara}>
-                  I’m a third year Systems Design Engineering student at the
-                  University of Waterloo. I love travelling the world and
-                  wandering around the cities — to eat, learn, and get inspired.
-                  I used to think that good designs were just about aesthetics,
-                  but after taking a Human Factors in Design course in my first
-                  year, my whole perspective towards design has changed. A good
-                  design communicates clearly and solves problems well.
+                  I love travelling the world and wandering around the cities —
+                  to eat, learn, and get inspired. I used to think that good
+                  designs were just about aesthetics, but after taking a Human
+                  Factors in Design course in my first year, my whole
+                  perspective towards design has changed. A good design
+                  communicates clearly and solves problems well.
                 </p>
 
                 <p className={styles.aboutPara}>
                   — My mission as a product designer is not to just design
-                  beautiful stuff, but to design{" "}
-                  <i>
+                  beautiful stuff, but to design&nbsp;
+                  <span className={styles.highlight}>
                     an entire product experience that sparks people’s joy and
                     simplifies people’s lives.
-                  </i>
+                  </span>
                 </p>
               </Col>
             </Row>
