@@ -1,5 +1,14 @@
 [
   {
+    "name": "Picking Process Experience",
+    "subtitle": "Nulogy, Winter 2018",
+    "description":
+      "A journey of user research to solve Forklift Operator's pain in picking process.",
+    "url": "/projects/picking-process/",
+    "imageFolder": "Picking",
+    "theme": "Purple"
+  },
+  {
     "name": "Craft Beer Ordering System",
     "subtitle": "LCBO, Spring 2017",
     "description":

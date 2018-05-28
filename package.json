@@ -17,7 +17,9 @@
     "react-helmet": "^5.2.0",
     "reactstrap": "^5.0.0"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "ISC",
   "scripts": {
     "build": "gatsby build",

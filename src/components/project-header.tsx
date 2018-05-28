@@ -30,7 +30,7 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
         <Row className="justify-content-center">
           <Col lg="10">
             {this.props.mainImage ? (
-              <Img alt="main project image" sizes={this.props.mainImage} />
+              <Img alt="main project image" sizes={this.props.mainImage} className="background-theme-color" />
             ) : (
               <img
                 src={withPrefix(

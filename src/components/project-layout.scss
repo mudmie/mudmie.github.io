@@ -33,6 +33,9 @@
   hr {
     border-top-color: $secondary-color;
   }
+  :global .background-theme-color {
+    background-color: $secondary-color;
+  }
   :global .btn {
     color: $primary-color;
     border-color: $primary-color;
