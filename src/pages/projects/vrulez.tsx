@@ -3,6 +3,7 @@ import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
 import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
+import { withPrefix } from "gatsby-link";
 
 export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
   public render() {
@@ -22,6 +23,77 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
               >
                 Visit the site
               </OutboundLink>
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center">
+            <Col lg="10">
+              <h3>Landing Pages.</h3>
+              <img
+                src={withPrefix(
+                  `/images/${
+                    this.props.data.project.edges[0].node.imageFolder
+                  }/landing.png`
+                )}
+                alt="Work Breakdown Structure of Craft Beer Ordering System"
+                className="img-fluid"
+              />
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="10">
+              <h3>About Page.</h3>
+              <img
+                src={withPrefix(
+                  `/images/${
+                    this.props.data.project.edges[0].node.imageFolder
+                  }/about.png`
+                )}
+                alt="Work Breakdown Structure of Craft Beer Ordering System"
+                className="img-fluid"
+              />
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="10">
+              <h3>Game Page.</h3>
+              <img
+                src={withPrefix(
+                  `/images/${
+                    this.props.data.project.edges[0].node.imageFolder
+                  }/games.png`
+                )}
+                alt="Work Breakdown Structure of Craft Beer Ordering System"
+                className="img-fluid"
+              />
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="10">
+              <h3>Location Page.</h3>
+              <img
+                src={withPrefix(
+                  `/images/${
+                    this.props.data.project.edges[0].node.imageFolder
+                  }/location.png`
+                )}
+                alt="Work Breakdown Structure of Craft Beer Ordering System"
+                className="img-fluid"
+              />
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="10">
+              <h3>Contact Page.</h3>
+              <img
+                src={withPrefix(
+                  `/images/${
+                    this.props.data.project.edges[0].node.imageFolder
+                  }/contact.png`
+                )}
+                alt="Work Breakdown Structure of Craft Beer Ordering System"
+                className="img-fluid"
+              />
             </Col>
           </Row>
         </Container>

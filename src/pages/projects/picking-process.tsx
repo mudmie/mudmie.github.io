@@ -23,13 +23,13 @@ export default class PickingProcessPage extends React.Component<
                 The warehouse picking process normally involves forklift
                 operators picking up items from one location and drop them off
                 at another location. Currently, the forklift operators can only
-                pick up one item/pallet at a time due to the restriction of the
-                software that Nulogy provides. This restriction can slow down
-                the picking process as the forklift operators have to make
-                multiple trip to pick up items that are located in the same
-                location. To increase efficiency to their workflow, I decided to
-                review the shipping process and designed a feature that would
-                allow them to pick up multiple items at once.
+                pick up one pallet at a time due to the restriction of the
+                software that Nulogy provides. This can slow down the picking
+                process as the forklift operators have to make multiple trips to
+                pick up items until they fulfill the picking list. To increase
+                efficiency to their workflow, I decided to review the shipping
+                process and designed a feature that would allow them to pick up
+                multiple items at once.
               </p>
             </Col>
           </Row>
