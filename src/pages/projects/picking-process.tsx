@@ -45,6 +45,10 @@ export default class PickingProcessPage extends React.Component<
                 a user journey map using the information that I got from the
                 interview sessions.
               </p>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="6">
               <img
                 src={withPrefix(
                   `/images/${
@@ -58,14 +62,21 @@ export default class PickingProcessPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>First Iteration.</h3>
+              <h3>User Journey Map / First Iteration.</h3>
               <p>
-                Designing a user journey map was challenging for me since I have
-                never designed one before. I found it to be really difficult to
-                create a balance between text and graphic contents. During my
-                first attempt, I planned to design the user journey what I had
-                in the first iteration. Yes, it was this ugly.
+                Designing a user journey map was challenging for me since I've
+                never designed one before. With the information from interview
+                sessions, I planned to create a user journey map that shows
+                forklift operator's thoughts and his interaction with other
+                workers. However, I found it to be really difficult to create a
+                balance between text and graphic contents. As a result, this is
+                what it looked like in the first iteration. Yes, it was this
+                ugly...
               </p>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="8">
               <img
                 src={withPrefix(
                   `/images/${
@@ -75,6 +86,155 @@ export default class PickingProcessPage extends React.Component<
                 alt="Work Breakdown Structure of Craft Beer Ordering System"
                 className="img-fluid"
               />
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="10">
+              <h3>User Journey Map / Second Iteration.</h3>
+              <p>
+                I have to admit that the result from iteration one made me
+                panic. I was really concerned of how I would put things
+                together. After thinking over and over, I finally came up with a
+                new design. Majority of graphic contents were removed in the
+                second iteration, making the page look a lot cleaner than it was
+                in the first iteration.
+              </p>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="8">
+              <img
+                src={withPrefix(
+                  `/images/${
+                    this.props.data.project.edges[0].node.imageFolder
+                  }/2.png`
+                )}
+                alt="Work Breakdown Structure of Craft Beer Ordering System"
+                className="img-fluid"
+              />
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="10">
+              <h3>User Journey Map / Third Iteration.</h3>
+              <p>
+                In this iteration, the color scheme was changed and all the
+                information was put together. The first section of the map
+                provides an overview of a forklift driver, including his
+                responsibility, goals and key people. The body section of the
+                map covers the workflow of the forklift driver, and the last
+                section shows pain points that the forklift driver commonly
+                undergoes.
+              </p>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="6">
+              <img
+                src={withPrefix(
+                  `/images/${
+                    this.props.data.project.edges[0].node.imageFolder
+                  }/3.png`
+                )}
+                alt="Work Breakdown Structure of Craft Beer Ordering System"
+                className="img-fluid"
+              />
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="10">
+              <h3>User Journey Map / Final Result.</h3>
+              <p>
+                In the final version of the user journey map, the title
+                "forklift driver" was replaced with "forklift operator", and
+                icons for key people were replaced with colored dots with
+                initials of their position. This was done to reduce mental
+                workload for the audience as they wouldn't have to remember
+                which icon represent which person. The existence of the user
+                journey map allows the product designers to understand the
+                workflow of the forklift operators as well as their goals and
+                pain points, making the solutions designed to be more
+                user-centered.
+              </p>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="6">
+              <img
+                src={withPrefix(
+                  `/images/${
+                    this.props.data.project.edges[0].node.imageFolder
+                  }/4.png`
+                )}
+                alt="Work Breakdown Structure of Craft Beer Ordering System"
+                className="img-fluid"
+              />
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="10">
+              <h3>Designing Solution.</h3>
+              <p>
+                To increase efficiency in picking process for forklift
+                operators, a simple solution is designed to allow the forklift
+                operators to pick up multiple pallets at once. From the
+                interface below, we can see that from step 5 to step 6, the
+                users have an option to pick up more pallet or to drop off
+                pallet(s) that they currently have on their forklift.
+              </p>
+              <img
+                src={withPrefix(
+                  `/images/${
+                    this.props.data.project.edges[0].node.imageFolder
+                  }/interface.png`
+                )}
+                alt="Work Breakdown Structure of Craft Beer Ordering System"
+                className="img-fluid"
+              />
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="10">
+              <h3>Next Steps.</h3>
+              <p>
+                While this problem seemed to be resolved by adding a feature
+                that allows the forklift operator to pick up multiple pallets at
+                a time, there are other issues that need to be considered.
+              </p>
+              <p>
+                <i>
+                  <b>
+                    "What is the maximum number of pallets that can be picked at
+                    once?"
+                  </b>
+                </i>
+                <br />
+                This question was asked by both myself when designing the
+                feature and the professional service consultants when I
+                presented them this prototype. It's good to allow multiple
+                pallets to be picked at once, but some limitation should still
+                exist to prevent any potential error. Still, the maximum number
+                can be varied, depending on the workflow of each warehouse. Some
+                warehouses might want their forklift operators to pick up only
+                one pallet at a time. Therefore, the product team still needs to
+                consider if a single number will be set up as a maximum number
+                or the maximum number can be customized by each warehouse.
+              </p>
+
+              <p>
+                <i>
+                  <b>
+                    "Can we redesign the entire picking process experience so
+                    that it's more user friendly?"
+                  </b>
+                </i>
+                <br />
+                I consider the addition of this feature as a first step to
+                improve user experience for picking process. However, I was
+                mainly focusing to solve the pallet picking up issue, there is
+                very minimal UI design in the prototype shown in a previous
+                section.
+              </p>
             </Col>
           </Row>
         </Container>
