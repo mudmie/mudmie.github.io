@@ -30,7 +30,7 @@ export default class RoundaboutCanadaPage extends React.Component<
 
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Problems.</h3>
+              <h3>Problems</h3>
               <p>
                 Prior to my internship at the company, the company website
                 wasn't responsive This caused issues like truncated text or
@@ -54,7 +54,7 @@ export default class RoundaboutCanadaPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>User and Industry Research.</h3>
+              <h3>User and Industry Research</h3>
               <p>
                 It was my mission to gather as much as information that I could
                 to add the <i>WOW</i> factor to the new company website.
@@ -72,7 +72,7 @@ export default class RoundaboutCanadaPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Design &amp; Implementation.</h3>
+              <h3>Design &amp; Implementation</h3>
               <p>
                 The main goal of this process was to decide on the look of the
                 website and the technology to build the website.
@@ -95,7 +95,7 @@ export default class RoundaboutCanadaPage extends React.Component<
 
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Impressive Outcomes.</h3>
+              <h3>Impressive Outcomes</h3>
               <p>
                 I was very happy that after the release of the new website, lots
                 of customers came in and mentioned about the new website and how
@@ -129,7 +129,7 @@ export default class RoundaboutCanadaPage extends React.Component<
 
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Reflection.</h3>
+              <h3>Reflection</h3>
               <p>
                 Working at Roundabout Canada was a great learning experience
                 from me. Looking at this piece of work at this moment makes me

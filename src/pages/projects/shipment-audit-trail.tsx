@@ -19,7 +19,7 @@ export default class ShipmentAuditTrailPage extends React.Component<
         <Container>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Background.</h3>
+              <h3>Background</h3>
               <p>
                 Products that are consumed by consumers such as food, drugs, and
                 cosmetics are considered a&nbsp;
@@ -46,7 +46,7 @@ export default class ShipmentAuditTrailPage extends React.Component<
 
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Situation of Concern.</h3>
+              <h3>Situation of Concern</h3>
               <p>
                 Manufacturing plants and copackers are fast-paced working
                 environment. Workers need to work and move around quickly to
@@ -72,7 +72,7 @@ export default class ShipmentAuditTrailPage extends React.Component<
 
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>First Round of User Workflow Research.</h3>
+              <h3>First Round of User Workflow Research</h3>
               <p>
                 To design a Shipment Audit Trail, I, as a designer, must have a
                 solid understanding of the shipping process. The knowledge of
@@ -107,7 +107,7 @@ export default class ShipmentAuditTrailPage extends React.Component<
 
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Second Round of User Workflow Research.</h3>
+              <h3>Second Round of User Workflow Research</h3>
             </Col>
           </Row>
           <Row className="justify-content-center">
@@ -136,7 +136,7 @@ export default class ShipmentAuditTrailPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>The Design.</h3>
+              <h3>The Design</h3>
               <p>
                 The
                 <img
