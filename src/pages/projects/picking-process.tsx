@@ -18,7 +18,7 @@ export default class PickingProcessPage extends React.Component<
         <Container>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Background.</h3>
+              <h3>Background</h3>
               <p>
                 The warehouse picking process normally involves forklift
                 operators picking up items from one location and drop them off
@@ -35,7 +35,7 @@ export default class PickingProcessPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>User Research.</h3>
+              <h3>User Research</h3>
               <p>
                 I began my design process by interviewing Nulogy's professional
                 service consultants, who worked directly with the workers at the
@@ -62,7 +62,7 @@ export default class PickingProcessPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>User Journey Map / First Iteration.</h3>
+              <h3>User Journey Map / First Iteration</h3>
               <p>
                 Designing a user journey map was challenging for me since I've
                 never designed one before. With the information from interview
@@ -90,7 +90,7 @@ export default class PickingProcessPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>User Journey Map / Second Iteration.</h3>
+              <h3>User Journey Map / Second Iteration</h3>
               <p>
                 I have to admit that the result from iteration one made me
                 panic. I was really concerned of how I would put things
@@ -116,7 +116,7 @@ export default class PickingProcessPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>User Journey Map / Third Iteration.</h3>
+              <h3>User Journey Map / Third Iteration</h3>
               <p>
                 In this iteration, the color scheme was changed and all the
                 information was put together. The first section of the map
@@ -143,7 +143,7 @@ export default class PickingProcessPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>User Journey Map / Final Result.</h3>
+              <h3>User Journey Map / Final Result</h3>
               <p>
                 In the final version of the user journey map, the title
                 "forklift driver" was replaced with "forklift operator", and
@@ -173,7 +173,7 @@ export default class PickingProcessPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Designing Solution.</h3>
+              <h3>Designing Solution</h3>
               <p>
                 To increase efficiency in picking process for forklift
                 operators, a simple solution is designed to allow the forklift
@@ -195,7 +195,7 @@ export default class PickingProcessPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Next Steps.</h3>
+              <h3>Next Steps</h3>
               <p>
                 While this problem seemed to be resolved by adding a feature
                 that allows the forklift operator to pick up multiple pallets at
@@ -231,9 +231,12 @@ export default class PickingProcessPage extends React.Component<
                 <br />
                 I consider the addition of this feature as a first step to
                 improve user experience for picking process. However, I was
-                mainly focusing to solve the pallet picking up issue, there is
-                very minimal UI design in the prototype shown in a previous
-                section.
+                mainly focusing to solve the pallet picking up issue, so there
+                was very minimal UI designs in the prototype shown in a previous
+                section. The current user interfaces neither have the best UI
+                designs nor provide the optimal user experience. As a result, a
+                series of design exercises was performed to explore possible
+                redesign options.
               </p>
             </Col>
           </Row>

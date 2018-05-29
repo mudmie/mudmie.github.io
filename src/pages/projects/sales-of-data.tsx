@@ -41,7 +41,7 @@ export default class SalesOfDataPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="12">
+            <Col lg="10">
               <img
                 src={withPrefix(
                   `/images/${
@@ -64,7 +64,7 @@ export default class SalesOfDataPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="12">
+            <Col lg="10">
               <img
                 src={withPrefix(
                   `/images/${
@@ -83,7 +83,7 @@ export default class SalesOfDataPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="12">
+            <Col lg="10">
               <img
                 src={withPrefix(
                   `/images/${
@@ -102,7 +102,7 @@ export default class SalesOfDataPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="12">
+            <Col lg="10">
               <img
                 src={withPrefix(
                   `/images/${
