@@ -89,7 +89,7 @@ export default class TastingNotePage extends React.Component<
                         this.props.data.project.edges[0].node.imageFolder
                       }/persona.png`
                     )}
-                    alt="Tasting Note Evaluation Form"
+                    alt="User persona"
                     className="img-fluid"
                   />
                 </Col>
@@ -138,7 +138,7 @@ export default class TastingNotePage extends React.Component<
                         this.props.data.project.edges[0].node.imageFolder
                       }/wireframes.jpg`
                     )}
-                    alt="Tasting Note Evaluation Form"
+                    alt="Tasting Note wireframes"
                     className="img-fluid"
                   />
                 </Col>
@@ -157,7 +157,7 @@ export default class TastingNotePage extends React.Component<
                         this.props.data.project.edges[0].node.imageFolder
                       }/full.png`
                     )}
-                    alt="Tasting Note Evaluation Form"
+                    alt="Tasting Note interfaces"
                     className="img-fluid"
                   />
                 </Col>
