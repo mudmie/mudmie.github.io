@@ -1,78 +1,78 @@
 {
   "assetsByChunkName": {
     "path---projects-roundabout-canada": [
-      "path---projects-roundabout-canada-3e0e2d1c15ddd906c97f.js",
-      "path---projects-roundabout-canada-3e0e2d1c15ddd906c97f.js.map"
+      "path---projects-roundabout-canada-ca69438d581d8a909d37.js",
+      "path---projects-roundabout-canada-ca69438d581d8a909d37.js.map"
     ],
     "component---src-layouts-index-tsx": [
       "component---src-layouts-index-tsx-37247eaec37882efe501.js",
       "component---src-layouts-index-tsx-37247eaec37882efe501.js.map"
     ],
     "component---src-pages-projects-craft-beer-tsx": [
-      "component---src-pages-projects-craft-beer-tsx-87472670073a3cd42971.js",
-      "component---src-pages-projects-craft-beer-tsx-87472670073a3cd42971.js.map"
+      "component---src-pages-projects-craft-beer-tsx-3ef0b206cc44f9ef64ab.js",
+      "component---src-pages-projects-craft-beer-tsx-3ef0b206cc44f9ef64ab.js.map"
     ],
     "path---projects-forget-me-not": [
-      "path---projects-forget-me-not-399cabee10da91103a79.js",
-      "path---projects-forget-me-not-399cabee10da91103a79.js.map"
+      "path---projects-forget-me-not-af102914a445e611be64.js",
+      "path---projects-forget-me-not-af102914a445e611be64.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
     "path---projects-craft-beer": [
-      "path---projects-craft-beer-05147dfd2a57d6328f22.js",
-      "path---projects-craft-beer-05147dfd2a57d6328f22.js.map"
+      "path---projects-craft-beer-e57652f6b4210656f220.js",
+      "path---projects-craft-beer-e57652f6b4210656f220.js.map"
     ],
     "path---projects-shipment-audit-trail": [
-      "path---projects-shipment-audit-trail-a0e39f21c11f6a62c5ab.js",
-      "path---projects-shipment-audit-trail-a0e39f21c11f6a62c5ab.js.map"
+      "path---projects-shipment-audit-trail-9471bad29b470d40e578.js",
+      "path---projects-shipment-audit-trail-9471bad29b470d40e578.js.map"
     ],
     "path---projects-picking-process": [
-      "path---projects-picking-process-a0e39f21c11f6a62c5ab.js",
-      "path---projects-picking-process-a0e39f21c11f6a62c5ab.js.map"
+      "path---projects-picking-process-2348fe0f54371753abf5.js",
+      "path---projects-picking-process-2348fe0f54371753abf5.js.map"
     ],
     "path---index": [
-      "path---index-a293cb78b7568740e79e.js",
-      "path---index-a293cb78b7568740e79e.js.map"
+      "path---index-4722aaae7fc8369303fc.js",
+      "path---index-4722aaae7fc8369303fc.js.map"
     ],
     "component---src-pages-projects-roundabout-canada-tsx": [
-      "component---src-pages-projects-roundabout-canada-tsx-819882f3aeb920432ac6.js",
-      "component---src-pages-projects-roundabout-canada-tsx-819882f3aeb920432ac6.js.map"
+      "component---src-pages-projects-roundabout-canada-tsx-0f9404e2cf1b5b886767.js",
+      "component---src-pages-projects-roundabout-canada-tsx-0f9404e2cf1b5b886767.js.map"
     ],
     "path---projects-sales-of-data": [
-      "path---projects-sales-of-data-1d8e3b512adb1baf49e2.js",
-      "path---projects-sales-of-data-1d8e3b512adb1baf49e2.js.map"
+      "path---projects-sales-of-data-39b31515b9ddb264da32.js",
+      "path---projects-sales-of-data-39b31515b9ddb264da32.js.map"
     ],
     "commons": [
-      "commons-2e64d596a3f8e239dc39.js",
+      "commons-b4d7a4a209c6ff76c41b.js",
       "build-js-styles.css",
-      "commons-2e64d596a3f8e239dc39.js.map",
+      "commons-b4d7a4a209c6ff76c41b.js.map",
       "build-js-styles.css.map"
     ],
     "path---projects-daily-ui": [
-      "path---projects-daily-ui-cf62420b69ef96f92539.js",
-      "path---projects-daily-ui-cf62420b69ef96f92539.js.map"
+      "path---projects-daily-ui-1833024447dbaab8a86a.js",
+      "path---projects-daily-ui-1833024447dbaab8a86a.js.map"
     ],
     "path---projects-vrulez": [
-      "path---projects-vrulez-dc7b99eea8b7c4d9970a.js",
-      "path---projects-vrulez-dc7b99eea8b7c4d9970a.js.map"
+      "path---projects-vrulez-0021f354561872317b84.js",
+      "path---projects-vrulez-0021f354561872317b84.js.map"
     ],
     "component---src-pages-projects-sales-of-data-tsx": [
-      "component---src-pages-projects-sales-of-data-tsx-85b63d644053a4d6c9e5.js",
-      "component---src-pages-projects-sales-of-data-tsx-85b63d644053a4d6c9e5.js.map"
+      "component---src-pages-projects-sales-of-data-tsx-ce129c782e5c7671fb8f.js",
+      "component---src-pages-projects-sales-of-data-tsx-ce129c782e5c7671fb8f.js.map"
     ],
     "component---src-pages-projects-tasting-note-tsx": [
-      "component---src-pages-projects-tasting-note-tsx-a76db827c0db8664acc2.js",
-      "component---src-pages-projects-tasting-note-tsx-a76db827c0db8664acc2.js.map"
+      "component---src-pages-projects-tasting-note-tsx-2b5f8b596929a2b7ab42.js",
+      "component---src-pages-projects-tasting-note-tsx-2b5f8b596929a2b7ab42.js.map"
     ],
     "component---src-pages-index-tsx": [
-      "component---src-pages-index-tsx-1d2a7b16a5b16d45a6c9.js",
-      "component---src-pages-index-tsx-1d2a7b16a5b16d45a6c9.js.map"
+      "component---src-pages-index-tsx-47db9799fceaa1fc027d.js",
+      "component---src-pages-index-tsx-47db9799fceaa1fc027d.js.map"
     ],
     "component---src-pages-projects-picking-process-tsx": [
-      "component---src-pages-projects-picking-process-tsx-b3c0b81d026c708e28d6.js",
-      "component---src-pages-projects-picking-process-tsx-b3c0b81d026c708e28d6.js.map"
+      "component---src-pages-projects-picking-process-tsx-e7c86f937ac92faccfb2.js",
+      "component---src-pages-projects-picking-process-tsx-e7c86f937ac92faccfb2.js.map"
     ],
     "app": [
       "app-8ed71c9ca97c66914bb8.js",
@@ -81,24 +81,24 @@
       "build-js-styles.css.map"
     ],
     "component---src-pages-projects-vrulez-tsx": [
-      "component---src-pages-projects-vrulez-tsx-98cd1d171dda95964575.js",
-      "component---src-pages-projects-vrulez-tsx-98cd1d171dda95964575.js.map"
+      "component---src-pages-projects-vrulez-tsx-df114f92fcbe9b54435e.js",
+      "component---src-pages-projects-vrulez-tsx-df114f92fcbe9b54435e.js.map"
     ],
     "path---projects-tasting-note": [
-      "path---projects-tasting-note-93ce00682c765c3d2fc5.js",
-      "path---projects-tasting-note-93ce00682c765c3d2fc5.js.map"
+      "path---projects-tasting-note-30a420b40fc66a9c135b.js",
+      "path---projects-tasting-note-30a420b40fc66a9c135b.js.map"
     ],
     "component---src-pages-projects-forget-me-not-tsx": [
-      "component---src-pages-projects-forget-me-not-tsx-25e8f1f89513ac5e6970.js",
-      "component---src-pages-projects-forget-me-not-tsx-25e8f1f89513ac5e6970.js.map"
+      "component---src-pages-projects-forget-me-not-tsx-214ad074c53de934c7eb.js",
+      "component---src-pages-projects-forget-me-not-tsx-214ad074c53de934c7eb.js.map"
     ],
     "component---src-pages-projects-daily-ui-tsx": [
-      "component---src-pages-projects-daily-ui-tsx-1b6a584e06e6eb55524f.js",
-      "component---src-pages-projects-daily-ui-tsx-1b6a584e06e6eb55524f.js.map"
+      "component---src-pages-projects-daily-ui-tsx-e62ec99d91299e83a200.js",
+      "component---src-pages-projects-daily-ui-tsx-e62ec99d91299e83a200.js.map"
     ],
     "component---src-pages-projects-shipment-audit-trail-tsx": [
-      "component---src-pages-projects-shipment-audit-trail-tsx-a4c3d08abc12e2f4c413.js",
-      "component---src-pages-projects-shipment-audit-trail-tsx-a4c3d08abc12e2f4c413.js.map"
+      "component---src-pages-projects-shipment-audit-trail-tsx-6052b6611321983129a3.js",
+      "component---src-pages-projects-shipment-audit-trail-tsx-6052b6611321983129a3.js.map"
     ]
   }
 }

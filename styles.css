@@ -17,7 +17,9 @@
   .scroll__3qbrc {
   background-color: #f8f9fa !important; }
   .nav-link__1QYJV {
-  font-weight: bold; }
+  font-weight: 500; }
+  .nav-link__1QYJV:hover {
+  color: orange; }
   .logo__3EWSH {
   max-width: 200px;
   opacity: 0; }
@@ -26,24 +28,34 @@
       opacity: 1; } }
   .scroll__3qbrc .logo__3EWSH {
   opacity: 1; }
+@font-face {
+  font-family: "Metropolis";
+  src: url(/static/Metropolis-Bold.76848856.eot) format("eot"), url(/static/Metropolis-Bold.1b5b51ba.woff) format("woff"), url(/static/Metropolis-BoldItalic.047dbf86.eot) format("eot"), url(/static/Metropolis-BoldItalic.a3a7a8e9.woff) format("woff"), url(/static/Metropolis-Light.5169bcc5.eot) format("eot"), url(/static/Metropolis-Light.a226fdcd.woff) format("woff"), url(/static/Metropolis-LightItalic.5613a6f7.eot) format("eot"), url(/static/Metropolis-LightItalic.d492e4c6.woff) format("woff"), url(/static/Metropolis-Regular.487ca609.eot) format("eot"), url(/static/Metropolis-Regular.663b4fcc.woff) format("woff"), url(/static/Metropolis-RegularItalic.d081001d.eot) format("eot"), url(/static/Metropolis-RegularItalic.0311cbbb.woff) format("woff");
+  font-family: "Tokyo-Regular";
+  src: url(/static/Tokyo-Regular.c0434ab0.eot) format("eot"), url(/static/Tokyo-Regular.c3317b6c.woff) format("woff");
+  font-family: "Tokyo-Outline";
+  src: url(/static/Tokyo-Outline.06a36d82.eot) format("eot"), url(/static/Tokyo-Outline.eca61ba9.woff) format("woff"); }
+
 html {
   overflow-y: scroll; }
 
 body {
-  font-family: "Raleway", sans-serif;
-  color: #444444; }
+  font-family: "Metropolis", sans-serif;
+  color: #444444;
+  font-weight: 300; }
 
 .navbar-light .navbar-nav .nav-link {
   color: #444444; }
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #2b2b2b; }
+  color: #c66f39; }
 
-h1,
-h2,
-h3 {
+h1 {
   font-weight: bold; }
+
+.card-title {
+  font-weight: 400; }
 .bg__3crEg {
   position: absolute;
   left: 0;
@@ -72,7 +84,13 @@ h3 {
   padding-bottom: 30px; }
   h2.about-heading__2szwW,
 h3.about-heading__2szwW {
-  text-align: right; }
+  text-align: right;
+  font-weight: 600; }
+  .about-subtitle__3-G1u {
+  text-align: right;
+  font-size: 12px;
+  font-weight: 500;
+  color: #75787a; }
   .about-para__1rChy {
   text-align: justify; }
 .bg-top__2qB7u {
@@ -145,7 +163,8 @@ h3.about-heading__2szwW {
   width: 30px;
   border-top: 3px solid #444444; }
 .section-heading__uSf2Y {
-  margin-top: 50px; }
+  margin-top: 50px;
+  font-weight: 600; }
 
 .project-card__29Qnm {
   margin-bottom: 40px; }
@@ -158,56 +177,95 @@ h3.about-heading__2szwW {
 .small-dash__3Is7E {
   border-top: 5px solid;
   width: 50px; }
+@font-face {
+  font-family: "Metropolis";
+  src: url(/static/Metropolis-Bold.76848856.eot) format("eot"), url(/static/Metropolis-Bold.1b5b51ba.woff) format("woff"), url(/static/Metropolis-BoldItalic.047dbf86.eot) format("eot"), url(/static/Metropolis-BoldItalic.a3a7a8e9.woff) format("woff"), url(/static/Metropolis-Light.5169bcc5.eot) format("eot"), url(/static/Metropolis-Light.a226fdcd.woff) format("woff"), url(/static/Metropolis-LightItalic.5613a6f7.eot) format("eot"), url(/static/Metropolis-LightItalic.d492e4c6.woff) format("woff"), url(/static/Metropolis-Regular.487ca609.eot) format("eot"), url(/static/Metropolis-Regular.663b4fcc.woff) format("woff"), url(/static/Metropolis-RegularItalic.d081001d.eot) format("eot"), url(/static/Metropolis-RegularItalic.0311cbbb.woff) format("woff");
+  font-family: "Tokyo-Regular";
+  src: url(/static/Tokyo-Regular.c0434ab0.eot) format("eot"), url(/static/Tokyo-Regular.c3317b6c.woff) format("woff");
+  font-family: "Tokyo-Outline";
+  src: url(/static/Tokyo-Outline.06a36d82.eot) format("eot"), url(/static/Tokyo-Outline.eca61ba9.woff) format("woff"); }
+
 .project-page__MTicz {
   font-family: "Roboto", sans-serif;
   font-weight: 300; }
-  .project-page__MTicz h1,
+
+.project-page__MTicz h1,
   .project-page__MTicz h2,
   .project-page__MTicz h3,
   .project-page__MTicz .btn__21fVS {
-    font-family: "Raleway", sans-serif; }
-  .project-page__MTicz h2 {
+    font-family: "Metropolis", sans-serif; }
+
+.project-page__MTicz h1 {
+    font-weight: 600; }
+
+.project-page__MTicz h2 {
     font-size: 26px; }
-  .project-page__MTicz h3 {
+
+.project-page__MTicz h3 {
     font-size: 22px;
     margin-top: 20px; }
-  .project-page__MTicz h4 {
+
+.project-page__MTicz h4 {
     font-size: 16px;
     font-style: italic; }
-  .theme-purple__KnAVP h1 {
+
+.theme-purple__KnAVP h1 {
   color: #6d4970; }
-  .theme-purple__KnAVP h2 {
+
+.theme-purple__KnAVP h2 {
   color: #b8a4b5; }
-  .theme-purple__KnAVP hr {
+
+.theme-purple__KnAVP hr {
   border-top-color: #b8a4b5; }
-  .theme-purple__KnAVP .btn {
+
+.theme-purple__KnAVP .background-theme-color {
+  background-color: #b8a4b5; }
+
+.theme-purple__KnAVP .btn {
   color: #6d4970;
   border-color: #6d4970; }
-  .theme-purple__KnAVP .btn:hover, .theme-purple__KnAVP .btn:active {
+
+.theme-purple__KnAVP .btn:hover, .theme-purple__KnAVP .btn:active {
     color: #fff;
     background-color: #b8a4b5; }
-  .theme-orange__1Amft h1 {
+
+.theme-orange__1Amft h1 {
   color: #c66f39; }
-  .theme-orange__1Amft h2 {
+
+.theme-orange__1Amft h2 {
   color: #d1997b; }
-  .theme-orange__1Amft hr {
+
+.theme-orange__1Amft hr {
   border-top-color: #d1997b; }
-  .theme-orange__1Amft .btn {
+
+.theme-orange__1Amft .background-theme-color {
+  background-color: #d1997b; }
+
+.theme-orange__1Amft .btn {
   color: #c66f39;
   border-color: #c66f39; }
-  .theme-orange__1Amft .btn:hover, .theme-orange__1Amft .btn:active {
+
+.theme-orange__1Amft .btn:hover, .theme-orange__1Amft .btn:active {
     color: #fff;
     background-color: #d1997b; }
-  .theme-brick__30QGc h1 {
+
+.theme-brick__30QGc h1 {
   color: #7b4250; }
-  .theme-brick__30QGc h2 {
+
+.theme-brick__30QGc h2 {
   color: #9c5c50; }
-  .theme-brick__30QGc hr {
+
+.theme-brick__30QGc hr {
   border-top-color: #9c5c50; }
-  .theme-brick__30QGc .btn {
+
+.theme-brick__30QGc .background-theme-color {
+  background-color: #9c5c50; }
+
+.theme-brick__30QGc .btn {
   color: #7b4250;
   border-color: #7b4250; }
-  .theme-brick__30QGc .btn:hover, .theme-brick__30QGc .btn:active {
+
+.theme-brick__30QGc .btn:hover, .theme-brick__30QGc .btn:active {
     color: #fff;
     background-color: #9c5c50; }
 .image-title__2jb33 {
