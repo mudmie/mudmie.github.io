@@ -44,23 +44,22 @@ export default class CraftBeerPage extends React.Component<
               <h3>Problems</h3>
               <p>
                 LCBO employees usually rely on{" "}
-                <i> gut's feeling and experience </i> to decide what products
-                and how many of them to order. There are other factors such as
+                <i>gut's feeling and experience</i> to decide what products and
+                how many of them to order. There are other factors such as
                 promotion and seasonal items that can affect their estimation.
-                Without a proper guidance, it is almost
-                <i> impossible to order accurate amount of products.</i>
+                Without a proper guidance, it is almost{" "}
+                <i>impossible to order accurate amount of products.</i>
               </p>
               <p>
                 Making phone calls back and forth is also very time consuming,
                 and it doesn't only cause burden to LCBO staff. There are about
-                660 LCBO across Ontario, so each brewer can receive
-                <i> hundreds of phone calls</i> on Monday and the following
-                days.
+                660 LCBO across Ontario, so each brewer can receive{" "}
+                <i>hundreds of phone calls</i> on Monday and the following days.
               </p>
               <p>
                 The current process restricts order modification to be made only
-                through phone calls. As a result,
-                <i> unexpected quantity or products </i> can show up on the
+                through phone calls. As a result,{" "}
+                <i>unexpected quantity or products</i> can show up on the
                 delivery day if the brewer forgets to update with the store.
               </p>
             </Col>
@@ -120,11 +119,7 @@ export default class CraftBeerPage extends React.Component<
           <Row className="justify-content-center">
             <Col lg="8">
               <img
-                src={withPrefix(
-                  `/images/${
-                    this.props.data.project.edges[0].node.imageFolder
-                  }/wbs.png`
-                )}
+                src={this.getImageUrl("wbs.png")}
                 alt="Work Breakdown Structure of Craft Beer Ordering System"
                 className="img-fluid"
               />
