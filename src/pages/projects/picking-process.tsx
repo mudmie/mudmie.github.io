@@ -60,7 +60,7 @@ export default class PickingProcessPage extends React.Component<
             <Col lg="6">
               <img
                 src={this.getImageUrl("research.jpg")}
-                alt="Work Breakdown Structure of Craft Beer Ordering System"
+                alt="whiteboard with research"
                 className="img-fluid"
               />
             </Col>
@@ -84,7 +84,7 @@ export default class PickingProcessPage extends React.Component<
             <Col lg="8">
               <img
                 src={this.getImageUrl("1.png")}
-                alt="Work Breakdown Structure of Craft Beer Ordering System"
+                alt="first iteration of user journey map"
                 className="img-fluid"
               />
             </Col>
@@ -106,7 +106,7 @@ export default class PickingProcessPage extends React.Component<
             <Col lg="8">
               <img
                 src={this.getImageUrl("2.png")}
-                alt="Work Breakdown Structure of Craft Beer Ordering System"
+                alt="second iteration of user journey map"
                 className="img-fluid"
               />
             </Col>
@@ -129,7 +129,7 @@ export default class PickingProcessPage extends React.Component<
             <Col lg="6">
               <img
                 src={this.getImageUrl("3.png")}
-                alt="Work Breakdown Structure of Craft Beer Ordering System"
+                alt="third iteration of user journey map"
                 className="img-fluid"
               />
             </Col>
@@ -155,7 +155,7 @@ export default class PickingProcessPage extends React.Component<
             <Col lg="6">
               <img
                 src={this.getImageUrl("4.png")}
-                alt="Work Breakdown Structure of Craft Beer Ordering System"
+                alt="final iteration of user journey map"
                 className="img-fluid"
               />
             </Col>
@@ -173,7 +173,7 @@ export default class PickingProcessPage extends React.Component<
               </p>
               <img
                 src={this.getImageUrl("interface.png")}
-                alt="Work Breakdown Structure of Craft Beer Ordering System"
+                alt="new interface of picking process"
                 className="img-fluid"
               />
             </Col>
@@ -216,9 +216,12 @@ export default class PickingProcessPage extends React.Component<
                 <br />
                 I consider the addition of this feature as a first step to
                 improve user experience for picking process. However, I was
-                mainly focusing to solve the pallet picking up issue, there is
-                very minimal UI design in the prototype shown in a previous
-                section.
+                mainly focusing to solve the pallet picking up issue, so there
+                was very minimal UI designs in the prototype shown in a previous
+                section. The current user interfaces neither have the best UI
+                designs nor provide the optimal user experience. As a result, a
+                series of design exercises was performed to explore possible
+                redesign options.
               </p>
             </Col>
           </Row>
