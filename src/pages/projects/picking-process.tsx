@@ -20,6 +20,15 @@ export default class PickingProcessPage extends React.Component<
             <Col lg="10">
               <h3>Background</h3>
               <p>
+                Nulogy is a software company that provides solutions to supply
+                chain industry. One of its core product is PackManager, a
+                software solution that helps brand owners and contract packagers
+                (“copackers”) manage production, inventory and orders. The
+                Product team at Nulogy is responsible for design and develop
+                features that will increase production efficiency and improve
+                overall user experience.
+              </p>
+              <p>
                 The warehouse picking process normally involves forklift
                 operators picking up items from one location and drop them off
                 at another location. Currently, the forklift operators can only
@@ -50,11 +59,7 @@ export default class PickingProcessPage extends React.Component<
           <Row className="justify-content-center">
             <Col lg="6">
               <img
-                src={withPrefix(
-                  `/images/${
-                    this.props.data.project.edges[0].node.imageFolder
-                  }/research.jpg`
-                )}
+                src={this.getImageUrl("research.jpg")}
                 alt="Work Breakdown Structure of Craft Beer Ordering System"
                 className="img-fluid"
               />
@@ -78,11 +83,7 @@ export default class PickingProcessPage extends React.Component<
           <Row className="justify-content-center">
             <Col lg="8">
               <img
-                src={withPrefix(
-                  `/images/${
-                    this.props.data.project.edges[0].node.imageFolder
-                  }/1.png`
-                )}
+                src={this.getImageUrl("1.png")}
                 alt="Work Breakdown Structure of Craft Beer Ordering System"
                 className="img-fluid"
               />
@@ -104,11 +105,7 @@ export default class PickingProcessPage extends React.Component<
           <Row className="justify-content-center">
             <Col lg="8">
               <img
-                src={withPrefix(
-                  `/images/${
-                    this.props.data.project.edges[0].node.imageFolder
-                  }/2.png`
-                )}
+                src={this.getImageUrl("2.png")}
                 alt="Work Breakdown Structure of Craft Beer Ordering System"
                 className="img-fluid"
               />
@@ -131,11 +128,7 @@ export default class PickingProcessPage extends React.Component<
           <Row className="justify-content-center">
             <Col lg="6">
               <img
-                src={withPrefix(
-                  `/images/${
-                    this.props.data.project.edges[0].node.imageFolder
-                  }/3.png`
-                )}
+                src={this.getImageUrl("3.png")}
                 alt="Work Breakdown Structure of Craft Beer Ordering System"
                 className="img-fluid"
               />
@@ -161,11 +154,7 @@ export default class PickingProcessPage extends React.Component<
           <Row className="justify-content-center">
             <Col lg="6">
               <img
-                src={withPrefix(
-                  `/images/${
-                    this.props.data.project.edges[0].node.imageFolder
-                  }/4.png`
-                )}
+                src={this.getImageUrl("4.png")}
                 alt="Work Breakdown Structure of Craft Beer Ordering System"
                 className="img-fluid"
               />
@@ -183,11 +172,7 @@ export default class PickingProcessPage extends React.Component<
                 pallet(s) that they currently have on their forklift.
               </p>
               <img
-                src={withPrefix(
-                  `/images/${
-                    this.props.data.project.edges[0].node.imageFolder
-                  }/interface.png`
-                )}
+                src={this.getImageUrl("interface.png")}
                 alt="Work Breakdown Structure of Craft Beer Ordering System"
                 className="img-fluid"
               />
@@ -239,6 +224,12 @@ export default class PickingProcessPage extends React.Component<
           </Row>
         </Container>
       </ProjectLayout>
+    );
+  }
+
+  private getImageUrl(filename: string) {
+    return withPrefix(
+      `/images/${this.props.data.project.edges[0].node.imageFolder}/${filename}`
     );
   }
 }
