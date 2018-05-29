@@ -17,7 +17,7 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
             <Col lg="5">
               <img
                 src={this.getImageUrl("001.png")}
-                alt="XXXX"
+                alt="sign up page"
                 className="img-fluid"
               />
             </Col>
@@ -29,7 +29,7 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
             <Col lg="5">
               <img
                 src={this.getImageUrl("002.png")}
-                alt="XXXX"
+                alt="credit card check out page"
                 className="img-fluid"
               />
             </Col>
@@ -41,7 +41,7 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
             <Col lg="5">
               <img
                 src={this.getImageUrl("003.png")}
-                alt="XXXX"
+                alt="landing page"
                 className="img-fluid"
               />
             </Col>
@@ -53,7 +53,7 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
             <Col lg="5">
               <img
                 src={this.getImageUrl("004.png")}
-                alt="XXXX"
+                alt="calculator"
                 className="img-fluid"
               />
             </Col>
@@ -65,7 +65,7 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
             <Col lg="5">
               <img
                 src={this.getImageUrl("005.png")}
-                alt="XXXX"
+                alt="app icon"
                 className="img-fluid"
               />
             </Col>
@@ -77,7 +77,7 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
             <Col lg="5">
               <img
                 src={this.getImageUrl("006.png")}
-                alt="XXXX"
+                alt="user profile"
                 className="img-fluid"
               />
             </Col>
@@ -89,7 +89,7 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
             <Col lg="5">
               <img
                 src={this.getImageUrl("007.png")}
-                alt="XXXX"
+                alt="settings"
                 className="img-fluid"
               />
             </Col>
@@ -101,7 +101,7 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
             <Col lg="5">
               <img
                 src={this.getImageUrl("008.png")}
-                alt="XXXX"
+                alt="404 error page"
                 className="img-fluid"
               />
             </Col>

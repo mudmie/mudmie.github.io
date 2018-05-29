@@ -54,7 +54,7 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
                     this.props.data.project.edges[0].node.imageFolder
                   }/3.png`
                 )}
-                alt="VRulez landing/franchise page"
+                alt="VRulez landing/game page"
                 className="img-fluid"
               />
             </Col>
@@ -67,7 +67,7 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
                     this.props.data.project.edges[0].node.imageFolder
                   }/2.png`
                 )}
-                alt="VRulez landing page"
+                alt="VRulez landing/about page"
                 className="img-fluid"
               />
             </Col>
@@ -103,7 +103,7 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
                     this.props.data.project.edges[0].node.imageFolder
                   }/about.png`
                 )}
-                alt="Work Breakdown Structure of Craft Beer Ordering System"
+                alt="about page"
                 className="img-fluid"
               />
             </Col>
@@ -126,7 +126,7 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
                     this.props.data.project.edges[0].node.imageFolder
                   }/games.png`
                 )}
-                alt="Work Breakdown Structure of Craft Beer Ordering System"
+                alt="vrulez game page"
                 className="img-fluid"
               />
             </Col>
@@ -148,7 +148,7 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
                     this.props.data.project.edges[0].node.imageFolder
                   }/location.png`
                 )}
-                alt="Work Breakdown Structure of Craft Beer Ordering System"
+                alt="vrulez location page"
                 className="img-fluid"
               />
             </Col>
@@ -170,7 +170,7 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
                     this.props.data.project.edges[0].node.imageFolder
                   }/contact.png`
                 )}
-                alt="Work Breakdown Structure of Craft Beer Ordering System"
+                alt="vrulez contact form"
                 className="img-fluid"
               />
             </Col>

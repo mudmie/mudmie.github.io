@@ -55,7 +55,7 @@ export default class PickingProcessPage extends React.Component<
                     this.props.data.project.edges[0].node.imageFolder
                   }/research.jpg`
                 )}
-                alt="Work Breakdown Structure of Craft Beer Ordering System"
+                alt="whiteboard with research"
                 className="img-fluid"
               />
             </Col>
@@ -83,7 +83,7 @@ export default class PickingProcessPage extends React.Component<
                     this.props.data.project.edges[0].node.imageFolder
                   }/1.png`
                 )}
-                alt="Work Breakdown Structure of Craft Beer Ordering System"
+                alt="first iteration of user journey map"
                 className="img-fluid"
               />
             </Col>
@@ -109,7 +109,7 @@ export default class PickingProcessPage extends React.Component<
                     this.props.data.project.edges[0].node.imageFolder
                   }/2.png`
                 )}
-                alt="Work Breakdown Structure of Craft Beer Ordering System"
+                alt="second iteration of user journey map"
                 className="img-fluid"
               />
             </Col>
@@ -136,7 +136,7 @@ export default class PickingProcessPage extends React.Component<
                     this.props.data.project.edges[0].node.imageFolder
                   }/3.png`
                 )}
-                alt="Work Breakdown Structure of Craft Beer Ordering System"
+                alt="third iteration of user journey map"
                 className="img-fluid"
               />
             </Col>
@@ -166,7 +166,7 @@ export default class PickingProcessPage extends React.Component<
                     this.props.data.project.edges[0].node.imageFolder
                   }/4.png`
                 )}
-                alt="Work Breakdown Structure of Craft Beer Ordering System"
+                alt="final iteration of user journey map"
                 className="img-fluid"
               />
             </Col>
@@ -188,7 +188,7 @@ export default class PickingProcessPage extends React.Component<
                     this.props.data.project.edges[0].node.imageFolder
                   }/interface.png`
                 )}
-                alt="Work Breakdown Structure of Craft Beer Ordering System"
+                alt="new interface of picking process"
                 className="img-fluid"
               />
             </Col>
