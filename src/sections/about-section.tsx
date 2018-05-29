@@ -35,11 +35,8 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
 
                 <p className={styles.aboutPara}>
                   — My mission as a product designer is not to just design
-                  beautiful stuff, but to design&nbsp;
-                  <span className={styles.highlight}>
-                    an entire product experience that sparks people’s joy and
-                    simplifies people’s lives.
-                  </span>
+                  beautiful stuff, but to design an entire product experience
+                  that sparks people’s joy and simplifies people’s lives.
                 </p>
               </Col>
             </Row>
