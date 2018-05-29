@@ -1,8 +1,8 @@
+import { withPrefix } from "gatsby-link";
 import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
 import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
-import { withPrefix } from "gatsby-link";
 
 export default class SalesOfDataPage extends React.Component<
   ProjectPageProps,
@@ -43,11 +43,7 @@ export default class SalesOfDataPage extends React.Component<
           <Row className="justify-content-center">
             <Col lg="10">
               <img
-                src={withPrefix(
-                  `/images/${
-                    this.props.data.project.edges[0].node.imageFolder
-                  }/1.png`
-                )}
+                src={this.getImageUrl("1.png")}
                 alt="Sales of Data Interface Set 1"
                 className="img-fluid"
               />
@@ -66,11 +62,7 @@ export default class SalesOfDataPage extends React.Component<
           <Row className="justify-content-center">
             <Col lg="10">
               <img
-                src={withPrefix(
-                  `/images/${
-                    this.props.data.project.edges[0].node.imageFolder
-                  }/2.png`
-                )}
+                src={this.getImageUrl("2.png")}
                 alt="Sales of Data Interface Set 2"
                 className="img-fluid"
               />
@@ -85,11 +77,7 @@ export default class SalesOfDataPage extends React.Component<
           <Row className="justify-content-center">
             <Col lg="10">
               <img
-                src={withPrefix(
-                  `/images/${
-                    this.props.data.project.edges[0].node.imageFolder
-                  }/3.png`
-                )}
+                src={this.getImageUrl("3.png")}
                 alt="Sales of Data Interface Set 3"
                 className="img-fluid"
               />
@@ -104,11 +92,7 @@ export default class SalesOfDataPage extends React.Component<
           <Row className="justify-content-center">
             <Col lg="10">
               <img
-                src={withPrefix(
-                  `/images/${
-                    this.props.data.project.edges[0].node.imageFolder
-                  }/4.png`
-                )}
+                src={this.getImageUrl("4.png")}
                 alt="Sales of Data Interface Set 4"
                 className="img-fluid"
               />
@@ -116,6 +100,12 @@ export default class SalesOfDataPage extends React.Component<
           </Row>
         </Container>
       </ProjectLayout>
+    );
+  }
+
+  private getImageUrl(filename: string) {
+    return withPrefix(
+      `/images/${this.props.data.project.edges[0].node.imageFolder}/${filename}`
     );
   }
 }

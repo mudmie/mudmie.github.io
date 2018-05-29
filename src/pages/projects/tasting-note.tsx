@@ -43,11 +43,7 @@ export default class TastingNotePage extends React.Component<
                 An example of beer evaluation form
               </p>
               <img
-                src={withPrefix(
-                  `/images/${
-                    this.props.data.project.edges[0].node.imageFolder
-                  }/form.png`
-                )}
+                src={this.getImageUrl("form.png")}
                 alt="Tasting Note Evaluation Form"
                 className="img-fluid"
               />
@@ -84,11 +80,7 @@ export default class TastingNotePage extends React.Component<
               <Row className="justify-content-center">
                 <Col lg="6">
                   <img
-                    src={withPrefix(
-                      `/images/${
-                        this.props.data.project.edges[0].node.imageFolder
-                      }/persona.png`
-                    )}
+                    src={this.getImageUrl("persona.png")}
                     alt="User persona"
                     className="img-fluid"
                   />
@@ -133,11 +125,7 @@ export default class TastingNotePage extends React.Component<
               <Row className="justify-content-center">
                 <Col>
                   <img
-                    src={withPrefix(
-                      `/images/${
-                        this.props.data.project.edges[0].node.imageFolder
-                      }/wireframes.jpg`
-                    )}
+                    src={this.getImageUrl("wireframes.jpg")}
                     alt="Tasting Note wireframes"
                     className="img-fluid"
                   />
@@ -152,11 +140,7 @@ export default class TastingNotePage extends React.Component<
               <Row className="justify-content-center">
                 <Col lg="12">
                   <img
-                    src={withPrefix(
-                      `/images/${
-                        this.props.data.project.edges[0].node.imageFolder
-                      }/full.png`
-                    )}
+                    src={this.getImageUrl("full.png")}
                     alt="Tasting Note interfaces"
                     className="img-fluid"
                   />
@@ -166,6 +150,12 @@ export default class TastingNotePage extends React.Component<
           </Row>
         </Container>
       </ProjectLayout>
+    );
+  }
+
+  private getImageUrl(filename: string) {
+    return withPrefix(
+      `/images/${this.props.data.project.edges[0].node.imageFolder}/${filename}`
     );
   }
 }

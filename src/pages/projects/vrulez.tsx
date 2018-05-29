@@ -1,9 +1,9 @@
+import { withPrefix } from "gatsby-link";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
 import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
-import { withPrefix } from "gatsby-link";
 
 export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
   public render() {
@@ -38,22 +38,14 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
           <Row className="justify-content-center">
             <Col lg="5">
               <img
-                src={withPrefix(
-                  `/images/${
-                    this.props.data.project.edges[0].node.imageFolder
-                  }/1.png`
-                )}
+                src={this.getImageUrl("1.png")}
                 alt="VRulez landing page"
                 className="img-fluid"
               />
             </Col>
             <Col lg="5">
               <img
-                src={withPrefix(
-                  `/images/${
-                    this.props.data.project.edges[0].node.imageFolder
-                  }/3.png`
-                )}
+                src={this.getImageUrl("3.png")}
                 alt="VRulez landing/game page"
                 className="img-fluid"
               />
@@ -62,22 +54,14 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
           <Row className="justify-content-center">
             <Col lg="5">
               <img
-                src={withPrefix(
-                  `/images/${
-                    this.props.data.project.edges[0].node.imageFolder
-                  }/2.png`
-                )}
+                src={this.getImageUrl("2.png")}
                 alt="VRulez landing/about page"
                 className="img-fluid"
               />
             </Col>
             <Col lg="5">
               <img
-                src={withPrefix(
-                  `/images/${
-                    this.props.data.project.edges[0].node.imageFolder
-                  }/4.png`
-                )}
+                src={this.getImageUrl("4.png")}
                 alt="VRulez landing/franchise page"
                 className="img-fluid"
               />
@@ -98,11 +82,7 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
           <Row className="justify-content-center">
             <Col lg="6">
               <img
-                src={withPrefix(
-                  `/images/${
-                    this.props.data.project.edges[0].node.imageFolder
-                  }/about.png`
-                )}
+                src={this.getImageUrl("about.png")}
                 alt="about page"
                 className="img-fluid"
               />
@@ -121,11 +101,7 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
           <Row className="justify-content-center">
             <Col lg="6">
               <img
-                src={withPrefix(
-                  `/images/${
-                    this.props.data.project.edges[0].node.imageFolder
-                  }/games.png`
-                )}
+                src={this.getImageUrl("games.png")}
                 alt="vrulez game page"
                 className="img-fluid"
               />
@@ -143,11 +119,7 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
           <Row className="justify-content-center">
             <Col lg="6">
               <img
-                src={withPrefix(
-                  `/images/${
-                    this.props.data.project.edges[0].node.imageFolder
-                  }/location.png`
-                )}
+                src={this.getImageUrl("location.png")}
                 alt="vrulez location page"
                 className="img-fluid"
               />
@@ -165,11 +137,7 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
           <Row className="justify-content-center">
             <Col lg="6">
               <img
-                src={withPrefix(
-                  `/images/${
-                    this.props.data.project.edges[0].node.imageFolder
-                  }/contact.png`
-                )}
+                src={this.getImageUrl("contact.png")}
                 alt="vrulez contact form"
                 className="img-fluid"
               />
@@ -177,6 +145,12 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
           </Row>
         </Container>
       </ProjectLayout>
+    );
+  }
+
+  private getImageUrl(filename: string) {
+    return withPrefix(
+      `/images/${this.props.data.project.edges[0].node.imageFolder}/${filename}`
     );
   }
 }

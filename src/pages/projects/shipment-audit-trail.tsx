@@ -1,9 +1,9 @@
+import { withPrefix } from "gatsby-link";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
 import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
-import { withPrefix } from "gatsby-link";
-import { Table } from "reactstrap";
 
 export default class ShipmentAuditTrailPage extends React.Component<
   ProjectPageProps,
@@ -29,9 +29,12 @@ export default class ShipmentAuditTrailPage extends React.Component<
                 To control the quality and the safety of these products, the
                 Food and Drug Administration (FDA) has enforced a number of
                 regulations, including the &nbsp;
-                <a href="https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/CFRSearch.cfm?CFRPart= 211&showFR=1">
+                <OutboundLink
+                  href="https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/CFRSearch.cfm?CFRPart=211&amp;showFR=1"
+                  target="_blank"
+                >
                   Code of Federal Regulation Title 21
-                </a>
+                </OutboundLink>
                 . This regulation specifically instructs that&nbsp;
                 <i>
                   <b>
@@ -94,11 +97,7 @@ export default class ShipmentAuditTrailPage extends React.Component<
                 based on category of tasks and their hierarchical order
               </p>
               <img
-                src={withPrefix(
-                  `/images/${
-                    this.props.data.project.edges[0].node.imageFolder
-                  }/research.jpg`
-                )}
+                src={this.getImageUrl("research.jpg")}
                 alt="Work Breakdown Structure of Craft Beer Ordering System"
                 className="img-fluid"
               />
@@ -124,11 +123,7 @@ export default class ShipmentAuditTrailPage extends React.Component<
                 workflow for a typical shipping process shown below.
               </p>
               <img
-                src={withPrefix(
-                  `/images/${
-                    this.props.data.project.edges[0].node.imageFolder
-                  }/workflow.png`
-                )}
+                src={this.getImageUrl("workflow.png")}
                 alt="Work Breakdown Structure of Craft Beer Ordering System"
                 className="img-fluid"
               />
@@ -140,11 +135,7 @@ export default class ShipmentAuditTrailPage extends React.Component<
               <p>
                 The
                 <img
-                  src={withPrefix(
-                    `/images/${
-                      this.props.data.project.edges[0].node.imageFolder
-                    }/info.png`
-                  )}
+                  src={this.getImageUrl("info.png")}
                   alt="Work Breakdown Structure of Craft Beer Ordering System"
                   className="img-fluid"
                 />
@@ -153,6 +144,12 @@ export default class ShipmentAuditTrailPage extends React.Component<
           </Row>
         </Container>
       </ProjectLayout>
+    );
+  }
+
+  private getImageUrl(filename: string) {
+    return withPrefix(
+      `/images/${this.props.data.project.edges[0].node.imageFolder}/${filename}`
     );
   }
 }
