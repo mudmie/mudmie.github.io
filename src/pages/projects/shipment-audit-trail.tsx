@@ -10,6 +10,9 @@ export default class ShipmentAuditTrailPage extends React.Component<
   {}
 > {
   public render() {
+    return <div />;
+  }
+  public render2() {
     return (
       <ProjectLayout
         allProjects={this.props.data.allProjects.edges.map(e => e.node)}
