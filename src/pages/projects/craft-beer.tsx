@@ -18,7 +18,7 @@ export default class CraftBeerPage extends React.Component<
         <Container>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Background.</h3>
+              <h3>Background</h3>
               <p>
                 Craft beer is usually produced locally in small quantity by a
                 small to medium-sized breweries, making it impossible for the
@@ -41,7 +41,7 @@ export default class CraftBeerPage extends React.Component<
 
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Problems.</h3>
+              <h3>Problems</h3>
               <p>
                 LCBO employees usually rely on{" "}
                 <i> gut's feeling and experience </i> to decide what products
@@ -68,7 +68,7 @@ export default class CraftBeerPage extends React.Component<
 
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>User Interview.</h3>
+              <h3>User Interview</h3>
               <p>
                 Although I, as a designer, already understand the problems that
                 LCBO staff and craft brewers are facing, it's still valuable for
@@ -108,7 +108,7 @@ export default class CraftBeerPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Work Breakdown Structure.</h3>
+              <h3>Work Breakdown Structure</h3>
               <p>
                 I use the Work Breakdown Structure to make sure that all
                 required components are included in the design. The system is
@@ -133,7 +133,7 @@ export default class CraftBeerPage extends React.Component<
 
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>First Glance.</h3>
+              <h3>First Glance</h3>
               <p>
                 Based on my research on modern e-commerce systems, there are 3
                 keys elements that exist in most of the systems:
@@ -156,7 +156,7 @@ export default class CraftBeerPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Final Design.</h3>
+              <h3>Final Design</h3>
               <p>
                 Here we have the portal for LCBO employees and the portal for
                 craft brewers.

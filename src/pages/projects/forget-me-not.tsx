@@ -18,7 +18,7 @@ export default class ForgetMeNotPage extends React.Component<
         <Container>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Overview.</h3>
+              <h3>Overview</h3>
               <p>
                 Forget Me Not is the first mobile interface I've ever designed.
                 With belief that <i>important tasks cannot be forgotten</i>, I
@@ -45,7 +45,7 @@ export default class ForgetMeNotPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Getting a bit extra.</h3>
+              <h3>Getting a bit extra</h3>
               <p>
                 There are plenty of planner apps in the market, so I decided to
                 create something new. The users can choose to attach location

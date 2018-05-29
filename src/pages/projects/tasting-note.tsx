@@ -19,7 +19,7 @@ export default class TastingNotePage extends React.Component<
         <Container>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Background.</h3>
+              <h3>Background</h3>
               <p>
                 LCBO is one of the world's largest alcoholic beverage
                 purchasers, there are numbers of new products need to be
@@ -55,7 +55,7 @@ export default class TastingNotePage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Problems.</h3>
+              <h3>Problems</h3>
               <p>
                 Current evaluation method is labour intensive as it requires a
                 significant amount of manual effort. The entire process of
@@ -73,7 +73,7 @@ export default class TastingNotePage extends React.Component<
 
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>User Persona.</h3>
+              <h3>User Persona</h3>
               <p>
                 Imagine that there are at least 15 products to be evaluated by
                 10 consultants in today session. This means a minimum of 150
@@ -99,7 +99,7 @@ export default class TastingNotePage extends React.Component<
 
           <Row className="justify-content-center mb-5">
             <Col lg="10">
-              <h3>Wireframes.</h3>
+              <h3>Wireframes</h3>
               <p>After reviewing the problems and user persona, I decided to</p>
               <ol>
                 <li>
@@ -148,7 +148,7 @@ export default class TastingNotePage extends React.Component<
 
           <Row className="justify-content-center mb-5">
             <Col lg="10">
-              <h3>Mockups.</h3>
+              <h3>Mockups</h3>
               <Row className="justify-content-center">
                 <Col lg="12">
                   <img

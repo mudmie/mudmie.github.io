@@ -28,7 +28,7 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
 
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Landing Pages.</h3>
+              <h3>Landing Pages</h3>
               <p>
                 Landing pages allow users to quickly scroll through pages,
                 getting a big picture of what the business is about.
@@ -85,7 +85,7 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>About Page.</h3>
+              <h3>About Page</h3>
               <p>
                 To learn more about the business, site visitors can select
                 "about", displayed on the nav bar at the top of the site page.
@@ -110,7 +110,7 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Game Page.</h3>
+              <h3>Game Page</h3>
               <p>
                 List of games offered at each store location are displayed on
                 this page. Users can choose the store location from the drop
@@ -133,7 +133,7 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Location Page.</h3>
+              <h3>Location Page</h3>
               <p>
                 Store address, hours, contact information and embedded Google
                 Maps are available on this page.
@@ -155,7 +155,7 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Contact Page.</h3>
+              <h3>Contact Page</h3>
               <p>
                 Contact form is available for the users to send any inquiry to
                 the store.
