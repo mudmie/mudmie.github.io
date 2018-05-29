@@ -93,12 +93,11 @@ export default class PickingProcessPage extends React.Component<
             <Col lg="10">
               <h3>User Journey Map / Second Iteration</h3>
               <p>
-                I have to admit that the result from iteration one made me
-                panic. I was really concerned of how I would put things
-                together. After thinking over and over, I finally came up with a
-                new design. Majority of graphic contents were removed in the
-                second iteration, making the page look a lot cleaner than it was
-                in the first iteration.
+                I received quite a lot of feedback on the first design, and I
+                decided to try a different design on my second attempt at
+                capturing the user journey map. Majority of graphic contents
+                were removed in the second iteration, making the page look a lot
+                cleaner than it was in the first iteration.
               </p>
             </Col>
           </Row>
@@ -194,16 +193,16 @@ export default class PickingProcessPage extends React.Component<
                   </b>
                 </i>
                 <br />
-                This question was asked by both myself when designing the
-                feature and the professional service consultants when I
-                presented them this prototype. It's good to allow multiple
-                pallets to be picked at once, but some limitation should still
-                exist to prevent any potential error. Still, the maximum number
-                can be varied, depending on the workflow of each warehouse. Some
-                warehouses might want their forklift operators to pick up only
-                one pallet at a time. Therefore, the product team still needs to
-                consider if a single number will be set up as a maximum number
-                or the maximum number can be customized by each warehouse.
+                This question was asked by both myself and the professional
+                service consultants when I presented them this prototype. It's
+                good to allow multiple pallets to be picked at once, but some
+                limitation should still exist to prevent any potential error.
+                Still, the maximum number can be varied, depending on the
+                workflow of each warehouse. Some warehouses might want their
+                forklift operators to pick up only one pallet at a time.
+                Therefore, the product team still needs to consider if a single
+                number will be set up as a maximum number or the maximum number
+                can be customized by each warehouse.
               </p>
 
               <p>
