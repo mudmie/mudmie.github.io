@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
 import { AboutBrushBackground } from "../components/about-brush-background";
-import * as styles from "./about-section.scss";
-import * as sharedStyles from "./sections.scss";
+import * as styles from "./about-section.module.scss";
+import * as sharedStyles from "./sections.module.scss";
 
 export interface AboutSectionProps {
   id: string;

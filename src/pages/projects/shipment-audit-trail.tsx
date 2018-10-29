@@ -1,4 +1,4 @@
-import { withPrefix } from "gatsby-link";
+import { graphql, withPrefix } from "gatsby";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
@@ -44,8 +44,9 @@ export default class ShipmentAuditTrailPage extends React.Component<
                     there must exist a system that records and archives
                     activities performed during the entire production process
                   </b>
-                </i>, starting from obtaining materials until distributing
-                finished goods.
+                </i>
+                , starting from obtaining materials until distributing finished
+                goods.
               </p>
             </Col>
           </Row>
@@ -68,10 +69,10 @@ export default class ShipmentAuditTrailPage extends React.Component<
                     no way to track who, what, when, and why a production record
                     is modified or deleted
                   </b>
-                </i>&nbsp;. In an extreme case of a product recall by the FDA,
-                it is critical that records of production activities are
-                presented for referring affected batches or for other
-                investigations.
+                </i>
+                &nbsp;. In an extreme case of a product recall by the FDA, it is
+                critical that records of production activities are presented for
+                referring affected batches or for other investigations.
               </p>
             </Col>
           </Row>

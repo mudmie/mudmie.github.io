@@ -1,5 +1,7 @@
+import { graphql } from "gatsby";
 import * as React from "react";
 import { Helmet } from "react-helmet";
+import Layout from "../components/layout";
 import { Project } from "../models/project";
 import { AboutSection } from "../sections/about-section";
 import { IntroSection } from "../sections/intro-section";
@@ -18,7 +20,7 @@ export interface IndexPageProps {
 export default class IndexPage extends React.Component<IndexPageProps, {}> {
   public render() {
     return (
-      <>
+      <Layout>
         <Helmet titleTemplate="">
           <title>
             Mudmie Chuthamsatid - A designer with engineering thoughts
@@ -30,7 +32,7 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
           id="projects"
           projects={this.props.data.allProjectsJson.edges.map(e => e.node)}
         />
-      </>
+      </Layout>
     );
   }
 }

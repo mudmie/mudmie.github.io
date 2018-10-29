@@ -1,4 +1,4 @@
-import Link, { withPrefix } from "gatsby-link";
+import { Link, withPrefix } from "gatsby";
 import * as React from "react";
 import {
   Card,
@@ -11,8 +11,8 @@ import {
   Row,
 } from "reactstrap";
 import { Project } from "../models/project";
-import * as styles from "./projects-section.scss";
-import * as sharedStyles from "./sections.scss";
+import * as styles from "./projects-section.module.scss";
+import * as sharedStyles from "./sections.module.scss";
 
 export interface ProjectsSectionProps {
   projects: Project[];
@@ -26,7 +26,9 @@ export class ProjectsSection extends React.Component<ProjectsSectionProps, {}> {
         <Row>
           <Col>
             <h2 className={styles.sectionHeading}>
-              Collection<br />&#8212; of my Work
+              Collection
+              <br />
+              &#8212; of my Work
             </h2>
           </Col>
         </Row>

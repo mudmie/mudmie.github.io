@@ -4,10 +4,9 @@ module.exports = {
     siteUrl: "https://www.mudmie.com",
   },
   plugins: [
-    "gatsby-plugin-react-next",
+    "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-typescript",
-    "gatsby-plugin-typescript-scss-modules",
     {
       resolve: `gatsby-source-filesystem`,
       options: {

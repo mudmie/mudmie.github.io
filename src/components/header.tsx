@@ -1,8 +1,8 @@
-import Link, { withPrefix } from "gatsby-link";
+import { Link, withPrefix } from "gatsby";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import * as React from "react";
 import { Collapse, Nav, NavItem, Navbar, NavbarToggler } from "reactstrap";
-import * as styles from "./header.scss";
+import * as styles from "./header.module.scss";
 import * as logo from "../../static/images/Mudmie.png";
 
 export interface HeaderState {
@@ -103,6 +103,7 @@ export class Header extends React.Component<{}, HeaderState> {
                 <OutboundLink
                   href={withPrefix("/cchutham.pdf")}
                   className={`nav-link ${styles.navLink}`}
+                  target="_blank"
                   onClick={() => {
                     this.collapseNav();
                   }}

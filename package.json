@@ -4,18 +4,16 @@
   "version": "1.0.0",
   "author": "Chatchanok Chuthamsatid <mchuthams@gmail.com>",
   "dependencies": {
-    "bootstrap": "^4.1.0",
-    "gatsby": "^1.9.250",
-    "gatsby-image": "^1.0.46",
-    "gatsby-link": "^1.6.40",
-    "gatsby-plugin-react-helmet": "^2.0.10",
-    "gatsby-plugin-react-next": "^1.0.11",
-    "gatsby-plugin-sharp": "^1.6.42",
-    "gatsby-transformer-sharp": "^1.6.22",
-    "react": "^16.3.1",
-    "react-dom": "^16.3.1",
+    "bootstrap": "^4.1.3",
+    "gatsby": "^2.0.31",
+    "gatsby-image": "^2.0.17",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sharp": "^2.0.8",
+    "gatsby-transformer-sharp": "^2.1.5",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
     "react-helmet": "^5.2.0",
-    "reactstrap": "^5.0.0"
+    "reactstrap": "^6.5.0"
   },
   "keywords": [
     "gatsby"
@@ -26,23 +24,27 @@
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.tsx src/**/*.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "deploy": "gatsby build && gh-pages -d public -b master",
+    "prebuild": "rimraf public",
+    "predeploy": "rimraf public"
   },
   "devDependencies": {
-    "@types/classnames": "^2.2.3",
-    "@types/prop-types": "^15.5.2",
-    "@types/react": "^16.3.10",
-    "@types/react-helmet": "^5.0.5",
-    "@types/reactstrap": "^5.0.21",
-    "classnames": "^2.2.5",
-    "gatsby-plugin-google-analytics": "^1.0.31",
-    "gatsby-plugin-sitemap": "^1.2.22",
-    "gatsby-plugin-typescript": "^1.4.19",
-    "gatsby-plugin-typescript-scss-modules": "^1.0.7",
-    "gatsby-source-filesystem": "^1.5.31",
-    "gatsby-transformer-json": "^1.0.16",
-    "gh-pages": "^1.1.0",
-    "prettier": "^1.11.1",
-    "typescript": "^2.8.1"
+    "@types/classnames": "^2.2.6",
+    "@types/prop-types": "^15.5.6",
+    "@types/react": "^16.4.18",
+    "@types/react-helmet": "^5.0.7",
+    "@types/reactstrap": "^6.4.2",
+    "classnames": "^2.2.6",
+    "gatsby-plugin-google-analytics": "^2.0.6",
+    "gatsby-plugin-sass": "^2.0.1",
+    "gatsby-plugin-sitemap": "^2.0.1",
+    "gatsby-plugin-typescript": "^2.0.0",
+    "gatsby-source-filesystem": "^2.0.5",
+    "gatsby-transformer-json": "^2.1.4",
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.9.4",
+    "prettier": "^1.14.3",
+    "typescript": "^3.1.3",
+    "rimraf": "^2.6.2"
   }
 }

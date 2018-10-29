@@ -1,4 +1,4 @@
-import { withPrefix } from "gatsby-link";
+import { graphql, withPrefix } from "gatsby";
 import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
 import { ProjectLayout } from "../../components/project-layout";

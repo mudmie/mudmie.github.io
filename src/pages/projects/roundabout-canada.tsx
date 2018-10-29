@@ -1,3 +1,4 @@
+import { graphql } from "gatsby";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
@@ -76,20 +77,20 @@ export default class RoundaboutCanadaPage extends React.Component<
               <p>
                 The main goal of this process was to decide on the look of the
                 website and the technology to build the website.
-                <ul>
-                  <li>
-                    Through the research, only 1-2 escape room businesses used a
-                    video background for their homepage. Therefore, I decided to
-                    go with video background for the homepage of the new website
-                    to grab attention from the audience.
-                  </li>
-                  <li>
-                    Since the website didn't have a lot of content, simple HTML,
-                    CSS, JavaScript and Boostrap were used to create a fully
-                    responsive website.
-                  </li>
-                </ul>
               </p>
+              <ul>
+                <li>
+                  Through the research, only 1-2 escape room businesses used a
+                  video background for their homepage. Therefore, I decided to
+                  go with video background for the homepage of the new website
+                  to grab attention from the audience.
+                </li>
+                <li>
+                  Since the website didn't have a lot of content, simple HTML,
+                  CSS, JavaScript and Boostrap were used to create a fully
+                  responsive website.
+                </li>
+              </ul>
             </Col>
           </Row>
 
@@ -112,18 +113,18 @@ export default class RoundaboutCanadaPage extends React.Component<
                 Through data collection by the store and Google Analytic, it was
                 clearly shown that the new website significantly contributed to
                 the performance of the business.
-                <ul>
-                  <li>
-                    Google Analytics showed that the website rank moved from
-                    19th to 8th when people searched with keyword "Escape room
-                    Toronto".
-                  </li>
-                  <li>
-                    The amount of income from customers who heard about the
-                    company trough website increased around $17,000 monthly.
-                  </li>
-                </ul>
               </p>
+              <ul>
+                <li>
+                  Google Analytics showed that the website rank moved from 19th
+                  to 8th when people searched with keyword "Escape room
+                  Toronto".
+                </li>
+                <li>
+                  The amount of income from customers who heard about the
+                  company trough website increased around $17,000 monthly.
+                </li>
+              </ul>
             </Col>
           </Row>
 

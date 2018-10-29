@@ -1,4 +1,4 @@
-import { withPrefix } from "gatsby-link";
+import { graphql, withPrefix } from "gatsby";
 import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
 import { ProjectLayout } from "../../components/project-layout";
@@ -77,32 +77,32 @@ export default class CraftBeerPage extends React.Component<
               <p>
                 From sessions, held to capture extra pieces of information from
                 LCBO store employees and craft brewers, I learnt that
-                <ul>
-                  <li>
-                    LCBO employees looked for a system that would tell them
-                    exact number of product quantity needed to be ordered.
-                  </li>
-                  <li>
-                    LCBO staff would like to know an estimated delivery date
-                    from the craft brewers.
-                  </li>
-                  <li>
-                    After receiving orders from each LCBO store, craft brewers
-                    had to record order details to their system manually because
-                    LCBO didn't provide any platform for them to track the order
-                    history.
-                  </li>
-                  <li>
-                    Craft brewers needs an ability to modify orders as sometimes
-                    they couldn't keep up with production or they realized that
-                    the store ordered too many or too less.
-                  </li>
-                  <li>
-                    Both parties wanted to be able to communicate requests or
-                    updates through the system.
-                  </li>
-                </ul>
               </p>
+              <ul>
+                <li>
+                  LCBO employees looked for a system that would tell them exact
+                  number of product quantity needed to be ordered.
+                </li>
+                <li>
+                  LCBO staff would like to know an estimated delivery date from
+                  the craft brewers.
+                </li>
+                <li>
+                  After receiving orders from each LCBO store, craft brewers had
+                  to record order details to their system manually because LCBO
+                  didn't provide any platform for them to track the order
+                  history.
+                </li>
+                <li>
+                  Craft brewers needs an ability to modify orders as sometimes
+                  they couldn't keep up with production or they realized that
+                  the store ordered too many or too less.
+                </li>
+                <li>
+                  Both parties wanted to be able to communicate requests or
+                  updates through the system.
+                </li>
+              </ul>
             </Col>
           </Row>
           <Row className="justify-content-center">
@@ -132,12 +132,12 @@ export default class CraftBeerPage extends React.Component<
               <p>
                 Based on my research on modern e-commerce systems, there are 3
                 keys elements that exist in most of the systems:
-                <ol>
-                  <li>Order summary/history section </li>
-                  <li>Order details section</li>
-                  <li>New order section</li>
-                </ol>
               </p>
+              <ol>
+                <li>Order summary/history section </li>
+                <li>Order details section</li>
+                <li>New order section</li>
+              </ol>
             </Col>
           </Row>
           <Row className="justify-content-center">

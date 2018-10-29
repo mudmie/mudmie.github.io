@@ -3,7 +3,8 @@ import Helmet from "react-helmet";
 import { Project } from "../models/project";
 import { ProjectFooter } from "./project-footer";
 import { ProjectHeader } from "./project-header";
-import * as styles from "./project-layout.scss";
+import * as styles from "./project-layout.module.scss";
+import Layout from "./layout";
 
 export interface ProjectLayoutProps {
   allProjects: Project[];
@@ -14,7 +15,7 @@ export interface ProjectLayoutProps {
 export class ProjectLayout extends React.Component<ProjectLayoutProps, {}> {
   public render() {
     return (
-      <>
+      <Layout>
         <Helmet>
           <title>{this.props.currentProject.name}</title>
           <link
@@ -38,7 +39,7 @@ export class ProjectLayout extends React.Component<ProjectLayoutProps, {}> {
             currentProject={this.props.currentProject}
           />
         </div>
-      </>
+      </Layout>
     );
   }
 }

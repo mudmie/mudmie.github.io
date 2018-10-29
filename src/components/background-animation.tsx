@@ -1,5 +1,5 @@
 import * as React from "react";
-import * as styles from "./background-animation.scss";
+import * as styles from "./background-animation.module.scss";
 
 export class BackgroundAnimation extends React.Component {
   public render() {

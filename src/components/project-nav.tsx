@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Project } from "../models/project";
-import Link, { withPrefix } from "gatsby-link";
+import { Link, withPrefix } from "gatsby";
 import { Row, Col } from "reactstrap";
 
 export interface ProjectNavProps {

@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
 import { BackgroundAnimation } from "../components/background-animation";
-import * as styles from "./intro-section.scss";
-import * as sharedStyles from "./sections.scss";
+import * as styles from "./intro-section.module.scss";
+import * as sharedStyles from "./sections.module.scss";
 
 export interface IntroSectionProps {
   id: string;

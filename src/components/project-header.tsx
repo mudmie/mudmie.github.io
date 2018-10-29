@@ -1,9 +1,9 @@
 import Img from "gatsby-image";
-import { withPrefix } from "gatsby-link";
+import { withPrefix } from "gatsby";
 import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
 import { Project } from "../models/project";
-import * as styles from "./project-header.scss";
+import * as styles from "./project-header.module.scss";
 import { ProjectNav } from "./project-nav";
 
 export interface ProjectHeaderProps {
@@ -30,7 +30,11 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
         <Row className="justify-content-center">
           <Col lg="10">
             {this.props.mainImage ? (
-              <Img alt="main project image" sizes={this.props.mainImage} className="background-theme-color" />
+              <Img
+                alt="main project image"
+                sizes={this.props.mainImage}
+                className="background-theme-color"
+              />
             ) : (
               <img
                 src={withPrefix(

@@ -1,9 +1,9 @@
-import { withPrefix } from "gatsby-link";
+import { graphql, withPrefix } from "gatsby";
 import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
 import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
-import * as sharedStyles from "./styles.scss";
+import * as sharedStyles from "./styles.module.scss";
 
 export default class TastingNotePage extends React.Component<
   ProjectPageProps,
