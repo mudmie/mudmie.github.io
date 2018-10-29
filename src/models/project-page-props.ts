@@ -14,7 +14,7 @@ export interface ProjectPageProps {
     };
     mainImage: {
       childImageSharp: {
-        sizes: any;
+        fluid: any;
       };
     };
   };

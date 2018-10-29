@@ -32,7 +32,7 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
             {this.props.mainImage ? (
               <Img
                 alt="main project image"
-                sizes={this.props.mainImage}
+                fluid={this.props.mainImage}
                 className="background-theme-color"
               />
             ) : (

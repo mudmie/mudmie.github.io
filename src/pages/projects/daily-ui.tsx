@@ -10,7 +10,7 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
       <ProjectLayout
         allProjects={this.props.data.allProjects.edges.map(e => e.node)}
         currentProject={this.props.data.project.edges[0].node}
-        mainImage={this.props.data.mainImage.childImageSharp.sizes}
+        mainImage={this.props.data.mainImage.childImageSharp.fluid}
       >
         <Container>
           <Row className="justify-content-center">
