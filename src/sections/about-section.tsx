@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
-import { AboutBrushBackground } from "../components/about-brush-background";
 import * as styles from "./about-section.module.scss";
 import * as sharedStyles from "./sections.module.scss";
 
@@ -12,17 +11,17 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
     return (
       <Container fluid>
         <a id={this.props.id} className={sharedStyles.sectionAnchor} />
-        <Row style={{ position: "relative" }} className={styles.rowAbout}>
-          <AboutBrushBackground />
+        <Row className={styles.rowAbout}>
           <Container>
             <Row>
               <Col md="8" sm="10" className={styles.colAbout}>
+                <h1 className={styles.aboutHeading}>Mudmie Chuthamsatid</h1>
                 <h2 className={styles.aboutHeading}>
-                  Hello, I'm Mudmie &#8212;
+                  design intern @ PlanGrid &#8212;
                 </h2>
-                <h3 className={styles.aboutHeading}>
-                  It's nice to have you here!
-                </h3>
+                <h2 className={styles.aboutHeading}>
+                  engineering student @ UWaterloo
+                </h2>
 
                 <p className={styles.aboutPara}>
                   I love travelling the world and wandering around the cities —

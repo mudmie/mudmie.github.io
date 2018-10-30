@@ -1,3 +1,6 @@
+@import "../styles/_colors.scss";
+@import "../styles/_fonts.scss";
+
 .row-about {
   background-color: #fcfcfe;
   background-image: url("../../static/images/me.jpg");
@@ -16,18 +19,22 @@
   padding-bottom: 30px;
 }
 
-h2.about-heading,
-h3.about-heading {
+h1.about-heading {
+  font-size: 40px;
+  color: $h1-text-color;
+  font-weight: 700;
+}
+h2.about-heading {
+  font-size: 24px;
+  color: $h2-text-color;
+  font-weight: 400;
+}
+h1.about-heading,
+h2.about-heading {
   text-align: right;
-  font-weight: 600;
+  font-family: $heading-font;
 }
 
-.about-subtitle {
-  text-align: right;
-  font-size: 12px;
-  font-weight: 500;
-  color: #75787a;
-}
 .about-para {
   text-align: justify;
 }

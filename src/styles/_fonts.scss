@@ -1,25 +1,3 @@
-@font-face {
-  font-family: "Metropolis";
-  src: url("../../static/fonts/Metropolis-Bold.eot") format("eot"),
-    url("../../static/fonts/Metropolis-Bold.woff") format("woff"),
-    url("../../static/fonts/Metropolis-BoldItalic.eot") format("eot"),
-    url("../../static/fonts/Metropolis-BoldItalic.woff") format("woff"),
-    url("../../static/fonts/Metropolis-Light.eot") format("eot"),
-    url("../../static/fonts/Metropolis-Light.woff") format("woff"),
-    url("../../static/fonts/Metropolis-LightItalic.eot") format("eot"),
-    url("../../static/fonts/Metropolis-LightItalic.woff") format("woff"),
-    url("../../static/fonts/Metropolis-Regular.eot") format("eot"),
-    url("../../static/fonts/Metropolis-Regular.woff") format("woff"),
-    url("../../static/fonts/Metropolis-RegularItalic.eot") format("eot"),
-    url("../../static/fonts/Metropolis-RegularItalic.woff") format("woff");
-  font-family: "Tokyo-Regular";
-  src: url("../../static/fonts/Tokyo-Regular.eot") format("eot"),
-    url("../../static/fonts/Tokyo-Regular.woff") format("woff");
-  font-family: "Tokyo-Outline";
-  src: url("../../static/fonts/Tokyo-Outline.eot") format("eot"),
-    url("../../static/fonts/Tokyo-Outline.woff") format("woff");
-}
-$body-font: "Raleway", sans-serif;
-$tokyo-regular: "Tokyo-Regular, sans-serif";
-$tokyo-outline: "Tokyo-Outline";
-$project-font: "Roboto", sans-serif;
+$body-font: "Karla", sans-serif;
+$heading-font: "Poppins", sans-serif;
+$project-font: "Poppins", sans-serif;

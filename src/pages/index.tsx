@@ -4,7 +4,6 @@ import { Helmet } from "react-helmet";
 import Layout from "../components/layout";
 import { Project } from "../models/project";
 import { AboutSection } from "../sections/about-section";
-import { IntroSection } from "../sections/intro-section";
 import { ProjectsSection } from "../sections/projects-section";
 
 export interface IndexPageProps {
@@ -26,7 +25,6 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
             Mudmie Chuthamsatid - A designer with engineering thoughts
           </title>
         </Helmet>
-        <IntroSection id="home" />
         <AboutSection id="about" />
         <ProjectsSection
           id="projects"

@@ -69,17 +69,6 @@ export class Header extends React.Component<{}, HeaderState> {
               <NavItem>
                 <Link
                   className={`nav-link ${styles.navLink}`}
-                  to="/#home"
-                  onClick={() => {
-                    this.collapseNav();
-                  }}
-                >
-                  home
-                </Link>
-              </NavItem>
-              <NavItem>
-                <Link
-                  className={`nav-link ${styles.navLink}`}
                   to="/#about"
                   onClick={() => {
                     this.collapseNav();

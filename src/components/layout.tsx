@@ -17,7 +17,7 @@ export default class Layout extends React.Component<LayoutProps, {}> {
           <meta name="description" content="" />
           <meta name="keywords" content="" />
           <link
-            href="https://fonts.googleapis.com/css?family=Raleway:300,400,700"
+            href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Poppins:400,700"
             rel="stylesheet"
           />
           <script
