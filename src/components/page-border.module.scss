@@ -1,0 +1,40 @@
+@import "../styles/_colors.scss";
+
+@mixin border-base {
+  position: fixed;
+  z-index: 2000;
+}
+
+$border-value: 20px solid $light-blue-color;
+
+.top-border {
+  @include border-base();
+  left: 0;
+  right: 0;
+  top: 0;
+  border-top: $border-value;
+}
+
+.right-border {
+  @include border-base();
+  bottom: 0;
+  right: 0;
+  top: 0;
+  border-right: $border-value;
+}
+
+.bottom-border {
+  @include border-base();
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-bottom: $border-value;
+}
+
+.left-border {
+  @include border-base();
+  bottom: 0;
+  left: 0;
+  top: 0;
+  border-left: $border-value;
+}
