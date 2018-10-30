@@ -2,6 +2,7 @@ import * as React from "react";
 import Helmet from "react-helmet";
 import { Footer } from "../components/footer";
 import { Header } from "../components/header";
+import * as styles from "./layout.module.scss";
 
 interface LayoutProps {
   children: any;
@@ -46,6 +47,7 @@ export default class Layout extends React.Component<LayoutProps, {}> {
           <meta name="theme-color" content="#ffffff" />
         </Helmet>
         <Header />
+        <div className={styles.pageBorder} />
         <main>{this.props.children}</main>
         <Footer />
       </>
