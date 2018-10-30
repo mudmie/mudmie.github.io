@@ -25,29 +25,31 @@ export class ProjectsSection extends React.Component<ProjectsSectionProps, {}> {
         <a id={this.props.id} className={sharedStyles.sectionAnchor} />
         <Row>
           <Col>
-            <h2 className={styles.sectionHeading}>
-              Collection
-              <br />
-              &#8212; of my Work
-            </h2>
+            <h2 className={styles.sectionHeading}>Projects</h2>
           </Col>
         </Row>
         <Row>
           {this.props.projects.map(proj => (
-            <Col lg="4" sm="6" className={styles.projectCard} key={proj.name}>
-              <Card>
+            <Col lg="6" sm="12" className={styles.projectCell} key={proj.name}>
+              <Card className={styles.projectCard}>
+                <CardBody className={styles.cardHeader}>
+                  <CardTitle className={styles.cardTitle}>
+                    <Link to={proj.url}>{proj.name}</Link>
+                  </CardTitle>
+                  <CardSubtitle className={styles.cardSubtitle}>
+                    {proj.company}
+                    <br />
+                    {proj.term}
+                  </CardSubtitle>
+                </CardBody>
                 <Link to={proj.url}>
                   <CardImg
-                    src={withPrefix(`/images/${proj.imageFolder}/banner.jpg`)}
+                    src={withPrefix(
+                      `/images/${proj.imageFolder}/thumbnail.png`
+                    )}
                     alt={`project ${proj.name} image`}
                   />
                 </Link>
-                <CardBody>
-                  <CardTitle>
-                    <Link to={proj.url}>{proj.name}</Link>
-                  </CardTitle>
-                  <CardSubtitle>{proj.subtitle}</CardSubtitle>
-                </CardBody>
               </Card>
             </Col>
           ))}

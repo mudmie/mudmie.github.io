@@ -1,6 +1,7 @@
 export interface Project {
   name: string;
-  subtitle: string;
+  company: string;
+  term: string;
   description: string;
   url: string;
   imageFolder: string;

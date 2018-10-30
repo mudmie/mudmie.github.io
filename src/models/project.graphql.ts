@@ -5,7 +5,8 @@ export const projectFields = graphql`
     edges {
       node {
         name
-        subtitle
+        company
+        term
         description
         url
         imageFolder
