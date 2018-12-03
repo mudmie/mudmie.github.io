@@ -23,11 +23,7 @@ export class ProjectLayout extends React.Component<ProjectLayoutProps, {}> {
             rel="stylesheet"
           />
         </Helmet>
-        <div
-          className={`${styles.projectPage} ${
-            styles["theme" + this.props.currentProject.theme]
-          }`}
-        >
+        <div className={styles.projectPage}>
           <ProjectHeader
             allProjects={this.props.allProjects}
             currentProject={this.props.currentProject}

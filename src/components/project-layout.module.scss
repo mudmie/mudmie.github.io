@@ -1,38 +1,13 @@
 @import "../styles/_colors.scss";
 @import "../styles/_fonts.scss";
 
-.project-page {
-  font-family: $project-font;
-  font-weight: 300;
+@mixin project-theme($primary-color, $secondary-color) {
   h1,
   h2,
-  h3,
-  .btn {
-    font-family: $body-font;
-  }
-
-  h1 {
-    font-weight: bold;
-  }
-  h2 {
-    font-size: 26px;
-  }
   h3 {
-    font-size: 22px;
-    margin-top: 20px;
-    font-weight: bold;
-  }
-  h4 {
-    font-size: 16px;
-    font-style: italic;
-  }
-}
-
-@mixin project-theme($primary-color, $secondary-color) {
-  h1 {
     color: $primary-color;
   }
-  h2 {
+  h4 {
     color: $secondary-color;
   }
   hr {
@@ -53,14 +28,31 @@
   }
 }
 
-.theme-purple {
-  @include project-theme($project-main-purple, $project-sub-purple);
-}
+.project-page {
+  h1,
+  h2,
+  h3,
+  .btn {
+    font-family: $heading-font;
+  }
 
-.theme-orange {
-  @include project-theme($project-main-orange, $project-sub-orange);
-}
+  h1 {
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 22px;
+    margin: 20px 0 5px 0;
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
 
-.theme-brick {
-  @include project-theme($project-main-brick, $project-sub-brick);
+  @include project-theme($paprika-color, $mustard-color);
 }

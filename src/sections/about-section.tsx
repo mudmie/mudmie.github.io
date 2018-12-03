@@ -22,18 +22,15 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
                 <h2 className={styles.aboutHeading}>
                   engineering student @ UWaterloo
                 </h2>
-
+              </Col>
+              <Col lg={{ size: 6, offset: 2 }} md="8" sm="10">
                 <p className={styles.aboutPara}>
-                  I love travelling the world and wandering around the cities —
-                  to eat, learn, and get inspired. I used to think that good
-                  designs were just about aesthetics, but after taking a Human
-                  Factors in Design course in my first year, my whole
-                  perspective towards design has changed. A good design
-                  communicates clearly and solves problems well.
+                  Those sparkling eyes, dazzling smiles and joyful voices from
+                  people in the meeting room teach me that a good design
+                  communicates clearly and solves problem well.
                 </p>
-
                 <p className={styles.aboutPara}>
-                  — My mission as a product designer is not to just design
+                  My mission as a product designer is not to just design
                   beautiful stuff, but to design an entire product experience
                   that sparks people’s joy and simplifies people’s lives.
                 </p>

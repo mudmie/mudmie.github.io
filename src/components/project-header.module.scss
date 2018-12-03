@@ -1,7 +1,9 @@
 @import "../styles/_colors.scss";
+@import "../styles/_fonts.scss";
 
 .header {
   margin-top: 80px;
+  font-family: $heading-font;
 }
 
 .subtitle {
@@ -11,4 +13,9 @@
 .small-dash {
   border-top: 5px solid;
   width: 50px;
+}
+
+.company-term {
+  margin-top: 10px;
+  font-weight: normal;
 }

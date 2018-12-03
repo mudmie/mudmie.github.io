@@ -3,6 +3,7 @@ import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
 import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
+import * as sharedStyles from "./styles.module.scss";
 
 export default class CraftBeerPage extends React.Component<
   ProjectPageProps,
@@ -18,7 +19,38 @@ export default class CraftBeerPage extends React.Component<
         <Container>
           <Row className="justify-content-center">
             <Col lg="10">
+              <h3>About the Company</h3>
+              <p>
+                The Liquor Control Board of Ontario (LCBO) is one of the world's
+                largest purchaser of alcoholic beverages. It distributes and
+                sells liquor throughout the province of Ontario in Canada. In
+                2016, an innovation lab, LCBO|next, was founded to design and
+                develop new technologies that will enhance LCBO's technology
+                initiatives.
+              </p>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="10">
+              <h3>My Roles</h3>
+              <p>
+                As a UX/UI designer at the lab, I met with stakeholders to
+                discuss their problems and understand the user requirements and
+                constraints. I designed a web portal that allows LCBO retail
+                employees to place craft beer orders directly with brewers.
+              </p>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="10">
               <h3>Background</h3>
+              <p className={sharedStyles.quote}>
+                Store manager and beer ambassador at LCBO retail stores track
+                craft beer inventory through a spreadsheet. They calculate the
+                quantities of craft beer in each order with their gut feelings
+                then place the orders by calling each brewer.
+              </p>
+
               <p>
                 Craft beer is usually produced locally in small quantity by a
                 small to medium-sized breweries, making it impossible for the

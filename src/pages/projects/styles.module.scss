@@ -1,5 +1,16 @@
+@import "../../styles/_colors.scss";
+@import "../../styles/_fonts.scss";
+
 .image-title {
   margin: 5px 0 0 0;
   text-align: center;
 }
 
+.quote {
+  font-family: $italic-font;
+  border-left: 5px solid $mustard-color;
+  padding-left: 10px;
+  font-style: italic;
+  color: $mustard-color;
+  margin: 10px 0 10px 0;
+}

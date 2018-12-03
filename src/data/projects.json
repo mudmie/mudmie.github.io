@@ -3,10 +3,10 @@
     "name": "Picking Process Experience",
     "company": "Nulogy",
     "term": "Winter 2018",
-    "description": "A journey of user research to solve Forklift Operator's pain in picking process.",
+    "description": "Understand forklift operator’s goals and pain points to design a user-friendly picking process.",
     "url": "/projects/picking-process/",
     "imageFolder": "Picking",
-    "theme": "Purple"
+    "theme": "Brick"
   },
   {
     "name": "Craft Beer Ordering System",
@@ -24,7 +24,7 @@
     "description": "A data collecting mobile application, designed as an initiative to replace existing paper forms for evaluating beverage products.",
     "url": "/projects/tasting-note/",
     "imageFolder": "Tasting Note",
-    "theme": "Orange"
+    "theme": "Brick"
   },
   {
     "name": "Sales of Data Web Application",
@@ -33,7 +33,7 @@
     "description": "A web portal that provides sales insights and analysis to small-medium sized LCBO business partners.",
     "url": "/projects/sales-of-data/",
     "imageFolder": "Sales of Data",
-    "theme": "Purple"
+    "theme": "Brick"
   },
   {
     "name": "VRulez",
@@ -42,7 +42,7 @@
     "description": "A freelance website design and development for a virtual reality arcade business in Toronto. Built with React, Gatsby, and Bootstrap to support all screen sizes.",
     "url": "/projects/vrulez/",
     "imageFolder": "Vrulez",
-    "theme": "Orange"
+    "theme": "Brick"
   },
   {
     "name": "Daily UI",
@@ -51,7 +51,7 @@
     "description": "A collection of my UI design practices.",
     "url": "/projects/daily-ui/",
     "imageFolder": "DailyUI",
-    "theme": "Purple"
+    "theme": "Brick"
   },
   {
     "name": "Escape Room Website",
@@ -60,6 +60,6 @@
     "description": "A responsive commercial website, built with HTML 5, CSS 3, JavaScript and Bootstrap, for an escape room business in Toronto.",
     "url": "/projects/roundabout-canada/",
     "imageFolder": "Roundabout",
-    "theme": "Orange"
+    "theme": "Brick"
   }
 ]

@@ -48,6 +48,7 @@ export class ProjectsSection extends React.Component<ProjectsSectionProps, {}> {
                       `/images/${proj.imageFolder}/thumbnail.png`
                     )}
                     alt={`project ${proj.name} image`}
+                    className={styles.cardImage}
                   />
                 </Link>
               </Card>

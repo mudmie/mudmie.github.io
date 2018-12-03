@@ -22,10 +22,12 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
         <Row className="justify-content-center">
           <Col lg="10">
             <h1>{this.props.currentProject.name}</h1>
-            <h2 className={styles.subtitle}>
-              — {this.props.currentProject.company}
-              {", "}
+            <h4 className={styles.companyTerm}>
+              {this.props.currentProject.company} {", "}
               {this.props.currentProject.term}
+            </h4>
+            <h2 className={styles.subtitle}>
+              — {this.props.currentProject.description}
             </h2>
           </Col>
         </Row>
@@ -50,7 +52,6 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
         </Row>
         <Row className="justify-content-center mt-3">
           <Col lg="10">
-            <p>{this.props.currentProject.description}</p>
             <hr className={styles.smallDash} />
           </Col>
         </Row>
