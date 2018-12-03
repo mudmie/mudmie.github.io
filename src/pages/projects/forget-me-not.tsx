@@ -1,6 +1,7 @@
-import { graphql, withPrefix } from "gatsby";
 import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
+import { graphql, withPrefix } from "gatsby";
+import { ImageBox } from "../../components/image-box";
 import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
 
@@ -36,7 +37,7 @@ export default class ForgetMeNotPage extends React.Component<
                   reminder.
                 </li>
               </ul>
-              <img
+              <ImageBox
                 src={this.getImageUrl("1.png")}
                 alt="Forget Me Not Interface Set 1"
                 className="img-fluid"
@@ -54,7 +55,7 @@ export default class ForgetMeNotPage extends React.Component<
                 With embedded Google Map, users can search for locations that
                 might associate with their events.
               </p>
-              <img
+              <ImageBox
                 src={this.getImageUrl("2.png")}
                 alt="Forget Me Not Interface Set 2"
                 className="img-fluid"

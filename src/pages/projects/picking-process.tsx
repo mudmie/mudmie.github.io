@@ -1,9 +1,10 @@
-import { graphql, withPrefix } from "gatsby";
 import * as React from "react";
+import * as sharedStyles from "./styles.module.scss";
 import { Col, Container, Row } from "reactstrap";
+import { graphql, withPrefix } from "gatsby";
+import { ImageBox } from "../../components/image-box";
 import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
-import * as sharedStyles from "./styles.module.scss";
 
 export default class PickingProcessPage extends React.Component<
   ProjectPageProps,
@@ -80,16 +81,16 @@ export default class PickingProcessPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="5">
-              <img
+              <ImageBox
                 src={this.getImageUrl("research2.jpg")}
-                alt="collect information using sticky notes"
+                alt="Collect information using sticky notes"
                 className="img-fluid"
               />
             </Col>
             <Col lg="5">
-              <img
+              <ImageBox
                 src={this.getImageUrl("research.jpg")}
-                alt="whiteboard with research"
+                alt="Whiteboard with research"
                 className="img-fluid"
               />
             </Col>
@@ -116,9 +117,9 @@ export default class PickingProcessPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="8">
-              <img
+              <ImageBox
                 src={this.getImageUrl("1.png")}
-                alt="first iteration of user journey map"
+                alt="First iteration of user journey map"
                 className="img-fluid"
               />
             </Col>
@@ -136,9 +137,9 @@ export default class PickingProcessPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="8">
-              <img
+              <ImageBox
                 src={this.getImageUrl("2.png")}
-                alt="second iteration of user journey map"
+                alt="Second iteration of user journey map"
                 className="img-fluid"
               />
             </Col>
@@ -160,9 +161,9 @@ export default class PickingProcessPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="6">
-              <img
+              <ImageBox
                 src={this.getImageUrl("3.png")}
-                alt="third iteration of user journey map"
+                alt="Third iteration of user journey map"
                 className="img-fluid"
               />
             </Col>
@@ -189,9 +190,9 @@ export default class PickingProcessPage extends React.Component<
 
           <Row className="justify-content-center">
             <Col lg="6">
-              <img
+              <ImageBox
                 src={this.getImageUrl("4.png")}
-                alt="final iteration of user journey map"
+                alt="Final iteration of user journey map"
                 className="img-fluid"
               />
             </Col>
@@ -207,9 +208,9 @@ export default class PickingProcessPage extends React.Component<
                 or to drop off pallet(s) that they currently have on their
                 forklift.
               </p>
-              <img
+              <ImageBox
                 src={this.getImageUrl("interface.png")}
-                alt="new interface of picking process"
+                alt="New interface of picking process"
                 className="img-fluid"
               />
             </Col>

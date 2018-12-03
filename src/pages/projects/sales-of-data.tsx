@@ -1,6 +1,7 @@
-import { graphql, withPrefix } from "gatsby";
 import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
+import { graphql, withPrefix } from "gatsby";
+import { ImageBox } from "../../components/image-box";
 import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
 
@@ -42,7 +43,7 @@ export default class SalesOfDataPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <img
+              <ImageBox
                 src={this.getImageUrl("1.png")}
                 alt="Sales of Data Interface Set 1"
                 className="img-fluid"
@@ -61,7 +62,7 @@ export default class SalesOfDataPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <img
+              <ImageBox
                 src={this.getImageUrl("2.png")}
                 alt="Sales of Data Interface Set 2"
                 className="img-fluid"
@@ -76,7 +77,7 @@ export default class SalesOfDataPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <img
+              <ImageBox
                 src={this.getImageUrl("3.png")}
                 alt="Sales of Data Interface Set 3"
                 className="img-fluid"
@@ -91,7 +92,7 @@ export default class SalesOfDataPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <img
+              <ImageBox
                 src={this.getImageUrl("4.png")}
                 alt="Sales of Data Interface Set 4"
                 className="img-fluid"

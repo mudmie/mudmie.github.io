@@ -1,7 +1,8 @@
-import { graphql, withPrefix } from "gatsby";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
 import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
+import { graphql, withPrefix } from "gatsby";
+import { ImageBox } from "../../components/image-box";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
 
@@ -37,14 +38,14 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
           </Row>
           <Row className="justify-content-center">
             <Col lg="5">
-              <img
+              <ImageBox
                 src={this.getImageUrl("1.png")}
                 alt="VRulez landing page"
                 className="img-fluid"
               />
             </Col>
             <Col lg="5">
-              <img
+              <ImageBox
                 src={this.getImageUrl("3.png")}
                 alt="VRulez landing/game page"
                 className="img-fluid"
@@ -53,14 +54,14 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
           </Row>
           <Row className="justify-content-center">
             <Col lg="5">
-              <img
+              <ImageBox
                 src={this.getImageUrl("2.png")}
                 alt="VRulez landing/about page"
                 className="img-fluid"
               />
             </Col>
             <Col lg="5">
-              <img
+              <ImageBox
                 src={this.getImageUrl("4.png")}
                 alt="VRulez landing/franchise page"
                 className="img-fluid"
@@ -81,9 +82,9 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
           </Row>
           <Row className="justify-content-center">
             <Col lg="6">
-              <img
+              <ImageBox
                 src={this.getImageUrl("about.png")}
-                alt="about page"
+                alt="About page"
                 className="img-fluid"
               />
             </Col>
@@ -100,9 +101,9 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
           </Row>
           <Row className="justify-content-center">
             <Col lg="6">
-              <img
+              <ImageBox
                 src={this.getImageUrl("games.png")}
-                alt="vrulez game page"
+                alt="VRulez game page"
                 className="img-fluid"
               />
             </Col>
@@ -118,9 +119,9 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
           </Row>
           <Row className="justify-content-center">
             <Col lg="6">
-              <img
+              <ImageBox
                 src={this.getImageUrl("location.png")}
-                alt="vrulez location page"
+                alt="VRulez location page"
                 className="img-fluid"
               />
             </Col>
@@ -136,9 +137,9 @@ export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
           </Row>
           <Row className="justify-content-center">
             <Col lg="6">
-              <img
+              <ImageBox
                 src={this.getImageUrl("contact.png")}
-                alt="vrulez contact form"
+                alt="VRulez contact form"
                 className="img-fluid"
               />
             </Col>

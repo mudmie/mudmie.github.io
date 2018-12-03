@@ -1,9 +1,10 @@
-import { graphql, withPrefix } from "gatsby";
 import * as React from "react";
+import * as sharedStyles from "./styles.module.scss";
 import { Col, Container, Row } from "reactstrap";
+import { graphql, withPrefix } from "gatsby";
+import { ImageBox } from "../../components/image-box";
 import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
-import * as sharedStyles from "./styles.module.scss";
 
 export default class TastingNotePage extends React.Component<
   ProjectPageProps,
@@ -42,7 +43,7 @@ export default class TastingNotePage extends React.Component<
               <p className={sharedStyles.imageTitle}>
                 An example of beer evaluation form
               </p>
-              <img
+              <ImageBox
                 src={this.getImageUrl("form.png")}
                 alt="Tasting Note Evaluation Form"
                 className="img-fluid"
@@ -79,7 +80,7 @@ export default class TastingNotePage extends React.Component<
               </p>
               <Row className="justify-content-center">
                 <Col lg="6">
-                  <img
+                  <ImageBox
                     src={this.getImageUrl("persona.png")}
                     alt="User persona"
                     className="img-fluid"
@@ -124,7 +125,7 @@ export default class TastingNotePage extends React.Component<
 
               <Row className="justify-content-center">
                 <Col>
-                  <img
+                  <ImageBox
                     src={this.getImageUrl("wireframes.jpg")}
                     alt="Tasting Note wireframes"
                     className="img-fluid"
@@ -139,7 +140,7 @@ export default class TastingNotePage extends React.Component<
               <h3>Mockups</h3>
               <Row className="justify-content-center">
                 <Col lg="12">
-                  <img
+                  <ImageBox
                     src={this.getImageUrl("full.png")}
                     alt="Tasting Note interfaces"
                     className="img-fluid"
