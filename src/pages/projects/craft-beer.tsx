@@ -44,29 +44,13 @@ export default class CraftBeerPage extends React.Component<
           <Row className="justify-content-center">
             <Col lg="10">
               <h3>Background</h3>
-              <p className={sharedStyles.quote}>
-                Store manager and beer ambassador at LCBO retail stores track
-                craft beer inventory through a spreadsheet. They calculate the
-                quantities of craft beer in each order with their gut feelings
-                then place the orders by calling each brewer.
-              </p>
-
               <p>
-                Craft beer is usually produced locally in small quantity by a
-                small to medium-sized breweries, making it impossible for the
-                breweries to supply sufficient quantity of products to LCBO
-                warehouses all at once. As a result, each LCBO retail store
-                needs to contact local breweries directly to place orders and
-                manage shipping logistics.
-              </p>
-              <p>
-                A store manager or beer ambassador is responsible for managing
-                craft beer inventory and placing orders. Currently, the
-                inventory is tracked with a spreadsheet and calculated by hand.
-                Once the quantities are determined, the staff makes phone calls
-                to each craft brewers to place order and arrange delivery date.
-                To modify, update or check on orders, the staff has to make more
-                phone calls during the week.
+                Craft beer is usually produced by a small to medium size local
+                breweries. This makes it impossible for the breweries to supply
+                sufficient amount of products to all LCBO warehouse at once. As
+                a result, each LCBO retail store needs to contact local
+                breweries directly to place orders and manage shipping
+                logistics.
               </p>
             </Col>
           </Row>
@@ -74,25 +58,33 @@ export default class CraftBeerPage extends React.Component<
           <Row className="justify-content-center">
             <Col lg="10">
               <h3>Problems</h3>
-              <p>
-                LCBO employees usually rely on{" "}
-                <i>gut's feeling and experience</i> to decide what products and
-                how many of them to order. There are other factors such as
-                promotion and seasonal items that can affect their estimation.
-                Without a proper guidance, it is almost{" "}
-                <i>impossible to order accurate amount of products.</i>
+              <p className={sharedStyles.quote}>
+                With many factors such as promotion and seasonal items, it is
+                impossible for LCBO employees to order an accurate amount of
+                craft beer by just relying on their experience and gut feeling.
+                Without a reliable ordering system, the process will continue to
+                be time consuming and prone to error.
               </p>
+
               <p>
-                Making phone calls back and forth is also very time consuming,
-                and it doesn't only cause burden to LCBO staff. There are about
-                660 LCBO across Ontario, so each brewer can receive{" "}
-                <i>hundreds of phone calls</i> on Monday and the following days.
+                A store manager and a beer ambassador is responsible for
+                managing craft beer inventory and placing orders. Currently, the
+                inventory is tracked with a spreadsheet and calculated by hand.
+                To order the products, the employee needs to estimate the
+                quantity before making phone calls to each craft brewer to place
+                order and arrange delivery date. To modify, update or check
+                orders, the staff has to make more phone calls during the week.
               </p>
+
               <p>
-                The current process restricts order modification to be made only
-                through phone calls. As a result,{" "}
-                <i>unexpected quantity or products</i> can show up on the
-                delivery day if the brewer forgets to update with the store.
+                This current process doesn't only cause a burden to LCBO staff,
+                but also the craft brewers. Since there are about 660 LCBO
+                stores across Ontario, each brewer can receive hundreds of phone
+                calls during the week. In addition, the current process
+                restricts order modification to be made only through phone
+                calls. As a result, an unexpected quantity or products can show
+                up on the delivery day if the brewer forgets to update with the
+                store.
               </p>
             </Col>
           </Row>
@@ -100,39 +92,49 @@ export default class CraftBeerPage extends React.Component<
           <Row className="justify-content-center">
             <Col lg="10">
               <h3>User Interview</h3>
-              <p>
-                Although I, as a designer, already understand the problems that
-                LCBO staff and craft brewers are facing, it's still valuable for
-                me to sit and chat with the users to ask questions and discover
-                what kind of system that they are looking for.
+              <p className={sharedStyles.quote}>
+                I know the problems the users face. I also have a picture of the
+                system that I want to design to solve the problems, but I can't
+                just do that. Why?
+                <br />
+                Because I'm not the user!
+                <br />
+                It doesn't make sense to design a system that I love to use, but
+                the real users hate to use.
               </p>
               <p>
-                From sessions, held to capture extra pieces of information from
-                LCBO store employees and craft brewers, I learnt that
+                Although I already understand the problems that LCBO staff and
+                craft brewers are facing, it's still crucial for me to sit and
+                chat with the users to ask questions and discover what kind of
+                system that they are looking for.
+              </p>
+              <p>
+                From interview sessions with LCBO employees and craft brewers, I
+                learn that
               </p>
               <ul>
                 <li>
-                  LCBO employees looked for a system that would tell them exact
+                  LCBO employees look for a system that would tell them exact
                   number of product quantity needed to be ordered.
                 </li>
                 <li>
-                  LCBO staff would like to know an estimated delivery date from
-                  the craft brewers.
+                  LCBO employees would like to know an estimated delivery date
+                  from the craft brewers.
                 </li>
                 <li>
-                  After receiving orders from each LCBO store, craft brewers had
-                  to record order details to their system manually because LCBO
-                  didn't provide any platform for them to track the order
+                  After receiving orders from each LCBO store, craft brewers
+                  have to record order details to their system manually because
+                  LCBO doesn't provide any platform for them to track the order
                   history.
                 </li>
                 <li>
-                  Craft brewers needs an ability to modify orders as sometimes
-                  they couldn't keep up with production or they realized that
-                  the store ordered too many or too less.
+                  Craft brewers need an ability to modify orders as sometimes
+                  they can't keep up with production or they realize that the
+                  store orders too many or too less.
                 </li>
                 <li>
-                  Both parties wanted to be able to communicate requests or
-                  updates through the system.
+                  Both parties want to be able to make requests or updates
+                  through the system.
                 </li>
               </ul>
             </Col>
@@ -160,7 +162,7 @@ export default class CraftBeerPage extends React.Component<
 
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>First Glance</h3>
+              <h3>Wireframes</h3>
               <p>
                 Based on my research on modern e-commerce systems, there are 3
                 keys elements that exist in most of the systems:
@@ -183,7 +185,7 @@ export default class CraftBeerPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Final Design</h3>
+              <h3>Prototype</h3>
               <p>
                 Here we have the portal for LCBO employees and the portal for
                 craft brewers.
