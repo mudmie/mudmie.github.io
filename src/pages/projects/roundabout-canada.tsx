@@ -1,7 +1,7 @@
-import { graphql } from "gatsby";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
 import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
+import { graphql } from "gatsby";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
 

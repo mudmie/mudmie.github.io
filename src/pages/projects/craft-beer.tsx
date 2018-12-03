@@ -1,9 +1,10 @@
-import { graphql, withPrefix } from "gatsby";
 import * as React from "react";
+import * as sharedStyles from "./styles.module.scss";
 import { Col, Container, Row } from "reactstrap";
+import { graphql, withPrefix } from "gatsby";
+import { ImageBox } from "../../components/image-box";
 import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
-import * as sharedStyles from "./styles.module.scss";
 
 export default class CraftBeerPage extends React.Component<
   ProjectPageProps,
@@ -152,7 +153,7 @@ export default class CraftBeerPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="8">
-              <img
+              <ImageBox
                 src={this.getImageUrl("wbs.png")}
                 alt="Work Breakdown Structure of Craft Beer Ordering System"
                 className="img-fluid"
@@ -176,7 +177,7 @@ export default class CraftBeerPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <img
+              <ImageBox
                 src={this.getImageUrl("wireframes.png")}
                 alt="Wireframes of Craft Beer Ordering System"
                 className="img-fluid"
@@ -194,7 +195,7 @@ export default class CraftBeerPage extends React.Component<
           </Row>
           <Row className="justify-content-center mb-5">
             <Col lg="10">
-              <img
+              <ImageBox
                 src={this.getImageUrl("full.png")}
                 alt="Complete design of Craft Beer Ordering System"
                 className="img-fluid"

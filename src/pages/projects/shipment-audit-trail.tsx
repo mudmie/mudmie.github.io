@@ -1,7 +1,8 @@
-import { graphql, withPrefix } from "gatsby";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
 import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
+import { graphql, withPrefix } from "gatsby";
+import { ImageBox } from "../../components/image-box";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
 
@@ -100,7 +101,7 @@ export default class ShipmentAuditTrailPage extends React.Component<
                 low-fidelity user workflow is created by grouping sticky notes
                 based on category of tasks and their hierarchical order
               </p>
-              <img
+              <ImageBox
                 src={this.getImageUrl("research.jpg")}
                 alt="Work Breakdown Structure of Craft Beer Ordering System"
                 className="img-fluid"
@@ -126,7 +127,7 @@ export default class ShipmentAuditTrailPage extends React.Component<
                 the situation. With additional information, I create a complete
                 workflow for a typical shipping process shown below.
               </p>
-              <img
+              <ImageBox
                 src={this.getImageUrl("workflow.png")}
                 alt="Work Breakdown Structure of Craft Beer Ordering System"
                 className="img-fluid"
@@ -138,7 +139,7 @@ export default class ShipmentAuditTrailPage extends React.Component<
               <h3>The Design</h3>
               <p>
                 The
-                <img
+                <ImageBox
                   src={this.getImageUrl("info.png")}
                   alt="Work Breakdown Structure of Craft Beer Ordering System"
                   className="img-fluid"

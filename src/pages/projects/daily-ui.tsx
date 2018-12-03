@@ -1,6 +1,7 @@
-import { graphql, withPrefix } from "gatsby";
 import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
+import { graphql, withPrefix } from "gatsby";
+import { ImageBox } from "../../components/image-box";
 import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
 
@@ -15,9 +16,9 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
         <Container>
           <Row className="justify-content-center">
             <Col lg="5">
-              <img
+              <ImageBox
                 src={this.getImageUrl("001.png")}
-                alt="sign up page"
+                alt="Sign up page"
                 className="img-fluid"
               />
             </Col>
@@ -27,9 +28,9 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
           </Row>
           <Row className="justify-content-center">
             <Col lg="5">
-              <img
+              <ImageBox
                 src={this.getImageUrl("002.png")}
-                alt="credit card check out page"
+                alt="Credit card check out page"
                 className="img-fluid"
               />
             </Col>
@@ -39,9 +40,9 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
           </Row>
           <Row className="justify-content-center">
             <Col lg="5">
-              <img
+              <ImageBox
                 src={this.getImageUrl("003.png")}
-                alt="landing page"
+                alt="Landing page"
                 className="img-fluid"
               />
             </Col>
@@ -51,9 +52,9 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
           </Row>
           <Row className="justify-content-center">
             <Col lg="5">
-              <img
+              <ImageBox
                 src={this.getImageUrl("004.png")}
-                alt="calculator"
+                alt="Calculator"
                 className="img-fluid"
               />
             </Col>
@@ -63,9 +64,9 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
           </Row>
           <Row className="justify-content-center">
             <Col lg="5">
-              <img
+              <ImageBox
                 src={this.getImageUrl("005.png")}
-                alt="app icon"
+                alt="App icon"
                 className="img-fluid"
               />
             </Col>
@@ -75,9 +76,9 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
           </Row>
           <Row className="justify-content-center">
             <Col lg="5">
-              <img
+              <ImageBox
                 src={this.getImageUrl("006.png")}
-                alt="user profile"
+                alt="User profile"
                 className="img-fluid"
               />
             </Col>
@@ -87,9 +88,9 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
           </Row>
           <Row className="justify-content-center">
             <Col lg="5">
-              <img
+              <ImageBox
                 src={this.getImageUrl("007.png")}
-                alt="settings"
+                alt="Settings"
                 className="img-fluid"
               />
             </Col>
@@ -99,7 +100,7 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
           </Row>
           <Row className="justify-content-center">
             <Col lg="5">
-              <img
+              <ImageBox
                 src={this.getImageUrl("008.png")}
                 alt="404 error page"
                 className="img-fluid"
