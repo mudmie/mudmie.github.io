@@ -32,7 +32,7 @@ export default class SalesOfDataPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>It's all about the business opportunity</h3>
+              <h3>Landing pages</h3>
               <p>
                 The landing pages serve as advertising media that help promote
                 the sales of data service to potential clients. Here, the
@@ -52,7 +52,7 @@ export default class SalesOfDataPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Let's get started</h3>
+              <h3>Account Creation </h3>
               <p>
                 Once the clients decide to subscribe, LCBO will authorize their
                 agent code so that they can use it to sign up for their

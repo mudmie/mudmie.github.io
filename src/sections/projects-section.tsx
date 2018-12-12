@@ -30,7 +30,7 @@ export class ProjectsSection extends React.Component<ProjectsSectionProps, {}> {
         </Row>
         <Row>
           {this.props.projects.map(proj => (
-            <Col lg="6" sm="12" className={styles.projectCell} key={proj.name}>
+            <Col lg="4" sm="12" className={styles.projectCell} key={proj.name}>
               <Card className={styles.projectCard}>
                 <CardBody className={styles.cardHeader}>
                   <CardTitle className={styles.cardTitle}>

@@ -48,8 +48,8 @@ export default class CraftBeerPage extends React.Component<
               <p>
                 Craft beer is usually produced by a small to medium size local
                 breweries. This makes it impossible for the breweries to supply
-                sufficient amount of products to all LCBO warehouse at once. As
-                a result, each LCBO retail store needs to contact local
+                a sufficient amount of products to all LCBO warehouse at once.
+                As a result, each LCBO retail store needs to contact local
                 breweries directly to place orders and manage shipping
                 logistics.
               </p>
@@ -64,16 +64,16 @@ export default class CraftBeerPage extends React.Component<
                 impossible for LCBO employees to order an accurate amount of
                 craft beer by just relying on their experience and gut feeling.
                 Without a reliable ordering system, the process will continue to
-                be time consuming and prone to error.
+                be time-consuming and prone to error.
               </p>
 
               <p>
-                A store manager and a beer ambassador is responsible for
+                A store manager and a beer ambassador are responsible for
                 managing craft beer inventory and placing orders. Currently, the
                 inventory is tracked with a spreadsheet and calculated by hand.
                 To order the products, the employee needs to estimate the
                 quantity before making phone calls to each craft brewer to place
-                order and arrange delivery date. To modify, update or check
+                an order and arrange a delivery date. To modify, update or check
                 orders, the staff has to make more phone calls during the week.
               </p>
 
@@ -115,8 +115,8 @@ export default class CraftBeerPage extends React.Component<
               </p>
               <ul>
                 <li>
-                  LCBO employees look for a system that would tell them exact
-                  number of product quantity needed to be ordered.
+                  LCBO employees look for a system that would tell the exact
+                  number of products needed to be ordered.
                 </li>
                 <li>
                   LCBO employees would like to know an estimated delivery date
@@ -146,8 +146,8 @@ export default class CraftBeerPage extends React.Component<
               <p>
                 I use the Work Breakdown Structure to make sure that all
                 required components are included in the design. The system is
-                mainly divided into two parts: portal for LCBO store and portal
-                for craft brewers.
+                mainly divided into two parts: a portal for LCBO store and a
+                portal for craft brewers.
               </p>
             </Col>
           </Row>
@@ -186,18 +186,103 @@ export default class CraftBeerPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Prototype</h3>
+              <h3>Create Order </h3>
+
+              <p className={sharedStyles.quote}>
+                The main objective of this project is to build a system that
+                helps determine the quantity of craft beer products LCBO
+                employees should and allows them to place orders online.
+              </p>
               <p>
-                Here we have the portal for LCBO employees and the portal for
-                craft brewers.
+                To place an order, the employees need to navigate to "New Order"
+                on the menu bar. From there, they can search for craft beer
+                vendors and see the list of products that each vendor carries.
+                Once a vendor is selected, the employee will see product
+                information as well as any promotion associated with the product
+                (PROMO), Suggested Order Quantity (SOQ) and current store
+                inventory (TSI). The unit number will be auto-filled based on
+                the SOQ, but the users will be able to adjust the number as
+                needed.
+              </p>
+              <p>
+                In a case that the employees decide not to order any product
+                from a vendor to their store, they can check the "No Order
+                Reminder" box, which will trigger the system to send an
+                automatic email to notify the vendor.
               </p>
             </Col>
           </Row>
-          <Row className="justify-content-center mb-5">
+
+          <Row className="justify-content-center">
             <Col lg="10">
               <ImageBox
-                src={this.getImageUrl("full.png")}
-                alt="Complete design of Craft Beer Ordering System"
+                src={this.getImageUrl("lcbo.png")}
+                alt="Order Summary Page on LCBO Employee Web Portal"
+                className="img-fluid"
+              />
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="10">
+              <h3>Review &amp; Confirm Order </h3>
+              <p className={sharedStyles.quote}>
+                From perspectives of craft brewers, the system should allow them
+                to review the order submitted by the store and make any
+                necessary adjustment before shipping the products to LCBO
+                stores.
+              </p>
+              Once the store employees submit the order, it will show up on the
+              craft brewer's portal. From there, craft brewers can review
+              products, their quantity, and store comments. They can modify the
+              quantity of product in the order and provide comments to the store
+              as appropriate. Before they can confirm the order, they have to
+              select at least one possible delivery date. This piece of
+              information will help the store to arrange a delivery schedule.
+              <p />
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center">
+            <Col lg="10">
+              <ImageBox
+                src={this.getImageUrl("craft.png")}
+                alt="Order Summary Page on LCBO Employee Web Portal"
+                className="img-fluid"
+              />
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center">
+            <Col lg="10">
+              <h3>Order Details </h3>
+              <p>
+                From the order summary page, LCBO employees can take a quick
+                glance on order status, which informs the number of products
+                that have either been confirmed, modified, or delivered. On the
+                order details page, the quantity of product in the original
+                order is printed in black in the "Units" column. In a
+                circumstance where the craft brewers decide to make an
+                adjustment to the product quantity, the original quantity will
+                get strikethrough, and the modified amount will be printed in
+                red, put in a bracket and placed beside the original quantity
+                There is also a button for the store employees to confirm
+                delivery once they receive the products.
+              </p>
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center">
+            <Col lg="5">
+              <ImageBox
+                src={this.getImageUrl("summary-lcbo.png")}
+                alt="Order Summary Page on LCBO Employee Web Portal"
+                className="img-fluid"
+              />
+            </Col>
+            <Col lg="5">
+              <ImageBox
+                src={this.getImageUrl("detail-lcbo.png")}
+                alt="Order Summary Page on Craft Brewer Web Portal"
                 className="img-fluid"
               />
             </Col>

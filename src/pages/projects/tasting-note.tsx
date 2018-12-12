@@ -41,11 +41,11 @@ export default class TastingNotePage extends React.Component<
           <Row className="justify-content-center">
             <Col lg="6">
               <p className={sharedStyles.imageTitle}>
-                An example of beer evaluation form
+                An example of beer a evaluation form
               </p>
               <ImageBox
                 src={this.getImageUrl("form.png")}
-                alt="Tasting Note Evaluation Form"
+                alt="Beer Evaluation Form"
                 className="img-fluid"
               />
             </Col>
@@ -53,17 +53,18 @@ export default class TastingNotePage extends React.Component<
           <Row className="justify-content-center">
             <Col lg="10">
               <h3>Problems</h3>
-              <p>
+              <p className={sharedStyles.quote}>
                 Current evaluation method is labour intensive as it requires a
                 significant amount of manual effort. The entire process of
                 gathering, delivering paperwork and transferring data is
-                <i> time consuming and fallible.</i>
+                time-consuming and fallible.
               </p>
               <p>
                 While it's challenging for the product consultants to manage and
-                organize the forms, it's a real pain for the writing team to go
-                through piles of paper, validate the quality of data and
-                manually enter it to electronic system.
+                organize the product evaluation forms, it's a real pain for the
+                data and writing team to go through piles of paper, try to read
+                the hand writings, validate data quality, and manually enter it
+                to electronic system.
               </p>
             </Col>
           </Row>
@@ -114,13 +115,6 @@ export default class TastingNotePage extends React.Component<
                   approach, the users can focus on one task without having to
                   process lots of information at once.
                 </li>
-
-                {/* <li>
-                  Propose that lists of products to be evaluated will need to be entered
-                  to the system prior to the session and the notes will
-                  be automatically stored in the central database after
-                  submission.
-                </li> */}
               </ol>
 
               <Row className="justify-content-center">
@@ -137,16 +131,52 @@ export default class TastingNotePage extends React.Component<
 
           <Row className="justify-content-center mb-5">
             <Col lg="10">
-              <h3>Mockups</h3>
-              <Row className="justify-content-center">
-                <Col lg="12">
-                  <ImageBox
-                    src={this.getImageUrl("full.png")}
-                    alt="Tasting Note interfaces"
-                    className="img-fluid"
-                  />
-                </Col>
-              </Row>
+              <h3>Finding Products</h3>
+              <p>
+                As soon as the product consultants log in to their account, they
+                will see a list of products that needs to be evaluated as soon
+                as possible on the home page. They can also use a search tool to
+                look for specific products. By tabbing "Evaluate", the
+                consultants will be able to see a full list of products they
+                need to evaluate. From there, they can choose to view just beer,
+                wine, spirits, or all types of products.
+              </p>
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center">
+            <Col lg="8">
+              <ImageBox
+                src={this.getImageUrl("find.png")}
+                alt="Tasting Note interfaces"
+                className="img-fluid"
+              />
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center mb-5">
+            <Col lg="10">
+              <h3>Evaluating Products</h3>
+              <p>
+                Once the consultants select the product, the system will ask
+                them to take a picture of that product. The picture will enable
+                the data team to verify whether the correct product is being
+                evaluated. In addition, the data will be useful for any future
+                project that involves pattern recognition or machine learning.
+                Once the picture is submitted, the consultants will be able
+                select the answer to each question that was previously listed in
+                the paper form. The consultants will have an opportunity to
+                review their answers before submitting their evaluation.
+              </p>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="10">
+              <ImageBox
+                src={this.getImageUrl("evaluate.png")}
+                alt="Tasting Note interfaces"
+                className="img-fluid"
+              />
             </Col>
           </Row>
         </Container>
