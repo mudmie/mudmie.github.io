@@ -1,9 +1,27 @@
 [
   {
+    "name": "User Account Management",
+    "company": "PlanGrid",
+    "term": "Fall 2018",
+    "description": "Allowing IT-admin to monitor users' accounts.",
+    "url": "/projects/account-management/",
+    "imageFolder": "AC",
+    "theme": "Brick"
+  },
+  {
+    "name": "Workflow Setting Page",
+    "company": "PlanGrid",
+    "term": "Fall 2018",
+    "description": "Design reuseable pattern to establish consistent user experience for all 3 workflow products.",
+    "url": "/projects/workflow-settings/",
+    "imageFolder": "Settings",
+    "theme": "Brick"
+  },
+  {
     "name": "T-Shirt Design",
     "company": "PlanGrid",
     "term": "Fall 2018",
-    "description": "Understand forklift operator’s goals and pain points to design a user-friendly picking process.",
+    "description": "Making PlanGrid be on UWaterloo's students radar.",
     "url": "/projects/t-shirt/",
     "imageFolder": "Tshirt",
     "theme": "Brick"
@@ -21,13 +39,13 @@
     "name": "Craft Beer Ordering System",
     "company": "Liquor Control Board of Ontario",
     "term": "Spring 2017",
-    "description": "An online craft beer ordering system that connects LCBO employees at the stores with craft brewers. ",
+    "description": "Establish a reliable online ordering system to replace phone orders",
     "url": "/projects/craft-beer/",
     "imageFolder": "Craft Beer",
     "theme": "Brick"
   },
   {
-    "name": "Tasting Note Mobile",
+    "name": "Tasting Note Mobile App",
     "company": "Liquor Control Board of Ontario",
     "term": "Spring 2017",
     "description": "A data collecting mobile application, designed as an initiative to replace existing paper forms for evaluating beverage products.",

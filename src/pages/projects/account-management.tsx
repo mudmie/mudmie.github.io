@@ -6,7 +6,7 @@ import { ImageBox } from "../../components/image-box";
 import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
 
-export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
+export default class ACPage extends React.Component<ProjectPageProps, {}> {
   public render() {
     return (
       <ProjectLayout
@@ -99,17 +99,10 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
                 geese.
               </p>
               <Row className="justify-content-center">
-                <Col lg="6">
+                <Col lg="8">
                   <ImageBox
                     src={this.getImageUrl("inspo.jpg")}
-                    alt="Collect information using sticky notes"
-                    className="img-fluid"
-                  />
-                </Col>
-                <Col lg="6">
-                  <ImageBox
-                    src={this.getImageUrl("sketches.jpg")}
-                    alt="Whiteboard with research"
+                    alt="Haunting for Inspiration"
                     className="img-fluid"
                   />
                 </Col>
@@ -129,7 +122,7 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
               <Row className="justify-content-center">
                 <Col lg="8">
                   <ImageBox
-                    src={this.getImageUrl("print.jpg")}
+                    src={this.getImageUrl("sketches.jpg")}
                     alt="Haunting for Inspiration"
                     className="img-fluid"
                   />
@@ -156,7 +149,7 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
           <Row className="justify-content-center">
             <Col lg="8">
               <ImageBox
-                src={this.getImageUrl("shirt.png")}
+                src={this.getImageUrl("print.jpg")}
                 alt="Design Options"
                 className="img-fluid"
               />
@@ -175,14 +168,14 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
 }
 
 export const pageQuery = graphql`
-  query TshirtQuery($path: String!) {
+  query ACQuery($path: String!) {
     allProjects: allProjectsJson {
       ...ProjectFields
     }
     project: allProjectsJson(filter: { url: { eq: $path } }) {
       ...ProjectFields
     }
-    mainImage: file(relativePath: { eq: "Tshirt/main.png" }) {
+    mainImage: file(relativePath: { eq: "AC/main.png" }) {
       ...MainImageSizes
     }
   }

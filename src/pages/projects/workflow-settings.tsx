@@ -6,7 +6,10 @@ import { ImageBox } from "../../components/image-box";
 import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
 
-export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
+export default class WorkflowSettingsPage extends React.Component<
+  ProjectPageProps,
+  {}
+> {
   public render() {
     return (
       <ProjectLayout
@@ -25,8 +28,8 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
                 engineering director came up with an idea to design a limited
                 edition t-shirt for them. As a designer, I worked with the co-op
                 students to (secretly) brainstorm ideas for the design of the
-                t-shirt. I hand-sketched different designs and created
-                illustrations using Adobe Illustrator.
+                t-shirt. I sketched different designs and used Illustrator to
+                create illustrations.
               </p>
             </Col>
           </Row>
@@ -35,20 +38,19 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
             <Col lg="10">
               <h3>Brainstorming Ideas</h3>
               <p className={sharedStyles.quote}>
-                The design workshop plays an important role to gather ideas from
-                the co-op students. Since they will be wearing the t-shirt, it's
-                crucial for me to have them involved in the design process.
+                The design workshop plays an important roles to gather ideas
+                from the co-op students. Since they will be wearing the t-shirt,
+                it's crucial for me to have them involved in the design process.
               </p>
               <p>
                 During the design workshop, I asked the co-op students to write
                 down ideas or words that popped up in their mind when thinking
                 about PlanGrid and the University of Waterloo. Everyone in the
-                workshop had the word "Waterloo geese" in their list as they are
-                so many geese around the university campus. Concepts of a hard
-                hat, campus buildings, and construct your future also showed up
-                as PlanGrid creates software for the construction industry.
-                Other ideas such as maple leaf, US and Canada maps also appeared
-                in the workshop.
+                workshop had the word "geese" in their list as they are so many
+                geese around the university campus. Concepts of hard hat, campus
+                building, and construct your future also showed up as PlanGrid
+                creates software for the construction industry. Other ideas such
+                as maple leaf, US and Canada maps also appeared in the workshop.
               </p>
             </Col>
           </Row>
@@ -66,16 +68,18 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
             <Col lg="10">
               <h3>Crazy 8's</h3>
               <p>
-                In crazy 8’s exercise, the students spent a total of 8 minutes
-                to convert words and ideas into 8 different drawings. The
-                activity turned out to be quite challenging for them as they
-                only had one minute to sketch each drawing. There were times
-                when students feared that their pictures looked ugly or gave up
-                drawing because they ran out of ideas. To maintain the energy
-                level in the room, I had to shout out some of the keywords
-                generated in the brainstorming sessions as well as to emphasize
-                them to focus on the ideas rather than the look of their
-                drawings.
+                In crazy 8's exercise, I asked the students to convert the ideas
+                that they brainstormed earlier into drawings. They had to sketch
+                a total of 8 pictures, and they only had a one minute to sketch
+                each of them. The activity turned to be quite challenging for
+                these students because they didn't participate in design
+                workshop often. There were times when students hesitated to draw
+                because they were scared that their pictures would look ugly.
+                There were also some students who gave up drawing as they ran
+                out of ideas. To maintain the energy level in the room, I had to
+                gave them some of the keywords generated in the brainstorming
+                sessions as well as to emphasize them to focus on the ideas
+                rather than the look of their drawings.
               </p>
             </Col>
           </Row>
@@ -92,24 +96,36 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
             <Col lg="10">
               <h3>Designing the Logo</h3>
               <p>
-                Coming out of the design workshop, I knew by heart that the
-                students would like to have a goose on their t-shirt. Though I
-                spent time looking for inspiration on the internet, a majority
-                of my sketches still revolved around the concept of Waterloo
-                geese.
+                Before I started sketching the illustration, I spent some time
+                looking for inspiration on the internet. I was looking for
+                pictures of Waterloo geese, university campus buildings, Bob the
+                Builder, and San Francisco landmark like the Golden Gate Bridge.
               </p>
               <Row className="justify-content-center">
-                <Col lg="6">
+                <Col lg="8">
                   <ImageBox
                     src={this.getImageUrl("inspo.jpg")}
-                    alt="Collect information using sticky notes"
+                    alt="Haunting for Inspiration"
                     className="img-fluid"
                   />
                 </Col>
-                <Col lg="6">
+              </Row>
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center">
+            <Col lg="10">
+              <p>
+                Once I got enough inspiration, I began to sketch the designs.
+                During this process, a lot of my sketches tended to revolve
+                around the concept of Waterloo geese since it was the design
+                that got requested the most.
+              </p>
+              <Row className="justify-content-center">
+                <Col lg="8">
                   <ImageBox
                     src={this.getImageUrl("sketches.jpg")}
-                    alt="Whiteboard with research"
+                    alt="Haunting for Inspiration"
                     className="img-fluid"
                   />
                 </Col>
@@ -126,38 +142,33 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
                 adopted this method and came up with three different designs:
                 the goose, the buildings, and the plain text.
               </p>
-              <Row className="justify-content-center">
-                <Col lg="8">
-                  <ImageBox
-                    src={this.getImageUrl("print.jpg")}
-                    alt="Haunting for Inspiration"
-                    className="img-fluid"
-                  />
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-
-          <Row className="justify-content-center">
-            <Col lg="10">
-              <p>
-                I presented these designs to the design team and the creative
-                director at PlanGrid. Everyone voted in favor of the PlanGrid +
-                Goose logo as it suited the purpose of the project the most.
-                However, one of the designers thought that the logo alone didn’t
-                tell much about the work that PlanGrid provided to the
-                construction industry. In response to the comment, I added the
-                text that said “build better together” to the final design of
-                the logo.
-              </p>
             </Col>
           </Row>
 
           <Row className="justify-content-center">
             <Col lg="8">
               <ImageBox
-                src={this.getImageUrl("shirt.png")}
+                src={this.getImageUrl("print.jpg")}
                 alt="Design Options"
+                className="img-fluid"
+              />
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center">
+            <Col lg="10">
+              <h3>Final Design</h3>
+              <p>
+                I presented the design options to other designers in a design
+                critique
+              </p>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="8">
+              <ImageBox
+                src={this.getImageUrl("shirt.png")}
+                alt="Wireframes of Craft Beer Ordering System"
                 className="img-fluid"
               />
             </Col>
@@ -175,14 +186,14 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
 }
 
 export const pageQuery = graphql`
-  query TshirtQuery($path: String!) {
+  query WorkflowSettingsQuery($path: String!) {
     allProjects: allProjectsJson {
       ...ProjectFields
     }
     project: allProjectsJson(filter: { url: { eq: $path } }) {
       ...ProjectFields
     }
-    mainImage: file(relativePath: { eq: "Tshirt/main.png" }) {
+    mainImage: file(relativePath: { eq: "Settings/main.png" }) {
       ...MainImageSizes
     }
   }
