@@ -1,10 +1,11 @@
 import * as React from "react";
+import * as styles from "./project-layout.module.scss";
 import Helmet from "react-helmet";
+import Layout from "./layout";
 import { Project } from "../models/project";
 import { ProjectFooter } from "./project-footer";
 import { ProjectHeader } from "./project-header";
-import * as styles from "./project-layout.module.scss";
-import Layout from "./layout";
+import { ProtectedSection } from "./protected-section";
 
 export interface ProjectLayoutProps {
   allProjects: Project[];
@@ -27,9 +28,13 @@ export class ProjectLayout extends React.Component<ProjectLayoutProps, {}> {
           <ProjectHeader
             allProjects={this.props.allProjects}
             currentProject={this.props.currentProject}
-            mainImage={this.props.mainImage}
           />
-          {this.props.children}
+          <ProtectedSection
+            mainImage={this.props.mainImage}
+            isProtected={this.props.currentProject.isProtected}
+          >
+            {this.props.children}
+          </ProtectedSection>
           <ProjectFooter
             allProjects={this.props.allProjects}
             currentProject={this.props.currentProject}

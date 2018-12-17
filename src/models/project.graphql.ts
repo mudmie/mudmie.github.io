@@ -10,7 +10,7 @@ export const projectFields = graphql`
         description
         url
         imageFolder
-        theme
+        isProtected
       }
     }
   }

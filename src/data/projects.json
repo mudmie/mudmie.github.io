@@ -6,7 +6,7 @@
     "description": "Allowing IT-admin to monitor users' accounts.",
     "url": "/projects/account-management/",
     "imageFolder": "AC",
-    "theme": "Brick"
+    "isProtected": true
   },
   {
     "name": "Workflow Setting Page",
@@ -15,7 +15,7 @@
     "description": "Design reuseable pattern to establish consistent user experience for all 3 workflow products.",
     "url": "/projects/workflow-settings/",
     "imageFolder": "Settings",
-    "theme": "Brick"
+    "isProtected": true
   },
   {
     "name": "T-Shirt Design",
@@ -24,7 +24,7 @@
     "description": "Making PlanGrid be on UWaterloo's students radar.",
     "url": "/projects/t-shirt/",
     "imageFolder": "Tshirt",
-    "theme": "Brick"
+    "isProtected": false
   },
   {
     "name": "Picking Process Experience",
@@ -33,7 +33,7 @@
     "description": "Understand forklift operator’s goals and pain points to design a user-friendly picking process.",
     "url": "/projects/picking-process/",
     "imageFolder": "Picking",
-    "theme": "Brick"
+    "isProtected": false
   },
   {
     "name": "Craft Beer Ordering System",
@@ -42,7 +42,7 @@
     "description": "Establish a reliable online ordering system to replace phone orders",
     "url": "/projects/craft-beer/",
     "imageFolder": "Craft Beer",
-    "theme": "Brick"
+    "isProtected": false
   },
   {
     "name": "Tasting Note Mobile App",
@@ -51,7 +51,7 @@
     "description": "A data collecting mobile application, designed as an initiative to replace existing paper forms for evaluating beverage products.",
     "url": "/projects/tasting-note/",
     "imageFolder": "Tasting Note",
-    "theme": "Brick"
+    "isProtected": false
   },
   {
     "name": "Daily UI",
@@ -60,7 +60,7 @@
     "description": "A collection of my UI design practices.",
     "url": "/projects/daily-ui/",
     "imageFolder": "DailyUI",
-    "theme": "Brick"
+    "isProtected": false
   },
   {
     "name": "Escape Room Website",
@@ -69,6 +69,6 @@
     "description": "A responsive commercial website, built with HTML 5, CSS 3, JavaScript and Bootstrap, for an escape room business in Toronto.",
     "url": "/projects/roundabout-canada/",
     "imageFolder": "Roundabout",
-    "theme": "Brick"
+    "isProtected": false
   }
 ]

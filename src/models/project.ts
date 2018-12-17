@@ -5,5 +5,5 @@ export interface Project {
   description: string;
   url: string;
   imageFolder: string;
-  theme: "Purple" | "Orange" | "Brick";
+  isProtected: boolean;
 }

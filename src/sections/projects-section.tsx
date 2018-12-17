@@ -34,7 +34,13 @@ export class ProjectsSection extends React.Component<ProjectsSectionProps, {}> {
               <Card className={styles.projectCard}>
                 <CardBody className={styles.cardHeader}>
                   <CardTitle className={styles.cardTitle}>
-                    <Link to={proj.url}>{proj.name}</Link>
+                    <Link to={proj.url}>{proj.name}</Link>{" "}
+                    {proj.isProtected ? (
+                      <span>
+                        {" "}
+                        <i class="fas fa-lock fa-sm" />
+                      </span>
+                    ) : null}
                   </CardTitle>
                   <CardSubtitle className={styles.cardSubtitle}>
                     {proj.company}
