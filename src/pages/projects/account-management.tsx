@@ -17,7 +17,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
         <Container>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>The Project &amp; My Roles </h3>
+              <h3>About the Company </h3>
               <p>
                 Every four months, PlanGrid recruits students from the
                 University of Waterloo for its internship program. As a way to

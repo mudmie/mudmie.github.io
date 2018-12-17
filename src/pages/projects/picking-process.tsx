@@ -199,7 +199,7 @@ export default class PickingProcessPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Designing Solution</h3>
+              <h3>Designing the Solution</h3>
               <p>
                 To increase efficiency in the picking process, I designed a
                 simple solution that allowed forklift operators to pick up

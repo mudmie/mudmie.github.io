@@ -34,13 +34,13 @@ export class ProjectsSection extends React.Component<ProjectsSectionProps, {}> {
               <Card className={styles.projectCard}>
                 <CardBody className={styles.cardHeader}>
                   <CardTitle className={styles.cardTitle}>
-                    <Link to={proj.url}>{proj.name}</Link>{" "}
                     {proj.isProtected ? (
                       <span>
                         {" "}
                         <i class="fas fa-lock fa-sm" />
                       </span>
                     ) : null}
+                    <Link to={proj.url}>{proj.name}</Link>{" "}
                   </CardTitle>
                   <CardSubtitle className={styles.cardSubtitle}>
                     {proj.company}
@@ -48,6 +48,7 @@ export class ProjectsSection extends React.Component<ProjectsSectionProps, {}> {
                     {proj.term}
                   </CardSubtitle>
                 </CardBody>
+
                 <Link to={proj.url}>
                   <CardImg
                     src={withPrefix(

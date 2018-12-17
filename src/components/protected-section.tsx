@@ -96,9 +96,6 @@ export class ProtectedSection extends React.Component<
       <Container className="mt-5 mb-5">
         <Row>
           <Col className="text-center">
-            <div>
-              <i class="fas fa-lock fa-7x" />
-            </div>
             <h3>Password Protected</h3>
             <p>
               This project is protected under a NDA. Please enter a password to
