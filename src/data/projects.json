@@ -3,7 +3,7 @@
     "name": "User Account Management",
     "company": "PlanGrid",
     "term": "Fall 2018",
-    "description": "Allowing IT-admin to monitor users' accounts.",
+    "description": "Building tools for administrators to monitor and manage users’ accounts.  ",
     "url": "/projects/account-management/",
     "imageFolder": "AC",
     "isProtected": true
@@ -12,7 +12,7 @@
     "name": "Workflow Setting Page",
     "company": "PlanGrid",
     "term": "Fall 2018",
-    "description": "Design reuseable pattern to establish consistent user experience for all 3 workflow products.",
+    "description": "Designing shared patterns for setting page of 3 workflow management software.",
     "url": "/projects/workflow-settings/",
     "imageFolder": "Settings",
     "isProtected": true
@@ -30,7 +30,7 @@
     "name": "Picking Process Experience",
     "company": "Nulogy",
     "term": "Winter 2018",
-    "description": "Understand forklift operator’s goals and pain points to design a user-friendly picking process.",
+    "description": "Understanding forklift operator’s goals and pain points to design a user-friendly picking process.",
     "url": "/projects/picking-process/",
     "imageFolder": "Picking",
     "isProtected": false
@@ -39,7 +39,7 @@
     "name": "Craft Beer Ordering System",
     "company": "Liquor Control Board of Ontario",
     "term": "Spring 2017",
-    "description": "Establish a reliable online ordering system to replace phone orders",
+    "description": "Establishing a reliable online ordering system to replace phone orders",
     "url": "/projects/craft-beer/",
     "imageFolder": "Craft Beer",
     "isProtected": false
@@ -66,7 +66,7 @@
     "name": "Escape Room Website",
     "company": "Roundabout Canada",
     "term": "Winter 2016",
-    "description": "A responsive commercial website, built with HTML 5, CSS 3, JavaScript and Bootstrap, for an escape room business in Toronto.",
+    "description": "A responsive commercial website for an escape room business in Toronto.",
     "url": "/projects/roundabout-canada/",
     "imageFolder": "Roundabout",
     "isProtected": false
