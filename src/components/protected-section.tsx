@@ -3,7 +3,17 @@ import * as SHA from "sha.js";
 import * as styles from "./protected-section.module.scss";
 import Cookies from "universal-cookie";
 import Img from "gatsby-image";
-import { Col, Container, Row } from "reactstrap";
+import {
+  Col,
+  Container,
+  Row,
+  Form,
+  FormGroup,
+  Input,
+  Button,
+  FormFeedback,
+  Label,
+} from "reactstrap";
 
 export interface ProtectedSectionProps {
   isProtected: boolean;
@@ -12,7 +22,7 @@ export interface ProtectedSectionProps {
 
 export interface ProtectedSectionState {
   shouldShowContent: boolean;
-  shouldShowIncorrectPassword: boolean;
+  isInvalidPassword: boolean;
   password: string;
 }
 
@@ -33,7 +43,7 @@ export class ProtectedSection extends React.Component<
 
     this.state = {
       shouldShowContent: this.checkCookie(),
-      shouldShowIncorrectPassword: false,
+      isInvalidPassword: false,
       password: "",
     };
   }
@@ -46,7 +56,7 @@ export class ProtectedSection extends React.Component<
     let isCorrectPassword = this.checkPassword(this.state.password);
     this.setState({
       shouldShowContent: isCorrectPassword,
-      shouldShowIncorrectPassword: !isCorrectPassword,
+      isInvalidPassword: !isCorrectPassword,
     });
     event.preventDefault();
   }
@@ -63,6 +73,7 @@ export class ProtectedSection extends React.Component<
       });
       return true;
     }
+    return false;
   }
 
   private checkCookie(): boolean {
@@ -95,23 +106,34 @@ export class ProtectedSection extends React.Component<
             </p>
           </Col>
         </Row>
-        <Row>
-          <Col className="text-center">
-            <form onSubmit={this.handleFormSubmit} autoComplete="off">
-              <input
+        <Row className="justify-content-center">
+          <Col>
+            <Form
+              onSubmit={this.handleFormSubmit}
+              autoComplete="off"
+              inline
+              className="justify-content-center"
+            >
+              <Label for="password" hidden>
+                Password
+              </Label>
+              <Input
                 type="password"
+                name="password"
+                id="password"
                 placeholder="Enter a password..."
                 value={this.state.password}
                 onChange={this.handlePasswordChange}
                 autoComplete="off"
+                invalid={this.state.isInvalidPassword}
               />{" "}
-              <button type="submit">Submit</button>
-              {this.state.shouldShowIncorrectPassword ? (
-                <div className="text-danger">
-                  Incorrect password. Please try again.
-                </div>
-              ) : null}
-            </form>
+              <Button type="submit" color="" className="ml-2">
+                Submit
+              </Button>
+              <FormFeedback className="text-center">
+                Incorrect password. Please try again.
+              </FormFeedback>
+            </Form>
           </Col>
         </Row>
       </Container>
