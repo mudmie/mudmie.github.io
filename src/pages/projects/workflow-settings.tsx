@@ -20,16 +20,14 @@ export default class WorkflowSettingsPage extends React.Component<
         <Container>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>The Project &amp; My Roles </h3>
+              <h3>About the Company </h3>
               <p>
-                Every four months, PlanGrid recruits students from the
-                University of Waterloo for its internship program. As a way to
-                show appreciation to their contribution to the company, the
-                engineering director came up with an idea to design a limited
-                edition t-shirt for them. As a designer, I worked with the co-op
-                students to (secretly) brainstorm ideas for the design of the
-                t-shirt. I sketched different designs and used Illustrator to
-                create illustrations.
+                PlanGrid’s primary objective is to make intuitive and impactful
+                technology for people in the construction industry. Its
+                construction productivity software doesn’t only allow field
+                workers to store, view, and share blueprints, but also enable
+                stakeholders in the project to work together throughout the
+                project life cycle.
               </p>
             </Col>
           </Row>

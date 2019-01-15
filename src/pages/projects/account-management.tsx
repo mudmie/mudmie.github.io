@@ -17,46 +17,125 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
         <Container>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>About the Company </h3>
+              <h3>About The Company</h3>
               <p>
-                Every four months, PlanGrid recruits students from the
-                University of Waterloo for its internship program. As a way to
-                show appreciation to their contribution to the company, the
-                engineering director came up with an idea to design a limited
-                edition t-shirt for them. As a designer, I worked with the co-op
-                students to (secretly) brainstorm ideas for the design of the
-                t-shirt. I hand-sketched different designs and created
-                illustrations using Adobe Illustrator.
+                PlanGrid’s primary objective is to make intuitive and impactful
+                technology for people in the construction industry. Its
+                construction productivity software doesn’t only allow field
+                workers to store, view, and share blueprints, but also enables
+                stakeholders in a project to work together throughout the
+                project life cycle.
+              </p>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="10">
+              <h3>Background</h3>
+              <p>
+                The Admin Console is a part of PlanGrid web products that allows
+                IT administrators to add, remove, and manage user accounts as
+                well as to purchase PlanGrid licenses for users who involve in
+                organization projects.
+              </p>
+              <p>
+                PlanGrid offers multiple types of licenses, and each comes with
+                a different number of sheet storage limit. The licenses range
+                from basic ones that come with limited sheet storage to the most
+                expensive one that allows unlimited sheet storage.
               </p>
             </Col>
           </Row>
 
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Brainstorming Ideas</h3>
+              <h3>Problems</h3>
               <p className={sharedStyles.quote}>
-                The design workshop plays an important role to gather ideas from
-                the co-op students. Since they will be wearing the t-shirt, it's
-                crucial for me to have them involved in the design process.
+                With the current system, IT administrators have a limited
+                capability to monitor license usage. While they see information
+                such as the number of available and used licenses, they are
+                unable to access a list of projects that their users are working
+                on.
               </p>
               <p>
-                During the design workshop, I asked the co-op students to write
-                down ideas or words that popped up in their mind when thinking
-                about PlanGrid and the University of Waterloo. Everyone in the
-                workshop had the word "Waterloo geese" in their list as they are
-                so many geese around the university campus. Concepts of a hard
-                hat, campus buildings, and construct your future also showed up
-                as PlanGrid creates software for the construction industry.
-                Other ideas such as maple leaf, US and Canada maps also appeared
-                in the workshop.
+                There are times when employees use company license to work on
+                their personal projects. Problems occur when they run out of
+                sheet storage and request for a license upgrade. Since the IT
+                admins can't see list of projects that the employees are working
+                on, it's challenging to know if the extra storage is required
+                for the company work. As a result, the company has to
+                unnecessary pay extra to upgrade licenses for these employees.
               </p>
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="6">
+            <Col lg="10">
+              <h3>Project Goal</h3>
+
+              <p>
+                The overall goal of this project is to design a workflow that
+                allowed the IT administrators to set up organization ownership
+                of user accounts in addition to the existing workflow. This
+                feature will enables the IT admins to see lists of project that
+                their users are working on.
+              </p>
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center">
+            <Col lg="10">
+              <h3>The Current Admin Console</h3>
+              <p>
+                The current version of Admin Console consists of two major
+                components: the usage of different license types and the user
+                log that display a list of people working on company projects.
+                The IT admins can click "add license" button to buy more
+                licenses and click "new users" button to add more people to the
+                organization.
+                <p>
+                  From a design perspective, not every part of the Admin Console
+                  is built using components from PlanGrid’s design system. For
+                  example, the “more options icon” at the end of the row of user
+                  log doesn’t exist in other parts of PlanGrid web app.
+                </p>
+              </p>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="10">
               <ImageBox
-                src={this.getImageUrl("wordcloud.jpg")}
-                alt="Ideas generated in the design workshop"
+                src={this.getImageUrl("current-AC.jpg")}
+                alt="Current Admin Console UI"
+                className="img-fluid"
+              />
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="10">
+              <h3>Designing the Solution</h3>
+              <h4>User Flow</h4>
+              <p>
+                During project onboarding, I worked with a project manager to
+                understand project scope and gather feature requirements. From
+                there, I created a user workflow diagram to explore and identify
+                different paths that the IT admins could perform to complete
+                their tasks. In the diagram, an IT admin can add new users or
+                manage the existing users. If he decides to manage a user, he’ll
+                send a request to manage the user account. If he just wants the
+                user to work on company projects, he’ll send an invitation to
+                the user to join the organization. On the other end, the user
+                can accept or reject the request or the invitation.
+              </p>
+              <p>
+                In addition to this user flow diagram, you can also check out a
+                complete version of user workflow map here.
+              </p>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="10">
+              <ImageBox
+                src={this.getImageUrl("flow.png")}
+                alt="Current Admin Console UI"
                 className="img-fluid"
               />
             </Col>
@@ -64,95 +143,59 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
 
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Crazy 8's</h3>
-              <p>
-                In crazy 8’s exercise, the students spent a total of 8 minutes
-                to convert words and ideas into 8 different drawings. The
-                activity turned out to be quite challenging for them as they
-                only had one minute to sketch each drawing. There were times
-                when students feared that their pictures looked ugly or gave up
-                drawing because they ran out of ideas. To maintain the energy
-                level in the room, I had to shout out some of the keywords
-                generated in the brainstorming sessions as well as to emphasize
-                them to focus on the ideas rather than the look of their
-                drawings.
-              </p>
+              <h4>Wireframes</h4>
+              <p>lorem ipsum</p>
             </Col>
           </Row>
+
           <Row className="justify-content-center">
-            <Col lg="6">
+            <Col lg="5">
               <ImageBox
-                src={this.getImageUrl("crazy8.jpg")}
-                alt="Crazy 8's drawings"
+                src={this.getImageUrl("add-new-user.jpg")}
+                alt="Collect information using sticky notes"
+                className="img-fluid"
+              />
+            </Col>
+            <Col lg="5">
+              <ImageBox
+                src={this.getImageUrl("invite-existing-user.jpg")}
+                alt="Whiteboard with research"
                 className="img-fluid"
               />
             </Col>
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Designing the Logo</h3>
+              <h3>Enhance the User Experience</h3>
+              <p>1. The modal box for add new user flow</p>
               <p>
-                Coming out of the design workshop, I knew by heart that the
-                students would like to have a goose on their t-shirt. Though I
-                spent time looking for inspiration on the internet, a majority
-                of my sketches still revolved around the concept of Waterloo
-                geese.
+                The current design of the modal box requires the IT admins to
+                scroll back and forth to view license options and email
+                addresses they've entered. By adding account management section
+                to the box, its height will increases even more. Since the modal
+                box handles a goal-oriented task, the endless scrolling in the
+                current design might prevent the IT admins to quickly accomplish
+                their tasks. As a result, I decided to explore a new design
+                pattern that would solve the endless scrolling problem. I
+                divided the box into 2 columns and placed the account management
+                section on the left side and the license option to the right
+                side.
               </p>
-              <Row className="justify-content-center">
-                <Col lg="8">
-                  <ImageBox
-                    src={this.getImageUrl("inspo.jpg")}
-                    alt="Haunting for Inspiration"
-                    className="img-fluid"
-                  />
-                </Col>
-              </Row>
             </Col>
           </Row>
-
           <Row className="justify-content-center">
             <Col lg="10">
+              <h3>In flow license purchase</h3>
               <p>
-                Because of this, my mentor taught me a double diamond design
-                process, from which I learned to explore different designs and
-                narrowed down to ones that would work for this project. I
-                adopted this method and came up with three different designs:
-                the goose, the buildings, and the plain text.
+                Currently, the IT admins can only purchase licenses from a user
+                log page. They will have to abandon the add new users flow to go
+                back to the user log and purchase additional licenses before
+                being able to add new users. This process can waste their time
+                and increase their frustration level. Therefore, I'm designing a
+                workflow and user interfaces that will allow the IT admins to
+                buy additional licenses without having to discard the entire
+                process.
               </p>
-              <Row className="justify-content-center">
-                <Col lg="8">
-                  <ImageBox
-                    src={this.getImageUrl("sketches.jpg")}
-                    alt="Haunting for Inspiration"
-                    className="img-fluid"
-                  />
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-
-          <Row className="justify-content-center">
-            <Col lg="10">
-              <p>
-                I presented these designs to the design team and the creative
-                director at PlanGrid. Everyone voted in favor of the PlanGrid +
-                Goose logo as it suited the purpose of the project the most.
-                However, one of the designers thought that the logo alone didn’t
-                tell much about the work that PlanGrid provided to the
-                construction industry. In response to the comment, I added the
-                text that said “build better together” to the final design of
-                the logo.
-              </p>
-            </Col>
-          </Row>
-
-          <Row className="justify-content-center">
-            <Col lg="8">
-              <ImageBox
-                src={this.getImageUrl("print.jpg")}
-                alt="Design Options"
-                className="img-fluid"
-              />
             </Col>
           </Row>
         </Container>

@@ -3,7 +3,7 @@
     "name": "User Account Management",
     "company": "PlanGrid",
     "term": "Fall 2018",
-    "description": "Building tools for administrators to monitor and manage users’ accounts.  ",
+    "description": "Building tools for administrators to monitor and manage users accounts.  ",
     "url": "/projects/account-management/",
     "imageFolder": "AC",
     "isProtected": true
@@ -12,7 +12,7 @@
     "name": "Workflow Setting Page",
     "company": "PlanGrid",
     "term": "Fall 2018",
-    "description": "Designing shared patterns for setting page of 3 workflow management software.",
+    "description": "Designing shared patterns for product settings.",
     "url": "/projects/workflow-settings/",
     "imageFolder": "Settings",
     "isProtected": true
