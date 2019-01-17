@@ -10,6 +10,7 @@ export default class SalesOfDataPage extends React.Component<
   {}
 > {
   public render() {
+    return null;
     return (
       <ProjectLayout
         allProjects={this.props.data.allProjects.edges.map(e => e.node)}
