@@ -11,7 +11,7 @@ export default class ShipmentAuditTrailPage extends React.Component<
   {}
 > {
   public render() {
-    return null;
+    return <div/>;
   }
   public render2() {
     return (
