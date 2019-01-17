@@ -17,22 +17,25 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
               <Col md="8" sm="10" className={styles.colAbout}>
                 <h1 className={styles.aboutHeading}>Mudmie Chuthamsatid</h1>
                 <h2 className={styles.aboutHeading}>
-                  design intern @ PlanGrid &#8212;
+                  previous design intern @ PlanGrid &#8212;
                 </h2>
                 <h2 className={styles.aboutHeading}>
                   engineering student @ UWaterloo
                 </h2>
               </Col>
+
               <Col lg={{ size: 6, offset: 2 }} md="8" sm="10">
-                <p className={styles.aboutPara}>
-                  Those sparkling eyes, dazzling smiles and joyful voices from
-                  people in the meeting room teach me that a good design
-                  communicates clearly and solves problems well.
+                <p>
+                  I believe that a good design communicates clearly and solves
+                  problems well. My mission as a product designer is not to just
+                  design beautiful stuff, but to design an entire product
+                  experience that sparks people’s joy and simplifies people’s
+                  lives.
                 </p>
-                <p className={styles.aboutPara}>
-                  My mission as a product designer is not to just design
-                  beautiful stuff, but to design an entire product experience
-                  that sparks people’s joy and simplifies people’s lives.
+                <p>
+                  In my free time, I like to travel, find food spots, walk
+                  around city, and hunting for inspiration; a cup of matcha and
+                  some sushi will make me smile :o)
                 </p>
               </Col>
             </Row>
