@@ -1,34 +1,36 @@
 @import "../styles/_colors.scss";
 @import "../styles/_fonts.scss";
 
-.navbar {
-  font-family: $heading-font;
-  transition: background-color 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  padding-top: 2em;
-  padding-left: 2em;
-  padding-right: 2em;
-  @media (min-width: 768px) {
-    background-color: transparent !important;
+html {
+  .navbar {
+    font-family: $heading-font;
+    transition: background-color 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    @media (min-width: 768px) {
+      background-color: transparent !important;
+    }
   }
-}
 
-.scroll {
-  background-color: #f8f9fa !important;
-}
+  .scroll {
+    background-color: #f8f9fa !important;
+  }
 
-.nav-link {
-  font-weight: 500;
-  color: $paprika-color;
-}
+  .nav-link {
+    font-weight: 500;
+    color: $paprika-color;
+  }
 
-.nav-link:hover {
-  color: $light-blue-color;
-}
+  .nav-link:hover {
+    color: $light-blue-color;
+  }
 
-.logo {
-  max-width: 200px;
-}
+  .logo {
+    max-width: 200px;
+  }
 
-.scroll .logo {
-  opacity: 1;
+  .scroll .logo {
+    opacity: 1;
+  }
 }

@@ -55,7 +55,7 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
           <Row className="justify-content-center">
             <Col lg="6">
               <ImageBox
-                src={this.getImageUrl("wordcloud.jpg")}
+                src={this.getImageUrl("wordcloud.png")}
                 alt="Ideas generated in the design workshop"
                 className="img-fluid"
               />

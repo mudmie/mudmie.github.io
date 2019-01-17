@@ -4,7 +4,13 @@ module.exports = {
     siteUrl: "https://www.mudmie.com",
   },
   plugins: [
-    "gatsby-plugin-sass",
+    {
+      resolve: "gatsby-plugin-sass",
+      options: {
+        includePaths: [`${__dirname}/node_modules`, `${__dirname}/src/`],
+        precision: 8,
+      },
+    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-typescript",
     {

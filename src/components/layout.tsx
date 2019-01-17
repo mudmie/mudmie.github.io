@@ -4,6 +4,8 @@ import { Footer } from "../components/footer";
 import { Header } from "../components/header";
 import PageBorder from "./page-border";
 
+import "../styles/global.scss";
+
 interface LayoutProps {
   children: any;
 }
