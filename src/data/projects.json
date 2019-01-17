@@ -8,20 +8,12 @@
     "imageFolder": "AC",
     "isProtected": true
   },
-  {
-    "name": "Workflow Setting Page",
-    "company": "PlanGrid",
-    "term": "Fall 2018",
-    "description": "Designing shared patterns for product settings.",
-    "url": "/projects/workflow-settings/",
-    "imageFolder": "Settings",
-    "isProtected": true
-  },
+
   {
     "name": "T-Shirt Design",
     "company": "PlanGrid",
     "term": "Fall 2018",
-    "description": "Making PlanGrid be on UWaterloo's students radar.",
+    "description": "Making PlanGrid be on UWaterloo students radar.",
     "url": "/projects/t-shirt/",
     "imageFolder": "Tshirt",
     "isProtected": false

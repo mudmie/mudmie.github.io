@@ -181,6 +181,20 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 section on the left side and the license option to the right
                 side.
               </p>
+              <p>2. In flow license purchase</p>
+              <p>
+                The current design of the modal box requires the IT admins to
+                scroll back and forth to view license options and email
+                addresses they've entered. By adding account management section
+                to the box, its height will increases even more. Since the modal
+                box handles a goal-oriented task, the endless scrolling in the
+                current design might prevent the IT admins to quickly accomplish
+                their tasks. As a result, I decided to explore a new design
+                pattern that would solve the endless scrolling problem. I
+                divided the box into 2 columns and placed the account management
+                section on the left side and the license option to the right
+                side.
+              </p>
             </Col>
           </Row>
           <Row className="justify-content-center">
