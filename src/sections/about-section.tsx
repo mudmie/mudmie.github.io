@@ -27,7 +27,7 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
                 <p className={styles.aboutPara}>
                   Those sparkling eyes, dazzling smiles and joyful voices from
                   people in the meeting room teach me that a good design
-                  communicates clearly and solves problem well.
+                  communicates clearly and solves problems well.
                 </p>
                 <p className={styles.aboutPara}>
                   My mission as a product designer is not to just design
