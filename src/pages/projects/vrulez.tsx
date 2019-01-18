@@ -8,7 +8,6 @@ import { ProjectPageProps } from "../../models/project-page-props";
 
 export default class VrulezPage extends React.Component<ProjectPageProps, {}> {
   public render() {
-    return <div/>;
     return (
       <ProjectLayout
         allProjects={this.props.data.allProjects.edges.map(e => e.node)}

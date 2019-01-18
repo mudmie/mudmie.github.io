@@ -39,4 +39,21 @@ html {
   .about-para {
     text-align: justify;
   }
+
+  .social-media {
+    text-align: right;
+    a,
+    a:visited {
+      color: $light-blue-color;
+    }
+
+    a.instagram:hover,
+    a.instagram:focus {
+      color: #c32aa3;
+    }
+    a.linked-in:hover,
+    a.linked-in:focus {
+      color: #0077b5;
+    }
+  }
 }

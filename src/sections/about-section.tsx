@@ -2,6 +2,8 @@ import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
 import * as styles from "./about-section.module.scss";
 import * as sharedStyles from "./sections.module.scss";
+import { Link } from "gatsby";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 export interface AboutSectionProps {
   id: string;
@@ -17,11 +19,27 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
               <Col md="8" sm="10" className={styles.colAbout}>
                 <h1 className={styles.aboutHeading}>Mudmie Chuthamsatid</h1>
                 <h2 className={styles.aboutHeading}>
-                  previous design intern @ PlanGrid &#8212;
+                  design intern @ PlanGrid &#8212;
                 </h2>
                 <h2 className={styles.aboutHeading}>
                   engineering student @ UWaterloo
                 </h2>
+                <div className={styles.socialMedia}>
+                  <OutboundLink
+                    className={styles.linkedIn}
+                    href="https://www.linkedin.com/in/mudmie"
+                    target="_blank"
+                  >
+                    <i className="fab fa-linkedin fa-lg" />
+                  </OutboundLink>{" "}
+                  <OutboundLink
+                    className={styles.instagram}
+                    href="https://www.instagram.com/mudmiemee"
+                    target="_blank"
+                  >
+                    <i className="fab fa-instagram fa-lg" />
+                  </OutboundLink>
+                </div>
               </Col>
 
               <Col lg={{ size: 6, offset: 2 }} md="8" sm="10">
@@ -33,9 +51,9 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
                   lives.
                 </p>
                 <p>
-                  In my free time, I like to travel, find food spots, walk
-                  around city, and hunting for inspiration; a cup of matcha and
-                  some sushi will make me smile :o)
+                  In my free time, I like to travel, find food spots, and wander
+                  around city. and hunt for inspiration; a cup of matcha and
+                  some sushi will make me smile.
                 </p>
               </Col>
             </Row>
