@@ -19,7 +19,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
             <Col lg="10">
               <h3>About The Company</h3>
               <p>
-                PlanGrid’s primary objective is to make intuitive and impactful
+                PlanGrid has a primary objective to make intuitive and impactful
                 technology for people in the construction industry. Its
                 construction productivity software doesn’t only allow field
                 workers to store, view, and share blueprints, but also enables
@@ -32,9 +32,9 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
             <Col lg="10">
               <h3>Background</h3>
               <p>
-                The Admin Console is a part of PlanGrid web products that allows
-                IT administrators to add, remove, and manage user accounts as
-                well as to purchase PlanGrid licenses for users who involve in
+                Admin Console is a part of PlanGrid web products that allows IT
+                administrators to add, remove, and manage user accounts as well
+                as to purchase PlanGrid licenses for users who involve in
                 organization projects.
               </p>
               <p>
@@ -48,35 +48,43 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
 
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Problems</h3>
-              <p className={sharedStyles.quote}>
-                With the current system, IT administrators have a limited
-                capability to monitor license usage. While they see information
-                such as the number of available and used licenses, they are
-                unable to access a list of projects that their users are working
-                on.
-              </p>
+              <h3>My Roles &amp; Project Goals</h3>
               <p>
-                There are times when employees use company license to work on
-                their personal projects. Problems occur when they run out of
-                sheet storage and request for a license upgrade. Since the IT
-                admins can't see list of projects that the employees are working
-                on, it's challenging to know if the extra storage is required
-                for the company work. As a result, the company has to
-                unnecessary pay extra to upgrade licenses for these employees.
+                The main goals of this project are to enhance user experience
+                for the Admin Console and to create an additional workflow that
+                allows the IT admins to set up organization ownership of user
+                accounts. As a designer, I design the workflow that will give IT
+                admins an ability to manage user accounts and redesign web
+                interfaces using components from PlanGrid's Design System.
               </p>
             </Col>
           </Row>
+
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Project Goal</h3>
-
+              <h3>Problems</h3>
+              <p className={sharedStyles.quote}>
+                The current system restricts IT Admins to only purchase licenses
+                from a user log page. It also limits their capability to
+                effectively monitor license usage as they are unable to access a
+                list of projects that their users are working on.
+              </p>
               <p>
-                The overall goal of this project is to design a workflow that
-                allowed the IT administrators to set up organization ownership
-                of user accounts in addition to the existing workflow. This
-                feature will enables the IT admins to see lists of project that
-                their users are working on.
+                The first problem occurs when IT Admins finds out they don't
+                have enough license when trying to add new users to the
+                organization. The current process requires them to abandon their
+                current task, navigate back to the user log page, purchase
+                licenses and repeat the process of adding new users.
+              </p>
+              <p>
+                The second problem happens when employees request for a license
+                upgrade when they run out of sheet storage. Since the IT admins
+                can't see list of projects that the employees are working on,
+                it's challenging to know if the extra storage is required for
+                company work. It is possible that the employees use company
+                license to work on their personal or freelance projects. As a
+                result, the company has to unnecessary pay extra to upgrade
+                licenses for these employees.
               </p>
             </Col>
           </Row>
@@ -86,17 +94,16 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
               <h3>The Current Admin Console</h3>
               <p>
                 The current version of Admin Console consists of two major
-                components: the usage of different license types and the user
-                log that display a list of people working on company projects.
-                The IT admins can click "add license" button to buy more
-                licenses and click "new users" button to add more people to the
-                organization.
-                <p>
-                  From a design perspective, not every part of the Admin Console
-                  is built using components from PlanGrid’s design system. For
-                  example, the “more options icon” at the end of the row of user
-                  log doesn’t exist in other parts of PlanGrid web app.
-                </p>
+                components: a license usage box and a table that displays a list
+                of people working on company projects. The IT admins can click
+                "add license" button to buy more licenses and click "new users"
+                button to add more people to the organization.
+              </p>
+              <p>
+                From a design perspective, not every part of the Admin Console
+                is built using components from PlanGrid’s design system. For
+                example, the “more options icon” at the end of the row of user
+                log doesn’t exist in other parts of PlanGrid web app.
               </p>
             </Col>
           </Row>
@@ -111,23 +118,30 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
           </Row>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>Designing the Solution</h3>
-              <h4>User Flow</h4>
+              <h3>User Flow</h3>
               <p>
-                During project onboarding, I worked with a project manager to
-                understand project scope and gather feature requirements. From
-                there, I created a user workflow diagram to explore and identify
-                different paths that the IT admins could perform to complete
-                their tasks. In the diagram, an IT admin can add new users or
-                manage the existing users. If he decides to manage a user, he’ll
-                send a request to manage the user account. If he just wants the
-                user to work on company projects, he’ll send an invitation to
-                the user to join the organization. On the other end, the user
-                can accept or reject the request or the invitation.
+                Workflow diagram is created to explore and identify different
+                paths that the IT admins could perform to complete their tasks.
               </p>
+
+              <Row className="justify-content-center">
+                <Col lg="12">
+                  <ImageBox
+                    src={this.getImageUrl("full-flow.png")}
+                    alt="Current Admin Console UI"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
               <p>
-                In addition to this user flow diagram, you can also check out a
-                complete version of user workflow map here.
+                To make it's easier to understand the process, I created a
+                simplified version of the user flow. In the diagram, an IT admin
+                can add new users or manage the existing users. If he decides to
+                manage a user, he’ll send a request to manage the user account.
+                If he just wants the user to work on company projects, he’ll
+                send an invitation to the user to join the organization. On the
+                other end, the user can accept or reject the request or the
+                invitation.
               </p>
             </Col>
           </Row>
@@ -143,27 +157,59 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
 
           <Row className="justify-content-center">
             <Col lg="10">
-              <h4>Wireframes</h4>
-              <p>lorem ipsum</p>
+              <h3>Design Process</h3>
+              <p>
+                In an early stage of the design process, I sketched wireframes
+                to get a general idea of what components would look like in each
+                step of the user flow.
+              </p>
+              <Row className="justify-content-center">
+                <Col lg="6">
+                  <ImageBox
+                    src={this.getImageUrl("add-new-user.jpg")}
+                    alt="Collect information using sticky notes"
+                    className="img-fluid"
+                  />
+                </Col>
+                <Col lg="6">
+                  <ImageBox
+                    src={this.getImageUrl("invite-existing-user.jpg")}
+                    alt="Whiteboard with research"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
+              <p>
+                To make it's easier to understand the process, I created a
+                simplified version of the user flow. In the diagram, an IT admin
+                can add new users or manage the existing users. If he decides to
+                manage a user, he’ll send a request to manage the user account.
+                If he just wants the user to work on company projects, he’ll
+                send an invitation to the user to join the organization. On the
+                other end, the user can accept or reject the request or the
+                invitation.
+              </p>
+              <Row className="justify-content-center">
+                <Col lg="12">
+                  <ImageBox
+                    src={this.getImageUrl("full-flow.png")}
+                    alt="Current Admin Console UI"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="10">
+              <ImageBox
+                src={this.getImageUrl("flow.png")}
+                alt="Current Admin Console UI"
+                className="img-fluid"
+              />
             </Col>
           </Row>
 
-          <Row className="justify-content-center">
-            <Col lg="5">
-              <ImageBox
-                src={this.getImageUrl("add-new-user.jpg")}
-                alt="Collect information using sticky notes"
-                className="img-fluid"
-              />
-            </Col>
-            <Col lg="5">
-              <ImageBox
-                src={this.getImageUrl("invite-existing-user.jpg")}
-                alt="Whiteboard with research"
-                className="img-fluid"
-              />
-            </Col>
-          </Row>
           <Row className="justify-content-center">
             <Col lg="10">
               <h3>Enhance the User Experience</h3>
