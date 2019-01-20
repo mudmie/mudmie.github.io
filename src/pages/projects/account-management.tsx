@@ -180,14 +180,10 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 </Col>
               </Row>
               <p>
-                To make it's easier to understand the process, I created a
-                simplified version of the user flow. In the diagram, an IT admin
-                can add new users or manage the existing users. If he decides to
-                manage a user, he’ll send a request to manage the user account.
-                If he just wants the user to work on company projects, he’ll
-                send an invitation to the user to join the organization. On the
-                other end, the user can accept or reject the request or the
-                invitation.
+                Since the current version of Admin Console didn't comply with
+                PlanGrid's design system, I designed a high fidelity prototype
+                using most components that already exists in the design system
+                library.
               </p>
               <Row className="justify-content-center">
                 <Col lg="12">
