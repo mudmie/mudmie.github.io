@@ -4,9 +4,12 @@
 .navbar {
   font-family: $heading-font;
   transition: background-color 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  padding-top: 2em;
-  padding-left: 2em;
-  padding-right: 2em;
+
+  @media (min-width: 576px) {
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
   @media (min-width: 768px) {
     background-color: transparent !important;
   }
