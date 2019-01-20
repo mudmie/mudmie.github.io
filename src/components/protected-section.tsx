@@ -65,10 +65,17 @@ export class ProtectedSection extends React.Component<
     this.cookies = new Cookies();
 
     this.state = {
-      shouldShowContent: this.checkCookie(),
+      shouldShowContent: false,
       isInvalidPassword: false,
       password: "",
     };
+  }
+
+  componentDidMount() {
+    // If this is done in the constructor, weird things happen.
+    this.setState({
+      shouldShowContent: this.checkCookie(),
+    });
   }
 
   private handlePasswordChange(event: React.ChangeEvent<HTMLInputElement>) {
@@ -123,7 +130,7 @@ export class ProtectedSection extends React.Component<
 
   public renderPasswordSection() {
     return (
-      <Container className="mt-5 mb-5">
+      <aside className="container mt-5 mb-5">
         <Row>
           <Col className="text-center">
             <h3>Password Protected</h3>
@@ -163,7 +170,7 @@ export class ProtectedSection extends React.Component<
             </Form>
           </Col>
         </Row>
-      </Container>
+      </aside>
     );
   }
 
@@ -173,7 +180,7 @@ export class ProtectedSection extends React.Component<
     }
 
     return (
-      <>
+      <div>
         <Container>
           <Row className="justify-content-center">
             <Col lg="10">
@@ -191,7 +198,7 @@ export class ProtectedSection extends React.Component<
           </Row>
         </Container>
         {this.props.children}
-      </>
+      </div>
     );
   }
 }

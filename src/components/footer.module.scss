@@ -1,5 +1,8 @@
 @import "../styles/_colors.scss";
-.footer {
-  padding-bottom: 50px;
-  color: $mustard-color;
+
+html {
+  .footer {
+    padding-bottom: 50px;
+    color: $mustard-color;
+  }
 }

@@ -183,8 +183,8 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 Since the current version of Admin Console didn't comply with
                 PlanGrid's design system, I designed a high fidelity prototype
                 using most components that already exist in the design system
-                library. Some designs were completely changed to minimize future design work.
-                For example, 
+                library. Some designs were completely changed to minimize future
+                design work. For example,
               </p>
               <Row className="justify-content-center">
                 <Col lg="12">
