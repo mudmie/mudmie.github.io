@@ -1,18 +1,16 @@
 @import "../styles/_colors.scss";
 @import "../styles/_fonts.scss";
 
-html {
-  .header {
-    margin-top: 80px;
-    font-family: $heading-font;
-  }
+.header {
+  margin-top: 80px;
+  font-family: $heading-font;
+}
 
-  .subtitle {
-    font-weight: normal;
-  }
+.subtitle {
+  font-weight: normal;
+}
 
-  .company-term {
-    margin-top: 10px;
-    font-weight: normal;
-  }
+.company-term {
+  margin-top: 10px;
+  font-weight: normal;
 }

@@ -2,7 +2,6 @@ import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
 import * as styles from "./about-section.module.scss";
 import * as sharedStyles from "./sections.module.scss";
-import { Link } from "gatsby";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 export interface AboutSectionProps {

@@ -1,59 +1,57 @@
 @import "../styles/_colors.scss";
 @import "../styles/_fonts.scss";
 
-html {
-  .row-about {
-    background-color: #fcfcfe;
-    background-image: url("../../static/images/me.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    min-height: 600px;
+.row-about {
+  background-color: #fcfcfe;
+  background-image: url("../../static/images/me.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 600px;
 
-    @media (max-width: 1100px) {
-      min-height: 400px;
-    }
+  @media (max-width: 1100px) {
+    min-height: 400px;
+  }
+}
+
+.col-about {
+  padding-top: 150px;
+  padding-bottom: 30px;
+}
+
+h1.about-heading {
+  font-size: 40px;
+  color: $h1-text-color;
+  font-weight: 700;
+}
+h2.about-heading {
+  font-size: 24px;
+  color: $h2-text-color;
+  font-weight: 400;
+}
+h1.about-heading,
+h2.about-heading {
+  text-align: right;
+  font-family: $heading-font;
+}
+
+.about-para {
+  text-align: justify;
+}
+
+.social-media {
+  text-align: right;
+  a,
+  a:visited {
+    color: $light-blue-color;
   }
 
-  .col-about {
-    padding-top: 150px;
-    padding-bottom: 30px;
+  a.instagram:hover,
+  a.instagram:focus {
+    color: #c32aa3;
   }
-
-  h1.about-heading {
-    font-size: 40px;
-    color: $h1-text-color;
-    font-weight: 700;
-  }
-  h2.about-heading {
-    font-size: 24px;
-    color: $h2-text-color;
-    font-weight: 400;
-  }
-  h1.about-heading,
-  h2.about-heading {
-    text-align: right;
-    font-family: $heading-font;
-  }
-
-  .about-para {
-    text-align: justify;
-  }
-
-  .social-media {
-    text-align: right;
-    a,
-    a:visited {
-      color: $light-blue-color;
-    }
-
-    a.instagram:hover,
-    a.instagram:focus {
-      color: #c32aa3;
-    }
-    a.linked-in:hover,
-    a.linked-in:focus {
-      color: #0077b5;
-    }
+  a.linked-in:hover,
+  a.linked-in:focus {
+    color: #0077b5;
   }
 }
