@@ -1,11 +1,10 @@
-import * as React from "react";
-import * as sharedStyles from "./styles.module.scss";
-import { Col, Container, Row } from "reactstrap";
 import { graphql, withPrefix } from "gatsby";
+import * as React from "react";
+import { Col, Container, Row, Table } from "reactstrap";
 import { ImageBox } from "../../components/image-box";
 import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
-import { Table } from "reactstrap";
+import * as sharedStyles from "./styles.module.scss";
 
 export default class ACPage extends React.Component<ProjectPageProps, {}> {
   public render() {
@@ -35,7 +34,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
               <p>
                 Admin Console is a part of PlanGrid web products that allows IT
                 administrators to add, remove, and manage user accounts as well
-                as to purchase PlanGrid licenses for users who involve in
+                as to purchase PlanGrid licenses for users who are involved in
                 organization projects.
               </p>
               <p>
@@ -51,13 +50,12 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
             <Col lg="10">
               <h3>My Roles &amp; Project Goals</h3>
               <p>
-                The main goals of this project are to enhance the user
-                experience for the Admin Console and to create an additional
-                workflow that allows the IT admins to set up organization
-                ownership of user accounts. As a designer, I design the workflow
-                that will give IT admins an ability to manage user accounts and
-                redesign web interfaces using components from PlanGrid's design
-                system.
+                The main goals of this project were to enhance the user
+                experience for the Admin Console and to introduce a new workflow
+                that allowed the IT Admins to set up organization ownership of
+                user accounts. As a designer, I designed the workflow that will
+                give IT Admins an ability to manage user accounts and redesigned
+                web interfaces using components from PlanGrid's design system.
               </p>
             </Col>
           </Row>
@@ -76,11 +74,11 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 have enough license when trying to add new users to the
                 organization. The current process requires them to abandon their
                 current task, navigate back to the user log page, purchase
-                licenses and repeat the process of adding new users.
+                licenses, and repeat the process of adding new users.
               </p>
               <p>
                 The second problem happens when employees request for a license
-                upgrade once they run out of sheet storage. Since the IT admins
+                upgrade once they run out of sheet storage. Since the IT Admins
                 have no information about projects that the employees are
                 working on, it's challenging to know if the extra storage is
                 required for company work. It is possible that the employees use
@@ -97,7 +95,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
               <p>
                 The current version of Admin Console consists of two major
                 components: a license usage box and a table that displays a list
-                of people involving in the company projects. The IT admins can
+                of people involving in the company projects. The IT Admins can
                 click "add license" button to buy more licenses and click "new
                 users" button to add more people to the organization.
               </p>
@@ -123,7 +121,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
               <h3>User Flow</h3>
               <p>
                 Workflow diagram was created to explore and identify different
-                paths that the IT admins could perform to complete their tasks.
+                paths that the IT Admins could perform to complete their tasks.
               </p>
 
               <Row className="justify-content-center">
@@ -136,14 +134,14 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 </Col>
               </Row>
               <p>
-                To make it's easier to understand the process, I created a
-                simplified version of the user flow. In the diagram, an IT admin
-                can add new users or manage existing users. If he decides to
-                manage a user, he’ll send a request to manage the user account.
-                If he just wants the user to work on company projects, he’ll
-                send an invitation to the user to join the organization. On the
-                other end, the user can accept or reject the request or the
-                invitation.
+                To make it easier to understand the process, I created a
+                simplified version of the user flow. In the diagram, IT Admins
+                can add new users or manage existing users. If they decide to
+                manage a user, they’ll send a request to manage the user
+                account. If they just want the user to work on company projects,
+                they’ll send an invitation to the user to join the organization.
+                On the other end, the user can accept or reject the request or
+                the invitation.
               </p>
             </Col>
           </Row>
@@ -222,12 +220,12 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
               <p>
                 The restriction to purchase license only from the user log page
                 was one of the problems addressed at the beginning of project.
-                In the design process, I thought it would be nice if the users
-                could purchase extra license without having to go back to the
-                user log page. As a result, I added a helper text that says "if
-                you don't have enough license, you'll be able to purchase more
-                later" with a though that the users would read it and know they
-                can buy more license in after clicking next.
+                In the design process, I thought it would be convenient if the
+                users could purchase extra license without having to go back to
+                the user log page. As a result, I added a helper text that says
+                "if you don't have enough license, you'll be able to purchase
+                more later" with a though that the users would read it and know
+                they can buy more license in after clicking next.
               </p>
               <Row className="justify-content-center">
                 <Col lg="12">
@@ -244,7 +242,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 with an assumption that the users would read the helper text and
                 proceed to buy licenses. In the usability testing session, I
                 gave participants scenarios, asked them to perform tasks,
-                observe their interaction, gave the rating of either easy,
+                observed their interaction, and gave the rating of either easy,
                 difficult, or fail. The table below shows testing results of
                 three participants.
               </p>
@@ -298,7 +296,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
             <Col lg="10">
               <h3>Final Design</h3>
               <p>
-                By cooperating the testing result and feedback received from the
+                By combining the testing result and feedback received from the
                 user, I decided to add an additional step to display an alert
                 message regarding to license purchase.
               </p>
