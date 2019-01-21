@@ -136,7 +136,9 @@ export class ProtectedSection extends React.Component<
             <h3>Password Protected</h3>
             <p>
               This project is protected under a NDA. Please enter a password to
-              access the project.
+              access the project. <br />
+              You can find the password on the resume submitted to you, or
+              please contact me to request for the password.
             </p>
           </Col>
         </Row>
