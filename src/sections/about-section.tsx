@@ -51,7 +51,7 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
                 </p>
                 <p>
                   In my free time, I like to travel, find food spots, and wander
-                  around city; a cup of matcha and some sushi will make me
+                  around the city; a cup of matcha and some sushi will make me
                   smile.
                 </p>
               </Col>
