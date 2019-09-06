@@ -5,18 +5,18 @@
   "author": "Chatchanok Chuthamsatid <mchuthams@gmail.com>",
   "dependencies": {
     "@types/sha.js": "^2.4.0",
-    "bootstrap": "^4.2.1",
-    "gatsby": "^2.0.91",
-    "gatsby-image": "^2.0.26",
-    "gatsby-plugin-react-helmet": "^3.0.5",
-    "gatsby-plugin-sharp": "^2.0.17",
-    "gatsby-transformer-sharp": "^2.1.10",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-helmet": "^5.2.0",
+    "bootstrap": "^4.3.1",
+    "gatsby": "^2.15.9",
+    "gatsby-image": "^2.2.17",
+    "gatsby-plugin-react-helmet": "^3.1.6",
+    "gatsby-plugin-sharp": "^2.2.20",
+    "gatsby-transformer-sharp": "^2.2.13",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1",
     "reactstrap": "^6.5.0",
     "sha.js": "^2.4.11",
-    "universal-cookie": "^3.0.7"
+    "universal-cookie": "^3.1.0"
   },
   "keywords": [
     "gatsby"
@@ -32,22 +32,22 @@
     "predeploy": "rimraf public .cache"
   },
   "devDependencies": {
-    "@types/classnames": "^2.2.7",
-    "@types/prop-types": "^15.5.8",
-    "@types/react": "^16.7.20",
-    "@types/react-helmet": "^5.0.8",
+    "@types/classnames": "^2.2.9",
+    "@types/prop-types": "^15.7.2",
+    "@types/react": "^16.9.2",
+    "@types/react-helmet": "^5.0.9",
     "@types/reactstrap": "^6.4.4",
     "classnames": "^2.2.6",
-    "gatsby-plugin-google-analytics": "^2.0.9",
-    "gatsby-plugin-sass": "^2.0.7",
-    "gatsby-plugin-sitemap": "^2.0.4",
-    "gatsby-plugin-typescript": "^2.0.3",
-    "gatsby-source-filesystem": "^2.0.16",
-    "gatsby-transformer-json": "^2.1.7",
-    "gh-pages": "^2.0.1",
-    "node-sass": "^4.11.0",
-    "prettier": "^1.15.3",
-    "rimraf": "^2.6.3",
-    "typescript": "^3.2.4"
+    "gatsby-plugin-google-analytics": "^2.1.14",
+    "gatsby-plugin-sass": "^2.1.13",
+    "gatsby-plugin-sitemap": "^2.2.10",
+    "gatsby-plugin-typescript": "^2.1.6",
+    "gatsby-source-filesystem": "^2.1.21",
+    "gatsby-transformer-json": "^2.2.7",
+    "gh-pages": "^2.1.1",
+    "node-sass": "^4.12.0",
+    "prettier": "^1.18.2",
+    "rimraf": "^2.7.1",
+    "typescript": "^3.6.2"
   }
 }
