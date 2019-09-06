@@ -6,7 +6,7 @@
     "description": "Building tools for administrators to monitor and manage users accounts.  ",
     "url": "/projects/account-management/",
     "imageFolder": "AC",
-    "isProtected": true
+    "isProtected": false
   },
 
   {
