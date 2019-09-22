@@ -6,12 +6,13 @@ import { Row, Col } from "reactstrap";
 export interface ProjectNavProps {
   projects: Project[];
   currentProject: Project;
+  className?: string;
 }
 
 export class ProjectNav extends React.Component<ProjectNavProps, {}> {
   public render() {
     return (
-      <Row>
+      <Row className={this.props.className}>
         <Col xs="6">{this.getPreviousProjectLink()}</Col>
         <Col xs="6" className="text-right">
           {this.getNextProjectLink()}
