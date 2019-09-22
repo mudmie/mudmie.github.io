@@ -17,7 +17,7 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
     return (
       <Container>
         <a id={this.props.id} className={sharedStyles.sectionAnchor} />
-        <Row className="justify-content-between">
+        <Row className="justify-content-between align-items-center">
           <Col sm="12" className={`${styles.colAbout} d-sm-block d-md-none`}>
             <AboutTitle />
           </Col>
