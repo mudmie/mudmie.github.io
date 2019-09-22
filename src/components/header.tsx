@@ -7,7 +7,6 @@ import * as logo from "../../static/images/Mudmie.png";
 
 export interface HeaderState {
   isOpen: boolean;
-  isTop: boolean;
 }
 
 export class Header extends React.Component<{}, HeaderState> {
@@ -15,7 +14,6 @@ export class Header extends React.Component<{}, HeaderState> {
     super(props);
     this.state = {
       isOpen: false,
-      isTop: true,
     };
     this.toggle = this.toggle.bind(this);
     this.collapseNav = this.collapseNav.bind(this);
@@ -33,22 +31,11 @@ export class Header extends React.Component<{}, HeaderState> {
     });
   }
 
-  public componentDidMount() {
-    document.addEventListener("scroll", () => {
-      const isTop = window.scrollY < 10;
-      if (isTop !== this.state.isTop) {
-        this.setState({ isTop });
-      }
-    });
-  }
-
   public render() {
     return (
       <header>
         <Navbar
-          className={`${styles.navbar} ${
-            !this.state.isTop ? styles.scroll : ""
-          }`}
+          className={`${styles.navbar} ${styles.scroll}`}
           color="light"
           light
           expand="md"
@@ -61,7 +48,12 @@ export class Header extends React.Component<{}, HeaderState> {
               this.collapseNav();
             }}
           >
-            <img src={logo} alt="Mudmie" className={styles.logo} />
+            <div className={styles.babyBlueCircle} />
+            <div className={styles.brandName}>
+              mudmie
+              <br />
+              chuthamsatid
+            </div>
           </Link>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
