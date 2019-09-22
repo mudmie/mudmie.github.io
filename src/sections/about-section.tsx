@@ -38,15 +38,21 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
               <AboutTitle />
             </div>
             <p>
-              I believe that a good design communicates clearly and solves
-              problems well. My mission as a product designer is not to just
-              design beautiful stuff, but to design an entire product experience
-              that sparks people’s joy and simplifies people’s lives.
+              I’m about to graduate from engineering at the University of
+              Waterloo and currently looking for a full-time product design role
+              starting Fall 2020.
             </p>
             <p>
-              In my free time, I like to travel, find food spots, and wander
-              around the city; a cup of matcha and some sushi will make me
-              smile.
+              I’ve previously designed for{" "}
+              <OutboundLink href="https://www.plangrid.com" target="_blank">
+                PlanGrid
+              </OutboundLink>{" "}
+              and{" "}
+              <OutboundLink href="https://www.hackthenorth.com" target="_blank">
+                Hack the North
+              </OutboundLink>
+              . Whenever I get a nice break from school, I travel, find food
+              spots and wander around the city.
             </p>
           </Col>
         </Row>
