@@ -6,7 +6,7 @@ import { ImageBox } from "../../components/image-box";
 import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
 
-export default class HackTheNorthPage extends React.Component<
+export default class HackerAppsPage extends React.Component<
   ProjectPageProps,
   {}
 > {
@@ -37,14 +37,14 @@ export default class HackTheNorthPage extends React.Component<
 }
 
 export const pageQuery = graphql`
-  query HackTheNorthQuery($path: String!) {
+  query HackerAppsQuery($path: String!) {
     allProjects: allProjectsJson {
       ...ProjectFields
     }
     project: allProjectsJson(filter: { url: { eq: $path } }) {
       ...ProjectFields
     }
-    mainImage: file(relativePath: { eq: "Hack The North/main.png" }) {
+    mainImage: file(relativePath: { eq: "Hacker Apps/main.png" }) {
       ...MainImageSizes
     }
   }
