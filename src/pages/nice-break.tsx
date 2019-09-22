@@ -17,7 +17,7 @@ export default class NiceBreakPage extends React.Component<
         <Helmet>
           <title>Nice Break</title>
         </Helmet>
-        <Container className={Styles.container}>
+        <Container>
           <Row>
             <Col>Coming Soon!</Col>
           </Row>
