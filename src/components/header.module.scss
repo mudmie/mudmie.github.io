@@ -3,7 +3,6 @@
 
 html {
   .navbar {
-    font-family: $heading-font;
     transition: background-color 0.5s ease-in-out, opacity 0.5s ease-in-out;
 
     @media (min-width: 576px) {
@@ -46,10 +45,11 @@ html {
   }
 
   .brand-name {
+    font-family: $heading-font;
     color: $paprika-color;
     float: left;
     margin-left: 16px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
   }
 }

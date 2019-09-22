@@ -31,6 +31,7 @@ export class ProjectLayout extends React.Component<ProjectLayoutProps, {}> {
           />
           <ProtectedSection
             mainImage={this.props.mainImage}
+            currentProject={this.props.currentProject}
             isProtected={this.props.currentProject.isProtected}
           >
             {this.props.children}

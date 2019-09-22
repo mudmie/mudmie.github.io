@@ -14,9 +14,11 @@ import {
   FormFeedback,
   Label,
 } from "reactstrap";
+import { Project } from "../models/project";
 
 export interface ProtectedSectionProps {
   isProtected: boolean;
+  currentProject: Project;
   mainImage?: any;
 }
 
@@ -191,6 +193,11 @@ export class ProtectedSection extends React.Component<
                 fluid={this.props.mainImage}
                 className="background-theme-color"
               />
+            </Col>
+          </Row>
+          <Row className="justify-content-center mt-2">
+            <Col lg="10">
+              <div>{this.props.currentProject.description}</div>
             </Col>
           </Row>
           <Row className="justify-content-center mt-3">

@@ -24,9 +24,6 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
               {" / "}
               {this.props.currentProject.term}
             </h4>
-            <h2 className={styles.subtitle}>
-              — {this.props.currentProject.description}
-            </h2>
           </Col>
         </Row>
       </Container>

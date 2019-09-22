@@ -32,12 +32,12 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
             <div className="d-none d-md-block">
               <AboutTitle />
             </div>
-            <p>
+            <p className={styles.aboutPara}>
               I’m about to graduate from engineering at the University of
               Waterloo and currently looking for a full-time product design role
               starting Fall 2020.
             </p>
-            <p>
+            <p className={styles.aboutPara}>
               I’ve previously designed for{" "}
               <OutboundLink href="https://www.plangrid.com" target="_blank">
                 PlanGrid
