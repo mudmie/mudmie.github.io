@@ -13,6 +13,7 @@ import {
 import { Project } from "../models/project";
 import * as styles from "./projects-section.module.scss";
 import * as sharedStyles from "./sections.module.scss";
+import { FaLock } from "react-icons/fa";
 
 export interface ProjectsSectionProps {
   projects: Project[];
@@ -78,7 +79,7 @@ export class ProjectsSection extends React.Component<
                     <CardTitle className={styles.cardTitle}>
                       {proj.isProtected ? (
                         <span>
-                          <i className="fas fa-lock fa-xs" />{" "}
+                          <FaLock size={16} />{" "}
                         </span>
                       ) : null}
                       <Link to={proj.url}>{proj.name}</Link>{" "}

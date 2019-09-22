@@ -2,6 +2,7 @@ import * as React from "react";
 import { Project } from "../models/project";
 import { Link, withPrefix } from "gatsby";
 import { Row, Col } from "reactstrap";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 export interface ProjectNavProps {
   projects: Project[];
@@ -32,7 +33,7 @@ export class ProjectNav extends React.Component<ProjectNavProps, {}> {
     const prevProject = projects[currentIndex - 1];
     return (
       <Link to={prevProject.url}>
-        <i className="fas fa-chevron-left" /> {prevProject.name}
+        <FaChevronLeft size={16} /> {prevProject.name}
       </Link>
     );
   }
@@ -48,7 +49,7 @@ export class ProjectNav extends React.Component<ProjectNavProps, {}> {
     const nextProject = projects[currentIndex + 1];
     return (
       <Link to={nextProject.url}>
-        {nextProject.name} <i className="fas fa-chevron-right" />
+        {nextProject.name} <FaChevronRight size={16} />
       </Link>
     );
   }

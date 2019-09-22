@@ -22,10 +22,6 @@ export default class Layout extends React.Component<LayoutProps, {}> {
             href="https://fonts.googleapis.com/css?family=Karla:400,700|Poppins:400,700|PT+Serif:400i"
             rel="stylesheet"
           />
-          <script
-            src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
-            defer
-          />
           <link
             rel="apple-touch-icon"
             sizes="180x180"
