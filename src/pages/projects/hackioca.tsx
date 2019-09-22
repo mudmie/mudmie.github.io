@@ -44,7 +44,7 @@ export const pageQuery = graphql`
     project: allProjectsJson(filter: { url: { eq: $path } }) {
       ...ProjectFields
     }
-    mainImage: file(relativePath: { eq: "Hacker Apps/main.png" }) {
+    mainImage: file(relativePath: { eq: "Hackioca/main.png" }) {
       ...MainImageSizes
     }
   }
