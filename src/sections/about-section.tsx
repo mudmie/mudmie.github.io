@@ -17,11 +17,11 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
     return (
       <Container>
         <a id={this.props.id} className={sharedStyles.sectionAnchor} />
-        <Row>
+        <Row className="justify-content-between">
           <Col sm="12" className={`${styles.colAbout} d-sm-block d-md-none`}>
             <AboutTitle />
           </Col>
-          <Col md="6">
+          <Col md="5">
             <Img
               alt="image of me"
               fluid={this.props.meImage.childImageSharp.fluid}
