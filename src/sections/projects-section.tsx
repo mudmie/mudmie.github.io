@@ -43,7 +43,7 @@ export class ProjectsSection extends React.Component<ProjectsSectionProps, {}> {
                   </CardTitle>
                   <CardSubtitle className={styles.cardSubtitle}>
                     {proj.company}
-                    <br />
+                    {" / "}
                     {proj.term}
                   </CardSubtitle>
                 </CardBody>
