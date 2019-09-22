@@ -10,6 +10,16 @@
   },
 
   {
+    "name": "Hackioca",
+    "company": "Hack The North",
+    "term": "Summer 2019",
+    "description": "Building tools for XXXXXXXXX",
+    "url": "/projects/hackioca/",
+    "imageFolder": "Hackioca",
+    "isProtected": false
+  },
+
+  {
     "name": "User Account Management",
     "company": "PlanGrid",
     "term": "Fall 2018",
