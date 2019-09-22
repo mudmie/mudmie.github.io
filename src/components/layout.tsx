@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 import { Footer } from "../components/footer";
 import { Header } from "../components/header";
 import PageBorder from "./page-border";
+import * as Styles from "./layout.module.scss";
 
 interface LayoutProps {
   children: any;
@@ -48,7 +49,7 @@ export default class Layout extends React.Component<LayoutProps, {}> {
         </Helmet>
         <PageBorder />
         <Header />
-        <main>{this.props.children}</main>
+        <main className={Styles.main}>{this.props.children}</main>
         <Footer />
       </>
     );
