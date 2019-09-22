@@ -1,0 +1,35 @@
+@import "../styles/_colors.scss";
+@import "../styles/_fonts.scss";
+
+h1.about-heading {
+  font-size: 40px;
+  color: $h1-text-color;
+  font-weight: 700;
+}
+h2.about-heading {
+  font-size: 24px;
+  color: $h2-text-color;
+  font-weight: 400;
+}
+h1.about-heading,
+h2.about-heading {
+  text-align: right;
+  font-family: $heading-font;
+}
+
+.social-media {
+  text-align: right;
+  a,
+  a:visited {
+    color: $baby-blue-color;
+  }
+
+  a.instagram:hover,
+  a.instagram:focus {
+    color: #c32aa3;
+  }
+  a.linked-in:hover,
+  a.linked-in:focus {
+    color: #0077b5;
+  }
+}

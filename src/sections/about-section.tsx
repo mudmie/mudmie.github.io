@@ -5,6 +5,7 @@ import * as sharedStyles from "./sections.module.scss";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import Img from "gatsby-image";
 import { withPrefix } from "gatsby";
+import { AboutTitle } from "../components/about-title";
 
 export interface AboutSectionProps {
   id: string;
@@ -16,7 +17,10 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
       <Container>
         <a id={this.props.id} className={sharedStyles.sectionAnchor} />
         <Row>
-          <Col>
+          <Col sm="12" className={`${styles.colAbout} d-sm-block d-md-none`}>
+            <AboutTitle />
+          </Col>
+          <Col md="6">
             {/* <Img
               alt="image of me"
               fluid={this.props.meImage}
@@ -29,29 +33,9 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
               className="img-fluid"
             />
           </Col>
-          <Col className={styles.colAbout}>
-            <h1 className={styles.aboutHeading}>Mudmie Chuthamsatid</h1>
-            <h2 className={styles.aboutHeading}>
-              design intern @ PlanGrid &#8212;
-            </h2>
-            <h2 className={styles.aboutHeading}>
-              engineering student @ UWaterloo
-            </h2>
-            <div className={styles.socialMedia}>
-              <OutboundLink
-                className={styles.linkedIn}
-                href="https://www.linkedin.com/in/mudmie"
-                target="_blank"
-              >
-                <i className="fab fa-linkedin fa-lg" />
-              </OutboundLink>{" "}
-              <OutboundLink
-                className={styles.instagram}
-                href="https://www.instagram.com/mudmiemee"
-                target="_blank"
-              >
-                <i className="fab fa-instagram fa-lg" />
-              </OutboundLink>
+          <Col md="6" className={styles.colAbout}>
+            <div className="d-none d-md-block">
+              <AboutTitle />
             </div>
             <p>
               I believe that a good design communicates clearly and solves
