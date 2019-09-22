@@ -24,11 +24,11 @@ export default class NiceBreakPage extends React.Component<
         <Helmet>
           <title>Nice Break</title>
         </Helmet>
-        <Container>
+        <Container className={styles.niceBreakPage}>
           <Row>
             <Col>
               <h1>Mudmie’s on a nice school break</h1>
-              <h2>shine bright like the sun somewhere outside waterloo</h2>
+              <h4>shine bright like the sun somewhere outside waterloo</h4>
               <Img
                 fluid={this.props.data.mainImage.childImageSharp.fluid}
                 alt="Night scene in Castro neighborhood"
