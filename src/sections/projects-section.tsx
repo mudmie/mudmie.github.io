@@ -18,7 +18,34 @@ export interface ProjectsSectionProps {
   projects: Project[];
   id: string;
 }
-export class ProjectsSection extends React.Component<ProjectsSectionProps, {}> {
+
+export interface ProjectsSectionState {
+  hoverProject: Project | null;
+}
+export class ProjectsSection extends React.Component<
+  ProjectsSectionProps,
+  ProjectsSectionState
+> {
+  constructor(props: any) {
+    super(props);
+    this.state = {
+      hoverProject: null,
+    };
+    this.onMouseEnterProjectItem.bind(this);
+    this.onMouseLeaveProjectItem.bind(this);
+  }
+  public onMouseEnterProjectItem(project: Project) {
+    this.setState({
+      hoverProject: project,
+    });
+  }
+
+  public onMouseLeaveProjectItem(project: Project) {
+    if (this.state.hoverProject == project) {
+      this.setState({ hoverProject: null });
+    }
+  }
+
   public render() {
     return (
       <Container>
@@ -34,7 +61,14 @@ export class ProjectsSection extends React.Component<ProjectsSectionProps, {}> {
               lg="4"
               sm="6"
               xs="12"
-              className={styles.projectCell}
+              className={`${styles.projectCell} ${
+                this.state.hoverProject != null &&
+                this.state.hoverProject != proj
+                  ? styles.cellInactive
+                  : ""
+              }`}
+              onMouseEnter={() => this.onMouseEnterProjectItem(proj)}
+              onMouseLeave={() => this.onMouseLeaveProjectItem(proj)}
               key={proj.name}
             >
               <Card className={styles.projectCard}>
