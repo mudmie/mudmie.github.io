@@ -22,7 +22,7 @@ export class ProjectNav extends React.Component<ProjectNavProps, {}> {
   }
 
   private getPreviousProjectLink() {
-    const projects = this.props.projects;
+    const projects = this.props.projects.filter(proj => proj.isEnabled);
     const currentIndex = projects.findIndex(
       p => p.name == this.props.currentProject.name
     );
@@ -38,7 +38,7 @@ export class ProjectNav extends React.Component<ProjectNavProps, {}> {
   }
 
   private getNextProjectLink() {
-    const projects = this.props.projects;
+    const projects = this.props.projects.filter(proj => proj.isEnabled);
     const currentIndex = projects.findIndex(
       p => p.name == this.props.currentProject.name
     );

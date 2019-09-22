@@ -6,4 +6,5 @@ export interface Project {
   url: string;
   imageFolder: string;
   isProtected: boolean;
+  isEnabled: boolean;
 }
