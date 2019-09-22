@@ -19,7 +19,7 @@ html {
     background-color: #f8f9fa !important;
   }
 
-  :global(.theme-dark) .scroll {
+  :global(.navbar-dark).scroll {
     background-color: #4a4a4a !important;
   }
 
@@ -39,7 +39,7 @@ html {
     float: left;
   }
 
-  :global(.theme-dark) .brand-circle {
+  :global(.navbar-dark) .brand-circle {
     background: $lemon-color;
   }
 
@@ -52,7 +52,7 @@ html {
     font-weight: 700;
   }
 
-  :global(.theme-dark) .brand-name {
+  :global(.navbar-dark) .brand-name {
     color: $baby-blue-color;
   }
 }
