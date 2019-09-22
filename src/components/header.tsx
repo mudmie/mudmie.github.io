@@ -5,12 +5,15 @@ import { Collapse, Nav, NavItem, Navbar, NavbarToggler } from "reactstrap";
 import * as styles from "./header.module.scss";
 import * as logo from "../../static/images/Mudmie.png";
 
+export interface HeaderProps {
+  isDarkMode: boolean;
+}
 export interface HeaderState {
   isOpen: boolean;
 }
 
-export class Header extends React.Component<{}, HeaderState> {
-  constructor(props: any) {
+export class Header extends React.Component<HeaderProps, HeaderState> {
+  constructor(props: HeaderProps) {
     super(props);
     this.state = {
       isOpen: false,
@@ -36,8 +39,8 @@ export class Header extends React.Component<{}, HeaderState> {
       <header>
         <Navbar
           className={`${styles.navbar} ${styles.scroll}`}
-          color="light"
-          light
+          light={!this.props.isDarkMode}
+          dark={this.props.isDarkMode}
           expand="md"
           fixed="top"
         >
@@ -48,7 +51,7 @@ export class Header extends React.Component<{}, HeaderState> {
               this.collapseNav();
             }}
           >
-            <div className={styles.babyBlueCircle} />
+            <div className={styles.brandCircle} />
             <div className={styles.brandName}>
               mudmie
               <br />

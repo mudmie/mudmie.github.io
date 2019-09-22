@@ -1,44 +1,58 @@
 @import "../styles/_colors.scss";
 
-@mixin border-base {
+@mixin border-base($edge) {
   position: fixed;
   z-index: 2000;
+  border-#{$edge}-width: 20px;
+  border-#{$edge}-style: solid;
 }
-
-$border-value: 20px solid $baby-blue-color;
 
 html {
   @media (min-width: 576px) {
+    :global(.theme-regular) {
+      .top-border,
+      .right-border,
+      .bottom-border,
+      .left-border {
+        border-color: $baby-blue-color;
+      }
+    }
+
+    :global(.theme-dark) {
+      .top-border,
+      .right-border,
+      .bottom-border,
+      .left-border {
+        border-color: $lemon-color;
+      }
+    }
+
     .top-border {
-      @include border-base();
+      @include border-base(top);
       left: 0;
       right: 0;
       top: 0;
-      border-top: $border-value;
     }
 
     .right-border {
-      @include border-base();
+      @include border-base(right);
       bottom: 0;
       right: 0;
       top: 0;
-      border-right: $border-value;
     }
 
     .bottom-border {
-      @include border-base();
+      @include border-base(bottom);
       bottom: 0;
       right: 0;
       left: 0;
-      border-bottom: $border-value;
     }
 
     .left-border {
-      @include border-base();
+      @include border-base(left);
       bottom: 0;
       left: 0;
       top: 0;
-      border-left: $border-value;
     }
   }
 }

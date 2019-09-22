@@ -15,6 +15,7 @@ import {
   Label,
 } from "reactstrap";
 import { Project } from "../models/project";
+import { Dash } from "./dash";
 
 export interface ProtectedSectionProps {
   isProtected: boolean;
@@ -202,7 +203,7 @@ export class ProtectedSection extends React.Component<
           </Row>
           <Row className="justify-content-center mt-3">
             <Col lg="10">
-              <hr className={styles.smallDash} />
+              <Dash />
             </Col>
           </Row>
         </Container>

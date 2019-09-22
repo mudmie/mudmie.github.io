@@ -6,6 +6,7 @@ import PageBorder from "./page-border";
 import * as Styles from "./layout.module.scss";
 
 interface LayoutProps {
+  theme?: string;
   children: any;
 }
 
@@ -42,9 +43,10 @@ export default class Layout extends React.Component<LayoutProps, {}> {
           <link rel="manifest" href="/site.webmanifest" />
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="theme-color" content="#ffffff" />
+          <body className={`theme-${this.props.theme || "regular"}`} />
         </Helmet>
         <PageBorder />
-        <Header />
+        <Header isDarkMode={this.props.theme === "dark"} />
         <main className={Styles.main}>{this.props.children}</main>
         <Footer />
       </>

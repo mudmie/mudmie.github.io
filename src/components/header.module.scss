@@ -19,13 +19,8 @@ html {
     background-color: #f8f9fa !important;
   }
 
-  .nav-link {
-    font-weight: 500;
-    color: $paprika-color;
-  }
-
-  .nav-link:hover {
-    color: $baby-blue-color;
+  :global(.theme-dark) .scroll {
+    background-color: #4a4a4a !important;
   }
 
   .logo {
@@ -36,12 +31,16 @@ html {
     opacity: 1;
   }
 
-  .baby-blue-circle {
+  .brand-circle {
     width: 48px;
     height: 48px;
     border-radius: 24px;
     background: $baby-blue-color;
     float: left;
+  }
+
+  :global(.theme-dark) .brand-circle {
+    background: $lemon-color;
   }
 
   .brand-name {
@@ -51,5 +50,9 @@ html {
     margin-left: 16px;
     font-size: 16px;
     font-weight: 700;
+  }
+
+  :global(.theme-dark) .brand-name {
+    color: $baby-blue-color;
   }
 }
