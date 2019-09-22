@@ -43,7 +43,7 @@ export class Header extends React.Component<{}, HeaderState> {
         >
           <Link
             to="/"
-            className="navbar-brand"
+            className="navbar-brand d-none d-md-block"
             onClick={() => {
               this.collapseNav();
             }}
