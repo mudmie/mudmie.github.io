@@ -5,7 +5,7 @@
     "term": "Summer 2019",
     "description": "Building tools for XXXXXXXXX",
     "url": "/projects/hacker-apps/",
-    "imageFolder": "Hacker Apps",
+    "imageFolder": "hacker-apps",
     "isProtected": false,
     "isEnabled": true
   },
@@ -15,7 +15,7 @@
     "term": "Summer 2019",
     "description": "Building tools for XXXXXXXXX",
     "url": "/projects/hackioca/",
-    "imageFolder": "Hackioca",
+    "imageFolder": "hackioca",
     "isProtected": false,
     "isEnabled": true
   },
@@ -25,7 +25,7 @@
     "term": "Fall 2018",
     "description": "Building tools for administrators to monitor and manage users accounts.",
     "url": "/projects/account-management/",
-    "imageFolder": "AC",
+    "imageFolder": "account-management",
     "isProtected": false,
     "isEnabled": true
   },
@@ -35,7 +35,7 @@
     "term": "Fall 2018",
     "description": "Making PlanGrid be on UWaterloo students' radar.",
     "url": "/projects/t-shirt/",
-    "imageFolder": "Tshirt",
+    "imageFolder": "t-shirt",
     "isProtected": false,
     "isEnabled": true
   },
@@ -45,7 +45,7 @@
     "term": "Winter 2018",
     "description": "Understanding forklift operator’s goals and pain points to design a user-friendly picking process.",
     "url": "/projects/picking-process/",
-    "imageFolder": "Picking",
+    "imageFolder": "picking-process",
     "isProtected": false,
     "isEnabled": true
   },
@@ -55,7 +55,7 @@
     "term": "Spring 2017",
     "description": "Establishing a reliable online ordering system to replace phone orders",
     "url": "/projects/craft-beer/",
-    "imageFolder": "Craft Beer",
+    "imageFolder": "craft-beer",
     "isProtected": false,
     "isEnabled": true
   },
@@ -65,7 +65,7 @@
     "term": "Spring 2017",
     "description": "A data collecting mobile application, designed as an initiative to replace existing paper forms for evaluating beverage products.",
     "url": "/projects/tasting-note/",
-    "imageFolder": "Tasting Note",
+    "imageFolder": "tasting-note",
     "isProtected": false,
     "isEnabled": true
   },
@@ -75,7 +75,7 @@
     "term": "Winter 2018",
     "description": "A collection of my UI design practices.",
     "url": "/projects/daily-ui/",
-    "imageFolder": "DailyUI",
+    "imageFolder": "daily-ui",
     "isProtected": false,
     "isEnabled": true
   },
@@ -85,7 +85,7 @@
     "term": "Winter 2018",
     "description": "Website design and development for a virtual reality arcade business in Toronto. Built with React, Gatsby, and Bootstrap to support all screen sizes.",
     "url": "/projects/vrulez/",
-    "imageFolder": "Vrulez",
+    "imageFolder": "vrulez",
     "isProtected": false,
     "isEnabled": true
   },
@@ -95,7 +95,7 @@
     "term": "Winter 2016",
     "description": "A responsive commercial website for an escape room business in Toronto.",
     "url": "/projects/roundabout-canada/",
-    "imageFolder": "Roundabout",
+    "imageFolder": "roundabout-canada",
     "isProtected": false,
     "isEnabled": true
   }

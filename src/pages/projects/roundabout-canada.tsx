@@ -161,7 +161,7 @@ export const pageQuery = graphql`
     project: allProjectsJson(filter: { url: { eq: $path } }) {
       ...ProjectFields
     }
-    mainImage: file(relativePath: { eq: "Roundabout/main.png" }) {
+    mainImage: file(relativePath: { eq: "roundabout-canada/main.png" }) {
       ...MainImageSizes
     }
   }

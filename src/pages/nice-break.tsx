@@ -60,7 +60,7 @@ export default class NiceBreakPage extends React.Component<
 
 export const pageQuery = graphql`
   query NiceBreakPageQuery {
-    mainImage: file(relativePath: { eq: "Nice Break/Castro.jpg" }) {
+    mainImage: file(relativePath: { eq: "nice-break/Castro.jpg" }) {
       ...MainImageSizes
     }
   }
