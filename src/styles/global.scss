@@ -28,4 +28,10 @@ html {
   p {
     margin-top: 1rem;
   }
+  a,
+  a:focus,
+  a:hover,
+  a:visited {
+    color: $link-color;
+  }
 }
