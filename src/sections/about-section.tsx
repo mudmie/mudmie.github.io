@@ -6,10 +6,11 @@ import { OutboundLink } from "gatsby-plugin-google-analytics";
 import Img from "gatsby-image";
 import { withPrefix, Link } from "gatsby";
 import { AboutTitle } from "../components/about-title";
+import { ImageSharp } from "../models/image-sharp";
 
 export interface AboutSectionProps {
   id: string;
-  meImage: any;
+  meImage: ImageSharp;
 }
 export class AboutSection extends React.Component<AboutSectionProps, {}> {
   public render() {
@@ -21,16 +22,10 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
             <AboutTitle />
           </Col>
           <Col md="6">
-            {/* <Img
+            <Img
               alt="image of me"
-              fluid={this.props.meImage}
+              fluid={this.props.meImage.childImageSharp.fluid}
               className="background-theme-color"
-            /> */}
-            {/* TODO: Switch to image sharp */}
-            <img
-              src={this.getImageUrl("me.jpg")}
-              alt="image of me"
-              className="img-fluid"
             />
           </Col>
           <Col md="6" className={styles.colAbout}>

@@ -1,4 +1,5 @@
 import { Project } from "./project";
+import { ImageSharp } from "./image-sharp";
 
 export interface ProjectPageProps {
   data: {
@@ -12,10 +13,6 @@ export interface ProjectPageProps {
         node: Project;
       }[];
     };
-    mainImage: {
-      childImageSharp: {
-        fluid: any;
-      };
-    };
+    mainImage: ImageSharp;
   };
 }
