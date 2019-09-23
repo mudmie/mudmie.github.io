@@ -26,7 +26,7 @@ export default class NiceBreakPage extends React.Component<
         </Helmet>
         <Container className={styles.niceBreakPage}>
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h1>Mudmie’s on a nice school break</h1>
               <h4>shine bright like the sun somewhere outside waterloo</h4>
               <Img
@@ -41,12 +41,12 @@ export default class NiceBreakPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center mt-3">
-            <Col lg="10">
+            <Col lg="8">
               <Dash />
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <b>coming soon</b>
               <br />
               specifically when mudmie is on the reading week break in October.

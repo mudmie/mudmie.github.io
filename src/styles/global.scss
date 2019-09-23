@@ -35,6 +35,11 @@ html {
     }
   }
 
+  b,
+  strong {
+    font-weight: 700;
+  }
+
   h1 {
     font-weight: bold;
     font-family: $heading-font;
