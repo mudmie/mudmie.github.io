@@ -31,6 +31,9 @@ export class ProjectNav extends React.Component<ProjectNavProps, {}> {
       return null;
     }
     const prevProject = projects[currentIndex - 1];
+    if (!prevProject) {
+      return null;
+    }
     return (
       <Link to={prevProject.url}>
         <FaChevronLeft size={16} /> {prevProject.name}
@@ -47,6 +50,9 @@ export class ProjectNav extends React.Component<ProjectNavProps, {}> {
       return null;
     }
     const nextProject = projects[currentIndex + 1];
+    if (!nextProject) {
+      return null;
+    }
     return (
       <Link to={nextProject.url}>
         {nextProject.name} <FaChevronRight size={16} />
