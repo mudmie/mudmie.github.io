@@ -4,6 +4,7 @@ import { Col, Container, Row } from "reactstrap";
 import { graphql, withPrefix } from "gatsby";
 import { ImageBox } from "../../components/image-box";
 import { ProjectLayout } from "../../components/project-layout";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 import { ProjectPageProps } from "../../models/project-page-props";
 
 export default class HackiocaPage extends React.Component<
@@ -20,8 +21,15 @@ export default class HackiocaPage extends React.Component<
         <Container>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>About the Company</h3>
-              <p>Foo Bar</p>
+              <p>Coming soon. </p>
+              <p>
+                {" "}
+                In the meantime, visit{" "}
+                <OutboundLink href="https://hackioca.com" target="_blank">
+                  Hackioca
+                </OutboundLink>{" "}
+                to experience the website and its design.
+              </p>
             </Col>
           </Row>
         </Container>

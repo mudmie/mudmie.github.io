@@ -2,6 +2,7 @@ import * as React from "react";
 import * as sharedStyles from "./styles.module.scss";
 import { Col, Container, Row } from "reactstrap";
 import { graphql, withPrefix } from "gatsby";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 import { ImageBox } from "../../components/image-box";
 import { ProjectLayout } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
@@ -20,8 +21,17 @@ export default class HackerAppsPage extends React.Component<
         <Container>
           <Row className="justify-content-center">
             <Col lg="10">
-              <h3>About the Company</h3>
-              <p>Foo Bar</p>
+              <p>Coming soon.</p>
+              <p>
+                In the meantime, visit{" "}
+                <OutboundLink
+                  href="https://dev--htn-app.netlify.com/"
+                  target="_blank"
+                >
+                  Hacker Apps
+                </OutboundLink>{" "}
+                to see the final design.
+              </p>
             </Col>
           </Row>
         </Container>
