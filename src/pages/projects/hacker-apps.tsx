@@ -20,17 +20,308 @@ export default class HackerAppsPage extends React.Component<
       >
         <Container>
           <Row className="justify-content-center">
-            <Col lg="10">
-              <p>Coming soon.</p>
+            <Col lg="8">
+              <h3>About Hack the North</h3>
               <p>
-                In the meantime, visit{" "}
-                <OutboundLink
-                  href="https://dev--htn-app.netlify.com/"
-                  target="_blank"
-                >
-                  Hacker Apps
-                </OutboundLink>{" "}
-                to see the final design.
+                Hack the North is Canada’s biggest hackathon held annually at
+                the University of Waterloo. Every year, over 1,000 students from
+                different parts of the world spend 36 hours to collaboratively
+                design and build projects of their choices.
+              </p>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="8">
+              <h3>My Roles</h3>
+              <p>
+                I led the design of the hacker application portal for Hack the
+                North 2019. I first met with other team members to brainstorm
+                ideas and pick the theme for this year. I then worked closely
+                with the application team to discuss components required for the
+                application process and worked with Annie, one of our graphic
+                designers, to get illustrations for the project. I later handed
+                off the design to the front-end team and provided design
+                supports until it was brought to life.
+              </p>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="8">
+              <h3>Application Portal at a Glance</h3>
+              <p>
+                Every year, Hack the North receives thousands of applications
+                from students around the world. Based on the statistic from
+                previous years, we expected to receive about 8,000 applications
+                this year. The application portal is an important platform as
+                everyone who wishes to attend Hack the North has to submit
+                his/her application through the portal. Having a creative
+                application process could provide an exciting and memorable user
+                experience for those who wanted to participate.
+              </p>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="8">
+              <h3>High-Level Planning</h3>
+              <p>
+                For 2019, we wanted to connect hackers together and promote
+                diversity as well as a collaborative work environment. We
+                arrived at the idea of allowing hackers to tell their stories
+                and share them through the application process. Mapping this
+                idea with the theme chosen by the team, we were looking to
+                design a unique comic-themed application portal with
+                illustrations that customized to their answers.
+              </p>
+              <p>
+                The application portal would consist of five different parts,
+                including creating a robogoose, filling out personal
+                information, logging in or creating account, answering long
+                questions, and viewing application status.
+              </p>
+              <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("high-level.png")}
+                    alt="Color pallets for Hackioca"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="8">
+              <h3>Produce-a-Goose</h3>
+              <p>
+                Since the Robogoose is the main character in the comic, the
+                users will begin their application process by customizing the
+                color and the accessory of their Robogoose.
+              </p>
+              <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("web-goose.png")}
+                    alt="Color pallets for Hackioca"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
+              <p>
+                If the users apply through their mobile devices, the
+                customization process will be broken down into two steps due to
+                the constraint from the smaller screen size. They will select
+                the color first before clicking next to select the accessory.
+              </p>
+              <Row className="justify-content-center">
+                <Col lg="8">
+                  <ImageBox
+                    src={this.getImageUrl("mobile-goose.png")}
+                    alt="Color pallets for Hackioca"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="8">
+              <h3>The Comic</h3>
+              <p>
+                Once the users have customized their Robogoose, they will enter
+                the comic creation process. In this step, the users will fill
+                out their personal information such as their name, education
+                information, traveling location and hackathon experience.
+              </p>
+              <Row className="justify-content-center">
+                <Col lg="10">
+                  <ImageBox
+                    src={this.getImageUrl("comic.gif")}
+                    alt="Color pallets for Hackioca"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
+              <p>
+                For the education information, the users will provide their
+                study level and graduation year. Here, the illustration of the
+                comic background will change to the lockers, shelves with
+                laptops and books, the office based on the users’ response
+                whether their study level is high school, undergraduate or
+                graduate.
+              </p>
+              <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("education.png")}
+                    alt="Color pallets for Hackioca"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
+              <p>
+                Next, the users will provide the name of the school that they
+                are currently attending as well as their study program. If the
+                users attend one of the seven schools that has the highest Hack
+                the North participation rate, the illustration in this comic
+                panel will also change to the iconic building of their school.
+              </p>
+              <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("school.png")}
+                    alt="Color pallets for Hackioca"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
+              <p>
+                For the traveling location, the users will let Hack the North
+                know from which city they will be traveling to the event. The
+                map will zoom into the city that they enter.
+              </p>
+              <Row className="justify-content-center">
+                <Col lg="8">
+                  <ImageBox
+                    src={this.getImageUrl("map.gif")}
+                    alt="Color pallets for Hackioca"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
+              <p>
+                Finally, the users will answer whether they have been to a
+                hackathon before. If this will be their first Hackathon, they
+                will get the illustration of the first time hacker badge. If
+                they have been to other hackathons before, the illustration will
+                change to a bunch of hardware and gears.
+              </p>
+              <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("experience.png")}
+                    alt="Color pallets for Hackioca"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center">
+            <Col lg="8">
+              <h3>Account Creation</h3>
+              <p>
+                After completing the comic, the users will get to create an
+                account or log in to an existing account, if they have applied
+                to Hack the North before.
+              </p>
+              <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("web-account.png")}
+                    alt="Color pallets for Hackioca"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
+              <div>
+                <br />
+              </div>
+              <Row className="justify-content-center">
+                <Col lg="6">
+                  <ImageBox
+                    src={this.getImageUrl("mobile-account.png")}
+                    alt="Color pallets for Hackioca"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
+              <p>
+                In a case that the users forget their password, they will have
+                an opportunity to reset it here.
+              </p>
+            </Col>
+            <Row className="justify-content-center">
+              <Col lg="4">
+                <ImageBox
+                  src={this.getImageUrl("web-forget.png")}
+                  alt="Color pallets for Hackioca"
+                  className="img-fluid"
+                />
+              </Col>
+              <Col lg="2">
+                <ImageBox
+                  src={this.getImageUrl("mobile-forget.png")}
+                  alt="Color pallets for Hackioca"
+                  className="img-fluid"
+                />
+              </Col>
+            </Row>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="8">
+              <h3>Application Questions</h3>
+              <p>
+                Finally, the users will answer questions that will enable Hack
+                the North team to learn more about their skills and their
+                motivation to attend the event. Since this process has a
+                significant impact on the chance of being accepted to Hack the
+                North, I designed the interface in a way that the user would be
+                able to focus on answering one question at a time.
+              </p>
+              <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("questions.png")}
+                    alt="Color pallets for Hackioca"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
+              <p>
+                The users will be able to review the application and edit any
+                information before submitting it.
+              </p>
+              <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("review.png")}
+                    alt="Color pallets for Hackioca"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="8">
+              <h3>Submission &amp; Application Status</h3>
+              <p>
+                Once the users have submitted their application, they will be
+                able to download their personalized comic or share it on social
+                media. They will also be able to view the application status
+                here.
+              </p>
+            </Col>
+            <Row className="justify-content-center">
+              <Col lg="8">
+                <ImageBox
+                  src={this.getImageUrl("submitted.png")}
+                  alt="Color pallets for Hackioca"
+                  className="img-fluid"
+                />
+              </Col>
+            </Row>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="8">
+              <h3>Learning</h3>
+              <p>
+                Working on this project for Hack the North gave me valuable
+                opportunities to practice the design thinking process, enhance
+                my interactive design skills, work collaboratively with various
+                groups of people, and learn about the design-development
+                handoff.
               </p>
             </Col>
           </Row>

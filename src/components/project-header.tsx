@@ -16,8 +16,8 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
           projects={this.props.allProjects}
           currentProject={this.props.currentProject}
         />
-        <Row className="justify-content-center">
-          <Col lg="10">
+        <Row className="justify-content-center mt-4">
+          <Col lg="8">
             <h1>{this.props.currentProject.name}</h1>
             <h4 className={styles.companyTerm}>
               {this.props.currentProject.company}

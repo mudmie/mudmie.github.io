@@ -30,12 +30,17 @@ export class ImageBox extends React.Component<ImageBoxProps, ImageBoxState> {
   public render() {
     return (
       <>
-        <img
-          src={this.props.src}
-          alt={this.props.alt}
-          className={`${styles.imageBox} ${this.props.className}`}
-          onClick={this.toggleModal}
-        />
+        <figure>
+          <img
+            src={this.props.src}
+            alt={this.props.alt}
+            className={`${styles.imageBox} ${this.props.className}`}
+            onClick={this.toggleModal}
+          />
+          <figcaption className={`text-center ${styles.imgCaption}`}>
+            {this.props.alt}
+          </figcaption>
+        </figure>
         <Modal
           isOpen={this.state.isModalOpen}
           toggle={this.toggleModal}
