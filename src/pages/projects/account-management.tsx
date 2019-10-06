@@ -16,7 +16,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
       >
         <Container>
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>About The Company</h3>
               <p>
                 PlanGrid has a primary objective to make intuitive and impactful
@@ -29,7 +29,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>Background</h3>
               <p>
                 Admin Console is a part of PlanGrid web products that allows IT
@@ -47,7 +47,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>My Roles &amp; Project Goals</h3>
               <p>
                 The main goals of this project were to enhance the user
@@ -61,7 +61,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>Problems</h3>
               <p className={sharedStyles.quote}>
                 The current system restricts IT Admins to only purchase licenses
@@ -90,7 +90,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>The Current Admin Console</h3>
               <p>
                 The current version of Admin Console consists of two major
@@ -105,19 +105,19 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 example, the “more options icon” at the end of the row of user
                 log doesn’t exist in other parts of PlanGrid web app.
               </p>
+              <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("current-AC.jpg")}
+                    alt="Current Admin Console UI"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="10">
-              <ImageBox
-                src={this.getImageUrl("current-AC.jpg")}
-                alt="Current Admin Console UI"
-                className="img-fluid"
-              />
-            </Col>
-          </Row>
-          <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>User Flow</h3>
               <p>
                 Workflow diagram was created to explore and identify different
@@ -125,10 +125,10 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
               </p>
 
               <Row className="justify-content-center">
-                <Col lg="12">
+                <Col lg="11">
                   <ImageBox
                     src={this.getImageUrl("full-flow.png")}
-                    alt="Current Admin Console UI"
+                    alt="User flow for the new Admin Console"
                     className="img-fluid"
                   />
                 </Col>
@@ -143,15 +143,15 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 On the other end, the user can accept or reject the request or
                 the invitation.
               </p>
-            </Col>
-          </Row>
-          <Row className="justify-content-center">
-            <Col lg="10">
-              <ImageBox
-                src={this.getImageUrl("flow.png")}
-                alt="Current Admin Console UI"
-                className="img-fluid"
-              />
+              <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("flow.png")}
+                    alt="Simplified user flow for the new Admin Console "
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
             </Col>
           </Row>
 
@@ -164,17 +164,10 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 step of the user flow.
               </p>
               <Row className="justify-content-center">
-                <Col lg="6">
+                <Col lg="11">
                   <ImageBox
-                    src={this.getImageUrl("add-new-user.jpg")}
-                    alt="Collect information using sticky notes"
-                    className="img-fluid"
-                  />
-                </Col>
-                <Col lg="6">
-                  <ImageBox
-                    src={this.getImageUrl("invite-existing-user.jpg")}
-                    alt="Whiteboard with research"
+                    src={this.getImageUrl("wireframes.png")}
+                    alt="Hand-sketched wireframes"
                     className="img-fluid"
                   />
                 </Col>
@@ -195,10 +188,10 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 added to the list.
               </p>
               <Row className="justify-content-center">
-                <Col lg="12">
+                <Col lg="11">
                   <ImageBox
                     src={this.getImageUrl("license.png")}
-                    alt="Current Admin Console UI"
+                    alt="Original design vs New design of the license list"
                     className="img-fluid"
                   />
                 </Col>
@@ -224,14 +217,14 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 users could purchase extra license without having to go back to
                 the user log page. As a result, I added a helper text that says
                 "if you don't have enough license, you'll be able to purchase
-                more later" with a though that the users would read it and know
+                more later" with a thought that the users would read it and know
                 they can buy more license in after clicking next.
               </p>
               <Row className="justify-content-center">
-                <Col lg="12">
+                <Col lg="11">
                   <ImageBox
                     src={this.getImageUrl("usability.png")}
-                    alt="Current Admin Console UI"
+                    alt="Adding helper text to notify users about in-app license purchase"
                     className="img-fluid"
                   />
                 </Col>
@@ -301,10 +294,10 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 message regarding to license purchase.
               </p>
               <Row className="justify-content-center">
-                <Col lg="12">
+                <Col lg="11">
                   <ImageBox
                     src={this.getImageUrl("new-design.png")}
-                    alt="Current Admin Console UI"
+                    alt="Adding an alert banner to notify users about insufficient licenses"
                     className="img-fluid"
                   />
                 </Col>
@@ -317,7 +310,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 <Col lg="12">
                   <ImageBox
                     src={this.getImageUrl("final-flow.png")}
-                    alt="Current Admin Console UI"
+                    alt="The final design of Admin Console"
                     className="img-fluid"
                   />
                 </Col>

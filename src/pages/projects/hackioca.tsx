@@ -137,7 +137,7 @@ export default class HackiocaPage extends React.Component<
                 <Col lg="8">
                   <ImageBox
                     src={this.getImageUrl("boba-web.gif")}
-                    alt="Low-fidelity mocks for Hackioca"
+                    alt="Landing page for desktop"
                     className="img-fluid"
                   />
                 </Col>
@@ -178,7 +178,7 @@ export default class HackiocaPage extends React.Component<
                 <Col lg="10">
                   <ImageBox
                     src={this.getImageUrl("option1.png")}
-                    alt="Low-fidelity mocks for Hackioca"
+                    alt="Option 1: customize boba on the landing page"
                     className="img-fluid"
                   />
                 </Col>
@@ -197,7 +197,7 @@ export default class HackiocaPage extends React.Component<
                 <Col lg="7">
                   <ImageBox
                     src={this.getImageUrl("option2.png")}
-                    alt="Low-fidelity mocks for Hackioca"
+                    alt="Option 2: customize boba from a separate page"
                     className="img-fluid"
                   />
                 </Col>
@@ -217,7 +217,7 @@ export default class HackiocaPage extends React.Component<
                 <Col lg="8" className="text-center">
                   <ImageBox
                     src={this.getImageUrl("boba-mobile.gif")}
-                    alt="Web UI by Ben Schade"
+                    alt="Landing page for mobile"
                     className="img-fluid"
                   />
                 </Col>

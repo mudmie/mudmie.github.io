@@ -82,7 +82,7 @@ export default class HackerAppsPage extends React.Component<
                 <Col lg="11">
                   <ImageBox
                     src={this.getImageUrl("high-level.png")}
-                    alt="Color pallets for Hackioca"
+                    alt="Planning for the design of Hacker Application Portal"
                     className="img-fluid"
                   />
                 </Col>
@@ -91,7 +91,7 @@ export default class HackerAppsPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="8">
-              <h3>Produce-a-Goose</h3>
+              <h3>Produce a Goose</h3>
               <p>
                 Since the Robogoose is the main character in the comic, the
                 users will begin their application process by customizing the
@@ -101,7 +101,7 @@ export default class HackerAppsPage extends React.Component<
                 <Col lg="11">
                   <ImageBox
                     src={this.getImageUrl("web-goose.png")}
-                    alt="Color pallets for Hackioca"
+                    alt="Produce a goose on desktop"
                     className="img-fluid"
                   />
                 </Col>
@@ -116,7 +116,7 @@ export default class HackerAppsPage extends React.Component<
                 <Col lg="8">
                   <ImageBox
                     src={this.getImageUrl("mobile-goose.png")}
-                    alt="Color pallets for Hackioca"
+                    alt="Produce a goose on mobile"
                     className="img-fluid"
                   />
                 </Col>
@@ -125,7 +125,7 @@ export default class HackerAppsPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="8">
-              <h3>The Comic</h3>
+              <h3>The Comic Section</h3>
               <p>
                 Once the users have customized their Robogoose, they will enter
                 the comic creation process. In this step, the users will fill
@@ -136,7 +136,7 @@ export default class HackerAppsPage extends React.Component<
                 <Col lg="10">
                   <ImageBox
                     src={this.getImageUrl("comic.gif")}
-                    alt="Color pallets for Hackioca"
+                    alt="Filling out information in the comic section"
                     className="img-fluid"
                   />
                 </Col>
@@ -153,7 +153,7 @@ export default class HackerAppsPage extends React.Component<
                 <Col lg="11">
                   <ImageBox
                     src={this.getImageUrl("education.png")}
-                    alt="Color pallets for Hackioca"
+                    alt="Illustrations for different study levels"
                     className="img-fluid"
                   />
                 </Col>
@@ -169,7 +169,7 @@ export default class HackerAppsPage extends React.Component<
                 <Col lg="11">
                   <ImageBox
                     src={this.getImageUrl("school.png")}
-                    alt="Color pallets for Hackioca"
+                    alt="Illustrations for various schools"
                     className="img-fluid"
                   />
                 </Col>
@@ -183,7 +183,7 @@ export default class HackerAppsPage extends React.Component<
                 <Col lg="8">
                   <ImageBox
                     src={this.getImageUrl("map.gif")}
-                    alt="Color pallets for Hackioca"
+                    alt="Finding your city on the map"
                     className="img-fluid"
                   />
                 </Col>
@@ -199,7 +199,7 @@ export default class HackerAppsPage extends React.Component<
                 <Col lg="11">
                   <ImageBox
                     src={this.getImageUrl("experience.png")}
-                    alt="Color pallets for Hackioca"
+                    alt="First time hacker vs Veteran hacker"
                     className="img-fluid"
                   />
                 </Col>
@@ -219,7 +219,7 @@ export default class HackerAppsPage extends React.Component<
                 <Col lg="11">
                   <ImageBox
                     src={this.getImageUrl("web-account.png")}
-                    alt="Color pallets for Hackioca"
+                    alt="Account creation for desktop"
                     className="img-fluid"
                   />
                 </Col>
@@ -231,7 +231,7 @@ export default class HackerAppsPage extends React.Component<
                 <Col lg="6">
                   <ImageBox
                     src={this.getImageUrl("mobile-account.png")}
-                    alt="Color pallets for Hackioca"
+                    alt="Account creation for mobile"
                     className="img-fluid"
                   />
                 </Col>
@@ -245,14 +245,14 @@ export default class HackerAppsPage extends React.Component<
               <Col lg="4">
                 <ImageBox
                   src={this.getImageUrl("web-forget.png")}
-                  alt="Color pallets for Hackioca"
+                  alt="Reset password for desktop"
                   className="img-fluid"
                 />
               </Col>
               <Col lg="2">
                 <ImageBox
                   src={this.getImageUrl("mobile-forget.png")}
-                  alt="Color pallets for Hackioca"
+                  alt="Reset password for mobile"
                   className="img-fluid"
                 />
               </Col>
@@ -273,7 +273,7 @@ export default class HackerAppsPage extends React.Component<
                 <Col lg="11">
                   <ImageBox
                     src={this.getImageUrl("questions.png")}
-                    alt="Color pallets for Hackioca"
+                    alt="Answering application questions"
                     className="img-fluid"
                   />
                 </Col>
@@ -286,7 +286,7 @@ export default class HackerAppsPage extends React.Component<
                 <Col lg="11">
                   <ImageBox
                     src={this.getImageUrl("review.png")}
-                    alt="Color pallets for Hackioca"
+                    alt="Reviewing application"
                     className="img-fluid"
                   />
                 </Col>
@@ -307,7 +307,7 @@ export default class HackerAppsPage extends React.Component<
               <Col lg="8">
                 <ImageBox
                   src={this.getImageUrl("submitted.png")}
-                  alt="Color pallets for Hackioca"
+                  alt="View application status and get your comic story"
                   className="img-fluid"
                 />
               </Col>
