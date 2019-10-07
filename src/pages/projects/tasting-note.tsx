@@ -22,7 +22,7 @@ export default class TastingNotePage extends React.Component<
             <Col lg="8">
               <h3>Background</h3>
               <p>
-                LCBO is one of the world's largest alcoholic beverage
+                LCBO is one of the world’s largest alcoholic beverage
                 purchasers, there are numbers of new products need to be
                 evaluated each year. As a result, product consultants meet 3
                 times a year to sample and document tasting notes of the new
@@ -58,8 +58,8 @@ export default class TastingNotePage extends React.Component<
                 time-consuming and fallible.
               </p>
               <p>
-                While it's challenging for the product consultants to manage and
-                organize the product evaluation forms, it's a real pain for the
+                While it’s challenging for the product consultants to manage and
+                organize the product evaluation forms, it’s a real pain for the
                 data and writing team to go through piles of paper, try to read
                 the hand writings, validate data quality, and manually enter it
                 to electronic system.
@@ -94,7 +94,7 @@ export default class TastingNotePage extends React.Component<
               <p>After reviewing the problems and user persona, I decided to</p>
               <ol>
                 <li>
-                  Choose mobile as a platform device since it's portable and
+                  Choose mobile as a platform device since it’s portable and
                   currently used by LCBO staff at the store.
                 </li>
                 <br />

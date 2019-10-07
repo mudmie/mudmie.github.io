@@ -71,7 +71,7 @@ export default class PickingProcessPage extends React.Component<
             <Col lg="8">
               <h3>User Research</h3>
               <p>
-                I began my design process by interviewing Nulogy's professional
+                I began my design process by interviewing Nulogy’s professional
                 service consultants, who worked directly with the workers at the
                 manufacturing sites. After multiple rounds of interviews, I was
                 able to collect sufficient information to summarize a general
@@ -109,7 +109,7 @@ export default class PickingProcessPage extends React.Component<
 
               <p>
                 With the information from the interview sessions, I created a
-                user journey map that shows forklift operator's thoughts and his
+                user journey map that shows forklift operator’s thoughts and his
                 interaction with other workers. I found it to be difficult to
                 create a balance between text and graphic contents. As a result,
                 the first version of my user journey looked this ugly...
@@ -179,13 +179,13 @@ export default class PickingProcessPage extends React.Component<
                 In the final version of the user journey map, cartoon icons for
                 key people were replaced with colored dots with initials of
                 their position. This was done to reduce mental workload for the
-                audience as they wouldn't have to remember which icon represent
+                audience as they wouldn’t have to remember which icon represent
                 which person.
               </p>
               <p>
                 Copies of the user journey map were displayed in the design room
                 and distributed to various product teams. With good
-                understandings of the user's workflow, goals and pains, the
+                understandings of the user’s workflow, goals and pains, the
                 product team at Nulogy will be able to design and develop
                 solutions that are more user-centered.
               </p>
@@ -240,7 +240,7 @@ export default class PickingProcessPage extends React.Component<
                 </i>
                 <br />
                 This question was asked by the professional service consultants
-                when I presented them with this prototype. It's good to allow
+                when I presented them with this prototype. It’s good to allow
                 multiple pallets to be picked at once, but some limitation
                 should still exist to prevent any potential error. Still, the
                 maximum number can be varied, depending on the workflow of each
@@ -253,7 +253,7 @@ export default class PickingProcessPage extends React.Component<
                 <i>
                   <b>
                     "Can we redesign the entire picking process experience so
-                    that it's more user-friendly?"
+                    that it’s more user-friendly?"
                   </b>
                 </i>
                 <br />I see this feature as the first step to improve user

@@ -34,20 +34,20 @@ export default class RoundaboutCanadaPage extends React.Component<
               <h3>Problems</h3>
               <p>
                 Prior to my internship at the company, the company website
-                wasn't responsive This caused issues like truncated text or
+                wasn’t responsive This caused issues like truncated text or
                 content which{" "}
                 <i>disabled customers to get information they needed.</i>
               </p>
               <p>
                 During my first week working at the store, 10+ customers
-                complaint that they weren't able to find store hours and phone
+                complaint that they weren’t able to find store hours and phone
                 number from the company website. There were many incoming phone
                 calls asking about store hours and some other information that
                 the website failed to provide.
               </p>
               <p>
-                Search Engine also wasn't optimized due to poor-written code and
-                lacks of responsiveness. The company wasn't listed on the first
+                Search Engine also wasn’t optimized due to poor-written code and
+                lacks of responsiveness. The company wasn’t listed on the first
                 page of Google Search when the users search using keywords
                 related to the escape room industry.
               </p>
@@ -65,7 +65,7 @@ export default class RoundaboutCanadaPage extends React.Component<
                 research about other escape rooms and how they advertised their
                 business. I stalked their websites, observed the designs and
                 collected good and bad things about them. I also directly asked
-                users who came to play the escape rooms what they didn't like
+                users who came to play the escape rooms what they didn’t like
                 about the company website and what they expected to see on the
                 new website.
               </p>
@@ -86,7 +86,7 @@ export default class RoundaboutCanadaPage extends React.Component<
                   to grab attention from the audience.
                 </li>
                 <li>
-                  Since the website didn't have a lot of content, simple HTML,
+                  Since the website didn’t have a lot of content, simple HTML,
                   CSS, JavaScript and Boostrap were used to create a fully
                   responsive website.
                 </li>
@@ -139,8 +139,8 @@ export default class RoundaboutCanadaPage extends React.Component<
                 technology used to build the website.
               </p>
               <p>
-                After all, this project is the it's the one that I'm always
-                proud of even though it's a bit outdated. For a first year
+                After all, this project is the it’s the one that I’m always
+                proud of even though it’s a bit outdated. For a first year
                 student, who started university for only 4 months, this project
                 was definitely challenging, so it was a good exercise for me to
                 keep learning and practicing my skills.

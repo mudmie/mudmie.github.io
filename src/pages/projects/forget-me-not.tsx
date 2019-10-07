@@ -22,7 +22,7 @@ export default class ForgetMeNotPage extends React.Component<
             <Col lg="10">
               <h3>Overview</h3>
               <p>
-                Forget Me Not is the first mobile interface I've ever designed.
+                Forget Me Not is the first mobile interface I’ve ever designed.
                 With belief that <i>important tasks cannot be forgotten</i>, I
                 designed the app to be as simple as possible. Its features
                 include:

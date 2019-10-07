@@ -22,11 +22,11 @@ export default class CraftBeerPage extends React.Component<
             <Col lg="8">
               <h3>About the Company</h3>
               <p>
-                The Liquor Control Board of Ontario (LCBO) is one of the world's
+                The Liquor Control Board of Ontario (LCBO) is one of the world’s
                 largest purchaser of alcoholic beverages. It distributes and
                 sells liquor throughout the province of Ontario in Canada. In
                 2016, an innovation lab, LCBO|next, was founded to design and
-                develop new technologies that will enhance LCBO's technology
+                develop new technologies that will enhance LCBO’s technology
                 initiatives.
               </p>
             </Col>
@@ -78,7 +78,7 @@ export default class CraftBeerPage extends React.Component<
               </p>
 
               <p>
-                This current process doesn't only cause a burden to LCBO staff,
+                This current process doesn’t only cause a burden to LCBO staff,
                 but also the craft brewers. Since there are about 660 LCBO
                 stores across Ontario, each brewer can receive hundreds of phone
                 calls during the week. In addition, the current process
@@ -95,17 +95,17 @@ export default class CraftBeerPage extends React.Component<
               <h3>User Interview</h3>
               <p className={sharedStyles.quote}>
                 I know the problems the users face. I also have a picture of the
-                system that I want to design to solve the problems, but I can't
+                system that I want to design to solve the problems, but I can’t
                 just do that. Why?
                 <br />
-                Because I'm not the user!
+                Because I’m not the user!
                 <br />
-                It doesn't make sense to design a system that I love to use, but
+                It doesn’t make sense to design a system that I love to use, but
                 the real users hate to use.
               </p>
               <p>
                 Although I already understand the problems that LCBO staff and
-                craft brewers are facing, it's still crucial for me to sit and
+                craft brewers are facing, it’s still crucial for me to sit and
                 chat with the users to ask questions and discover what kind of
                 system that they are looking for.
               </p>
@@ -125,12 +125,12 @@ export default class CraftBeerPage extends React.Component<
                 <li>
                   After receiving orders from each LCBO store, craft brewers
                   have to record order details to their system manually because
-                  LCBO doesn't provide any platform for them to track the order
+                  LCBO doesn’t provide any platform for them to track the order
                   history.
                 </li>
                 <li>
                   Craft brewers need an ability to modify orders as sometimes
-                  they can't keep up with production or they realize that the
+                  they can’t keep up with production or they realize that the
                   store orders too many or too less.
                 </li>
                 <li>
@@ -234,7 +234,7 @@ export default class CraftBeerPage extends React.Component<
                 stores.
               </p>
               Once the store employees submit the order, it will show up on the
-              craft brewer's portal. From there, craft brewers can review
+              craft brewer’s portal. From there, craft brewers can review
               products, their quantity, and store comments. They can modify the
               quantity of product in the order and provide comments to the store
               as appropriate. Before they can confirm the order, they have to

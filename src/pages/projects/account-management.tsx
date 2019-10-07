@@ -55,7 +55,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 that allowed the IT Admins to set up organization ownership of
                 user accounts. As a designer, I designed the workflow that will
                 give IT Admins an ability to manage user accounts and redesigned
-                web interfaces using components from PlanGrid's design system.
+                web interfaces using components from PlanGrid’s design system.
               </p>
             </Col>
           </Row>
@@ -70,7 +70,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 list of projects that their users are working on.
               </p>
               <p>
-                The first problem occurs when IT Admins finds out they don't
+                The first problem occurs when IT Admins finds out they don’t
                 have enough license when trying to add new users to the
                 organization. The current process requires them to abandon their
                 current task, navigate back to the user log page, purchase
@@ -80,7 +80,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 The second problem happens when employees request for a license
                 upgrade once they run out of sheet storage. Since the IT Admins
                 have no information about projects that the employees are
-                working on, it's challenging to know if the extra storage is
+                working on, it’s challenging to know if the extra storage is
                 required for company work. It is possible that the employees use
                 company license to work on their personal or freelance projects.
                 As a result, the company has to unnecessarily pay extra to
@@ -173,8 +173,8 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 </Col>
               </Row>
               <p>
-                Since the current version of Admin Console didn't comply with
-                PlanGrid's design system, I designed a high fidelity prototype
+                Since the current version of Admin Console didn’t comply with
+                PlanGrid’s design system, I designed a high fidelity prototype
                 using most components from the design system library. Some
                 designs were completely changed to minimize future design work.
                 For example, license options were listed vertically in the
@@ -204,7 +204,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
               <h3>Usability Testing</h3>
               <p className={sharedStyles.quote}>
                 Usability testing was run to observe how users interact with the
-                system when they don't have enough license to add new users to
+                system when they don’t have enough license to add new users to
                 the organization. Information gained from usability testing
                 sessions provides meaningful insights that lead to a new design
                 that will enhance an overall user experience.
@@ -216,7 +216,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 In the design process, I thought it would be convenient if the
                 users could purchase extra license without having to go back to
                 the user log page. As a result, I added a helper text that says
-                "if you don't have enough license, you'll be able to purchase
+                "if you don’t have enough license, you’ll be able to purchase
                 more later" with a thought that the users would read it and know
                 they can buy more license in after clicking next.
               </p>
@@ -277,7 +277,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
               </Table>
               <p>
                 In addition to the usability test, I also discussed with
-                participants and learned that they typically didn't read helper
+                participants and learned that they typically didn’t read helper
                 text as they tried to complete the task as fast as they could.
                 User 1 and User 2 commented that obvious visual cues would help
                 signify that the action required special attention.

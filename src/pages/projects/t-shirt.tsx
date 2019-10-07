@@ -36,7 +36,7 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
               <h3>Brainstorming Ideas</h3>
               <p className={sharedStyles.quote}>
                 The design workshop plays an important role to gather ideas from
-                the co-op students. Since they will be wearing the t-shirt, it's
+                the co-op students. Since they will be wearing the t-shirt, it’s
                 crucial for me to have them involved in the design process.
               </p>
               <p>
@@ -64,7 +64,7 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
 
           <Row className="justify-content-center">
             <Col lg="8">
-              <h3>Crazy 8's</h3>
+              <h3>Crazy 8’s</h3>
               <p>
                 In crazy 8’s exercise, the students spent a total of 8 minutes
                 to convert words and ideas into 8 different drawings. The
@@ -81,7 +81,7 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
                 <Col lg="8">
                   <ImageBox
                     src={this.getImageUrl("crazy8.jpg")}
-                    alt="Crazy 8's drawings"
+                    alt="Crazy 8’s drawings"
                     className="img-fluid"
                   />
                 </Col>

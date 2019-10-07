@@ -92,7 +92,7 @@ export default class ShipmentAuditTrailPage extends React.Component<
                 fits their specific needs or processes. With a large number of
                 clients, there is a high number of variations in the workflow
                 that each client chooses to follow at their site. To understand
-                the overall shipping process, I interviewed Nulogy's
+                the overall shipping process, I interviewed Nulogy’s
                 professional service consultant, who ho work directly with
                 clients to provide training and technical supports.
               </p>
