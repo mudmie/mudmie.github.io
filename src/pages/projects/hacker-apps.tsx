@@ -26,7 +26,7 @@ export default class HackerAppsPage extends React.Component<
                 Hack the North is Canada’s biggest hackathon held annually at
                 the University of Waterloo. Every year, over 1,000 students from
                 different parts of the world spend 36 hours to collaboratively
-                design and build projects of their choices.
+                design and build projects of their choice.
               </p>
             </Col>
           </Row>
