@@ -25,7 +25,6 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
             <Img
               alt="image of me"
               fluid={this.props.meImage.childImageSharp.fluid}
-              className="background-theme-color"
             />
           </Col>
           <Col md="6" className={styles.colAbout}>
