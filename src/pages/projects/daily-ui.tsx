@@ -20,6 +20,7 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
                 src={this.getImageUrl("001.png")}
                 alt="Sign up page"
                 className="img-fluid"
+                showCaption={false}
               />
             </Col>
             <Col lg="5" className="align-self-center">
@@ -32,6 +33,7 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
                 src={this.getImageUrl("002.png")}
                 alt="Credit card check out page"
                 className="img-fluid"
+                showCaption={false}
               />
             </Col>
             <Col lg="5" className="align-self-center">
@@ -44,6 +46,7 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
                 src={this.getImageUrl("003.png")}
                 alt="Landing page"
                 className="img-fluid"
+                showCaption={false}
               />
             </Col>
             <Col lg="5" className="align-self-center">
@@ -56,6 +59,7 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
                 src={this.getImageUrl("004.png")}
                 alt="Calculator"
                 className="img-fluid"
+                showCaption={false}
               />
             </Col>
             <Col lg="5" className="align-self-center">
@@ -68,6 +72,7 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
                 src={this.getImageUrl("005.png")}
                 alt="App icon"
                 className="img-fluid"
+                showCaption={false}
               />
             </Col>
             <Col lg="5" className="align-self-center">
@@ -80,6 +85,7 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
                 src={this.getImageUrl("006.png")}
                 alt="User profile"
                 className="img-fluid"
+                showCaption={false}
               />
             </Col>
             <Col lg="5" className="align-self-center">
@@ -92,6 +98,7 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
                 src={this.getImageUrl("007.png")}
                 alt="Settings"
                 className="img-fluid"
+                showCaption={false}
               />
             </Col>
             <Col lg="5" className="align-self-center">
@@ -104,6 +111,7 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
                 src={this.getImageUrl("008.png")}
                 alt="404 error page"
                 className="img-fluid"
+                showCaption={false}
               />
             </Col>
             <Col lg="5" className="align-self-center">

@@ -6,6 +6,7 @@ export interface ImageBoxProps {
   src: string;
   alt?: string;
   className?: string;
+  showCaption?: boolean;
 }
 
 export interface ImageBoxState {
@@ -37,9 +38,11 @@ export class ImageBox extends React.Component<ImageBoxProps, ImageBoxState> {
             className={`${styles.imageBox} ${this.props.className}`}
             onClick={this.toggleModal}
           />
-          <figcaption className={`text-center ${styles.imgCaption}`}>
-            {this.props.alt}
-          </figcaption>
+          {this.props.showCaption === false ? null : (
+            <figcaption className={`text-center ${styles.imgCaption}`}>
+              {this.props.alt}
+            </figcaption>
+          )}
         </figure>
         <Modal
           isOpen={this.state.isModalOpen}
