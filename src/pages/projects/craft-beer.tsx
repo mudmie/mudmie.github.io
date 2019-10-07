@@ -19,7 +19,7 @@ export default class CraftBeerPage extends React.Component<
       >
         <Container>
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>About the Company</h3>
               <p>
                 The Liquor Control Board of Ontario (LCBO) is one of the world's
@@ -32,7 +32,7 @@ export default class CraftBeerPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>My Roles</h3>
               <p>
                 As a UX/UI designer at the lab, I met with stakeholders to
@@ -43,7 +43,7 @@ export default class CraftBeerPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>Background</h3>
               <p>
                 Craft beer is usually produced by a small to medium size local
@@ -57,7 +57,7 @@ export default class CraftBeerPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>Problems</h3>
               <p className={sharedStyles.quote}>
                 With many factors such as promotion and seasonal items, it is
@@ -91,7 +91,7 @@ export default class CraftBeerPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>User Interview</h3>
               <p className={sharedStyles.quote}>
                 I know the problems the users face. I also have a picture of the
@@ -141,7 +141,7 @@ export default class CraftBeerPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>Work Breakdown Structure</h3>
               <p>
                 I use the Work Breakdown Structure to make sure that all
@@ -149,43 +149,44 @@ export default class CraftBeerPage extends React.Component<
                 mainly divided into two parts: a portal for LCBO store and a
                 portal for craft brewers.
               </p>
-            </Col>
-          </Row>
-          <Row className="justify-content-center">
-            <Col lg="8">
-              <ImageBox
-                src={this.getImageUrl("wbs.png")}
-                alt="Work Breakdown Structure of Craft Beer Ordering System"
-                className="img-fluid"
-              />
+              <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("wbs.png")}
+                    alt="Work Breakdown Structure of Craft Beer Ordering System"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
             </Col>
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>Wireframes</h3>
               <p>
                 Based on my research on modern e-commerce systems, there are 3
                 keys elements that exist in most of the systems:
               </p>
-              <ol>
+              <ul>
                 <li>Order summary/history section </li>
                 <li>Order details section</li>
                 <li>New order section</li>
-              </ol>
+              </ul>
+              <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("wireframes.png")}
+                    alt="Wireframes of Craft Beer Ordering System"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
             </Col>
           </Row>
+
           <Row className="justify-content-center">
-            <Col lg="10">
-              <ImageBox
-                src={this.getImageUrl("wireframes.png")}
-                alt="Wireframes of Craft Beer Ordering System"
-                className="img-fluid"
-              />
-            </Col>
-          </Row>
-          <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>Create Order </h3>
 
               <p className={sharedStyles.quote}>
@@ -210,20 +211,21 @@ export default class CraftBeerPage extends React.Component<
                 Reminder" box, which will trigger the system to send an
                 automatic email to notify the vendor.
               </p>
+
+              <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("lcbo.png")}
+                    alt="Order Summary Page on LCBO Employee Web Portal"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
             </Col>
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
-              <ImageBox
-                src={this.getImageUrl("lcbo.png")}
-                alt="Order Summary Page on LCBO Employee Web Portal"
-                className="img-fluid"
-              />
-            </Col>
-          </Row>
-          <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>Review &amp; Confirm Order </h3>
               <p className={sharedStyles.quote}>
                 From perspectives of craft brewers, the system should allow them
@@ -239,21 +241,20 @@ export default class CraftBeerPage extends React.Component<
               select at least one possible delivery date. This piece of
               information will help the store to arrange a delivery schedule.
               <p />
+              <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("craft.png")}
+                    alt="Order Summary Page on LCBO Employee Web Portal"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
             </Col>
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
-              <ImageBox
-                src={this.getImageUrl("craft.png")}
-                alt="Order Summary Page on LCBO Employee Web Portal"
-                className="img-fluid"
-              />
-            </Col>
-          </Row>
-
-          <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>Order Details </h3>
               <p>
                 From the order summary page, LCBO employees can take a quick
@@ -268,23 +269,22 @@ export default class CraftBeerPage extends React.Component<
                 There is also a button for the store employees to confirm
                 delivery once they receive the products.
               </p>
-            </Col>
-          </Row>
-
-          <Row className="justify-content-center">
-            <Col lg="5">
-              <ImageBox
-                src={this.getImageUrl("summary-lcbo.png")}
-                alt="Order Summary Page on LCBO Employee Web Portal"
-                className="img-fluid"
-              />
-            </Col>
-            <Col lg="5">
-              <ImageBox
-                src={this.getImageUrl("detail-lcbo.png")}
-                alt="Order Summary Page on Craft Brewer Web Portal"
-                className="img-fluid"
-              />
+              <Row className="justify-content-center">
+                <Col lg="5">
+                  <ImageBox
+                    src={this.getImageUrl("summary-lcbo.png")}
+                    alt="Order Summary Page on LCBO Employee Web Portal"
+                    className="img-fluid"
+                  />
+                </Col>
+                <Col lg="5">
+                  <ImageBox
+                    src={this.getImageUrl("detail-lcbo.png")}
+                    alt="Order Summary Page on Craft Brewer Web Portal"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
             </Col>
           </Row>
         </Container>

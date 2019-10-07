@@ -30,7 +30,7 @@ export default class RoundaboutCanadaPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>Problems</h3>
               <p>
                 Prior to my internship at the company, the company website
@@ -54,7 +54,7 @@ export default class RoundaboutCanadaPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>User and Industry Research</h3>
               <p>
                 It was my mission to gather as much as information that I could
@@ -72,7 +72,7 @@ export default class RoundaboutCanadaPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>Design &amp; Implementation</h3>
               <p>
                 The main goal of this process was to decide on the look of the
@@ -95,7 +95,7 @@ export default class RoundaboutCanadaPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>Impressive Outcomes</h3>
               <p>
                 I was very happy that after the release of the new website, lots
@@ -129,7 +129,7 @@ export default class RoundaboutCanadaPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>Reflection</h3>
               <p>
                 Working at Roundabout Canada was a great learning experience
