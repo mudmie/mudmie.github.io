@@ -14,7 +14,7 @@ export default class Layout extends React.Component<LayoutProps, {}> {
   public render() {
     return (
       <>
-        <Helmet titleTemplate="%s - Projects - Mudmie Chuthamsatid - A designer with engineering thoughts">
+        <Helmet titleTemplate="%s - Projects - Mudmie Chuthamsatid - Product Designer">
           <html lang="en" />
           <meta charSet="utf-8" />
           <meta name="description" content="" />
