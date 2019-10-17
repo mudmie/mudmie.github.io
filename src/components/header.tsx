@@ -84,17 +84,6 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
                 </Link>
               </NavItem>
               <NavItem>
-                <Link
-                  className={`nav-link ${styles.navLink}`}
-                  to="/nice-break"
-                  onClick={() => {
-                    this.collapseNav();
-                  }}
-                >
-                  stories
-                </Link>
-              </NavItem>
-              <NavItem>
                 <OutboundLink
                   href={withPrefix("/Mudmie_Chuthamsatid_Resume.pdf")}
                   className={`nav-link ${styles.navLink}`}

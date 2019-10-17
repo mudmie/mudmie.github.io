@@ -48,8 +48,8 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
               <OutboundLink href="https://www.hackthenorth.com" target="_blank">
                 Hack the North
               </OutboundLink>
-              . Whenever I get a <Link to="/nice-break">nice break</Link> from
-              school, I travel, find food spots and wander around the city.
+              . Whenever I get a nice break from school, I travel, find food
+              spots and wander around the city.
             </p>
           </Col>
         </Row>
