@@ -5,17 +5,18 @@ import { Collapse, Nav, NavItem, Navbar, NavbarToggler } from "reactstrap";
 import * as styles from "./header.module.scss";
 import * as logo from "../../static/images/Mudmie.png";
 
+export interface HeaderProps {
+  isDarkMode: boolean;
+}
 export interface HeaderState {
   isOpen: boolean;
-  isTop: boolean;
 }
 
-export class Header extends React.Component<{}, HeaderState> {
-  constructor(props: any) {
+export class Header extends React.Component<HeaderProps, HeaderState> {
+  constructor(props: HeaderProps) {
     super(props);
     this.state = {
       isOpen: false,
-      isTop: true,
     };
     this.toggle = this.toggle.bind(this);
     this.collapseNav = this.collapseNav.bind(this);
@@ -33,35 +34,29 @@ export class Header extends React.Component<{}, HeaderState> {
     });
   }
 
-  public componentDidMount() {
-    document.addEventListener("scroll", () => {
-      const isTop = window.scrollY < 10;
-      if (isTop !== this.state.isTop) {
-        this.setState({ isTop });
-      }
-    });
-  }
-
   public render() {
     return (
       <header>
         <Navbar
-          className={`${styles.navbar} ${
-            !this.state.isTop ? styles.scroll : ""
-          }`}
-          color="light"
-          light
+          className={`${styles.navbar} ${styles.scroll}`}
+          light={!this.props.isDarkMode}
+          dark={this.props.isDarkMode}
           expand="md"
           fixed="top"
         >
           <Link
             to="/"
-            className="navbar-brand"
+            className="navbar-brand d-none d-md-block"
             onClick={() => {
               this.collapseNav();
             }}
           >
-            <img src={logo} alt="Mudmie" className={styles.logo} />
+            <div className={styles.brandCircle} />
+            <div className={styles.brandName}>
+              mudmie
+              <br />
+              chuthamsatid
+            </div>
           </Link>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

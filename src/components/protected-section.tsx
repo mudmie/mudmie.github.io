@@ -14,9 +14,12 @@ import {
   FormFeedback,
   Label,
 } from "reactstrap";
+import { Project } from "../models/project";
+import { Dash } from "./dash";
 
 export interface ProtectedSectionProps {
   isProtected: boolean;
+  currentProject: Project;
   mainImage?: any;
 }
 
@@ -185,7 +188,7 @@ export class ProtectedSection extends React.Component<
       <div>
         <Container>
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <Img
                 alt="main project image"
                 fluid={this.props.mainImage}
@@ -193,9 +196,14 @@ export class ProtectedSection extends React.Component<
               />
             </Col>
           </Row>
+          <Row className="justify-content-center mt-2">
+            <Col lg="8">
+              <div>{this.props.currentProject.description}</div>
+            </Col>
+          </Row>
           <Row className="justify-content-center mt-3">
-            <Col lg="10">
-              <hr className={styles.smallDash} />
+            <Col lg="8">
+              <Dash />
             </Col>
           </Row>
         </Container>

@@ -3,7 +3,6 @@
 
 html {
   .navbar {
-    font-family: $heading-font;
     transition: background-color 0.5s ease-in-out, opacity 0.5s ease-in-out;
 
     @media (min-width: 576px) {
@@ -20,13 +19,8 @@ html {
     background-color: #f8f9fa !important;
   }
 
-  .nav-link {
-    font-weight: 500;
-    color: $paprika-color;
-  }
-
-  .nav-link:hover {
-    color: $light-blue-color;
+  :global(.navbar-dark).scroll {
+    background-color: #252525 !important;
   }
 
   .logo {
@@ -35,5 +29,30 @@ html {
 
   .scroll .logo {
     opacity: 1;
+  }
+
+  .brand-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background: $baby-blue-color;
+    float: left;
+  }
+
+  :global(.navbar-dark) .brand-circle {
+    background: $lemon-color;
+  }
+
+  .brand-name {
+    font-family: $heading-font;
+    color: $paprika-color;
+    float: left;
+    margin-left: 16px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  :global(.navbar-dark) .brand-name {
+    color: $baby-blue-color;
   }
 }

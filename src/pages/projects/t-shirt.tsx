@@ -16,7 +16,7 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
       >
         <Container>
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>The Project &amp; My Roles </h3>
               <p>
                 Every four months, PlanGrid recruits students from the
@@ -32,11 +32,11 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>Brainstorming Ideas</h3>
               <p className={sharedStyles.quote}>
                 The design workshop plays an important role to gather ideas from
-                the co-op students. Since they will be wearing the t-shirt, it's
+                the co-op students. Since they will be wearing the t-shirt, it’s
                 crucial for me to have them involved in the design process.
               </p>
               <p>
@@ -50,21 +50,21 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
                 Other ideas such as maple leaf, US and Canada maps also appeared
                 in the workshop.
               </p>
-            </Col>
-          </Row>
-          <Row className="justify-content-center">
-            <Col lg="6">
-              <ImageBox
-                src={this.getImageUrl("wordcloud.png")}
-                alt="Ideas generated in the design workshop"
-                className="img-fluid"
-              />
+              <Row className="justify-content-center">
+                <Col lg="8">
+                  <ImageBox
+                    src={this.getImageUrl("wordcloud.png")}
+                    alt="Ideas generated in the design workshop"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
             </Col>
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
-              <h3>Crazy 8's</h3>
+            <Col lg="8">
+              <h3>Crazy 8’s</h3>
               <p>
                 In crazy 8’s exercise, the students spent a total of 8 minutes
                 to convert words and ideas into 8 different drawings. The
@@ -77,19 +77,20 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
                 them to focus on the ideas rather than the look of their
                 drawings.
               </p>
+              <Row className="justify-content-center">
+                <Col lg="8">
+                  <ImageBox
+                    src={this.getImageUrl("crazy8.jpg")}
+                    alt="Crazy 8’s drawings"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
             </Col>
           </Row>
+
           <Row className="justify-content-center">
-            <Col lg="6">
-              <ImageBox
-                src={this.getImageUrl("crazy8.jpg")}
-                alt="Crazy 8's drawings"
-                className="img-fluid"
-              />
-            </Col>
-          </Row>
-          <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>Designing the Logo</h3>
               <p>
                 Coming out of the design workshop, I knew by heart that the
@@ -99,17 +100,17 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
                 geese.
               </p>
               <Row className="justify-content-center">
-                <Col lg="6">
+                <Col lg="5">
                   <ImageBox
                     src={this.getImageUrl("inspo.jpg")}
-                    alt="Collect information using sticky notes"
+                    alt="Mood board"
                     className="img-fluid"
                   />
                 </Col>
-                <Col lg="6">
+                <Col lg="5">
                   <ImageBox
                     src={this.getImageUrl("sketches.jpg")}
-                    alt="Whiteboard with research"
+                    alt="Sketching potential logos"
                     className="img-fluid"
                   />
                 </Col>
@@ -118,7 +119,7 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <p>
                 Because of this, my mentor taught me a double diamond design
                 process, from which I learned to explore different designs and
@@ -130,7 +131,7 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
                 <Col lg="8">
                   <ImageBox
                     src={this.getImageUrl("print.jpg")}
-                    alt="Haunting for Inspiration"
+                    alt="Design options"
                     className="img-fluid"
                   />
                 </Col>
@@ -139,7 +140,7 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <p>
                 I presented these designs to the design team and the creative
                 director at PlanGrid. Everyone voted in favor of the PlanGrid +
@@ -150,16 +151,15 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
                 text that said “build better together” to the final design of
                 the logo.
               </p>
-            </Col>
-          </Row>
-
-          <Row className="justify-content-center">
-            <Col lg="8">
-              <ImageBox
-                src={this.getImageUrl("shirt.png")}
-                alt="Design Options"
-                className="img-fluid"
-              />
+              <Row className="justify-content-center">
+                <Col lg="8">
+                  <ImageBox
+                    src={this.getImageUrl("shirt.png")}
+                    alt="Final logo"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
             </Col>
           </Row>
         </Container>
@@ -182,7 +182,7 @@ export const pageQuery = graphql`
     project: allProjectsJson(filter: { url: { eq: $path } }) {
       ...ProjectFields
     }
-    mainImage: file(relativePath: { eq: "Tshirt/main.png" }) {
+    mainImage: file(relativePath: { eq: "t-shirt/main.png" }) {
       ...MainImageSizes
     }
   }

@@ -11,6 +11,7 @@ export const projectFields = graphql`
         url
         imageFolder
         isProtected
+        isEnabled
       }
     }
   }

@@ -11,5 +11,11 @@
     "**/*.scss.d.ts": true,
     "public/": true,
     ".cache/": true
-  }
+  },
+  "cSpell.words": [
+    "hackioca",
+    "linkedin",
+    "nulogy",
+    "vrulez"
+  ]
 }

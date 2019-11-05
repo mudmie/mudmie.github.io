@@ -19,10 +19,10 @@ export default class TastingNotePage extends React.Component<
       >
         <Container>
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>Background</h3>
               <p>
-                LCBO is one of the world's largest alcoholic beverage
+                LCBO is one of the world’s largest alcoholic beverage
                 purchasers, there are numbers of new products need to be
                 evaluated each year. As a result, product consultants meet 3
                 times a year to sample and document tasting notes of the new
@@ -36,22 +36,20 @@ export default class TastingNotePage extends React.Component<
                 is later used for creating product description, content for LCBO
                 website and articles.
               </p>
+              <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("form.png")}
+                    alt="An example of beer evaluation form"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
             </Col>
           </Row>
+
           <Row className="justify-content-center">
-            <Col lg="6">
-              <p className={sharedStyles.imageTitle}>
-                An example of beer a evaluation form
-              </p>
-              <ImageBox
-                src={this.getImageUrl("form.png")}
-                alt="Beer Evaluation Form"
-                className="img-fluid"
-              />
-            </Col>
-          </Row>
-          <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>Problems</h3>
               <p className={sharedStyles.quote}>
                 Current evaluation method is labour intensive as it requires a
@@ -60,8 +58,8 @@ export default class TastingNotePage extends React.Component<
                 time-consuming and fallible.
               </p>
               <p>
-                While it's challenging for the product consultants to manage and
-                organize the product evaluation forms, it's a real pain for the
+                While it’s challenging for the product consultants to manage and
+                organize the product evaluation forms, it’s a real pain for the
                 data and writing team to go through piles of paper, try to read
                 the hand writings, validate data quality, and manually enter it
                 to electronic system.
@@ -70,7 +68,7 @@ export default class TastingNotePage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>User Persona</h3>
               <p>
                 Imagine that there are at least 15 products to be evaluated by
@@ -80,7 +78,7 @@ export default class TastingNotePage extends React.Component<
                 going through, a user persona is created.
               </p>
               <Row className="justify-content-center">
-                <Col lg="6">
+                <Col lg="8">
                   <ImageBox
                     src={this.getImageUrl("persona.png")}
                     alt="User persona"
@@ -90,14 +88,13 @@ export default class TastingNotePage extends React.Component<
               </Row>
             </Col>
           </Row>
-
-          <Row className="justify-content-center mb-5">
-            <Col lg="10">
+          <Row className="justify-content-center">
+            <Col lg="8">
               <h3>Wireframes</h3>
               <p>After reviewing the problems and user persona, I decided to</p>
               <ol>
                 <li>
-                  Choose mobile as a platform device since it's portable and
+                  Choose mobile as a platform device since it’s portable and
                   currently used by LCBO staff at the store.
                 </li>
                 <br />
@@ -118,7 +115,7 @@ export default class TastingNotePage extends React.Component<
               </ol>
 
               <Row className="justify-content-center">
-                <Col>
+                <Col lg="11">
                   <ImageBox
                     src={this.getImageUrl("wireframes.jpg")}
                     alt="Tasting Note wireframes"
@@ -129,8 +126,8 @@ export default class TastingNotePage extends React.Component<
             </Col>
           </Row>
 
-          <Row className="justify-content-center mb-5">
-            <Col lg="10">
+          <Row className="justify-content-center">
+            <Col lg="8">
               <h3>Finding Products</h3>
               <p>
                 As soon as the product consultants log in to their account, they
@@ -141,21 +138,20 @@ export default class TastingNotePage extends React.Component<
                 need to evaluate. From there, they can choose to view just beer,
                 wine, spirits, or all types of products.
               </p>
+              <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("find.png")}
+                    alt="Tasting Note UI"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
             </Col>
           </Row>
 
           <Row className="justify-content-center">
             <Col lg="8">
-              <ImageBox
-                src={this.getImageUrl("find.png")}
-                alt="Tasting Note interfaces"
-                className="img-fluid"
-              />
-            </Col>
-          </Row>
-
-          <Row className="justify-content-center mb-5">
-            <Col lg="10">
               <h3>Evaluating Products</h3>
               <p>
                 Once the consultants select the product, the system will ask
@@ -168,15 +164,15 @@ export default class TastingNotePage extends React.Component<
                 the paper form. The consultants will have an opportunity to
                 review their answers before submitting their evaluation.
               </p>
-            </Col>
-          </Row>
-          <Row className="justify-content-center">
-            <Col lg="10">
-              <ImageBox
-                src={this.getImageUrl("evaluate.png")}
-                alt="Tasting Note interfaces"
-                className="img-fluid"
-              />
+              <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("evaluate.png")}
+                    alt="Tasting Note interfaces"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
             </Col>
           </Row>
         </Container>
@@ -199,7 +195,7 @@ export const pageQuery = graphql`
     project: allProjectsJson(filter: { url: { eq: $path } }) {
       ...ProjectFields
     }
-    mainImage: file(relativePath: { eq: "Tasting Note/main.png" }) {
+    mainImage: file(relativePath: { eq: "tasting-note/main.png" }) {
       ...MainImageSizes
     }
   }

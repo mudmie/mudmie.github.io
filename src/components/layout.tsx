@@ -3,8 +3,10 @@ import Helmet from "react-helmet";
 import { Footer } from "../components/footer";
 import { Header } from "../components/header";
 import PageBorder from "./page-border";
+import * as Styles from "./layout.module.scss";
 
 interface LayoutProps {
+  theme?: string;
   children: any;
 }
 
@@ -12,7 +14,7 @@ export default class Layout extends React.Component<LayoutProps, {}> {
   public render() {
     return (
       <>
-        <Helmet titleTemplate="%s - Projects - Mudmie Chuthamsatid - A designer with engineering thoughts">
+        <Helmet titleTemplate="%s - Projects - Mudmie Chuthamsatid - Product Designer">
           <html lang="en" />
           <meta charSet="utf-8" />
           <meta name="description" content="" />
@@ -20,10 +22,6 @@ export default class Layout extends React.Component<LayoutProps, {}> {
           <link
             href="https://fonts.googleapis.com/css?family=Karla:400,700|Poppins:400,700|PT+Serif:400i"
             rel="stylesheet"
-          />
-          <script
-            src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
-            defer
           />
           <link
             rel="apple-touch-icon"
@@ -45,10 +43,11 @@ export default class Layout extends React.Component<LayoutProps, {}> {
           <link rel="manifest" href="/site.webmanifest" />
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="theme-color" content="#ffffff" />
+          <body className={`theme-${this.props.theme || "regular"}`} />
         </Helmet>
         <PageBorder />
-        <Header />
-        <main>{this.props.children}</main>
+        <Header isDarkMode={this.props.theme === "dark"} />
+        <main className={Styles.main}>{this.props.children}</main>
         <Footer />
       </>
     );

@@ -1,22 +1,43 @@
 [
   {
+    "name": "Hacker Application Portal",
+    "company": "Hack The North",
+    "term": "Summer 2019",
+    "description": "Designing a unique comic-themed application portal for over 7,000 applicants from 30 countries to apply for Canada's biggest hackathon.",
+    "url": "/projects/hacker-apps/",
+    "imageFolder": "hacker-apps",
+    "isProtected": false,
+    "isEnabled": true
+  },
+  {
+    "name": "Hackioca",
+    "company": "Hack The North",
+    "term": "Winter 2019",
+    "description": "Hack the North's marketing website for the world's first boba hackathon, launched on April's Fool day.",
+    "url": "/projects/hackioca/",
+    "imageFolder": "hackioca",
+    "isProtected": false,
+    "isEnabled": true
+  },
+  {
     "name": "User Account Management",
     "company": "PlanGrid",
     "term": "Fall 2018",
-    "description": "Building tools for administrators to monitor and manage users accounts.  ",
+    "description": "Building tools for administrators to monitor and manage users accounts.",
     "url": "/projects/account-management/",
-    "imageFolder": "AC",
-    "isProtected": false
+    "imageFolder": "account-management",
+    "isProtected": false,
+    "isEnabled": true
   },
-
   {
     "name": "T-Shirt Design",
     "company": "PlanGrid",
     "term": "Fall 2018",
     "description": "Making PlanGrid be on UWaterloo students' radar.",
     "url": "/projects/t-shirt/",
-    "imageFolder": "Tshirt",
-    "isProtected": false
+    "imageFolder": "t-shirt",
+    "isProtected": false,
+    "isEnabled": true
   },
   {
     "name": "Picking Process Experience",
@@ -24,8 +45,9 @@
     "term": "Winter 2018",
     "description": "Understanding forklift operator’s goals and pain points to design a user-friendly picking process.",
     "url": "/projects/picking-process/",
-    "imageFolder": "Picking",
-    "isProtected": false
+    "imageFolder": "picking-process",
+    "isProtected": false,
+    "isEnabled": true
   },
   {
     "name": "Craft Beer Ordering System",
@@ -33,8 +55,9 @@
     "term": "Spring 2017",
     "description": "Establishing a reliable online ordering system to replace phone orders",
     "url": "/projects/craft-beer/",
-    "imageFolder": "Craft Beer",
-    "isProtected": false
+    "imageFolder": "craft-beer",
+    "isProtected": false,
+    "isEnabled": true
   },
   {
     "name": "Tasting Note Mobile App",
@@ -42,8 +65,9 @@
     "term": "Spring 2017",
     "description": "A data collecting mobile application, designed as an initiative to replace existing paper forms for evaluating beverage products.",
     "url": "/projects/tasting-note/",
-    "imageFolder": "Tasting Note",
-    "isProtected": false
+    "imageFolder": "tasting-note",
+    "isProtected": false,
+    "isEnabled": true
   },
   {
     "name": "Daily UI",
@@ -51,8 +75,9 @@
     "term": "Winter 2018",
     "description": "A collection of my UI design practices.",
     "url": "/projects/daily-ui/",
-    "imageFolder": "DailyUI",
-    "isProtected": false
+    "imageFolder": "daily-ui",
+    "isProtected": false,
+    "isEnabled": true
   },
   {
     "name": "VRulez",
@@ -60,8 +85,9 @@
     "term": "Winter 2018",
     "description": "Website design and development for a virtual reality arcade business in Toronto. Built with React, Gatsby, and Bootstrap to support all screen sizes.",
     "url": "/projects/vrulez/",
-    "imageFolder": "Vrulez",
-    "isProtected": false
+    "imageFolder": "vrulez",
+    "isProtected": false,
+    "isEnabled": false
   },
   {
     "name": "Escape Room Website",
@@ -69,7 +95,8 @@
     "term": "Winter 2016",
     "description": "A responsive commercial website for an escape room business in Toronto.",
     "url": "/projects/roundabout-canada/",
-    "imageFolder": "Roundabout",
-    "isProtected": false
+    "imageFolder": "roundabout-canada",
+    "isProtected": false,
+    "isEnabled": true
   }
 ]

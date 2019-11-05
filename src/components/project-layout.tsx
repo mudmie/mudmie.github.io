@@ -19,10 +19,6 @@ export class ProjectLayout extends React.Component<ProjectLayoutProps, {}> {
       <Layout>
         <Helmet>
           <title>{this.props.currentProject.name}</title>
-          <link
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700"
-            rel="stylesheet"
-          />
         </Helmet>
         <div className={styles.projectPage}>
           <ProjectHeader
@@ -31,6 +27,7 @@ export class ProjectLayout extends React.Component<ProjectLayoutProps, {}> {
           />
           <ProtectedSection
             mainImage={this.props.mainImage}
+            currentProject={this.props.currentProject}
             isProtected={this.props.currentProject.isProtected}
           >
             {this.props.children}

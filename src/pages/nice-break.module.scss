@@ -1,0 +1,14 @@
+@import "../styles/_colors.scss";
+@import "../styles/_fonts.scss";
+
+.nice-break-page {
+  h1 {
+    color: $baby-blue-color;
+  }
+  h4 {
+    color: $lemon-color;
+  }
+  hr {
+    border-top-color: $lemon-color;
+  }
+}

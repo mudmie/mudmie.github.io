@@ -16,7 +16,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
       >
         <Container>
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>About The Company</h3>
               <p>
                 PlanGrid has a primary objective to make intuitive and impactful
@@ -29,7 +29,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>Background</h3>
               <p>
                 Admin Console is a part of PlanGrid web products that allows IT
@@ -47,7 +47,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>My Roles &amp; Project Goals</h3>
               <p>
                 The main goals of this project were to enhance the user
@@ -55,13 +55,13 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 that allowed the IT Admins to set up organization ownership of
                 user accounts. As a designer, I designed the workflow that will
                 give IT Admins an ability to manage user accounts and redesigned
-                web interfaces using components from PlanGrid's design system.
+                web interfaces using components from PlanGrid’s design system.
               </p>
             </Col>
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>Problems</h3>
               <p className={sharedStyles.quote}>
                 The current system restricts IT Admins to only purchase licenses
@@ -70,7 +70,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 list of projects that their users are working on.
               </p>
               <p>
-                The first problem occurs when IT Admins finds out they don't
+                The first problem occurs when IT Admins finds out they don’t
                 have enough license when trying to add new users to the
                 organization. The current process requires them to abandon their
                 current task, navigate back to the user log page, purchase
@@ -80,7 +80,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 The second problem happens when employees request for a license
                 upgrade once they run out of sheet storage. Since the IT Admins
                 have no information about projects that the employees are
-                working on, it's challenging to know if the extra storage is
+                working on, it’s challenging to know if the extra storage is
                 required for company work. It is possible that the employees use
                 company license to work on their personal or freelance projects.
                 As a result, the company has to unnecessarily pay extra to
@@ -90,7 +90,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>The Current Admin Console</h3>
               <p>
                 The current version of Admin Console consists of two major
@@ -105,19 +105,19 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 example, the “more options icon” at the end of the row of user
                 log doesn’t exist in other parts of PlanGrid web app.
               </p>
+              <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("current-AC.jpg")}
+                    alt="Current Admin Console UI"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="10">
-              <ImageBox
-                src={this.getImageUrl("current-AC.jpg")}
-                alt="Current Admin Console UI"
-                className="img-fluid"
-              />
-            </Col>
-          </Row>
-          <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>User Flow</h3>
               <p>
                 Workflow diagram was created to explore and identify different
@@ -125,10 +125,10 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
               </p>
 
               <Row className="justify-content-center">
-                <Col lg="12">
+                <Col lg="11">
                   <ImageBox
                     src={this.getImageUrl("full-flow.png")}
-                    alt="Current Admin Console UI"
+                    alt="User flow for the new Admin Console"
                     className="img-fluid"
                   />
                 </Col>
@@ -143,15 +143,15 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 On the other end, the user can accept or reject the request or
                 the invitation.
               </p>
-            </Col>
-          </Row>
-          <Row className="justify-content-center">
-            <Col lg="10">
-              <ImageBox
-                src={this.getImageUrl("flow.png")}
-                alt="Current Admin Console UI"
-                className="img-fluid"
-              />
+              <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("flow.png")}
+                    alt="Simplified user flow for the new Admin Console "
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
             </Col>
           </Row>
 
@@ -164,24 +164,17 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 step of the user flow.
               </p>
               <Row className="justify-content-center">
-                <Col lg="6">
+                <Col lg="11">
                   <ImageBox
-                    src={this.getImageUrl("add-new-user.jpg")}
-                    alt="Collect information using sticky notes"
-                    className="img-fluid"
-                  />
-                </Col>
-                <Col lg="6">
-                  <ImageBox
-                    src={this.getImageUrl("invite-existing-user.jpg")}
-                    alt="Whiteboard with research"
+                    src={this.getImageUrl("wireframes.png")}
+                    alt="Hand-sketched wireframes"
                     className="img-fluid"
                   />
                 </Col>
               </Row>
               <p>
-                Since the current version of Admin Console didn't comply with
-                PlanGrid's design system, I designed a high fidelity prototype
+                Since the current version of Admin Console didn’t comply with
+                PlanGrid’s design system, I designed a high fidelity prototype
                 using most components from the design system library. Some
                 designs were completely changed to minimize future design work.
                 For example, license options were listed vertically in the
@@ -195,10 +188,10 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 added to the list.
               </p>
               <Row className="justify-content-center">
-                <Col lg="12">
+                <Col lg="11">
                   <ImageBox
                     src={this.getImageUrl("license.png")}
-                    alt="Current Admin Console UI"
+                    alt="Original design vs New design of the license list"
                     className="img-fluid"
                   />
                 </Col>
@@ -211,7 +204,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
               <h3>Usability Testing</h3>
               <p className={sharedStyles.quote}>
                 Usability testing was run to observe how users interact with the
-                system when they don't have enough license to add new users to
+                system when they don’t have enough license to add new users to
                 the organization. Information gained from usability testing
                 sessions provides meaningful insights that lead to a new design
                 that will enhance an overall user experience.
@@ -223,15 +216,15 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 In the design process, I thought it would be convenient if the
                 users could purchase extra license without having to go back to
                 the user log page. As a result, I added a helper text that says
-                "if you don't have enough license, you'll be able to purchase
-                more later" with a though that the users would read it and know
+                "if you don’t have enough license, you’ll be able to purchase
+                more later" with a thought that the users would read it and know
                 they can buy more license in after clicking next.
               </p>
               <Row className="justify-content-center">
-                <Col lg="12">
+                <Col lg="11">
                   <ImageBox
                     src={this.getImageUrl("usability.png")}
-                    alt="Current Admin Console UI"
+                    alt="Adding helper text to notify users about in-app license purchase"
                     className="img-fluid"
                   />
                 </Col>
@@ -284,7 +277,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
               </Table>
               <p>
                 In addition to the usability test, I also discussed with
-                participants and learned that they typically didn't read helper
+                participants and learned that they typically didn’t read helper
                 text as they tried to complete the task as fast as they could.
                 User 1 and User 2 commented that obvious visual cues would help
                 signify that the action required special attention.
@@ -301,10 +294,10 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 message regarding to license purchase.
               </p>
               <Row className="justify-content-center">
-                <Col lg="12">
+                <Col lg="11">
                   <ImageBox
                     src={this.getImageUrl("new-design.png")}
-                    alt="Current Admin Console UI"
+                    alt="Adding an alert banner to notify users about insufficient licenses"
                     className="img-fluid"
                   />
                 </Col>
@@ -317,7 +310,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 <Col lg="12">
                   <ImageBox
                     src={this.getImageUrl("final-flow.png")}
-                    alt="Current Admin Console UI"
+                    alt="The final design of Admin Console"
                     className="img-fluid"
                   />
                 </Col>
@@ -344,7 +337,7 @@ export const pageQuery = graphql`
     project: allProjectsJson(filter: { url: { eq: $path } }) {
       ...ProjectFields
     }
-    mainImage: file(relativePath: { eq: "AC/main.png" }) {
+    mainImage: file(relativePath: { eq: "account-management/main.png" }) {
       ...MainImageSizes
     }
   }

@@ -12,7 +12,8 @@ html {
   }
 
   .project-cell {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
+    transition: filter 300ms ease-out;
   }
   .project-card {
     border: 0;
@@ -24,7 +25,6 @@ html {
 
   .card-title {
     font-weight: 700;
-    font-family: $heading-font;
     font-size: 22px;
     a {
       color: $project-title-color;
@@ -33,5 +33,9 @@ html {
 
   .card-subtitle {
     color: $project-subtitle-color;
+  }
+
+  .cell-inactive {
+    filter: grayscale(100%) opacity(50%);
   }
 }

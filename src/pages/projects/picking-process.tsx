@@ -19,7 +19,7 @@ export default class PickingProcessPage extends React.Component<
       >
         <Container>
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>About the Company</h3>
               <p>
                 Nulogy is a software company that provides solutions to supply
@@ -30,7 +30,7 @@ export default class PickingProcessPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>My Roles</h3>
               <p>
                 I conducted user research by interviewing professional service
@@ -45,7 +45,7 @@ export default class PickingProcessPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>Problem Overview &amp; Background</h3>
               <p className={sharedStyles.quote}>
                 As forklift operators can pick up only one item at a time, they
@@ -68,35 +68,36 @@ export default class PickingProcessPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>User Research</h3>
               <p>
-                I began my design process by interviewing Nulogy's professional
+                I began my design process by interviewing Nulogy’s professional
                 service consultants, who worked directly with the workers at the
                 manufacturing sites. After multiple rounds of interviews, I was
                 able to collect sufficient information to summarize a general
                 workflow of the forklift operators.
               </p>
+              <Row className="justify-content-center">
+                <Col lg="5">
+                  <ImageBox
+                    src={this.getImageUrl("research2.jpg")}
+                    alt="Collect information using sticky notes"
+                    className="img-fluid"
+                  />
+                </Col>
+                <Col lg="5">
+                  <ImageBox
+                    src={this.getImageUrl("research.jpg")}
+                    alt="Whiteboard with research"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
             </Col>
           </Row>
+
           <Row className="justify-content-center">
-            <Col lg="5">
-              <ImageBox
-                src={this.getImageUrl("research2.jpg")}
-                alt="Collect information using sticky notes"
-                className="img-fluid"
-              />
-            </Col>
-            <Col lg="5">
-              <ImageBox
-                src={this.getImageUrl("research.jpg")}
-                alt="Whiteboard with research"
-                className="img-fluid"
-              />
-            </Col>
-          </Row>
-          <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>User Journey Map — First Iteration</h3>
               <p className={sharedStyles.quote}>
                 Designing a user journey map was challenging as this was my
@@ -108,24 +109,25 @@ export default class PickingProcessPage extends React.Component<
 
               <p>
                 With the information from the interview sessions, I created a
-                user journey map that shows forklift operator's thoughts and his
+                user journey map that shows forklift operator’s thoughts and his
                 interaction with other workers. I found it to be difficult to
                 create a balance between text and graphic contents. As a result,
                 the first version of my user journey looked this ugly...
               </p>
+              <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("1.png")}
+                    alt="First iteration of user journey map"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
             </Col>
           </Row>
+
           <Row className="justify-content-center">
             <Col lg="8">
-              <ImageBox
-                src={this.getImageUrl("1.png")}
-                alt="First iteration of user journey map"
-                className="img-fluid"
-              />
-            </Col>
-          </Row>
-          <Row className="justify-content-center">
-            <Col lg="10">
               <h3>User Journey Map — Second Iteration</h3>
               <p>
                 After a long talk with other designers, I decided to try a
@@ -133,19 +135,20 @@ export default class PickingProcessPage extends React.Component<
                 removed in the second iteration, making the page look a lot
                 cleaner than it was in the first iteration.
               </p>
+              <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("2.png")}
+                    alt="Second iteration of user journey map"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
             </Col>
           </Row>
+
           <Row className="justify-content-center">
             <Col lg="8">
-              <ImageBox
-                src={this.getImageUrl("2.png")}
-                alt="Second iteration of user journey map"
-                className="img-fluid"
-              />
-            </Col>
-          </Row>
-          <Row className="justify-content-center">
-            <Col lg="10">
               <h3>User Journey Map — Third Iteration</h3>
               <p>
                 To add some contrast to the paper, I changed the color scheme
@@ -157,48 +160,49 @@ export default class PickingProcessPage extends React.Component<
                 workflow of the forklift driver, and the last section shows pain
                 points that the forklift driver commonly undergoes.
               </p>
+              <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("3.png")}
+                    alt="Third iteration of user journey map"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
             </Col>
           </Row>
+
           <Row className="justify-content-center">
-            <Col lg="6">
-              <ImageBox
-                src={this.getImageUrl("3.png")}
-                alt="Third iteration of user journey map"
-                className="img-fluid"
-              />
-            </Col>
-          </Row>
-          <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>User Journey Map — Final Result</h3>
               <p>
                 In the final version of the user journey map, cartoon icons for
                 key people were replaced with colored dots with initials of
                 their position. This was done to reduce mental workload for the
-                audience as they wouldn't have to remember which icon represent
+                audience as they wouldn’t have to remember which icon represent
                 which person.
               </p>
               <p>
                 Copies of the user journey map were displayed in the design room
                 and distributed to various product teams. With good
-                understandings of the user's workflow, goals and pains, the
+                understandings of the user’s workflow, goals and pains, the
                 product team at Nulogy will be able to design and develop
                 solutions that are more user-centered.
               </p>
+              <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("4.png")}
+                    alt="Final iteration of user journey map"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
             </Col>
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="6">
-              <ImageBox
-                src={this.getImageUrl("4.png")}
-                alt="Final iteration of user journey map"
-                className="img-fluid"
-              />
-            </Col>
-          </Row>
-          <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>Designing the Solution</h3>
               <p>
                 To increase efficiency in the picking process, I designed a
@@ -208,15 +212,19 @@ export default class PickingProcessPage extends React.Component<
                 or to drop off pallet(s) that they currently have on their
                 forklift.
               </p>
-              <ImageBox
-                src={this.getImageUrl("interface.png")}
-                alt="New interface of picking process"
-                className="img-fluid"
-              />
+              <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("interface.png")}
+                    alt="New interface of picking process"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <h3>Next Steps</h3>
               <p>
                 While this problem seemed to be resolved by adding a feature
@@ -232,7 +240,7 @@ export default class PickingProcessPage extends React.Component<
                 </i>
                 <br />
                 This question was asked by the professional service consultants
-                when I presented them with this prototype. It's good to allow
+                when I presented them with this prototype. It’s good to allow
                 multiple pallets to be picked at once, but some limitation
                 should still exist to prevent any potential error. Still, the
                 maximum number can be varied, depending on the workflow of each
@@ -245,7 +253,7 @@ export default class PickingProcessPage extends React.Component<
                 <i>
                   <b>
                     "Can we redesign the entire picking process experience so
-                    that it's more user-friendly?"
+                    that it’s more user-friendly?"
                   </b>
                 </i>
                 <br />I see this feature as the first step to improve user
@@ -279,7 +287,7 @@ export const pageQuery = graphql`
     project: allProjectsJson(filter: { url: { eq: $path } }) {
       ...ProjectFields
     }
-    mainImage: file(relativePath: { eq: "Picking/main.png" }) {
+    mainImage: file(relativePath: { eq: "picking-process/main.png" }) {
       ...MainImageSizes
     }
   }
