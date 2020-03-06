@@ -32,12 +32,9 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
               <AboutTitle />
             </div>
             <p className={styles.aboutPara}>
-              I’m about to graduate from engineering at the University of
-              Waterloo and currently looking for a{" "}
-              <span className="highlight">
-                full-time product design role starting Fall 2020
-              </span>
-              .
+              I’m about to graduate from Systems Design engineering at the
+              University of Waterloo and currently looking for a{" "}
+              <span className="highlight">full-time product design role</span>.
             </p>
             <p className={styles.aboutPara}>
               I’ve previously designed for{" "}
