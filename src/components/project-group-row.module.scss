@@ -2,6 +2,23 @@
 @import "../styles/_fonts.scss";
 
 html {
+  .project-group-index {
+    position: absolute;
+    color: $project-group-title-color;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+  .project-group {
+    margin-left: 40px;
+  }
+  .project-group-title {
+    color: $project-group-title-color;
+    font-weight: 700;
+    font-size: 22px;
+  }
+
   .project-cell {
     padding-bottom: 40px;
     transition: filter 300ms ease-out;
@@ -15,8 +32,9 @@ html {
   }
 
   .card-title {
+    margin-top: 10px;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 18px;
     a {
       color: $project-title-color;
     }

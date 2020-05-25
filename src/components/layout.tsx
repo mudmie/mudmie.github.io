@@ -20,7 +20,7 @@ export default class Layout extends React.Component<LayoutProps, {}> {
           <meta name="description" content="" />
           <meta name="keywords" content="" />
           <link
-            href="https://fonts.googleapis.com/css?family=Karla:400,700|Poppins:400,700|PT+Serif:400i"
+            href="https://fonts.googleapis.com/css?family=Karla:400,700|Poppins:200,400,700|PT+Serif:400i"
             rel="stylesheet"
           />
           <link
