@@ -1,6 +1,7 @@
 [
   {
     "name": "Hacker Application Portal",
+    "projectGroup": "HackTheNorth",
     "company": "Hack The North",
     "term": "Summer 2019",
     "description": "Designing a unique comic-themed application portal for over 7,000 applicants from 30 countries to apply for Canada's biggest hackathon.",
@@ -11,6 +12,7 @@
   },
   {
     "name": "Hackioca",
+    "projectGroup": "HackTheNorth",
     "company": "Hack The North",
     "term": "Winter 2019",
     "description": "Hack the North's marketing website for the world's first boba hackathon, launched on April's Fool day.",
@@ -21,6 +23,7 @@
   },
   {
     "name": "User Account Management",
+    "projectGroup": "HackTheNorth",
     "company": "PlanGrid",
     "term": "Fall 2018",
     "description": "Building tools for administrators to monitor and manage users accounts.",
@@ -31,6 +34,7 @@
   },
   {
     "name": "T-Shirt Design",
+    "projectGroup": "PlanGrid",
     "company": "PlanGrid",
     "term": "Fall 2018",
     "description": "Making PlanGrid be on UWaterloo students' radar.",
@@ -41,6 +45,7 @@
   },
   {
     "name": "Picking Process Experience",
+    "projectGroup": "Nulogy",
     "company": "Nulogy",
     "term": "Winter 2018",
     "description": "Understanding forklift operator’s goals and pain points to design a user-friendly picking process.",
@@ -51,6 +56,7 @@
   },
   {
     "name": "Craft Beer Ordering System",
+    "projectGroup": "LCBO",
     "company": "Liquor Control Board of Ontario",
     "term": "Spring 2017",
     "description": "Establishing a reliable online ordering system to replace phone orders",
@@ -61,6 +67,7 @@
   },
   {
     "name": "Tasting Note Mobile App",
+    "projectGroup": "LCBO",
     "company": "Liquor Control Board of Ontario",
     "term": "Spring 2017",
     "description": "A data collecting mobile application, designed as an initiative to replace existing paper forms for evaluating beverage products.",
@@ -71,6 +78,7 @@
   },
   {
     "name": "Daily UI",
+    "projectGroup": "Misc",
     "company": "Personal Project",
     "term": "Winter 2018",
     "description": "A collection of my UI design practices.",
@@ -97,6 +105,6 @@
     "url": "/projects/roundabout-canada/",
     "imageFolder": "roundabout-canada",
     "isProtected": false,
-    "isEnabled": true
+    "isEnabled": false
   }
 ]

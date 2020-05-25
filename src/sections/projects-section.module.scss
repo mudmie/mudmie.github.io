@@ -10,32 +10,4 @@ html {
     font-size: 48px;
     color: $section-header-color;
   }
-
-  .project-cell {
-    padding-bottom: 40px;
-    transition: filter 300ms ease-out;
-  }
-  .project-card {
-    border: 0;
-  }
-
-  .card-header {
-    padding: 0 0 10px 0;
-  }
-
-  .card-title {
-    font-weight: 700;
-    font-size: 22px;
-    a {
-      color: $project-title-color;
-    }
-  }
-
-  .card-subtitle {
-    color: $project-subtitle-color;
-  }
-
-  .cell-inactive {
-    filter: grayscale(100%) opacity(50%);
-  }
 }

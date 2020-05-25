@@ -1,0 +1,32 @@
+[
+  {
+    "name": "HackTheNorth",
+    "title": "Hack The North",
+    "description": "Designing for Canada’s biggest hackathon at which over 1,000 students around the world spend 36 hours to collaboratively design and build projects of their choice.",
+    "isEnabled": true
+  },
+  {
+    "name": "PlanGrid",
+    "title": "Autodesk (PlanGrid)",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla libero vel justo finibus dignissim. Mauris vehicula purus elit, eu euismod tortor mattis dictum.",
+    "isEnabled": true
+  },
+  {
+    "name": "Nulogy",
+    "title": "Nulogy",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla libero vel justo finibus dignissim. Mauris vehicula purus elit, eu euismod tortor mattis dictum.",
+    "isEnabled": true
+  },
+  {
+    "name": "LCBO",
+    "title": "LCBO",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla libero vel justo finibus dignissim. Mauris vehicula purus elit, eu euismod tortor mattis dictum.",
+    "isEnabled": true
+  },
+  {
+    "name": "Misc",
+    "title": "Miscellaneous",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla libero vel justo finibus dignissim. Mauris vehicula purus elit, eu euismod tortor mattis dictum.",
+    "isEnabled": true
+  }
+]

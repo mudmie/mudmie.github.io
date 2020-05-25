@@ -5,6 +5,7 @@ export const projectFields = graphql`
     edges {
       node {
         name
+        projectGroup
         company
         term
         description
