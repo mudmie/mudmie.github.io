@@ -34,7 +34,9 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
         <ProjectsSection
           id="projects"
           projects={this.props.data.allProjectsJson.edges.map(e => e.node)}
-          projectGroups={this.props.data.allProjectGroupsJson.edges.map(e => e.node)}
+          projectGroups={this.props.data.allProjectGroupsJson.edges.map(
+            e => e.node
+          )}
         />
       </Layout>
     );
@@ -49,7 +51,7 @@ export const pageQuery = graphql`
     allProjectGroupsJson {
       ...ProjectGroupFields
     }
-    meImage: file(relativePath: { eq: "me.jpg" }) {
+    meImage: file(relativePath: { eq: "mudmie_syde20.jpg" }) {
       ...MainImageSizes
     }
   }

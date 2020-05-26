@@ -26,6 +26,11 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
               alt="image of me"
               fluid={this.props.meImage.childImageSharp.fluid}
             />
+            <div className={styles.meCaption}>
+              Mudmie in her “OFF-SYDE” crewneck sweater, a cult favorite among
+              SYDE 2020 people designed by her amazing classmates Shan &amp;
+              Shreya. — ps. SYDE = Systems Design Engineering
+            </div>
           </Col>
           <Col md="6" className={styles.colAbout}>
             <div className="d-none d-md-block">
