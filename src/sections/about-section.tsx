@@ -10,7 +10,6 @@ import { ImageSharp } from "../models/image-sharp";
 
 export interface AboutSectionProps {
   id: string;
-  meImage: ImageSharp;
 }
 export class AboutSection extends React.Component<AboutSectionProps, {}> {
   public render() {
@@ -22,10 +21,6 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
             <AboutTitle />
           </Col>
           <Col md="5">
-            <Img
-              alt="image of me"
-              fluid={this.props.meImage.childImageSharp.fluid}
-            />
             <div className={styles.meCaption}>
               Mudmie in her “OFF-SYDE” crewneck sweater, a cult favorite among
               SYDE 2020 people designed by her amazing classmates Shan &amp;

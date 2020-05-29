@@ -19,7 +19,6 @@ export interface IndexPageProps {
         node: ProjectGroup;
       }[];
     };
-    meImage: any;
   };
 }
 
@@ -30,7 +29,7 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
         <Helmet titleTemplate="">
           <title>Mudmie Chuthamsatid - Product Designer</title>
         </Helmet>
-        <AboutSection id="about" meImage={this.props.data.meImage} />
+        <AboutSection id="about" />
         <ProjectsSection
           id="projects"
           projects={this.props.data.allProjectsJson.edges.map(e => e.node)}
@@ -50,9 +49,6 @@ export const pageQuery = graphql`
     }
     allProjectGroupsJson {
       ...ProjectGroupFields
-    }
-    meImage: file(relativePath: { eq: "mudmie_syde20.jpg" }) {
-      ...MainImageSizes
     }
   }
 `;
