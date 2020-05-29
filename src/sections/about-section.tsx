@@ -20,41 +20,24 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
           <Col sm="12" className={`${styles.colAbout} d-sm-block d-md-none`}>
             <AboutTitle />
           </Col>
-          <Col md="5">
-            <div className={styles.meCaption}>
-              Mudmie in her “OFF-SYDE” crewneck sweater, a cult favorite among
-              SYDE 2020 people designed by her amazing classmates Shan &amp;
-              Shreya. — ps. SYDE = Systems Design Engineering
-            </div>
-          </Col>
-          <Col md="6" className={styles.colAbout}>
+          <Col md="5" className={styles.colAbout}>
             <div className="d-none d-md-block">
               <AboutTitle />
             </div>
             <p className={styles.aboutPara}>
-              I’m about to graduate from Systems Design Engineering at the
-              University of Waterloo and currently looking for a{" "}
-              <span className="highlight">full-time product design role</span>.
-            </p>
-            <p className={styles.aboutPara}>
-              I’ve previously designed for{" "}
-              <OutboundLink href="https://www.plangrid.com" target="_blank">
-                PlanGrid
-              </OutboundLink>{" "}
-              and{" "}
+              Previously designed for{" "}
               <OutboundLink href="https://www.hackthenorth.com" target="_blank">
                 Hack the North
-              </OutboundLink>
-              . Whenever I get a nice break from school, I travel, find food
-              spots and wander around the city.
+              </OutboundLink>{" "}
+              &amp;{" "}
+              <OutboundLink href="https://www.plangrid.com" target="_blank">
+                Autodesk
+              </OutboundLink>{" "}
+              UWaterloo Systems Design Engineering, class of 2020
             </p>
           </Col>
         </Row>
       </Container>
     );
-  }
-
-  private getImageUrl(filename: string) {
-    return withPrefix(`/images/${filename}`);
   }
 }

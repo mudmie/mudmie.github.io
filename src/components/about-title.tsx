@@ -10,8 +10,8 @@ export class AboutTitle extends React.Component {
       <>
         <h1 className={styles.aboutHeading}>Mudmie Chuthamsatid</h1>
         <h2 className={styles.aboutHeading}>
-          crafting product experiences that <br />
-          bring joy and simplify lives
+          crafting product experiences that
+          <br /> spark people’s joy and simplify their lives
         </h2>
         <div className={styles.socialMedia}>
           <OutboundLink
