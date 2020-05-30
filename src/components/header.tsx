@@ -3,13 +3,13 @@ import { OutboundLink } from "gatsby-plugin-google-analytics";
 import * as React from "react";
 import { Collapse, Nav, NavItem, Navbar, NavbarToggler } from "reactstrap";
 import * as styles from "./header.module.scss";
-import * as logo from "../../static/images/Mudmie.png";
 
 export interface HeaderProps {
   isDarkMode: boolean;
 }
 export interface HeaderState {
   isOpen: boolean;
+  isTop: boolean;
 }
 
 export class Header extends React.Component<HeaderProps, HeaderState> {
@@ -17,6 +17,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
     super(props);
     this.state = {
       isOpen: false,
+      isTop: true,
     };
     this.toggle = this.toggle.bind(this);
     this.collapseNav = this.collapseNav.bind(this);
@@ -34,11 +35,22 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
     });
   }
 
+  public componentDidMount() {
+    document.addEventListener("scroll", () => {
+      const isTop = window.scrollY < 10;
+      if (isTop !== this.state.isTop) {
+        this.setState({ isTop });
+      }
+    });
+  }
+
   public render() {
     return (
       <header>
         <Navbar
-          className={`${styles.navbar} ${styles.scroll}`}
+          className={`${styles.navbar} ${
+            !this.state.isTop ? styles.scroll : ""
+          }`}
           light={!this.props.isDarkMode}
           dark={this.props.isDarkMode}
           expand="md"
