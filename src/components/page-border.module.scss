@@ -3,7 +3,7 @@
 @mixin border-base($edge) {
   position: fixed;
   z-index: 2000;
-  border-#{$edge}-width: 20px;
+  border-#{$edge}-width: 24px;
   border-#{$edge}-style: solid;
 }
 
