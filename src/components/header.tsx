@@ -44,32 +44,18 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
           expand="md"
           fixed="top"
         >
-          <Link
-            to="/"
-            className="navbar-brand d-none d-md-block"
-            onClick={() => {
-              this.collapseNav();
-            }}
-          >
-            <div className={styles.brandCircle} />
-            <div className={styles.brandName}>
-              mudmie
-              <br />
-              chuthamsatid
-            </div>
-          </Link>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
+            <Nav navbar>
               <NavItem>
                 <Link
                   className={`nav-link ${styles.navLink}`}
-                  to="/#about"
+                  to="/"
                   onClick={() => {
                     this.collapseNav();
                   }}
                 >
-                  about
+                  home
                 </Link>
               </NavItem>
               <NavItem>
@@ -81,6 +67,17 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
                   }}
                 >
                   projects
+                </Link>
+              </NavItem>
+              <NavItem>
+                <Link
+                  className={`nav-link ${styles.navLink}`}
+                  to="/about"
+                  onClick={() => {
+                    this.collapseNav();
+                  }}
+                >
+                  about me
                 </Link>
               </NavItem>
               <NavItem>
