@@ -1,0 +1,11 @@
+@import "../styles/_colors.scss";
+@import "../styles/_fonts.scss";
+
+html {
+  .home-page {
+    background: url(../../static/images/home_bg.svg);
+    background-position: top -20vh right -15vw;
+    background-repeat: no-repeat;
+    background-size: 65%;
+  }
+}
