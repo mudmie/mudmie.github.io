@@ -36,7 +36,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                 Shreya. — ps. SYDE = Systems Design Engineering
               </p>
             </Col>
-            <Col lg="7">
+            <Col lg="6" className="offset-1">
               <h1>Mudmie Chuthamsatid</h1>
               <h2>Thanks for being here.</h2>
               <h3>IN SHORT</h3>
@@ -92,7 +92,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                 last night in San Francisco in August 2019.
               </p>
             </Col>
-            <Col lg="7">
+            <Col lg="6" className="offset-1">
               <div>Want more? There is some fun stuff here!</div>
               <h3>NOT - DESIGN</h3>
               <p>

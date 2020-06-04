@@ -7,14 +7,19 @@ import Img from "gatsby-image";
 import { withPrefix, Link } from "gatsby";
 import { AboutTitle } from "../components/about-title";
 import { ImageSharp } from "../models/image-sharp";
+import { FaDotCircle, FaRegDotCircle } from "react-icons/fa";
 
 export interface AboutSectionProps {
   id: string;
 }
 export class AboutSection extends React.Component<AboutSectionProps, {}> {
+  private getImageUrl(filename: string) {
+    return withPrefix(`/images/${filename}`);
+  }
+
   public render() {
     return (
-      <Container>
+      <Container className={styles.about}>
         <a id={this.props.id} className={sharedStyles.sectionAnchor} />
         <Row className="justify-content-between align-items-center">
           <Col sm="12" className={`${styles.colAbout} d-sm-block d-md-none`}>
@@ -35,6 +40,32 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
               </OutboundLink>{" "}
               UWaterloo Systems Design Engineering, class of 2020
             </p>
+            <a href="#projects">
+              <img
+                src={this.getImageUrl("arrow-vertical.svg")}
+                className="ml-5"
+              />
+            </a>
+          </Col>
+          <Col md="7" className={`text-right ${styles.colSocialMedia}`}>
+            <div>
+              <img src={this.getImageUrl("arrow-horizontal.svg")} />
+              <OutboundLink
+                className={styles.instagram}
+                href="https://www.instagram.com/mudmiemee"
+                target="_blank"
+              >
+                Instagram
+              </OutboundLink>
+              {" • "}
+              <OutboundLink
+                className={styles.linkedIn}
+                href="https://www.linkedin.com/in/mudmie"
+                target="_blank"
+              >
+                LinkedIn
+              </OutboundLink>
+            </div>
           </Col>
         </Row>
       </Container>

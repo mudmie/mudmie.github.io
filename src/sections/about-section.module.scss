@@ -1,7 +1,11 @@
 @import "../styles/_colors.scss";
 @import "../styles/_fonts.scss";
 
+.about {
+  min-height: 70vh;
+}
 .col-about {
+  margin-top: 25vh;
 }
 .about-para {
   text-align: right;
@@ -9,4 +13,8 @@
 
 .me-caption {
   text-align: right;
+}
+
+.col-social-media {
+  margin-top: 23vh;
 }

@@ -13,7 +13,7 @@ export class AboutTitle extends React.Component {
           crafting product experiences that
           <br /> spark people’s joy and simplify their lives
         </h2>
-        <div className={styles.socialMedia}>
+        {/* <div className={styles.socialMedia}>
           <OutboundLink
             className={styles.linkedIn}
             href="https://www.linkedin.com/in/mudmie"
@@ -28,7 +28,7 @@ export class AboutTitle extends React.Component {
           >
             <FaInstagram size={24} />
           </OutboundLink>
-        </div>
+        </div> */}
       </>
     );
   }
