@@ -14,6 +14,12 @@ export default class RoundaboutCanadaPage extends React.Component<
       <ProjectLayout
         allProjects={this.props.data.allProjects.edges.map(e => e.node)}
         currentProject={this.props.data.project.edges[0].node}
+        currentProjectGroup={
+          this.props.data.allProjectGroups.edges.find(
+            pg =>
+              pg.node.name == this.props.data.project.edges[0].node.projectGroup
+          ).node
+        }
         mainImage={this.props.data.mainImage.childImageSharp.fluid}
       >
         <Container>
@@ -157,6 +163,9 @@ export const pageQuery = graphql`
   query RoundaboutCanadaQuery($path: String!) {
     allProjects: allProjectsJson {
       ...ProjectFields
+    }
+    allProjectGroups: allProjectGroupsJson {
+      ...ProjectGroupFields
     }
     project: allProjectsJson(filter: { url: { eq: $path } }) {
       ...ProjectFields
