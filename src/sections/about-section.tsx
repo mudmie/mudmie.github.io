@@ -7,8 +7,6 @@ import Img from "gatsby-image";
 import { withPrefix, Link } from "gatsby";
 import { AboutTitle } from "../components/about-title";
 import { ImageSharp } from "../models/image-sharp";
-import { FaDotCircle, FaRegDotCircle } from "react-icons/fa";
-
 export interface AboutSectionProps {
   id: string;
 }
@@ -49,7 +47,7 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
           </Col>
           <Col md="7" className={`text-right ${styles.colSocialMedia}`}>
             <div>
-              <img src={this.getImageUrl("arrow-horizontal.svg")} />
+              <img src={this.getImageUrl("arrow-horizontal.svg")} width="75%" />
               <OutboundLink
                 className={styles.instagram}
                 href="https://www.instagram.com/mudmiemee"
