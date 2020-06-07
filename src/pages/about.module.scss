@@ -6,3 +6,36 @@
     color: $baby-blue-color;
   }
 }
+.anchor-image-container {
+  position: relative;
+}
+.top-right-circle {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+}
+.bottom-left-circle {
+  position: absolute;
+  bottom: -75px;
+  left: -50px;
+}
+
+.bottom-right-circle {
+  position: absolute;
+  bottom: -75px;
+  right: -50px;
+}
+
+.me-image-caption {
+  margin-left: 120px;
+  font-size: 10px;
+  text-align: right;
+}
+
+.nice-break-image-caption {
+  margin-right: 120px;
+  font-size: 10px;
+  text-align: left;
+}

@@ -1,4 +1,4 @@
-import { graphql } from "gatsby";
+import { graphql, withPrefix } from "gatsby";
 import * as React from "react";
 import { Helmet } from "react-helmet";
 import Layout from "../components/layout";
@@ -17,6 +17,10 @@ export interface AboutPageProps {
 }
 
 export default class AboutPage extends React.Component<AboutPageProps, {}> {
+  private getImageUrl(filename: string) {
+    return withPrefix(`/images/${filename}`);
+  }
+
   public render() {
     return (
       <Layout>
@@ -26,11 +30,21 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
         <Container className={styles.aboutPage}>
           <Row className="justify-content-center">
             <Col lg="5">
-              <Img
-                fluid={this.props.data.meImage.childImageSharp.fluid}
-                alt="Picture of Mudmie"
-              />
-              <p>
+              <div className={styles.anchorImageContainer}>
+                <img
+                  src={this.getImageUrl("yellow-circle.svg")}
+                  className={styles.topRightCircle}
+                />
+                <Img
+                  fluid={this.props.data.meImage.childImageSharp.fluid}
+                  alt="Picture of Mudmie"
+                />
+                <img
+                  src={this.getImageUrl("yellow-circle.svg")}
+                  className={styles.bottomLeftCircle}
+                />
+              </div>
+              <p className={styles.meImageCaption}>
                 Mudmie in her “OFF-SYDE” crewneck sweater, a cult favorite among
                 SYDE 2020 people designed by her amazing classmates Shan &amp;
                 Shreya. — ps. SYDE = Systems Design Engineering
@@ -63,7 +77,10 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                 wander around the city. I also like cooking and baking, minus
                 washing dishes.
               </p>
-              <div>Enjoy reading &amp; getting to know people?</div>
+              <div>
+                <img src={this.getImageUrl("arrow-vertical.svg")} />
+                Enjoy reading &amp; getting to know people?
+              </div>
               <h3>DESIGN</h3>
               <p>
                 I chose Systems Design Engineering because I wanted to design my
@@ -83,11 +100,17 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
           </Row>
           <Row className="justify-content-center">
             <Col lg="5">
-              <Img
-                fluid={this.props.data.niceBreakImage.childImageSharp.fluid}
-                alt="Picture of Castro neighborhood, San Francisco"
-              />
-              <p>
+              <div className={styles.anchorImageContainer}>
+                <Img
+                  fluid={this.props.data.niceBreakImage.childImageSharp.fluid}
+                  alt="Picture of Castro neighborhood, San Francisco"
+                />
+                <img
+                  src={this.getImageUrl("yellow-circle.svg")}
+                  className={styles.bottomRightCircle}
+                />
+              </div>
+              <p className={styles.niceBreakImageCaption}>
                 Castro under the arrays of rainbow light, taken by Mudmie on her
                 last night in San Francisco in August 2019.
               </p>
