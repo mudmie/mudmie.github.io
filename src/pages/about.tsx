@@ -28,6 +28,12 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
           <title>About me</title>
         </Helmet>
         <Container className={styles.aboutPage}>
+          <Row className={styles.headerRow}>
+            <Col className={styles.headerCol}>
+              <h1>I’m Mudmie —</h1>
+              <h2>Thanks for being here.</h2>
+            </Col>
+          </Row>
           <Row className="justify-content-center">
             <Col lg="5">
               <div className={styles.anchorImageContainer}>
@@ -50,9 +56,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                 Shreya. — ps. SYDE = Systems Design Engineering
               </p>
             </Col>
-            <Col lg="6" className="offset-1">
-              <h1>Mudmie Chuthamsatid</h1>
-              <h2>Thanks for being here.</h2>
+            <Col lg="6" className={`offset-1 ${styles.infoCol}`}>
               <h3>IN SHORT</h3>
               <p>
                 I’m a product designer who graduated from{" "}
