@@ -1,0 +1,18 @@
+@import "../styles/_colors.scss";
+@import "../styles/_fonts.scss";
+
+.social-media {
+  a {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  a:last-child {
+    margin-right: 0;
+  }
+  a,
+  a:hover,
+  a:active,
+  a:visited {
+    color: $mustard-color;
+  }
+}

@@ -13,6 +13,17 @@ export class AboutTitle extends React.Component {
           crafting product experiences that
           <br /> spark people’s joy and simplify their lives
         </h2>
+        <p className={styles.aboutPara}>
+          Previously designed for{" "}
+          <OutboundLink href="https://www.hackthenorth.com" target="_blank">
+            Hack the North
+          </OutboundLink>{" "}
+          &amp;{" "}
+          <OutboundLink href="https://www.plangrid.com" target="_blank">
+            Autodesk
+          </OutboundLink>{" "}
+          UWaterloo Systems Design Engineering, class of 2020
+        </p>
         {/* <div className={styles.socialMedia}>
           <OutboundLink
             className={styles.linkedIn}

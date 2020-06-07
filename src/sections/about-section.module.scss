@@ -2,13 +2,10 @@
 @import "../styles/_fonts.scss";
 
 .about {
-  min-height: 70vh;
+  min-height: 83vh;
 }
 .col-about {
   margin-top: 25vh;
-}
-.about-para {
-  text-align: right;
 }
 
 .me-caption {
@@ -16,5 +13,15 @@
 }
 
 .col-social-media {
-  margin-top: 23vh;
+  margin-top: auto;
+  margin-bottom: auto;
+  div {
+    margin-top: 100px;
+  }
+}
+.vertical-arrow {
+  margin-left: 100px;
+}
+.horizontal-arrow {
+  width: 50%;
 }

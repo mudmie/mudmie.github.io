@@ -12,6 +12,12 @@ html {
   }
   .project-group {
     margin-left: 40px;
+    p {
+      margin-left: -40px;
+      @media (min-width: 992px) {
+        margin-left: 0px;
+      }
+    }
   }
   .project-group-title {
     color: $project-group-title-color;

@@ -3,9 +3,28 @@
 
 html {
   .home-page {
-    background: url(../../static/images/home_bg.svg);
-    background-position: top -20vh right -15vw;
+    background: url(../../static/images/ham.svg),
+      url(../../static/images/potato.svg), url(../../static/images/Oval.svg);
+
+    /* Small Screen */
+    background-position: top -15vh right -120px, top 60vh right -50px,
+      top 0vh right -300px;
     background-repeat: no-repeat;
-    background-size: 65%;
+    background-size: 100%, 50%, 200%;
+
+    @media (min-width: 768px) {
+      /* Medium Screen */
+      background-position: top -15vh right -25vw, top 60vh right 0,
+        top 0 right 0;
+      background-repeat: no-repeat;
+      background-size: 50%, 20%, 50%;
+    }
+    @media (min-width: 992px) {
+      /* Large Screen */
+      background-position: top -30vh right -10vw, top 60vh right 0,
+        top -5vh right 0;
+      background-repeat: no-repeat;
+      background-size: 50%, 20%, 60%;
+    }
   }
 }
