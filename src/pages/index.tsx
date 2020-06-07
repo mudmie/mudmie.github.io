@@ -26,11 +26,11 @@ export interface IndexPageProps {
 export default class IndexPage extends React.Component<IndexPageProps, {}> {
   public render() {
     return (
-      <Layout>
+      <Layout useCustomPageMargin={true}>
         <Helmet titleTemplate="">
           <title>Mudmie Chuthamsatid - Product Designer</title>
         </Helmet>
-        <div className={styles.homePage}>
+        <div className={`${styles.homePage} ${styles.main}`}>
           <AboutSection id="about" />
           <ProjectsSection
             id="projects"

@@ -3,11 +3,12 @@ import Helmet from "react-helmet";
 import { Footer } from "../components/footer";
 import { Header } from "../components/header";
 import PageBorder from "./page-border";
-import * as Styles from "./layout.module.scss";
+import * as styles from "./layout.module.scss";
 
 interface LayoutProps {
   theme?: string;
   children: any;
+  useCustomPageMargin?: boolean;
 }
 
 export default class Layout extends React.Component<LayoutProps, {}> {
@@ -47,7 +48,9 @@ export default class Layout extends React.Component<LayoutProps, {}> {
         </Helmet>
         <PageBorder />
         <Header isDarkMode={this.props.theme === "dark"} />
-        <main className={Styles.main}>{this.props.children}</main>
+        <main className={this.props.useCustomPageMargin ? "" : styles.main}>
+          {this.props.children}
+        </main>
         <Footer />
       </>
     );
