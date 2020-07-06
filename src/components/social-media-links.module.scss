@@ -2,6 +2,8 @@
 @import "../styles/_fonts.scss";
 
 .social-media {
+  color: $baby-blue-color;
+
   a {
     margin-left: 16px;
     margin-right: 16px;
@@ -9,10 +11,32 @@
   a:last-child {
     margin-right: 0;
   }
-  a,
-  a:hover,
-  a:active,
-  a:visited {
-    color: $mustard-color;
+
+  // a:hover,
+  // a:active,
+  // a:visited {
+  //   color: $mustard-color;
+  // }
+}
+
+.instagram {
+  &,
+  &:visited,
+  &:active {
+    color: $bark-color;
+  }  
+  &:hover {
+    color:#c32aa3;
+  }
+}
+
+.linked-in {
+  &,
+  &:visited,
+  &:active {
+    color: $bark-color;
+  }
+  &:hover {
+    color: #0077b5;
   }
 }

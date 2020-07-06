@@ -2,31 +2,31 @@
   {
     "name": "HackTheNorth",
     "title": "Hack The North",
-    "description": "Designing for Canada’s biggest hackathon at which over 1,000 students around the world spend 36 hours to collaboratively design and build projects of their choice.",
+    "description": "Designing website and applications for Canada’s biggest hackathon at which over 1,300 students around the world spend 36 hours to collaboratively build projects of their choices.",
     "isEnabled": true
   },
   {
     "name": "PlanGrid",
     "title": "Autodesk (PlanGrid)",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla libero vel justo finibus dignissim. Mauris vehicula purus elit, eu euismod tortor mattis dictum.",
+    "description": "Enabling people in the construction industry to work more productively and efficiently through the design of custom form builder and admin console.",
     "isEnabled": true
   },
   {
     "name": "Nulogy",
     "title": "Nulogy",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla libero vel justo finibus dignissim. Mauris vehicula purus elit, eu euismod tortor mattis dictum.",
+    "description": "Solving complex supply chain management problems through the application of user research, wireframes, and prototypes.",
     "isEnabled": true
   },
   {
     "name": "LCBO",
     "title": "LCBO",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla libero vel justo finibus dignissim. Mauris vehicula purus elit, eu euismod tortor mattis dictum.",
+    "description": "Reducing human errors while allowing LCBO employees and craft beer manufacturers to complete their tasks faster by designing digital solutions to replace repetitive and error-prone manual processes.",
     "isEnabled": true
   },
   {
     "name": "Misc",
     "title": "Miscellaneous",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla libero vel justo finibus dignissim. Mauris vehicula purus elit, eu euismod tortor mattis dictum.",
+    "description": "A collection of things I did to practice my design skills.",
     "isEnabled": true
   }
 ]

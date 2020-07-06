@@ -37,7 +37,7 @@ export class ProjectGroupRow extends React.Component<ProjectGroupProps, {}> {
             <p>{this.props.projectGroup.description}</p>
           </div>
         </Col>
-        <Col lg="9">
+        <Col lg="8">
           <Row>
             {this.props.projects.map(proj => (
               <Col
