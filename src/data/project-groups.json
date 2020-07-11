@@ -2,25 +2,25 @@
   {
     "name": "HackTheNorth",
     "title": "Hack The North",
-    "description": "Designing website and applications for Canada’s biggest hackathon, connecting over 1,300 students around the world to collaboratively build projects of their choices.",
+    "description": "Designing website & applications for Canada’s biggest hackathon, connecting over 1,300 students around the world to collaboratively build innovative projects.",
     "isEnabled": true
   },
   {
     "name": "PlanGrid",
-    "title": "Autodesk (PlanGrid)",
-    "description": "Enabling people in the construction industry to work more productively and efficiently through the design of custom form builder and admin console.",
+    "title": "PlanGrid/Autodesk",
+    "description": "Conducting research & designing products that enable people in the construction industry to be more productive and efficient.",
     "isEnabled": true
   },
   {
     "name": "Nulogy",
     "title": "Nulogy",
-    "description": "Solving complex supply chain management problems through the application of user research, wireframes, and prototypes.",
+    "description": "Solving complex supply chain management problems through a series of user research, wireframing, and prototyping.",
     "isEnabled": true
   },
   {
     "name": "LCBO",
     "title": "LCBO",
-    "description": "Reducing human errors while allowing LCBO employees and craft beer manufacturers to complete their tasks faster by designing digital solutions to replace repetitive and error-prone manual processes.",
+    "description": "Digitizing repetitive and error-prone manual processes to reduce task completion time and potential human errors.",
     "isEnabled": true
   },
   {

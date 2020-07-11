@@ -18,7 +18,17 @@
       font-size: 56px;
     }
   }
+  h3 {
+    color: $paprika-color;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+  }
+    .section-name{
+      margin-top:8px;;
+    }
 }
+
 
 .header-row {
   position: relative;
@@ -65,17 +75,38 @@
 }
 
 .me-image-caption {
+  span{
+    color:$stone-color;
+  }
   margin-left: 120px;
-  font-size: 10px;
+  font-size: 12px;
   text-align: right;
+  margin-top: 4px;
 }
 
 .nice-break-image-caption {
   margin-right: 120px;
-  font-size: 10px;
+  font-size: 12px;
   text-align: left;
+  margin-top: 4px;
 }
 
 .info-col {
   margin-top: 200px;
+}
+
+.arrow-n-text{
+  span{
+    color: $paprika-color;
+    margin-left: 16px ;
+    background-color: $baby-blue-tint-color;
+    font-family: $heading-font;
+    font-weight: 500 ;
+    font-style: italic;
+  }
+  
+  .arrow{
+    padding: 8px 0 16px 0;
+    height: 120px;
+  }
 }

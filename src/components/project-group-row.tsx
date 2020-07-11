@@ -80,8 +80,7 @@ export class ProjectGroupRow extends React.Component<ProjectGroupProps, {}> {
                       <Link to={proj.url}>{proj.name}</Link>{" "}
                     </CardTitle>
                     <CardSubtitle className={styles.cardSubtitle}>
-                      {proj.company}
-                      {" / "}
+                      {/* {proj.company} */}
                       {proj.term}
                     </CardSubtitle>
                   </CardBody>

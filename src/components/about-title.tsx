@@ -11,18 +11,22 @@ export class AboutTitle extends React.Component {
         <h1 className={styles.aboutHeading}>Mudmie Chuthamsatid</h1>
         <h2 className={styles.aboutHeading}>
           crafting product experiences that
-          <br /> spark people’s joy and simplify their lives
+          <br /> bring joy and simplify lives
         </h2>
         <p className={styles.aboutPara}>
-          Previously designed for{" "}
+          Product Designer at{" "}
+          <OutboundLink href="https://www.jitta.com/" target="_blank">
+            Jitta Wealth
+          </OutboundLink>,
+          <br/>
+          previously at {" "} 
           <OutboundLink href="https://www.hackthenorth.com" target="_blank">
             Hack the North
           </OutboundLink>{" "}
           &amp;{" "}
           <OutboundLink href="https://www.plangrid.com" target="_blank">
-            Autodesk
+            PlanGrid/Autodesk
           </OutboundLink>{" "}
-          UWaterloo Systems Design Engineering, class of 2020
         </p>
         {/* <div className={styles.socialMedia}>
           <OutboundLink
