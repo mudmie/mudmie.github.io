@@ -2,10 +2,13 @@
 @import "../styles/_fonts.scss";
 
 .about {
+}
+
+.row-about {
   min-height: 83vh;
 }
+
 .col-about {
-  margin-top: 25vh;
 }
 
 .me-caption {
@@ -16,7 +19,7 @@
   margin-top: auto;
   margin-bottom: auto;
   div {
-    margin-top: 100px;
+    margin-bottom: 200px;
   }
 }
 .vertical-arrow {
