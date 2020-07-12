@@ -8,21 +8,21 @@ html {
       url(../../static/images/potato.svg);
 
     /* Small Screen */
-    background-position: top -15vh right -120px, top 60vh right -50px;
+    background-position: top -200px right -100px, top 80vh right 0;
     background-repeat: no-repeat;
-    background-size: 100%, 50%;
+    background-size: 400px, 150px;
 
     @media (min-width: 768px) {
-      /* Medium Screen */
-      background-position: top -15vh right -25vw, top 60vh right 0;
-      background-repeat: no-repeat;
-      background-size: 50%, 20%;
-    }
-    @media (min-width: 992px) {
+      //   /* Medium Screen */
+      //   background-position: top -15vh right -25vw, top 60vh right 0;
+      //   background-repeat: no-repeat;
+      //   background-size: 50%, 20%;
+      // }
+      // @media (min-width: 992px) {
       /* Large Screen */
-      background-position: top -30vh right -10vw, top 60vh right 0;
+      background-position: top -200px right -100px, top 80vh right 0;
       background-repeat: no-repeat;
-      background-size: 50%, 20%;
+      background-size: 600px, 300px;
     }
   }
 }
