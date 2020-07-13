@@ -18,10 +18,19 @@
 .col-social-media {
   margin-top: auto;
   margin-bottom: auto;
+  display: none !important;
+  @media (min-width: 576px) {
+    display: flex !important;
+  }
 }
 .vertical-arrow {
-  margin-left: 100px;
+  position: absolute;
+  img {
+    margin-left: 100px;
+  }
 }
-.horizontal-arrow {
-  width: 50%;
+.horizontal-line {
+  flex-grow: 1;
+  margin-bottom: 10px;
+  border-bottom: 2px solid $stone-color;
 }

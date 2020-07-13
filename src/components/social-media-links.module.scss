@@ -3,6 +3,7 @@
 
 .social-media {
   color: $baby-blue-color;
+  flex-shrink: 0;
 
   a {
     margin-left: 16px;
@@ -24,9 +25,9 @@
   &:visited,
   &:active {
     color: $bark-color;
-  }  
+  }
   &:hover {
-    color:#c32aa3;
+    color: #c32aa3;
   }
 }
 

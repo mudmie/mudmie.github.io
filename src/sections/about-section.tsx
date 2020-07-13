@@ -28,25 +28,13 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
             <div className="text-right d-md-none">
               <SocialMediaLinks />
             </div>
-            {/* <a href="#projects">
-              <img
-                src={this.getImageUrl("arrow-vertical.svg")}
-                className={styles.verticalArrow}
-              />
-            </a> */}
+            <a href="#projects" className={styles.verticalArrow}>
+              <img src={this.getImageUrl("arrow-vertical.svg")} />
+            </a>
           </Col>
-          <Col
-            md="6"
-            lg="7"
-            className={`text-right d-none d-md-block ${styles.colSocialMedia}`}
-          >
-            <div>
-              <img
-                src={this.getImageUrl("arrow-horizontal.svg")}
-                className={styles.horizontalArrow}
-              />
-              <SocialMediaLinks />
-            </div>
+          <Col md="6" lg="7" className={`text-right ${styles.colSocialMedia}`}>
+            <div className={styles.horizontalLine} />
+            <SocialMediaLinks />
           </Col>
         </Row>
       </Container>
