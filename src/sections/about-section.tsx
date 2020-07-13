@@ -28,12 +28,12 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
             <div className="text-right d-md-none">
               <SocialMediaLinks />
             </div>
-            <a href="#projects">
+            {/* <a href="#projects">
               <img
                 src={this.getImageUrl("arrow-vertical.svg")}
                 className={styles.verticalArrow}
               />
-            </a>
+            </a> */}
           </Col>
           <Col
             md="6"
