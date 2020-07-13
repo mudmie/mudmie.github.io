@@ -246,23 +246,24 @@ export default class HackerAppsPage extends React.Component<
                 In a case that the users forget their password, they will have
                 an opportunity to reset it here.
               </p>
+
+              <Row className="justify-content-center">
+                <Col lg="4">
+                  <ImageBox
+                    src={this.getImageUrl("web-forget.png")}
+                    alt="Reset password for desktop"
+                    className="img-fluid"
+                  />
+                </Col>
+                <Col lg="2">
+                  <ImageBox
+                    src={this.getImageUrl("mobile-forget.png")}
+                    alt="Reset password for mobile"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
             </Col>
-            <Row className="justify-content-center">
-              <Col lg="4">
-                <ImageBox
-                  src={this.getImageUrl("web-forget.png")}
-                  alt="Reset password for desktop"
-                  className="img-fluid"
-                />
-              </Col>
-              <Col lg="2">
-                <ImageBox
-                  src={this.getImageUrl("mobile-forget.png")}
-                  alt="Reset password for mobile"
-                  className="img-fluid"
-                />
-              </Col>
-            </Row>
           </Row>
           <Row className="justify-content-center">
             <Col lg="8">
@@ -308,16 +309,16 @@ export default class HackerAppsPage extends React.Component<
                 media. They will also be able to view the application status
                 here.
               </p>
+              <Row className="justify-content-center">
+                <Col lg="12">
+                  <ImageBox
+                    src={this.getImageUrl("submitted.png")}
+                    alt="View application status and get your comic story"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
             </Col>
-            <Row className="justify-content-center">
-              <Col lg="8">
-                <ImageBox
-                  src={this.getImageUrl("submitted.png")}
-                  alt="View application status and get your comic story"
-                  className="img-fluid"
-                />
-              </Col>
-            </Row>
           </Row>
           <Row className="justify-content-center">
             <Col lg="8">
