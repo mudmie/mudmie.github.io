@@ -52,11 +52,11 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               </div>
               <p className={styles.meImageCaption}>
                 Mudmie in “OFF-SYDE” crewneck sweater, a cult favorite among
-                SYDE 2020 people designed by her classmates Shan &amp;
-                Shreya. <span> — ps. SYDE = Systems Design Engineering</span>
+                SYDE 2020 people designed by her classmates Shan &amp; Shreya.{" "}
+                <span> — ps. SYDE = Systems Design Engineering</span>
               </p>
             </Col>
-            <Col lg="6" className={`offset-1 ${styles.infoCol}`}>
+            <Col xs="10" lg="6" className={`offset-lg-1 ${styles.infoCol}`}>
               <h3>IN SHORT</h3>
               <p>
                 I'm a product designer who graduated from{" "}
@@ -69,19 +69,21 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                 at the University of Waterloo in 2020.{" "}
               </p>
               <p>
-                I'm currently working at {" "}
+                I'm currently working at{" "}
                 <OutboundLink href="https://www.jitta.com/" target="_blank">
                   Jitta Wealth
-                </OutboundLink> {""}
-                to make investment become easier and more accessible in Thailand. Previously, I designed for {" "}
+                </OutboundLink>{" "}
+                {""}
+                to make investment become easier and more accessible in
+                Thailand. Previously, I designed for{" "}
                 <OutboundLink href="https://hackthenorth.com/" target="_blank">
                   Hack the North
                 </OutboundLink>{" "}
                 and interned at six companies, including{" "}
                 <OutboundLink href="https://www.plangrid.com/" target="_blank">
-                PlanGrid/Autodesk 
+                  PlanGrid/Autodesk
                 </OutboundLink>{" "}
-                in San Francisco. 
+                in San Francisco.
               </p>
               <p>
                 Whenever I get a nice break, I travel, find food spots, and
@@ -89,15 +91,18 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                 washing dishes.
               </p>
               <div className={styles.arrowNText}>
-                <img className={styles.arrow} src={this.getImageUrl("arrow-vertical.svg")} />
+                <img
+                  className={styles.arrow}
+                  src={this.getImageUrl("arrow-vertical.svg")}
+                />
                 <span>&nbsp;wanna get deeper?&nbsp;</span>
               </div>
               <h3 className={styles.sectionName}> DESIGN</h3>
               <p>
                 I chose Systems Design Engineering because I wanted to design my
                 own system — the system that I wasn’t too sure what it was. This
-                decision, though, gave me opportunities to explore human factors in design
-                and the design thinking process. I took a stab at
+                decision, though, gave me opportunities to explore human factors
+                in design and the design thinking process. I took a stab at
                 getting a product design internship and I’ve been sticking with
                 this career path since then.
               </p>
@@ -126,24 +131,28 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                 last night in San Francisco in August 2019.
               </p>
             </Col>
-            <Col lg="6" className="offset-1">
+            <Col xs="10" lg="6" className="offset-lg-1">
               <h3 className={styles.sectionName}>NOT - DESIGN</h3>
               <p>
-                I've been in love with traveling since I was a kid. Every trip broadens my perspective as I get to meet new people and learn about their cultures. 
-                I also treasure good food — that’s why I wander around the city and find food spots!
+                I've been in love with traveling since I was a kid. Every trip
+                broadens my perspective as I get to meet new people and learn
+                about their cultures. I also treasure good food — that’s why I
+                wander around the city and find food spots!
               </p>
               <p>
-                Now that I've graduated, there are tons of stuff that I'd like to do! 
-                Some of them are to explore the science behind cooking, improve my Korean, and learn the Japanese language. 
-                But going through the books (non-textbook, obviously) that I've accumulated in the past years gets the highest priority, for now.
+                Now that I've graduated, there are tons of stuff that I'd like
+                to do! Some of them are to explore the science behind cooking,
+                improve my Korean, and learn the Japanese language. But going
+                through the books (non-textbook, obviously) that I've
+                accumulated in the past years gets the highest priority, for
+                now.
               </p>
               <p>
-                YAY, You’ve made to the end! If you wanna
-                chat with me more, you can write to me at{" "}
+                YAY, You’ve made to the end! If you wanna chat with me more, you
+                can write to me at{" "}
                 <a href="mailto:hello@mudmie.com">hello@mudmie.com</a>. I’m
-                happy to chat just about anything whether it’s design,
-                career, collaboration, my school, food and travel, or even
-                skincare.
+                happy to chat just about anything whether it’s design, career,
+                collaboration, my school, food and travel, or even skincare.
               </p>
             </Col>
           </Row>
