@@ -29,7 +29,10 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
               <SocialMediaLinks />
             </div>
             <a href="#projects" className={styles.verticalArrow}>
-              <img src={this.getImageUrl("arrow-vertical.svg")} />
+              <img
+                src={this.getImageUrl("arrow-vertical.svg")}
+                className="img-fluid"
+              />
             </a>
           </Col>
           <Col md="6" lg="7" className={`text-right ${styles.colSocialMedia}`}>
