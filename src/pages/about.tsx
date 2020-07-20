@@ -73,7 +73,6 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                 <OutboundLink href="https://www.jitta.com/" target="_blank">
                   Jitta Wealth
                 </OutboundLink>{" "}
-                {""}
                 to make investment become easier and more accessible in
                 Thailand. Previously, I designed for{" "}
                 <OutboundLink href="https://hackthenorth.com/" target="_blank">
