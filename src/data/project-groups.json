@@ -27,6 +27,6 @@
     "name": "Misc",
     "title": "Miscellaneous",
     "description": "A collection of things I did to practice my design skills.",
-    "isEnabled": true
+    "isEnabled": false
   }
 ]

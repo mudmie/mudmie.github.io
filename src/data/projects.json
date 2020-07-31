@@ -98,25 +98,5 @@
     "imageFolder": "daily-ui",
     "isProtected": false,
     "isEnabled": true
-  },
-  {
-    "name": "VRulez",
-    "company": "Personal Project",
-    "term": "Winter 2018",
-    "description": "Website design and development for a virtual reality arcade business in Toronto. Built with React, Gatsby, and Bootstrap to support all screen sizes.",
-    "url": "/projects/vrulez/",
-    "imageFolder": "vrulez",
-    "isProtected": false,
-    "isEnabled": false
-  },
-  {
-    "name": "Escape Room Website",
-    "company": "Roundabout Canada",
-    "term": "Winter 2016",
-    "description": "A responsive commercial website for an escape room business in Toronto.",
-    "url": "/projects/roundabout-canada/",
-    "imageFolder": "roundabout-canada",
-    "isProtected": false,
-    "isEnabled": false
   }
 ]
