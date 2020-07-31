@@ -15,12 +15,13 @@ export class AboutTitle extends React.Component {
         </h2>
         <p className={styles.aboutPara}>
           Product Designer at{" "}
-          <OutboundLink href="https://www.jitta.com/" target="_blank">
+          <OutboundLink href="https://www.jitta.com/en" target="_blank">
             Jitta Wealth
-          </OutboundLink>,
-          <br/>
-          previously at {" "} 
-          <OutboundLink href="https://www.hackthenorth.com" target="_blank">
+          </OutboundLink>
+          ,
+          <br />
+          previously at{" "}
+          <OutboundLink href="https://hackthenorth.com" target="_blank">
             Hack the North
           </OutboundLink>{" "}
           &amp;{" "}
