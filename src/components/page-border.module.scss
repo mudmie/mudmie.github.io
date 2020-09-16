@@ -3,56 +3,60 @@
 @mixin border-base($edge) {
   position: fixed;
   z-index: 2000;
-  border-#{$edge}-width: 20px;
   border-#{$edge}-style: solid;
+  border-#{$edge}-width: 12px;
+  @media (min-width: 576px) {
+    border-#{$edge}-width: 24px;
+  }
+}
+
+@mixin border-width($edge, $width) {
 }
 
 html {
-  @media (min-width: 576px) {
-    :global(.theme-regular) {
-      .top-border,
-      .right-border,
-      .bottom-border,
-      .left-border {
-        border-color: $baby-blue-color;
-      }
-    }
-
-    :global(.theme-dark) {
-      .top-border,
-      .right-border,
-      .bottom-border,
-      .left-border {
-        border-color: $lemon-color;
-      }
-    }
-
-    .top-border {
-      @include border-base(top);
-      left: 0;
-      right: 0;
-      top: 0;
-    }
-
-    .right-border {
-      @include border-base(right);
-      bottom: 0;
-      right: 0;
-      top: 0;
-    }
-
-    .bottom-border {
-      @include border-base(bottom);
-      bottom: 0;
-      right: 0;
-      left: 0;
-    }
-
+  :global(.theme-regular) {
+    .top-border,
+    .right-border,
+    .bottom-border,
     .left-border {
-      @include border-base(left);
-      bottom: 0;
-      left: 0;
-      top: 0;
+      border-color: $baby-blue-color;
     }
+  }
+
+  :global(.theme-dark) {
+    .top-border,
+    .right-border,
+    .bottom-border,
+    .left-border {
+      border-color: $lemon-color;
+    }
+  }
+
+  .top-border {
+    @include border-base(top);
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+
+  .right-border {
+    @include border-base(right);
+    bottom: 0;
+    right: 0;
+    top: 0;
+  }
+
+  .bottom-border {
+    @include border-base(bottom);
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .left-border {
+    @include border-base(left);
+    bottom: 0;
+    left: 0;
+    top: 0;
   }
 }

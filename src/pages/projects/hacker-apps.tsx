@@ -16,6 +16,12 @@ export default class HackerAppsPage extends React.Component<
       <ProjectLayout
         allProjects={this.props.data.allProjects.edges.map(e => e.node)}
         currentProject={this.props.data.project.edges[0].node}
+        currentProjectGroup={
+          this.props.data.allProjectGroups.edges.find(
+            pg =>
+              pg.node.name == this.props.data.project.edges[0].node.projectGroup
+          ).node
+        }
         mainImage={this.props.data.mainImage.childImageSharp.fluid}
       >
         <Container>
@@ -240,23 +246,24 @@ export default class HackerAppsPage extends React.Component<
                 In a case that the users forget their password, they will have
                 an opportunity to reset it here.
               </p>
+
+              <Row className="justify-content-center">
+                <Col lg="4">
+                  <ImageBox
+                    src={this.getImageUrl("web-forget.png")}
+                    alt="Reset password for desktop"
+                    className="img-fluid"
+                  />
+                </Col>
+                <Col lg="2">
+                  <ImageBox
+                    src={this.getImageUrl("mobile-forget.png")}
+                    alt="Reset password for mobile"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
             </Col>
-            <Row className="justify-content-center">
-              <Col lg="4">
-                <ImageBox
-                  src={this.getImageUrl("web-forget.png")}
-                  alt="Reset password for desktop"
-                  className="img-fluid"
-                />
-              </Col>
-              <Col lg="2">
-                <ImageBox
-                  src={this.getImageUrl("mobile-forget.png")}
-                  alt="Reset password for mobile"
-                  className="img-fluid"
-                />
-              </Col>
-            </Row>
           </Row>
           <Row className="justify-content-center">
             <Col lg="8">
@@ -302,16 +309,16 @@ export default class HackerAppsPage extends React.Component<
                 media. They will also be able to view the application status
                 here.
               </p>
+              <Row className="justify-content-center">
+                <Col lg="12">
+                  <ImageBox
+                    src={this.getImageUrl("submitted.png")}
+                    alt="View application status and get your comic story"
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
             </Col>
-            <Row className="justify-content-center">
-              <Col lg="8">
-                <ImageBox
-                  src={this.getImageUrl("submitted.png")}
-                  alt="View application status and get your comic story"
-                  className="img-fluid"
-                />
-              </Col>
-            </Row>
           </Row>
           <Row className="justify-content-center">
             <Col lg="8">
@@ -341,6 +348,9 @@ export const pageQuery = graphql`
   query HackerAppsQuery($path: String!) {
     allProjects: allProjectsJson {
       ...ProjectFields
+    }
+    allProjectGroups: allProjectGroupsJson {
+      ...ProjectGroupFields
     }
     project: allProjectsJson(filter: { url: { eq: $path } }) {
       ...ProjectFields

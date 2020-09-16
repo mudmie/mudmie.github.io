@@ -3,10 +3,12 @@ import * as styles from "./project-header.module.scss";
 import { Col, Container, Row } from "reactstrap";
 import { Project } from "../models/project";
 import { ProjectNav } from "./project-nav";
+import { ProjectGroup } from "../models/project-group";
 
 export interface ProjectHeaderProps {
   allProjects: Project[];
   currentProject: Project;
+  currentProjectGroup: ProjectGroup;
 }
 export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
   public render() {
@@ -18,12 +20,8 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
         />
         <Row className="justify-content-center mt-4">
           <Col lg="8">
+            <h4>{this.props.currentProjectGroup.title}</h4>
             <h1>{this.props.currentProject.name}</h1>
-            <h4 className={styles.companyTerm}>
-              {this.props.currentProject.company}
-              {" / "}
-              {this.props.currentProject.term}
-            </h4>
           </Col>
         </Row>
       </Container>

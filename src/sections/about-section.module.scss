@@ -1,9 +1,40 @@
 @import "../styles/_colors.scss";
 @import "../styles/_fonts.scss";
 
-.col-about {
-}
-.about-para {
-  text-align: justify;
+.about {
 }
 
+.row-about {
+  min-height: 70vh;
+}
+
+.col-about {
+}
+
+.me-caption {
+  text-align: right;
+}
+
+.col-social-media {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: none !important;
+  @media (min-width: 768px) {
+    display: flex !important;
+  }
+}
+.vertical-arrow {
+  position: absolute;
+
+  img {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 80px;
+    height: 15vh;
+  }
+}
+.horizontal-line {
+  flex-grow: 1;
+  margin-bottom: 10px;
+  border-bottom: 2px solid $stone-color;
+}

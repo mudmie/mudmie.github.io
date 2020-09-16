@@ -1,0 +1,35 @@
+@import "../styles/_colors.scss";
+@import "../styles/_fonts.scss";
+@import "../styles/_layout.scss";
+
+html {
+  .home-page {
+    background: url(../../static/images/ham.svg),
+      url(../../static/images/potato.svg);
+
+    /* Small Screen */
+    background-position: top -200px right -100px, top 80vh right 0;
+    background-repeat: no-repeat;
+    background-size: 400px, 150px;
+
+    @media (min-width: 768px) {
+      //   /* Medium Screen */
+      //   background-position: top -15vh right -25vw, top 60vh right 0;
+      //   background-repeat: no-repeat;
+      //   background-size: 50%, 20%;
+      // }
+      // @media (min-width: 992px) {
+      /* Large Screen */
+      background-position: top -200px right -150px, top 80vh right -50px;
+      background-repeat: no-repeat;
+      background-size: 600px, 300px;
+    }
+  }
+
+  .main {
+    margin: 12px;
+    @media (min-width: 768px) {
+      margin: 24px;
+    }
+  }
+}

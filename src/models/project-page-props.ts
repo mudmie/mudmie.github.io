@@ -1,4 +1,5 @@
 import { Project } from "./project";
+import { ProjectGroup } from "./project-group";
 import { ImageSharp } from "./image-sharp";
 
 export interface ProjectPageProps {
@@ -6,6 +7,11 @@ export interface ProjectPageProps {
     allProjects: {
       edges: {
         node: Project;
+      }[];
+    };
+    allProjectGroups: {
+      edges: {
+        node: ProjectGroup;
       }[];
     };
     project: {

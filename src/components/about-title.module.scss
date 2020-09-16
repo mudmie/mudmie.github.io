@@ -7,7 +7,7 @@ h1.about-heading {
   font-family: $heading-font;
   font-size: 24px;
   @media (min-width: 992px) {
-    font-size: 36px;
+    font-size: 28px;
   }
   @media (min-width: 1200) {
     font-size: 40px;
@@ -45,4 +45,8 @@ h2.about-heading {
   a.linked-in:focus {
     color: #0077b5;
   }
+}
+
+.about-para {
+  text-align: right;
 }
