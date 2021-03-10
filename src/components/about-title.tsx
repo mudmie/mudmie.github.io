@@ -10,24 +10,22 @@ export class AboutTitle extends React.Component {
       <>
         <h1 className={styles.aboutHeading}>Mudmie Chuthamsatid</h1>
         <h2 className={styles.aboutHeading}>
-          crafting product experiences that
-          <br /> bring joy and simplify lives
+          product designer.
         </h2>
         <p className={styles.aboutPara}>
-          Product Designer at{" "}
+        Currently looking for a full-time product design role.<br/>
+        Previously at{" "}
           <OutboundLink href="https://www.jitta.com/en" target="_blank">
             Jitta Wealth
           </OutboundLink>
-          ,
-          <br />
-          previously at{" "}
+          ,{" "}
           <OutboundLink href="https://hackthenorth.com" target="_blank">
             Hack the North
-          </OutboundLink>{" "}
-          &amp;{" "}
+          </OutboundLink>
+          ,{" "}
           <OutboundLink href="https://www.plangrid.com" target="_blank">
             PlanGrid/Autodesk
-          </OutboundLink>{" "}
+          </OutboundLink>.
         </p>
         {/* <div className={styles.socialMedia}>
           <OutboundLink
