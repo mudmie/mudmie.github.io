@@ -1,6 +1,7 @@
 import { Link, withPrefix } from "gatsby";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import * as React from "react";
+import { FaBars, FaHamburger } from "react-icons/fa";
 import { Collapse, Nav, NavItem, Navbar, NavbarToggler, NavbarBrand } from "reactstrap";
 import * as styles from "./header.module.scss";
 
@@ -70,7 +71,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
               chuthamsatid
             </div>
           </Link>
-          <NavbarToggler onClick={this.toggle} />
+          <NavbarToggler className={styles.navbarToggler} onClick={this.toggle}><FaBars/> menu</NavbarToggler>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
