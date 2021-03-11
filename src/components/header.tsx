@@ -1,7 +1,7 @@
 import { Link, withPrefix } from "gatsby";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import * as React from "react";
-import { Collapse, Nav, NavItem, Navbar, NavbarToggler } from "reactstrap";
+import { Collapse, Nav, NavItem, Navbar, NavbarToggler, NavbarBrand } from "reactstrap";
 import * as styles from "./header.module.scss";
 
 export interface HeaderProps {
@@ -56,9 +56,23 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
           expand="md"
           fixed="top"
         >
+                    <Link
+            to="/"
+            className="navbar-brand d-none d-md-block"
+            onClick={() => {
+              this.collapseNav();
+            }}
+          >
+            <div className={styles.brandCircle} />
+            <div className={styles.brandName}>
+              mudmie
+              <br />
+              chuthamsatid
+            </div>
+          </Link>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav navbar>
+            <Nav className="ml-auto" navbar>
               <NavItem>
                 <Link
                   className={`nav-link ${styles.navLink}`}
