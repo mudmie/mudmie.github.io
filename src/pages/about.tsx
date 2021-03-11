@@ -70,12 +70,18 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               </p>
               <p>
                 I'm currently working at{" "}
-                <OutboundLink href="https://www.jittawealth.com" target="_blank">
+                <OutboundLink
+                  href="https://www.jittawealth.com"
+                  target="_blank"
+                >
                   Jitta Wealth
                 </OutboundLink>{" "}
                 to make investment become easier and more accessible in
                 Thailand. Previously, I designed for{" "}
-                <OutboundLink href="https://hackthenorth.com/" target="_blank">
+                <OutboundLink
+                  href="https://2019.hackthenorth.com/"
+                  target="_blank"
+                >
                   Hack the North
                 </OutboundLink>{" "}
                 and interned at six companies, including{" "}
