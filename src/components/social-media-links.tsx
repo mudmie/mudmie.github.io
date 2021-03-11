@@ -6,21 +6,21 @@ export class SocialMediaLinks extends React.Component {
   public render() {
     return (
       <span className={styles.socialMedia}>
-       <OutboundLink
-          className={styles.linkedIn}
-          href="https://www.linkedin.com/in/mudmie"
-          target="_blank"
-        >
-          LinkedIn
-        </OutboundLink>
-        {" • "}
         <OutboundLink
           className={styles.instagram}
           href="https://www.instagram.com/mudmiemee"
           target="_blank"
         >
-          Instagram
-        </OutboundLink>    
+          instagram
+        </OutboundLink>
+        {" • "}
+        <OutboundLink
+          className={styles.linkedIn}
+          href="https://www.linkedin.com/in/mudmie"
+          target="_blank"
+        >
+          linkedin
+        </OutboundLink>
       </span>
     );
   }
