@@ -20,7 +20,8 @@ html {
       color: $paprika-color;
       &:focus,
       &:hover {
-        color: $baby-blue-color;
+        font-weight: 700;
+        color: $paprika-color;
       }
     }
   }
