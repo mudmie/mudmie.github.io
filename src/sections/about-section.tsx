@@ -25,7 +25,8 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
         >
           <Col sm="12" md="12" lg="5" className={`${styles.colAbout}`}>
             <AboutTitle />
-            <div className="text-right d-s-none d-md-none">
+            <div className="text-right d-lg-none">
+              <div className={styles.longHorizontalLine} />
               <SocialMediaLinks />
             </div>
           </Col>

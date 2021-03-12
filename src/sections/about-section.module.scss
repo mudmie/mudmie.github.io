@@ -28,3 +28,10 @@
   margin-bottom: 10px;
   border-bottom: 1.5px solid $stone-color;
 }
+
+.long-horizontal-line {
+  height: 2px;
+  width: 60px;
+  border-bottom: 1.5px solid $stone-color;
+  display: inline-block;
+}
