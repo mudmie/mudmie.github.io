@@ -25,7 +25,7 @@ export class SocialMediaLinks extends React.Component {
         </span>
         <br />
         <span className={styles.subtitle}>
-          systems design engineering / university of waterloo / class of 2020
+          systems design engineering / <br/> university of waterloo / class of 2020
         </span>
       </div>
     );

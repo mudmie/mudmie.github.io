@@ -49,4 +49,12 @@ h2.about-heading {
 
 .about-para {
   text-align: right;
+  font-size: 14px;
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.bold{
+  font-weight: 700;
 }
