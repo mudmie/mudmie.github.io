@@ -8,7 +8,7 @@ export class AboutTitle extends React.Component {
   public render() {
     return (
       <>
-        <h1 className={styles.aboutHeading}>Mudmie Chuthamsatid</h1>
+        <h1 className={styles.aboutHeading}>Mudmie&nbsp;Chuthamsatid</h1>
         <h2 className={styles.aboutHeading}>
           product designer.
         </h2>
