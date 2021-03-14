@@ -51,10 +51,8 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                 />
               </div>
               <p className={styles.meImageCaption}>
-                Mudmie in “OFF-SYDE” crewneck sweater, a cult favorite among
-                SYDE 2020 people designed by her classmates Shan &amp; Shreya.{" "}
-                <span> — ps. SYDE = Systems Design Engineering</span>
-              </p>
+              Mudmie, taken in 2021. Sushi, anything matcha, Oatly and 
+              upcoming travel plans are some of many things that could make her smile.</p>
             </Col>
             <Col xs="10" lg="6" className={`offset-lg-1 ${styles.infoCol}`}>
               <h3>IN SHORT</h3>
