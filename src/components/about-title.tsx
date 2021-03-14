@@ -13,7 +13,8 @@ export class AboutTitle extends React.Component {
           product designer.
         </h2>
         <p className={styles.aboutPara}>
-        Currently looking for a full-time product design role.<br/>
+        <span className={styles.bold}>Currently looking for a full-time product design role. </span>
+        <br/>
         Previously at{" "}
           <OutboundLink href="https://www.jitta.com/en" target="_blank">
             Jitta Wealth
