@@ -23,17 +23,17 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
         <Row
           className={`justify-content-between align-items-center ${styles.rowAbout}`}
         >
-          <Col sm="12" md="12" lg="5" className={`${styles.colAbout}`}>
+          <div className={`${styles.colAbout}`}>
             <AboutTitle />
             <div className="text-right d-lg-none">
               <div className={styles.longHorizontalLine} />
               <SocialMediaLinks />
             </div>
-          </Col>
-          <Col lg="7" className={`text-right ${styles.colSocialMedia}`}>
+          </div>
+          <div className={`text-right ${styles.colSocialMedia}`}>
             <div className={styles.horizontalLine} />
             <SocialMediaLinks />
-          </Col>
+          </div>
         </Row>
       </Container>
     );
