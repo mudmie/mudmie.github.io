@@ -56,7 +56,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
     let togglerButtonText;
     if (this.state.isOpen) {
       togglerButtonText = (
-        <span>
+        <span className={styles.navToggleClose}>
           <FaTimes />
         </span>
       );

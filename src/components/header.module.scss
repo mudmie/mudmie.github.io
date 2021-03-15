@@ -77,4 +77,15 @@ html {
       color: $paprika-color;
     }
   }
+
+  :global(.collapse.show ul),
+  :global(.collapsing ul) {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .nav-toggle-close svg path {
+    color: $stone-color !important;
+  }
 }
