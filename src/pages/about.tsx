@@ -57,41 +57,14 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
             <Col xs="10" lg="6" className={`offset-lg-1 ${styles.infoCol}`}>
               <h3>IN SHORT</h3>
               <p>
-                I'm a product designer who graduated from{" "}
-                <OutboundLink
-                  href="https://uwaterloo.ca/systems-design-engineering/"
-                  target="_blank"
-                >
-                  Systems Design Engineering
-                </OutboundLink>{" "}
-                at the University of Waterloo in 2020.{" "}
+                I'm a product designer with 2 years of experience designing for both consumer and enterprise products.
+              </p>
+
+              <p>
+                I enjoy solving problems and exploring ways to design product experiences that will make lives easier.
               </p>
               <p>
-                I'm currently working at{" "}
-                <OutboundLink
-                  href="https://www.jittawealth.com"
-                  target="_blank"
-                >
-                  Jitta Wealth
-                </OutboundLink>{" "}
-                to make investment become easier and more accessible in
-                Thailand. Previously, I designed for{" "}
-                <OutboundLink
-                  href="https://2019.hackthenorth.com/"
-                  target="_blank"
-                >
-                  Hack the North
-                </OutboundLink>{" "}
-                and interned at six companies, including{" "}
-                <OutboundLink href="https://www.plangrid.com/" target="_blank">
-                  PlanGrid/Autodesk
-                </OutboundLink>{" "}
-                in San Francisco.
-              </p>
-              <p>
-                Whenever I get a nice break, I travel, find food spots, and
-                wander around the city. I also like cooking and baking, minus
-                washing dishes.
+                When I get a nice break, I travel, find food spots, and wander around the city.
               </p>
               <div className={styles.arrowNText}>
                 <img
@@ -102,18 +75,11 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               </div>
               <h3 className={styles.sectionName}> DESIGN</h3>
               <p>
-                I chose Systems Design Engineering because I wanted to design my
-                own system — the system that I wasn’t too sure what it was. This
-                decision, though, gave me opportunities to explore human factors
-                in design and the design thinking process. I took a stab at
-                getting a product design internship and I’ve been sticking with
-                this career path since then.
+                Through the University of Waterloo's co-op program, I spent a total of 16 months interning as a product designer at companies in various industries, including retailing, manufacturing, and construction. 
+                In June 2020, I started my first full-time product design position at Jitta Wealth, a fintech company in Bangkok, Thailand.
               </p>
               <p>
-                Five years have gone by, and I finally figure out that I want to
-                integrate my product design experience, engineering background,
-                and interests in business to design the system that brings joy
-                and makes people's lives easier.
+               To me, product design is problem-solving. I like to work with people to gather information, understand the users and their problems. After analyzing user needs and product requirements, I design potential solutions, get feedback, and finalize the solution. I also apply data-driven design practice to measure the impact of my designs and come up with improvements.
               </p>
             </Col>
           </Row>
@@ -139,23 +105,18 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               <p>
                 I've been in love with traveling since I was a kid. Every trip
                 broadens my perspective as I get to meet new people and learn
-                about their cultures. I also treasure good food — that’s why I
+                about their cultures. <br/> I also treasure good food — that’s why I
                 wander around the city and find food spots!
               </p>
               <p>
-                Now that I've graduated, there are tons of stuff that I'd like
-                to do! Some of them are to explore the science behind cooking,
-                improve my Korean, and learn the Japanese language. But going
-                through the books (non-textbook, obviously) that I've
-                accumulated in the past years gets the highest priority, for
-                now.
+                Currently, I'm working on my Korean language skills and going through
+                piles of books I've accumulated in the past years. 
               </p>
               <p>
-                YAY, You’ve made to the end! If you wanna chat with me more, you
+                YAY, You’ve made it to the end! If you wanna chat with me more, you
                 can write to me at{" "}
-                <a href="mailto:hello@mudmie.com">hello@mudmie.com</a>. I’m
-                happy to chat just about anything whether it’s design, career,
-                collaboration, my school, food and travel, or even skincare.
+                <a href="mailto:hello@mudmie.com">hello@mudmie.com</a>.       
+
               </p>
             </Col>
           </Row>

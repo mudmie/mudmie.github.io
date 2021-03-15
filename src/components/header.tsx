@@ -133,7 +133,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
               </NavItem>
               <NavItem>
                 <OutboundLink
-                  href={withPrefix("/mudmie-resume2020.pdf")}
+                  href={withPrefix("/mudmie-resume2021.pdf")}
                   className={`nav-link ${styles.navLink}`}
                   target="_blank"
                   onClick={() => {
