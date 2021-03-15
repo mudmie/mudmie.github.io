@@ -7,7 +7,6 @@ html {
     margin-bottom: 12px;
     margin-left: 12px;
     transition: background-color 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    background-color: #f8f9fa !important;
 
     @media (min-width: 576px) {
       margin-top: 6px;
@@ -21,6 +20,11 @@ html {
     &.scroll {
       background-color: #f8f9fa !important;
     }
+  }
+
+  .nav-open {
+    background-color: #f8f9fa !important;
+    transition: none;
   }
 
   :global(.navbar-collapse) {
