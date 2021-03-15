@@ -9,6 +9,10 @@
 }
 
 .col-about {
+  flex-grow: 1;
+  @media (min-width: 992px) {
+    flex-grow: inherit;
+  }
 }
 
 .me-caption {
@@ -36,4 +40,6 @@
   border-bottom: 1.5px solid $stone-color;
   display: inline-block;
   margin-bottom: 12px;
+  // margin-left: 5em;
+  // margin-right: 5em;
 }
