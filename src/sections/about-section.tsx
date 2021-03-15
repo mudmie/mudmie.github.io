@@ -32,7 +32,9 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
           </div>
           <div className={`text-right ${styles.colSocialMedia}`}>
             <div className={styles.horizontalLine} />
-            <SocialMediaLinks />
+            <div className={styles.colAboutSocial}>
+              <SocialMediaLinks />
+            </div>
           </div>
         </Row>
       </Container>
