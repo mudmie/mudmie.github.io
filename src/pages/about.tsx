@@ -51,47 +51,20 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                 />
               </div>
               <p className={styles.meImageCaption}>
-              Mudmie, taken in 2021. Sushi, anything matcha, Oatly and 
+                Mudmie, taken in 2021. Sushi, anything matcha, Oatly and
               upcoming travel plans are some of many things that could make her smile.</p>
             </Col>
             <Col xs="10" lg="6" className={`offset-lg-1 ${styles.infoCol}`}>
               <h3>IN SHORT</h3>
               <p>
-                I'm a product designer who graduated from{" "}
-                <OutboundLink
-                  href="https://uwaterloo.ca/systems-design-engineering/"
-                  target="_blank"
-                >
-                  Systems Design Engineering
-                </OutboundLink>{" "}
-                at the University of Waterloo in 2020.{" "}
+              I'm a product designer with 2 years of experience designing for both consumer and enterprise products.
+              </p>
+              
+              <p>
+              I enjoy solving problems and exploring ways to design product experiences that will make lives easier.
               </p>
               <p>
-                I'm currently working at{" "}
-                <OutboundLink
-                  href="https://www.jittawealth.com"
-                  target="_blank"
-                >
-                  Jitta Wealth
-                </OutboundLink>{" "}
-                to make investment become easier and more accessible in
-                Thailand. Previously, I designed for{" "}
-                <OutboundLink
-                  href="https://2019.hackthenorth.com/"
-                  target="_blank"
-                >
-                  Hack the North
-                </OutboundLink>{" "}
-                and interned at six companies, including{" "}
-                <OutboundLink href="https://www.plangrid.com/" target="_blank">
-                  PlanGrid/Autodesk
-                </OutboundLink>{" "}
-                in San Francisco.
-              </p>
-              <p>
-                Whenever I get a nice break, I travel, find food spots, and
-                wander around the city. I also like cooking and baking, minus
-                washing dishes.
+              When I get a nice break, I travel, find food spots, and wander around the city.
               </p>
               <div className={styles.arrowNText}>
                 <img
