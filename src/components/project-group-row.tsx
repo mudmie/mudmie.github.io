@@ -26,7 +26,7 @@ export class ProjectGroupRow extends React.Component<ProjectGroupProps, {}> {
   public render() {
     return (
       <Row>
-        <Col lg="3" sm="6" xs="12">
+        <Col lg="3" sm="6" md="12" xs="12">
           <div className={styles.projectGroupIndex}>
             {this.props.position.toString().padStart(2, "0")}
           </div>

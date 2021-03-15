@@ -76,6 +76,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               <h3 className={styles.sectionName}> DESIGN</h3>
               <p>
                 Through the University of Waterloo's co-op program, I spent a total of 16 months interning as a product designer at companies in various industries, including retailing, manufacturing, and construction. 
+                <br/>
                 In June 2020, I started my first full-time product design position at Jitta Wealth, a fintech company in Bangkok, Thailand.
               </p>
               <p>
