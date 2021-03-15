@@ -1,8 +1,15 @@
 import { Link, withPrefix } from "gatsby";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import * as React from "react";
-import { FaBars, FaHamburger } from "react-icons/fa";
-import { Collapse, Nav, NavItem, Navbar, NavbarToggler, NavbarBrand } from "reactstrap";
+import { FaBars, FaHamburger, FaTimes } from "react-icons/fa";
+import {
+  Collapse,
+  Nav,
+  NavItem,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+} from "reactstrap";
 import * as styles from "./header.module.scss";
 
 export interface HeaderProps {
@@ -46,20 +53,34 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
   }
 
   public render() {
+    let togglerButtonText;
+    if (this.state.isOpen) {
+      togglerButtonText = (
+        <span>
+          <FaTimes />
+        </span>
+      );
+    } else {
+      togglerButtonText = (
+        <span>
+          <FaBars /> menu
+        </span>
+      );
+    }
     return (
       <header>
         <Navbar
           className={`${styles.navbar} ${
             !this.state.isTop ? styles.scroll : ""
-          }`}
+          } ${this.state.isOpen ? styles.navOpen : ""}`}
           light={!this.props.isDarkMode}
           dark={this.props.isDarkMode}
           expand="md"
           fixed="top"
         >
-                    <Link
+          <Link
             to="/"
-            className="navbar-brand d-none d-md-block"
+            className="navbar-brand"
             onClick={() => {
               this.collapseNav();
             }}
@@ -71,7 +92,10 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
               chuthamsatid
             </div>
           </Link>
-          <NavbarToggler className={styles.navbarToggler} onClick={this.toggle}><FaBars/> menu</NavbarToggler>
+          <NavbarToggler className={styles.navbarToggler} onClick={this.toggle}>
+            {togglerButtonText}
+          </NavbarToggler>
+
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>

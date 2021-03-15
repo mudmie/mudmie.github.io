@@ -23,6 +23,13 @@ html {
     }
   }
 
+  :global(.navbar-collapse) {
+    height: 100vh;
+    @media screen and (min-width: 768px) {
+      height: auto;
+    }
+  }
+
   :global(.navbar-dark).scroll {
     background-color: #252525 !important;
   }
