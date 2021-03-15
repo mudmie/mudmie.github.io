@@ -80,8 +80,9 @@ html {
     border: none;
     padding-left: 4px;
     color: $paprika-color !important;
-    font-family: $heading-font;
+    font-family: $body-font;
     font-size: 16px;
+    line-height: 2em;
     svg path {
       color: $paprika-color;
     }
