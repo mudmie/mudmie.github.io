@@ -41,7 +41,7 @@ export class ProjectGroupRow extends React.Component<ProjectGroupProps, {}> {
           <Row>
             {this.props.projects.map(proj => (
               <Col
-                lg="4"
+                lg="5"
                 sm="6"
                 xs="12"
                 className={`${styles.projectCell} ${

@@ -1,5 +1,27 @@
 [
   {
+    "name": "Thematic Investment",
+    "projectGroup": "JittaWealth",
+    "company": "Jitta Wealth",
+    "term": "Coming Soon",
+    "description": "",
+    "url": "/projects/thematic-investment/",
+    "imageFolder": "thematic",
+    "isProtected": false,
+    "isEnabled": true
+  },
+  {
+    "name": "Annual Risk Profile Assessment",
+    "projectGroup": "JittaWealth",
+    "company": "Jitta Wealth",
+    "term": "Coming Soon",
+    "description": "",
+    "url": "/projects/annual-review/",
+    "imageFolder": "annual-review",
+    "isProtected": false,
+    "isEnabled": true
+  },
+  {
     "name": "Hacker Application Portal",
     "projectGroup": "HackTheNorth",
     "company": "Hack The North",

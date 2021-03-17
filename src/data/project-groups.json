@@ -1,5 +1,11 @@
 [
   {
+    "name": "JittaWealth",
+    "title": "Jitta Wealth",
+    "description": "Designing wealth management mobile application for a fintech company, making investment become easier and more accessible in Thailand.",
+    "isEnabled": true
+  },
+  {
     "name": "HackTheNorth",
     "title": "Hack The North",
     "description": "Designing website & applications for Canada’s biggest hackathon, connecting over 1,300 students around the world to collaboratively build innovative projects.",
