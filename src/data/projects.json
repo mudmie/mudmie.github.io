@@ -3,9 +3,9 @@
     "name": "Thematic Investment",
     "projectGroup": "JittaWealth",
     "company": "Jitta Wealth",
-    "term": "Coming Soon",
-    "description": "",
-    "url": "/projects/thematic-investment/",
+    "term": "Fall 2020",
+    "description": "Designing user experience and mobile interface for an automated wealth management platform, allowing users to invest in sectors or industries of their interests.",
+    "url": "/projects/thematic/",
     "imageFolder": "thematic",
     "isProtected": false,
     "isEnabled": true
@@ -19,7 +19,7 @@
     "url": "/projects/annual-review/",
     "imageFolder": "annual-review",
     "isProtected": false,
-    "isEnabled": true
+    "isEnabled": false
   },
   {
     "name": "Hacker Application Portal",

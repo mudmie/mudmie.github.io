@@ -61,7 +61,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               </p>
 
               <p>
-                I enjoy solving problems and exploring ways to design product experiences that will make lives easier.
+                I enjoy solving problems and exploring ways to design product experiences that make people's lives easier.
               </p>
               <p>
                 When I get a nice break, I travel, find food spots, and wander around the city.
