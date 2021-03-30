@@ -197,8 +197,21 @@ export class ProtectedSection extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center mt-2">
-            <Col lg="8">
+            <Col xs="12" md="3" lg="2">
+              <Row>
+                <Col xs="4" md="12"><h3>Type</h3>{this.props.currentProject.type}</Col>
+                <Col xs="4" md="12"><h3>Platform</h3>{this.props.currentProject.platform.join(" ")}</Col>
+                <Col xs="4" md="12"><h3>Duration</h3>{this.props.currentProject.duration}</Col>
+              </Row>
+
+            </Col>
+            <Col xs="12" md="9" lg="6">
+              <h3>Overview</h3>
               <div>{this.props.currentProject.description}</div>
+              <h3>My Role</h3>
+              <div>{this.props.currentProject.myRole}</div>
+              <h3>Results</h3>
+              <div>{this.props.currentProject.results}</div>
             </Col>
           </Row>
           <Row className="justify-content-center mt-3">

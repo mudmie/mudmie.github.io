@@ -9,6 +9,11 @@ export const projectFields = graphql`
         company
         term
         description
+        type
+        platform
+        duration
+        myRole
+        results
         url
         imageFolder
         isProtected
