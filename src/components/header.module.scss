@@ -102,4 +102,11 @@ html {
   .nav-toggle-close svg path {
     color: $stone-color !important;
   }
+
+  .back-to-top {
+    display: none;
+  }
+  .scroll .back-to-top {
+    display: block;
+  }
 }

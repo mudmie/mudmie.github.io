@@ -10,6 +10,7 @@ import {
   NavbarToggler,
   NavbarBrand,
 } from "reactstrap";
+import { BackToTop } from "./back-to-top";
 import * as styles from "./header.module.scss";
 
 export interface HeaderProps {
@@ -145,6 +146,9 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
               </NavItem>
             </Nav>
           </Collapse>
+          <div className={styles.backToTop}>
+            <BackToTop />
+          </div>
         </Navbar>
       </header>
     );
