@@ -27,4 +27,9 @@
 
 .text {
   margin-top: 5px;
+
+  .back-to-top:hover &,
+  .back-to-top:active & {
+    text-decoration: underline;
+  }
 }
