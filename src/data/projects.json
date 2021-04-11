@@ -199,6 +199,6 @@
     "url": "/projects/daily-ui/",
     "imageFolder": "daily-ui",
     "isProtected": false,
-    "isEnabled": true
+    "isEnabled": false
   }
 ]
