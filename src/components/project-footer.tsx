@@ -11,10 +11,10 @@ export class ProjectFooter extends React.Component<ProjectFooterProps, {}> {
   public render() {
     return (
       <Container>
-        <ProjectNav
+        {/* <ProjectNav
           projects={this.props.allProjects}
           currentProject={this.props.currentProject}
-        />
+        /> */}
       </Container>
     );
   }
