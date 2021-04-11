@@ -199,7 +199,7 @@ export class ProtectedSection extends React.Component<
           <Row className="justify-content-center mt-2">
             <Col xs="12" md="3" lg="2">
               <Row>
-                <Col xs="4" md="12"><h3>Type</h3>{this.props.currentProject.type}</Col>
+                <Col xs="4" md="12"><h3>Project Type</h3>{this.props.currentProject.type}</Col>
                 <Col xs="4" md="12"><h3>Platform</h3>{this.props.currentProject.platform.join(" ")}</Col>
                 <Col xs="4" md="12"><h3>Duration</h3>{this.props.currentProject.duration}</Col>
               </Row>
