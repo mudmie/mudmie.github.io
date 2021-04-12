@@ -1,3 +1,18 @@
 @import "../styles/_colors.scss";
 @import "../styles/_fonts.scss";
 
+.vertical-line-right {
+  @media (min-width: 768px) {
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-image: linear-gradient(
+        transparent,
+        transparent 25%,
+        $stone-color 30%,
+        $stone-color 70%,
+        transparent 75%,
+        transparent
+      )
+      1 100%;
+  }
+}
