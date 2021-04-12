@@ -90,6 +90,9 @@ html {
     svg path {
       color: $paprika-color;
     }
+    &:active, &:focus {
+      outline: none;
+    }
   }
 
   :global(.collapse.show ul),
@@ -100,7 +103,7 @@ html {
   }
 
   .nav-toggle-close svg path {
-    color: $stone-color !important;
+    color: $baby-blue-color !important;
   }
 
   .back-to-top {
