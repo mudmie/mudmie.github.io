@@ -7,10 +7,10 @@
     border-right-style: solid;
     border-image: linear-gradient(
         transparent,
-        transparent 25%,
-        $stone-color 30%,
-        $stone-color 70%,
-        transparent 75%,
+        transparent 25px,
+        $stone-color 25px,
+        $stone-color 100%,
+        transparent 100%,
         transparent
       )
       1 100%;
