@@ -126,12 +126,12 @@ export default class ThematicPage extends React.Component<
           <Row className="justify-content-center">
             <Col lg="8">
               <h3>Design Process</h3>
-              <h3>Situation of Concern</h3>
+              <h3 className={sharedStyles.sub}>Situation of Concern</h3>
               <p>
                 Global ETF makes investment become more accessible and increases Jitta Wealth's presence to the public. However, some potential customers hesitate to invest since there are similar alternatives offered by other financial institutes. To meet the business needs, a unique investment strategy that offers flexibility for users to customize their portfolios should be developed to attract this group of customers.
             </p>
 
-              <h3>Product Requirements &amp; Constraints</h3>
+              <h3 className={sharedStyles.sub}>Product Requirements &amp; Constraints</h3>
               <p>
                 To distinguish our product from the existing ones in the market, the team came up with Thematic Investment strategy. This strategy allows users to customize their own portfolio by choosing to invest in industries or sectors of their interests.
             </p>
@@ -168,7 +168,7 @@ export default class ThematicPage extends React.Component<
 
           <Row className="justify-content-center">
             <Col lg="8">
-              <h3>First Iteration</h3>
+              <h3 className={sharedStyles.sub}>First Iteration</h3>
               <p>
                 Due to technical constraints, I examined existing components and product flow and reused them as much as possible in this iteration.
             </p>
@@ -210,7 +210,7 @@ export default class ThematicPage extends React.Component<
 
           <Row className="justify-content-center">
             <Col lg="8">
-            <h3>Second Iteation</h3>
+            <h3 className={sharedStyles.sub}>Second Iteation</h3>
             <p>
             I simplified the UI while still provided the ability for the users to view the theme information. By tapping the theme, the users would be directed to the information page. If they selected the theme, a checkmark would appear in front of the row as an indicator. 
             </p>
@@ -228,7 +228,7 @@ export default class ThematicPage extends React.Component<
 
           <Row className="justify-content-center">
             <Col lg="8">
-            <h3>Thrid Iteration</h3>
+            <h3 className={sharedStyles.sub}>Thrid Iteration</h3>
             <p>
             When I walked through the design in the second iteration with the CEO, I got feedback that some users might want to select the themes right away without reading the information. In this iteration, I redesigned the UI that would allow users to select themes and view the information at the same time. 
             </p>
@@ -249,7 +249,7 @@ export default class ThematicPage extends React.Component<
 
           <Row className="justify-content-center">
             <Col lg="8">
-            <h3>Final Design</h3>
+            <h3 className={sharedStyles.sub}>Final Design</h3>
             <p>
             After exploring various components and patterns, I decided to combine the multi-select checkbox from iOS with the right chevron icon to signal possible interactions. 
             </p>
