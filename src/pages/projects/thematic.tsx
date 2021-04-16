@@ -262,6 +262,69 @@ export default class ThematicPage extends React.Component<
                   />
                 </Col>
               </Row>
+              <p>
+              In a scenario where users already selected 5 themes, the system must prevent them from selecting the 6 <sup>th</sup> one. I wanted to design an interface that would prevent them from performing the action rather than letting them select the checkbox and throwing an error at them. So, I considered multiple options when designing the UI and interaction for this scenario. 
+            </p>
+            <p>
+            For option 1, I used a grey color to make the rest of the checkboxes look disabled. The disabled state would serve as a visual cue to suggest the users that couldn't interact with the checkboxes. However, it was hard to visually distinguish the differences between the active and the disabled checkboxes, especially when they didn't appear on the same UI for the user to compare. 
+            </p>
+            <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("interaction-1.png")}
+                    alt=""
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
+            <p>
+            For option 2, I tried to make the checkboxes look more disabled by filling in their background with the grey color. After running a usability inspection, some participants still didn't notice the differences.  
+            </p>
+            <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("interaction-2.png")}
+                    alt=""
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
+            <p>
+           For option 3, I hid the checkboxes when the users reached the theme limit. Yet, this design could confuse the users and lead them to wonder why the checkboxes suddenly disappeared without knowing what was happening.                </p>
+            <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("interaction-3.png")}
+                    alt=""
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
+            <p >
+            The above options were unable to provide sufficient visual cues and explain the users about the scenario. I also shouldn't have expected the users to read the "select from 1-5 themes" instruction and automatically knew they couldn't pick an additional theme because they had reached the limit. Error preventation might be more appropriate for some tasks that could result in a severe consequence. For this scenario, providing feedback was more important to communicate to the users why their action was prohibitted. Threfore, I ended up keeping the checkboxes in an active state and display an alert box when necessary.             </p>
+            <Row className="justify-content-center">
+                <Col lg="11">
+                  <ImageBox
+                    src={this.getImageUrl("interaction-final.png")}
+                    alt=""
+                    className="img-fluid"
+                  />
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center">
+            <Col lg="8">
+            <h3> Looking into the Data</h3>
+            <p>
+              When working on this project, I had an assumption that the theme information page would be essential to users' investment decisions. To validate my assumption, I worked with a data scientist to look into the data and analyze user behavior. The data showed that most users tapped to read the theme information before submitting their final choices.            </p>
+           <p>
+           However, some users found the touching area of the checkbox to be narrow. There were times when they missed the checkbox and tapped to view the information page instead. So, I further looked into the data to ensure these incidents didn't affect the previous result. 
+           </p>
+           <p>
+           I found that the users spent an average of 49 seconds on the information page. The data also showed a continuous behavior of viewing different theme information before the submission event occurred. These findings suggested the users intentionally navigated to the information page to learn about each theme before making investment decisions. 
+           </p>
             </Col>
           </Row>
 
