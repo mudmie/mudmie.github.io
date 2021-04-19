@@ -40,5 +40,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
     },
+    {
+      resolve: `gatsby-plugin-hotjar`,
+      options: {
+        includeInDevelopment: true, // optional parameter to include script in development
+        id: 2356793,
+        sv: 6,
+      },
+    },
   ],
 };
