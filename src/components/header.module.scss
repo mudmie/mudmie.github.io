@@ -90,7 +90,8 @@ html {
     svg path {
       color: $paprika-color;
     }
-    &:active, &:focus {
+    &:active,
+    &:focus {
       outline: none;
     }
   }
@@ -107,9 +108,15 @@ html {
   }
 
   .back-to-top {
-    display: none;
+    right: 50px;
+    bottom: -100px;
+    position: fixed;
+    transition: bottom 0.5s ease;
   }
   .scroll .back-to-top {
     display: block;
+    bottom: 50px;
+    
+    
   }
 }
