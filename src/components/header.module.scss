@@ -49,22 +49,6 @@ html {
     background: $lemon-color;
   }
 
-  .brand-name {
-    font-family: $heading-font;
-    color: $paprika-color;
-    float: left;
-    margin-left: 16px;
-    font-size: 13px;
-    @media screen and (min-width: 768px) {
-      font-size: 16px;
-    }
-    font-weight: 600;
-  }
-
-  :global(.navbar-dark) .brand-name {
-    color: $baby-blue-color;
-  }
-
   .navbar-toggler {
     border: none;
     padding-left: 4px;

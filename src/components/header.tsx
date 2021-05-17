@@ -87,18 +87,13 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
             }}
           >
             <div className={styles.brandCircle} />
-            <div className={styles.brandName}>
-              mudmie
-              <br />
-              chuthamsatid
-            </div>
           </Link>
           <NavbarToggler className={styles.navbarToggler} onClick={this.toggle}>
             {togglerButtonText}
           </NavbarToggler>
 
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
+            <Nav navbar>
               <NavItem>
                 <Link
                   className={`nav-link ${styles.navLink}`}
