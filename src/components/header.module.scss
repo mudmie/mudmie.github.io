@@ -3,17 +3,8 @@
 
 html {
   .navbar {
-    margin-top: 12px;
-    margin-bottom: 12px;
-    margin-left: 12px;
     transition: background-color 0.5s ease-in-out, opacity 0.5s ease-in-out;
 
-    @media (min-width: 576px) {
-      margin-top: 6px;
-      padding-top: 2em;
-      padding-left: 2em;
-      padding-right: 2em;
-    }
     @media (min-width: 768px) {
       background-color: transparent !important;
     }

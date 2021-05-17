@@ -46,7 +46,6 @@ export default class Layout extends React.Component<LayoutProps, {}> {
           <meta name="theme-color" content="#ffffff" />
           <body className={`theme-${this.props.theme || "regular"}`} />
         </Helmet>
-        <PageBorder />
         <Header isDarkMode={this.props.theme === "dark"} />
         <main className={this.props.useCustomPageMargin ? "" : styles.main}>
           {this.props.children}
