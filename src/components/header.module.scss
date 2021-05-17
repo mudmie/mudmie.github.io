@@ -3,14 +3,8 @@
 
 html {
   .navbar {
-    transition: background-color 0.5s ease-in-out, opacity 0.5s ease-in-out;
-
-    @media (min-width: 768px) {
-      background-color: transparent !important;
-    }
-    &.scroll {
-      background-color: #fff !important;
-    }
+    border-bottom: 1px solid $baby-blue-color;
+    background-color: #fff;
   }
 
   .nav-open {
