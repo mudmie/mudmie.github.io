@@ -21,13 +21,13 @@
     "name": "Nulogy",
     "title": "Nulogy",
     "description": "Solving complex supply chain management problems through a series of user research, wireframing, and prototyping.",
-    "isEnabled": true
+    "isEnabled": false
   },
   {
     "name": "LCBO",
     "title": "LCBO",
     "description": "Digitizing repetitive and error-prone manual processes to reduce task completion time and potential human errors.",
-    "isEnabled": true
+    "isEnabled": false
   },
   {
     "name": "Misc",

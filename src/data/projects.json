@@ -42,7 +42,7 @@
     "company": "Hack The North",
     "term": "Summer 2019",
     "description": "Designing a unique comic-themed application portal for applicants to submit their personal information and answer questions.",
-    "type":"Extracurricular" ,
+    "type": "Extracurricular",
     "platform": [
       "Responsive Website"
     ],
@@ -144,7 +144,7 @@
     "url": "/projects/picking-process/",
     "imageFolder": "picking-process",
     "isProtected": false,
-    "isEnabled": true
+    "isEnabled": false
   },
   {
     "name": "Craft Beer Ordering System",
@@ -162,7 +162,7 @@
     "url": "/projects/craft-beer/",
     "imageFolder": "craft-beer",
     "isProtected": false,
-    "isEnabled": true
+    "isEnabled": false
   },
   {
     "name": "Tasting Note Mobile App",
@@ -180,7 +180,7 @@
     "url": "/projects/tasting-note/",
     "imageFolder": "tasting-note",
     "isProtected": false,
-    "isEnabled": true
+    "isEnabled": false
   },
   {
     "name": "Daily UI",
