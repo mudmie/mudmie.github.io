@@ -9,8 +9,10 @@ export class AboutTitle extends React.Component {
     return (
       <>
         <h1 className={styles.aboutHeading}>Mudmie&nbsp;Chuthamsatid</h1>
+        <h1 className={styles.aboutHeading}>Product &nbsp;Designer</h1>
+
         <p className={styles.aboutPara}>
-          <span> Currently looking for an opportunity in the product design role. </span>
+          <span>Currently looking for an opportunity in the product design role. </span>
           {/* <br />
         Previously at{" "}
           <OutboundLink href="https://www.jitta.com/en" target="_blank">
