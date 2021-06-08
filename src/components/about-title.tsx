@@ -9,12 +9,9 @@ export class AboutTitle extends React.Component {
     return (
       <>
         <h1 className={styles.aboutHeading}>Mudmie&nbsp;Chuthamsatid</h1>
-        <h2 className={styles.aboutHeading}>
-          product designer.
-        </h2>
         <p className={styles.aboutPara}>
-          <span className={styles.bold}>Currently looking for an opportunity in the product design role. </span>
-          <br />
+          <span> Currently looking for an opportunity in the product design role. </span>
+          {/* <br />
         Previously at{" "}
           <OutboundLink href="https://www.jitta.com/en" target="_blank">
             Jitta Wealth
@@ -26,7 +23,7 @@ export class AboutTitle extends React.Component {
           ,{" "}
           <OutboundLink href="https://www.plangrid.com" target="_blank">
             PlanGrid/Autodesk
-          </OutboundLink>.
+          </OutboundLink>. */}
         </p>
         {/* <div className={styles.socialMedia}>
           <OutboundLink
