@@ -59,8 +59,7 @@ html {
     svg path {
       color: $paprika-color;
     }
-    &:active,
-    &:focus {
+    &:active, &:focus {
       outline: none;
     }
   }
@@ -77,13 +76,13 @@ html {
   }
 
   .back-to-top {
-    right: 50px;
-    bottom: -100px;
-    position: fixed;
-    transition: bottom 0.5s ease;
+    display: none;
   }
   .scroll .back-to-top {
     display: block;
+<<<<<<< HEAD
     bottom: 50px;
+=======
+>>>>>>> parent of fe2e65c (Animate back to top)
   }
 }
