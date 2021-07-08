@@ -1,14 +1,22 @@
 import * as React from "react";
-import { Col, Container, Row } from "reactstrap";
+import {
+  Card,
+  CardBody,
+  CardImg,
+  CardSubtitle,
+  CardTitle,
+  Col,
+  Container,
+  Row,
+} from "reactstrap";
 import { Project } from "../models/project";
 import * as styles from "./projects-section.module.scss";
 import * as sharedStyles from "./sections.module.scss";
-import { ProjectGroup } from "../models/project-group";
-import { ProjectGroupRow } from "../components/project-group-row";
+import { Link, withPrefix } from "gatsby";
+import { FaLock } from "react-icons/fa";
 
 export interface ProjectsSectionProps {
   projects: Project[];
-  projectGroups: ProjectGroup[];
   id: string;
 }
 
@@ -49,26 +57,56 @@ export class ProjectsSection extends React.Component<
             <h2 className={styles.sectionHeading}>Projects</h2>
           </Col>
         </Row>
-        {this.props.projectGroups
-          .filter(group => group.isEnabled)
-          .map((group, index) => (
-            <ProjectGroupRow
-              position={index + 1}
-              projectGroup={group}
-              projects={this.props.projects.filter(
-                (proj: Project) =>
-                  proj.isEnabled && proj.projectGroup == group.name
-              )}
-              onMouseEnterProjectItem={proj =>
+        <Row>
+          {this.props.projects.map(proj => (
+            <Col
+              lg="5"
+              sm="6"
+              xs="12"
+              // className={`${styles.projectCell} ${
+              //   this.props.hoverProject != null &&
+              //   this.props.hoverProject != proj
+              //     ? styles.cellInactive
+              //     : ""
+              // }`}
+              onMouseEnter={() =>
+                this.onMouseEnterProjectItem &&
                 this.onMouseEnterProjectItem(proj)
               }
-              onMouseLeaveProjectItem={proj =>
+              onMouseLeave={() =>
+                this.onMouseLeaveProjectItem &&
                 this.onMouseLeaveProjectItem(proj)
               }
-              hoverProject={this.state.hoverProject}
-              key={group.name}
-            ></ProjectGroupRow>
+              key={proj.name}
+            >
+              <Card className={styles.projectCard}>
+                <Link to={proj.url}>
+                  <CardImg
+                    src={withPrefix(
+                      `/images/${proj.imageFolder}/thumbnail.png`
+                    )}
+                    alt={`project ${proj.name} image`}
+                    className={styles.cardImage}
+                  />
+                </Link>
+                <CardBody className={styles.cardHeader}>
+                  <CardTitle className={styles.cardTitle}>
+                    {proj.isProtected ? (
+                      <span>
+                        <FaLock size={16} />{" "}
+                      </span>
+                    ) : null}
+                    <Link to={proj.url}>{proj.name}</Link>{" "}
+                  </CardTitle>
+                  <CardSubtitle className={styles.cardSubtitle}>
+                    {/* {proj.company} */}
+                    {proj.term}
+                  </CardSubtitle>
+                </CardBody>
+              </Card>
+            </Col>
           ))}
+        </Row>
       </Container>
     );
   }
