@@ -62,15 +62,4 @@ html {
   .nav-toggle-close svg path {
     color: $baby-blue-color !important;
   }
-
-  .back-to-top {
-    right: 50px;
-    bottom: -100px;
-    position: fixed;
-    transition: bottom 0.5s ease;
-  }
-  .scroll .back-to-top {
-    display: block;
-    bottom: 50px;
-  }
 }
