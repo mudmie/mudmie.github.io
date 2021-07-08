@@ -93,7 +93,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
           </NavbarToggler>
 
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav navbar>
+            <Nav className="ml-auto" navbar>
               <NavItem>
                 <Link
                   className={`nav-link ${styles.navLink}`}
