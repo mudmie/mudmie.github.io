@@ -24,31 +24,8 @@ h2.about-heading {
     font-size: 20px;
   }
 }
-h1.about-heading,
-h2.about-heading {
-  text-align: right;
-}
-
-.social-media {
-  text-align: right;
-  margin-bottom: 1rem;
-  a,
-  a:visited {
-    color: $baby-blue-color;
-  }
-
-  a.instagram:hover,
-  a.instagram:focus {
-    color: #c32aa3;
-  }
-  a.linked-in:hover,
-  a.linked-in:focus {
-    color: #0077b5;
-  }
-}
 
 .about-para {
-  text-align: right;
   font-size: 16px;
   @media (min-width: 768px) {
     font-size: 20px;
