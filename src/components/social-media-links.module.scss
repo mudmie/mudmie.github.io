@@ -2,55 +2,27 @@
 @import "../styles/_fonts.scss";
 
 .social-media {
-  color: $baby-blue-color;
   flex-shrink: 0;
 
   a {
     margin-left: 8px;
     margin-right: 8px;
-    font-size: 14px;
-    @media (min-width: 768px) {
-      font-size: 20px;
+    &,
+    &:visited,
+    &:active {
+      color: $chestnut-color;
     }
-  }
-  a:last-child {
-    margin-right: 0;
-  }
-
-  // a:hover,
-  // a:active,
-  // a:visited {
-  //   color: $mustard-color;
-  // }
-}
-
-.instagram {
-  &,
-  &:visited,
-  &:active {
-    color: $bark-color;
-  }
-  &:hover {
-    color: #c32aa3;
   }
 }
 
 .linked-in {
-  &,
-  &:visited,
-  &:active {
-    color: $bark-color;
-  }
   &:hover {
     color: #0077b5;
   }
 }
 
-.subtitle {
-  color: $stone-color;
-  padding-left: 24px;
-  font-size: 14px;
-  @media (min-width: 768px) {
-    font-size: 20px;
+.instagram {
+  &:hover {
+    color: #c32aa3;
   }
 }

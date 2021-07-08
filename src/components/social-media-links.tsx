@@ -8,24 +8,28 @@ export class SocialMediaLinks extends React.Component {
       <div>
         <span className={styles.socialMedia}>
           <OutboundLink
-            className={styles.instagram}
-            href="https://www.instagram.com/mudmiemee"
+            className={styles.linkedIn}
+            href="mailto:hello@mudmie.com"
             target="_blank"
           >
-            instagram
+            Email
           </OutboundLink>
-          {" • "}
+          <br />
           <OutboundLink
             className={styles.linkedIn}
             href="https://www.linkedin.com/in/mudmie"
             target="_blank"
           >
-            linkedin
+            LinkedIn
           </OutboundLink>
-        </span>
-        <br />
-        <span className={styles.subtitle}>
-          systems design engineering / <br/> university of waterloo / class of 2020
+          <br />
+          <OutboundLink
+            className={styles.instagram}
+            href="https://www.instagram.com/mudmiemee"
+            target="_blank"
+          >
+            Instagram
+          </OutboundLink>
         </span>
       </div>
     );
