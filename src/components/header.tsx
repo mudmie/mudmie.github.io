@@ -86,7 +86,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
               this.collapseNav();
             }}
           >
-            <div className={styles.brandCircle} />
+            <img src={withPrefix('/images/logo.png')} className={styles.logo}/>
           </Link>
           <NavbarToggler className={styles.navbarToggler} onClick={this.toggle}>
             {togglerButtonText}

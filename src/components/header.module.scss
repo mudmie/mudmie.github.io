@@ -3,7 +3,7 @@
 
 html {
   .navbar {
-    border-bottom: 1px solid $baby-blue-color;
+    border-bottom: 1px solid $chestnut-color;
     background-color: #fff;
   }
 
@@ -24,25 +24,12 @@ html {
   }
 
   .logo {
-    max-width: 200px;
+    width: 40px;
+    height: 40px;
   }
 
   .scroll .logo {
     opacity: 1;
-  }
-
-  .brand-circle {
-    width: 32px;
-    height: 32px;
-    border-radius: 24px;
-    background: $baby-blue-color;
-    float: left;
-    margin-top: 3px;
-    @media screen and (min-width: 768px) {
-      width: 48px;
-      height: 48px;
-      margin-top: 0;
-    }
   }
 
   :global(.navbar-dark) .brand-circle {
