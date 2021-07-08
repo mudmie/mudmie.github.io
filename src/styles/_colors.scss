@@ -1,19 +1,27 @@
+// New colors
+$snow-color: #ffffff;
+$chestnut-color: #AC8A72;
+$brick-color: #9D4400;
+$bark-color: #613402;
+$link-color: #52969F;
+$highlight-color: #6DD2DF;
+
+// Old colors
 $mustard-color: #c09a2d;
 $paprika-color: #aa4725;
-$bark-color: #613402;
 $baby-blue-color: #a4cbd0;
 $baby-blue-tint-color: #D2E6E8;
 $lemon-color: #ffc82c;
-$link-color: #2b9caa;
 $graphite-color: #191919;
-$snow-color: #ffffff;
 $stone-color: #BFBFBF;
-$link-color: #52969F;
 
-$h1-text-color: $paprika-color;
-$h2-text-color: $mustard-color;
-$section-header-color: $paprika-color;
+
+
+
+$h1-text-color: $brick-color;
+$h2-text-color: $brick-color;
+$section-header-color: $brick-color;
 $body-text-color: $bark-color;
-$project-group-title-color: $paprika-color;
+$project-group-title-color: $brick-color;
 $project-title-color: $bark-color;
 $project-subtitle-color: $bark-color;
