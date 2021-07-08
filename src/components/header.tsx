@@ -85,7 +85,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
               this.collapseNav();
             }}
           >
-            <img src={withPrefix('/images/logo.png')} className={styles.logo}/>
+            <img src={withPrefix("/images/logo.png")} className={styles.logo} />
           </Link>
           <NavbarToggler className={styles.navbarToggler} onClick={this.toggle}>
             {togglerButtonText}
@@ -101,18 +101,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
                     this.collapseNav();
                   }}
                 >
-                  home
-                </Link>
-              </NavItem>
-              <NavItem>
-                <Link
-                  className={`nav-link ${styles.navLink}`}
-                  to="/#projects"
-                  onClick={() => {
-                    this.collapseNav();
-                  }}
-                >
-                  projects
+                  Home
                 </Link>
               </NavItem>
               <NavItem>
@@ -123,9 +112,21 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
                     this.collapseNav();
                   }}
                 >
-                  about me
+                  About
                 </Link>
               </NavItem>
+              <NavItem>
+                <Link
+                  className={`nav-link ${styles.navLink}`}
+                  to="/#projects"
+                  onClick={() => {
+                    this.collapseNav();
+                  }}
+                >
+                  Projects
+                </Link>
+              </NavItem>
+
               <NavItem>
                 <OutboundLink
                   href={withPrefix("/mudmie-resume2021.pdf")}
@@ -135,7 +136,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
                     this.collapseNav();
                   }}
                 >
-                  résumé
+                  Résumé
                 </OutboundLink>
               </NavItem>
             </Nav>
