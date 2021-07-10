@@ -7,8 +7,15 @@ html {
   body {
     font-family: $body-font;
     color: $body-text-color;
-    font-weight: 300;
-  }
+    font-weight: 400;
+    font-size: 14px;  
+      @media (min-width: 414px) {
+      font-size: 16px;
+      }
+      @media (min-width: 1024px) {
+      font-size: 20px;
+      }
+  } 
 
   body.theme-dark {
     background-color: $graphite-color;
@@ -17,7 +24,7 @@ html {
 
   .navbar-light .navbar-nav {
     .nav-link {
-      color: $paprika-color;
+      color: $chestnut-color;
       &:focus,
       &:hover {
         font-weight: 700;
@@ -60,6 +67,6 @@ html {
   }
 
   .highlight {
-    box-shadow: rgba(255, 200, 44, 0.5) 0px -0.6em inset;
+    box-shadow: $highlight-color 0px -0.6em inset;
   }
 }

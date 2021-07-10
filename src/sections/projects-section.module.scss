@@ -4,9 +4,23 @@
 html {
   .section-heading {
     margin-bottom: 30px;
-    font-weight: 700;
+    font-weight: 600;
     font-family: $heading-font;
-    font-size: 48px;
-    color: $section-header-color;
+    font-size: 24px;
+    color: $brick-color;
+    text-transform: uppercase;
+
+    @media (min-width: 414px) {
+      font-size: 32px;
+    }
+    @media (min-width: 768px) {
+      font-size: 40px;
+    }
+    @media (min-width: 1024px) {
+      font-size: 48px;
+    }
+    @media (min-width: 1440px) {
+      font-size: 56px;
+    }
   }
 }
