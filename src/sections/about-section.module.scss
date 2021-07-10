@@ -2,6 +2,7 @@
 @import "../styles/_fonts.scss";
 
 .about {
+  margin-bottom: 100px;
 }
 
 .row-about {
@@ -45,4 +46,8 @@
   border-bottom: 1.5px solid $stone-color;
   display: inline-block;
   margin-bottom: 12px;
+}
+
+.row-top-border {
+  border-top: 1px solid $chestnut-color;
 }
