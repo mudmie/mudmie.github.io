@@ -10,11 +10,8 @@ export class Footer extends React.Component {
       <footer>
         <Container>
           <Row className={styles.footerRow}>
-            <Col className={styles.footer} lg="6" sm="12">
-              Have a good day. We all need this. <FaRegSmile />
-            </Col>
-            <Col className="text-right">
-              <SocialMediaLinks />
+            <Col className={styles.footer}>
+              Designed &amp; partially coded by Mudmie 2021 ©
             </Col>
           </Row>
         </Container>
