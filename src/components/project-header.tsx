@@ -12,14 +12,14 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
   public render() {
     return (
       <Container className={styles.header}>
-        <ProjectNav
+        {/* <ProjectNav
           projects={this.props.allProjects}
           currentProject={this.props.currentProject}
-        />
+        /> */}
         <Row className="justify-content-center mt-4 mb-4">
-          <Col lg="8">
-            <h4>{this.props.currentProject.company}</h4>
-            <h1>{this.props.currentProject.name}</h1>
+          <Col lg="12" className="text-center">
+            <h1 className={styles.company}>{this.props.currentProject.company}</h1>
+            <h2 className={styles.title}>{this.props.currentProject.name} / {this.props.currentProject.term}</h2>
           </Col>
         </Row>
       </Container>

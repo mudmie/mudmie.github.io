@@ -2,7 +2,6 @@ import * as React from "react";
 import * as SHA from "sha.js";
 import * as styles from "./protected-section.module.scss";
 import Cookies from "universal-cookie";
-import Img from "gatsby-image";
 import {
   Col,
   Container,
@@ -16,6 +15,7 @@ import {
 } from "reactstrap";
 import { Project } from "../models/project";
 import { Dash } from "./dash";
+import { ProjectBody } from "./project-body";
 
 export interface ProtectedSectionProps {
   isProtected: boolean;
@@ -185,51 +185,9 @@ export class ProtectedSection extends React.Component<
     }
 
     return (
-      <div>
-        <Container>
-          <Row className="justify-content-center">
-            <Col lg="8">
-              <Img
-                alt="main project image"
-                fluid={this.props.mainImage}
-                className="background-theme-color"
-              />
-            </Col>
-          </Row>
-          <Row className="justify-content-center mt-2">
-            <Col xs="12" md="3" lg="2" className={styles.verticalLineRight}>
-              <Row>
-                <Col xs="4" md="12">
-                  <h3>Project Type</h3>
-                  {this.props.currentProject.type}
-                </Col>
-                <Col xs="4" md="12">
-                  <h3>Platform</h3>
-                  {this.props.currentProject.platform.join(" ")}
-                </Col>
-                <Col xs="4" md="12">
-                  <h3>Duration</h3>
-                  {this.props.currentProject.duration}
-                </Col>
-              </Row>
-            </Col>
-            <Col xs="12" md="9" lg="6">
-              <h3>Overview</h3>
-              <div>{this.props.currentProject.description}</div>
-              <h3>My Role</h3>
-              <div>{this.props.currentProject.myRole}</div>
-              <h3>Results</h3>
-              <div>{this.props.currentProject.results}</div>
-            </Col>
-          </Row>
-          <Row className="justify-content-center mt-3">
-            <Col lg="8">
-              <Dash />
-            </Col>
-          </Row>
-        </Container>
+      <ProjectBody project={this.props.currentProject} mainImage={this.props.mainImage}>
         {this.props.children}
-      </div>
+      </ProjectBody>
     );
   }
 }
