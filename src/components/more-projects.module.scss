@@ -1,4 +1,5 @@
 @import "../styles/_colors.scss";
+@import "../styles/_projects.scss";
 
 .project-title {
 
@@ -7,8 +8,7 @@
 
 }
 .project-row {
-  // border-bottom: 1px solid $chestnut-color;
 }
 .horizontal-line-row:not(:last-child) div {
-  border-bottom: 1px solid $chestnut-color;
+  border-bottom: $section-divider;
 }
