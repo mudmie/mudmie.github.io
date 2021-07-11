@@ -3,7 +3,7 @@ import * as sharedStyles from "./styles.module.scss";
 import { Col, Container, Row } from "reactstrap";
 import { graphql, withPrefix } from "gatsby";
 import { ImageBox } from "../../components/image-box";
-import { ProjectLayout } from "../../components/project-layout";
+import { ProjectLayout, PROJECT_BODY_COLUMN } from "../../components/project-layout";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import { ProjectPageProps } from "../../models/project-page-props";
 
@@ -20,7 +20,7 @@ export default class HackiocaPage extends React.Component<
       >
         <Container>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Background</h3>
               <p>
                 Every April Fool’s day, Hack the North launches a fake and
@@ -33,7 +33,7 @@ export default class HackiocaPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>My Roles</h3>
               <p>
                 As a lead product designer, I worked closely with Vevina, a lead
@@ -46,7 +46,7 @@ export default class HackiocaPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Branding</h3>
               <p>
                 Design team members worked together to select fonts, colors, and
@@ -70,7 +70,7 @@ export default class HackiocaPage extends React.Component<
                 in mind.
               </p>
               <Row className="justify-content-center">
-                <Col lg="8">
+                <Col lg={PROJECT_BODY_COLUMN}>
                   <ImageBox
                     src={this.getImageUrl("typefaces.png")}
                     alt="Typefaces for Hackioca"
@@ -86,7 +86,7 @@ export default class HackiocaPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Design Process</h3>
               <p>
                 I was researching for website UI on Dribble as usual, and this
@@ -101,7 +101,7 @@ export default class HackiocaPage extends React.Component<
                 center of the screen caught my attention.
               </p>
               <Row className="justify-content-center">
-                <Col lg="8">
+                <Col lg={PROJECT_BODY_COLUMN}>
                   <ImageBox
                     src={this.getImageUrl("inspo.png")}
                     alt="Web UI by Ben Schade"
@@ -134,7 +134,7 @@ export default class HackiocaPage extends React.Component<
                 other sections of the website.
               </p>
               <Row className="justify-content-center">
-                <Col lg="8">
+                <Col lg={PROJECT_BODY_COLUMN}>
                   <ImageBox
                     src={this.getImageUrl("boba-web.gif")}
                     alt="Landing page for desktop"
@@ -155,7 +155,7 @@ export default class HackiocaPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Designing for Mobile </h3>
               <p>
                 Due to smaller screen sizes, the user experience for mobile has
@@ -214,7 +214,7 @@ export default class HackiocaPage extends React.Component<
                 would have provided more affordance to the users.
               </p>
               <Row className="justify-content-center">
-                <Col lg="8" className="text-center">
+                <Col lg={PROJECT_BODY_COLUMN} className="text-center">
                   <ImageBox
                     src={this.getImageUrl("boba-mobile.gif")}
                     alt="Landing page for mobile"

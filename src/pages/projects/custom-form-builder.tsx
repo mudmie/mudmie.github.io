@@ -2,7 +2,7 @@ import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
 import { graphql, withPrefix } from "gatsby";
 import { ImageBox } from "../../components/image-box";
-import { ProjectLayout } from "../../components/project-layout";
+import { ProjectLayout, PROJECT_BODY_COLUMN } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
 
 export default class CustomFormBuilderPage extends React.Component<
@@ -18,7 +18,7 @@ export default class CustomFormBuilderPage extends React.Component<
       >
         <Container>
           <Row className="justify-content-center">
-            <Col lg="8">Hello</Col>
+            <Col lg={PROJECT_BODY_COLUMN}>Hello</Col>
           </Row>
         </Container>
       </ProjectLayout>

@@ -3,7 +3,7 @@ import * as sharedStyles from "./styles.module.scss";
 import { Col, Container, Row, Table } from "reactstrap";
 import { graphql, withPrefix } from "gatsby";
 import { ImageBox } from "../../components/image-box";
-import { ProjectLayout } from "../../components/project-layout";
+import { ProjectLayout, PROJECT_BODY_COLUMN } from "../../components/project-layout";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import { ProjectPageProps } from "../../models/project-page-props";
 
@@ -20,7 +20,7 @@ export default class ThematicPage extends React.Component<
       >
         <Container>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>About The Company</h3>
               <p>
                 Jitta Wealth is a Thai-based robo-advisor company that aims to help investors create better returns through simple investment methods. Its wealth management service is similar to {" "}
@@ -28,42 +28,42 @@ export default class ThematicPage extends React.Component<
                   Wealthsimple </OutboundLink> {" "} and {" "}
                 <OutboundLink href="https://www.betterment.com" target="_blank">
                   Betterment </OutboundLink> {" "}
-              in North America.
-            </p>
+                in North America.
+              </p>
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Project Background </h3>
               <h3 className={sharedStyles.sub}> Business Needs</h3>
               <p>
                 Asset Under Management (AUM) is the total market value of investment a company manages on behalf of its clients. The company generates profit from management fees, which are a fixed percentage of the AUM. Thus, raising AUM is essential to the company’s business model.
-            </p>
+              </p>
               <h3 className={sharedStyles.sub}> Existing Products</h3>
               <p>
                 Before Thematic Investment got launched, Jitta Wealth offered two existing investment strategies: Jitta Ranking and Global ETF.
-            </p>
+              </p>
               <ul>
                 <li>
                   Jitta Ranking is an investment fund made up of predetermined stocks. The minimum deposit ranges from 500,000 - 1M THB (~16,120 - 32,260 USD) depending on the chosen market country.
-              </li>
+                </li>
                 <br />
                 <li>
                   Global ETF is a risk-based investment fund made up of stock and bond ETFs. It allocates the assets based on one’s preferred risk and requires a minimum deposit of 100,000 THB (~3,225 USD).
-              </li>
+                </li>
               </ul>
               <h3 className={sharedStyles.sub}> Users</h3>
               <p>
                 Originally, Jitta Ranking was the only investment strategy offered to the clients. The minimum deposit required was considered high relative to the minimum monthly income of 15,000 THB (~485 USD) for a Thai person with a bachelor's degree {" "}
                 <OutboundLink href="https://www.boi.go.th/index.php?page=labor_costs" target="_blank">
                   [1]</OutboundLink>.
-            As a result, the users at the time were mainly experienced investors and entrepreneurs.</p>
+                As a result, the users at the time were mainly experienced investors and entrepreneurs.</p>
               <p>
                 The launch of Global ETF resulted in a huge shift in customer demographic as the minimum deposit got reduced to only 100,000 THB. Corporate employees became a new top investor; more students and freelancers also started to open their accounts and invest.
-            </p>
+              </p>
               <p>
                 Table 1 outlines some key differences between the original and the new groups of users. The shift in user profile signaled the team to step back and reevaluate whether the existing UX &amp; UI of the app were still applicable.
-            </p>
+              </p>
               <Table>
                 <thead>
                   <tr>
@@ -89,7 +89,7 @@ export default class ThematicPage extends React.Component<
                         </li>
                         <li>
                           Rely less on investment information provided by Jitta Wealth as they often <br />
-                        had their sources of the latest financial information
+                          had their sources of the latest financial information
                         </li>
                       </ul>
                     </td>
@@ -118,54 +118,54 @@ export default class ThematicPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Design Process</h3>
               <h3 className={sharedStyles.sub}>Situation of Concern</h3>
               <p>
                 Global ETF makes investment become more accessible and increases Jitta Wealth's presence to the public. However, some potential customers hesitate to invest since there are similar alternatives offered by other financial institutes. To meet the business needs, a unique investment strategy that offers flexibility for users to customize their portfolios should be developed to attract this group of customers.
-            </p>
+              </p>
 
               <h3 className={sharedStyles.sub}>Product Requirements &amp; Constraints</h3>
               <p>
                 To distinguish our product from the existing ones in the market, the team came up with Thematic Investment strategy. This strategy allows users to customize their own portfolio by choosing to invest in industries or sectors of their interests.
-            </p>
+              </p>
               <p>
                 Below are product requirements gather from work sessions with the CEO, product and development teams.
-            </p>
+              </p>
               <ul>
                 <li>
                   Users must be able to select from 1 - 5 themes
-              </li>
+                </li>
                 <br />
                 <li>
                   User must be able to see the investment allocation after choosing themes
-              </li>
+                </li>
                 <br />
                 <li>
                   Users will not be able to specify the investment percentage for each theme
-              </li>
+                </li>
                 <br />
                 <li>
                   The system will equally allocate the investment ratio among selected theme
-              </li>
+                </li>
                 <br />
                 <li>
                   Existing components and product flow should be reused as much as possible
-              </li>
+                </li>
                 <br />
                 <li>
                   About 8 themes to be offered, but there could be more or less
-              </li>
+                </li>
               </ul>
             </Col>
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3 className={sharedStyles.sub}>First Iteration</h3>
               <p>
                 Due to technical constraints, I examined existing components and product flow and reused them as much as possible in this iteration.
-            </p>
+              </p>
               <Row className="justify-content-center">
                 <Col lg="11">
                   <ImageBox
@@ -203,12 +203,12 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
-            <h3 className={sharedStyles.sub}>Second Iteation</h3>
-            <p>
-            I simplified the UI while still provided the ability for the users to view the theme information. By tapping the theme, the users would be directed to the information page. If they selected the theme, a checkmark would appear in front of the row as an indicator. 
-            </p>
-            <Row className="justify-content-center">
+            <Col lg={PROJECT_BODY_COLUMN}>
+              <h3 className={sharedStyles.sub}>Second Iteation</h3>
+              <p>
+                I simplified the UI while still provided the ability for the users to view the theme information. By tapping the theme, the users would be directed to the information page. If they selected the theme, a checkmark would appear in front of the row as an indicator.
+              </p>
+              <Row className="justify-content-center">
                 <Col lg="11">
                   <ImageBox
                     src={this.getImageUrl("thematic-second.png")}
@@ -221,15 +221,15 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
-            <h3 className={sharedStyles.sub}>Thrid Iteration</h3>
-            <p>
-            When I walked through the design in the second iteration with the CEO, I got feedback that some users might want to select the themes right away without reading the information. In this iteration, I redesigned the UI that would allow users to select themes and view the information at the same time. 
-            </p>
-            <p>
-            I originally came up with the design below, but I was concerned there might not be enough visual cues to signal the users that they could tap the row to view the theme information. 
-            </p>
-            <Row className="justify-content-center">
+            <Col lg={PROJECT_BODY_COLUMN}>
+              <h3 className={sharedStyles.sub}>Thrid Iteration</h3>
+              <p>
+                When I walked through the design in the second iteration with the CEO, I got feedback that some users might want to select the themes right away without reading the information. In this iteration, I redesigned the UI that would allow users to select themes and view the information at the same time.
+              </p>
+              <p>
+                I originally came up with the design below, but I was concerned there might not be enough visual cues to signal the users that they could tap the row to view the theme information.
+              </p>
+              <Row className="justify-content-center">
                 <Col lg="11">
                   <ImageBox
                     src={this.getImageUrl("thematic-third.png")}
@@ -242,12 +242,12 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
-            <h3 className={sharedStyles.sub}>Final Design</h3>
-            <p>
-            After exploring various components and patterns, I decided to combine the multi-select checkbox from iOS with the right chevron icon to signal possible interactions. 
-            </p>
-            <Row className="justify-content-center">
+            <Col lg={PROJECT_BODY_COLUMN}>
+              <h3 className={sharedStyles.sub}>Final Design</h3>
+              <p>
+                After exploring various components and patterns, I decided to combine the multi-select checkbox from iOS with the right chevron icon to signal possible interactions.
+              </p>
+              <Row className="justify-content-center">
                 <Col lg="11">
                   <ImageBox
                     src={this.getImageUrl("thematic-final.png")}
@@ -257,12 +257,12 @@ export default class ThematicPage extends React.Component<
                 </Col>
               </Row>
               <p>
-              In a scenario where users already selected 5 themes, the system must prevent them from selecting the 6 <sup>th</sup> one. I wanted to design an interface that would prevent them from performing the action rather than letting them select the checkbox and throwing an error at them. So, I considered multiple options when designing the UI and interaction for this scenario. 
-            </p>
-            <p>
-            For option 1, I used a grey color to make the rest of the checkboxes look disabled. The disabled state would serve as a visual cue to suggest the users that couldn't interact with the checkboxes. However, it was hard to visually distinguish the differences between the active and the disabled checkboxes, especially when they didn't appear on the same UI for the user to compare. 
-            </p>
-            <Row className="justify-content-center">
+                In a scenario where users already selected 5 themes, the system must prevent them from selecting the 6 <sup>th</sup> one. I wanted to design an interface that would prevent them from performing the action rather than letting them select the checkbox and throwing an error at them. So, I considered multiple options when designing the UI and interaction for this scenario.
+              </p>
+              <p>
+                For option 1, I used a grey color to make the rest of the checkboxes look disabled. The disabled state would serve as a visual cue to suggest the users that couldn't interact with the checkboxes. However, it was hard to visually distinguish the differences between the active and the disabled checkboxes, especially when they didn't appear on the same UI for the user to compare.
+              </p>
+              <Row className="justify-content-center">
                 <Col lg="11">
                   <ImageBox
                     src={this.getImageUrl("interaction-1.png")}
@@ -271,10 +271,10 @@ export default class ThematicPage extends React.Component<
                   />
                 </Col>
               </Row>
-            <p>
-            For option 2, I tried to make the checkboxes look more disabled by filling in their background with the grey color. After running a usability inspection, some participants still didn't notice the differences.  
-            </p>
-            <Row className="justify-content-center">
+              <p>
+                For option 2, I tried to make the checkboxes look more disabled by filling in their background with the grey color. After running a usability inspection, some participants still didn't notice the differences.
+              </p>
+              <Row className="justify-content-center">
                 <Col lg="11">
                   <ImageBox
                     src={this.getImageUrl("interaction-2.png")}
@@ -283,9 +283,9 @@ export default class ThematicPage extends React.Component<
                   />
                 </Col>
               </Row>
-            <p>
-           For option 3, I hid the checkboxes when the users reached the theme limit. Yet, this design could confuse the users and lead them to wonder why the checkboxes suddenly disappeared without knowing what was happening.                </p>
-            <Row className="justify-content-center">
+              <p>
+                For option 3, I hid the checkboxes when the users reached the theme limit. Yet, this design could confuse the users and lead them to wonder why the checkboxes suddenly disappeared without knowing what was happening.                </p>
+              <Row className="justify-content-center">
                 <Col lg="11">
                   <ImageBox
                     src={this.getImageUrl("interaction-3.png")}
@@ -294,9 +294,9 @@ export default class ThematicPage extends React.Component<
                   />
                 </Col>
               </Row>
-            <p >
-            The above options were unable to provide sufficient visual cues and explain the users about the scenario. I also shouldn't have expected the users to read the "select from 1-5 themes" instruction and automatically knew they couldn't pick an additional theme because they had reached the limit. Error preventation might be more appropriate for some tasks that could result in a severe consequence. For this scenario, providing feedback was more important to communicate to the users why their action was prohibitted. Threfore, I ended up keeping the checkboxes in an active state and display an alert box when necessary.             </p>
-            <Row className="justify-content-center">
+              <p >
+                The above options were unable to provide sufficient visual cues and explain the users about the scenario. I also shouldn't have expected the users to read the "select from 1-5 themes" instruction and automatically knew they couldn't pick an additional theme because they had reached the limit. Error preventation might be more appropriate for some tasks that could result in a severe consequence. For this scenario, providing feedback was more important to communicate to the users why their action was prohibitted. Threfore, I ended up keeping the checkboxes in an active state and display an alert box when necessary.             </p>
+              <Row className="justify-content-center">
                 <Col lg="11">
                   <ImageBox
                     src={this.getImageUrl("interaction-final.png")}
@@ -309,28 +309,28 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
-            <h3> Looking into the Data</h3>
-            <p>
-              When working on this project, I had an assumption that the theme information page would be essential to users' investment decisions. To validate my assumption, I worked with a data scientist to look into the data and analyze user behavior. The data showed that most users tapped to read the theme information before submitting their final choices.            </p>
-           <p>
-           However, some users found the touching area of the checkbox to be narrow. There were times when they missed the checkbox and tapped to view the information page instead. So, I further looked into the data to ensure these incidents didn't affect the previous result. 
-           </p>
-           <p>
-           I found that the users spent an average of 49 seconds on the information page. The data also showed a continuous behavior of viewing different theme information before the submission event occurred. These findings suggested the users intentionally navigated to the information page to learn about each theme before making investment decisions. 
-           </p>
+            <Col lg={PROJECT_BODY_COLUMN}>
+              <h3> Looking into the Data</h3>
+              <p>
+                When working on this project, I had an assumption that the theme information page would be essential to users' investment decisions. To validate my assumption, I worked with a data scientist to look into the data and analyze user behavior. The data showed that most users tapped to read the theme information before submitting their final choices.            </p>
+              <p>
+                However, some users found the touching area of the checkbox to be narrow. There were times when they missed the checkbox and tapped to view the information page instead. So, I further looked into the data to ensure these incidents didn't affect the previous result.
+              </p>
+              <p>
+                I found that the users spent an average of 49 seconds on the information page. The data also showed a continuous behavior of viewing different theme information before the submission event occurred. These findings suggested the users intentionally navigated to the information page to learn about each theme before making investment decisions.
+              </p>
             </Col>
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
-            <h3>In the Future</h3>
-            <p>
-            There were only 10 themes available for the users when Thematic Investment was first launched in November 2020. Currently, there are a total of 14 themes available and the list will likely continue to grow in the future. As a result, the current UI may need some modification to support a long list of themes. Features like sorting and filtering may become necessary to enhance the user experience of the mobile app.
-            </p>
-            <p>
-            As more themes become available, some users may experience a paradox of choice. Having a "smart theme" option with preselected themes for an optimal investment return can also be beneficial to the users in the future.            
-            </p>
+            <Col lg={PROJECT_BODY_COLUMN}>
+              <h3>In the Future</h3>
+              <p>
+                There were only 10 themes available for the users when Thematic Investment was first launched in November 2020. Currently, there are a total of 14 themes available and the list will likely continue to grow in the future. As a result, the current UI may need some modification to support a long list of themes. Features like sorting and filtering may become necessary to enhance the user experience of the mobile app.
+              </p>
+              <p>
+                As more themes become available, some users may experience a paradox of choice. Having a "smart theme" option with preselected themes for an optimal investment return can also be beneficial to the users in the future.
+              </p>
             </Col>
           </Row>
 

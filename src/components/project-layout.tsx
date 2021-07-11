@@ -13,6 +13,9 @@ export interface ProjectLayoutProps {
   mainImage?: any;
   children: any;
 }
+
+export const PROJECT_BODY_COLUMN = 10;
+
 export class ProjectLayout extends React.Component<ProjectLayoutProps, {}> {
   public render() {
     return (

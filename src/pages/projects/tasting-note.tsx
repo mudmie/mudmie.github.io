@@ -3,7 +3,7 @@ import * as sharedStyles from "./styles.module.scss";
 import { Col, Container, Row } from "reactstrap";
 import { graphql, withPrefix } from "gatsby";
 import { ImageBox } from "../../components/image-box";
-import { ProjectLayout } from "../../components/project-layout";
+import { ProjectLayout, PROJECT_BODY_COLUMN } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
 
 export default class TastingNotePage extends React.Component<
@@ -19,7 +19,7 @@ export default class TastingNotePage extends React.Component<
       >
         <Container>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Background</h3>
               <p>
                 LCBO is one of the world’s largest alcoholic beverage
@@ -49,7 +49,7 @@ export default class TastingNotePage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Problems</h3>
               <p className={sharedStyles.quote}>
                 Current evaluation method is labour intensive as it requires a
@@ -68,7 +68,7 @@ export default class TastingNotePage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>User Persona</h3>
               <p>
                 Imagine that there are at least 15 products to be evaluated by
@@ -89,7 +89,7 @@ export default class TastingNotePage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Wireframes</h3>
               <p>After reviewing the problems and user persona, I decided to</p>
               <ol>
@@ -127,7 +127,7 @@ export default class TastingNotePage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Finding Products</h3>
               <p>
                 As soon as the product consultants log in to their account, they
@@ -151,7 +151,7 @@ export default class TastingNotePage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Evaluating Products</h3>
               <p>
                 Once the consultants select the product, the system will ask

@@ -3,7 +3,7 @@ import * as sharedStyles from "./styles.module.scss";
 import { Col, Container, Row } from "reactstrap";
 import { graphql, withPrefix } from "gatsby";
 import { ImageBox } from "../../components/image-box";
-import { ProjectLayout } from "../../components/project-layout";
+import { ProjectLayout, PROJECT_BODY_COLUMN } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
 
 export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
@@ -16,7 +16,7 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
       >
         <Container>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>The Project &amp; My Roles </h3>
               <p>
                 Every four months, PlanGrid recruits students from the
@@ -32,7 +32,7 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Brainstorming Ideas</h3>
               <p className={sharedStyles.quote}>
                 The design workshop plays an important role to gather ideas from
@@ -51,7 +51,7 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
                 in the workshop.
               </p>
               <Row className="justify-content-center">
-                <Col lg="8">
+                <Col lg={PROJECT_BODY_COLUMN}>
                   <ImageBox
                     src={this.getImageUrl("wordcloud.png")}
                     alt="Ideas generated in the design workshop"
@@ -63,7 +63,7 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Crazy 8’s</h3>
               <p>
                 In crazy 8’s exercise, the students spent a total of 8 minutes
@@ -78,7 +78,7 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
                 drawings.
               </p>
               <Row className="justify-content-center">
-                <Col lg="8">
+                <Col lg={PROJECT_BODY_COLUMN}>
                   <ImageBox
                     src={this.getImageUrl("crazy8.jpg")}
                     alt="Crazy 8’s drawings"
@@ -90,7 +90,7 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Designing the Logo</h3>
               <p>
                 Coming out of the design workshop, I knew by heart that the
@@ -119,7 +119,7 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <p>
                 Because of this, my mentor taught me a double diamond design
                 process, from which I learned to explore different designs and
@@ -140,7 +140,7 @@ export default class TshirtPage extends React.Component<ProjectPageProps, {}> {
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <p>
                 I presented these designs to the design team and the creative
                 director at PlanGrid. Everyone voted in favor of the PlanGrid +

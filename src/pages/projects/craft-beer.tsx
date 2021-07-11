@@ -3,7 +3,7 @@ import * as sharedStyles from "./styles.module.scss";
 import { Col, Container, Row } from "reactstrap";
 import { graphql, withPrefix } from "gatsby";
 import { ImageBox } from "../../components/image-box";
-import { ProjectLayout } from "../../components/project-layout";
+import { ProjectLayout, PROJECT_BODY_COLUMN } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
 
 export default class CraftBeerPage extends React.Component<
@@ -19,7 +19,7 @@ export default class CraftBeerPage extends React.Component<
       >
         <Container>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>About the Company</h3>
               <p>
                 The Liquor Control Board of Ontario (LCBO) is one of the world’s
@@ -32,7 +32,7 @@ export default class CraftBeerPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>My Roles</h3>
               <p>
                 As a UX/UI designer at the lab, I met with stakeholders to
@@ -43,7 +43,7 @@ export default class CraftBeerPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Background</h3>
               <p>
                 Craft beer is usually produced by a small to medium size local
@@ -57,7 +57,7 @@ export default class CraftBeerPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Problems</h3>
               <p className={sharedStyles.quote}>
                 With many factors such as promotion and seasonal items, it is
@@ -91,7 +91,7 @@ export default class CraftBeerPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>User Interview</h3>
               <p className={sharedStyles.quote}>
                 I know the problems the users face. I also have a picture of the
@@ -141,7 +141,7 @@ export default class CraftBeerPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Work Breakdown Structure</h3>
               <p>
                 I use the Work Breakdown Structure to make sure that all
@@ -162,7 +162,7 @@ export default class CraftBeerPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Wireframes</h3>
               <p>
                 Based on my research on modern e-commerce systems, there are 3
@@ -186,7 +186,7 @@ export default class CraftBeerPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Create Order </h3>
 
               <p className={sharedStyles.quote}>
@@ -225,7 +225,7 @@ export default class CraftBeerPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Review &amp; Confirm Order </h3>
               <p className={sharedStyles.quote}>
                 From perspectives of craft brewers, the system should allow them
@@ -254,7 +254,7 @@ export default class CraftBeerPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Order Details </h3>
               <p>
                 From the order summary page, LCBO employees can take a quick

@@ -3,7 +3,7 @@ import { Col, Container, Row } from "reactstrap";
 import { graphql, withPrefix } from "gatsby";
 import { ImageBox } from "../../components/image-box";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
-import { ProjectLayout } from "../../components/project-layout";
+import { ProjectLayout, PROJECT_BODY_COLUMN } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
 
 export default class ShipmentAuditTrailPage extends React.Component<
@@ -22,7 +22,7 @@ export default class ShipmentAuditTrailPage extends React.Component<
       >
         <Container>
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Background</h3>
               <p>
                 Products that are consumed by consumers such as food, drugs, and
@@ -79,7 +79,7 @@ export default class ShipmentAuditTrailPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>First Round of User Workflow Research</h3>
               <p>
                 To design a Shipment Audit Trail, I, as a designer, must have a
@@ -110,12 +110,12 @@ export default class ShipmentAuditTrailPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Second Round of User Workflow Research</h3>
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <p>
                 The second round of interview is conducted to fill the gap of
                 missing information from the previous round. It is useful to
@@ -135,7 +135,7 @@ export default class ShipmentAuditTrailPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>The Design</h3>
               <p>
                 The

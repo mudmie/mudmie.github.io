@@ -3,7 +3,7 @@ import * as sharedStyles from "./styles.module.scss";
 import { Col, Container, Row } from "reactstrap";
 import { graphql, withPrefix } from "gatsby";
 import { ImageBox } from "../../components/image-box";
-import { ProjectLayout } from "../../components/project-layout";
+import { ProjectLayout, PROJECT_BODY_COLUMN } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
 
 export default class PickingProcessPage extends React.Component<
@@ -19,7 +19,7 @@ export default class PickingProcessPage extends React.Component<
       >
         <Container>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>About the Company</h3>
               <p>
                 Nulogy is a software company that provides solutions to supply
@@ -30,7 +30,7 @@ export default class PickingProcessPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>My Roles</h3>
               <p>
                 I conducted user research by interviewing professional service
@@ -45,7 +45,7 @@ export default class PickingProcessPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Problem Overview &amp; Background</h3>
               <p className={sharedStyles.quote}>
                 As forklift operators can pick up only one item at a time, they
@@ -68,7 +68,7 @@ export default class PickingProcessPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>User Research</h3>
               <p>
                 I began my design process by interviewing Nulogy’s professional
@@ -97,7 +97,7 @@ export default class PickingProcessPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>User Journey Map — First Iteration</h3>
               <p className={sharedStyles.quote}>
                 Designing a user journey map was challenging as this was my
@@ -127,7 +127,7 @@ export default class PickingProcessPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>User Journey Map — Second Iteration</h3>
               <p>
                 After a long talk with other designers, I decided to try a
@@ -148,7 +148,7 @@ export default class PickingProcessPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>User Journey Map — Third Iteration</h3>
               <p>
                 To add some contrast to the paper, I changed the color scheme
@@ -173,7 +173,7 @@ export default class PickingProcessPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>User Journey Map — Final Result</h3>
               <p>
                 In the final version of the user journey map, cartoon icons for
@@ -202,7 +202,7 @@ export default class PickingProcessPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Designing the Solution</h3>
               <p>
                 To increase efficiency in the picking process, I designed a
@@ -224,7 +224,7 @@ export default class PickingProcessPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Next Steps</h3>
               <p>
                 While this problem seemed to be resolved by adding a feature

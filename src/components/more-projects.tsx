@@ -4,6 +4,7 @@ import { Link, withPrefix } from "gatsby";
 import { Row, Col, Container } from "reactstrap";
 import { FaArrowRight, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import * as styles from "./more-projects.module.scss";
+import { PROJECT_BODY_COLUMN } from "./project-layout";
 
 export interface MoreProjectsProps {
   projects: Project[];
@@ -17,7 +18,7 @@ export class MoreProjects extends React.Component<MoreProjectsProps, {}> {
     return (
       <Container>
         <Row className="justify-content-center mt-3">
-          <Col lg="8">
+          <Col lg={PROJECT_BODY_COLUMN}>
             <h3>More Projects</h3>
           </Col>
         </Row>
@@ -28,14 +29,19 @@ export class MoreProjects extends React.Component<MoreProjectsProps, {}> {
 
   private projectRow(project: Project) {
     return (
-      <Row className="justify-content-center mt-3">
-        <Col lg="5">
-          <div className={styles.projectTitle}>{project.company}</div>
-          <div className={styles.projectDescription}>{project.name} / {project.term}</div>
-        </Col>
-        <Col sm="3" className="text-right"><Link to={project.url}>
-          View Case Study <FaArrowRight />
-        </Link></Col>
-      </Row>);
+      <>
+        <Row className={`justify-content-center mt-3 ${styles.projectRow}`}>
+          <Col lg={PROJECT_BODY_COLUMN - 3}>
+            <div className={styles.projectTitle}>{project.company}</div>
+            <div className={styles.projectDescription}>{project.name} / {project.term}</div>
+          </Col>
+          <Col lg="3" className="text-right"><Link to={project.url}>
+            View Case Study <FaArrowRight />
+          </Link></Col>
+        </Row>
+        <Row className={`justify-content-center ${styles.horizontalLineRow}`}>
+          <Col lg={PROJECT_BODY_COLUMN} className="mt-2"></Col>
+        </Row>
+      </>);
   }
 }

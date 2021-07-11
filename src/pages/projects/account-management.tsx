@@ -2,7 +2,7 @@ import { graphql, withPrefix } from "gatsby";
 import * as React from "react";
 import { Col, Container, Row, Table } from "reactstrap";
 import { ImageBox } from "../../components/image-box";
-import { ProjectLayout } from "../../components/project-layout";
+import { ProjectLayout, PROJECT_BODY_COLUMN } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
 import * as sharedStyles from "./styles.module.scss";
 
@@ -16,7 +16,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
       >
         <Container>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>About The Company</h3>
               <p>
                 PlanGrid has a primary objective to make intuitive and impactful
@@ -29,7 +29,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Background</h3>
               <p>
                 Admin Console is a part of PlanGrid web products that allows IT
@@ -47,7 +47,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>My Roles &amp; Project Goals</h3>
               <p>
                 The main goals of this project were to enhance the user
@@ -61,7 +61,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Problems</h3>
               <p className={sharedStyles.quote}>
                 The current system restricts IT Admins to only purchase licenses
@@ -90,7 +90,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>The Current Admin Console</h3>
               <p>
                 The current version of Admin Console consists of two major
@@ -117,7 +117,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>User Flow</h3>
               <p>
                 Workflow diagram was created to explore and identify different

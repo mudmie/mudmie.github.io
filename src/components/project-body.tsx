@@ -7,6 +7,7 @@ import { Link, withPrefix } from "gatsby";
 import * as styles from "./project-body.module.scss";
 import Img from "gatsby-image";
 import { Dash } from "./dash";
+import { PROJECT_BODY_COLUMN } from "./project-layout";
 
 export interface ProjectBodyProps {
   project: Project;
@@ -18,7 +19,7 @@ export class ProjectBody extends React.Component<ProjectBodyProps, {}> {
       <div>
         <Container>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <Img
                 alt="main project image"
                 fluid={this.props.mainImage}
@@ -27,7 +28,7 @@ export class ProjectBody extends React.Component<ProjectBodyProps, {}> {
             </Col>
           </Row>
           <Row className="justify-content-center mt-3">
-            <Col lg="8" className={styles.borderTop}>
+            <Col lg={PROJECT_BODY_COLUMN} className={styles.borderTop}>
               {this.props.project.type}{" / "}{this.props.project.platform.join(" ")}{" / "}{this.props.project.duration}
             </Col>
           </Row>

@@ -2,7 +2,7 @@ import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
 import { graphql, withPrefix } from "gatsby";
 import { ImageBox } from "../../components/image-box";
-import { ProjectLayout } from "../../components/project-layout";
+import { ProjectLayout, PROJECT_BODY_COLUMN } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
 
 export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
@@ -15,7 +15,7 @@ export default class DailyUIPage extends React.Component<ProjectPageProps, {}> {
       >
         <Container>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <Row className="justify-content-center">
                 <Col lg="6">
                   <ImageBox

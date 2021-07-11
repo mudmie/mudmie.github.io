@@ -4,7 +4,7 @@ import { Col, Container, Row } from "reactstrap";
 import { graphql, withPrefix } from "gatsby";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import { ImageBox } from "../../components/image-box";
-import { ProjectLayout } from "../../components/project-layout";
+import { ProjectLayout, PROJECT_BODY_COLUMN } from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
 
 export default class HackerAppsPage extends React.Component<
@@ -20,7 +20,7 @@ export default class HackerAppsPage extends React.Component<
       >
         <Container>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>About Hack the North</h3>
               <p>
                 Hack the North is Canada’s biggest hackathon held annually at
@@ -31,7 +31,7 @@ export default class HackerAppsPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>My Roles</h3>
               <p>
                 I led the design of the hacker application portal for Hack the
@@ -46,7 +46,7 @@ export default class HackerAppsPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Application Portal at a Glance</h3>
               <p>
                 Every year, Hack the North receives thousands of applications
@@ -61,7 +61,7 @@ export default class HackerAppsPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>High-Level Planning</h3>
               <p>
                 For 2019, we wanted to connect hackers together and promote
@@ -90,7 +90,7 @@ export default class HackerAppsPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Produce a Goose</h3>
               <p>
                 Since the Robogoose is the main character in the comic, the
@@ -113,7 +113,7 @@ export default class HackerAppsPage extends React.Component<
                 the color first before clicking next to select the accessory.
               </p>
               <Row className="justify-content-center">
-                <Col lg="8">
+                <Col lg={PROJECT_BODY_COLUMN}>
                   <ImageBox
                     src={this.getImageUrl("mobile-goose.png")}
                     alt="Produce a goose on mobile"
@@ -124,7 +124,7 @@ export default class HackerAppsPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>The Comic Section</h3>
               <p>
                 Once the users have customized their Robogoose, they will enter
@@ -208,7 +208,7 @@ export default class HackerAppsPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Account Creation</h3>
               <p>
                 After completing the comic, the users will get to create an
@@ -260,7 +260,7 @@ export default class HackerAppsPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Application Questions</h3>
               <p>
                 Finally, the users will answer questions that will enable Hack
@@ -295,7 +295,7 @@ export default class HackerAppsPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Submission &amp; Application Status</h3>
               <p>
                 Once the users have submitted their application, they will be
@@ -315,7 +315,7 @@ export default class HackerAppsPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg={PROJECT_BODY_COLUMN}>
               <h3>Learning</h3>
               <p>
                 Working on this project for Hack the North gave me valuable
