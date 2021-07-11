@@ -2,7 +2,6 @@ import * as React from "react";
 import Helmet from "react-helmet";
 import { Footer } from "../components/footer";
 import { Header } from "../components/header";
-import PageBorder from "./page-border";
 import * as styles from "./layout.module.scss";
 
 interface LayoutProps {
@@ -18,13 +17,12 @@ export default class Layout extends React.Component<LayoutProps, {}> {
         <Helmet titleTemplate="%s - Projects - Mudmie Chuthamsatid - Product Designer">
           <html lang="en" />
           <meta charSet="utf-8" />
+          {/* Fix this */}
           <meta name="description" content="" />
-          <meta name="keywords" content="" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Karla:400;700|Syne:wght@600|PT+Serif:400i"
-            // href="https://fonts.googleapis.com/css?family=Karla:400,700|Poppins:200,400,700|PT+Serif:400i"
-            rel="stylesheet"
-          />
+          <meta name="keywords" content="product designer, UX Designer, University of Waterloo, Waterloo, Seattle" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+          <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&amp;family=PT+Serif:ital@1&amp;family=Syne:wght@600&amp;display=swap" rel="stylesheet" />
           <link
             rel="apple-touch-icon"
             sizes="180x180"
