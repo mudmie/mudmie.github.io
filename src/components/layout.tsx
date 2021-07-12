@@ -19,7 +19,7 @@ export default class Layout extends React.Component<LayoutProps, {}> {
           <meta charSet="utf-8" />
           {/* Fix this */}
           <meta name="description" content="" />
-          <meta name="keywords" content="product designer, UX Designer, University of Waterloo, Waterloo, Seattle" />
+          <meta name="keywords" content="Product Designer, UX Designer, User Experience Designer, UI Designer, University of Waterloo, Waterloo, Seattle" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
           <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&amp;family=PT+Serif:ital@1&amp;family=Syne:wght@600&amp;display=swap" rel="stylesheet" />

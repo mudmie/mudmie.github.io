@@ -12,17 +12,20 @@
     &:active {
       color: $chestnut-color;
     }
+    &:hover {
+      color: $link-color;
+    }
   }
 }
 
-.linked-in {
-  &:hover {
-    color: #0077b5;
-  }
-}
+// .linked-in {
+//   &:hover {
+//     color: #0077b5;
+//   }
+// }
 
-.instagram {
-  &:hover {
-    color: #c32aa3;
-  }
-}
+// .instagram {
+//   &:hover {
+//     color: #c32aa3;
+//   }
+// }
