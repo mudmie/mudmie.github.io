@@ -7,7 +7,7 @@ export class AboutTitle extends React.Component {
       <>
         <h1 className={styles.aboutHeading}>Mudmie<br/>Chuthamsatid</h1>
         <p className={styles.aboutPara}>
-        Product Designer. I apply systems thinking &amp; HCI knowledge to craft product experience and work cross-team to deliver the product. Recently led the design of financial tools at Jitta Wealth.
+        Product Designer. I apply systems thinking &amp; human-computer interaction knowledge to craft product experience and work cross-team to deliver the product. Recently led the design of financial tools at Jitta Wealth.
 
         </p>
         <p className={styles.aboutPara}>
