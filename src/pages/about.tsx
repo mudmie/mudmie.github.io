@@ -59,46 +59,31 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               <h3>A Little More About Me</h3>
 
               <p>
-                I'm a product designer with experience designing both enterprise
-                and consumer products. I enjoy exploring ways to craft product
-                experiences that will make people’s lives easier. Recently, I
-                led the design of investment tools at{" "}
-                <OutboundLink href="https://www.jitta.com/en" target="_blank">
-                  Jitta Wealth
-                </OutboundLink>
-                , a fintech startup in Bangkok, Thailand. Now, I’m back in
-                Seattle and looking for a full-time opportunity to continue my
-                product design journey.
+                I'm a product designer with experience designing both enterprise and consumer products. 
+                With a background in <OutboundLink href="https://uwaterloo.ca/systems-design-engineering/about-systems-design-engineering/what-systems-design-engineering" target="_blank">
+                Systems Design Engineering
+                </OutboundLink>, I combine systems thinking and user-centered design to understand the problem in a bigger picture before exploring ways to design product experiences.
               </p>
               <p>
-                I studied Systems Design Engineering at the{" "}
-                <OutboundLink href="https://www.uwaterloo.ca" target="_blank">
-                  University of Waterloo
-                </OutboundLink>{" "}
-                and graduated in 2020. I spent a total of 16 months interning at
-                companies in North America, where I applied the design thinking
-                process to solve real-world problems. I was also involved in the
-                design community by being part of{" "}
+              At the University of Waterloo, I spent a total of 16 months interning at companies in North America, where I applied the design thinking process to solve real-world problems.
+              I was also involved in the design community by being part of{" "}
                 <OutboundLink href="http://uwux.ca/" target="_blank">
                   UW/UX
                 </OutboundLink>{" "}
                 and the design team at{" "}
-                <OutboundLink href="https://hackthenorth.com" target="_blank">
+                <OutboundLink href="https://2019.hackthenorth.com" target="_blank">
                   Hack the North
                 </OutboundLink>
                 .
               </p>
               <p>
-                I love traveling and eating good food – sushi, matcha, and fried
-                chicken are my top 3 +{" "}
-                <OutboundLink href="https://us.oatly.com/" target="_blank">
+              I was born and raised in Bangkok, Thailand, but I spend most of my time living abroad. I love traveling and eating good food – sushi, matcha, and fried chicken are my top 3 + {" "}
+                <OutboundLink href="https://us.oatly.com/collections/products/products/full-fat-oatmilk-chilled" target="_blank">
                   Oatly
                 </OutboundLink>{" "}
-                (full fat, of course)! I’m currently working on my Korean, so
-                k-dramas have become a part of my learning process. I also plan
-                to adopt a Shiba Inu though my mom told me to take care of
-                myself first. Finally, if you need skincare recommendations, I
-                can probably help.
+                (full fat, of course)! I'm currently working on my Korean, so k-dramas are essential. 
+                I also plan to adopt a Shiba Inu although my mom told me to take care of myself first. 
+                Finally, if you need skincare recommendations, I can probably help.
               </p>
             </Col>
           </Row>
@@ -127,7 +112,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                   <td className={styles.experiencePeriod}>Jun 2020 - May 2021</td>
                 </tr>
                 <tr>
-                  <td className={styles.experienceName}>Hack the North / Extracurricular</td>
+                  <td className={styles.experienceName}>Hack the North / Community</td>
                   <td className={styles.experiencePeriod}>Mar 2019 – Feb 2020</td>
                 </tr>
                 <tr>

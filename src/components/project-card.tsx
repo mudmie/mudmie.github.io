@@ -2,7 +2,7 @@ import * as React from "react";
 import { Project } from "../models/project";
 import { Container, Row, Col } from "reactstrap";
 import { ProjectNav } from "./project-nav";
-import { FaArrowRight } from "react-icons/fa";
+import { BsArrowRight } from "react-icons/bs";
 import { Link, withPrefix } from "gatsby";
 import * as styles  from "./project-card.module.scss";
 
@@ -18,10 +18,10 @@ export class ProjectCard extends React.Component<ProjectCardProps, {}> {
           <div>
             {this.props.project.term} / {this.props.project.type}
           </div>
-          <p>{this.props.project.description}</p>
+          <p className={styles.projectDescription}>{this.props.project.description}</p>
 
           <Link to={this.props.project.url} className={styles.caseStudyButton}>
-            View Case Study <FaArrowRight />
+            View Case Study <BsArrowRight />
           </Link>
         </Col>
         <Col md="6">
