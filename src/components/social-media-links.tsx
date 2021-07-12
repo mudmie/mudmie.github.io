@@ -2,7 +2,13 @@ import * as React from "react";
 import * as styles from "./social-media-links.module.scss";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 
-export class SocialMediaLinks extends React.Component {
+export interface SocialMediaLinksProps {
+  separator: String;
+}
+export class SocialMediaLinks extends React.Component<
+  SocialMediaLinksProps,
+  {}
+> {
   public render() {
     return (
       <div>
@@ -14,7 +20,7 @@ export class SocialMediaLinks extends React.Component {
           >
             Email
           </OutboundLink>
-          <br />
+          {this.getSeparator()}
           <OutboundLink
             className={styles.linkedIn}
             href="https://www.linkedin.com/in/mudmie"
@@ -22,7 +28,7 @@ export class SocialMediaLinks extends React.Component {
           >
             LinkedIn
           </OutboundLink>
-          <br />
+          {this.getSeparator()}
           <OutboundLink
             className={styles.instagram}
             href="https://www.instagram.com/mudmiemee"
@@ -33,5 +39,12 @@ export class SocialMediaLinks extends React.Component {
         </span>
       </div>
     );
+  }
+
+  private getSeparator() {
+    if (this.props.separator == "NEW_LINE") {
+      return <br />;
+    }
+    return <span> {this.props.separator} </span>;
   }
 }

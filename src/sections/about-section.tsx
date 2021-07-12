@@ -33,7 +33,7 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
             Have a good day. We all need this. <FaRegSmile />
           </Col>
           <Col className="text-right">
-            <SocialMediaLinks />
+            <SocialMediaLinks separator="NEW_LINE" />
           </Col>
         </Row>
       </Container>
