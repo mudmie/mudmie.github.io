@@ -29,7 +29,7 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
           </div>
         </Row>
         <Row className={styles.rowTopBorder}>
-          <Col className={styles.noPaddingLeft}>
+          <Col>
             Have a good day. We all need this. <FaRegSmile />
           </Col>
           <Col className="text-right">

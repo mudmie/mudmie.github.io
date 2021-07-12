@@ -14,7 +14,7 @@ export class ProjectCard extends React.Component<ProjectCardProps, {}> {
     return (
       <Row className="mb-3">
         <Col md="6">
-          <h3>{this.props.project.name}</h3>
+          <h3 className={styles.projectTitle}>{this.props.project.company}</h3>
           <div>
             {this.props.project.term} / {this.props.project.type}
           </div>

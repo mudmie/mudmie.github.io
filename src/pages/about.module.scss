@@ -6,10 +6,38 @@
   color: $bark-color;
 }
 
-.social-media-row, .chat-row {
+.social-media-row, .chat-row{
   border-top: $section-divider;
+  color: $chestnut-color;
 }
-.about p {
+.hello{
+  color: $brick-color;
+  font-size: 24px;
+  
+  @media (min-width: 414px) {
+    font-size: 32px;
+  }
+  @media (min-width: 768px) {
+    font-size: 40px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 48px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 56px;
+  }
+}
+
+.about h2 {
+  color: $brick-color;
+  font-size: 20px;
+  
+  @media (min-width: 414px) {
+    font-size: 24px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 32px;
+  }
 }
 
 .experience {
@@ -25,3 +53,4 @@
     text-align: right;
   }
 }
+

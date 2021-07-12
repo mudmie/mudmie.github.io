@@ -21,7 +21,7 @@ export class ProjectFooter extends React.Component<ProjectFooterProps, {}> {
         <Container>
           <Row className="justify-content-center mt-3">
             <Col lg={PROJECT_BODY_COLUMN} className={styles.horizontalLine}>
-              Congrats! You’ve reached the end of this case study.
+              Yay! You’ve made to the end of this case study.
             </Col>
           </Row>
         </Container>

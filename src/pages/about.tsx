@@ -11,7 +11,7 @@ import { OutboundLink } from "gatsby-plugin-google-analytics";
 import { SocialMediaLinks } from "../components/social-media-links";
 import { FaRegSmile } from "react-icons/fa";
 
-export const ABOUT_PAGE_COLUMN = 10;
+export const ABOUT_PAGE_COLUMN = 12;
 export interface AboutPageProps {
   data: {
     meImage: ImageSharp;
@@ -31,18 +31,19 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
         </Helmet>
         <Container className={styles.aboutPage}>
           <Row className="justify-content-center align-items-center">
-            <Col lg={ABOUT_PAGE_COLUMN / 2}>
-              <Img
+            <Col lg="4">
+              {/* <Img
                 fluid={this.props.data.meImage.childImageSharp.fluid}
                 alt="Picture of Mudmie"
-              />
+              /> */}
+              <img src={this.getImageUrl("mudmie.png")} className="img-fluid" />
             </Col>
             <Col lg={ABOUT_PAGE_COLUMN / 2}>
-              <h1>
+              <h2 className={styles.hello}>
                 HELLO!
                 <br />
                 IT'S ME, MUDMIE.
-              </h1>
+              </h2>
             </Col>
           </Row>
           <Row className="justify-content-center">
@@ -55,7 +56,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
         <Container>
           <Row className="justify-content-center mt-3">
             <Col lg={ABOUT_PAGE_COLUMN} className={styles.about}>
-              <h2>A Little More About Me</h2>
+              <h3>A Little More About Me</h3>
 
               <p>
                 I'm a product designer with experience designing both enterprise
@@ -118,7 +119,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
         <Container>
           <Row className="justify-content-center mt-3">
             <Col lg={ABOUT_PAGE_COLUMN} className={styles.experience}>
-              <h2>Design Experiences</h2>
+              <h3>Design Experiences</h3>
 
               <table className={styles.experienceTable}>
                 <tr>
@@ -156,7 +157,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
 
 export const pageQuery = graphql`
   query AboutPageQuery {
-    meImage: file(relativePath: { eq: "mudmie_syde20.jpg" }) {
+    meImage: file(relativePath: { eq: "mudmie.png" }) {
       ...MainImageSizes
     }
   }

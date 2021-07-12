@@ -1,5 +1,14 @@
 @import "../styles/_colors.scss";
 
+.project-title{
+  margin: 0;
+}
+
+.p{
+  @media (min-width: 1024px) {
+    margin:px;
+    }
+}
 .case-study-button {
   border: 1px solid $link-color;
   padding: 10px;
