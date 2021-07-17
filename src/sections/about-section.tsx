@@ -24,9 +24,9 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
         <Row
           className={`justify-content-between align-items-center ${styles.rowAbout}`}
         >
-          <div className={`${styles.colAbout}`}>
+          <Col>
             <AboutTitle />
-          </div>
+          </Col>
         </Row>
         <Row className={styles.rowTopBorder}>
           <Col>
