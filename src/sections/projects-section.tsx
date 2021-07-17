@@ -38,7 +38,7 @@ export class ProjectsSection extends React.Component<
   public render() {
     const that = this;
     return (
-      <Container>
+      <Container className={styles.container}>
         <a id={this.props.id} className={sharedStyles.sectionAnchor} />
         <Row>
           <Col>

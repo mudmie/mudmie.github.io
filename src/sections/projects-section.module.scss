@@ -1,26 +1,11 @@
 @import "../styles/_colors.scss";
 @import "../styles/_fonts.scss";
 
-// html {
-//   .section-heading {
-//     margin-bottom: 30px;
-//     font-weight: 600;
-//     font-family: $heading-font;
-//     font-size: 24px;
-//     color: $brick-color;
-//     text-transform: uppercase;
-
-//     @media (min-width: 414px) {
-//       font-size: 32px;
-//     }
-//     @media (min-width: 768px) {
-//       font-size: 40px;
-//     }
-//     @media (min-width: 1024px) {
-//       font-size: 48px;
-//     }
-//     @media (min-width: 1440px) {
-//       font-size: 56px;
-//     }
-//   }
-// }
+.container {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.88) 100px,
+    rgba(255, 255, 255, 0.88) 100%
+  );
+}
