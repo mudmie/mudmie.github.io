@@ -20,7 +20,7 @@ export interface IndexPageProps {
 export default class IndexPage extends React.Component<IndexPageProps, {}> {
   public render() {
     return (
-      <Layout useCustomPageMargin={true}>
+      <Layout useCustomPageMargin={true} theme="homepage">
         <Helmet titleTemplate="">
           <title>Mudmie Chuthamsatid - Product Designer</title>
         </Helmet>

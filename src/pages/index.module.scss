@@ -5,6 +5,19 @@
 html {
   .home-page {
   }
+  :global(.theme-homepage) {
+    background: linear-gradient(
+        111.34deg,
+        rgba(255, 255, 255, 0.5) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      linear-gradient(
+        111.34deg,
+        rgba(220, 242, 241, 0.75) 0%,
+        #dbdded 47.4%,
+        rgba(246, 217, 249, 0.25) 100%
+      );
+  }
 
   .main {
   }
