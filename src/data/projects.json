@@ -32,7 +32,7 @@
     "url": "/projects/annual-review/",
     "imageFolder": "annual-review",
     "isProtected": false,
-    "isEnabled": false
+    "isEnabled": true
   },
   {
     "name": "Hacker Application Portal",
@@ -66,7 +66,7 @@
     "url": "/projects/hackioca/",
     "imageFolder": "hackioca",
     "isProtected": false,
-    "isEnabled": true
+    "isEnabled": false
   },
   {
     "name": "Custom Form Builder",
@@ -101,7 +101,7 @@
     "url": "/projects/account-management/",
     "imageFolder": "account-management",
     "isProtected": false,
-    "isEnabled": true
+    "isEnabled": false
   },
   {
     "name": "T-Shirt Design",
@@ -136,7 +136,7 @@
     "url": "/projects/picking-process/",
     "imageFolder": "picking-process",
     "isProtected": false,
-    "isEnabled": true
+    "isEnabled": false
   },
   {
     "name": "Craft Beer Ordering System",
@@ -153,7 +153,7 @@
     "url": "/projects/craft-beer/",
     "imageFolder": "craft-beer",
     "isProtected": false,
-    "isEnabled": true
+    "isEnabled": false
   },
   {
     "name": "Tasting Note Mobile App",
@@ -170,7 +170,7 @@
     "url": "/projects/tasting-note/",
     "imageFolder": "tasting-note",
     "isProtected": false,
-    "isEnabled": true
+    "isEnabled": false
   },
   {
     "name": "Daily UI",

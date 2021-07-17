@@ -45,41 +45,15 @@ export class ProjectsSection extends React.Component<
             <h2 className={styles.sectionHeading}>Featured Projects</h2>
           </Col>
         </Row>
-        {this.props.projects.map(proj => (
-          <ProjectCard project={proj} />
-          // <Col
-          //   lg="5"
-          //   sm="6"
-          //   xs="12"
-          //   key={proj.name}
-          // >
-          //   <Card className={styles.projectCard}>
-          //     <Link to={proj.url}>
-          //       <CardImg
-          //         src={withPrefix(
-          //           `/images/${proj.imageFolder}/thumbnail.png`
-          //         )}
-          //         alt={`project ${proj.name} image`}
-          //         className={styles.cardImage}
-          //       />
-          //     </Link>
-          //     <CardBody className={styles.cardHeader}>
-          //       <CardTitle className={styles.cardTitle}>
-          //         {proj.isProtected ? (
-          //           <span>
-          //             <FaLock size={16} />{" "}
-          //           </span>
-          //         ) : null}
-          //         <Link to={proj.url}>{proj.name}</Link>{" "}
-          //       </CardTitle>
-          //       <CardSubtitle className={styles.cardSubtitle}>
-          //         {/* {proj.company} */}
-          //         {proj.term}
-          //       </CardSubtitle>
-          //     </CardBody>
-          //   </Card>
-          // </Col>
-        ))}
+        {this.props.projects
+          .filter(proj => proj.isEnabled)
+          .map(proj => (
+            <ProjectCard project={proj} />
+          ))}
+        {/* Empty row to erase the margin bottom */}
+        <Row>
+          <Col className="pb-5"></Col>
+        </Row>
       </Container>
     );
   }

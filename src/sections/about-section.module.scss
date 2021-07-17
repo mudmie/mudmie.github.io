@@ -3,6 +3,10 @@
 
 .about {
   margin-bottom: 100px;
+  background: url("../../static/images/glow_bg.png");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
 }
 
 .row-about {
@@ -17,8 +21,9 @@
   padding-left: 15px;
   padding-right: 15px;
 }
-.col-about-social {
-  padding-left: 15px;
+.about-heading {
+  font-size: 96px;
+  color: black;
 }
 
 .me-caption {
@@ -49,6 +54,6 @@
 }
 
 .row-top-border {
-  border-top: 1px solid $chestnut-color;
+  // border-top: 1px solid $chestnut-color;
   color: $chestnut-color;
 }

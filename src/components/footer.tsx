@@ -7,9 +7,9 @@ export class Footer extends React.Component {
   public render() {
     return (
       <footer>
-        <Container>
+        <Container className={styles.container}>
           <Row className={styles.footerRow}>
-            <Col className={styles.footer}>
+            <Col lg="12" className={styles.footer}>
               Designed &amp; partially coded by Mudmie 2021 ©
             </Col>
           </Row>

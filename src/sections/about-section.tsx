@@ -5,7 +5,6 @@ import * as sharedStyles from "./sections.module.scss";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import Img from "gatsby-image";
 import { withPrefix, Link } from "gatsby";
-import { AboutTitle } from "../components/about-title";
 import { ImageSharp } from "../models/image-sharp";
 import { SocialMediaLinks } from "../components/social-media-links";
 import { FaRegSmile } from "react-icons/fa";
@@ -25,7 +24,20 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
           className={`justify-content-between align-items-center ${styles.rowAbout}`}
         >
           <Col>
-            <AboutTitle />
+            <h1 className={styles.aboutHeading}>
+              Mudmie
+              <br />
+              Chuthamsatid
+            </h1>
+            <p className={styles.aboutPara}>
+              Product Designer. I apply systems thinking &amp; human-computer
+              interaction knowledge to craft product experience and work
+              cross-team to deliver the product. Recently led the design of
+              financial tools at Jitta Wealth.
+            </p>
+            <p className={styles.aboutPara}>
+              Currently looking for a full-time product design opportunity.
+            </p>
           </Col>
         </Row>
         <Row className={styles.rowTopBorder}>
