@@ -26,6 +26,11 @@ html {
   .logo {
     width: 40px;
     height: 40px;
+    margin-right: 5px;
+  }
+
+  .brand {
+    font-family: $heading-font;
   }
 
   .scroll .logo {

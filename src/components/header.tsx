@@ -86,10 +86,13 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
                 this.collapseNav();
               }}
             >
-              <img
-                src={withPrefix("/images/logo.svg")}
-                className={styles.logo}
-              />
+              <div className={styles.brand}>
+                <img
+                  src={withPrefix("/images/logo.svg")}
+                  className={styles.logo}
+                />{" "}
+                mudmie
+              </div>
             </Link>
             <NavbarToggler
               className={styles.navbarToggler}
