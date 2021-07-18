@@ -72,12 +72,15 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
       <header>
         <Container>
           <Navbar
-            className={`${styles.navbar} ${
-              !this.state.isTop ? styles.scroll : ""
-            } ${this.state.isOpen ? styles.navOpen : ""}`}
+            className={styles.navbar}
             light={!this.props.isDarkMode}
             dark={this.props.isDarkMode}
             expand="md"
+            data-sal="fade"
+            data-sal-duration="300"
+            data-sal-delay="200"
+            data-sal-easing="ease"
+            data-sal-once
           >
             <Link
               to="/"

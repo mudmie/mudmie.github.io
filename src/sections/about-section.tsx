@@ -23,7 +23,13 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
         <Row
           className={`justify-content-between align-items-center ${styles.rowAbout}`}
         >
-          <Col lg="8">
+          <Col
+            lg="8"
+            data-sal="slide-up"
+            data-sal-duration="400"
+            data-sal-delay="200"
+            data-sal-easing="ease-out-back"
+          >
             <h1 className={styles.aboutHeading}>
               Mudmie
               <br />
@@ -31,7 +37,14 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
             </h1>
             <h2 className={styles.subheading}>PRODUCT DESIGNER</h2>
           </Col>
-          <Col lg="4" className="align-self-end">
+          <Col
+            lg="4"
+            className="align-self-end"
+            data-sal="slide-up"
+            data-sal-duration="400"
+            data-sal-delay="200"
+            data-sal-easing="ease-out-back"
+          >
             <p className={styles.aboutPara}>
               Also a holding a systems design engineering deegree from the
               University of Waterloo.

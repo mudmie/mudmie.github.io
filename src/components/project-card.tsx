@@ -12,7 +12,13 @@ export interface ProjectCardProps {
 export class ProjectCard extends React.Component<ProjectCardProps, {}> {
   public render() {
     return (
-      <Row className="mb-3">
+      <Row
+        className="mb-3"
+        data-sal="slide-up"
+        data-sal-duration="400"
+        data-sal-delay="200"
+        data-sal-easing="ease-out-back"
+      >
         <Col md="6">
           <h3 className={styles.projectTitle}>{this.props.project.company}</h3>
           <div>

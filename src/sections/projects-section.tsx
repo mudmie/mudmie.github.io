@@ -41,7 +41,12 @@ export class ProjectsSection extends React.Component<
       <Container className={styles.container}>
         <a id={this.props.id} className={sharedStyles.sectionAnchor} />
         <Row>
-          <Col>
+          <Col
+            data-sal="slide-up"
+            data-sal-duration="400"
+            data-sal-delay="200"
+            data-sal-easing="ease-out-back"
+          >
             <h2 className={styles.sectionHeading}>Featured Projects</h2>
           </Col>
         </Row>
