@@ -78,11 +78,11 @@ html {
 
   .navbar-light .navbar-nav {
     .nav-link {
-      color: $chestnut-color;
+      color: $link-color;
       &:focus,
       &:hover {
         font-weight: 700;
-        color: $paprika-color;
+        color: $link-color;
       }
     }
   }

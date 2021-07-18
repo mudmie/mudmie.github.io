@@ -3,13 +3,13 @@
 
 .social-media {
   flex-shrink: 0;
-  color: $chestnut-color;
+  color: $link-color;
 
   a {
     &,
     &:visited,
     &:active {
-      color: $chestnut-color;
+      color: $link-color;
     }
     &:hover {
       color: $link-color;
