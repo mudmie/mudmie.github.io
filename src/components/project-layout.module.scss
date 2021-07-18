@@ -48,6 +48,6 @@ html {
       margin-bottom: 0px;
     }
 
-    @include project-theme($paprika-color, $mustard-color);
+    @include project-theme($black-color, $mustard-color);
   }
 }

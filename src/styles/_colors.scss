@@ -1,26 +1,25 @@
 // New colors
 $snow-color: #ffffff;
-$chestnut-color: #AC8A72;
-$brick-color: #9D4400;
+$chestnut-color: #ac8a72;
+$brick-color: #9d4400;
 $bark-color: #613402;
-$link-color: #52969F;
-$highlight-color: #6DD2DF80;
+
+$highlight-color: #6dd2df80;
+$black-color: #000000;
+$link-color: $black-color;
 
 // Old colors
 $mustard-color: #c09a2d;
 $paprika-color: #aa4725;
 $baby-blue-color: #a4cbd0;
-$baby-blue-tint-color: #D2E6E8;
+$baby-blue-tint-color: #d2e6e8;
 $lemon-color: #ffc82c;
 $graphite-color: #191919;
-$stone-color: #BFBFBF;
+$stone-color: #bfbfbf;
 
-
-
-
-$h1-text-color: $brick-color;
-$h2-text-color: $brick-color;
-$section-header-color: $brick-color;
+$h1-text-color: $black-color;
+$h2-text-color: $black-color;
+$section-header-color: $black-color;
 $body-text-color: $bark-color;
 $project-title-color: $bark-color;
 $project-subtitle-color: $bark-color;
