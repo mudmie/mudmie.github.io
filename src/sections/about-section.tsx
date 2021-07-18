@@ -23,28 +23,22 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
         <Row
           className={`justify-content-between align-items-center ${styles.rowAbout}`}
         >
-          <Col>
+          <Col lg="8">
             <h1 className={styles.aboutHeading}>
               Mudmie
               <br />
               Chuthamsatid
             </h1>
+            <h2 className={styles.subheading}>PRODUCT DESIGNER</h2>
+          </Col>
+          <Col lg="4" className="align-self-end">
             <p className={styles.aboutPara}>
-              Product Designer. I apply systems thinking &amp; human-computer
-              interaction knowledge to craft product experience and work
-              cross-team to deliver the product. Recently led the design of
-              financial tools at Jitta Wealth.
+              Also a holding a systems design engineering deegree from the
+              University of Waterloo.
             </p>
             <p className={styles.aboutPara}>
-              Currently looking for a full-time product design opportunity.
+              Currently looking for a full-time product design role.
             </p>
-          </Col>
-        </Row>
-        <Row className={styles.rowTopBorder}>
-          <Col>
-            Have a good day. We all need this. <FaRegSmile />
-          </Col>
-          <Col className="text-right">
             <SocialMediaLinks separator="NEW_LINE" />
           </Col>
         </Row>

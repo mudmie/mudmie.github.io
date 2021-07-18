@@ -3,10 +3,10 @@
 
 .about {
   margin-bottom: 100px;
-  background: url("../../static/images/glow_bg.png");
-  background-size: 75%;
-  background-repeat: no-repeat;
-  background-position: 100% 50%;
+  // background: url("../../static/images/glow_bg.png");
+  // background-size: 75%;
+  // background-repeat: no-repeat;
+  // background-position: 100% 50%;
 }
 
 .row-about {
@@ -22,8 +22,12 @@
   padding-right: 15px;
 }
 .about-heading {
-  font-size: 96px;
+  font-size: 72px;
   color: black;
+}
+.subheading {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px black;
 }
 
 .me-caption {

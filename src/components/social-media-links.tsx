@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as styles from "./social-media-links.module.scss";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 export interface SocialMediaLinksProps {
   separator: String;
@@ -18,7 +19,7 @@ export class SocialMediaLinks extends React.Component<
             href="mailto:hello@mudmie.com"
             target="_blank"
           >
-            Email
+            Email <FaExternalLinkAlt />
           </OutboundLink>
           {this.getSeparator()}
           <OutboundLink
@@ -26,7 +27,7 @@ export class SocialMediaLinks extends React.Component<
             href="https://www.linkedin.com/in/mudmie"
             target="_blank"
           >
-            LinkedIn
+            LinkedIn <FaExternalLinkAlt />
           </OutboundLink>
           {this.getSeparator()}
           <OutboundLink
@@ -34,7 +35,7 @@ export class SocialMediaLinks extends React.Component<
             href="https://www.instagram.com/mudmiemee"
             target="_blank"
           >
-            Instagram
+            Instagram <FaExternalLinkAlt />
           </OutboundLink>
         </span>
       </div>
