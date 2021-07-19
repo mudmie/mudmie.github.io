@@ -34,13 +34,17 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
         <Container className={styles.aboutPage}>
           <Row
             className={`justify-content-center align-items-center ${styles.borderBottom}`}
+            data-sal="slide-up"
+            data-sal-duration="400"
+            data-sal-delay="200"
+            data-sal-easing="ease-out-back"
           >
             <Col lg="4">
-              {/* <Img
+              <Img
                 fluid={this.props.data.meImage.childImageSharp.fluid}
                 alt="Picture of Mudmie"
-              /> */}
-              <img src={this.getImageUrl("mudmie.png")} className="img-fluid" />
+              />
+              {/* <img src={this.getImageUrl("Mudmie.png")} className="img-fluid" /> */}
             </Col>
             <Col lg={ABOUT_PAGE_COLUMN / 2}>
               <h2 className={styles.hello}>
@@ -236,7 +240,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
 
 export const pageQuery = graphql`
   query AboutPageQuery {
-    meImage: file(relativePath: { eq: "mudmie.png" }) {
+    meImage: file(relativePath: { eq: "Mudmie.png" }) {
       ...MainImageSizes
     }
   }
