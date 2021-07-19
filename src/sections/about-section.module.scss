@@ -23,7 +23,6 @@
 }
 .about-heading {
   font-size: 72px;
-  color: black;
 }
 .subheading {
   -webkit-text-fill-color: transparent;
@@ -55,9 +54,4 @@
   border-bottom: 1.5px solid $stone-color;
   display: inline-block;
   margin-bottom: 12px;
-}
-
-.row-top-border {
-  // border-top: 1px solid $chestnut-color;
-  color: $chestnut-color;
 }
