@@ -17,24 +17,6 @@
     "isEnabled": true
   },
   {
-    "name": "Annual Risk Profile Assessment",
-    "company": "Jitta Wealth",
-    "term": "Coming Soon",
-    "description": "Lorem ipsum",
-    "type": "Full-time",
-    "platform": [
-      "Web",
-      "Mobile"
-    ],
-    "duration": "2 Months",
-    "myRole": "Lorem ipsum",
-    "results": "Lorem ipsum",
-    "url": "/projects/annual-review/",
-    "imageFolder": "annual-review",
-    "isProtected": false,
-    "isEnabled": true
-  },
-  {
     "name": "Hacker Application Portal",
     "company": "Hack The North",
     "term": "Summer 2019",
@@ -83,7 +65,7 @@
     "url": "/projects/custom-form-builder/",
     "imageFolder": "custom-form-builder",
     "isProtected": false,
-    "isEnabled": false
+    "isEnabled": true
   },
   {
     "name": "User Account Management",
@@ -101,25 +83,7 @@
     "url": "/projects/account-management/",
     "imageFolder": "account-management",
     "isProtected": false,
-    "isEnabled": false
-  },
-  {
-    "name": "T-Shirt Design",
-    "company": "PlanGrid",
-    "term": "Fall 2018",
-    "description": "Making PlanGrid be on UWaterloo students' radar.",
-    "type": "Lorem",
-    "platform": [
-      "Web",
-      "Mobile"
-    ],
-    "duration": "2 Months",
-    "myRole": "Lorem ipsum",
-    "results": "Lorem ipsum",
-    "url": "/projects/t-shirt/",
-    "imageFolder": "t-shirt",
-    "isProtected": false,
-    "isEnabled": false
+    "isEnabled": true
   },
   {
     "name": "Picking Process Experience",
