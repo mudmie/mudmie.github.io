@@ -50,3 +50,12 @@
   @include cta-button();
 }
 
+@mixin border($side) {
+  border-#{$side}: $section-divider;
+}
+.border-right {
+  @include border(right);
+}
+.border-bottom {
+  @include border(bottom);
+}

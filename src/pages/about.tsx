@@ -32,7 +32,9 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
           <title>About me</title>
         </Helmet>
         <Container className={styles.aboutPage}>
-          <Row className="justify-content-center align-items-center">
+          <Row
+            className={`justify-content-center align-items-center ${styles.borderBottom}`}
+          >
             <Col lg="4">
               {/* <Img
                 fluid={this.props.data.meImage.childImageSharp.fluid}
@@ -62,8 +64,11 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
         </Container>
 
         <Container>
-          <Row className="justify-content-center mt-3">
-            <Col lg={ABOUT_PAGE_COLUMN / 2} className={styles.about}>
+          <Row className={`justify-content-center mt-3 ${styles.borderBottom}`}>
+            <Col
+              lg={ABOUT_PAGE_COLUMN / 2}
+              className={styles.about + " " + styles.borderRight}
+            >
               <h3>MORE OF ME</h3>
               <p>
                 I did 4 product design internships (that’s 16 months!) at
@@ -125,33 +130,36 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               </p> */}
             </Col>
             <Col lg={ABOUT_PAGE_COLUMN / 2}>
-              <h3>WAYS TO CONNECT</h3>
-              <SocialMediaLinks separator=" " />
+              <div className={`pb-4 mb-4 ${styles.borderBottom}`}>
+                <h3>WAYS TO CONNECT</h3>
+                <SocialMediaLinks separator=" " />
+              </div>
+              <div>
+                <h3>FINAL BIT OF ME.</h3>
+                <p>
+                  I was born and raised in Bangkok, Thailand, but I spend most
+                  of my time living abroad.
+                </p>
 
-              <h3>FINAL BIT OF ME.</h3>
-              <p>
-                I was born and raised in Bangkok, Thailand, but I spend most of
-                my time living abroad.
-              </p>
+                <p>
+                  I love traveling and eating good food — my top 3 are sushi,
+                  matcha, and fried chicken + Oatly{" "}
+                </p>
 
-              <p>
-                I love traveling and eating good food — my top 3 are sushi,
-                matcha, and fried chicken + Oatly{" "}
-              </p>
+                <p>
+                  I'm currently working on my Korean, so k-dramas are essential.{" "}
+                </p>
 
-              <p>
-                I'm currently working on my Korean, so k-dramas are essential.{" "}
-              </p>
+                <p>
+                  I also plan to adopt a Shiba Inu although my mom told me to
+                  take care of myself first.{" "}
+                </p>
 
-              <p>
-                I also plan to adopt a Shiba Inu although my mom told me to take
-                care of myself first.{" "}
-              </p>
-
-              <p>
-                Finally, if you need skincare recommendations, I can probably
-                help.
-              </p>
+                <p>
+                  Finally, if you need skincare recommendations, I can probably
+                  help.
+                </p>
+              </div>
             </Col>
           </Row>
         </Container>
