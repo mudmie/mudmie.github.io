@@ -1,31 +1,14 @@
 @import "../styles/_colors.scss";
 @import "../styles/_fonts.scss";
-@import "../styles/_projects";
+@import "../styles/_projects.scss";
 
 .about-page {
-  color: $bark-color;
+  // color: $bark-color;
 }
 
-.social-media-row, .chat-row{
-  border-top: $section-divider;
-  color: $chestnut-color;
-}
 .hello{
-  color: $brick-color;
+  color: $black-color;
   font-size: 24px;
-  
-  @media (min-width: 414px) {
-    font-size: 32px;
-  }
-  @media (min-width: 768px) {
-    font-size: 40px;
-  }
-  @media (min-width: 1024px) {
-    font-size: 48px;
-  }
-  @media (min-width: 1440px) {
-    font-size: 56px;
-  }
 }
 
 .about h2 {
@@ -40,17 +23,30 @@
   }
 }
 
-.experience {
+.smile{
+  text-align: center;
+}
 
+.experience {
 }
 
 .experience-table {
   width: 100%;
+  td {
+    display: block;
+  }
+  tr {
+    margin-bottom: 32px;
+  }
   .experience-name {
-
+    font-weight: 700;
   }
   .experience-period {
-    text-align: right;
+    font-weight: 400;
   }
+}
+
+.resume-button {
+  @include cta-button();
 }
 

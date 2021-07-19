@@ -10,6 +10,8 @@ import { Dash } from "../components/dash";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import { SocialMediaLinks } from "../components/social-media-links";
 import { FaRegSmile } from "react-icons/fa";
+import { RESUME_FILE_NAME } from "../components/constants";
+import { BsArrowUpRight } from "react-icons/bs";
 
 export const ABOUT_PAGE_COLUMN = 12;
 export interface AboutPageProps {
@@ -44,94 +46,178 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                 <br />
                 IT'S ME, MUDMIE.
               </h2>
-            </Col>
-          </Row>
-          <Row className="justify-content-center">
-            <Col lg={ABOUT_PAGE_COLUMN} className={styles.socialMediaRow}>
-              <SocialMediaLinks separator="/" />
+              <p>
+                A product designer who combines systems thinking and
+                user-centered design to understand problems in a bigger before
+                exploring ways to design product experience.
+              </p>
+
+              <p>
+                I have experience designing both enterprise &amp; consumer
+                products. Recently, I designed wealth management platform at
+                Jitta Wealth.
+              </p>
             </Col>
           </Row>
         </Container>
 
         <Container>
           <Row className="justify-content-center mt-3">
-            <Col lg={ABOUT_PAGE_COLUMN} className={styles.about}>
-              <h3>A Little More About Me</h3>
-
+            <Col lg={ABOUT_PAGE_COLUMN / 2} className={styles.about}>
+              <h3>MORE OF ME</h3>
               <p>
-                I'm a product designer with experience designing both enterprise and consumer products. 
-                With a background in <OutboundLink href="https://uwaterloo.ca/systems-design-engineering/about-systems-design-engineering/what-systems-design-engineering" target="_blank">
-                Systems Design Engineering
-                </OutboundLink>, I combine systems thinking and user-centered design to understand the problem in a bigger picture before exploring ways to design product experiences.
+                I did 4 product design internships (that’s 16 months!) at
+                companies in North America, where I applied the design thinking
+                process to solve real-world problems.{" "}
               </p>
               <p>
-              At the University of Waterloo, I spent a total of 16 months interning at companies in North America, where I applied the design thinking process to solve real-world problems.
-              I was also involved in the design community by being part of{" "}
+                I was also involved in the design community by being part of
+                UW/UX and the design team at Hack the North.
+              </p>
+              <div className={styles.smile}>
+                <img src={this.getImageUrl("smile.svg")} />
+              </div>
+
+              {/* <p>
+                I'm a product designer with experience designing both enterprise
+                and consumer products. With a background in{" "}
+                <OutboundLink
+                  href="https://uwaterloo.ca/systems-design-engineering/about-systems-design-engineering/what-systems-design-engineering"
+                  target="_blank"
+                >
+                  Systems Design Engineering
+                </OutboundLink>
+                , I combine systems thinking and user-centered design to
+                understand the problem in a bigger picture before exploring ways
+                to design product experiences.
+              </p>
+              <p>
+                At the University of Waterloo, I spent a total of 16 months
+                interning at companies in North America, where I applied the
+                design thinking process to solve real-world problems. I was also
+                involved in the design community by being part of{" "}
                 <OutboundLink href="http://uwux.ca/" target="_blank">
                   UW/UX
                 </OutboundLink>{" "}
                 and the design team at{" "}
-                <OutboundLink href="https://2019.hackthenorth.com" target="_blank">
+                <OutboundLink
+                  href="https://2019.hackthenorth.com"
+                  target="_blank"
+                >
                   Hack the North
                 </OutboundLink>
                 .
               </p>
               <p>
-              I was born and raised in Bangkok, Thailand, but I spend most of my time living abroad. I love traveling and eating good food – sushi, matcha, and fried chicken are my top 3 + {" "}
-                <OutboundLink href="https://us.oatly.com/collections/products/products/full-fat-oatmilk-chilled" target="_blank">
+                I was born and raised in Bangkok, Thailand, but I spend most of
+                my time living abroad. I love traveling and eating good food –
+                sushi, matcha, and fried chicken are my top 3 +{" "}
+                <OutboundLink
+                  href="https://us.oatly.com/collections/products/products/full-fat-oatmilk-chilled"
+                  target="_blank"
+                >
                   Oatly
                 </OutboundLink>{" "}
-                (full fat, of course)! I'm currently working on my Korean, so k-dramas are essential. 
-                I also plan to adopt a Shiba Inu although my mom told me to take care of myself first. 
-                Finally, if you need skincare recommendations, I can probably help.
-              </p>
+                (full fat, of course)! I'm currently working on my Korean, so
+                k-dramas are essential. I also plan to adopt a Shiba Inu
+                although my mom told me to take care of myself first. Finally,
+                if you need skincare recommendations, I can probably help.
+              </p> */}
             </Col>
-          </Row>
-          <Row className="justify-content-center mt-3">
-            <Col lg={ABOUT_PAGE_COLUMN} className={styles.chatRow}>
-              You’ve made it to the end! I think we should{" "}
-              <OutboundLink
-                className={styles.linkedIn}
-                href="mailto:hello@mudmie.com"
-                target="_blank"
-              >
-                chat
-              </OutboundLink>
-              . <FaRegSmile />
+            <Col lg={ABOUT_PAGE_COLUMN / 2}>
+              <h3>WAYS TO CONNECT</h3>
+              <SocialMediaLinks separator=" " />
+
+              <h3>FINAL BIT OF ME.</h3>
+              <p>
+                I was born and raised in Bangkok, Thailand, but I spend most of
+                my time living abroad.
+              </p>
+
+              <p>
+                I love traveling and eating good food — my top 3 are sushi,
+                matcha, and fried chicken + Oatly{" "}
+              </p>
+
+              <p>
+                I'm currently working on my Korean, so k-dramas are essential.{" "}
+              </p>
+
+              <p>
+                I also plan to adopt a Shiba Inu although my mom told me to take
+                care of myself first.{" "}
+              </p>
+
+              <p>
+                Finally, if you need skincare recommendations, I can probably
+                help.
+              </p>
             </Col>
           </Row>
         </Container>
         <Container>
           <Row className="justify-content-center mt-3">
-            <Col lg={ABOUT_PAGE_COLUMN} className={styles.experience}>
+            <Col lg="3">
               <h3>Design Experiences</h3>
-
+            </Col>
+            <Col lg="6" className={styles.experience}>
               <table className={styles.experienceTable}>
                 <tr>
-                  <td className={styles.experienceName}>Jitta Wealth / Full-time</td>
-                  <td className={styles.experiencePeriod}>Jun 2020 - May 2021</td>
+                  <td className={styles.experienceName}>
+                    Jitta Wealth / Full-time
+                  </td>
+                  <td className={styles.experiencePeriod}>
+                    Jun 2020 - May 2021
+                  </td>
                 </tr>
                 <tr>
-                  <td className={styles.experienceName}>Hack the North / Community</td>
-                  <td className={styles.experiencePeriod}>Mar 2019 – Feb 2020</td>
+                  <td className={styles.experienceName}>
+                    Hack the North / Community
+                  </td>
+                  <td className={styles.experiencePeriod}>
+                    Mar 2019 – Feb 2020
+                  </td>
                 </tr>
                 <tr>
-                  <td className={styles.experienceName}>Autodesk Construction Cloud / Internship</td>
-                  <td className={styles.experiencePeriod}>May 2019 – Aug 2019</td>
+                  <td className={styles.experienceName}>
+                    Autodesk Construction Cloud / Internship
+                  </td>
+                  <td className={styles.experiencePeriod}>
+                    May 2019 – Aug 2019
+                  </td>
                 </tr>
                 <tr>
-                  <td className={styles.experienceName}>PlanGrid / Internship</td>
-                  <td className={styles.experiencePeriod}>Sep 2018 – Dec 2018</td>
+                  <td className={styles.experienceName}>
+                    PlanGrid / Internship
+                  </td>
+                  <td className={styles.experiencePeriod}>
+                    Sep 2018 – Dec 2018
+                  </td>
                 </tr>
                 <tr>
                   <td className={styles.experienceName}>Nulogy / Internship</td>
-                  <td className={styles.experiencePeriod}>Jan 2018 – Apr 2018</td>
+                  <td className={styles.experiencePeriod}>
+                    Jan 2018 – Apr 2018
+                  </td>
                 </tr>
                 <tr>
-                  <td className={styles.experienceName}>LCBO Next / Internship</td>
-                  <td className={styles.experiencePeriod}>May 2017 – Aug 2017</td>
+                  <td className={styles.experienceName}>
+                    LCBO Next / Internship
+                  </td>
+                  <td className={styles.experiencePeriod}>
+                    May 2017 – Aug 2017
+                  </td>
                 </tr>
               </table>
+            </Col>
+            <Col lg="3" className="align-self-center">
+              <OutboundLink
+                href={withPrefix(RESUME_FILE_NAME)}
+                className={styles.resumeButton}
+                target="_blank"
+              >
+                Resume <BsArrowUpRight />
+              </OutboundLink>
             </Col>
           </Row>
         </Container>

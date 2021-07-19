@@ -1,0 +1,1 @@
+export const RESUME_FILE_NAME = "/mudmie-resume2021.pdf";

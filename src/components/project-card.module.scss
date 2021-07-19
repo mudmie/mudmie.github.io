@@ -1,4 +1,5 @@
 @import "../styles/_colors.scss";
+@import "../styles/projects.scss";
 
 .project-title{
   margin: 0;
@@ -10,10 +11,7 @@
     }
 }
 .case-study-button {
-  border: 1px solid $link-color;
-  padding: 13px;
-  border-radius: 25px;
-  box-shadow: 5px 5px $link-color;
+  @include cta-button();
   // padding: 10px;
   // cursor: url('../../static/images/click-cursor.svg') 22 22, auto;
 

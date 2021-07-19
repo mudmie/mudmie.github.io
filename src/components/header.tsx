@@ -11,6 +11,7 @@ import {
   NavbarBrand,
   Container,
 } from "reactstrap";
+import { RESUME_FILE_NAME } from "./constants";
 import * as styles from "./header.module.scss";
 
 export interface HeaderProps {
@@ -142,7 +143,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
 
                 <NavItem>
                   <OutboundLink
-                    href={withPrefix("/mudmie-resume2021.pdf")}
+                    href={withPrefix(RESUME_FILE_NAME)}
                     className={`nav-link ${styles.navLink}`}
                     target="_blank"
                     onClick={() => {
