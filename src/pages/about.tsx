@@ -31,208 +31,133 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
         <Helmet>
           <title>About me</title>
         </Helmet>
-        <Container className={styles.aboutPage}>
-          <Row
-            className={`justify-content-center align-items-center ${styles.borderBottom}`}
-            data-sal="slide-up"
-            data-sal-duration="400"
-            data-sal-delay="200"
-            data-sal-easing="ease-out-back"
-          >
-            <Col lg="4">
-              <Img
-                fluid={this.props.data.meImage.childImageSharp.fluid}
-                alt="Picture of Mudmie"
-              />
-              {/* <img src={this.getImageUrl("Mudmie.png")} className="img-fluid" /> */}
-            </Col>
-            <Col lg={ABOUT_PAGE_COLUMN / 2}>
-              <h2 className={styles.hello}>
-                HELLO!
-                <br />
-                IT'S ME, MUDMIE.
-              </h2>
-              <p>
-                A product designer who combines systems thinking and
-                user-centered design to understand problems in a bigger before
-                exploring ways to design product experience.
-              </p>
-
-              <p>
-                I have experience designing both enterprise &amp; consumer
-                products. Recently, I designed wealth management platform at
-                Jitta Wealth.
-              </p>
-            </Col>
-          </Row>
-        </Container>
-
-        <Container>
-          <Row className={`justify-content-center mt-3 ${styles.borderBottom}`}>
-            <Col
-              lg={ABOUT_PAGE_COLUMN / 2}
-              className={styles.about + " " + styles.borderRight}
+        <section className={styles.section1}>
+          <Container>
+            <Row
+              className={`justify-content-center align-items-center`}
+              data-sal="slide-up"
+              data-sal-duration="400"
+              data-sal-delay="200"
+              data-sal-easing="ease-out-back"
             >
-              <h3>MORE OF ME</h3>
-              <p>
-                I did 4 product design internships (that’s 16 months!) at
-                companies in North America, where I applied the design thinking
-                process to solve real-world problems.{" "}
-              </p>
-              <p>
-                I was also involved in the design community by being part of
-                UW/UX and the design team at Hack the North.
-              </p>
-              <div className={styles.smile}>
-                <img src={this.getImageUrl("smile.svg")} />
-              </div>
-
-              {/* <p>
-                I'm a product designer with experience designing both enterprise
-                and consumer products. With a background in{" "}
-                <OutboundLink
-                  href="https://uwaterloo.ca/systems-design-engineering/about-systems-design-engineering/what-systems-design-engineering"
-                  target="_blank"
-                >
-                  Systems Design Engineering
-                </OutboundLink>
-                , I combine systems thinking and user-centered design to
-                understand the problem in a bigger picture before exploring ways
-                to design product experiences.
-              </p>
-              <p>
-                At the University of Waterloo, I spent a total of 16 months
-                interning at companies in North America, where I applied the
-                design thinking process to solve real-world problems. I was also
-                involved in the design community by being part of{" "}
-                <OutboundLink href="http://uwux.ca/" target="_blank">
-                  UW/UX
-                </OutboundLink>{" "}
-                and the design team at{" "}
-                <OutboundLink
-                  href="https://2019.hackthenorth.com"
-                  target="_blank"
-                >
-                  Hack the North
-                </OutboundLink>
-                .
-              </p>
-              <p>
-                I was born and raised in Bangkok, Thailand, but I spend most of
-                my time living abroad. I love traveling and eating good food –
-                sushi, matcha, and fried chicken are my top 3 +{" "}
-                <OutboundLink
-                  href="https://us.oatly.com/collections/products/products/full-fat-oatmilk-chilled"
-                  target="_blank"
-                >
-                  Oatly
-                </OutboundLink>{" "}
-                (full fat, of course)! I'm currently working on my Korean, so
-                k-dramas are essential. I also plan to adopt a Shiba Inu
-                although my mom told me to take care of myself first. Finally,
-                if you need skincare recommendations, I can probably help.
-              </p> */}
-            </Col>
-            <Col lg={ABOUT_PAGE_COLUMN / 2}>
-              <div className={`pb-4 mb-4 ${styles.borderBottom}`}>
-                <h3>WAYS TO CONNECT</h3>
-                <SocialMediaLinks separator=" " />
-              </div>
-              <div>
-                <h3>FINAL BIT OF ME.</h3>
+              <Col lg="4">
+                <h2 className={styles.hello}>
+                  Hello, I’m Mudmie.
+                </h2>
+              </Col>
+              <Col lg="8">
                 <p>
-                  I was born and raised in Bangkok, Thailand, but I spend most
-                  of my time living abroad.
+                  A product designer who combines systems thinking and
+                  user-centered design to understand problems in a bigger before
+                  exploring ways to design product experience.
                 </p>
 
                 <p>
-                  I love traveling and eating good food — my top 3 are sushi,
-                  matcha, and fried chicken + Oatly{" "}
+                  I have experience designing both enterprise &amp; consumer
+                  products. Recently, I designed wealth management platform at
+                  Jitta Wealth.
                 </p>
-
+              </Col>
+            </Row>
+          </Container>
+        </section>
+        <section className={styles.section2}>
+          <Container>
+            <Row
+              className={`justify-content-center pt-3`}
+            >
+              <Col lg="4" className="align-self-end">
+                <Img
+                  fluid={this.props.data.meImage.childImageSharp.fluid}
+                  alt="Picture of Mudmie"
+                />
+                {/* <img src={this.getImageUrl("Mudmie.png")} className="img-fluid" /> */}
+              </Col>
+              <Col lg="8" className="mb-3">
+                <h3 className={styles.moreOfMe}>More of me.</h3>
                 <p>
-                  I'm currently working on my Korean, so k-dramas are essential.{" "}
+                  I did 4 product design internships (that’s 16 months!) at
+                  companies in North America, where I applied the design
+                  thinking process to solve real-world problems.
                 </p>
-
                 <p>
-                  I also plan to adopt a Shiba Inu although my mom told me to
-                  take care of myself first.{" "}
+                  I was also involved in the design community by being part of
+                  UW/UX and the design team at Hack the North.{" "}
                 </p>
-
                 <p>
-                  Finally, if you need skincare recommendations, I can probably
-                  help.
+                  I was born and raised in Bangkok, but I spend most of my time
+                  living in the US &amp; Canada. I love traveling and eating
+                  good food.{" "}
                 </p>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-        <Container>
-          <Row className="justify-content-center mt-3">
-            <Col lg="3">
-              <h3>Design Experiences</h3>
-            </Col>
-            <Col lg="6" className={styles.experience}>
-              <table className={styles.experienceTable}>
-                <tr>
-                  <td className={styles.experienceName}>
-                    Jitta Wealth / Full-time
-                  </td>
-                  <td className={styles.experiencePeriod}>
-                    Jun 2020 - May 2021
-                  </td>
-                </tr>
-                <tr>
-                  <td className={styles.experienceName}>
-                    Hack the North / Community
-                  </td>
-                  <td className={styles.experiencePeriod}>
-                    Mar 2019 – Feb 2020
-                  </td>
-                </tr>
-                <tr>
-                  <td className={styles.experienceName}>
-                    Autodesk Construction Cloud / Internship
-                  </td>
-                  <td className={styles.experiencePeriod}>
-                    May 2019 – Aug 2019
-                  </td>
-                </tr>
-                <tr>
-                  <td className={styles.experienceName}>
-                    PlanGrid / Internship
-                  </td>
-                  <td className={styles.experiencePeriod}>
-                    Sep 2018 – Dec 2018
-                  </td>
-                </tr>
-                <tr>
-                  <td className={styles.experienceName}>Nulogy / Internship</td>
-                  <td className={styles.experiencePeriod}>
-                    Jan 2018 – Apr 2018
-                  </td>
-                </tr>
-                <tr>
-                  <td className={styles.experienceName}>
-                    LCBO Next / Internship
-                  </td>
-                  <td className={styles.experiencePeriod}>
-                    May 2017 – Aug 2017
-                  </td>
-                </tr>
-              </table>
-            </Col>
-            <Col lg="3" className="align-self-center">
-              <OutboundLink
-                href={withPrefix(RESUME_FILE_NAME)}
-                className={styles.resumeButton}
-                target="_blank"
-              >
-                Resume <BsArrowUpRight />
-              </OutboundLink>
-            </Col>
-          </Row>
-        </Container>
+                <p>
+                  Finally, I have a plan to adopt a Shiba Inu although my mom
+                  told me to take care of myself first.
+                </p>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+        <section className={styles.section3}>
+          <Container>
+            <Row className="justify-content-center mt-3">
+              <Col lg="4" className="align-self-center">
+                <h3 className={styles.designExperience}>Design Experience.</h3>
+              </Col>
+              <Col lg="8" className={styles.experience}>
+                <table className={styles.experienceTable}>
+                  <tr>
+                    <td >
+                      <span className={styles.experienceName}>Jitta Wealth</span>, <span className={styles.experienceType}>Full-time</span>
+                    </td>
+                    <td className={styles.experiencePeriod}>
+                      Jun 2020 - May 2021
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className={styles.experienceName}>
+                    <span className={styles.experienceName}>Hack the North</span>, <span className={styles.experienceType}>Community</span>
+                    </td>
+                    <td className={styles.experiencePeriod}>
+                      Mar 2019 – Feb 2020
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className={styles.experienceName}>
+                    <span className={styles.experienceName}>Autodesk Construction Cloud</span>, <span className={styles.experienceType}>Internship</span>
+                    </td>
+                    <td className={styles.experiencePeriod}>
+                      May 2019 – Aug 2019
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className={styles.experienceName}>
+                    <span className={styles.experienceName}>PlanGrid</span>, <span className={styles.experienceType}>Internship</span>
+                    </td>
+                    <td className={styles.experiencePeriod}>
+                      Sep 2018 – Dec 2018
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className={styles.experienceName}>
+                    <span className={styles.experienceName}>Nulogy</span>, <span className={styles.experienceType}>Internship</span>
+                    </td>
+                    <td className={styles.experiencePeriod}>
+                      Jan 2018 – Apr 2018
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className={styles.experienceName}>
+                    <span className={styles.experienceName}>LCBO Next</span>, <span className={styles.experienceType}>Internship</span>
+                    </td>
+                    <td className={styles.experiencePeriod}>
+                      May 2017 – Aug 2017
+                    </td>
+                  </tr>
+                </table>
+              </Col>
+            </Row>
+          </Container>
+        </section>
       </Layout>
     );
   }

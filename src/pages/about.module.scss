@@ -2,19 +2,38 @@
 @import "../styles/_fonts.scss";
 @import "../styles/_projects.scss";
 
-.about-page {
-  // color: $bark-color;
+.section-1,
+.section-3 {
+  background-color: $ocean-color;
+  color: $cauliflower-color;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.section-2 {
+  background-color: $cauliflower-color;
+  padding-top: 50px;
 }
 
-.hello{
-  color: $black-color;
+.hello {
+  color: $cauliflower-color;
+  font-weight: 400 !important;
   font-size: 24px;
+  text-transform: uppercase;
+}
+.more-of-me {
+  color: $taupe-color;
+  text-transform: uppercase;
+}
+
+.design-experience {
+  color: $cauliflower-color;
+  text-transform: uppercase;
 }
 
 .about h2 {
   color: $brick-color;
   font-size: 20px;
-  
+
   @media (min-width: 414px) {
     font-size: 24px;
   }
@@ -23,7 +42,7 @@
   }
 }
 
-.smile{
+.smile {
   text-align: center;
 }
 
@@ -36,13 +55,16 @@
     display: block;
   }
   tr {
-    margin-bottom: 32px;
+    display: block;
+    margin-bottom: 16px;
   }
   .experience-name {
     font-weight: 700;
   }
+  
   .experience-period {
     font-weight: 400;
+    color: $taupe-color;
   }
 }
 
