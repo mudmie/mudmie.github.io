@@ -20,7 +20,7 @@ export class SocialMediaLinks extends React.Component<
             href="mailto:hello@mudmie.com"
             target="_blank"
           >
-            Email <BsArrowUpRight />
+            Email<BsArrowUpRight />
           </OutboundLink>
           {this.getSeparator()}
           <OutboundLink
@@ -28,7 +28,7 @@ export class SocialMediaLinks extends React.Component<
             href="https://www.linkedin.com/in/mudmie"
             target="_blank"
           >
-            LinkedIn <BsArrowUpRight />
+            LinkedIn<BsArrowUpRight />
           </OutboundLink>
           {this.getSeparator()}
           <OutboundLink
@@ -36,7 +36,7 @@ export class SocialMediaLinks extends React.Component<
             href="https://www.instagram.com/mudmiemee"
             target="_blank"
           >
-            Instagram <BsArrowUpRight />
+            Instagram<BsArrowUpRight />
           </OutboundLink>
         </span>
       </div>

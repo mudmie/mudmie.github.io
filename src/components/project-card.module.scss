@@ -17,6 +17,8 @@
     }
 }
 .case-study-button {
+  text-decoration: none !important;
+
   @include cta-button();
   // padding: 10px;
   // cursor: url('../../static/images/click-cursor.svg') 22 22, auto;
