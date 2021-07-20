@@ -43,8 +43,20 @@
   }
 }
 .about-heading {
-  font-size: 72px;
+  font-size: 32px;
   color: $cauliflower-color;
+  @media (min-width: 414px) {
+    font-size: 40px;
+  }
+  @media (min-width: 768px) {
+    font-size: 64px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 64px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 72px;
+  }
 }
 .subheading {
   max-width: 86%;
