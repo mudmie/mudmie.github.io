@@ -68,7 +68,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               data-sal-delay="600"
               data-sal-easing="ease-out-back"
             >
-              <Col lg="4" md="6" className="align-self-end">
+              <Col lg="4" md="6" className="align-self-end text-center">
                 <Img
                   fluid={this.props.data.meImage.childImageSharp.fluid}
                   alt="Picture of Mudmie"
@@ -191,7 +191,12 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
 export const pageQuery = graphql`
   query AboutPageQuery {
     meImage: file(relativePath: { eq: "Mudmie.png" }) {
-      ...MainImageSizes
+      childImageSharp {
+        fluid(maxWidth: 350, quality: 100) {
+          ...GatsbyImageSharpFluid_noBase64
+
+        }
+      }
     }
   }
 `;
