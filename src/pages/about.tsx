@@ -89,10 +89,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                 <h3 className={styles.moreOfMe}>Getting Personal.</h3>
                 <p>
                   I was born and raised in Bangkok, but I spend most of my time
-                  living in the U.S. &amp; Canada. I love <OutboundLink href="https://www.instagram.com/stories/highlights/18245052037006921/" target="_blank">
-                  traveling</OutboundLink> and eating
-                  good <OutboundLink href="https://www.instagram.com/stories/highlights/17926386541661627/" target="_blank">
-                  food</OutboundLink> — sushi, fried chicken, and matcha are my top 3! These days I'm working on my Korean, so k-dramas are essential. 
+                  living in the U.S. &amp; Canada. I love traveling and eating good food — sushi, fried chicken, and matcha are my top 3! These days I'm working on my Korean, so k-dramas are essential. 
                 </p>
                 <p>
                   Lastly, I have a plan to adopt a Shiba Inu although my mom
