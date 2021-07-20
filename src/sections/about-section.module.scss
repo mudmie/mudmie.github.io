@@ -5,7 +5,7 @@
   background-color: $ocean-color;
 }
 
-.about {
+.container {
   padding-bottom: 100px;
   // background: url("../../static/images/glow_bg.png");
   // background-size: 75%;
@@ -19,6 +19,7 @@
 
 .row-about {
   min-height: 70vh;
+  padding-bottom: 100px;
 }
 
 .col-about {

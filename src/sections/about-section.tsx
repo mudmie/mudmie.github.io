@@ -19,7 +19,7 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
   public render() {
     return (
       <section className={styles.section}>
-        <Container className={styles.about}>
+        <Container className={styles.container}>
           <a id={this.props.id} className={sharedStyles.sectionAnchor} />
           <Row
             className={`justify-content-between align-items-center ${styles.rowAbout}`}
