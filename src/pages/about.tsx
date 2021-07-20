@@ -52,7 +52,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
 
                 <p>
                   I have experience designing both enterprise &amp; consumer
-                  products. Recently, I designed wealth management platform at
+                  products. Recently, I designed a wealth management platform at
                   Jitta Wealth.
                 </p>
               </Col>
@@ -78,8 +78,8 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               <Col lg="8" md="6" className="mb-3">
                 <h3 className={styles.moreOfMe}>More of me.</h3>
                 <p>
-                  I grew intersts in human factors in design during my study at the <OutboundLink href="https://uwaterloo.ca/systems-design-engineering/about-systems-design-engineering/what-systems-design-engineering" target="_blank">
-                  University of Waterloo </OutboundLink>, so I spent 4 terms (that's 16 months in total!)
+                  At the <OutboundLink href="https://uwaterloo.ca/systems-design-engineering/about-systems-design-engineering/what-systems-design-engineering" target="_blank">
+                  University of Waterloo</OutboundLink>, I spent 4 terms (16 months in total!)
                   interning as a product designer at companies in North America. Through these internships, I got to apply the design
                   thinking process to solve real-world problems.
                 </p>
@@ -87,13 +87,16 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                   I was also involved in the design community by being part of
                   UW/UX and the design team at Hack the North.{" "}
                 </p>
+                <h3 className={styles.moreOfMe}>Getting Personal.</h3>
                 <p>
                   I was born and raised in Bangkok, but I spend most of my time
-                  living in the US &amp; Canada. I love traveling and eating
-                  good food.{" "}
+                  living in the U.S. &amp; Canada. I love <OutboundLink href="https://www.instagram.com/stories/highlights/18245052037006921/" target="_blank">
+                  traveling</OutboundLink> and eating
+                  good <OutboundLink href="https://www.instagram.com/stories/highlights/17926386541661627/" target="_blank">
+                  food</OutboundLink>.{" "} These days I'm working on my Korean, so k-dramas are essential. 
                 </p>
                 <p>
-                  Finally, I have a plan to adopt a Shiba Inu although my mom
+                  Lastly, I have a plan to adopt a Shiba Inu although my mom
                   told me to take care of myself first.
                 </p>
               </Col>

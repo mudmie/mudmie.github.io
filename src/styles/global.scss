@@ -79,20 +79,13 @@ html {
   .navbar-light .navbar-nav {
     .nav-link {
       color: $cauliflower-color;
+      text-decoration: none !important;
       &:focus,
       &:hover {
         font-weight: 700;
         color: $nav-text-color;
-      }
-    }
-  }
+        text-decoration: underline !important;
 
-  .navbar-dark .navbar-nav {
-    .nav-link {
-      color: $baby-blue-color;
-      &:focus,
-      &:hover {
-        color: $paprika-color;
       }
     }
   }
