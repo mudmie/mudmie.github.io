@@ -33,12 +33,15 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
               className={styles.colAbout}
             >
               <div className={styles.aboutDiv}>
-              <h1 className={styles.aboutHeading}>
-                Mudmie
-                <br />
-                Chuthamsatid
-              </h1>
-              <img className={`${styles.subheading}`} src={this.getImageUrl("product-designer.svg")} />
+                <h1 className={styles.aboutHeading}>
+                  Mudmie
+                  <br />
+                  Chuthamsatid
+                </h1>
+                <img
+                  className={`${styles.subheading}`}
+                  src={this.getImageUrl("product-designer.svg")}
+                />
               </div>
             </Col>
             <Col
@@ -50,7 +53,7 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
               data-sal-easing="ease-out-back"
             >
               <p className={styles.aboutPara}>
-                Also a holding a systems design engineering deegree from the
+                Also a holding a systems design engineering degree from the
                 University of Waterloo.
               </p>
               <p className={styles.aboutPara}>
