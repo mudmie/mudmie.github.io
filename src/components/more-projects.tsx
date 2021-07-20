@@ -19,7 +19,7 @@ export class MoreProjects extends React.Component<MoreProjectsProps, {}> {
       <Container>
         <Row className="justify-content-center mt-3">
           <Col lg={PROJECT_BODY_COLUMN}>
-            <h3>More Projects</h3>
+            <h2>More Projects</h2>
           </Col>
         </Row>
         {this.props.projects.filter(proj => proj.name != this.props.currentProject.name).slice(0, NUM_PROJECTS).map(proj => this.projectRow(proj))}
@@ -35,7 +35,7 @@ export class MoreProjects extends React.Component<MoreProjectsProps, {}> {
             <div className={styles.projectTitle}>{project.company}</div>
             <div className={styles.projectDescription}>{project.name} / {project.term}</div>
           </Col>
-          <Col lg="3" className="text-right"><Link to={project.url}>
+          <Col lg="3" className="text-right"><Link to={project.url} className={styles.viewCaseStudyButton}>
             View Case Study <FaArrowRight />
           </Link></Col>
         </Row>

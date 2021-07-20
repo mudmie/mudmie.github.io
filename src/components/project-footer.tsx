@@ -19,13 +19,15 @@ export class ProjectFooter extends React.Component<ProjectFooterProps, {}> {
           currentProject={this.props.currentProject}
         /> */}
         <Container>
-          <Row className="justify-content-center mt-3">
+          <Row className="justify-content-center mt-3 mb-3">
             <Col lg={PROJECT_BODY_COLUMN} className={styles.horizontalLine}>
               Yay! You’ve made to the end of this case study.
             </Col>
           </Row>
         </Container>
+        <section className={styles.sectionMoreProjects}>
         <MoreProjects currentProject={this.props.currentProject} projects={this.props.allProjects} />
+        </section>
       </>
     );
   }
