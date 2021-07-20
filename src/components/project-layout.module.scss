@@ -51,6 +51,15 @@ html {
       margin-bottom: 0px;
     }
     background-color: $cauliflower-color;
+    :global .btn {
+      border-color: $taupe-color;
+
+      &:hover,
+      &:active {
+        color: #fff;
+        background-color: $cream-color;
+      }
+    }
     // @include project-theme($ocean-color, $mustard-color);
   }
 }
