@@ -113,11 +113,14 @@ html {
   p {
     margin-top: 1rem;
   }
-  a,
-  a:focus,
-  a:hover,
-  a:visited {
+  a {
     color: $link-color;
+    text-decoration: underline;
+  }
+  a:focus,
+  a:hover,{
+  // a:visited {
+    color: $link-hover-color;
   }
 
   .highlight {

@@ -45,7 +45,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               </Col>
               <Col lg="8">
                 <p>
-                  A product designer who combines systems thinking and
+                  I'm a product designer who combines systems thinking and
                   user-centered design to understand problems in a bigger before
                   exploring ways to design product experience.
                 </p>
@@ -78,8 +78,9 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               <Col lg="8" md="6" className="mb-3">
                 <h3 className={styles.moreOfMe}>More of me.</h3>
                 <p>
-                  I did 4 product design internships (that’s 16 months!) at
-                  companies in North America, where I applied the design
+                  I grew intersts in human factors in design during my study at the <OutboundLink href="https://uwaterloo.ca/systems-design-engineering/about-systems-design-engineering/what-systems-design-engineering" target="_blank">
+                  University of Waterloo </OutboundLink>, so I spent 4 terms (that's 16 months in total!)
+                  interning as a product designer at companies in North America. Through these internships, I got to apply the design
                   thinking process to solve real-world problems.
                 </p>
                 <p>
