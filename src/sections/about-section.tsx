@@ -47,7 +47,7 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
             <Col
               lg="4"
               className={`align-self-end ${styles.colInfo}`}
-              data-sal="slide-up"
+              data-sal="slide-down"
               data-sal-duration="400"
               data-sal-delay="200"
               data-sal-easing="ease-out-back"
