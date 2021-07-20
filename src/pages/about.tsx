@@ -66,14 +66,14 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
             <Row
               className={`justify-content-center pt-3`}
             >
-              <Col lg="4" className="align-self-end">
+              <Col lg="4" md="6" className="align-self-end">
                 <Img
                   fluid={this.props.data.meImage.childImageSharp.fluid}
                   alt="Picture of Mudmie"
                 />
                 {/* <img src={this.getImageUrl("Mudmie.png")} className="img-fluid" /> */}
               </Col>
-              <Col lg="8" className="mb-3">
+              <Col lg="8" md="6" className="mb-3">
                 <h3 className={styles.moreOfMe}>More of me.</h3>
                 <p>
                   I did 4 product design internships (that’s 16 months!) at
@@ -100,10 +100,10 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
         <section className={styles.section3}>
           <Container>
             <Row className="justify-content-center mt-3">
-              <Col lg="4" className="align-self-center">
+              <Col lg="4" md="6" className="align-self-center">
                 <h3 className={styles.designExperience}>Design Experience.</h3>
               </Col>
-              <Col lg="8" className={styles.experience}>
+              <Col lg="8" md="6" className={styles.experience}>
                 <table className={styles.experienceTable}>
                   <tr>
                     <td >

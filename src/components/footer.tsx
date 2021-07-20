@@ -10,7 +10,7 @@ export class Footer extends React.Component {
       <footer className={styles.section}>
         <Container className={styles.container}>
           <Row className={styles.footerRow}>
-            <Col lg="12" className={styles.footerCol}>
+            <Col lg="12" className={`align-self-center ${styles.footerCol}`}>
               Designed &amp; partially coded by Mudmie 2021 ©<br />
               <SocialMediaLinks separator=" " />
             </Col>
