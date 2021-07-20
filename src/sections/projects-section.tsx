@@ -46,7 +46,7 @@ export class ProjectsSection extends React.Component<
           <Col
             data-sal="slide-up"
             data-sal-duration="400"
-            data-sal-delay="200"
+            data-sal-delay="600"
             data-sal-easing="ease-out-back"
           >
             <h2 className={styles.sectionHeading}>Featured Projects</h2>

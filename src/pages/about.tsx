@@ -41,9 +41,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               data-sal-easing="ease-out-back"
             >
               <Col lg="4">
-                <h2 className={styles.hello}>
-                  Hello, I’m Mudmie.
-                </h2>
+                <h2 className={styles.hello}>Hello, I’m Mudmie.</h2>
               </Col>
               <Col lg="8">
                 <p>
@@ -65,6 +63,10 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
           <Container>
             <Row
               className={`justify-content-center pt-3`}
+              data-sal="slide-up"
+              data-sal-duration="400"
+              data-sal-delay="600"
+              data-sal-easing="ease-out-back"
             >
               <Col lg="4" md="6" className="align-self-end">
                 <Img
@@ -99,15 +101,24 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
         </section>
         <section className={styles.section3}>
           <Container>
-            <Row className="justify-content-center mt-3">
+            <Row
+              className="justify-content-center mt-3"
+              data-sal="fade"
+              data-sal-duration="400"
+              data-sal-delay="200"
+              data-sal-easing="ease-out-back"
+            >
               <Col lg="4" md="6" className="align-self-center">
                 <h3 className={styles.designExperience}>Design Experience.</h3>
               </Col>
               <Col lg="8" md="6" className={styles.experience}>
                 <table className={styles.experienceTable}>
                   <tr>
-                    <td >
-                      <span className={styles.experienceName}>Jitta Wealth</span>, <span className={styles.experienceType}>Full-time</span>
+                    <td>
+                      <span className={styles.experienceName}>
+                        Jitta Wealth
+                      </span>
+                      , <span className={styles.experienceType}>Full-time</span>
                     </td>
                     <td className={styles.experiencePeriod}>
                       Jun 2020 - May 2021
@@ -115,7 +126,10 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                   </tr>
                   <tr>
                     <td className={styles.experienceName}>
-                    <span className={styles.experienceName}>Hack the North</span>, <span className={styles.experienceType}>Community</span>
+                      <span className={styles.experienceName}>
+                        Hack the North
+                      </span>
+                      , <span className={styles.experienceType}>Community</span>
                     </td>
                     <td className={styles.experiencePeriod}>
                       Mar 2019 – Feb 2020
@@ -123,7 +137,11 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                   </tr>
                   <tr>
                     <td className={styles.experienceName}>
-                    <span className={styles.experienceName}>Autodesk Construction Cloud</span>, <span className={styles.experienceType}>Internship</span>
+                      <span className={styles.experienceName}>
+                        Autodesk Construction Cloud
+                      </span>
+                      ,{" "}
+                      <span className={styles.experienceType}>Internship</span>
                     </td>
                     <td className={styles.experiencePeriod}>
                       May 2019 – Aug 2019
@@ -131,7 +149,8 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                   </tr>
                   <tr>
                     <td className={styles.experienceName}>
-                    <span className={styles.experienceName}>PlanGrid</span>, <span className={styles.experienceType}>Internship</span>
+                      <span className={styles.experienceName}>PlanGrid</span>,{" "}
+                      <span className={styles.experienceType}>Internship</span>
                     </td>
                     <td className={styles.experiencePeriod}>
                       Sep 2018 – Dec 2018
@@ -139,7 +158,8 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                   </tr>
                   <tr>
                     <td className={styles.experienceName}>
-                    <span className={styles.experienceName}>Nulogy</span>, <span className={styles.experienceType}>Internship</span>
+                      <span className={styles.experienceName}>Nulogy</span>,{" "}
+                      <span className={styles.experienceType}>Internship</span>
                     </td>
                     <td className={styles.experiencePeriod}>
                       Jan 2018 – Apr 2018
@@ -147,7 +167,8 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                   </tr>
                   <tr>
                     <td className={styles.experienceName}>
-                    <span className={styles.experienceName}>LCBO Next</span>, <span className={styles.experienceType}>Internship</span>
+                      <span className={styles.experienceName}>LCBO Next</span>,{" "}
+                      <span className={styles.experienceType}>Internship</span>
                     </td>
                     <td className={styles.experiencePeriod}>
                       May 2017 – Aug 2017

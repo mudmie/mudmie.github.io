@@ -30,13 +30,16 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
               data-sal-duration="400"
               data-sal-delay="200"
               data-sal-easing="ease-out-back"
+              className={styles.colAbout}
             >
+              <div className={styles.aboutDiv}>
               <h1 className={styles.aboutHeading}>
                 Mudmie
                 <br />
                 Chuthamsatid
               </h1>
-              <h2 className={styles.subheading}><img src={this.getImageUrl("product-designer.svg")} /></h2>
+              <img className={`${styles.subheading}`} src={this.getImageUrl("product-designer.svg")} />
+              </div>
             </Col>
             <Col
               lg="4"

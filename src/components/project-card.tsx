@@ -14,7 +14,7 @@ export class ProjectCard extends React.Component<ProjectCardProps, {}> {
     return (
       <Row
         className={styles.row}
-        data-sal="slide-up"
+        data-sal="fade"
         data-sal-duration="400"
         data-sal-delay="200"
         data-sal-easing="ease-out-back"
