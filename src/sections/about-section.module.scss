@@ -20,7 +20,7 @@
 
 .row-about {
   @media (orientation: landscape) {
-  min-height: 80vh;
+  min-height: 60vh;
   }
 }
 
@@ -38,7 +38,7 @@
       content: " ";
       display: block;
       border-left: 1px solid $cauliflower-color;
-      height: 150px;
+      height: 280px;
       margin-top: 30px;
       left: 0;
       width: 20px;
