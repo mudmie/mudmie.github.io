@@ -4,7 +4,7 @@
 html {
   .navbar {
     // border-bottom: 1px solid $chestnut-color;
-    // background-color: #fff;
+    background-color: $ocean-color;
   }
 
   .nav-open {
@@ -26,7 +26,6 @@ html {
   .logo {
     width: 40px;
     height: 40px;
-    margin-right: 5px;
   }
 
   .brand {
@@ -35,10 +34,6 @@ html {
 
   .scroll .logo {
     opacity: 1;
-  }
-
-  :global(.navbar-dark) .brand-circle {
-    background: $lemon-color;
   }
 
   .navbar-toggler {

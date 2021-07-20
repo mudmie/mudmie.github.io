@@ -78,11 +78,11 @@ html {
 
   .navbar-light .navbar-nav {
     .nav-link {
-      color: $link-color;
+      color: $cauliflower-color;
       &:focus,
       &:hover {
         font-weight: 700;
-        color: $link-color;
+        color: $cauliflower-color;
       }
     }
   }
