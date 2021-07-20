@@ -18,7 +18,7 @@ export class ProjectBody extends React.Component<ProjectBodyProps, {}> {
     return (
       <div>
         <Container>
-          <Row className="justify-content-center">
+          {/* <Row className="justify-content-center">
             <Col lg={PROJECT_BODY_COLUMN}>
               <Img
                 alt="main project image"
@@ -26,12 +26,12 @@ export class ProjectBody extends React.Component<ProjectBodyProps, {}> {
                 className="background-theme-color"
               />
             </Col>
-          </Row>
-          <Row className="justify-content-center mt-3">
+          </Row> */}
+          {/* <Row className="justify-content-center mt-3">
             <Col lg={PROJECT_BODY_COLUMN} className={styles.borderTop}>
               {this.props.project.type}{" / "}{this.props.project.platform.join(" ")}{" / "}{this.props.project.duration}
             </Col>
-          </Row>
+          </Row> */}
         </Container>
         {this.props.children}
       </div>

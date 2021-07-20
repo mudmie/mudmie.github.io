@@ -1,38 +1,40 @@
 @import "../styles/_colors.scss";
 @import "../styles/_fonts.scss";
 
-@mixin project-theme($primary-color, $secondary-color) {
-  h1,
-  h2,
-  h3 {
-    color: $primary-color;
-  }
-  h4 {
-    color: $secondary-color;
-  }
-  hr {
-    border-top-color: $secondary-color;
-  }
-  :global .background-theme-color {
-    background-color: $secondary-color;
-  }
-  :global .btn {
-    color: $primary-color;
-    border-color: $primary-color;
+// @mixin project-theme($primary-color, $secondary-color) {
+//   h1,
+//   h2,
+//   h3 {
+//     color: $primary-color;
+//   }
+//   h4 {
+//     color: $secondary-color;
+//   }
+//   hr {
+//     border-top-color: $secondary-color;
+//   }
+//   :global .background-theme-color {
+//     background-color: $secondary-color;
+//   }
+//   :global .btn {
+//     color: $primary-color;
+//     border-color: $primary-color;
 
-    &:hover,
-    &:active {
-      color: #fff;
-      background-color: $secondary-color;
-    }
-  }
-}
+//     &:hover,
+//     &:active {
+//       color: #fff;
+//       background-color: $secondary-color;
+//     }
+//   }
+// }
 
 html {
   .project-page {
     h1 {
       font-weight: bold;
       margin-bottom: 0px;
+      font-size: 36px;
+      color: $ocean-color;
     }
     h2 {
       font-size: 24px;
@@ -47,7 +49,7 @@ html {
       margin-top: 0px;
       margin-bottom: 0px;
     }
-
-    @include project-theme($black-color, $mustard-color);
+    background-color: $cauliflower-color;
+    // @include project-theme($ocean-color, $mustard-color);
   }
 }
