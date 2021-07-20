@@ -19,7 +19,6 @@
 
 .row-about {
   min-height: 80vh;
-  padding-bottom: 100px;
 }
 
 .col-about {
@@ -29,16 +28,31 @@
   }
   padding-left: 15px;
   padding-right: 15px;
+  position: relative;
+
+  &::after {
+    @media (min-width: 992px) {
+      content: " ";
+      display: block;
+      border-left: 1px solid $cauliflower-color;
+      height: 150px;
+      margin-top: 30px;
+      left: 0;
+      width: 20px;
+    }
+  }
 }
 .about-heading {
   font-size: 72px;
   color: $cauliflower-color;
 }
 .subheading {
-  max-width: 86%
+  max-width: 86%;
 }
 
 .col-info {
+  position: relative;
+  margin-bottom: 50px;
   a {
     &,
     &:visited,
@@ -47,6 +61,18 @@
     }
     &:hover {
       color: $cauliflower-color;
+    }
+  }
+
+  &::before {
+    @media (min-width: 992px) {
+      content: " ";
+      display: block;
+      border-left: 1px solid $cauliflower-color;
+      height: 300px;
+      bottom: 0;
+      right: 0;
+      width: 20px;
     }
   }
 }

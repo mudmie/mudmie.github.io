@@ -30,7 +30,7 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
               data-sal-duration="400"
               data-sal-delay="200"
               data-sal-easing="ease-out-back"
-              className={styles.colAbout}
+              className={`align-self-end ${styles.colAbout}`}
             >
               <div className={styles.aboutDiv}>
                 <h1 className={styles.aboutHeading}>
