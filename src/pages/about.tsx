@@ -78,9 +78,8 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               <Col lg="8" md="6" className="mb-3">
                 <h3 className={styles.moreOfMe}>More of me.</h3>
                 <p>
-                  At the <OutboundLink href="https://uwaterloo.ca/systems-design-engineering/about-systems-design-engineering/what-systems-design-engineering" target="_blank">
-                  University of Waterloo</OutboundLink>, I spent 4 terms (16 months in total!)
-                  interning as a product designer at companies in North America. Through these internships, I got to apply the design
+                  During my time at the <OutboundLink href="https://uwaterloo.ca/systems-design-engineering/about-systems-design-engineering/what-systems-design-engineering" target="_blank">
+                  University of Waterloo</OutboundLink>, I did 4 design internships (16 months in total!) across companies in North America where I got to apply the design
                   thinking process to solve real-world problems.
                 </p>
                 <p>
