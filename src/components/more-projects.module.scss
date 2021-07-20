@@ -2,13 +2,18 @@
 @import "../styles/_projects.scss";
 
 .project-title {
-
+  font-weight: 700;
 }
 .project-description {
-
 }
 .project-row {
 }
 .horizontal-line-row:not(:last-child) div {
   border-bottom: $section-divider;
+}
+
+.view-case-study-button {
+  text-decoration: none !important;
+
+  @include cta-button();
 }

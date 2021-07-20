@@ -1,5 +1,13 @@
+@import "../styles/colors.scss";
 @import "../styles/_projects.scss";
+
 
 .horizontal-line {
   border-top: $section-divider;
+}
+
+.section-more-projects {
+  background-color: $cream-color;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
