@@ -13,6 +13,10 @@
   // background-position: 100% 50%;
 }
 
+.about-para {
+  color: $cauliflower-color;
+}
+
 .row-about {
   min-height: 70vh;
 }
@@ -27,35 +31,20 @@
 }
 .about-heading {
   font-size: 72px;
+  color: $cauliflower-color;
 }
 .subheading {
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px black;
 }
 
-.me-caption {
-  text-align: right;
-}
-
-.col-social-media {
-  margin-top: auto;
-  margin-bottom: auto;
-  display: none !important;
-  @media (min-width: 992px) {
-    display: flex !important;
-    flex-grow: 1;
+.col-info {
+  a {
+    &,
+    &:visited,
+    &:active {
+      color: $cauliflower-color;
+    }
+    &:hover {
+      color: $cauliflower-color;
+    }
   }
-}
-.horizontal-line {
-  flex-grow: 1;
-  margin-bottom: 10px;
-  border-bottom: 1.5px solid $stone-color;
-}
-
-.long-horizontal-line {
-  height: 2px;
-  width: 60px;
-  border-bottom: 1.5px solid $stone-color;
-  display: inline-block;
-  margin-bottom: 12px;
 }

@@ -2,19 +2,7 @@
 @import "../styles/_fonts.scss";
 
 .social-media {
-  flex-shrink: 0;
-  color: $link-color;
-
-  a {
-    &,
-    &:visited,
-    &:active {
-      color: $link-color;
-    }
-    &:hover {
-      color: $link-color;
-    }
-  }
+  flex-shrink: 0; 
 }
 
 // .linked-in {
