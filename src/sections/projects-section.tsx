@@ -38,6 +38,8 @@ export class ProjectsSection extends React.Component<
   public render() {
     const that = this;
     return (
+      <>
+      <section className={styles.sectionHeader}>
       <Container className={styles.container}>
         <a id={this.props.id} className={sharedStyles.sectionAnchor} />
         <Row>
@@ -50,16 +52,18 @@ export class ProjectsSection extends React.Component<
             <h2 className={styles.sectionHeading}>Featured Projects</h2>
           </Col>
         </Row>
+        </Container>
+        </section>
         {this.props.projects
           .filter(proj => proj.isEnabled)
-          .map(proj => (
+          .map((proj,i) => (
+            <section className={i % 2 == 0?styles.sectionProjectEven:styles.sectionProjectOdd}>
+              <Container>
             <ProjectCard project={proj} />
+            </Container>
+            </section>
           ))}
-        {/* Empty row to erase the margin bottom */}
-        <Row>
-          <Col className="pb-5"></Col>
-        </Row>
-      </Container>
+      </>
     );
   }
 }

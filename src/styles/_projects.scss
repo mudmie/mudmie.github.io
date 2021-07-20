@@ -3,8 +3,8 @@
 $section-divider: 1px solid $black-color;
 
 @mixin cta-button {
-  border: 1px solid $link-color;
+  border: 1px solid $taupe-color;
   padding: 13px;
   border-radius: 25px;
-  box-shadow: 5px 5px $link-color;
+  box-shadow: 5px 5px $taupe-color;
 }

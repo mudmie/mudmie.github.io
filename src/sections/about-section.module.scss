@@ -1,8 +1,12 @@
 @import "../styles/_colors.scss";
 @import "../styles/_fonts.scss";
 
+.section {
+  background-color: $ocean-color;
+}
+
 .about {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
   // background: url("../../static/images/glow_bg.png");
   // background-size: 75%;
   // background-repeat: no-repeat;

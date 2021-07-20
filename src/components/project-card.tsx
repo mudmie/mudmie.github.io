@@ -13,7 +13,7 @@ export class ProjectCard extends React.Component<ProjectCardProps, {}> {
   public render() {
     return (
       <Row
-        className="mb-3"
+        className={styles.row}
         data-sal="slide-up"
         data-sal-duration="400"
         data-sal-delay="200"
@@ -22,7 +22,7 @@ export class ProjectCard extends React.Component<ProjectCardProps, {}> {
         <Col md="6">
           <h3 className={styles.projectTitle}>{this.props.project.company}</h3>
           <div>
-            {this.props.project.term} · {this.props.project.type}
+            {this.props.project.term}
           </div>
           <p className={styles.projectDescription}>
             {this.props.project.description}

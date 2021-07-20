@@ -3,12 +3,15 @@ $snow-color: #ffffff;
 $chestnut-color: #ac8a72;
 $brick-color: #9d4400;
 $bark-color: #613402;
-$ocean-color: #7DB3CD;
-$cauliflower-color: #FEF8EC;
+
+// Newer colors
+$ocean-color: #7db3cd;
+$cauliflower-color: #fef8ec;
+$cream-color: #f2ece2;
+$taupe-color: #735d45;
 
 $highlight-color: #6dd2df80;
 $black-color: #000000;
-$link-color: $black-color;
 
 // Old colors
 $mustard-color: #c09a2d;
@@ -19,10 +22,11 @@ $lemon-color: #ffc82c;
 $graphite-color: #191919;
 $stone-color: #bfbfbf;
 
-$h1-text-color: $black-color;
-$h2-text-color: $black-color;
-$section-header-color: $black-color;
-$body-text-color: $black-color;
-$project-title-color: $bark-color;
+$link-color: $taupe-color;
+$h1-text-color: $taupe-color;
+$h2-text-color: $taupe-color;
+$section-header-color: $taupe-color;
+$body-text-color: $taupe-color;
+$project-title-color: $taupe-color;
 $project-subtitle-color: $bark-color;
 $nav-text-color: $black-color;

@@ -1,8 +1,14 @@
 @import "../styles/_colors.scss";
-@import "../styles/projects.scss";
+@import "../styles/_projects.scss";
 
+.row {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
 .project-title{
   margin: 0;
+  color: $project-title-color;
 }
 
 .project-description{

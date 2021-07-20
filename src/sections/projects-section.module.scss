@@ -1,12 +1,17 @@
 @import "../styles/_colors.scss";
 @import "../styles/_fonts.scss";
 
+.section-header {
+  background-color: $cauliflower-color;
+}
+
+.section-project-even {
+  background-color: $cauliflower-color;
+}
+.section-project-odd {
+  background-color: $cream-color;
+}
+
 .container {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.88) 200px,
-    rgba(255, 255, 255, 0.88) 100%
-  );
-  border-radius: 0 0 30px 30px;
+
 }

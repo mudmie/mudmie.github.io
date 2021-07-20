@@ -18,44 +18,46 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
 
   public render() {
     return (
-      <Container className={styles.about}>
-        <a id={this.props.id} className={sharedStyles.sectionAnchor} />
-        <Row
-          className={`justify-content-between align-items-center ${styles.rowAbout}`}
-        >
-          <Col
-            lg="8"
-            data-sal="slide-up"
-            data-sal-duration="400"
-            data-sal-delay="200"
-            data-sal-easing="ease-out-back"
+      <section className={styles.section}>
+        <Container className={styles.about}>
+          <a id={this.props.id} className={sharedStyles.sectionAnchor} />
+          <Row
+            className={`justify-content-between align-items-center ${styles.rowAbout}`}
           >
-            <h1 className={styles.aboutHeading}>
-              Mudmie
-              <br />
-              Chuthamsatid
-            </h1>
-            <h2 className={styles.subheading}>PRODUCT DESIGNER</h2>
-          </Col>
-          <Col
-            lg="4"
-            className="align-self-end"
-            data-sal="slide-up"
-            data-sal-duration="400"
-            data-sal-delay="200"
-            data-sal-easing="ease-out-back"
-          >
-            <p className={styles.aboutPara}>
-              Also a holding a systems design engineering deegree from the
-              University of Waterloo.
-            </p>
-            <p className={styles.aboutPara}>
-              Currently looking for a full-time product design role.
-            </p>
-            <SocialMediaLinks separator="NEW_LINE" />
-          </Col>
-        </Row>
-      </Container>
+            <Col
+              lg="8"
+              data-sal="slide-up"
+              data-sal-duration="400"
+              data-sal-delay="200"
+              data-sal-easing="ease-out-back"
+            >
+              <h1 className={styles.aboutHeading}>
+                Mudmie
+                <br />
+                Chuthamsatid
+              </h1>
+              <h2 className={styles.subheading}>PRODUCT DESIGNER</h2>
+            </Col>
+            <Col
+              lg="4"
+              className="align-self-end"
+              data-sal="slide-up"
+              data-sal-duration="400"
+              data-sal-delay="200"
+              data-sal-easing="ease-out-back"
+            >
+              <p className={styles.aboutPara}>
+                Also a holding a systems design engineering deegree from the
+                University of Waterloo.
+              </p>
+              <p className={styles.aboutPara}>
+                Currently looking for a full-time product design role.
+              </p>
+              <SocialMediaLinks separator="NEW_LINE" />
+            </Col>
+          </Row>
+        </Container>
+      </section>
     );
   }
 }
