@@ -15,7 +15,7 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
     return (
       <>
         <section className={styles.sectionImage}>
-          <Container className={styles.header}>
+          <Container fluid={true} className={styles.header}>
             {/* <Row className="justify-content-center mt-4 mb-4">
             <Col lg={PROJECT_BODY_COLUMN} className="text-center">
               <h1 className={styles.company}>
@@ -27,11 +27,13 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
               </h2>
             </Col>
           </Row> */}
+
+          
             <Row className="justify-content-center mt-4 mb-4">
-              <Col lg="6">
+              <Col lg="12">
                 <img
                   src={withPrefix(
-                    `/images/${this.props.currentProject.imageFolder}/thumbnail.png`
+                    `/images/${this.props.currentProject.imageFolder}/main.png`
                   )}
                   alt={`project ${this.props.currentProject.name} image`}
                   className="img-fluid"
@@ -41,18 +43,18 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
           </Container>
         </section>
         <section className={styles.sectionName}>
-          <Container>
+          {/* <Container>
             <Row>
-              <Col lg={PROJECT_BODY_COLUMN}>
+              <Col lg="4">
                 <h1 className={styles.company}>
                   {this.props.currentProject.company}
                 </h1>
                 <h2 className={styles.title}>
-                  {this.props.currentProject.name}
+                  {this.props.currentProject.term}
                 </h2>
               </Col>
             </Row>
-          </Container>
+          </Container> */}
         </section>
       </>
     );

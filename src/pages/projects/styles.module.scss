@@ -1,21 +1,43 @@
 @import "../../styles/_colors.scss";
 @import "../../styles/_fonts.scss";
 
+h1{
+  font-weight: 400 !important;
+  margin: 16px 0 0 0;
+
+}
+.term{
+  font-family: $body-font;
+  font-weight: 400;
+  font-size: 20px !important;
+  text-transform: none;
+}
+
+
+p{
+  text-align: left;
+  // font-size: 16px;
+}
+
+.topicRight{
+  font-family: $body-font;
+  font-weight: 600;
+}
 .image-title {
   margin: 5px 0 0 0;
   text-align: center;
 }
 
-.quote {
-  font-family: $italic-font;
-  border-left: 5px solid $mustard-color;
-  padding-left: 10px;
-  font-style: italic;
-  color: $mustard-color;
-  margin: 10px 0 10px 0;
+.text-highlight {
+  font-weight: 300 !important;
+  background-color: $highlight-color;
 }
 
 .sub {
     color: $stone-color !important;
   }
+
+.bold{
+  font-weight: 600;
+}
 

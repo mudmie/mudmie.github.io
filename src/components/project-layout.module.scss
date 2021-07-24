@@ -44,6 +44,9 @@ html {
       margin: 20px 0 5px 0;
       font-weight: bold;
       color: $ocean-color;
+      font-family: $body-font !important;
+      text-transform: uppercase;
+      
     }
     h4 {
       font-size: 20px;
