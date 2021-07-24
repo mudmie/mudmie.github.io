@@ -21,7 +21,7 @@ export default class ThematicPage extends React.Component<
         <Container>
           <Row className="justify-content-center">
             <Col lg="3">
-              <h3>
+              <h3 className={sharedStyles.topicLeft}>
                 Overview
               </h3>
             </Col>
@@ -94,15 +94,7 @@ export default class ThematicPage extends React.Component<
             </Col>
           </Row>
 
-          <Row className="justify-content-center">
-            <Col lg="11">
-              <ImageBox
-                src={this.getImageUrl("existing-flow.png")}
-                alt=""
-                className="img-fluid"
-              />
-            </Col>
-          </Row>
+       
 
 
 
