@@ -1,3 +1,6 @@
+@import "../styles/_colors.scss";
+@import "../styles/_fonts.scss";
+
 html {
   .image-box {
     cursor: pointer;
@@ -8,6 +11,6 @@ html {
   }
 
   .img-caption {
-    color: #ae977d;
+    color: $body-text-color;
   }
 }

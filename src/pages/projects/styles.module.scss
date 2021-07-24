@@ -13,12 +13,6 @@ h1{
   text-transform: none;
 }
 
-
-p{
-  text-align: left;
-  // font-size: 16px;
-}
-
 .topicRight{
   font-family: $body-font;
   font-weight: 600;
@@ -39,5 +33,18 @@ p{
 
 .bold{
   font-weight: 600;
+}
+
+.cream-bg{
+  background-color: $cream-color;
+  padding-top: 24px;
+}
+
+.green{
+  color:#589F75 ;
+}
+
+.red{
+  color:#D7737D;
 }
 

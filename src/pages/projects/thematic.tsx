@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as sharedStyles from "./styles.module.scss";
 import { Col, Container, Row, Table } from "reactstrap";
+import { AiOutlineCheckCircle, AiOutlineCloseCircle } from "react-icons/ai";
 import { graphql, withPrefix } from "gatsby";
 import { ImageBox } from "../../components/image-box";
 import { ProjectLayout, PROJECT_BODY_COLUMN } from "../../components/project-layout";
@@ -45,15 +46,15 @@ export default class ThematicPage extends React.Component<
               <p> <span className={sharedStyles.topicRight}> Technical Constraints</span>
                 <br />
                 Like many other startups, resources and time are limited.
-               </p>
+              </p>
               <p>
                 <span className={sharedStyles.topicRight}>Shift in User Group</span>
                 <br />
-                Originally, a minimum deposit of $15,000 is required for the investment. This amount considered to be extremely high relative to the average monthly income of $500 for a person in Thailand <OutboundLink href="https://tradingeconomics.com/thailand/wages" target="_blank">
-                [1]</OutboundLink>. The requirement limited primary users to be only those with established financial stability, like experienced investors and entrepreneurs.
+                The original minimum deposit of $15,000 was considered high relative to an average monthly income of $500 for a person in Thailand  <OutboundLink href="https://tradingeconomics.com/thailand/wages" target="_blank">
+                  [1]</OutboundLink>. It limited primary users to be only those with established financial stability, like experienced investors and entrepreneurs.
               </p>
               <p>
-                A huge shift in user demographics occurred after the minimum deposit got lowered to $3,000, making the service more accessible to various groups of users.
+                A shift in user demographics occurred after the minimum deposit got lowered to $3,000, making the service more accessible to various groups of users.
               </p>
               <p>
                 <span className={sharedStyles.textHighlight}>
@@ -69,39 +70,98 @@ export default class ThematicPage extends React.Component<
             </Col>
             <Col lg={{ size: 6, offset: 1 }}>
               <p>
-                To learn more about the users, I talked with customer service &amp; marketing teams, and collaborated with the data scientist to further look into user demographics. I also reached out and spoke with some of the users to understand their needs and investment goals.
+                I collaborated with the customer service &amp; data teams and reached out to some users to learn more about their needs and investment goals.
               </p>
 
               <p>
-                Through the processes, I found that the new group of users tended to have less investment experience and tolerate lower risk. Many of them planned to spend the invested money in the future. These factors led them to be more cautious about their investment and when making decisions. As a result, they seek more investment information, more communication, and updates from the company.
+                I found that the new group of users tended to have <span className={sharedStyles.bold}>less investment experience </span> and <span className={sharedStyles.bold}>tolerate lower risk</span>.
+                Many of them planned to spend the invested money in the future. These factors made them <span className={sharedStyles.bold}> more cautious </span> when making investment decisions.
+              </p>
+              <p>
+                <span className={sharedStyles.textHighlight}> Thus, they seek more investment information, communication, and updates from the company.</span>
               </p>
             </Col>
           </Row>
-
           <Row className="justify-content-center">
             <Col lg="3">
-              <h3 className={sharedStyles.topicLeft}>Design Process</h3>
+              <h3 className={sharedStyles.topicLeft}>Design Process / First Iteration</h3>
             </Col>
             <Col lg={{ size: 6, offset: 1 }}>
-              <p> <span className={sharedStyles.topicRight}> First Iteration</span>
-
+              <p>
+                Due to limited technical resources, I focused on examining existing product flow &amp; components and reusing them as much as possible.
               </p>
               <p>
-                Considering limited technical resources, I focused on examining existing components & product flow and reusing them as much as possible in the first iteration.                 </p>
-
+                Unlike other existing products, users can <span className={sharedStyles.bold}>select more than one</span> investment plan, i.e., choosing more than one theme.
+              </p>
               <p>
-                Unlike other existing products, Thematic Investment allows users to select more than one investment plan, i.e., choosing more than one theme. Therefore, the UI must be able to accommodate multi-selecting interaction. Trying to reuse existing components and product flow resulted in the design below.                  </p>
+                <span className={sharedStyles.textHighlight}> Therefore, the UI must accommodate multi-selecting interaction.</span>
+              </p>
             </Col>
           </Row>
+        </Container>
 
-       
+        <section className={sharedStyles.creamBg}>
+          <Container>
+            <Row className="justify-content-center">
+              <Col lg={PROJECT_BODY_COLUMN}>
+                <p>
+                  <span className={sharedStyles.bold}>
+                    A HTA chart showing steps required for the users to open an investment account
+                  </span>
+                </p>
+                <ImageBox
+                  src={this.getImageUrl("HTA.png")}
+                  alt=""
+                  className="img-fluid"
+                />
+              </Col>
+            </Row>
+            <Row className="justify-content-center">
+              <Col lg="5">
+                <p>
+                  <span className={sharedStyles.green}><AiOutlineCheckCircle /></span><span className={sharedStyles.bold}> Existing Products</span>
+                  <br />
+                  Users can view investment plan information (Steps 2.1) before submitting a request to open an account
+                </p>
+                <ImageBox
+                  src={this.getImageUrl("try.png")}
+                  alt=""
+                  className="img-fluid"
+                />
+              </Col>
+              <Col lg={{ size: 5, offset: 1 }}>
+                <p>
+                  <span className={sharedStyles.red}><AiOutlineCloseCircle /></span> <span className={sharedStyles.bold}>Thematic Investment</span>
+                  <br />
+                  Users can select multiple themes but cannot view investment information for each theme (Steps 2.1)
+                </p>
+                <ImageBox
+                  src={this.getImageUrl("try.png")}
+                  alt=""
+                  className="img-fluid"
+                />
+              </Col>
+            </Row>
+          </Container>
+        </section>
 
-
-
-
-
-
-
+        <Container>
+          <Row className="justify-content-center">
+            <Col lg="3">
+              <h3 className={sharedStyles.topicLeft}>Design Process / Second Iteration</h3>
+            </Col>
+            <Col lg={{ size: 6, offset: 1 }}>
+              <p>
+                Due to limited technical resources, I focused on examining existing product flow &amp; components and reusing them as much as possible.
+              </p>
+              <p>
+                Unlike other existing products, users can <span className={sharedStyles.bold}>select more than one</span> investment plan, i.e., choosing more than one theme.
+              </p>
+              <p>
+                <span className={sharedStyles.textHighlight}> Therefore, the UI must accommodate multi-selecting interaction.</span>
+              </p>
+            </Col>
+          </Row>
         </Container>
       </ProjectLayout>
     );

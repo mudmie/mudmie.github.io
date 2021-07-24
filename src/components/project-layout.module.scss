@@ -63,6 +63,10 @@ html {
         background-color: $cream-color;
       }
     }
+    p{
+      font-weight: 300;
+      font-size: 18px;
+    }
     // @include project-theme($ocean-color, $mustard-color);
   }
 }
