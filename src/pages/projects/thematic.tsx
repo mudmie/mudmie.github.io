@@ -241,7 +241,10 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="5" className={sharedStyles.creamBg}>
+            <Col
+              lg="5"
+              className={`pb-0 ${sharedStyles.creamBg} ${sharedStyles.figureNoMarginBottom}`}
+            >
               <p>
                 <span className={sharedStyles.bold}> Selecting Theme</span>
                 <br />
@@ -256,7 +259,10 @@ export default class ThematicPage extends React.Component<
                 />
               </div>
             </Col>
-            <Col lg={{ size: 5, offset: 1 }} className={sharedStyles.creamBg}>
+            <Col
+              lg={{ size: 5, offset: 1 }}
+              className={`pb-0 ${sharedStyles.creamBg} ${sharedStyles.figureNoMarginBottom}`}
+            >
               <p>
                 <span className={sharedStyles.bold}>Unselecting Theme</span>
                 <br />
