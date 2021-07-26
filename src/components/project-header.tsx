@@ -5,10 +5,13 @@ import { Project } from "../models/project";
 import { ProjectNav } from "./project-nav";
 import { PROJECT_BODY_COLUMN } from "./project-layout";
 import { withPrefix } from "gatsby";
+import { ImageSharp } from "../models/image-sharp";
+import Img from "gatsby-image";
 
 export interface ProjectHeaderProps {
   allProjects: Project[];
   currentProject: Project;
+  mainImage: ImageSharp;
 }
 export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
   public render() {
@@ -28,33 +31,29 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
             </Col>
           </Row> */}
 
-          
             <Row className="justify-content-center mt-4 mb-4">
-              <Col lg="12">
-                <img
+              <Col lg="12" className="text-center mb-3">
+                {/* <img
                   src={withPrefix(
                     `/images/${this.props.currentProject.imageFolder}/main.png`
                   )}
                   alt={`project ${this.props.currentProject.name} image`}
                   className="img-fluid"
+                /> */}
+                <h1 className={styles.projectTitle}>
+                  {this.props.currentProject.company}
+                </h1>
+                <div>{this.props.currentProject.term}</div>
+              </Col>
+              <Col lg="12">
+                <Img
+                  alt="main project image"
+                  fluid={this.props.mainImage}
+                  className="background-theme-color"
                 />
               </Col>
             </Row>
           </Container>
-        </section>
-        <section className={styles.sectionName}>
-          {/* <Container>
-            <Row>
-              <Col lg="4">
-                <h1 className={styles.company}>
-                  {this.props.currentProject.company}
-                </h1>
-                <h2 className={styles.title}>
-                  {this.props.currentProject.term}
-                </h2>
-              </Col>
-            </Row>
-          </Container> */}
         </section>
       </>
     );

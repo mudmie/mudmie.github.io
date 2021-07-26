@@ -47,8 +47,8 @@ h1{
   background-color: $cream-color;
   margin-top: 24px;
   margin-bottom: 24px;
-  padding: 16px 24px;
-
+  padding: 16px 20px;
+  border: 5px solid $cauliflower-color;
 }
 
 .green{
@@ -61,4 +61,10 @@ h1{
 .learning{
   background-color: $highlight-color;
   font-weight: 600;
+}
+
+.figure-no-margin-bottom{
+  figure {
+    margin-bottom: 0;
+  }
 }

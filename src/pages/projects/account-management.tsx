@@ -338,7 +338,7 @@ export const pageQuery = graphql`
       ...ProjectFields
     }
     mainImage: file(relativePath: { eq: "account-management/main.png" }) {
-      ...MainImageSizes
+      ...ProjectMainImageSizes
     }
   }
 `;

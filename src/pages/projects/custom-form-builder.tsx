@@ -41,7 +41,7 @@ export const pageQuery = graphql`
       ...ProjectFields
     }
     mainImage: file(relativePath: { eq: "custom-form-builder/main.png" }) {
-      ...MainImageSizes
+      ...ProjectMainImageSizes
     }
   }
 `;
