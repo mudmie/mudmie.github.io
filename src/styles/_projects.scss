@@ -9,4 +9,8 @@ $section-divider: 1px solid $black-color;
   box-shadow: 5px 5px $taupe-color;
   display: inline-block;
   margin-bottom: 15px;
+
+  &:hover span, &:focus span {
+    text-decoration: underline !important;
+  }
 }

@@ -36,7 +36,7 @@ export class MoreProjects extends React.Component<MoreProjectsProps, {}> {
             <div className={styles.projectDescription}>{project.name} / {project.term}</div>
           </Col>
           <Col lg="3" className="text-right"><Link to={project.url} className={styles.viewCaseStudyButton}>
-            View Case Study <FaArrowRight />
+            <span>View Case Study</span> <FaArrowRight />
           </Link></Col>
         </Row>
         <Row className={`justify-content-center ${styles.horizontalLineRow}`}>
