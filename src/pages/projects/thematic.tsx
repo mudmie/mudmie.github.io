@@ -386,7 +386,7 @@ export const pageQuery = graphql`
           ...ProjectFields
         }
         mainImage: file(relativePath: {eq: "thematic/main.png" }) {
-          ...MainImageSizes
+          ...ProjectMainImageSizes
         }
   }
         `;

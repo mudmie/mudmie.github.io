@@ -347,7 +347,7 @@ export const pageQuery = graphql`
       ...ProjectFields
     }
     mainImage: file(relativePath: { eq: "hacker-apps/main.png" }) {
-      ...MainImageSizes
+      ...ProjectMainImageSizes
     }
   }
 `;
