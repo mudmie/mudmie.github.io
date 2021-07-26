@@ -129,7 +129,7 @@ export default class ThematicPage extends React.Component<
               <p>
                 <span className={sharedStyles.green}><AiOutlineCheckCircle /></span><span className={sharedStyles.bold}> Existing Products</span>
                 <br />
-                Users can view investment information (Steps 2.1) before submitting a request to open an account
+                Users can view investment information (Steps 2.1) before submitting a request to open an account.
               </p>
               <ImageBox
                 src={this.getImageUrl("JR-ETF.gif")}
@@ -141,7 +141,7 @@ export default class ThematicPage extends React.Component<
               <p>
                 <span className={sharedStyles.red}><AiOutlineCloseCircle /></span> <span className={sharedStyles.bold}>Thematic Investment</span>
                 <br />
-                Users can select multiple themes but cannot view investment information for each theme (Steps 2.1)
+                Users can select multiple themes but cannot view investment information for each theme (Steps 2.1).
               </p>
               <ImageBox
                 src={this.getImageUrl("thematic.gif")}
@@ -209,16 +209,16 @@ export default class ThematicPage extends React.Component<
             </Col>
             <Col lg="8">
               <p>
-                I got feedback from the CEO that some users might want to select the themes without reading the information. 
+                I got feedback from the CEO that some users might want to select the themes without reading the information.
                 For example, a person might be into cannabis, so he/she just wanted to invest in it.
               </p>
               <p className={sharedStyles.pin}> <span className={sharedStyles.bold}>Decision #2</span>
                 <br />
                 While users could choose a theme just because they wanted to, I was still convinced from my learnings that users would read
-                investment information first. However, adding a quick-select feature wouldn't negatively impact the user experience. 
+                investment information first. However, adding a quick-select feature wouldn't negatively impact the user experience.
               </p>
               <p>
-                To enable quick-select, I introduced a new selection control (a circle checkbox) to each theme row so that the users could select the 
+                To enable quick-select, I introduced a new selection control (a circle checkbox) to each theme row so that the users could select the
                 theme without having to navigate to the investment information page.
               </p>
             </Col>
@@ -230,7 +230,7 @@ export default class ThematicPage extends React.Component<
               <p>
                 <span className={sharedStyles.bold}> Selecting Themes</span>
                 <br />
-                Tap the checkboxes to select themes right away + multiple themes can be selected at once!
+                Tap the checkboxes to select multiple themes right away.
               </p>
               <ImageBox
                 src={this.getImageUrl("3-select.gif")}
@@ -242,7 +242,7 @@ export default class ThematicPage extends React.Component<
               <p>
                 <span className={sharedStyles.bold}> Unselecting Products</span>
                 <br />
-                The design also allows users to unselect themes without navigating to the information page.
+                Tap the selected checkboxes to unselect multiple themes ASAP.
               </p>
               <ImageBox
                 src={this.getImageUrl("3-unselect.gif")}
@@ -252,9 +252,9 @@ export default class ThematicPage extends React.Component<
             </Col>
             <Col lg="4" className={sharedStyles.creamBg}>
               <p>
-                <span className={sharedStyles.bold}>Viewing Theme Information</span>
+                <span className={sharedStyles.bold}>Viewing Information</span>
                 <br />
-                Users could tap the right side of the row to view investment information and navigate back to the theme list.
+                Tap the right side of the row to view investment information.
               </p>
               <ImageBox
                 src={this.getImageUrl("3-view.gif")}
@@ -274,9 +274,12 @@ export default class ThematicPage extends React.Component<
             <Col lg="8">
               <p>
                 Since the users could select up to 5 themes, the system must prevent them from selecting additional ones.
+                I was focusing on error prevention as I didn't want the users to perform an action that would lead to an error.
               </p>
-              <p>
-                Initially, I was focusing on error prevention. I didn't want the users to perform an action that would lead to an error. So, I designed a disabled state for the selection control component. As soon as the users selected the 5th theme, the remaining unselected checkboxes would turn into the disabled state.
+              <p className={sharedStyles.pin}> <span className={sharedStyles.bold}>Decision #3</span>
+                <br />
+                I designed a disabled state for the checkbox. As soon as the users selected the 5<sup>th</sup> theme, the remaining
+                unselected checkboxes would become disabled.
               </p>
             </Col>
           </Row>
@@ -286,7 +289,7 @@ export default class ThematicPage extends React.Component<
               <p>
                 <span className={sharedStyles.bold}> Design #1 </span>
                 <br />
-                The outline of the checkbox changes from active (blue) to disabled (grey).
+                The outline of the checkbox changes from blue (active) to grey (disabled).
               </p>
               <ImageBox
                 src={this.getImageUrl("limit-1.gif")}
@@ -298,7 +301,7 @@ export default class ThematicPage extends React.Component<
               <p>
                 <span className={sharedStyles.bold}> Design #2</span>
                 <br />
-                The background of the checkbox is now filled in grey color.
+                The background of the checkbox turns grey (disabled) .
               </p>
               <ImageBox
                 src={this.getImageUrl("limit-2.gif")}
@@ -320,31 +323,61 @@ export default class ThematicPage extends React.Component<
             </Col>
           </Row>
 
-
-
           <Row className="justify-content-center">
             <Col lg="4">
-              <h3>Conclusion &amp;
-                <br />
-                Final Design
-              </h3>
+              <h3>Testing</h3>
             </Col>
             <Col lg="8">
               <p>
-                Overall, Design #1 and Design #2 didn't provide sufficient visual cues and feedback to the users to distinguish the change between active &amp; disable states. Design #3 could potentially confuse the users and lead them to wonder why the checkboxes suddenly disappeared.
+                I ran a usability inspection to test the effectiveness of the design options and found that
+                <br />
+                <ul>
+                  <li>
+                  None of the designs provided system feedback to the users 
+                  </li>
+                  <br/>
+                  <li>
+                  Visual cues in Design #1 &amp; #2 weren't enough for the users to distinguish the differences between the active &amp; disabled states
+                  </li>
+                  <br/>
+                <li>
+                Design #3 could potentially confuse the users and lead them to wonder why the checkboxes suddenly disappeared
+
+                </li>
+                </ul>
               </p>
-              <p>
-                Reflecting on the design options, I realized that error prevention might be more appropriate for some tasks that could result in severe consequences. For this scenario, providing feedback is more important as the users should be aware of what happening and why their action is prohibited.
-              </p>
+            
             </Col>
           </Row>
 
           <Row className="justify-content-center">
+            <Col lg="4">
+              <h3>Final Design</h3>
+            </Col>
+            <Col lg="8">
+              
+              <p className={sharedStyles.pin}> <span className={sharedStyles.bold}>Decision #4</span>
+                <br />
+                I realized error prevention should be prioritized for tasks that could result in severe consequences.
+                For this scenario, providing feedback was more important as the users should be informed of what was happening and why their action was prohibited.
+              </p>
+
+              <p>
+              I discarded the disabled stated. While I didn't stop the users from selecting additional themes, an alert box would pop up when the users attempt to select themes after they reached the limit.
+              </p>
+
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center">
+            <Col lg="4">
+            </Col>
             <Col lg="8" className={sharedStyles.creamBg}>
               <p>
-                I ended up discarding the disabled stated and displaying an alert box when the users attempt to select additional them after they reach the limit.
+                Tapping additional themes after reaching the limit will trigger an alert box. The message in the box will let the users
+                know they've reached the limit. 
               </p>
-              <ImageBox
+                           <ImageBox
                 src={this.getImageUrl("limit-final.gif")}
                 alt=""
                 className="img-fluid"
@@ -359,9 +392,16 @@ export default class ThematicPage extends React.Component<
               </h3>
             </Col>
             <Col lg="8">
-              <p>
-                Only 10 themes were available when Thematic Investment first lauched. As of now, there are 16 themes available and the list will likely continue to grow in the future. As a result, the current UI may need some modification to support a long list of themes. Features like searching, sorting and filtering may become necessary to enhance the user experience of the mobile app.
-                As more themes become available, some users may experience a paradox of choice. Having a "smart theme" option with preselected themes for an optimal investment return can also be beneficial to the users in the future.
+            <p><span className={sharedStyles.topicRight}>Growing List of Themes</span>
+                <br />
+            
+                Only 10 themes were available when the featured got lauched.  
+                Now, there are 16 themes available and the list will likely continue to grow in the future. As a result, the current UI may need some modification to support a long list of themes. 
+                Features like searching, sorting and filtering may become necessary to enhance the user experience for the mobile app.
+              </p>
+              <p><span className={sharedStyles.topicRight}>Paradox of Choice</span>
+                <br />
+              As more themes become available, some users may experience a paradox of choice. Having a "smart theme" option with preselected themes for an optimal investment return can also be beneficial to the users in the future.
               </p>
             </Col>
           </Row>
