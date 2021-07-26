@@ -83,10 +83,6 @@ export default class ThematicPage extends React.Component<
                 got lowered to $3,000, making the service more accessible to
                 various groups of users.
               </p>
-              {/* <p><span className={sharedStyles.textHighlight}>Learning #1</span>
-                <br/>
-                Partnering up with the data team, I learned that corporate employees became a new top investor; more students, public servants, and freelancers also started to invest with us.
-                </p> */}
             </Col>
           </Row>
 
@@ -113,7 +109,7 @@ export default class ThematicPage extends React.Component<
                 <br />
                 The new group of users tended to have less investment experience
                 and tolerate lower risk. Many of them planned to spend the
-                invested money in the future. These factors made them more
+                invested money in the future, making them more
                 cautious when making investment decisions.
               </p>
 
@@ -121,7 +117,7 @@ export default class ThematicPage extends React.Component<
                 {" "}
                 <span className={sharedStyles.bold}>Learning #3</span>
                 <br />
-                The new users group seek more investment information,
+                The new group of users seek more investment information,
                 communication, and updates from the company.
               </p>
             </Col>
@@ -139,16 +135,12 @@ export default class ThematicPage extends React.Component<
               <p>
                 Due to limited technical resources, I focused on examining
                 existing product flow &amp; components and reusing them as much
-                as possible in the fist iteration.
+                as possible.
               </p>
               <p>
-                Unlike other existing products, users can{" "}
-                <span className={sharedStyles.bold}>select more than one</span>{" "}
-                investment plan, i.e., choosing more than one theme. Therefore,
-                the UI must accommodate{" "}
-                <span className={sharedStyles.bold}>
-                  multi-selection interaction.
-                </span>
+                Unlike other existing products, users can
+                select more than one investment plan, i.e., choosing more than one theme. Therefore,
+                the UI must accommodate multi-selection interaction.
               </p>
             </Col>
           </Row>
@@ -232,9 +224,9 @@ export default class ThematicPage extends React.Component<
                 required low development effort.
               </p>
               <p>
-                This iteration, I simplified the design and introduced new
+                In this iteration, I simplified the design and introduced new
                 interactions. Users could tap a theme to view investment
-                information, select, and unselect the theme from the information
+                information, select, and unselect themes from the information
                 page.
               </p>
             </Col>
@@ -246,7 +238,7 @@ export default class ThematicPage extends React.Component<
               className={`pb-0 ${sharedStyles.creamBg} ${sharedStyles.figureNoMarginBottom}`}
             >
               <p>
-                <span className={sharedStyles.bold}> Selecting Theme</span>
+                <span className={sharedStyles.bold}> Selecting Themes</span>
                 <br />
                 Tap a theme to view investment information. Tap "select" button
                 and a check mark will appear to indicate theme selection.
@@ -264,7 +256,7 @@ export default class ThematicPage extends React.Component<
               className={`pb-0 ${sharedStyles.creamBg} ${sharedStyles.figureNoMarginBottom}`}
             >
               <p>
-                <span className={sharedStyles.bold}>Unselecting Theme</span>
+                <span className={sharedStyles.bold}>Unselecting Themes</span>
                 <br />
                 Tap a theme to navigate to information page then tap "unselect"
                 button. A check mark will disappear from the row.
@@ -282,8 +274,8 @@ export default class ThematicPage extends React.Component<
           <Row className="justify-content-center">
             <Col lg="4">
               <h3>
-                Design Process/
-                <br />
+                Design/
+                <br/>
                 Third Iteration
               </h3>
             </Col>
@@ -291,7 +283,7 @@ export default class ThematicPage extends React.Component<
               <p>
                 I got feedback from the CEO that some users might want to select
                 the themes without reading the information. For example, a
-                person might be into cannabis, so he/she just wanted to invest
+                person might be into cannabis and he/she just wanted to invest
                 in it.
               </p>
               <p className={sharedStyles.pin}>
@@ -305,8 +297,8 @@ export default class ThematicPage extends React.Component<
               </p>
               <p>
                 To enable quick-select, I introduced a new selection control (a
-                circle checkbox) to each theme row so that the users could
-                select the theme without having to navigate to the investment
+                circle checkbox) so that the users could
+                select the themes without having to navigate to the investment
                 information page.
               </p>
             </Col>
@@ -335,9 +327,9 @@ export default class ThematicPage extends React.Component<
               className={`pb-0 ${sharedStyles.creamBg} ${sharedStyles.figureNoMarginBottom}`}
             >
               <p>
-                <span className={sharedStyles.bold}>Unselecting Products</span>
+                <span className={sharedStyles.bold}>Unselecting Themes</span>
                 <br />
-                Tap the selected checkboxes to unselect multiple themes ASAP.
+                Tap the selected checkboxes to unselect multiple themes.
               </p>
               <div className="text-center">
                 <ImageBox
@@ -369,9 +361,9 @@ export default class ThematicPage extends React.Component<
           <Row className="justify-content-center">
             <Col lg="4">
               <h3>
-                Design/
+                Third Iteration/
                 <br />
-                Third Iteration
+                Continued
               </h3>
             </Col>
             <Col lg="8">
@@ -481,7 +473,7 @@ export default class ThematicPage extends React.Component<
               </p>
 
               <p>
-                I discarded the disabled stated. While I didn't stop the users
+                I discarded the disabled state. While I didn't stop the users
                 from selecting additional themes, an alert box would pop up when
                 the users attempt to select themes after they reached the limit.
               </p>
@@ -516,12 +508,9 @@ export default class ThematicPage extends React.Component<
                   Growing List of Themes
                 </span>
                 <br />
-                Only 10 themes were available when the featured got lauched.
-                Now, there are 16 themes available and the list will likely
-                continue to grow in the future. As a result, the current UI may
-                need some modification to support a long list of themes.
-                Features like searching, sorting and filtering may become
-                necessary to enhance the user experience for the mobile app.
+                The feature was launched with 10 themes. Now, there are 16 themes available and the list is likely
+                to continue growing in the future. The current UI might need some modification to support a long list of themes.
+                Features like searching, sorting, and filtering could help enhance the user experience for the mobile app.
               </p>
               <p>
                 <span className={sharedStyles.topicRight}>
@@ -530,7 +519,7 @@ export default class ThematicPage extends React.Component<
                 <br />
                 As more themes become available, some users may experience a
                 paradox of choice. Having a "smart theme" option with
-                preselected themes for an optimal investment return can also be
+                preselected themes for an optimal investment return can be
                 beneficial to the users in the future.
               </p>
             </Col>
@@ -543,7 +532,7 @@ export default class ThematicPage extends React.Component<
   private getImageUrl(filename: string) {
     return withPrefix(
       `/images/${this.props.data.project.edges[0].node.imageFolder}/${filename}`
-    );
+    ); 
   }
 }
 
