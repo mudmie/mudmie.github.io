@@ -22,7 +22,7 @@ export default class ThematicPage extends React.Component<
         <Container>
           <Row className="justify-content-center">
             <Col lg="3">
-              <h3 className={sharedStyles.topicLeft}>
+              <h3>
                 Overview
               </h3>
             </Col>
@@ -40,7 +40,7 @@ export default class ThematicPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="3">
-              <h3 className={sharedStyles.topicLeft}>Challenges</h3>
+              <h3>Challenges</h3>
             </Col>
             <Col lg={{ size: 6, offset: 1 }}>
               <p> <span className={sharedStyles.topicRight}> Technical Constraints</span>
@@ -66,7 +66,7 @@ export default class ThematicPage extends React.Component<
 
           <Row className="justify-content-center">
             <Col lg="3">
-              <h3 className={sharedStyles.topicLeft}>Understanding the New User Group</h3>
+              <h3>Understanding the New User Group</h3>
             </Col>
             <Col lg={{ size: 6, offset: 1 }}>
               <p>
@@ -84,11 +84,14 @@ export default class ThematicPage extends React.Component<
           </Row>
           <Row className="justify-content-center">
             <Col lg="3">
-              <h3 className={sharedStyles.topicLeft}>Design Process / First Iteration</h3>
+              <h3>Design Process/
+                <br />
+                First Iteration
+              </h3>
             </Col>
             <Col lg={{ size: 6, offset: 1 }}>
               <p>
-                Due to limited technical resources, I focused on examining existing product flow &amp; components and reusing them as much as possible.
+                Due to limited technical resources, I focused on examining existing product flow &amp; components and reusing them as much as possible in the fist iteration.
               </p>
               <p>
                 Unlike other existing products, users can <span className={sharedStyles.bold}>select more than one</span> investment plan, i.e., choosing more than one theme.
@@ -98,70 +101,261 @@ export default class ThematicPage extends React.Component<
               </p>
             </Col>
           </Row>
-        </Container>
 
-        <section className={sharedStyles.creamBg}>
-          <Container>
-            <Row className="justify-content-center">
-              <Col lg={PROJECT_BODY_COLUMN}>
-                <p>
-                  <span className={sharedStyles.bold}>
-                    A HTA chart showing steps required for the users to open an investment account
-                  </span>
-                </p>
-                <ImageBox
-                  src={this.getImageUrl("HTA.png")}
-                  alt=""
-                  className="img-fluid"
-                />
-              </Col>
-            </Row>
-            <Row className="justify-content-center">
-              <Col lg="5">
-                <p>
-                  <span className={sharedStyles.green}><AiOutlineCheckCircle /></span><span className={sharedStyles.bold}> Existing Products</span>
-                  <br />
-                  Users can view investment plan information (Steps 2.1) before submitting a request to open an account
-                </p>
-                <ImageBox
-                  src={this.getImageUrl("try.png")}
-                  alt=""
-                  className="img-fluid"
-                />
-              </Col>
-              <Col lg={{ size: 5, offset: 1 }}>
-                <p>
-                  <span className={sharedStyles.red}><AiOutlineCloseCircle /></span> <span className={sharedStyles.bold}>Thematic Investment</span>
-                  <br />
-                  Users can select multiple themes but cannot view investment information for each theme (Steps 2.1)
-                </p>
-                <ImageBox
-                  src={this.getImageUrl("try.png")}
-                  alt=""
-                  className="img-fluid"
-                />
-              </Col>
-            </Row>
-          </Container>
-        </section>
+          <Row className="justify-content-center">
+            <Col lg="11" className={sharedStyles.creamBg}>
+              <p>
+                <span className={sharedStyles.bold}>
+                  HTA chart showing steps required for the users to open an investment account
+                </span>
+              </p>
+              <ImageBox
+                src={this.getImageUrl("HTA.png")}
+                alt=""
+                className="img-fluid"
+              />
+            </Col>
+          </Row>
 
-        <Container>
+          <Row className="justify-content-center">
+            <Col lg="5" className={sharedStyles.creamBg}>
+              <p>
+                <span className={sharedStyles.green}><AiOutlineCheckCircle /></span><span className={sharedStyles.bold}> Existing Products</span>
+                <br />
+                Users can view investment information (Steps 2.1) before submitting a request to open an account
+              </p>
+              <ImageBox
+                src={this.getImageUrl("JR-ETF.gif")}
+                alt=""
+                className="img-fluid"
+              />
+            </Col>
+            <Col lg={{ size: 5, offset: 1 }} className={sharedStyles.creamBg}>
+              <p>
+                <span className={sharedStyles.red}><AiOutlineCloseCircle /></span> <span className={sharedStyles.bold}>Thematic Investment</span>
+                <br />
+                Users can select multiple themes but cannot view investment information for each theme (Steps 2.1)
+              </p>
+              <ImageBox
+                src={this.getImageUrl("thematic.gif")}
+                alt=""
+                className="img-fluid"
+              />
+            </Col>
+          </Row>
+
           <Row className="justify-content-center">
             <Col lg="3">
-              <h3 className={sharedStyles.topicLeft}>Design Process / Second Iteration</h3>
+              <h3>Design Process/
+                <br />
+                Second Iteration
+              </h3>
             </Col>
             <Col lg={{ size: 6, offset: 1 }}>
               <p>
-                Due to limited technical resources, I focused on examining existing product flow &amp; components and reusing them as much as possible.
+                <span className={sharedStyles.textHighlight}>
+                  Knowing that users seek more information to make investment decisions, this design failed to support their needs. Therefore, the design wasn't feasible even though it required low development effort.                </span>
               </p>
               <p>
-                Unlike other existing products, users can <span className={sharedStyles.bold}>select more than one</span> investment plan, i.e., choosing more than one theme.
-              </p>
-              <p>
-                <span className={sharedStyles.textHighlight}> Therefore, the UI must accommodate multi-selecting interaction.</span>
+                In the second iteration, I simplified the design and introduced new interactions. Users could tap a theme to view investment information and select or unselect the theme from the information page.
               </p>
             </Col>
           </Row>
+
+          <Row className="justify-content-center">
+            <Col lg="5" className={sharedStyles.creamBg}>
+              <p>
+                <span className={sharedStyles.bold}> Selecting Theme</span>
+                <br />
+                To select a theme, tap the theme to view investment information and "select" button. A check mark would appear as a visual cue to indicate theme selection.
+              </p>
+              <ImageBox
+                src={this.getImageUrl("2-select.gif")}
+                alt=""
+                className="img-fluid"
+              />
+            </Col>
+            <Col lg={{ size: 5, offset: 1 }} className={sharedStyles.creamBg}>
+              <p>
+                <span className={sharedStyles.bold}>Unselecting Theme</span>
+                <br />
+                To unselect a theme, tap the theme and "unselect" button. A check mark would disappear from the row.
+              </p>
+              <ImageBox
+                src={this.getImageUrl("2-unselect.gif")}
+                alt=""
+                className="img-fluid"
+              />
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center">
+            <Col lg="3">
+              <h3>Design Process/
+                <br />
+                Third Iteration
+              </h3>
+            </Col>
+            <Col lg={{ size: 6, offset: 1 }}>
+              <p>
+                I got feedback from the CEO that some users might want to select the themes without reading the information. While I believed most users would want to read the investment information first, adding this feature wouldn't negatively impact the user experience.
+              </p>
+            </Col>
+          </Row>
+
+
+          <Row className="justify-content-center">
+            <Col lg="4" className={sharedStyles.creamBg}>
+              <p>
+                <span className={sharedStyles.bold}> Selecting Themes</span>
+                <br />
+                Introducing a new selection control to each row so that users could select multiple themes right away.
+              </p>
+              <ImageBox
+                src={this.getImageUrl("3-select.gif")}
+                alt=""
+                className="img-fluid"
+              />
+            </Col>
+            <Col lg={{ size: 4 }} className={sharedStyles.creamBg}>
+              <p>
+                <span className={sharedStyles.bold}> Unselecting Products</span>
+                <br />
+                The design also allows users to unselect themes without navigating to the information page.
+              </p>
+              <ImageBox
+                src={this.getImageUrl("3-unselect.gif")}
+                alt=""
+                className="img-fluid"
+              />
+            </Col>
+            <Col lg={{ size: 4 }} className={sharedStyles.creamBg}>
+              <p>
+                <span className={sharedStyles.bold}>Viewing Theme Information</span>
+                <br />
+                Users could tap the right side of the row to view investment information and navigate back to the theme list.
+              </p>
+              <ImageBox
+                src={this.getImageUrl("3-view.gif")}
+                alt=""
+                className="img-fluid"
+              />
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center">
+            <Col lg="3">
+              <h3>Design Process/
+                <br />
+                Third Iteration
+
+              </h3>
+            </Col>
+            <Col lg={{ size: 6, offset: 1 }}>
+              <p>
+                Since the users could select up to 5 themes, the system must prevent them from selecting additional ones.
+              </p>
+              <p>
+                Initially, I was focusing on error prevention. I didn't want the users to perform an action that would lead to an error. So, I designed a disabled state for the selection control component. As soon as the users selected the 5th theme, the remaining unselected checkboxes would turn into the disabled state.
+              </p>
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center">
+            <Col lg="4" className={sharedStyles.creamBg}>
+              <p>
+                <span className={sharedStyles.bold}> Design #1 </span>
+                <br />
+                The outline of the checkbox changes from active (blue) to disabled (grey).
+
+              </p>
+              <ImageBox
+                src={this.getImageUrl("limit-1.gif")}
+                alt=""
+                className="img-fluid"
+              />
+            </Col>
+            <Col lg={{ size: 4 }} className={sharedStyles.creamBg}>
+              <p>
+                <span className={sharedStyles.bold}> Design #2</span>
+                <br />
+                The background of the checkbox is now filled in grey color.
+
+              </p>
+              <ImageBox
+                src={this.getImageUrl("limit-2.gif")}
+                alt=""
+                className="img-fluid"
+              />
+            </Col>
+            <Col lg={{ size: 4 }} className={sharedStyles.creamBg}>
+              <p>
+                <span className={sharedStyles.bold}>Design #3</span>
+                <br />
+                The checkbox disappears once the limit is reached.
+
+              </p>
+              <ImageBox
+                src={this.getImageUrl("limit-3.gif")}
+                alt=""
+                className="img-fluid"
+              />
+            </Col>
+          </Row>
+
+
+
+          <Row className="justify-content-center">
+            <Col lg="3">
+              <h3>Conclusion &amp;
+                <br />
+                Final Design
+              </h3>
+            </Col>
+            <Col lg={{ size: 6, offset: 1 }}>
+              <p>
+                Overall, Design #1 and Design #2 didn't provide sufficient visual cues and feedback to the users to distinguish the change between active &amp; disable states. Design #3 could potentially confuse the users and lead them to wonder why the checkboxes suddenly disappeared.
+              </p>
+              <p>
+                Reflecting on the design options, I realized that error prevention might be more appropriate for some tasks that could result in severe consequences. For this scenario, providing feedback is more important as the users should be aware of what happening and why their action is prohibited.
+              </p>
+            </Col>
+
+
+          </Row>
+
+          <Row className="justify-content-center">
+            <Col lg="8" className={sharedStyles.creamBg}>
+              <p>
+                I ended up discarding the disabled stated and displaying an alert box when the users attempt to select additional them after they reach the limit.
+              </p>
+              <ImageBox
+                src={this.getImageUrl("limit-final.gif")}
+                alt=""
+                className="img-fluid"
+              />
+            </Col>
+          </Row>
+
+
+
+
+          <Row className="justify-content-center">
+            <Col lg="3">
+              <h3>
+                In the Future
+              </h3>
+            </Col>
+            <Col lg={{ size: 6, offset: 1 }}>
+              <p>
+                Only 10 themes were available when Thematic Investment first lauched. As of now, there are 16 themes available and the list will likely continue to grow in the future. As a result, the current UI may need some modification to support a long list of themes. Features like searching, sorting and filtering may become necessary to enhance the user experience of the mobile app.
+
+                As more themes become available, some users may experience a paradox of choice. Having a "smart theme" option with preselected themes for an optimal investment return can also be beneficial to the users in the future.
+              </p>
+            </Col>
+          </Row>
+
+
         </Container>
       </ProjectLayout>
     );
