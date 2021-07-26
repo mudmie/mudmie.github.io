@@ -62,3 +62,9 @@ h1{
   background-color: $highlight-color;
   font-weight: 600;
 }
+
+.figure-no-margin-bottom{
+  figure {
+    margin-bottom: 0;
+  }
+}
