@@ -20,13 +20,14 @@ export default class ThematicPage extends React.Component<
         mainImage={this.props.data.mainImage.childImageSharp.fluid}
       >
         <Container>
+
           <Row className="justify-content-center">
-            <Col lg="3">
+            <Col lg="4">
               <h3>
                 Overview
               </h3>
             </Col>
-            <Col lg={{ size: 6, offset: 1 }}>
+            <Col lg="8">
               <p>
                 Jitta Wealth is a fintech startup that aims to help investors create better returns through simple investment methods.
               </p>
@@ -39,11 +40,11 @@ export default class ThematicPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="3">
+            <Col lg="4">
               <h3>Challenges</h3>
             </Col>
-            <Col lg={{ size: 6, offset: 1 }}>
-              <p> <span className={sharedStyles.topicRight}> Technical Constraints</span>
+            <Col lg="8">
+              <p><span className={sharedStyles.topicRight}>Technical Constraints</span>
                 <br />
                 Like many other startups, resources and time are limited.
               </p>
@@ -56,54 +57,60 @@ export default class ThematicPage extends React.Component<
               <p>
                 A shift in user demographics occurred after the minimum deposit got lowered to $3,000, making the service more accessible to various groups of users.
               </p>
+              {/* <p><span className={sharedStyles.textHighlight}>Learning #1</span>
+                <br/>
+                Partnering up with the data team, I learned that corporate employees became a new top investor; more students, public servants, and freelancers also started to invest with us.
+                </p> */}
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center">
+            <Col lg="4">
+              <h3>Knowing the Users</h3>
+            </Col>
+            <Col lg="8">
               <p>
-                <span className={sharedStyles.textHighlight}>
-                  Partnering up with the data team, I learned that corporate employees became a new top investor; more students, public servants, and freelancers also started to invest with us.
-                </span>
+                I partnered up with the customer service &amp; data team to learn more about the new group of users.                 I also reached out to some users to learn more about their needs and investment goals.
+
+              </p>
+              <p className={sharedStyles.pin}><span className={sharedStyles.bold}>Learning #1</span>
+                <br />
+                Corporate employees became a new top investor. More students, public servants, and freelancers also started to invest with us.
+              </p>
+
+              <p className={sharedStyles.pin}> <span className={sharedStyles.bold}>Learning #2</span>
+                <br />
+                The new group of users tended to have less investment experience and tolerate lower risk.
+                Many of them planned to spend the invested money in the future. These factors made them more cautious when making investment decisions.
+              </p>
+
+              <p className={sharedStyles.pin}> <span className={sharedStyles.bold}>Learning #3</span>
+                <br />
+                The new users group seek more investment information, communication, and updates from the company.
               </p>
             </Col>
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="3">
-              <h3>Understanding the New User Group</h3>
-            </Col>
-            <Col lg={{ size: 6, offset: 1 }}>
-              <p>
-                I collaborated with the customer service &amp; data teams and reached out to some users to learn more about their needs and investment goals.
-              </p>
-
-              <p>
-                I found that the new group of users tended to have <span className={sharedStyles.bold}>less investment experience </span> and <span className={sharedStyles.bold}>tolerate lower risk</span>.
-                Many of them planned to spend the invested money in the future. These factors made them <span className={sharedStyles.bold}> more cautious </span> when making investment decisions.
-              </p>
-              <p>
-                <span className={sharedStyles.textHighlight}> Thus, they seek more investment information, communication, and updates from the company.</span>
-              </p>
-            </Col>
-          </Row>
-          <Row className="justify-content-center">
-            <Col lg="3">
-              <h3>Design Process/
+            <Col lg="4">
+              <h3>Design/
                 <br />
                 First Iteration
               </h3>
             </Col>
-            <Col lg={{ size: 6, offset: 1 }}>
+            <Col lg="8">
               <p>
                 Due to limited technical resources, I focused on examining existing product flow &amp; components and reusing them as much as possible in the fist iteration.
               </p>
               <p>
                 Unlike other existing products, users can <span className={sharedStyles.bold}>select more than one</span> investment plan, i.e., choosing more than one theme.
-              </p>
-              <p>
-                <span className={sharedStyles.textHighlight}> Therefore, the UI must accommodate multi-selecting interaction.</span>
+                Therefore, the UI must accommodate <span className={sharedStyles.bold}>multi-selection interaction.</span>
               </p>
             </Col>
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="11" className={sharedStyles.creamBg}>
+            <Col lg="12" className={sharedStyles.creamBg}>
               <p>
                 <span className={sharedStyles.bold}>
                   HTA chart showing steps required for the users to open an investment account
@@ -118,7 +125,7 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="5" className={sharedStyles.creamBg}>
+            <Col lg="6" className={sharedStyles.creamBg}>
               <p>
                 <span className={sharedStyles.green}><AiOutlineCheckCircle /></span><span className={sharedStyles.bold}> Existing Products</span>
                 <br />
@@ -130,7 +137,7 @@ export default class ThematicPage extends React.Component<
                 className="img-fluid"
               />
             </Col>
-            <Col lg={{ size: 5, offset: 1 }} className={sharedStyles.creamBg}>
+            <Col lg="6" className={sharedStyles.creamBg}>
               <p>
                 <span className={sharedStyles.red}><AiOutlineCloseCircle /></span> <span className={sharedStyles.bold}>Thematic Investment</span>
                 <br />
@@ -145,19 +152,23 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="3">
-              <h3>Design Process/
+            <Col lg="4">
+              <h3>Design/
                 <br />
                 Second Iteration
               </h3>
             </Col>
-            <Col lg={{ size: 6, offset: 1 }}>
-              <p>
-                <span className={sharedStyles.textHighlight}>
-                  Knowing that users seek more information to make investment decisions, this design failed to support their needs. Therefore, the design wasn't feasible even though it required low development effort.                </span>
+            <Col lg="8">
+              {/* <Col lg={{ size: 6, offset: 1 }}> */}
+              <p>Knowing that users seek information when making investment decisions, the design in the first iteration failed to support their needs.
+              </p>
+
+              <p className={sharedStyles.pin}> <span className={sharedStyles.bold}>Decision #1</span>
+                <br />
+                The design in the first iteration wasn't feasible even though it required low development effort.
               </p>
               <p>
-                In the second iteration, I simplified the design and introduced new interactions. Users could tap a theme to view investment information and select or unselect the theme from the information page.
+                This iteration, I simplified the design and introduced new interactions. Users could tap a theme to view investment information, select, and unselect the theme from the information page.
               </p>
             </Col>
           </Row>
@@ -167,7 +178,7 @@ export default class ThematicPage extends React.Component<
               <p>
                 <span className={sharedStyles.bold}> Selecting Theme</span>
                 <br />
-                To select a theme, tap the theme to view investment information and "select" button. A check mark would appear as a visual cue to indicate theme selection.
+                Tap a theme to view investment information. Tap "select" button and a check mark will appear to indicate theme selection.
               </p>
               <ImageBox
                 src={this.getImageUrl("2-select.gif")}
@@ -179,7 +190,7 @@ export default class ThematicPage extends React.Component<
               <p>
                 <span className={sharedStyles.bold}>Unselecting Theme</span>
                 <br />
-                To unselect a theme, tap the theme and "unselect" button. A check mark would disappear from the row.
+                Tap a theme to navigate to information page then tap "unselect" button. A check mark will disappear from the row.
               </p>
               <ImageBox
                 src={this.getImageUrl("2-unselect.gif")}
@@ -190,15 +201,25 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="3">
+            <Col lg="4">
               <h3>Design Process/
                 <br />
                 Third Iteration
               </h3>
             </Col>
-            <Col lg={{ size: 6, offset: 1 }}>
+            <Col lg="8">
               <p>
-                I got feedback from the CEO that some users might want to select the themes without reading the information. While I believed most users would want to read the investment information first, adding this feature wouldn't negatively impact the user experience.
+                I got feedback from the CEO that some users might want to select the themes without reading the information. 
+                For example, a person might be into cannabis, so he/she just wanted to invest in it.
+              </p>
+              <p className={sharedStyles.pin}> <span className={sharedStyles.bold}>Decision #2</span>
+                <br />
+                While users could choose a theme just because they wanted to, I was still convinced from my learnings that users would read
+                investment information first. However, adding a quick-select feature wouldn't negatively impact the user experience. 
+              </p>
+              <p>
+                To enable quick-select, I introduced a new selection control (a circle checkbox) to each theme row so that the users could select the 
+                theme without having to navigate to the investment information page.
               </p>
             </Col>
           </Row>
@@ -209,7 +230,7 @@ export default class ThematicPage extends React.Component<
               <p>
                 <span className={sharedStyles.bold}> Selecting Themes</span>
                 <br />
-                Introducing a new selection control to each row so that users could select multiple themes right away.
+                Tap the checkboxes to select themes right away + multiple themes can be selected at once!
               </p>
               <ImageBox
                 src={this.getImageUrl("3-select.gif")}
@@ -217,7 +238,7 @@ export default class ThematicPage extends React.Component<
                 className="img-fluid"
               />
             </Col>
-            <Col lg={{ size: 4 }} className={sharedStyles.creamBg}>
+            <Col lg="4" className={sharedStyles.creamBg}>
               <p>
                 <span className={sharedStyles.bold}> Unselecting Products</span>
                 <br />
@@ -229,7 +250,7 @@ export default class ThematicPage extends React.Component<
                 className="img-fluid"
               />
             </Col>
-            <Col lg={{ size: 4 }} className={sharedStyles.creamBg}>
+            <Col lg="4" className={sharedStyles.creamBg}>
               <p>
                 <span className={sharedStyles.bold}>Viewing Theme Information</span>
                 <br />
@@ -244,14 +265,13 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="3">
-              <h3>Design Process/
+            <Col lg="4">
+              <h3>Design/
                 <br />
                 Third Iteration
-
               </h3>
             </Col>
-            <Col lg={{ size: 6, offset: 1 }}>
+            <Col lg="8">
               <p>
                 Since the users could select up to 5 themes, the system must prevent them from selecting additional ones.
               </p>
@@ -267,7 +287,6 @@ export default class ThematicPage extends React.Component<
                 <span className={sharedStyles.bold}> Design #1 </span>
                 <br />
                 The outline of the checkbox changes from active (blue) to disabled (grey).
-
               </p>
               <ImageBox
                 src={this.getImageUrl("limit-1.gif")}
@@ -280,7 +299,6 @@ export default class ThematicPage extends React.Component<
                 <span className={sharedStyles.bold}> Design #2</span>
                 <br />
                 The background of the checkbox is now filled in grey color.
-
               </p>
               <ImageBox
                 src={this.getImageUrl("limit-2.gif")}
@@ -293,7 +311,6 @@ export default class ThematicPage extends React.Component<
                 <span className={sharedStyles.bold}>Design #3</span>
                 <br />
                 The checkbox disappears once the limit is reached.
-
               </p>
               <ImageBox
                 src={this.getImageUrl("limit-3.gif")}
@@ -306,13 +323,13 @@ export default class ThematicPage extends React.Component<
 
 
           <Row className="justify-content-center">
-            <Col lg="3">
+            <Col lg="4">
               <h3>Conclusion &amp;
                 <br />
                 Final Design
               </h3>
             </Col>
-            <Col lg={{ size: 6, offset: 1 }}>
+            <Col lg="8">
               <p>
                 Overall, Design #1 and Design #2 didn't provide sufficient visual cues and feedback to the users to distinguish the change between active &amp; disable states. Design #3 could potentially confuse the users and lead them to wonder why the checkboxes suddenly disappeared.
               </p>
@@ -320,8 +337,6 @@ export default class ThematicPage extends React.Component<
                 Reflecting on the design options, I realized that error prevention might be more appropriate for some tasks that could result in severe consequences. For this scenario, providing feedback is more important as the users should be aware of what happening and why their action is prohibited.
               </p>
             </Col>
-
-
           </Row>
 
           <Row className="justify-content-center">
@@ -337,25 +352,19 @@ export default class ThematicPage extends React.Component<
             </Col>
           </Row>
 
-
-
-
           <Row className="justify-content-center">
-            <Col lg="3">
+            <Col lg="4">
               <h3>
                 In the Future
               </h3>
             </Col>
-            <Col lg={{ size: 6, offset: 1 }}>
+            <Col lg="8">
               <p>
                 Only 10 themes were available when Thematic Investment first lauched. As of now, there are 16 themes available and the list will likely continue to grow in the future. As a result, the current UI may need some modification to support a long list of themes. Features like searching, sorting and filtering may become necessary to enhance the user experience of the mobile app.
-
                 As more themes become available, some users may experience a paradox of choice. Having a "smart theme" option with preselected themes for an optimal investment return can also be beneficial to the users in the future.
               </p>
             </Col>
           </Row>
-
-
         </Container>
       </ProjectLayout>
     );

@@ -46,10 +46,10 @@ html {
     @media (min-width: 414px) {
       font-size: 24px;
     }
-    @media (min-width: 1024px) {
-      font-size: 32px;
-      margin: 0 0 16px 0;
-    }
+    // @media (min-width: 1024px) {
+    //   font-size: 32px;
+    //   margin: 0 0 16px 0;
+    // }
   }
 
   body {
@@ -98,7 +98,7 @@ html {
     text-decoration: underline;
   }
   a:focus,
-  a:hover,{
+  a:hover{
   // a:visited {
     color: $link-hover-color;
   }

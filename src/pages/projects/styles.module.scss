@@ -16,6 +16,7 @@ h1{
 .topicRight{
   font-family: $body-font;
   font-weight: 600;
+  color: $chestnut-color;
 }
 .image-title {
   margin: 5px 0 0 0;
@@ -23,8 +24,15 @@ h1{
 }
 
 .text-highlight {
-  font-weight: 300 !important;
-  background-color: $highlight-color;
+  
+  box-shadow: $highlight-color 0px -0.6em inset;
+  font-weight: 600;
+}
+
+.pin{
+  border-left: 10px solid $highlight-color;
+  padding-left: 10px;
+  margin: 10px 0 10px 0;
 }
 
 .sub {
@@ -43,12 +51,14 @@ h1{
 
 }
 
-
 .green{
   color:#589F75 ;
 }
-
 .red{
   color:#D7737D;
 }
 
+.learning{
+  background-color: $highlight-color;
+  font-weight: 600;
+}
