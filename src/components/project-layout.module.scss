@@ -31,10 +31,11 @@
 html {
   .project-page {
     h1 {
-      font-weight: bold;
+      font-weight: 600;
       margin-bottom: 0px;
-      font-size: 36px;
-      color: $ocean-color;
+      font-size: 48px;
+      color: $cauliflower-color;
+      text-transform: none;
     }
     h2 {
       font-size: 24px;
