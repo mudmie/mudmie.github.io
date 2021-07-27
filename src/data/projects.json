@@ -30,7 +30,7 @@
     "results": "Lorem ipsum",
     "url": "/projects/custom-form-builder/",
     "imageFolder": "custom-form-builder",
-    "isProtected": true,
+    "isProtected": false,
     "isEnabled": true
   },
   {
