@@ -109,8 +109,8 @@ export default class ThematicPage extends React.Component<
                 <br />
                 The new group of users tended to have less investment experience
                 and tolerate lower risk. Many of them planned to spend the
-                invested money in the future, making them more
-                cautious when making investment decisions.
+                invested money in the future, making them more cautious when
+                making investment decisions.
               </p>
 
               <p className={sharedStyles.pin}>
@@ -138,8 +138,8 @@ export default class ThematicPage extends React.Component<
                 as possible.
               </p>
               <p>
-                Unlike other existing products, users can
-                select more than one investment plan, i.e., choosing more than one theme. Therefore,
+                Unlike other existing products, users can select more than one
+                investment plan, i.e., choosing more than one theme. Therefore,
                 the UI must accommodate multi-selection interaction.
               </p>
             </Col>
@@ -275,7 +275,7 @@ export default class ThematicPage extends React.Component<
             <Col lg="4">
               <h3>
                 Design/
-                <br/>
+                <br />
                 Third Iteration
               </h3>
             </Col>
@@ -297,9 +297,8 @@ export default class ThematicPage extends React.Component<
               </p>
               <p>
                 To enable quick-select, I introduced a new selection control (a
-                circle checkbox) so that the users could
-                select the themes without having to navigate to the investment
-                information page.
+                circle checkbox) so that the users could select the themes
+                without having to navigate to the investment information page.
               </p>
             </Col>
           </Row>
@@ -508,9 +507,12 @@ export default class ThematicPage extends React.Component<
                   Growing List of Themes
                 </span>
                 <br />
-                The feature was launched with 10 themes. Now, there are 16 themes available and the list is likely
-                to continue growing in the future. The current UI might need some modification to support a long list of themes.
-                Features like searching, sorting, and filtering could help enhance the user experience for the mobile app.
+                The feature was launched with 10 themes. Now, there are 16
+                themes available and the list is likely to continue growing in
+                the future. The current UI might need some modification to
+                support a long list of themes. Features like searching, sorting,
+                and filtering could help enhance the user experience for the
+                mobile app.
               </p>
               <p>
                 <span className={sharedStyles.topicRight}>
@@ -532,7 +534,7 @@ export default class ThematicPage extends React.Component<
   private getImageUrl(filename: string) {
     return withPrefix(
       `/images/${this.props.data.project.edges[0].node.imageFolder}/${filename}`
-    ); 
+    );
   }
 }
 

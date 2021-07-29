@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Col, Container, Row } from "reactstrap";
 import * as sharedStyles from "./styles.module.scss";
+import { AiOutlineCheckCircle, AiOutlineCloseCircle } from "react-icons/ai";
 import { graphql, withPrefix } from "gatsby";
 import { ImageBox } from "../../components/image-box";
 import {
@@ -29,8 +30,8 @@ export default class CustomFormBuilderPage extends React.Component<
             <Col lg="8">
               <p>
                 PlanGrid provides cloud-based solutions to increase productivity
-                in the construction industry. The company got acquired by
-                Autodesk in 2018 and became part of Autodesk Construction Cloud.
+                in the construction industry. The company became part of
+                Autodesk Construction Cloud after the aquisition in 2018.
               </p>
               <p>
                 I was a{" "}
@@ -44,7 +45,9 @@ export default class CustomFormBuilderPage extends React.Component<
               <p>
                 I spent 6 weeks working with a product manager, designers,
                 researchers, and developers to examine form creation process and
-                design a custom form builder feature.
+                design a{" "}
+                <span className={sharedStyles.bold}>custom form builder</span>{" "}
+                feature.
               </p>
               <p>
                 My research and design initiatives{" "}
@@ -103,7 +106,7 @@ export default class CustomFormBuilderPage extends React.Component<
           <Row className="justify-content-center">
             <Col lg="6" className={sharedStyles.creamBg}>
               <p>
-                <span className={sharedStyles.bold}>Native Daily Report</span>
+                <span className={sharedStyles.bold}>Built-in Daily Report</span>
                 <br />
                 Select components to set up a report.
                 <div className="text-center">
@@ -153,14 +156,17 @@ export default class CustomFormBuilderPage extends React.Component<
             </Col>
             <Col lg="8">
               <p>
-                I got a big picture of the problem after syncing with the
-                product manager, but I still didn’t have enough details to solve
-                the problem.{" "}
+                Syncing with the product manager helped me grasp a big picture
+                of the, but I still didn’t have enough details to solve the
+                problem.{" "}
               </p>
               <p>
-                The goal of this research was to understand sequences of tasks
-                &amp; tools used to create forms as well as to find out
-                the satisfaction level &amp; pain points of the current process.
+                The main research goal was to{" "}
+                <span className={sharedStyles.bold}>
+                  understand sequences of tasks &amp; tools{" "}
+                </span>{" "}
+                used to create forms. We also wanted to find out the
+                satisfaction level &amp; pain points of the current process.
               </p>
               <p>
                 <span className={sharedStyles.topicRight}>
@@ -181,33 +187,217 @@ export default class CustomFormBuilderPage extends React.Component<
                 <span className={sharedStyles.topicRight}>
                   Research Methods
                 </span>
-                <br />A user-centered design method of contextual inquiry was
-                chosen for this research as it helped reveal the underlying work
-                structure of the form creation process.
+                <br /> I adopted a user-centered design method of{" "}
+                <span className={sharedStyles.bold}>contextual inquiry</span> to
+                reveal the underlying work structure of the form creation
+                process.
               </p>
               <p>
-                I also applied a master-apprentice model, where the users
-                (experts) walked me (a novice) through the form creation process
-                step by step.
+                I also applied a{" "}
+                <span className={sharedStyles.bold}>
+                  master-apprentice model
+                </span>
+                , where the users (experts) walked me (a novice) through the
+                form creation process step by step.
               </p>
               <p className={sharedStyles.pin}>
                 {" "}
                 <span className={sharedStyles.bold}>Learning #1</span>
                 <br />
                 Overall, users weren't satisfied with the current PlanGrid
-                tools. They addressed the frustration around limited
-                customizability, inefficient &amp; lengthy processes, and lack of
-                data aggregation.
+                tools. <br />
+                Limited customizability, inefficient &amp; lengthy processes,
+                and lack of data aggregation were the main frustration points.
               </p>
               <p className={sharedStyles.pin}>
                 {" "}
                 <span className={sharedStyles.bold}>Learning #2</span>
                 <br />
-                Paper, Excel, PDF, and PlanGrid Native Field Reports were common
-                tools used in the form creation process.
+                Typically, project manager, project engineer, and IT Admin were
+                the ones that created forms. Types of form included:{" "}
+                <ul>
+                  <li>Paper forms</li>
+                  <li>Microsoft Excel forms</li>
+                  <li>PDF forms</li>
+                  <li>PlanGrid Native forms</li>
+                </ul>
               </p>
             </Col>
           </Row>
+
+          <Row className="justify-content-center">
+            <Col lg="12" className={sharedStyles.creamBg}>
+              <p>
+                <span className={sharedStyles.bold}>
+                  A summary of the current form creation workflow
+                </span>
+              </p>
+              <ImageBox
+                src={this.getImageUrl("flow.png")}
+                alt=""
+                className="img-fluid"
+              />
+            </Col>
+          </Row>
+
+          <Row>
+            <Col lg="6" className={sharedStyles.creamBg}>
+              <p>
+                <span className={sharedStyles.bold}> Paper Form</span>
+                <br />A traditional way to creat form. Companies tries to move
+                away from it, but they still use it to some extent.
+              </p>
+              <p>
+                <span className={sharedStyles.green}>
+                  <AiOutlineCheckCircle />
+                </span>{" "}
+                Comfort zone for most field workers (form submitter)
+              </p>
+              <p>
+                <span className={sharedStyles.green}>
+                  <AiOutlineCheckCircle />
+                </span>{" "}
+                Full control of form content, design, and layout
+              </p>
+              <p>
+                <span className={sharedStyles.red}>
+                  <AiOutlineCloseCircle />
+                </span>{" "}
+                Time consuing to create, distribute, collect, review
+              </p>
+              <p>
+                <span className={sharedStyles.red}>
+                  <AiOutlineCloseCircle />
+                </span>{" "}
+                Costly to print
+              </p>
+            </Col>
+            <Col lg="6" className={sharedStyles.creamBg}>
+              <p>
+                <span className={sharedStyles.bold}>Excel Form</span>
+                <br />
+                Used by smaller companies. Can be filled out digitally or can
+                require manual input of data from paper forms.
+              </p>
+              <p>
+                <span className={sharedStyles.green}>
+                  <AiOutlineCheckCircle />
+                </span>{" "}
+                Questions can be entered quickly and easily
+              </p>
+              <p>
+                <span className={sharedStyles.green}>
+                  <AiOutlineCheckCircle />
+                </span>{" "}
+                Reliable for complex calculation &amp; data analysis
+              </p>
+              <p>
+                <span className={sharedStyles.red}>
+                  <AiOutlineCloseCircle />
+                </span>{" "}
+                Manual, error prone, time consuming process
+              </p>
+              <p>
+                <span className={sharedStyles.red}>
+                  <AiOutlineCloseCircle />
+                </span>{" "}
+                High effort to transfer data from paper forms
+              </p>
+            </Col>
+
+            <Col lg="6" className={sharedStyles.creamBg}>
+              <p>
+                <span className={sharedStyles.bold}>PDF Form</span>
+                <br />
+                Most used by users, but has the worst creation process. Can be uploaded to PlanGrid and distributed digitally.
+              </p>
+              <p>
+                <span className={sharedStyles.green}>
+                  <AiOutlineCheckCircle />
+                </span>{" "}
+                Full control on content, design, and layout
+              </p>
+              <p>
+                <span className={sharedStyles.green}>
+                  <AiOutlineCheckCircle />
+                </span>{" "}
+                Submitted forms can be exported as CSV files (Excel)
+              </p>
+              <p>
+                <span className={sharedStyles.red}>
+                  <AiOutlineCloseCircle />
+                </span>{" "}
+                Manual, time consuming, and tedious process
+              </p>
+              <p>
+                <span className={sharedStyles.red}>
+                  <AiOutlineCloseCircle />
+                </span>{" "}
+                Requires additional software to complete the process
+              </p>
+            </Col>
+            <Col lg="6" className={sharedStyles.creamBg}>
+              <p>
+                <span className={sharedStyles.bold}>PlanGrid Native Form</span>
+                <br />
+                Users can create, distribute, and collect forms directly on PlanGrid web app. 
+              </p>
+              <p>
+                <span className={sharedStyles.green}>
+                  <AiOutlineCheckCircle />
+                </span>{" "}
+                Easy and quick process
+              </p>
+              <p>
+                <span className={sharedStyles.green}>
+                  <AiOutlineCheckCircle />
+                </span>{" "}
+                Submitted forms can be exported to local computers
+              </p>
+              <p>
+                <span className={sharedStyles.green}>
+                  <AiOutlineCheckCircle />
+                </span>{" "}
+               Access to some insights of the submiited report
+              </p>
+              <p>
+                <span className={sharedStyles.red}>
+                  <AiOutlineCloseCircle />
+                </span>{" "}
+                Lacks customizability &amp; only works for Daily Report
+              </p>
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center">
+            <Col lg="4">
+              <h3>Testing</h3>
+            </Col>
+            <Col lg="8">
+              <p>
+                I ran a usability inspection to test the effectiveness of the
+                design options and found that
+                <br />
+                <ul>
+                  <li>
+                    None of the designs provided system feedback to the users
+                  </li>
+                  <br />
+                  <li>
+                    Visual cues in Design #1 &amp; #2 weren't enough for the
+                    users to distinguish the differences between the active
+                    &amp; disabled states
+                  </li>
+                  <br />
+                  <li>
+                    Design #3 could potentially confuse the users and lead them
+                    to wonder why the checkboxes suddenly disappeared
+                  </li>
+                </ul>
+              </p>
+            </Col>
+          </Row>
+
           <Row className="justify-content-center">
             <Col lg="4">
               <h3>
@@ -288,9 +478,7 @@ export default class CustomFormBuilderPage extends React.Component<
           <Row className="justify-content-center">
             <Col lg="12" className={sharedStyles.creamBg}>
               <p>
-                <span className={sharedStyles.bold}>
-                  Concept #3: Smart PDF
-                </span>
+                <span className={sharedStyles.bold}>Concept #3: Smart PDF</span>
                 <br />
                 This concept was designed based on the existing PDF import
                 feature on PlanGrid Field Reports. It was included in the
@@ -353,9 +541,10 @@ export default class CustomFormBuilderPage extends React.Component<
                 prototype.
               </p>
               <p>
-                It should be noted that these designs aren't production version. 
-                I wrapped up this project during my last week of internship, so another designer 
-                completed the final design of this feature after I left. 
+                It should be noted that these designs aren't production version.
+                I wrapped up this project during my last week of internship, so
+                another designer completed the final design of this feature
+                after I left.
               </p>
             </Col>
           </Row>
@@ -386,8 +575,8 @@ export default class CustomFormBuilderPage extends React.Component<
                   Form Submitting Experience{" "}
                 </span>
                 <br />
-                If assigned to a form, users will be able to fill out the form on
-                both web app &amp; tablets. They will see a list of questions
+                If assigned to a form, users will be able to fill out the form
+                on both web app &amp; tablets. They will see a list of questions
                 with a pre-defined response type specified by the form creator.
               </p>
               <ImageBox
