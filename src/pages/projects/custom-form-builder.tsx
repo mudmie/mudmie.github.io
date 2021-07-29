@@ -244,7 +244,7 @@ export default class CustomFormBuilderPage extends React.Component<
             <Col lg="6" className={sharedStyles.creamBg}>
               <p>
                 <span className={sharedStyles.bold}> Paper Form</span>
-                <br />A traditional way to creat form. Companies tries to move
+                <br />A traditional way to create forms. Companies tries to move
                 away from it, but they still use it to some extent.
               </p>
               <p>
@@ -276,7 +276,7 @@ export default class CustomFormBuilderPage extends React.Component<
               <p>
                 <span className={sharedStyles.bold}>Excel Form</span>
                 <br />
-                Used by smaller companies. Can be filled out digitally or can
+                Used by 80% of the companies. Can be filled out digitally or can
                 require manual input of data from paper forms.
               </p>
               <p>
@@ -309,7 +309,8 @@ export default class CustomFormBuilderPage extends React.Component<
               <p>
                 <span className={sharedStyles.bold}>PDF Form</span>
                 <br />
-                Most used by users, but has the worst creation process. Can be uploaded to PlanGrid and distributed digitally.
+                Most used by users, but has the worst creation process. Can be
+                uploaded to PlanGrid and distributed digitally.
               </p>
               <p>
                 <span className={sharedStyles.green}>
@@ -340,7 +341,8 @@ export default class CustomFormBuilderPage extends React.Component<
               <p>
                 <span className={sharedStyles.bold}>PlanGrid Native Form</span>
                 <br />
-                Users can create, distribute, and collect forms directly on PlanGrid web app. 
+                Users can create, distribute, and collect forms directly on
+                PlanGrid web app.
               </p>
               <p>
                 <span className={sharedStyles.green}>
@@ -358,7 +360,7 @@ export default class CustomFormBuilderPage extends React.Component<
                 <span className={sharedStyles.green}>
                   <AiOutlineCheckCircle />
                 </span>{" "}
-               Access to some insights of the submiited report
+                Access to some insights of the submiited report
               </p>
               <p>
                 <span className={sharedStyles.red}>
@@ -371,133 +373,157 @@ export default class CustomFormBuilderPage extends React.Component<
 
           <Row className="justify-content-center">
             <Col lg="4">
-              <h3>Testing</h3>
-            </Col>
-            <Col lg="8">
-              <p>
-                I ran a usability inspection to test the effectiveness of the
-                design options and found that
-                <br />
-                <ul>
-                  <li>
-                    None of the designs provided system feedback to the users
-                  </li>
-                  <br />
-                  <li>
-                    Visual cues in Design #1 &amp; #2 weren't enough for the
-                    users to distinguish the differences between the active
-                    &amp; disabled states
-                  </li>
-                  <br />
-                  <li>
-                    Design #3 could potentially confuse the users and lead them
-                    to wonder why the checkboxes suddenly disappeared
-                  </li>
-                </ul>
-              </p>
-            </Col>
-          </Row>
-
-          <Row className="justify-content-center">
-            <Col lg="4">
               <h3>
-                Design/ <br />
+                Designing &amp; <br />
                 Concept Testing
               </h3>
             </Col>
             <Col lg="8">
               <p>
                 With learnings and findings from user research, I explored
-                potential designs and prototyped 3 different concepts.
+                potential designs and prototyped 3 different concepts. I
+                demonstrated these concepts to the same user groups and gather
+                feedback from them.
               </p>
               <p>
-                <span className={sharedStyles.bold}>
-                  It should be noted that these concepts were low-fidelity{" "}
-                </span>
-                as they meant to provide users a rough idea of what the new
-                potential custom form builder could look like.
+                <span className={sharedStyles.bold}>Note – </span>
+                these concepts were low-fidelity as they meant to provide users
+                rough ideas of what the new potential custom form builder could
+                look like.
               </p>
-              <p>
-                With the same user groups, I walked them through each concept
-                and gather feedback from them.
-              </p>
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center">
+            <Col lg="12" className={sharedStyles.creamBg}>
+              <Row>
+                <Col lg="6">
+                  <div className="text-center">
+                    <ImageBox
+                      src={this.getImageUrl("1.gif")}
+                      alt=""
+                      className="img-fluid"
+                    />
+                  </div>
+                </Col>
+                <Col lg="6">
+                  <p>
+                    <span className={sharedStyles.bold}>
+                      Concept #1 - Condensed View
+                    </span>
+                    <p>
+                      Inspired by the look and feel of Microsoft Excel as it's
+                      one of the tools used by many users.
+                    </p>
+                    <p>
+                      <ul>
+                        <li>
+                          Click the + icon or press the enter key on the
+                          keyboard to quickly add new questions
+                        </li>
+                        <li>
+                          Select response type via a drop down in the right
+                          column
+                        </li>
+                        <li>
+                          Bulk select to delete multiple questions at once
+                        </li>
+                      </ul>
+                    </p>
+                    </p>
+                    {/* <p>
+                      <span className={sharedStyles.bold}>User Feedback</span>{" "}
+                      <br />
+                      <span className={sharedStyles.green}>
+                        <AiOutlineCheckCircle />
+                      </span>{" "}
+                      Submitted forms can be exported to local computers
+                    </p>
+                    <p>
+                      <span className={sharedStyles.green}>
+                        <AiOutlineCheckCircle />
+                      </span>{" "}
+                      Access to some insights of the submiited report
+                    </p>
+                  </p> */}
+                </Col>
+              </Row>
             </Col>
           </Row>
           <Row className="justify-content-center">
             <Col lg="12" className={sharedStyles.creamBg}>
-              <p>
-                <span className={sharedStyles.bold}>
-                  Concept #1 - Condensed View
-                </span>
-              </p>
-              <p>
-                This concept was inspired by the look and feel of Microsoft
-                Excel since every research participant mentioned it as one of
-                the tools used to create forms.
-              </p>
-              <p>
-                Users can enter questions in the left column and select response
-                type from the dropdown in the right column. Users can also hit
-                the enter/return key on their keyboard to quickly add next
-                questions.
-              </p>
-              <div className="text-center">
-                <ImageBox
-                  src={this.getImageUrl("1.png")}
-                  alt=""
-                  className="img-fluid"
-                />
-              </div>
+              <Row>
+                <Col lg="6">
+                  <div className="text-center">
+                    <ImageBox
+                      src={this.getImageUrl("2.gif")}
+                      alt=""
+                      className="img-fluid"
+                    />
+                  </div>
+                </Col>
+                <Col lg="6">
+                  <p>
+                    <span className={sharedStyles.bold}>
+                      Concept #2 - Item-by-Item
+                    </span> <br/>
+                    <p>
+                      Inspired by the look and feel of Microsoft Excel as it's
+                      one of the tools used by many users.
+                    </p>
+                    <p>
+                      <ul>
+                        <li>
+                          Click the + icon or press the enter key on the
+                          keyboard to quickly add new questions
+                        </li>
+                        <li>
+                          Select response type via a drop down in the right
+                          column
+                        </li>
+                        <li>
+                          Bulk select to delete multiple questions at once
+                        </li>
+                      </ul>
+                    </p>
+                  </p>
+                </Col>
+              </Row>
             </Col>
           </Row>
           <Row className="justify-content-center">
             <Col lg="12" className={sharedStyles.creamBg}>
-              <p>
-                <span className={sharedStyles.bold}>
-                  Concept #2 - Item-by-Item
-                </span>
-                <p>
-                  This concept was created based on the existing PlanGrid Native
-                  Daily Report as every research participant used this tool in
-                  the process.{" "}
-                </p>
-                <p>
-                  Users can fully customize their form by adding components like
-                  sections or questions with various types of answers.
-                </p>
-              </p>
-              <div className="text-center">
-                <ImageBox
-                  src={this.getImageUrl("2.png")}
-                  alt=""
-                  className="img-fluid"
-                />
-              </div>
+              <Row>
+                <Col lg="6">
+                  <div className="text-center">
+                    <ImageBox
+                      src={this.getImageUrl("1.gif")}
+                      alt=""
+                      className="img-fluid"
+                    />
+                  </div>
+                </Col>
+                <Col lg="6">
+                  <p>
+                    <span className={sharedStyles.bold}>
+                      Concept #3: Smart PDF
+                    </span>
+                    <p>
+                      This concept was designed based on the existing PDF import
+                      feature on PlanGrid Field Reports. It was included in the
+                      concept testing because every research participant already
+                      worked with the PDF files.
+                    </p>
+                    <p>
+                      Users can upload an existing PDF file and draw text fields
+                      or create checkboxes directly on PlanGrid.
+                    </p>
+                  </p>
+                </Col>
+              </Row>
             </Col>
           </Row>
-          <Row className="justify-content-center">
-            <Col lg="12" className={sharedStyles.creamBg}>
-              <p>
-                <span className={sharedStyles.bold}>Concept #3: Smart PDF</span>
-                <br />
-                This concept was designed based on the existing PDF import
-                feature on PlanGrid Field Reports. It was included in the
-                concept testing because every research participant already
-                worked with the PDF files.
-              </p>
-              <p>
-                Users can upload an existing PDF file and draw text fields or
-                create checkboxes directly on PlanGrid.
-              </p>
-              <div className="text-center">
-                <ImageBox
-                  src={this.getImageUrl("3.png")}
-                  alt=""
-                  className="img-fluid"
-                />
-              </div>
-            </Col>
-          </Row>
+
           <Row className="justify-content-center">
             <Col lg="4">
               <h3>
