@@ -46,12 +46,12 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               <Col lg="8">
                 <p>
                   I'm a product designer who combines systems thinking and
-                  user-centered design to understand problems in a bigger before
+                  user-centered design to understand problems in a bigger picture before
                   exploring ways to design product experience.
                 </p>
 
                 <p>
-                  I have experience designing both enterprise &amp; consumer
+                  I have experiences designing both enterprise &amp; consumer
                   products. Recently, I designed a wealth management platform at
                   Jitta Wealth.
                 </p>
