@@ -244,7 +244,7 @@ export default class CustomFormBuilderPage extends React.Component<
             <Col lg="6" className={sharedStyles.creamBg}>
               <p>
                 <span className={sharedStyles.bold}> Paper Form</span>
-                <br />A traditional way to create forms. Companies tries to move
+                <br />A traditional way to create forms. Companies try to move
                 away from it, but they still use it to some extent.
               </p>
               <p>
@@ -263,7 +263,7 @@ export default class CustomFormBuilderPage extends React.Component<
                 <span className={sharedStyles.red}>
                   <AiOutlineCloseCircle />
                 </span>{" "}
-                Time consuing to create, distribute, collect, review
+                Time consuming to create, distribute, collect, review
               </p>
               <p>
                 <span className={sharedStyles.red}>
@@ -360,7 +360,7 @@ export default class CustomFormBuilderPage extends React.Component<
                 <span className={sharedStyles.green}>
                   <AiOutlineCheckCircle />
                 </span>{" "}
-                Access to some insights of the submiited report
+                Access to some insights of the submitted report
               </p>
               <p>
                 <span className={sharedStyles.red}>
@@ -422,7 +422,7 @@ export default class CustomFormBuilderPage extends React.Component<
                           keyboard to quickly add new questions
                         </li>
                         <li>
-                          Select response type via a drop down in the right
+                          Select response type from a dropdown menu in the right
                           column
                         </li>
                         <li>
@@ -468,21 +468,12 @@ export default class CustomFormBuilderPage extends React.Component<
                       Concept #2 - Item-by-Item
                     </span> <br/>
                     <p>
-                      Inspired by the look and feel of Microsoft Excel as it's
-                      one of the tools used by many users.
+                      Improving the existing PlanGrid Daily Report tool by providing more customizability to the users.
                     </p>
                     <p>
                       <ul>
                         <li>
-                          Click the + icon or press the enter key on the
-                          keyboard to quickly add new questions
-                        </li>
-                        <li>
-                          Select response type via a drop down in the right
-                          column
-                        </li>
-                        <li>
-                          Bulk select to delete multiple questions at once
+                          Use a dropdown menu to add sections and questions with on various response types
                         </li>
                       </ul>
                     </p>
@@ -497,7 +488,7 @@ export default class CustomFormBuilderPage extends React.Component<
                 <Col lg="6">
                   <div className="text-center">
                     <ImageBox
-                      src={this.getImageUrl("1.gif")}
+                      src={this.getImageUrl("3.gif")}
                       alt=""
                       className="img-fluid"
                     />
@@ -509,15 +500,15 @@ export default class CustomFormBuilderPage extends React.Component<
                       Concept #3: Smart PDF
                     </span>
                     <p>
-                      This concept was designed based on the existing PDF import
-                      feature on PlanGrid Field Reports. It was included in the
-                      concept testing because every research participant already
+                      Designed based on the existing PDF import feature on PlanGrid Field Reports. 
+                      It was included in the concept testing because every research participant already
                       worked with the PDF files.
                     </p>
-                    <p>
-                      Users can upload an existing PDF file and draw text fields
-                      or create checkboxes directly on PlanGrid.
-                    </p>
+                    <ul>
+                      <li>
+                        Draw text fields or create checkboxes directly on PlanGrid
+                      </li>
+                    </ul>
                   </p>
                 </Col>
               </Row>
