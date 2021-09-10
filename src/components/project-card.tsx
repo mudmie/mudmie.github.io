@@ -21,9 +21,7 @@ export class ProjectCard extends React.Component<ProjectCardProps, {}> {
       >
         <Col md="6">
           <h3 className={styles.projectTitle}>{this.props.project.company}</h3>
-          <div>
-            {this.props.project.term}
-          </div>
+          <div>{this.props.project.term}</div>
           <p className={styles.projectDescription}>
             {this.props.project.description}
           </p>
@@ -33,13 +31,15 @@ export class ProjectCard extends React.Component<ProjectCardProps, {}> {
           </Link>
         </Col>
         <Col md="6">
-          <img
-            src={withPrefix(
-              `/images/${this.props.project.imageFolder}/thumbnail.png`
-            )}
-            alt={`project ${this.props.project.name} image`}
-            className="img-fluid"
-          />
+          <Link to={this.props.project.url}>
+            <img
+              src={withPrefix(
+                `/images/${this.props.project.imageFolder}/thumbnail.png`
+              )}
+              alt={`project ${this.props.project.name} image`}
+              className="img-fluid"
+            />
+          </Link>
         </Col>
       </Row>
     );
