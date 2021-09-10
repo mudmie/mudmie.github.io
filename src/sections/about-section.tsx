@@ -53,11 +53,10 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
               data-sal-easing="ease-out-back"
             >
               <p className={styles.aboutPara}>
-                Also a holding a Systems Design Engineering degree from the
-                University of Waterloo.{" "}
+                A University of Waterloo graduate with 2.5 years of experience designing consumer &amp; enterprise products.
               </p>
               <p className={styles.aboutPara}>
-                Previously designed at Jitta Weatlh. 
+                Previously at Jitta Wealth and Autodesk. 
               </p>
               <SocialMediaLinks separator="NEW_LINE" />
             </Col>
