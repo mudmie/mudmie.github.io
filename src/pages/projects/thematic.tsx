@@ -32,7 +32,8 @@ export default class ThematicPage extends React.Component<
                 <span className={sharedStyles.topicRight}>Company</span>
                 <br />
                 Jitta Wealth is a fintech startup that aims to help investors
-                create better returns through simple investment methods.
+                create better returns through simple investment methods. It
+                offers automated investment services to its users.
               </p>
               <p>
                 <span className={sharedStyles.topicRight}>
@@ -53,25 +54,6 @@ export default class ThematicPage extends React.Component<
               </p>
             </Col>
           </Row>
-          <Row className="justify-content-center">
-            <Col lg="4">
-              <h3>Context</h3>
-            </Col>
-            <Col lg="8">
-              <p>
-                Jitta Wealth offers automated investment services (Robo-Advisor)
-                to Thai people. There were two existing investment products
-                before the development of Thematic Investment.
-              </p>
-              <p>
-                Like many other wealth management services, the company
-                generates income by charging portfolio management and
-                performance fees. Therefore, the more AUM the company has, the
-                more revenue it would make.
-              </p>
-            </Col>
-          </Row>
-
           <Row className="justify-content-center">
             <Col lg="4">
               <h3>The Goal</h3>
@@ -100,38 +82,73 @@ export default class ThematicPage extends React.Component<
                 I synthesized the findings and divided users into two groups:
                 experienced and novice investors.
               </p>
+
+              <Row className="justify-content-center">
+                <Col
+                  lg="5"
+                  className={`pb-0 ${sharedStyles.creamBg} ${sharedStyles.figureNoMarginBottom}`}
+                >
+                  <div className="text-center">
+                    <ImageBox
+                      src={this.getImageUrl("a.png")}
+                      alt=""
+                      className="img-fluid"
+                    />
+                  </div>
+                  <span className={`text-center ${sharedStyles.bold}`}>
+                    Experienced Investors
+                  </span>
+                  <br />
+                  <p>
+                    <ul>
+                      <li>
+                        More investment experience &amp; financial stability
+                      </li>
+                      <li>Knowledgeable in available investment products</li>
+                      <li>
+                        Invest in a long term &amp; interact less with the app
+                      </li>
+                    </ul>
+                  </p>
+                </Col>
+                <Col
+                  lg={{ size: 5, offset: 1 }}
+                  className={`pb-0 ${sharedStyles.creamBg} ${sharedStyles.figureNoMarginBottom}`}
+                >
+                  <div className="text-center">
+                    <ImageBox
+                      src={this.getImageUrl("b.png")}
+                      alt=""
+                      className="img-fluid"
+                    />
+                  </div>
+                  <span className={`text-center ${sharedStyles.bold}`}>
+                    Novice Investors
+                  </span>
+                  <br />
+                  <p>
+                    <ul>
+                      <li>
+                        Less investment experience &amp; financial stability
+                      </li>
+                      <li>
+                        Tolerate lower risk &amp; cautious when making
+                        investment decision
+                      </li>
+                      <li>
+                        Seek investment information &amp; updates from company{" "}
+                      </li>
+                    </ul>
+                  </p>
+                </Col>
+              </Row>
               <p>
-                <span className={sharedStyles.topicRight}>
-                  Experienced Investors
-                </span>
+                <span className={sharedStyles.topicRight}>Targeted Users</span>
                 <br />
-                This group of users is the early customers of the company. With
-                more investment experience and financial stability, they tend to
-                invest in the long term and interact less with the app.
-              </p>
-              <p>
-                <span className={sharedStyles.topicRight}>
-                  Novice Investors
-                </span>
-                <br />
-                This group of users mostly consists of students, freelancers,
-                public servants, and corporate employees. With less investment
-                experience and lower risk tolerance, they are more cautious when
-                making investment decisions. This leads them to seek more
-                investment information, communication, and updates from the
-                company.
-              </p>
-              <p>
-                <span className={sharedStyles.topicRight}>
-                  Shit in User Group
-                </span>
-                <br />
-                The company lowered the minimum deposit requirement after it
-                launched the second investment product. This resulted in a
-                significant shift in user demographics. Working with the Data
-                team, I learned that corporate employees became a new top
-                investor. As a result, novice investors became our targeted
-                users.
+                Working with the Data team to look into user
+                dempgraphics, I learned that novice investors like students and
+                coroporate employees became a new top investor. As a result,
+                they became our targeted users.
               </p>
             </Col>
           </Row>
@@ -146,7 +163,7 @@ export default class ThematicPage extends React.Component<
             </Col>
             <Col lg="8">
               <p>
-               With time and technical constraints, I focused on examining
+                With time and technical constraints, I focused on examining
                 existing product flow &amp; components and reusing them as much
                 as possible.
               </p>
@@ -233,7 +250,8 @@ export default class ThematicPage extends React.Component<
                 {" "}
                 <span className={sharedStyles.bold}>Decision #1</span>
                 <br />
-                Even though the design in the first iteration required low development effort, it wasn't feasible from a UX standpoint.
+                Even though the design in the first iteration required low
+                development effort, it wasn't feasible from a UX standpoint.
               </p>
               <p>
                 In this iteration, I simplified the design and introduced new
