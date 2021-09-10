@@ -94,11 +94,10 @@ export default class ThematicPage extends React.Component<
                       alt=""
                       className="img-fluid"
                     />
+                    <span className={`text-center d-inline-block mt-2 ${sharedStyles.bold}`}>
+                      Experienced Investors
+                    </span>
                   </div>
-                  <span className={`text-center ${sharedStyles.bold}`}>
-                    Experienced Investors
-                  </span>
-                  <br />
                   <p>
                     <ul>
                       <li>
@@ -121,11 +120,10 @@ export default class ThematicPage extends React.Component<
                       alt=""
                       className="img-fluid"
                     />
+                    <span className={`text-center d-inline-block mt-2 ${sharedStyles.bold}`}>
+                      Novice Investors
+                    </span>
                   </div>
-                  <span className={`text-center ${sharedStyles.bold}`}>
-                    Novice Investors
-                  </span>
-                  <br />
                   <p>
                     <ul>
                       <li>
@@ -145,10 +143,10 @@ export default class ThematicPage extends React.Component<
               <p>
                 <span className={sharedStyles.topicRight}>Targeted Users</span>
                 <br />
-                Working with the Data team to look into user
-                dempgraphics, I learned that novice investors like students and
-                coroporate employees became a new top investor. As a result,
-                they became our targeted users.
+                Working with the Data team to look into user dempgraphics, I
+                learned that novice investors like students and coroporate
+                employees became a new top investor. As a result, they became
+                our targeted users.
               </p>
             </Col>
           </Row>
