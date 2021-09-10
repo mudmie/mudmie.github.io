@@ -3,7 +3,7 @@
     "name": "Thematic Investment",
     "company": "Jitta Wealth",
     "term": "Fall – Winter 20/21",
-    "description": "Designing an investment feature for a wealth management platform, enabling users to invest in industries of their interests.",
+    "description": "Designing an investment product for a wealth management mobile app, enabling users to invest in sectors of their interests.",
     "type": "Full-time",
     "platform": [
       "Mobile"
@@ -20,7 +20,7 @@
     "name": "Custom Form Builder",
     "company": "Autodesk Construction Cloud (PlanGrid)",
     "term": "Summer 2019",
-    "description": "Researching the creation process of construction forms and designing a platform for users to create custom forms.",
+    "description": "Researching construction form creation process, conducting concept test, and designing a web app for users to create custom forms.",
     "type": "Internship",
     "platform": [
       "Web"
@@ -37,7 +37,7 @@
     "name": "Hacker Application Portal",
     "company": "Hack The North",
     "term": "Summer 2019",
-    "description": "Designing a comic-themed application portal for Canada's largest hackathon.",
+    "description": "Designing a comic-themed application portal for thousands of students around the world to apply for Canada's largest hackathon.",
     "type":"Extracurricular" ,
     "platform": [
       "Responsive Website"
@@ -54,7 +54,7 @@
     "name": "User Account Management",
     "company": "PlanGrid",
     "term": "Fall 2018",
-    "description": "Building tools for administrators to monitor and manage users accounts.",
+    "description": "Building tools for administrators to monitor and manage users accounts in construction projects.",
     "type": "Internship",
     "platform": [
       "Web",

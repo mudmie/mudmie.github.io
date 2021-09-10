@@ -29,96 +29,109 @@ export default class ThematicPage extends React.Component<
             </Col>
             <Col lg="8">
               <p>
+                <span className={sharedStyles.topicRight}>Company</span>
+                <br />
                 Jitta Wealth is a fintech startup that aims to help investors
                 create better returns through simple investment methods.
               </p>
               <p>
-                As a{" "}
-                <span className={sharedStyles.bold}>lead product designer</span>
-                , I worked with the CEO and development teams to design mobile
-                interfaces &amp; experiences for{" "}
+                <span className={sharedStyles.topicRight}>
+                  My Role &amp; Project
+                </span>
+                <br />
+                As a lead product designer, I worked with cross-functional teams
+                to design mobile interfaces &amp; experiences for{" "}
                 <span className={sharedStyles.bold}>Thematic Investment</span>,
-                a feature for users to invest in sectors or industries of their
+                an investment product for users to invest in sectors of their
                 interests.
               </p>
               <p>
-                The company's total assets under management (AUM){" "}
-                <span className={sharedStyles.bold}>went up over 60%</span>{" "}
-                within the first 3 months after the product launched.
+                <span className={sharedStyles.topicRight}>Result</span>
+                <br />
+                The company's total assets under management (AUM) went up over
+                60% within the first 3 months after the product launched.
               </p>
             </Col>
           </Row>
           <Row className="justify-content-center">
             <Col lg="4">
-              <h3>Challenges</h3>
+              <h3>Context</h3>
             </Col>
             <Col lg="8">
               <p>
-                <span className={sharedStyles.topicRight}>
-                  Technical Constraints
-                </span>
-                <br />
-                Like many other startups, resources and time are limited.
+                Jitta Wealth offers automated investment services (Robo-Advisor)
+                to Thai people. There were two existing investment products
+                before the development of Thematic Investment.
               </p>
               <p>
-                <span className={sharedStyles.topicRight}>
-                  Shift in User Group
-                </span>
-                <br />
-                The original minimum deposit of $15,000 was considered high
-                relative to an average monthly income of $500 for a person in
-                Thailand{" "}
-                <OutboundLink
-                  href="https://tradingeconomics.com/thailand/wages"
-                  target="_blank"
-                >
-                  [1]
-                </OutboundLink>
-                . It limited primary users to be only those with established
-                financial stability, like experienced investors and
-                entrepreneurs.
-              </p>
-              <p>
-                A shift in user demographics occurred after the minimum deposit
-                got lowered to $3,000, making the service more accessible to
-                various groups of users.
+                Like many other wealth management services, the company
+                generates income by charging portfolio management and
+                performance fees. Therefore, the more AUM the company has, the
+                more revenue it would make.
               </p>
             </Col>
           </Row>
 
           <Row className="justify-content-center">
             <Col lg="4">
-              <h3>Knowing the Users</h3>
+              <h3>The Goal</h3>
             </Col>
             <Col lg="8">
               <p>
-                I partnered up with the customer service &amp; data team to
-                learn more about the new group of users. I also reached out to
-                some users to learn more about their needs and investment goals.
+                The goal of this project was to increase the AUM from new and
+                existing customers by introducing a new investment product that
+                automated investment across sectors of interest.
               </p>
-              <p className={sharedStyles.pin}>
-                <span className={sharedStyles.bold}>Learning #1</span>
-                <br />
-                Corporate employees became a new top investor. More students,
-                public servants, and freelancers also started to invest with us.
-              </p>
+            </Col>
+          </Row>
 
-              <p className={sharedStyles.pin}>
-                {" "}
-                <span className={sharedStyles.bold}>Learning #2</span>
-                <br />
-                The new group of users tended to have less investment experience
-                and tolerate lower risk. Many of them planned to spend the
-                invested money in the future, making them more cautious when
-                making investment decisions.
+          <Row className="justify-content-center">
+            <Col lg="4">
+              <h3>The Users</h3>
+            </Col>
+            <Col lg="8">
+              <p>
+                Due to limited time and resources, I wasn’t able to run formal
+                user research sessions. I instead partnered up with Customer
+                Success and Data teams to learn more about our users, their
+                needs, and investment goals.
               </p>
-
-              <p className={sharedStyles.pin}>
-                {" "}
-                <span className={sharedStyles.bold}>Learning #3</span>
+              <p>
+                I synthesized the findings and divided users into two groups:
+                experienced and novice investors.
+              </p>
+              <p>
+                <span className={sharedStyles.topicRight}>
+                  Experienced Investors
+                </span>
                 <br />
-                The new group of users seek more investment information,
-                communication, and updates from the company.
+                This group of users is the early customers of the company. With
+                more investment experience and financial stability, they tend to
+                invest in the long term and interact less with the app.
+              </p>
+              <p>
+                <span className={sharedStyles.topicRight}>
+                  Novice Investors
+                </span>
+                <br />
+                This group of users mostly consists of students, freelancers,
+                public servants, and corporate employees. With less investment
+                experience and lower risk tolerance, they are more cautious when
+                making investment decisions. This leads them to seek more
+                investment information, communication, and updates from the
+                company.
+              </p>
+              <p>
+                <span className={sharedStyles.topicRight}>
+                  Shit in User Group
+                </span>
+                <br />
+                The company lowered the minimum deposit requirement after it
+                launched the second investment product. This resulted in a
+                significant shift in user demographics. Working with the Data
+                team, I learned that corporate employees became a new top
+                investor. As a result, novice investors became our targeted
+                users.
               </p>
             </Col>
           </Row>
@@ -133,7 +146,7 @@ export default class ThematicPage extends React.Component<
             </Col>
             <Col lg="8">
               <p>
-                Due to limited technical resources, I focused on examining
+               With time and technical constraints, I focused on examining
                 existing product flow &amp; components and reusing them as much
                 as possible.
               </p>
@@ -220,8 +233,7 @@ export default class ThematicPage extends React.Component<
                 {" "}
                 <span className={sharedStyles.bold}>Decision #1</span>
                 <br />
-                The design in the first iteration wasn't feasible even though it
-                required low development effort.
+                Even though the design in the first iteration required low development effort, it wasn't feasible from a UX standpoint.
               </p>
               <p>
                 In this iteration, I simplified the design and introduced new
