@@ -1,19 +1,18 @@
 @import "../../styles/_colors.scss";
 @import "../../styles/_fonts.scss";
 
-h1{
+h1 {
   font-weight: 600;
   margin: 16px 0 0 0;
-
 }
-.term{
+.term {
   font-family: $body-font;
   font-weight: 400;
   font-size: 20px !important;
   text-transform: none;
 }
 
-.topicRight{
+.topicRight {
   font-family: $body-font;
   font-weight: 600;
   color: $chestnut-color;
@@ -24,26 +23,25 @@ h1{
 }
 
 .text-highlight {
-  
   box-shadow: $highlight-color 0px -0.6em inset;
   font-weight: 600;
 }
 
-.pin{
+.pin {
   border-left: 10px solid $highlight-color;
   padding-left: 10px;
   margin: 10px 0 10px 0;
 }
 
 .sub {
-    color: $stone-color !important;
-  }
+  color: $stone-color !important;
+}
 
-.bold{
+.bold {
   font-weight: 600;
 }
 
-.cream-bg{
+.cream-bg {
   background-color: $cream-color;
   margin-top: 24px;
   margin-bottom: 24px;
@@ -51,19 +49,19 @@ h1{
   border: 5px solid $cauliflower-color;
 }
 
-.green{
-  color:#589F75 ;
+.green {
+  color: #589f75;
 }
-.red{
-  color:#D7737D;
+.red {
+  color: #d7737d;
 }
 
-.learning{
+.learning {
   background-color: $highlight-color;
   font-weight: 600;
 }
 
-.figure-no-margin-bottom{
+.figure-no-margin-bottom {
   figure {
     margin-bottom: 0;
   }
