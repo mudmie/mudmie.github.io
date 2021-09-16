@@ -46,14 +46,14 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               <Col lg="8">
                 <p>
                   I'm a product designer who combines systems thinking and
-                  user-centered design to understand problems in a bigger picture before
-                  exploring ways to design product experience.
+                  user-centered design to understand problems in a bigger
+                  picture before exploring ways to design product experience.
                 </p>
 
                 <p>
-                  I have experiences designing both enterprise &amp; consumer
-                  products. Recently, I designed a wealth management platform at
-                  Jitta Wealth.
+                  I have experience designing both enterprise &amp; consumer
+                  products. Recently, I was a full-time product designer
+                  delivering a wealth management mobile app at Jitta Wealth.
                 </p>
               </Col>
             </Row>
@@ -78,8 +78,15 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               <Col lg="8" md="6" className="mb-3">
                 <h3 className={styles.moreOfMe}>More of me.</h3>
                 <p>
-                  During my time at the <OutboundLink href="https://uwaterloo.ca/systems-design-engineering/about-systems-design-engineering/what-systems-design-engineering" target="_blank">
-                  University of Waterloo</OutboundLink>, I did 4 design internships (16 months in total!) across companies in North America where I got to apply the design
+                  During my time at the{" "}
+                  <OutboundLink
+                    href="https://uwaterloo.ca/systems-design-engineering/about-systems-design-engineering/what-systems-design-engineering"
+                    target="_blank"
+                  >
+                    University of Waterloo
+                  </OutboundLink>
+                  , I did 4 design internships (16 months in total!) across
+                  companies in North America where I got to apply the design
                   thinking process to solve real-world problems.
                 </p>
                 <p>
@@ -89,7 +96,10 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                 <h3 className={styles.moreOfMe}>Getting Personal.</h3>
                 <p>
                   I was born and raised in Bangkok, but I spend most of my time
-                  living in the U.S. &amp; Canada. I love traveling and eating good food — sushi, fried chicken, and matcha are my top 3! These days I'm working on my Korean, so k-dramas are essential. 
+                  living in the U.S. &amp; Canada. I love traveling and eating
+                  good food — sushi, fried chicken, and matcha are my top 3!
+                  These days I'm working on my Korean, so k-dramas are
+                  essential.
                 </p>
                 <p>
                   Lastly, I have a plan to adopt a Shiba Inu although my mom
@@ -167,7 +177,10 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                   </tr>
                   <tr>
                     <td className={styles.experienceName}>
-                      <span className={styles.experienceName}>LCBO Innovation Lab</span>,{" "}
+                      <span className={styles.experienceName}>
+                        LCBO Innovation Lab
+                      </span>
+                      ,{" "}
                       <span className={styles.experienceType}>Internship</span>
                     </td>
                     <td className={styles.experiencePeriod}>
@@ -190,7 +203,6 @@ export const pageQuery = graphql`
       childImageSharp {
         fluid(maxWidth: 350, quality: 100) {
           ...GatsbyImageSharpFluid_noBase64
-
         }
       }
     }
