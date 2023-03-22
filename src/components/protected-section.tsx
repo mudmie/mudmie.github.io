@@ -20,7 +20,6 @@ import { ProjectBody } from "./project-body";
 export interface ProtectedSectionProps {
   isProtected: boolean;
   currentProject: Project;
-  mainImage?: any;
 }
 
 export interface ProtectedSectionState {
@@ -184,7 +183,7 @@ export class ProtectedSection extends React.Component<
     }
 
     return (
-      <ProjectBody project={this.props.currentProject} mainImage={this.props.mainImage}>
+      <ProjectBody project={this.props.currentProject}>
         {this.props.children}
       </ProjectBody>
     );

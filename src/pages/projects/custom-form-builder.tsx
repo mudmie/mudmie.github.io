@@ -20,7 +20,7 @@ export default class CustomFormBuilderPage extends React.Component<
       <ProjectLayout
         allProjects={this.props.data.allProjects.edges.map(e => e.node)}
         currentProject={this.props.data.project.edges[0].node}
-        mainImage={this.props.data.mainImage.childImageSharp.fluid}
+        mainImage={this.props.data.mainImage}
       >
         <Container>
           <Row className="justify-content-center">

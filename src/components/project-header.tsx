@@ -6,7 +6,7 @@ import { ProjectNav } from "./project-nav";
 import { PROJECT_BODY_COLUMN } from "./project-layout";
 import { withPrefix } from "gatsby";
 import { ImageSharp } from "../models/image-sharp";
-import Img from "gatsby-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 export interface ProjectHeaderProps {
   allProjects: Project[];
@@ -46,10 +46,14 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
                 <div>{this.props.currentProject.term}</div>
               </Col>
               <Col lg="12">
-                <Img
+                {/* <Img
                   alt="main project image"
                   fluid={this.props.mainImage}
                   className="background-theme-color"
+                /> */}
+                <GatsbyImage
+                  image={getImage(this.props.mainImage)}
+                  alt="main project image"
                 />
               </Col>
             </Row>

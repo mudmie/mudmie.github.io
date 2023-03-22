@@ -10,12 +10,21 @@ export const mainImageSizes = graphql`
   }
 `;
 
+// export const projectMainImageSizes = graphql`
+// fragment ProjectMainImageSizes on File {
+//   childImageSharp {
+//     fluid(maxWidth: 2440, quality: 100) {
+//       ...GatsbyImageSharpFluid_noBase64
+//     }
+//   }
+// }
+// `;
+
 export const projectMainImageSizes = graphql`
 fragment ProjectMainImageSizes on File {
   childImageSharp {
-    fluid(maxWidth: 2440, quality: 100) {
-      ...GatsbyImageSharpFluid_noBase64
-    }
+    gatsbyImageData(width: 2440, quality: 100)
   }
 }
 `;
+
