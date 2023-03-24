@@ -6,6 +6,7 @@ import { Project } from "../models/project";
 import { ProjectFooter } from "./project-footer";
 import { ProjectHeader } from "./project-header";
 import { ProtectedSection } from "./protected-section";
+import { ProjectBody } from "./project-body";
 
 export interface ProjectLayoutProps {
   allProjects: Project[];
@@ -24,22 +25,24 @@ export class ProjectLayout extends React.Component<ProjectLayoutProps, {}> {
           <title>{this.props.currentProject.name}</title>
         </Helmet>
         <div className={styles.projectPage}>
-          <ProjectHeader
-            allProjects={this.props.allProjects}
-            currentProject={this.props.currentProject}
-            mainImage={this.props.mainImage}
-          />
           <ProtectedSection
             mainImage={this.props.mainImage}
             currentProject={this.props.currentProject}
             isProtected={this.props.currentProject.isProtected}
           >
-            {this.props.children}
+            <ProjectHeader
+              allProjects={this.props.allProjects}
+              currentProject={this.props.currentProject}
+              mainImage={this.props.mainImage}
+            />
+            <ProjectBody project={this.props.currentProject}>
+              {this.props.children}
+            </ProjectBody>
+            <ProjectFooter
+              allProjects={this.props.allProjects}
+              currentProject={this.props.currentProject}
+            />
           </ProtectedSection>
-          <ProjectFooter
-            allProjects={this.props.allProjects}
-            currentProject={this.props.currentProject}
-          />
         </div>
       </Layout>
     );

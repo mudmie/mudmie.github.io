@@ -17,7 +17,7 @@ export class SocialMediaLinks extends React.Component<
         <span className={styles.socialMedia}>
           <OutboundLink
             className={styles.linkedIn}
-            href="mailto:ch.chuthamsatid@gmail.com"
+            href="mailto:mchuthams@gmail.com"
             target="_blank"
           >
             Email<BsArrowUpRight />

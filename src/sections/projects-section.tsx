@@ -39,28 +39,35 @@ export class ProjectsSection extends React.Component<
     const that = this;
     return (
       <>
-      <section className={styles.sectionHeader}>
-      <Container className={styles.container}>
-        <a id={this.props.id} className={sharedStyles.sectionAnchor} />
-        <Row>
-          <Col
-            data-sal="slide-up"
-            data-sal-duration="400"
-            data-sal-delay="600"
-            data-sal-easing="ease-out-back"
-          >
-            <h2 className={styles.sectionHeading}>Featured Projects</h2>
-          </Col>
-        </Row>
-        </Container>
+        <section className={styles.sectionHeader}>
+          <Container className={styles.container}>
+            <a id={this.props.id} className={sharedStyles.sectionAnchor} />
+            <Row>
+              <Col
+                data-sal="slide-up"
+                data-sal-duration="400"
+                data-sal-delay="600"
+                data-sal-easing="ease-out-back"
+              >
+                <h2 className={styles.sectionHeading}>Featured Projects</h2>
+              </Col>
+            </Row>
+          </Container>
         </section>
         {this.props.projects
-          .filter(proj => proj.isEnabled)
-          .map((proj,i) => (
-            <section className={i % 2 == 0?styles.sectionProjectEven:styles.sectionProjectOdd}>
+          .filter((proj) => proj.isEnabled)
+          .map((proj, i) => (
+            <section
+              className={
+                i % 2 == 0
+                  ? styles.sectionProjectEven
+                  : styles.sectionProjectOdd
+              }
+              key={proj.name}
+            >
               <Container>
-            <ProjectCard project={proj} />
-            </Container>
+                <ProjectCard project={proj} />
+              </Container>
             </section>
           ))}
       </>

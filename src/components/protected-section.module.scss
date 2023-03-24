@@ -16,3 +16,15 @@
       1 100%;
   }
 }
+
+.password-box {
+  min-width: 200px;
+  width: 20%;
+  margin-right: 16px;
+}
+
+.submit-button {
+  background-color: $ocean-color;
+  color: $cauliflower-color;
+  border: none;
+}

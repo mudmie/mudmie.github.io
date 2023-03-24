@@ -1,8 +1,25 @@
 [
   {
+    "name": "Surgery Scheduling Software",
+    "company": "LeanTaaS",
+    "term": "2021 - Present",
+    "description": "Researching and designing comments & document upload features to elevate the functionalities of surgery scheduling software.",
+    "type": "Full-time",
+    "platform": [
+      "Mobile"
+    ],
+    "duration": "6 Weeks",
+    "myRole": "NA",
+    "results": "NA",
+    "url": "/projects/scheduling/",
+    "imageFolder": "scheduling",
+    "isProtected": true,
+    "isEnabled": true
+  },
+  {
     "name": "Thematic Investment",
     "company": "Jitta Wealth",
-    "term": "Fall – Winter 20/21",
+    "term": "2020 - 2021",
     "description": "Designing an investment product for a wealth management mobile app, enabling users to invest in sectors of their interests.",
     "type": "Full-time",
     "platform": [
@@ -18,8 +35,8 @@
   },
   {
     "name": "Custom Form Builder",
-    "company": "Autodesk Construction Cloud (PlanGrid)",
-    "term": "Summer 2019",
+    "company": "Autodesk",
+    "term": "2019",
     "description": "Researching construction form creation process, conducting concept test, and designing a web app for users to create custom forms.",
     "type": "Internship",
     "platform": [
@@ -36,7 +53,7 @@
   {
     "name": "Hacker Application Portal",
     "company": "Hack The North",
-    "term": "Summer 2019",
+    "term": "2019",
     "description": "Designing a comic-themed application portal for thousands of students around the world to apply for Canada's largest hackathon.",
     "type":"Extracurricular" ,
     "platform": [
@@ -53,7 +70,7 @@
   {
     "name": "User Account Management",
     "company": "PlanGrid",
-    "term": "Fall 2018",
+    "term": "2018",
     "description": "Building tools for administrators to monitor and manage users accounts in construction projects.",
     "type": "Internship",
     "platform": [
