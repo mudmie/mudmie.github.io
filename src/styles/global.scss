@@ -63,6 +63,36 @@ html {
       }
   } 
 
+  &.full-height, body.full-height, .full-height {
+    height: 100%
+  }
+  .full-height {
+    #___gatsby,
+    #gatsby-focus-wrapper {
+      height: 100%
+    } 
+    #gatsby-focus-wrapper {
+      display: flex;
+      flex-direction: column;
+
+    }
+    header {
+      flex-grow: 0;
+    }
+    main {
+      flex-grow: 1;
+      & > div {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+    footer {
+      flex-grow: 0;
+    }
+  }
+
   .navbar-light .navbar-nav {
     .nav-link {
       color: $cauliflower-color;

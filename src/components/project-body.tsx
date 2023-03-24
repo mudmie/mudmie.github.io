@@ -5,7 +5,7 @@ import { ProjectNav } from "./project-nav";
 import { FaArrowRight } from "react-icons/fa";
 import { Link, withPrefix } from "gatsby";
 import * as styles from "./project-body.module.scss";
-import Img from "gatsby-image";
+// import Img from "gatsby-plugin-image";
 import { Dash } from "./dash";
 import { PROJECT_BODY_COLUMN } from "./project-layout";
 

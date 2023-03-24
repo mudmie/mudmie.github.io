@@ -18,9 +18,9 @@ export default class CustomFormBuilderPage extends React.Component<
   public render() {
     return (
       <ProjectLayout
-        allProjects={this.props.data.allProjects.edges.map(e => e.node)}
+        allProjects={this.props.data.allProjects.edges.map((e) => e.node)}
         currentProject={this.props.data.project.edges[0].node}
-        mainImage={this.props.data.mainImage.childImageSharp.fluid}
+        mainImage={this.props.data.mainImage}
       >
         <Container>
           <Row className="justify-content-center">
@@ -29,9 +29,9 @@ export default class CustomFormBuilderPage extends React.Component<
             </Col>
             <Col lg="8">
               <p>
-                PlanGrid provides cloud-based solutions to increase productivity
-                in the construction industry. The company became part of
-                Autodesk Construction Cloud after the aquisition in 2018.
+                Autodesk acquired PlanGrid in 2018, but it still continues
+                providing cloud-based solutions to increase productivity in the
+                construction industry.
               </p>
               <p>
                 I was a{" "}
@@ -430,8 +430,8 @@ export default class CustomFormBuilderPage extends React.Component<
                         </li>
                       </ul>
                     </p>
-                    </p>
-                    {/* <p>
+                  </p>
+                  {/* <p>
                       <span className={sharedStyles.bold}>User Feedback</span>{" "}
                       <br />
                       <span className={sharedStyles.green}>
@@ -466,14 +466,17 @@ export default class CustomFormBuilderPage extends React.Component<
                   <p>
                     <span className={sharedStyles.bold}>
                       Concept #2 - Item-by-Item
-                    </span> <br/>
+                    </span>{" "}
+                    <br />
                     <p>
-                      Improving the existing PlanGrid Daily Report tool by providing more customizability to the users.
+                      Improving the existing PlanGrid Daily Report tool by
+                      providing more customizability to the users.
                     </p>
                     <p>
                       <ul>
                         <li>
-                          Use a dropdown menu to add sections and questions with on various response types
+                          Use a dropdown menu to add sections and questions with
+                          on various response types
                         </li>
                       </ul>
                     </p>
@@ -500,13 +503,15 @@ export default class CustomFormBuilderPage extends React.Component<
                       Concept #3: Smart PDF
                     </span>
                     <p>
-                      Designed based on the existing PDF import feature on PlanGrid Field Reports. 
-                      It was included in the concept testing because every research participant already
-                      worked with the PDF files.
+                      Designed based on the existing PDF import feature on
+                      PlanGrid Field Reports. It was included in the concept
+                      testing because every research participant already worked
+                      with the PDF files.
                     </p>
                     <ul>
                       <li>
-                        Draw text fields or create checkboxes directly on PlanGrid
+                        Draw text fields or create checkboxes directly on
+                        PlanGrid
                       </li>
                     </ul>
                   </p>

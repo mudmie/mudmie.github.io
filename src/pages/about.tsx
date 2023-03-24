@@ -5,7 +5,7 @@ import Layout from "../components/layout";
 import { Container, Col, Row } from "reactstrap";
 import * as styles from "./about.module.scss";
 import { ImageSharp } from "../models/image-sharp";
-import Img from "gatsby-image";
+import { StaticImage } from "gatsby-plugin-image";
 import { Dash } from "../components/dash";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import { SocialMediaLinks } from "../components/social-media-links";
@@ -45,15 +45,12 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               </Col>
               <Col lg="8">
                 <p>
-                  I'm a product designer who combines systems thinking and
-                  user-centered design to understand problems in a bigger
-                  picture before exploring ways to design product experience.
+                  I'm a Seattle-based prdocut designer with experience designing
+                  both B2B & B2C products across multiple industries.
                 </p>
-
                 <p>
-                  I have experience designing both enterprise &amp; consumer
-                  products. Recently, I was a full-time product designer
-                  delivering a wealth management mobile app at Jitta Wealth.
+                  I combine system thinking and user-centered design to craft
+                  product experience that make people's lives easier.
                 </p>
               </Col>
             </Row>
@@ -69,41 +66,45 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               data-sal-easing="ease-out-back"
             >
               <Col lg="4" md="6" className="align-self-end text-center">
-                <Img
-                  fluid={this.props.data.meImage.childImageSharp.fluid}
+                <StaticImage
+                  src="../../static/images/Mudmie.png"
                   alt="Picture of Mudmie"
                 />
-                {/* <img src={this.getImageUrl("Mudmie.png")} className="img-fluid" /> */}
               </Col>
               <Col lg="8" md="6" className="mb-3">
                 <h3 className={styles.moreOfMe}>More of me.</h3>
+
                 <p>
-                  During my time at the{" "}
+                  I knew from the beginning I had to get into the
+                  University of Waterloo because of its co-op program, but I’ll
+                  admit that I chose{" "}
                   <OutboundLink
                     href="https://uwaterloo.ca/systems-design-engineering/about-systems-design-engineering/what-systems-design-engineering"
                     target="_blank"
                   >
-                    University of Waterloo
-                  </OutboundLink>
-                  , I did 4 design internships (16 months in total!) across
-                  companies in North America where I got to apply the design
-                  thinking process to solve real-world problems.
+                    Systems Design Engineering
+                  </OutboundLink>{" "}
+                  because the name sounded cool. I mean, who doesn’t wanna
+                  design their own systems? I later discovered that my program
+                  put a huge emphasis on human-computer interaction, which
+                  turned out to be something I really enjoyed.
                 </p>
                 <p>
-                  I was also involved in the design community by being part of
-                  UW/UX and the design team at Hack the North.{" "}
+                  Now, as a product designer, I found myself excited when I get
+                  to learn about people’s workflow, understanding their
+                  problems, and using my multidisciplinary knowledge to craft
+                  design solutions that improve their experience.
                 </p>
                 <h3 className={styles.moreOfMe}>Getting Personal.</h3>
                 <p>
-                  I was born and raised in Bangkok, but I spend most of my time
-                  living in the U.S. &amp; Canada. I love traveling and eating
-                  good food — sushi, fried chicken, and matcha are my top 3!
-                  These days I'm working on my Korean, so k-dramas are
-                  essential.
+                  I was born and raised in Bangkok, but I spend most time living
+                  in the U.S. and Canada. I love traveling and eating good food
+                  — sushi, fried chicken, and matcha are my top 3! These days
+                  I'm working on my Korean, so k-dramas are essential.
                 </p>
                 <p>
-                  Lastly, I have a plan to adopt a Shiba Inu although my mom
-                  told me to take care of myself first.
+                  Oh, I also have a plan to adopt a Shiba Inu, but my mom told
+                  me to take care of myself first.
                 </p>
               </Col>
             </Row>
@@ -123,70 +124,64 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               </Col>
               <Col lg="8" md="6" className={styles.experience}>
                 <table className={styles.experienceTable}>
-                  <tr>
-                    <td>
-                      <span className={styles.experienceName}>
-                        Jitta Wealth
-                      </span>
-                      , <span className={styles.experienceType}>Full-time</span>
-                    </td>
-                    <td className={styles.experiencePeriod}>
-                      Jun 2020 - May 2021
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className={styles.experienceName}>
-                      <span className={styles.experienceName}>
-                        Hack the North
-                      </span>
-                      , <span className={styles.experienceType}>Community</span>
-                    </td>
-                    <td className={styles.experiencePeriod}>
-                      Mar 2019 – Feb 2020
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className={styles.experienceName}>
-                      <span className={styles.experienceName}>
-                        Autodesk Construction Cloud
-                      </span>
-                      ,{" "}
-                      <span className={styles.experienceType}>Internship</span>
-                    </td>
-                    <td className={styles.experiencePeriod}>
-                      May 2019 – Aug 2019
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className={styles.experienceName}>
-                      <span className={styles.experienceName}>PlanGrid</span>,{" "}
-                      <span className={styles.experienceType}>Internship</span>
-                    </td>
-                    <td className={styles.experiencePeriod}>
-                      Sep 2018 – Dec 2018
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className={styles.experienceName}>
-                      <span className={styles.experienceName}>Nulogy</span>,{" "}
-                      <span className={styles.experienceType}>Internship</span>
-                    </td>
-                    <td className={styles.experiencePeriod}>
-                      Jan 2018 – Apr 2018
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className={styles.experienceName}>
-                      <span className={styles.experienceName}>
-                        LCBO Innovation Lab
-                      </span>
-                      ,{" "}
-                      <span className={styles.experienceType}>Internship</span>
-                    </td>
-                    <td className={styles.experiencePeriod}>
-                      May 2017 – Aug 2017
-                    </td>
-                  </tr>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <span className={styles.experienceName}>LeanTaaS </span>
+                        ,{" "}
+                        <span className={styles.experienceType}>Full-time</span>
+                      </td>
+                      <td className={styles.experiencePeriod}>
+                        Oct 2021 - Present
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span className={styles.experienceName}>
+                          Jitta Wealth
+                        </span>
+                        ,{" "}
+                        <span className={styles.experienceType}>Full-time</span>
+                      </td>
+                      <td className={styles.experiencePeriod}>
+                        Jun 2020 - May 2021
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className={styles.experienceName}>
+                        <span className={styles.experienceName}>
+                          Hack the North
+                        </span>
+                        ,{" "}
+                        <span className={styles.experienceType}>Community</span>
+                      </td>
+                      <td className={styles.experiencePeriod}>
+                        Mar 2019 – Feb 2020
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className={styles.experienceName}>
+                        <span className={styles.experienceName}>Autodesk</span>,{" "}
+                        <span className={styles.experienceType}>
+                          Internship
+                        </span>
+                      </td>
+                      <td className={styles.experiencePeriod}>
+                        May 2019 – Aug 2019
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className={styles.experienceName}>
+                        <span className={styles.experienceName}>PlanGrid</span>,{" "}
+                        <span className={styles.experienceType}>
+                          Internship
+                        </span>
+                      </td>
+                      <td className={styles.experiencePeriod}>
+                        Sep 2018 – Dec 2018
+                      </td>
+                    </tr>
+                  </tbody>
                 </table>
               </Col>
             </Row>
@@ -197,14 +192,14 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
   }
 }
 
-export const pageQuery = graphql`
-  query AboutPageQuery {
-    meImage: file(relativePath: { eq: "Mudmie.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 350, quality: 100) {
-          ...GatsbyImageSharpFluid_noBase64
-        }
-      }
-    }
-  }
-`;
+// export const pageQuery = graphql`
+//   query AboutPageQuery {
+//     meImage: file(relativePath: { eq: "Mudmie.png" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 350, quality: 100) {
+//           ...GatsbyImageSharpFluid_noBase64
+//         }
+//       }
+//     }
+//   }
+// `;

@@ -20,7 +20,7 @@ export default class ThematicPage extends React.Component<
       <ProjectLayout
         allProjects={this.props.data.allProjects.edges.map(e => e.node)}
         currentProject={this.props.data.project.edges[0].node}
-        mainImage={this.props.data.mainImage.childImageSharp.fluid}
+        mainImage={this.props.data.mainImage}
       >
         <Container>
           <Row className="justify-content-center">
@@ -254,7 +254,7 @@ export default class ThematicPage extends React.Component<
               <p>
                 In this iteration, I simplified the design and introduced new
                 interactions. Users could tap a theme to view investment
-                information, select, and unselect themes from the information
+                information, select or and unselect themes from the information
                 page.
               </p>
             </Col>
@@ -398,7 +398,7 @@ export default class ThematicPage extends React.Component<
                 Since the users could select up to 5 themes, the system must
                 prevent them from selecting additional ones. I was focusing on
                 error prevention as I didn't want the users to perform an action
-                that would lead to an error.
+                that could lead to an error.
               </p>
               <p className={sharedStyles.pin}>
                 {" "}

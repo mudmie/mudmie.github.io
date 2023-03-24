@@ -3,7 +3,7 @@ import { Col, Container, Row } from "reactstrap";
 import * as styles from "./about-section.module.scss";
 import * as sharedStyles from "./sections.module.scss";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
-import Img from "gatsby-image";
+import Img from "gatsby-plugin-image";
 import { withPrefix, Link } from "gatsby";
 import { ImageSharp } from "../models/image-sharp";
 import { SocialMediaLinks } from "../components/social-media-links";
@@ -53,10 +53,7 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
               data-sal-easing="ease-out-back"
             >
               <p className={styles.aboutPara}>
-                A University of Waterloo graduate with 2.5 years of experience designing consumer &amp; enterprise products.
-              </p>
-              <p className={styles.aboutPara}>
-                Previously at Jitta Wealth and Autodesk. 
+                A seattle-based product designer with experiences designing B2B and B2C products across multiple industries. 
               </p>
               <SocialMediaLinks separator="NEW_LINE" />
             </Col>
