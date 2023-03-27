@@ -101,8 +101,8 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
             {togglerButtonText}
           </NavbarToggler>
 
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
+          <Collapse isOpen={this.state.isOpen} navbar className="justify-content-end">
+            <Nav navbar>
               <NavItem>
                 <Link
                   className={`nav-link ${styles.navLink}`}
