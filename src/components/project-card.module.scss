@@ -4,22 +4,27 @@
 .row {
   padding-top: 75px;
   padding-bottom: 75px;
-
 }
-.project-title{
+.project-title {
   margin: 0;
   color: $project-title-color;
 }
 
-.project-description{
+.term {
+  color: $green-color;
+}
+
+.project-description {
   @media (min-width: 1024px) {
-    margin:32px 0 32px 0;
-    }
+    margin: 32px 0 32px 0;
+  }
 }
 .case-study-button {
-  text-decoration: none !important;
+  color: $coral-color;
+  text-transform: uppercase;
+  // text-decoration: none !important;
 
-  @include cta-button();
+  // @include cta-button();
   // padding: 10px;
   // cursor: url('../../static/images/click-cursor.svg') 22 22, auto;
 

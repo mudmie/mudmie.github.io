@@ -2,10 +2,10 @@
 @import "../styles/_fonts.scss";
 
 .section-header {
-  background-color: $cauliflower-color;
+  background-color: $beige-color;
 }
 
-.section-heading{
+.section-heading {
   font-size: 24px;
   @media (min-width: 414px) {
     font-size: 32px;
@@ -20,13 +20,12 @@
     font-size: 56px;
   }
 }
-.section-project-even {
-  background-color: $cauliflower-color;
+.section-project {
+  background-color: $beige-color;
+  .container {
+    border-top: 1px solid $brown-color;
+  }
 }
-.section-project-odd {
-  background-color: $cream-color;
-}
-
-.container {
-
+.section-project.first .container {
+  border-top: none;
 }

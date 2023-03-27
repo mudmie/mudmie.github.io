@@ -59,13 +59,11 @@ export class ProjectsSection extends React.Component<
           .map((proj, i) => (
             <section
               className={
-                i % 2 == 0
-                  ? styles.sectionProjectEven
-                  : styles.sectionProjectOdd
+                styles.sectionProject + (i == 0 ? " " + styles.first : "")
               }
               key={proj.name}
             >
-              <Container>
+              <Container className={styles.container}>
                 <ProjectCard project={proj} />
               </Container>
             </section>

@@ -20,8 +20,10 @@ export class ProjectCard extends React.Component<ProjectCardProps, {}> {
         data-sal-easing="ease-out-back"
       >
         <Col md="6">
-          <h3 className={styles.projectTitle}>{this.props.project.company}</h3>
-          <div>{this.props.project.term}</div>
+          <h3 className={styles.projectTitle}>{this.props.project.name}</h3>
+          <div className={styles.term}>
+            {this.props.project.company} / {this.props.project.term}
+          </div>
           <p className={styles.projectDescription}>
             {this.props.project.description}
           </p>
