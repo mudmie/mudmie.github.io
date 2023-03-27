@@ -3,8 +3,9 @@
 
 html {
   .header {
+    color: $beige-color;
+    min-height: 400px;
   }
-
 
   .company-term {
     margin-top: 10px;
@@ -12,13 +13,11 @@ html {
   }
 
   .company {
-
   }
 }
 .project-title {
-  
 }
 .section-image {
-  background-color: $ocean-color;
+  background-color: $green-color;
   padding-top: 80px;
 }

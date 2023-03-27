@@ -18,7 +18,7 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
     return (
       <>
         <section className={styles.sectionImage}>
-          <Container fluid={true} className={styles.header}>
+          <Container className={styles.header}>
             {/* <Row className="justify-content-center mt-4 mb-4">
             <Col lg={PROJECT_BODY_COLUMN} className="text-center">
               <h1 className={styles.company}>
@@ -32,7 +32,7 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
           </Row> */}
 
             <Row className="justify-content-center mt-4 mb-4">
-              <Col lg="12" className="text-center mb-3">
+              <Col lg="6" className="mb-3">
                 {/* <img
                   src={withPrefix(
                     `/images/${this.props.currentProject.imageFolder}/main.png`
@@ -41,21 +41,21 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
                   className="img-fluid"
                 /> */}
                 <h1 className={styles.projectTitle}>
-                  {this.props.currentProject.company}
+                  {this.props.currentProject.name}
                 </h1>
-                <div>{this.props.currentProject.term}</div>
+                <div className={styles.companyTerm}>{this.props.currentProject.company} / {this.props.currentProject.term}</div>
               </Col>
-              <Col lg="12">
-                {/* <Img
-                  alt="main project image"
-                  fluid={this.props.mainImage}
-                  className="background-theme-color"
-                /> */}
+              <Col lg="6">
+                <p>{this.props.currentProject.description}</p>
+                <p>{this.props.currentProject.myRole}</p>
+                <p>{this.props.currentProject.results}</p>
+              </Col>
+              {/* <Col lg="12">
                 <GatsbyImage
                   image={getImage(this.props.mainImage)}
                   alt="main project image"
                 />
-              </Col>
+              </Col> */}
             </Row>
           </Container>
         </section>
