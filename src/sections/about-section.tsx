@@ -38,12 +38,12 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
                   <br />
                   Chuthamsatid
                 </h1>
-               
               </div>
             </Col>
-            </Row>
-            <Row>
-            <Col lg="4"
+          </Row>
+          <Row>
+            <Col
+              lg="6"
               // className={`align-self-end ${styles.colInfo}`}
               // data-sal="slide-down"
               // data-sal-duration="400"
@@ -51,10 +51,12 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
               // data-sal-easing="ease-out-back"
             >
               <p className={styles.aboutPara}>
-                Seattle-based <span className={styles.coralText}> product designer </span> with experiences designing B2B &
-                B2C products in healthcare, fintech, construction & more.{" "}
+                Seattle-based{" "}
+                <span className={styles.coralText}> product designer </span>{" "}
+                with experiences designing B2B & B2C products in healthcare,
+                fintech, construction & more.{" "}
               </p>
-              <SocialMediaLinks separator="NEW_LINE" />
+              <SocialMediaLinks separator="NEW_LINE" isDarkBackground={true} />
             </Col>
           </Row>
         </Container>

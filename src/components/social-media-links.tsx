@@ -6,6 +6,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 
 export interface SocialMediaLinksProps {
   separator: String;
+  isDarkBackground: Boolean;
 }
 export class SocialMediaLinks extends React.Component<
   SocialMediaLinksProps,
@@ -13,14 +14,15 @@ export class SocialMediaLinks extends React.Component<
 > {
   public render() {
     return (
-      <div>
+      <div className={this.props.isDarkBackground ? styles.darkBackground : ""}>
         <span className={styles.socialMedia}>
           <OutboundLink
-            className={styles.linkedIn}
+            className={styles.email}
             href="mailto:mchuthams@gmail.com"
             target="_blank"
           >
-            Email<BsArrowUpRight />
+            Email
+            <BsArrowUpRight />
           </OutboundLink>
           {this.getSeparator()}
           <OutboundLink
@@ -28,7 +30,8 @@ export class SocialMediaLinks extends React.Component<
             href="https://www.linkedin.com/in/mudmie"
             target="_blank"
           >
-            LinkedIn<BsArrowUpRight />
+            LinkedIn
+            <BsArrowUpRight />
           </OutboundLink>
           {this.getSeparator()}
         </span>

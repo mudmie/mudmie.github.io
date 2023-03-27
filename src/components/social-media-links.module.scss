@@ -2,7 +2,14 @@
 @import "../styles/_fonts.scss";
 
 .social-media {
-  flex-shrink: 0; 
+  flex-shrink: 0;
+}
+
+.dark-background {
+  .linked-in,
+  .email {
+    color: $beige-color;
+  }
 }
 
 // .linked-in {
