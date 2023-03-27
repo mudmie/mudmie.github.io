@@ -3,11 +3,18 @@
 
 .section {
   background-color: $green-color;
-  padding-top: 100px;
+  // background: url('../../static/images/noise.png') $green-color;
+  padding-top: 220px;
+  // background-size: cover;
 }
 
 .container {
-  padding-bottom: 100px;
+  padding-bottom: 120px;
+}
+
+.about-div {
+  border-bottom: 1px solid $beige-color;
+  padding-bottom: 20px;
 }
 
 .about-para {
@@ -15,10 +22,14 @@
   text-transform: uppercase;
 }
 
-.row-about {
-  @media (orientation: landscape) {
-  min-height: 60vh;
-  }
+.row-name {
+  // @media (orientation: landscape) {
+  // min-height: 60vh;
+  // }
+}
+
+.row-details {
+  padding-bottom: 60px;
 }
 
 .col-about {
@@ -44,18 +55,19 @@
 }
 .about-heading {
   font-size: 32px;
-  color: $cauliflower-color;
+  font-weight: 400;
+  color: $beige-color;
   @media (min-width: 414px) {
     font-size: 40px;
   }
   @media (min-width: 768px) {
-    font-size: 64px;
+    font-size: 56px;
   }
   @media (min-width: 1024px) {
-    font-size: 64px;
+    font-size: 56px;
   }
   @media (min-width: 1440px) {
-    font-size: 72px;
+    font-size: 56px;
   }
 }
 .subheading {

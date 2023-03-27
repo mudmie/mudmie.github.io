@@ -22,7 +22,7 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
         <Container className={styles.container}>
           <a id={this.props.id} className={sharedStyles.sectionAnchor} />
           <Row
-            className={`justify-content-between align-items-center ${styles.rowAbout}`}
+            className={`justify-content-between align-items-center ${styles.rowName}`}
           >
             <Col
               lg="12"
@@ -32,16 +32,16 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
               data-sal-easing="ease-out-back"
               // className={`align-self-end ${styles.colAbout}`}
             >
-              <div className={styles.aboutDiv}>
+              {/* <div className={styles.aboutDiv}> */}
                 <h1 className={styles.aboutHeading}>
                   Mudmie
                   <br />
                   Chuthamsatid
                 </h1>
-              </div>
+              {/* </div> */}
             </Col>
           </Row>
-          <Row>
+          <Row className={styles.rowDetails}>
             <Col
               lg="6"
               // className={`align-self-end ${styles.colInfo}`}
@@ -51,7 +51,7 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
               // data-sal-easing="ease-out-back"
             >
               <p className={styles.aboutPara}>
-                Seattle-based{" "}
+                A Seattle-based{" "}
                 <span className={styles.coralText}> product designer </span>{" "}
                 with experiences designing B2B & B2C products in healthcare,
                 fintech, construction & more.{" "}

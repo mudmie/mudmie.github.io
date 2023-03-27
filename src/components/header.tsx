@@ -10,6 +10,8 @@ import {
   NavbarToggler,
   NavbarBrand,
   Container,
+  Row,
+  Col,
 } from "reactstrap";
 import { RESUME_FILE_NAME } from "./constants";
 import * as styles from "./header.module.scss";
@@ -83,74 +85,90 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
           data-sal-easing="ease"
           data-sal-once
         >
-          <Link
-            to="/"
-            className="navbar-brand"
-            onClick={() => {
-              this.collapseNav();
-            }}
-          >
-            <div className={styles.brand}>
-              <img
-                src={withPrefix("/images/new-logo.svg")}
-                className={styles.logo}
-              />
-            </div>
-          </Link>
-          <NavbarToggler className={styles.navbarToggler} onClick={this.toggle}>
-            {togglerButtonText}
-          </NavbarToggler>
-
-          <Collapse isOpen={this.state.isOpen} navbar className="justify-content-end">
-            <Nav navbar>
-              <NavItem>
+          <Container>
+            <Row>
+              <Col lg="2" xs="6">
                 <Link
-                  className={`nav-link ${styles.navLink}`}
                   to="/"
+                  className="navbar-brand"
                   onClick={() => {
                     this.collapseNav();
                   }}
                 >
-                  Home
+                  <div className={styles.brand}>
+                    <img
+                      src={withPrefix("/images/new-logo.svg")}
+                      className={styles.logo}
+                    />
+                  </div>
                 </Link>
-              </NavItem>
-              <NavItem>
-                <Link
-                  className={`nav-link ${styles.navLink}`}
-                  to="/#projects"
-                  onClick={() => {
-                    this.collapseNav();
-                  }}
+              </Col>
+              <Col xs="6" className="d-sm-none text-end">
+                <NavbarToggler
+                  className={styles.navbarToggler}
+                  onClick={this.toggle}
                 >
-                  Projects
-                </Link>
-              </NavItem>
-              <NavItem>
-                <Link
-                  className={`nav-link ${styles.navLink}`}
-                  to="/about"
-                  onClick={() => {
-                    this.collapseNav();
-                  }}
+                  {togglerButtonText}
+                </NavbarToggler>
+              </Col>
+              <Col>
+                <Collapse
+                  isOpen={this.state.isOpen}
+                  navbar
+                  className="justify-content-end"
                 >
-                  About
-                </Link>
-              </NavItem>
+                  <Nav navbar>
+                    <NavItem>
+                      <Link
+                        className={`nav-link ${styles.navLink}`}
+                        to="/"
+                        onClick={() => {
+                          this.collapseNav();
+                        }}
+                      >
+                        Home
+                      </Link>
+                    </NavItem>
+                    <NavItem>
+                      <Link
+                        className={`nav-link ${styles.navLink}`}
+                        to="/#projects"
+                        onClick={() => {
+                          this.collapseNav();
+                        }}
+                      >
+                        Projects
+                      </Link>
+                    </NavItem>
+                    <NavItem>
+                      <Link
+                        className={`nav-link ${styles.navLink}`}
+                        to="/about"
+                        onClick={() => {
+                          this.collapseNav();
+                        }}
+                      >
+                        About
+                      </Link>
+                    </NavItem>
 
-              <NavItem>
-                <OutboundLink
-                  href={withPrefix(RESUME_FILE_NAME)}
-                  className={`nav-link ${styles.navLink}`}
-                  target="_blank"
-                  onClick={() => {
-                    this.collapseNav();
-                  }}
-                >
-                  Resume
-                </OutboundLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
+                    <NavItem>
+                      <OutboundLink
+                        href={withPrefix(RESUME_FILE_NAME)}
+                        className={`nav-link ${styles.navLink}`}
+                        target="_blank"
+                        onClick={() => {
+                          this.collapseNav();
+                        }}
+                      >
+                        Resume
+                      </OutboundLink>
+                    </NavItem>
+                  </Nav>
+                </Collapse>
+              </Col>
+            </Row>
+          </Container>
         </Navbar>
       </header>
     );
