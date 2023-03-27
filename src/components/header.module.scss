@@ -5,6 +5,7 @@ html {
   .navbar {
     // border-bottom: 1px solid $chestnut-color;
     background-color: $green-color;
+    padding: 12px 0 12px 0;
   }
 
   .nav-open {
@@ -20,7 +21,12 @@ html {
   }
 
   .logo {
-    height: 16px;
+    height: 18px;
+  }
+
+  .navbar-brand {
+    display: block;
+    padding-top: 3px;
   }
 
   .brand {
@@ -45,6 +51,10 @@ html {
     &:focus {
       outline: none;
     }
+  }
+
+  .nav-link {
+    font-size: 16px;
   }
 
   :global(.collapse.show ul),
