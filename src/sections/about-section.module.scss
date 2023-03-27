@@ -2,20 +2,16 @@
 @import "../styles/_fonts.scss";
 
 .section {
-  background-color: $ocean-color;
+  background-color: $green-color;
   padding-top: 100px;
 }
 
 .container {
   padding-bottom: 100px;
-  // background: url("../../static/images/glow_bg.png");
-  // background-size: 75%;
-  // background-repeat: no-repeat;
-  // background-position: 100% 50%;
 }
 
 .about-para {
-  color: $cauliflower-color;
+  color: $beige-color;
 }
 
 .row-about {
@@ -63,6 +59,10 @@
 }
 .subheading {
   max-width: 86%;
+}
+
+.coral-text{
+  color: $coral-color;
 }
 
 .col-info {

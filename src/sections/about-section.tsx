@@ -25,12 +25,12 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
             className={`justify-content-between align-items-center ${styles.rowAbout}`}
           >
             <Col
-              lg="8"
+              lg="12"
               data-sal="slide-up"
               data-sal-duration="400"
               data-sal-delay="200"
               data-sal-easing="ease-out-back"
-              className={`align-self-end ${styles.colAbout}`}
+              // className={`align-self-end ${styles.colAbout}`}
             >
               <div className={styles.aboutDiv}>
                 <h1 className={styles.aboutHeading}>
@@ -38,22 +38,21 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
                   <br />
                   Chuthamsatid
                 </h1>
-                <img
-                  className={`${styles.subheading}`}
-                  src={this.getImageUrl("product-designer.svg")}
-                />
+               
               </div>
             </Col>
-            <Col
-              lg="4"
-              className={`align-self-end ${styles.colInfo}`}
-              data-sal="slide-down"
-              data-sal-duration="400"
-              data-sal-delay="200"
-              data-sal-easing="ease-out-back"
+            </Row>
+            <Row>
+            <Col lg="4"
+              // className={`align-self-end ${styles.colInfo}`}
+              // data-sal="slide-down"
+              // data-sal-duration="400"
+              // data-sal-delay="200"
+              // data-sal-easing="ease-out-back"
             >
               <p className={styles.aboutPara}>
-                A seattle-based product designer with experiences designing B2B and B2C products across multiple industries. 
+                Seattle-based <span className={styles.coralText}> product designer </span> with experiences designing B2B &
+                B2C products in healthcare, fintech, construction & more.{" "}
               </p>
               <SocialMediaLinks separator="NEW_LINE" />
             </Col>
