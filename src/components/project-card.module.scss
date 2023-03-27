@@ -22,7 +22,10 @@
 .case-study-button {
   color: $coral-color;
   text-transform: uppercase;
-  // text-decoration: none !important;
+  text-decoration: none;
+  span {
+    text-decoration: underline !important;
+  }
 
   // @include cta-button();
   // padding: 10px;

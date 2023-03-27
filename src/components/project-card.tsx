@@ -2,7 +2,7 @@ import * as React from "react";
 import { Project } from "../models/project";
 import { Container, Row, Col } from "reactstrap";
 import { ProjectNav } from "./project-nav";
-import { BsArrowRight } from "react-icons/bs";
+import { BsArrowUpRight } from "react-icons/bs";
 import { Link, withPrefix } from "gatsby";
 import * as styles from "./project-card.module.scss";
 
@@ -29,7 +29,7 @@ export class ProjectCard extends React.Component<ProjectCardProps, {}> {
           </p>
 
           <Link to={this.props.project.url} className={styles.caseStudyButton}>
-            <span>Read Case Study</span> <BsArrowRight />
+            <span>Read Case Study</span> <BsArrowUpRight />
           </Link>
         </Col>
         <Col md="6">
