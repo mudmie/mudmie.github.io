@@ -9,7 +9,6 @@ import { StaticImage } from "gatsby-plugin-image";
 import { Dash } from "../components/dash";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import { SocialMediaLinks } from "../components/social-media-links";
-import { FaRegSmile } from "react-icons/fa";
 import { RESUME_FILE_NAME } from "../components/constants";
 import { BsArrowUpRight } from "react-icons/bs";
 
@@ -41,7 +40,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               data-sal-easing="ease-out-back"
             >
               <Col lg="4">
-                <h2 className={styles.hello}>Hello, I’m Mudmie.</h2>
+                <h2 className={styles.hello}>Hello, I’m Mudmie</h2>
               </Col>
               <Col lg="8">
                 <p>
@@ -75,9 +74,9 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                 <h3 className={styles.moreOfMe}>More of me.</h3>
 
                 <p>
-                  I knew from the beginning I had to get into the
-                  University of Waterloo because of its co-op program, but I’ll
-                  admit that I chose{" "}
+                  I knew from the beginning I had to get into the University of
+                  Waterloo because of its co-op program, but I’ll admit that I
+                  chose{" "}
                   <OutboundLink
                     href="https://uwaterloo.ca/systems-design-engineering/about-systems-design-engineering/what-systems-design-engineering"
                     target="_blank"
@@ -120,7 +119,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               data-sal-easing="ease-out-back"
             >
               <Col lg="4" md="6" className="align-self-center">
-                <h3 className={styles.designExperience}>Design Experience.</h3>
+                <h3 className={styles.designExperience}>Design Experience</h3>
               </Col>
               <Col lg="8" md="6" className={styles.experience}>
                 <table className={styles.experienceTable}>
