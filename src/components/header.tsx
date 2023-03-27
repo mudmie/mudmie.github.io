@@ -92,7 +92,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
           >
             <div className={styles.brand}>
               <img
-                src={withPrefix("/images/logo.svg")}
+                src={withPrefix("/images/new-logo.svg")}
                 className={styles.logo}
               />
             </div>
