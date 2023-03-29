@@ -23,7 +23,7 @@ export const mainImageSizes = graphql`
 export const projectMainImageSizes = graphql`
 fragment ProjectMainImageSizes on File {
   childImageSharp {
-    gatsbyImageData(width: 2440, quality: 100)
+    gatsbyImageData(width: 2440, quality: 100, placeholder: BLURRED)
   }
 }
 `;

@@ -19,14 +19,11 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
       <>
         <section className={styles.sectionImage}>
           <Container className={styles.header}>
-            <Row className="justify-content-center mt-4 mb-4">
-              <Col lg="6" className="mb-3">
-                <img
-                  src={withPrefix(
-                    `/images/${this.props.currentProject.imageFolder}/main.png`
-                  )}
-                  alt={`project ${this.props.currentProject.name} image`}
-                  className="img-fluid"
+            <Row className="justify-content-center mt-4">
+              <Col lg="12" className="">
+                  <GatsbyImage
+                  image={getImage(this.props.mainImage)}
+                  alt="main project image"
                 />
               </Col>
             </Row>
@@ -63,12 +60,6 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
                   <b>Results</b> <br /> {this.props.currentProject.results}
                 </p>
               </Col>
-              {/* <Col lg="12">
-                <GatsbyImage
-                  image={getImage(this.props.mainImage)}
-                  alt="main project image"
-                />
-              </Col> */}
             </Row>
           </Container>
         </section>
