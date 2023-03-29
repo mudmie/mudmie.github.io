@@ -29,7 +29,8 @@ export class ProjectCard extends React.Component<ProjectCardProps, {}> {
           </p>
 
           <Link to={this.props.project.url} className={styles.caseStudyButton}>
-            <span>Read Case Study</span> <BsArrowUpRight />
+            Read Case Study
+            <BsArrowUpRight />
           </Link>
         </Col>
         <Col md="6">

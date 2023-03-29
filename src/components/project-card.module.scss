@@ -11,7 +11,8 @@
 }
 
 .term {
-  color: $green-color;
+  color: $blue-color;
+  font-size: 16px;
 }
 
 .project-description {
@@ -20,12 +21,12 @@
   }
 }
 .case-study-button {
-  color: $coral-color;
+  color: $navy-color;
   text-transform: uppercase;
-  text-decoration: none;
-  span {
-    text-decoration: underline !important;
-  }
+  text-decoration: underline;
+  // // span {
+  // //   text-decoration: underline !important;
+  // }
 
   // @include cta-button();
   // padding: 10px;
@@ -37,4 +38,7 @@
   //   transition-duration: .5s;
   //   text-decoration: none;
   // }
+    &:hover{
+      color: $coral-color;
+    }
 }

@@ -33,10 +33,6 @@ h1 {
   margin: 10px 0 10px 0;
 }
 
-.sub {
-  color: $stone-color !important;
-}
-
 .bold {
   font-weight: 600;
 }
@@ -59,6 +55,10 @@ h1 {
 .learning {
   background-color: $highlight-color;
   font-weight: 600;
+}
+
+figure {
+  padding-top: 16px;
 }
 
 .figure-no-margin-bottom {

@@ -58,9 +58,13 @@ html {
     font-size: 14px;  
   
       @media (min-width: 1024px) {
-      font-size: 20px;
+      font-size: 18px;
       }
   } 
+
+  li{
+    padding: 4px 0;
+  }
 
   &.full-height, body.full-height, .full-height {
     height: 100%
@@ -94,21 +98,26 @@ html {
 
   .navbar-light .navbar-nav {
     .nav-link {
-      color: $cauliflower-color;
+      color: $offwhite-color;
       text-decoration: none !important;
-      &:focus,
+      font-weight: 600;
       &:hover {
-        font-weight: 700;
-        color: $nav-text-color;
+        font-weight: 600;
+        color: $coral-color;
         text-decoration: underline !important;
-
       }
+      &:focus{
+        color: $offwhite-color;
+        text-decoration: underline !important;
+        font-weight: 600;
+      }
+
     }
   }
 
   b,
   strong {
-    font-weight: 700;
+    font-weight: 600;
   }
 
   h1 {
@@ -124,12 +133,11 @@ html {
   }
   a {
     color: $link-color;
-    text-decoration: underline;
   }
   a:focus,
   a:hover{
   // a:visited {
-    color: $link-color;
+    color: $coral-color;
   }
 
   .highlight {

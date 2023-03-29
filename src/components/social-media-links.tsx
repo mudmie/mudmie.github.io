@@ -30,8 +30,9 @@ export class SocialMediaLinks extends React.Component<
             href="https://www.linkedin.com/in/mudmie"
             target="_blank"
           >
-            LinkedIn
-            <BsArrowUpRight />
+            <span>LinkedIn</span> 
+<BsArrowUpRight />
+
           </OutboundLink>
           {this.getSeparator()}
         </span>

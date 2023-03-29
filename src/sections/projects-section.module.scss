@@ -2,11 +2,12 @@
 @import "../styles/_fonts.scss";
 
 .section-header {
-  background-color: $beige-color;
+  background-color: $offwhite-color;
 }
 
 .section-heading {
   font-size: 24px;
+  color: $blue-color;
   @media (min-width: 414px) {
     font-size: 32px;
   }
@@ -21,9 +22,9 @@
   }
 }
 .section-project {
-  background-color: $beige-color;
+  background-color: $offwhite-color;
   .container {
-    border-top: 1px solid $brown-color;
+    border-top: 1px solid $navy-color;
   }
 }
 .section-project.first .container {

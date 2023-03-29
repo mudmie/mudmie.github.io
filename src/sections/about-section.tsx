@@ -33,11 +33,11 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
               // className={`align-self-end ${styles.colAbout}`}
             >
               {/* <div className={styles.aboutDiv}> */}
-                <h1 className={styles.aboutHeading}>
-                  Mudmie
-                  <br />
-                  Chuthamsatid
-                </h1>
+              <h1 className={styles.aboutHeading}>
+                Mudmie
+                <br />
+                Chuthamsatid
+              </h1>
               {/* </div> */}
             </Col>
           </Row>
@@ -51,10 +51,8 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
               // data-sal-easing="ease-out-back"
             >
               <p className={styles.aboutPara}>
-                A Seattle-based{" "}
-                <span className={styles.coralText}> product designer </span>{" "}
-                with experiences designing B2B & B2C products in healthcare,
-                fintech, construction & more.{" "}
+                A Seattle-based product designer with experiences designing B2B
+                & B2C products in healthcare, fintech, construction & more.{" "}
               </p>
               <SocialMediaLinks separator="NEW_LINE" isDarkBackground={true} />
             </Col>

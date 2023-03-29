@@ -2,23 +2,23 @@
 @import "../styles/_fonts.scss";
 
 .section {
-  background-color: $green-color;
+  background-color: $blue-color;
   // background: url('../../static/images/noise.png') $green-color;
-  padding-top: 260px;
+  padding-top: 200px;
   // background-size: cover;
 }
 
 .container {
-  padding-bottom: 260px;
+  padding-bottom: 200px;
 }
 
-.about-div {
-  border-bottom: 1px solid $beige-color;
-  padding-bottom: 20px;
-}
+// .about-div {
+//   border-bottom: 1px solid $beige-color;
+//   padding-bottom: 20px;
+// }
 
 .about-para {
-  color: $beige-color;
+  color: $offwhite-color;
   // text-transform: uppercase;
 }
 
@@ -55,8 +55,8 @@
 }
 .about-heading {
   font-size: 32px;
-  font-weight: 400;
-  color: $beige-color;
+  font-weight: 600;
+  color: $offwhite-color;
   @media (min-width: 414px) {
     font-size: 40px;
   }
@@ -74,8 +74,9 @@
   max-width: 86%;
 }
 
-.coral-text{
-  color: $coral-color;
+.bold-text{
+  // color: $coral-color;
+  font-weight: 600;
 }
 
 .col-info {

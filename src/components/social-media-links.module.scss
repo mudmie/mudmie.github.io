@@ -9,15 +9,16 @@
 .dark-background {
   .linked-in,
   .email {
-    color: $beige-color;
+    color: $offwhite-color;
+    text-decoration: underline;
   }
 }
 
-// .linked-in {
-//   &:hover {
-//     color: #0077b5;
-//   }
-// }
+.linked-in, .email {
+  &:hover {
+    color: $coral-color;
+  }
+}
 
 // .instagram {
 //   &:hover {

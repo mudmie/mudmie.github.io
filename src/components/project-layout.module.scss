@@ -34,17 +34,17 @@ html {
       font-weight: 600;
       margin-bottom: 0px;
       font-size: 48px;
-      color: $cauliflower-color;
+      color: $blue-color;
       text-transform: none;
     }
     h2 {
       font-size: 24px;
     }
     h3 {
-      font-size: 22px;
+      font-size: 24px;
       margin: 20px 0 5px 0;
       font-weight: bold;
-      color: $green-color;
+      color: $blue-color;
       font-family: $body-font !important;
       
     }
@@ -53,7 +53,7 @@ html {
       margin-top: 0px;
       margin-bottom: 0px;
     }
-    background-color: $cauliflower-color;
+    background-color: $offwhite-color;
     :global .btn {
       border-color: $taupe-color;
 
@@ -64,10 +64,9 @@ html {
       }
     }
     p{
-      font-weight: 300;
-      font-size: 20px;
+      font-weight: 400;
+      font-size: 18px;
 
     }
-    // @include project-theme($ocean-color, $mustard-color);
   }
 }

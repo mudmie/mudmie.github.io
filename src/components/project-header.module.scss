@@ -3,8 +3,8 @@
 
 html {
   .header {
-    color: $beige-color;
     min-height: 400px;
+    // padding: 56px 0 32px 0;
   }
 
   .company-term {
@@ -15,9 +15,13 @@ html {
   .company {
   }
 }
-.project-title {
+.summary-section {
+  background-color: $beige-color;
+  color: $blue-color;
+  padding: 32px 0;
 }
+
 .section-image {
-  background-color: $green-color;
+  background-color: $blue-color;
   padding-top: 80px;
 }
