@@ -7,8 +7,8 @@
     "@types/sha.js": "^2.4.0",
     "bootstrap": "^5.2.3",
     "gatsby": "^5.8.0",
-    "gatsby-plugin-image": "^3.8.0",
     "gatsby-plugin-hotjar": "^1.1.1",
+    "gatsby-plugin-image": "^3.8.0",
     "gatsby-plugin-react-helmet": "^6.8.0",
     "gatsby-plugin-sharp": "^5.8.0",
     "gatsby-transformer-sharp": "^5.8.0",
@@ -16,6 +16,7 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.8.0",
+    "react-scroll-progress-bar": "^1.1.13",
     "reactstrap": "^9.1.6",
     "sha.js": "^2.4.11",
     "universal-cookie": "^4.0.4"

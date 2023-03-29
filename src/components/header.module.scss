@@ -5,7 +5,9 @@ html {
   .navbar {
     // border-bottom: 1px solid $chestnut-color;
     background-color: $blue-color;
-    padding: 12px 0 12px 0;
+    // padding: 12px 0 12px 0;
+    padding: 0;
+    flex-direction: column;
   }
 
   .nav-open {
@@ -66,5 +68,25 @@ html {
 
   .nav-toggle-close svg path {
     color: $nav-text-color !important;
+  }
+
+  .nav-container {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    :global(.row) {
+      width: 100%;
+    }
+  }
+  .scroll-progress{
+    background-color: $offwhite-color;
+    height: 10px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    div {
+      position: absolute !important;
+      left: 0;
+      bottom: 0;
+    }
   }
 }

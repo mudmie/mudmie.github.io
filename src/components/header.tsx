@@ -15,6 +15,7 @@ import {
 } from "reactstrap";
 import { RESUME_FILE_NAME } from "./constants";
 import * as styles from "./header.module.scss";
+import ProgressBar from "react-scroll-progress-bar";
 
 export interface HeaderProps {
   isDarkMode: boolean;
@@ -74,6 +75,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
     return (
       <header>
         <Navbar
+          container={false}
           className={styles.navbar}
           light={!this.props.isDarkMode}
           dark={this.props.isDarkMode}
@@ -85,7 +87,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
           data-sal-easing="ease"
           data-sal-once
         >
-          <Container>
+          <Container className={styles.navContainer}>
             <Row>
               <Col lg="2" xs="6">
                 <Link
@@ -169,6 +171,10 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
               </Col>
             </Row>
           </Container>
+          <div className={styles.scrollProgress}>
+            {" "}
+            <ProgressBar bgcolor="#FC7E55" height="10" />
+          </div>
         </Navbar>
       </header>
     );
