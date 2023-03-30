@@ -35,14 +35,14 @@ export class MoreProjects extends React.Component<MoreProjectsProps, {}> {
       <div key={project.name}>
         <Row className={`justify-content-center mt-3 ${styles.projectRow}`}>
           <Col lg={PROJECT_BODY_COLUMN - 3}>
-            <div className={styles.projectTitle}>{project.company}</div>
+            <div className={styles.projectTitle}>{project.name}</div>
             <div className={styles.projectDescription}>
-              {project.name} / {project.term}
+              {project.company} / {project.term}
             </div>
           </Col>
           <Col lg="3" className="text-right">
             <Link to={project.url} className={styles.viewCaseStudyButton}>
-              <span>View Case Study</span> <FaArrowRight />
+              <span>View   Study</span> <FaArrowRight />
             </Link>
           </Col>
         </Row>

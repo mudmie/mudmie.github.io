@@ -11,7 +11,7 @@ export class Footer extends React.Component {
         <Container className={styles.container}>
           <Row className={styles.footerRow}>
             <Col lg="12" className={`align-self-center ${styles.footerCol}`}>
-            © Designed &amp; partially coded by Mudmie 2023<br />
+             Designed and partially coded by Mudmie<br />
               <SocialMediaLinks separator=" " isDarkBackground={false} />
             </Col>
           </Row>

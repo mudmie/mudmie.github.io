@@ -18,16 +18,16 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
     return (
       <>
         <section className={styles.sectionImage}>
-          <Container className={styles.header}>
-            <Row className="justify-content-center mt-4">
-              <Col lg="12" className="">
-                  <GatsbyImage
-                  image={getImage(this.props.mainImage)}
-                  alt="main project image"
-                />
-              </Col>
-            </Row>
-          </Container>
+          {/* <Container className={styles.header} fluid={true}> */}
+          <Row className="justify-content-center">
+            <Col lg="12" className="main">
+              <GatsbyImage
+                image={getImage(this.props.mainImage)}
+                alt="main project image"
+              />
+            </Col>
+          </Row>
+          {/* </Container> */}
         </section>
 
         <section className={styles.summarySection}>
@@ -50,12 +50,14 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
                 </div>
               </Col>
               <Col lg="6">
-                <p>{this.props.currentProject.companyDescription}</p>
-                <p>
+                <p className={styles.projectIntro}>
+                  {this.props.currentProject.companyDescription}
+                </p>
+                <p className={styles.projectIntro}>
                   <b>My Roles</b> <br />
                   {this.props.currentProject.myRole}
                 </p>
-                <p>
+                <p className={styles.projectIntro}>
                   {" "}
                   <b>Results</b> <br /> {this.props.currentProject.results}
                 </p>

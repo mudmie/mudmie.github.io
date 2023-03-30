@@ -4,21 +4,23 @@
 html {
   .header {
     min-height: 400px;
-    // padding: 56px 0 32px 0;
+    // padding: 56px 0 32px 0; p
   }
 
   .company-term {
     margin-top: 10px;
     font-weight: normal;
   }
+}
 
-  .company {
-  }
+.project-intro{
+  padding-bottom: 16px;
 }
 .summary-section {
   background-color: $beige-color;
   color: $blue-color;
-  padding: 32px 0;
+  padding-top: 56px;
+  padding-bottom: 32px ;
 }
 
 .section-image {

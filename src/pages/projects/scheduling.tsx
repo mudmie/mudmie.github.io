@@ -39,18 +39,6 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8">
-              <div className="text-center">
-                <ImageBox
-                  src={this.getImageUrl("current-product.jpg")}
-                  alt=""
-                  className="img-fluid"
-                />
-              </div>
-            </Col>
-          </Row>
-
-          <Row className="justify-content-center">
             <Col lg="6">
               <h3> The Problem & Goal</h3>
               <p>
@@ -67,6 +55,19 @@ export default class ThematicPage extends React.Component<
                 <b>increase case scheduling faeature adoption rate</b> by
                 providing more the functionalities to the existing product.
               </p>
+            </Col>
+          </Row>
+
+
+          <Row className="justify-content-center">
+            <Col lg="8">
+              <div className="text-center">
+                <ImageBox
+                  src={this.getImageUrl("current-product.jpg")}
+                  alt=""
+                  className="img-fluid"
+                />
+              </div>
             </Col>
           </Row>
 
@@ -307,7 +308,7 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="8">
               <div className="text-center">
                 <ImageBox
                   src={this.getImageUrl("doc-upload-options.jpg")}
@@ -343,7 +344,7 @@ export default class ThematicPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="12">
               <div className="text-center">
                 <ImageBox
                   src={this.getImageUrl("doc-upload-final.jpg")}

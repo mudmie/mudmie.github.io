@@ -1,10 +1,13 @@
-@import "../styles/_colors.scss";
+   @import "../styles/_colors.scss";
 @import "../styles/_projects.scss";
 
 .project-title {
-  font-weight: 700;
+  font-weight: 600;
+  color: $offwhite-color;
 }
 .project-description {
+  color: $offwhite-color;
+
 }
 .project-row {
 }
