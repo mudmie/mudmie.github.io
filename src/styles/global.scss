@@ -38,7 +38,7 @@ html {
   h3{
     font-family: $heading-font;
     font-weight: 600;
-    color: $black-color;
+    color: $almost-black-color;
     font-size: 20px;
     margin: 0 0 8px 0;
 
@@ -56,8 +56,10 @@ html {
     color: $body-text-color;
     font-weight: 400;
     font-size: 14px;  
-  
-      @media (min-width: 1024px) {
+    @media (min-width: 576px) {
+      font-size: 16px;
+      }
+      @media (min-width: 1400px) {
       font-size: 18px;
       }
   } 

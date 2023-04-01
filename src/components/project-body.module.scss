@@ -6,6 +6,11 @@
 }
 
 .project-body{
-  padding-top: 32px;
-  padding-bottom: 56px;
+  padding: 24px ;
+  @media (min-width: 768px) {
+    padding:56px;
+  }
+  @media (min-width: 1400px) {
+    padding:96px;
+  }
 }

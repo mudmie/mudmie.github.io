@@ -2,12 +2,17 @@
 @import "../styles/_projects.scss";
 
 
-.horizontal-line {
-  border-top: $section-divider;
+.section-more-projects {
+  background-color: $beige-color;
+  // padding-top: 36px;
+  // padding-bottom: 36px;
+  box-shadow: inset 0px 3px 0px #191919;
+  padding: 8px 24px 24px 24px;
+  @media (min-width: 768px) {
+    padding: 32px 56px 56px 56px;
+  }
+  @media (min-width: 1400px) {
+    padding: 56px 96px 96px 96px;
+  }
 }
 
-.section-more-projects {
-  background-color: $blue-color;
-  padding-top: 36px;
-  padding-bottom: 36px;
-}

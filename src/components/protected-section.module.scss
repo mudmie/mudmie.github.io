@@ -1,21 +1,22 @@
 @import "../styles/_colors.scss";
 @import "../styles/_fonts.scss";
 
-.vertical-line-right {
-  @media (min-width: 768px) {
-    border-right-width: 1px;
-    border-right-style: solid;
-    border-image: linear-gradient(
-        transparent,
-        transparent 25px,
-        $stone-color 25px,
-        $stone-color 100%,
-        transparent 100%,
-        transparent
-      )
-      1 100%;
-  }
-}
+// .vertical-line-right {
+//   @media (min-width: 768px) {
+//     border-right-width: 1px;
+//     border-right-style: solid;
+//     border-image: linear-gradient(
+//         transparent,
+//         transparent 25px,
+//         $stone-color 25px,
+//         $stone-color 100%,
+//         transparent 100%,
+//         transparent
+//       )
+//       1 100%;
+//   }
+// }
+
 
 .password-box {
   min-width: 200px;
@@ -24,7 +25,7 @@
 }
 
 .submit-button {
-  background-color: $ocean-color;
-  color: $cauliflower-color;
+  background-color: $almost-black-color;
+  color: $beige-color;
   border: none;
 }

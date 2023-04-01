@@ -34,26 +34,35 @@ html {
       font-weight: 600;
       margin-bottom: 0px;
       font-size: 48px;
-      color: $blue-color;
+      color: $almost-black-color;
       text-transform: none;
     }
     h2 {
       font-size: 24px;
+      font-weight: 600;
+      color: $almost-black-color;
+      margin: 0 !important;
+      @media (min-width: 576px) {
+        font-size: 32px;
+      }
+      @media (min-width: 1400px) {
+        font-size: 36px;
+      }
     }
+
     h3 {
       font-size: 24px;
       margin: 20px 0 5px 0;
       font-weight: bold;
-      color: $blue-color;
-      font-family: $body-font !important;
-      
+      color: $almost-black-color;
     }
     h4 {
       font-size: 20px;
       margin-top: 0px;
       margin-bottom: 0px;
     }
-    background-color: $offwhite-color;
+
+    background-color: $beige-color;
     :global .btn {
       border-color: $taupe-color;
 
@@ -63,10 +72,15 @@ html {
         background-color: $cream-color;
       }
     }
-    p{
+    p {
       font-weight: 400;
-      font-size: 18px;
-
+      font-size: 14px;
+      @media (min-width: 576px) {
+        font-size: 16px;
+      }
+      @media (min-width: 1400px) {
+        font-size: 18px;
+      }
     }
   }
 }

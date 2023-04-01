@@ -9,21 +9,28 @@ html {
 
   .company-term {
     margin-top: 10px;
-    font-weight: normal;
+    font-family: $heading-font;
   }
 }
 
 .project-intro{
   padding-bottom: 16px;
 }
+
 .summary-section {
   background-color: $beige-color;
-  color: $blue-color;
-  padding-top: 56px;
-  padding-bottom: 32px ;
+  color: $almost-black-color;
+  padding: 24px ;
+  @media (min-width: 768px) {
+    padding:56px;
+  }
+  @media (min-width: 1400px) {
+    padding:96px;
+  }
 }
 
+
 .section-image {
-  background-color: $blue-color;
+  background-color: $almost-black-color;
   padding-top: 80px;
 }

@@ -2,7 +2,7 @@ import * as React from "react";
 import { Project } from "../models/project";
 import { Link, withPrefix } from "gatsby";
 import { Row, Col, Container } from "reactstrap";
-import { FaArrowRight, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { HiArrowUpRight } from "react-icons/hi2";
 import * as styles from "./more-projects.module.scss";
 import { PROJECT_BODY_COLUMN } from "./project-layout";
 
@@ -17,10 +17,14 @@ export class MoreProjects extends React.Component<MoreProjectsProps, {}> {
   public render() {
     return (
       <Container>
-        <Row className="justify-content-center mt-3">
-          <Col lg={PROJECT_BODY_COLUMN}>
-            <h2>More Projects</h2>
+        <Row className="justify-content-center mt-3 mb-3">
+          <Col lg="12">
+            <h2>More Projects
+            <img src={withPrefix("/images/star.svg")} className={styles.star} />
+            </h2>
+
           </Col>
+         
         </Row>
         {this.props.projects
           .filter((proj) => proj.name != this.props.currentProject.name)
@@ -33,8 +37,8 @@ export class MoreProjects extends React.Component<MoreProjectsProps, {}> {
   private projectRow(project: Project) {
     return (
       <div key={project.name}>
-        <Row className={`justify-content-center mt-3 ${styles.projectRow}`}>
-          <Col lg={PROJECT_BODY_COLUMN - 3}>
+        <Row className={`justify-content-center ${styles.projectRow}`}>
+          <Col lg={"9"}>
             <div className={styles.projectTitle}>{project.name}</div>
             <div className={styles.projectDescription}>
               {project.company} / {project.term}
@@ -42,7 +46,8 @@ export class MoreProjects extends React.Component<MoreProjectsProps, {}> {
           </Col>
           <Col lg="3" className="text-right">
             <Link to={project.url} className={styles.viewCaseStudyButton}>
-              <span>View   Study</span> <FaArrowRight />
+              <span>View Case Study</span>           
+              <HiArrowUpRight className={styles.arrowIcon} />
             </Link>
           </Col>
         </Row>

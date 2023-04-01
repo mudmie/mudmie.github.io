@@ -1,22 +1,65 @@
-   @import "../styles/_colors.scss";
-@import "../styles/_projects.scss";
+@import "../styles/_colors.scss";
+@import "./styles/_projects.scss";
+@import "../styles/_fonts.scss";
+
 
 .project-title {
   font-weight: 600;
-  color: $offwhite-color;
+  font-family: $heading-font;
+  color: $almost-black-color;
+  font-size: 16px;
+  @media (min-width: 576px) {
+    font-size: 18px;
+  }
 }
 .project-description {
-  color: $offwhite-color;
+  color: $almost-black-color;
+  font-family: $heading-font;
+  font-size: 12px;
+  font-family: $heading-font;
+  padding-top: 4px;
 
+  @media (min-width: 576px) {
+    font-size: 14px;
+  }
+  @media (min-width: 1400px) {
+    font-size: 16px;
+  }
 }
+
 .project-row {
+  box-shadow: inset 0px -1px 0px #191919;
+  align-items: center;
+  padding: 24px 0;
 }
+
 .horizontal-line-row:not(:last-child) div {
   border-bottom: $section-divider;
 }
 
 .view-case-study-button {
-  text-decoration: none !important;
+  color: $blue-color;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: underline;
+  @media (min-width: 576px) {
+    font-size: 16px;
+  }
+  // @include cta-button();
+}
 
-  @include cta-button();
+.star {
+  display: none;
+  @media (min-width: 576px) {
+    display: inline;
+    width: 40px;
+    margin-left: 8px;
+    margin-top: 0;
+  }
+}
+
+.arrow-icon {
+  stroke-width: 1.5px;
+  margin-top: -3.1px;
+  margin-left: 4px;
 }

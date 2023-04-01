@@ -124,7 +124,7 @@ export class ProtectedSection extends React.Component<
               <h3>Password Protected</h3>
               <p>
                 You can find the password on the resume submitted to you, or
-                please contact me to request for the password.
+                please contact me to request one.
               </p>
             </Col>
           </Row>
