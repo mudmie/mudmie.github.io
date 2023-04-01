@@ -98,8 +98,10 @@ html {
 
   .navbar-light .navbar-nav {
     .nav-link {
-      color: $offwhite-color;
+      color: $almost-black-color;
       text-decoration: none !important;
+      text-transform: uppercase;
+      font-family: $heading-font;
       font-weight: 600;
       &:hover {
         font-weight: 600;
@@ -107,7 +109,7 @@ html {
         text-decoration: underline !important;
       }
       &:focus{
-        color: $offwhite-color;
+        color: $almost-black-color;
         text-decoration: underline !important;
         font-weight: 600;
       }

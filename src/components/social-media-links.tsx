@@ -2,7 +2,7 @@ import * as React from "react";
 import * as styles from "./social-media-links.module.scss";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { BsArrowUpRight } from "react-icons/bs";
+import { HiArrowUpRight } from "react-icons/hi2";
 
 export interface SocialMediaLinksProps {
   separator: String;
@@ -22,7 +22,7 @@ export class SocialMediaLinks extends React.Component<
             target="_blank"
           >
             Email
-            <BsArrowUpRight />
+            <HiArrowUpRight className={styles.arrowIcon} />
           </OutboundLink>
           {this.getSeparator()}
           <OutboundLink
@@ -30,9 +30,9 @@ export class SocialMediaLinks extends React.Component<
             href="https://www.linkedin.com/in/mudmie"
             target="_blank"
           >
-            <span>LinkedIn</span> 
-<BsArrowUpRight />
-
+            <br/>
+            LinkedIn
+            <HiArrowUpRight className={styles.arrowIcon} />
           </OutboundLink>
           {this.getSeparator()}
         </span>

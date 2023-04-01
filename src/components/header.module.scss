@@ -3,17 +3,15 @@
 
 html {
   .navbar {
-    // border-bottom: 1px solid $chestnut-color;
-    background-color: $blue-color;
-    // padding: 12px 0 12px 0;
+    background-color: $beige-color;
     padding: 0;
     flex-direction: column;
   }
 
-  .nav-open {
-    background-color: #fff !important;
-    transition: none;
-  }
+  // .nav-open {
+  //   background-color: #fff !important;
+  //   transition: none;
+  // }
 
   :global(.navbar-collapse) {
     height: 100vh;
@@ -39,10 +37,12 @@ html {
     opacity: 1;
   }
 
+  //nav bar mobile
   .navbar-toggler {
     border: none;
-    padding-left: 4px;
+    // padding-left: 4px;
     color: $nav-text-color !important;
+    font-weight: 600;
     font-family: $body-font;
     font-size: 16px;
     line-height: 2em;
@@ -71,8 +71,13 @@ html {
   }
 
   .nav-container {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 12px 24px 4px 24px;
+
+    @media (min-width: 576px) {
+      padding: 12px 0px 4px 0px;
+    }
+
+
     :global(.row) {
       width: 100%;
     }

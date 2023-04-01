@@ -33,17 +33,17 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
               // className={`align-self-end ${styles.colAbout}`}
             >
               {/* <div className={styles.aboutDiv}> */}
-              <h1 className={styles.aboutHeading}>
-                Mudmie
-                <br />
-                Chuthamsatid
-              </h1>
+              <h1 className={styles.aboutHeading}>Hello, I'm Mudmie.</h1>
+              <img
+                className={`${styles.asterisk}`}
+                src={this.getImageUrl("asterisk.svg")}
+              />
               {/* </div> */}
             </Col>
           </Row>
-          <Row className={styles.rowDetails}>
+          <Row>
             <Col
-              lg="6"
+              lg="10"
               // className={`align-self-end ${styles.colInfo}`}
               // data-sal="slide-down"
               // data-sal-duration="400"
@@ -51,10 +51,11 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
               // data-sal-easing="ease-out-back"
             >
               <p className={styles.aboutPara}>
-                A Seattle-based product designer with experiences designing B2B
-                & B2C products in healthcare, fintech, construction & more.{" "}
+                A Seattle-based product designer with experience designing B2B
+                and B2C products in healthcare, fintech, construction & more.{" "}
               </p>
-              <SocialMediaLinks separator="NEW_LINE" isDarkBackground={true} />
+              {/* Social Media Links */}
+              {/* <SocialMediaLinks separator="NEW_LINE" isDarkBackground={true} /> */}
             </Col>
           </Row>
         </Container>

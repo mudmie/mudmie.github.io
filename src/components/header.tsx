@@ -68,7 +68,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
     } else {
       togglerButtonText = (
         <span>
-          <FaBars /> menu
+          <FaBars /> MENU
         </span>
       );
     }

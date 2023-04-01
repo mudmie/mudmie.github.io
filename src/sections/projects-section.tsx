@@ -42,14 +42,28 @@ export class ProjectsSection extends React.Component<
         <section className={styles.sectionHeader}>
           <Container className={styles.container}>
             <a id={this.props.id} className={sharedStyles.sectionAnchor} />
-            <Row>
+            <Row >
               <Col
+                sm="10"
+                md="8"
+                lg="6"
+                xl="5"
                 data-sal="slide-up"
                 data-sal-duration="400"
                 data-sal-delay="600"
                 data-sal-easing="ease-out-back"
               >
                 <h2 className={styles.sectionHeading}>Featured Projects</h2>
+              </Col>
+
+              <Col 
+                    sm="2"
+                    md="4"
+                    lg="6">
+                <img
+                  src={withPrefix("/images/star.svg")}
+                  className={styles.star}
+                />
               </Col>
             </Row>
           </Container>

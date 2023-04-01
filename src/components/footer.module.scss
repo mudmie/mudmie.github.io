@@ -1,4 +1,5 @@
 @import "../styles/_colors.scss";
+@import "../styles/_fonts.scss";
 
 html {
   .footer {
@@ -7,16 +8,28 @@ html {
 }
 
 .section {
-  background: $blue-color;
+  background: $almost-black-color;  padding: 32px 56px;
+
 }
 .container {
 }
 .footer-row {
  min-height: 100px;
 }
-.footer-col {
-  text-align: center;
-  font-weight: 400;
+.footer-left {
+  text-align: left;
+  font-weight: 600;
   font-size: 16px;
+  text-transform: uppercase;
+  font-family: $heading-font;
   color: $offwhite-color;
+}
+.footer-right {
+  text-align: right;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: $heading-font;
+  color: $offwhite-color;
+  padding: 0;
 }

@@ -3,18 +3,20 @@
 
 .social-media {
   flex-shrink: 0;
-  text-transform: uppercase;
 }
 
-.dark-background {
-  .linked-in,
-  .email {
-    color: $offwhite-color;
-    text-decoration: underline;
-  }
-}
+// .dark-background {
+//   .linked-in,
+//   .email {
+//     color: $offwhite-color;
+//     text-decoration: underline;
+//   }
+// }
 
 .linked-in, .email {
+  padding: 8px 0;
+  font-family: $body-font !important;
+
   &:hover {
     color: $coral-color;
   }

@@ -1,29 +1,71 @@
 @import "../styles/_colors.scss";
 @import "../styles/_projects.scss";
+@import "../styles/_fonts.scss";
 
 .row {
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media (min-width: 576px) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+  @media (min-width: 992px) {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
 }
 .project-title {
   margin: 0;
   color: $project-title-color;
+  font-size: 20px;
+  @media (min-width: 576px) {
+    font-size: 24px;
+  }
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+  @media (min-width: 1400px) {
+    font-size: 28px;
+  }
 }
 
 .term {
-  color: $blue-color;
-  font-size: 16px;
+  color: $almost-black-color;
+  font-size: 12px;
+  font-family: $heading-font;
+  padding-top: 4px;
+
+  @media (min-width: 576px) {
+    font-size: 14px;
+  }
+  @media (min-width: 1400px) {
+    font-size: 16px;
+  }
 }
 
 .project-description {
-  @media (min-width: 1024px) {
+  @media (min-width: 576px) {
+    font-size: 16px;
+  }
+  @media (min-width: 992px) {
     margin: 32px 0 32px 0;
+  }
+  @media (min-width: 1400px) {
+    margin: 32px 32px 32px 0;
+    font-size: 20px;
   }
 }
 .case-study-button {
-  color: $navy-color;
+  color: $blue-color;
+  font-weight: 600;
   text-transform: uppercase;
   text-decoration: underline;
+  @media (min-width: 576px) {
+    font-size: 16px;
+  }
+  @media (min-width: 1400px) {
+    font-size: 20px;
+  }
   // // span {
   // //   text-decoration: underline !important;
   // }
@@ -38,7 +80,17 @@
   //   transition-duration: .5s;
   //   text-decoration: none;
   // }
-    &:hover{
-      color: $coral-color;
-    }
+  &:hover {
+    color: $coral-color;
+  }
+}
+
+.arrow-icon {
+  stroke-width: 1.5px;
+  margin-top: -3.1px;
+  margin-left: 4px;
+}
+
+.thumbnail-image {
+  padding-top: 32px;
 }
