@@ -90,8 +90,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                   turned out to be something I really enjoyed.
                 </p>
                 <p className={styles.content}>
-                  Now, as a product designer, I found myself excited when I get
-                  to learn about people’s workflow, understanding their
+                  Now, as a product designer, I found myself excited when learning about people’s workflow, listening to their
                   problems, and using my multidisciplinary knowledge to craft
                   design solutions that improve their experience.
                 </p>
