@@ -1,16 +1,9 @@
 @import "../styles/_colors.scss";
 @import "../styles/_projects.scss";
 
-.border-top {
-  border-top: $section-divider;
-}
-
 .project-body{
-  // padding: 24px ;
-  // @media (min-width: 768px) {
-  //   padding:56px;
-  // }
-  // @media (min-width: 1400px) {
-  //   padding:96px;
-  // }
+  padding-top: 16px ;
+  @media (min-width: 992px) {
+    padding: 24px; 
+  }
 }

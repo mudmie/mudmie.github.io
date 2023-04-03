@@ -32,7 +32,7 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
 
         <section className={styles.summarySection}>
           <Container className={styles.header}>
-            <Row className="justify-content-center mt-4 mb-4">
+            <Row className="justify-content-center">
               <Col lg="6" className="mb-3">
                 {/* <img
                   src={withPrefix(

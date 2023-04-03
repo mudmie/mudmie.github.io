@@ -26,7 +26,8 @@ html {
 
   .navbar-brand {
     display: block;
-    padding-top: 4px;
+    // padding-top: 4px;
+    margin-top: -9px;
   }
 
   .brand {
@@ -45,7 +46,8 @@ html {
     font-weight: 600;
     font-family: $body-font;
     font-size: 16px;
-    line-height: 2em;
+    //margin-top: 10px;
+    // line-height: 2em;
     svg path {
       color: $nav-text-color;
     }
@@ -77,10 +79,7 @@ html {
       padding: 12px 0px 4px 0px;
     }
 
-
-    :global(.row) {
-      width: 100%;
-    }
+    display: block !important;
   }
   .scroll-progress{
     // background-color: $offwhite-color;

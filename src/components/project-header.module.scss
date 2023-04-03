@@ -3,7 +3,12 @@
 
 html {
   .header {
-    min-height: 400px;
+    min-height: 360px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @media (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;    }
 }
 
   .company-term {
@@ -15,6 +20,7 @@ html {
 
 .project-title{
   font-size: 32px;
+  
 }
 .project-intro{
   padding-bottom: 16px;
@@ -23,6 +29,7 @@ html {
 .summary-section {
   background-color: $beige-color;
   color: $almost-black-color;
+  box-shadow: inset 0px -3px 0px #191919;
 }
 
 

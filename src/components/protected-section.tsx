@@ -129,12 +129,12 @@ export class ProtectedSection extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col className=" d-flex justify-content-center">
+            <Col className="justify-content-center text-center">
               <Form
                 onSubmit={this.handleFormSubmit}
                 autoComplete="off"
                 inline
-                className="d-flex"
+                className="d-flex justify-content-center"
               >
                 <Label for="password" hidden>
                   Password
@@ -153,10 +153,12 @@ export class ProtectedSection extends React.Component<
                 <Button type="submit" color="" className={styles.submitButton}>
                   Submit
                 </Button>
-                <FormFeedback className="text-center">
-                  Incorrect password. Please try again.
-                </FormFeedback>
               </Form>
+              {this.state.isInvalidPassword && (
+                <div className="invalid-feedback d-block">
+                  Incorrect password. Please try again.
+                </div>
+              )}
             </Col>
           </Row>
         </div>

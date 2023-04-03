@@ -88,7 +88,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
           data-sal-once
         >
           <Container className={styles.navContainer}>
-            <Row>
+            <Row className="align-items-center">
               <Col lg="2" xs="6">
                 <Link
                   to="/"

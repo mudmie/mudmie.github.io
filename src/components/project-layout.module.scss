@@ -17,23 +17,30 @@ html {
       }
     }
     h2 {
-      font-size: 24px;
+      font-size: 32px;
       font-weight: 600;
       color: $almost-black-color;
       margin: 0 !important;
       @media (min-width: 576px) {
-        font-size: 32px;
+        font-size: 40px;
       }
       @media (min-width: 1400px) {
-        font-size: 36px;
+        font-size: 48px;
       }
     }
 
     h3 {
-      font-size: 24px;
-      margin: 20px 0 5px 0;
+      font-size: 20px;
+      margin-top: 16px;
+      margin-bottom: 0px;
       font-weight: bold;
       color: $almost-black-color;
+      @media (min-width: 576px) {
+        font-size: 24px;
+      }
+      @media (min-width: 1400px) {
+        font-size: 28px;
+      }
     }
 
     h4 {
@@ -44,12 +51,11 @@ html {
 
     background-color: $beige-color;
     :global .btn {
-      border-color: $taupe-color;
 
       &:hover,
       &:active {
         color: #fff;
-        background-color: $cream-color;
+        background-color: $almost-black-color;
       }
     }
     p {

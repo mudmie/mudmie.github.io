@@ -95,6 +95,8 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                   problems, and using my multidisciplinary knowledge to craft
                   design solutions that improve their experience.
                 </p>
+                <p>
+                </p>
                 <h3 className={styles.moreOfMe}>Getting Personal.</h3>
                 <p className={styles.content}>
                   I was born and raised in Bangkok, but I spend most time living
@@ -110,7 +112,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
             </Row>
           </Container>
         </section>
-        {/* <section className={styles.section3}>
+        <section className={styles.section3}>
           <Container>
             <Row
               className="justify-content-center mt-3"
@@ -186,7 +188,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               </Col>
             </Row>
           </Container>
-        </section> */}
+        </section>
       </Layout>
     );
   }
