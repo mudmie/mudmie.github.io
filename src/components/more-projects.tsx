@@ -19,12 +19,14 @@ export class MoreProjects extends React.Component<MoreProjectsProps, {}> {
       <Container>
         <Row className="justify-content-center mt-3 mb-3">
           <Col lg="12">
-            <h2>More Projects
-            <img src={withPrefix("/images/star.svg")} className={styles.star} />
+            <h2>
+              More Projects
+              <img
+                src={withPrefix("/images/star.svg")}
+                className={styles.star}
+              />
             </h2>
-
           </Col>
-         
         </Row>
         {this.props.projects
           .filter((proj) => proj.name != this.props.currentProject.name)
@@ -36,25 +38,25 @@ export class MoreProjects extends React.Component<MoreProjectsProps, {}> {
 
   private projectRow(project: Project) {
     return (
-      <div key={project.name}>
+      <React.Fragment key={project.name}>
         <Row className={`justify-content-center ${styles.projectRow}`}>
-          <Col lg={"9"}>
+          <Col lg="9" md="6" sm="6">
             <div className={styles.projectTitle}>{project.name}</div>
             <div className={styles.projectDescription}>
               {project.company} / {project.term}
             </div>
           </Col>
-          <Col lg="3" className="text-right">
+          <Col lg="3" md="6" sm="6" className={styles.viewCaseStudyCol}>
             <Link to={project.url} className={styles.viewCaseStudyButton}>
-              <span>View Case Study</span>           
+              <span>View Case Study</span>
               <HiArrowUpRight className={styles.arrowIcon} />
             </Link>
           </Col>
         </Row>
         <Row className={`justify-content-center ${styles.horizontalLineRow}`}>
-          <Col lg={PROJECT_BODY_COLUMN} className="mt-2"></Col>
+          <Col lg="12"></Col>
         </Row>
-      </div>
+      </React.Fragment>
     );
   }
 }

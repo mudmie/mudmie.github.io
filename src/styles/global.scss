@@ -147,4 +147,10 @@ html {
   .highlight {
     box-shadow: $highlight-color 0px -0.6em inset;
   }
+
+  .container {
+    @media (max-width: 575px) {
+      --bs-gutter-x: 3.0rem;
+    }
+  }
 }

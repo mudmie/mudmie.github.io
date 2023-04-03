@@ -2,53 +2,75 @@
 @import "../styles/_fonts.scss";
 @import "../styles/_projects.scss";
 
-.section-1,
 .section-3 {
-  background-color: $blue-color;
-  color: $offwhite-color;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  background-color: $beige-color;
+  color: $almost-black-color;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  // @media (min-width: 768px) {
+  //   padding-left:56px;
+  //   padding-right:56px;
+  //   }
+  // @media (min-width: 1400px) {
+  //     padding-left: 96px;
+  //     padding-right: 96px;
+  //   }
 }
 .section-1 {
-  padding-top: 120px;
+  padding-top: 108px;
+  background-color: $beige-color;
+  color: $almost-black-color;
+
 }
 .section-2 {
-  background-color: $cauliflower-color;
-  padding-top: 50px;
+  background-color: $beige-color;
+  padding-top: 32px;
 }
+
 
 .hello {
-  color: $cauliflower-color;
-  font-size: 24px;
-  text-transform: uppercase;
-}
-.more-of-me {
-  color: $blue-color;
-  text-transform: uppercase;
-}
-
-.design-experience {
-  color: $cauliflower-color;
-  text-transform: uppercase;
-}
-
-.about h2 {
-  color: $brick-color;
+  color: $almost-black-color;
   font-size: 20px;
-
-  @media (min-width: 414px) {
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  @media (min-width: 576px) {
     font-size: 24px;
   }
-  @media (min-width: 1024px) {
-    font-size: 32px;
+}
+
+.more-of-me {
+  color: $almost-black-color;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding-top: 32px;
+  margin-bottom: 8px;
+  @media (min-width: 576px) {
+    font-size: 24px;
+  }
+  @media (min-width: 768px) {
+    padding-top: 0;
+  }
+
+}
+.content{
+  padding-bottom: 16px;
+  margin:0;
+}
+.design-experience {
+  color: $almost-black-color;
+  text-transform: uppercase;
+  font-size: 20px;
+  @media (min-width: 576px) {
+    font-size: 24px;
   }
 }
 
-.smile {
-  text-align: center;
-}
-
-.experience {
+.experience{
+  padding-top: 8px;
+  @media (min-width: 768px) {
+    padding-top: 0;
+  }
 }
 
 .experience-table {
@@ -71,18 +93,4 @@
     font-weight: 400;
     font-size: 12px;
   }
-}
-
-.resume-button {
-  @include cta-button();
-}
-
-@mixin border($side) {
-  border-#{$side}: $section-divider;
-}
-.border-right {
-  @include border(right);
-}
-.border-bottom {
-  @include border(bottom);
 }

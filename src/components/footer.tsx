@@ -10,15 +10,15 @@ export class Footer extends React.Component {
       <footer className={styles.section}>
         <Container className={styles.container}>
           <Row className={styles.footerRow}>
-            <Col lg="6" className={`align-self-center ${styles.footerLeft}`}>
+            <Col sm="6" className={`${styles.footerLeft}`}>
               Designed & partially <br />
               coded by Mudmie
               <br />
-              2023
+              2023.
             </Col>
-            <Col lg="6" className={styles.footerRight}>
-              Let's get in touch!
-              <SocialMediaLinks separator=" " isDarkBackground={false} />
+            <Col sm="6" className={`${styles.footerRight}`}>
+              Let's get in touch.
+             <SocialMediaLinks separator=" " isDarkBackground={false} />
             </Col>
           </Row>
         </Container>

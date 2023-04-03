@@ -5,19 +5,14 @@
   background-color: $beige-color;
   // background: url('../../static/images/noise.png') $green-color;
   // background-size: cover;
-  padding: 160px 24px;
+  padding: 160px 0;
   @media (min-width: 768px) {
-    padding: 180px 56px;
+    padding: 180px 0;
   }
   @media (min-width: 1400px) {
-    padding: 200px 96px;
+    padding: 200px 0;
   }
 }
-
-// .about-div {
-//   border-bottom: 1px solid $beige-color;
-//   padding-bottom: 20px;
-// }
 
 .about-heading {
   font-size: 32px;
@@ -27,9 +22,6 @@
   @media (min-width: 576px) {
     font-size: 40px;
   }
-  // @media (min-width: 768px) {
-  //   font-size: 48px;
-  // }
   @media (min-width: 992px) {
     font-size: 48px;
   }

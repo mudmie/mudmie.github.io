@@ -105,7 +105,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
                   </div>
                 </Link>
               </Col>
-              <Col xs="6" className="d-sm-none text-end">
+              <Col xs="6" className="d-md-none text-end">
                 <NavbarToggler
                   className={styles.navbarToggler}
                   onClick={this.toggle}

@@ -4,14 +4,6 @@
 .section-header,
 .section-project {
   background-color: $beige-color;
-  padding: 0 32px;
-
-  @media (min-width: 768px) {
-    padding: 0 56px;
-  }
-  @media (min-width: 1400px) {
-    padding: 0 96px;
-  }
 }
 
 .section-heading {

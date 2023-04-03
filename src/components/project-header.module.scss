@@ -4,15 +4,18 @@
 html {
   .header {
     min-height: 400px;
-    // padding: 56px 0 32px 0; p
-  }
+}
 
   .company-term {
-    margin-top: 10px;
     font-family: $heading-font;
+    @media (min-width: 992px) {
+      margin-top: 8px;  }
   }
 }
 
+.project-title{
+  font-size: 32px;
+}
 .project-intro{
   padding-bottom: 16px;
 }
@@ -20,13 +23,6 @@ html {
 .summary-section {
   background-color: $beige-color;
   color: $almost-black-color;
-  padding: 24px ;
-  @media (min-width: 768px) {
-    padding:56px;
-  }
-  @media (min-width: 1400px) {
-    padding:96px;
-  }
 }
 
 

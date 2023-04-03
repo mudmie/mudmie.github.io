@@ -2,7 +2,6 @@
 @import "./styles/_projects.scss";
 @import "../styles/_fonts.scss";
 
-
 .project-title {
   font-weight: 600;
   font-family: $heading-font;
@@ -28,13 +27,17 @@
 }
 
 .project-row {
-  box-shadow: inset 0px -1px 0px #191919;
   align-items: center;
   padding: 24px 0;
 }
-
 .horizontal-line-row:not(:last-child) div {
   border-bottom: $section-divider;
+}
+
+.view-case-study-col {
+  @media (min-width: 576px) {
+    text-align: right;
+  }
 }
 
 .view-case-study-button {

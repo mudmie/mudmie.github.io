@@ -22,14 +22,14 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
         <Container className={styles.container}>
           <a id={this.props.id} className={sharedStyles.sectionAnchor} />
           <Row
-            className={`justify-content-between align-items-center ${styles.rowName}`}
+            className={`justify-content-center align-items-center ${styles.rowName}`}
           >
             <Col
               lg="12"
-              data-sal="slide-up"
-              data-sal-duration="400"
-              data-sal-delay="200"
-              data-sal-easing="ease-out-back"
+              // data-sal="slide-up"
+              // data-sal-duration="400"
+              // data-sal-delay="200"
+              // data-sal-easing="ease-out-back"
               // className={`align-self-end ${styles.colAbout}`}
             >
               {/* <div className={styles.aboutDiv}> */}
