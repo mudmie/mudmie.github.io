@@ -63,7 +63,7 @@ export default class ThematicPage extends React.Component<
             <Col lg="8">
               <div className="text-center">
                 <ImageBox
-                  src={this.getImageUrl("current-product.jpg")}
+                  src={this.getImageUrl("current-product.png")}
                   alt=""
                   className="img-fluid"
                 />
@@ -135,7 +135,7 @@ export default class ThematicPage extends React.Component<
             <Col lg="10">
               <div className="text-center">
                 <ImageBox
-                  src={this.getImageUrl("journey-map.jpg")}
+                  src={this.getImageUrl("journey-map.png")}
                   alt=""
                   className="img-fluid"
                 />
@@ -209,7 +209,7 @@ export default class ThematicPage extends React.Component<
             <Col lg="10">
               <div className="text-center">
                 <ImageBox
-                  src={this.getImageUrl("workflow.jpg")}
+                  src={this.getImageUrl("workflow.png")}
                   alt=""
                   className="img-fluid"
                 />
@@ -254,7 +254,7 @@ export default class ThematicPage extends React.Component<
             <Col lg="8">
               <div className="text-center">
                 <ImageBox
-                  src={this.getImageUrl("chatbox-thread.jpg")}
+                  src={this.getImageUrl("chatbox-thread.png")}
                   alt=""
                   className="img-fluid"
                 />
@@ -279,7 +279,7 @@ export default class ThematicPage extends React.Component<
             <Col lg="8">
               <div className="text-center">
                 <ImageBox
-                  src={this.getImageUrl("comment-final.jpg")}
+                  src={this.getImageUrl("comment-final.png")}
                   alt=""
                   className="img-fluid"
                 />
@@ -311,7 +311,7 @@ export default class ThematicPage extends React.Component<
             <Col lg="8">
               <div className="text-center">
                 <ImageBox
-                  src={this.getImageUrl("doc-upload-options.jpg")}
+                  src={this.getImageUrl("doc-upload-options.png")}
                   alt=""
                   className="img-fluid"
                 />
@@ -347,7 +347,7 @@ export default class ThematicPage extends React.Component<
             <Col lg="12">
               <div className="text-center">
                 <ImageBox
-                  src={this.getImageUrl("doc-upload-final.jpg")}
+                  src={this.getImageUrl("doc-upload-final.png")}
                   alt=""
                   className="img-fluid"
                 />

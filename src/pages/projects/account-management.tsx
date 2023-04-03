@@ -2,7 +2,10 @@ import { graphql, withPrefix } from "gatsby";
 import * as React from "react";
 import { Col, Container, Row, Table } from "reactstrap";
 import { ImageBox } from "../../components/image-box";
-import { ProjectLayout, PROJECT_BODY_COLUMN } from "../../components/project-layout";
+import {
+  ProjectLayout,
+  PROJECT_BODY_COLUMN,
+} from "../../components/project-layout";
 import { ProjectPageProps } from "../../models/project-page-props";
 import * as sharedStyles from "./styles.module.scss";
 
@@ -10,66 +13,44 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
   public render() {
     return (
       <ProjectLayout
-        allProjects={this.props.data.allProjects.edges.map(e => e.node)}
+        allProjects={this.props.data.allProjects.edges.map((e) => e.node)}
         currentProject={this.props.data.project.edges[0].node}
         mainImage={this.props.data.mainImage}
       >
         <Container>
           <Row className="justify-content-center">
-            <Col lg={PROJECT_BODY_COLUMN}>
-              <h3>About The Company</h3>
-              <p>
-                PlanGrid has a primary objective to make intuitive and impactful
-                technology for people in the construction industry. Its
-                construction productivity software doesn’t only allow field
-                workers to store, view, and share blueprints, but also enables
-                stakeholders in a project to work together throughout the
-                project life cycle.
-              </p>
-            </Col>
-          </Row>
-          <Row className="justify-content-center">
-            <Col lg={PROJECT_BODY_COLUMN}>
+            <Col lg="6">
               <h3>Background</h3>
               <p>
-                Admin Console is a part of PlanGrid web products that allows IT
-                administrators to add, remove, and manage user accounts as well
-                as to purchase PlanGrid licenses for users who are involved in
-                organization projects.
-              </p>
-              <p>
-                PlanGrid offers multiple types of licenses, and each comes with
-                a different number of sheet storage limit. The licenses range
-                from basic ones that come with limited sheet storage to the most
-                expensive one that allows unlimited sheet storage.
+                IT administrators of companies that purchase PlanGrid's software
+                can add, remove, manage user accounts, and purchase PlanGrid
+                licenses for thier employees.
               </p>
             </Col>
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg={PROJECT_BODY_COLUMN}>
-              <h3>My Roles &amp; Project Goals</h3>
+            <Col lg="6">
+              <h3>Project Goals</h3>
               <p>
                 The main goals of this project were to enhance the user
                 experience for the Admin Console and to introduce a new workflow
                 that allowed the IT Admins to set up organization ownership of
-                user accounts. As a designer, I designed the workflow that will
-                give IT Admins an ability to manage user accounts and redesigned
-                web interfaces using components from PlanGrid’s design system.
+                user accounts.
               </p>
             </Col>
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg={PROJECT_BODY_COLUMN}>
-              <h3>Problems</h3>
-              <p className={sharedStyles.quote}>
+            <Col lg="6">
+              <h3>The Problems</h3>
+              <p>
                 The current system restricts IT Admins to only purchase licenses
                 from a user log page. It also limits their capability to
                 effectively monitor license usage as they are unable to access a
                 list of projects that their users are working on.
               </p>
-              <p>
+              {/* <p>
                 The first problem occurs when IT Admins finds out they don’t
                 have enough license when trying to add new users to the
                 organization. The current process requires them to abandon their
@@ -85,12 +66,12 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 company license to work on their personal or freelance projects.
                 As a result, the company has to unnecessarily pay extra to
                 upgrade licenses for these employees.
-              </p>
+              </p> */}
             </Col>
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg={PROJECT_BODY_COLUMN}>
+            <Col lg="6">
               <h3>The Current Admin Console</h3>
               <p>
                 The current version of Admin Console consists of two major
@@ -99,12 +80,12 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 click "add license" button to buy more licenses and click "new
                 users" button to add more people to the organization.
               </p>
-              <p>
+              {/* <p>
                 From a design perspective, not every part of the Admin Console
                 is built using components from PlanGrid’s design system. For
                 example, the “more options icon” at the end of the row of user
                 log doesn’t exist in other parts of PlanGrid web app.
-              </p>
+              </p> */}
               <Row className="justify-content-center">
                 <Col lg="11">
                   <ImageBox
@@ -117,7 +98,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg={PROJECT_BODY_COLUMN}>
+            <Col lg="6">
               <h3>User Flow</h3>
               <p>
                 Workflow diagram was created to explore and identify different
@@ -134,14 +115,14 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 </Col>
               </Row>
               <p>
-                To make it easier to understand the process, I created a
-                simplified version of the user flow. In the diagram, IT Admins
+                To make it easier to understand the process, I created a simplified version of the user flow.
+                {/*  In the diagram, IT Admins
                 can add new users or manage existing users. If they decide to
                 manage a user, they’ll send a request to manage the user
                 account. If they just want the user to work on company projects,
                 they’ll send an invitation to the user to join the organization.
                 On the other end, the user can accept or reject the request or
-                the invitation.
+                the invitation. */}
               </p>
               <Row className="justify-content-center">
                 <Col lg="11">
@@ -156,7 +137,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="6">
               <h3>Design Process</h3>
               <p>
                 At the beginning of the design process, I sketched wireframes to
@@ -173,7 +154,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 </Col>
               </Row>
               <p>
-                Since the current version of Admin Console didn’t comply with
+                {/* Since the current version of Admin Console didn’t comply with
                 PlanGrid’s design system, I designed a high fidelity prototype
                 using most components from the design system library. Some
                 designs were completely changed to minimize future design work.
@@ -185,7 +166,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
                 endless list. Therefore, I decided to replace the original
                 design with a dropdown. This pattern works with the current list
                 of license options and will also work if additional items are
-                added to the list.
+                added to the list. */}
               </p>
               <Row className="justify-content-center">
                 <Col lg="11">
@@ -200,14 +181,14 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
-              <h3>Usability Testing</h3>
+            <Col lg="6">
+              <h3>Usability Inspection</h3>
               <p className={sharedStyles.quote}>
                 Usability testing was run to observe how users interact with the
                 system when they don’t have enough license to add new users to
-                the organization. Information gained from usability testing
+                {/* the organization. Information gained from usability testing
                 sessions provides meaningful insights that lead to a new design
-                that will enhance an overall user experience.
+                that will enhance an overall user experience. */}
               </p>
 
               <p>
@@ -286,7 +267,7 @@ export default class ACPage extends React.Component<ProjectPageProps, {}> {
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="6">
               <h3>Final Design</h3>
               <p>
                 By combining the testing result and feedback received from the

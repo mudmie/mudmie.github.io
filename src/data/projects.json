@@ -28,7 +28,7 @@
       "Mobile"
     ],
     "duration": "6 Weeks",
-    "myRole": "I worked directly with the CEO and a cross-functional team to define product requirements, design mobile interfaces and experiences, and hand off the design to the engineering team. ",
+    "myRole": "I worked directly with the CEO and a cross-functional team to define product requirements, design mobile interfaces & experiences, and hand off the design to the engineering team. ",
     "results": "The company's total assets under management (AUM) went up over 60% within the first 3 months after the product launched.",
     "url": "/projects/thematic/",
     "imageFolder": "thematic",
@@ -41,30 +41,30 @@
     "term": "2019",
     "description": "Researching construction form creation process, conducting concept test, and designing a web app for users to create custom forms.",
     "type": "Internship",
-    "companyDescription": "voo",
+    "companyDescription": "PlanGrid provides cloud-based solutions to increase productivity in the construnction industry. It became a part of Autodesk Construction Cloud after the acquisition in 2018.",
     "platform": [
       "Web"
     ],
     "duration": "2 Months",
-    "myRole": "",
-    "results": "Lorem ipsum",
+    "myRole": "I was a product design intern on Field Reports, a tool for users to create, submit, and review construction reports. I worked with a PM and researchers to examine form creation process and design a custom form builder feature.",
+    "results": "My research and design initiatives provided a foundation for the team to successfully launched the feature in early 2020.",
     "url": "/projects/custom-form-builder/",
     "imageFolder": "custom-form-builder",
     "isProtected": false,
     "isEnabled": true
   },
   {
-    "name": "Hacker Application Portal",
+    "name": "Application Portal",
     "company": "Hack The North",
     "term": "2019",
     "description": "Designing a comic-themed application portal for thousands of students around the world to apply for Canada's largest hackathon.",
     "type":"Extracurricular" ,
-    "companyDescription": "voo",
+    "companyDescription": "Hack the North is Canada’s biggest hackathon held annually at the University of Waterloo. Every year, over 1,000 students from different parts of the world spend 36 hours to collaboratively design and build projects of their choice.",
     "platform": [
       "Responsive Website"
     ],
     "duration": "2.5 Months",
-    "myRole": "I was a lead designer, working with an application lead, a graphic designer and a team of 4 developers on this project.",
+    "myRole": "I worked with a graphic designer, a team of 4 developers, and an application lead to design the application portal for students to apply to the event.",
     "results": "A working responsive application portal used by over 7000+ applicants around the world to apply for Canada's biggest hackathon.",
     "url": "/projects/hacker-apps/",
     "imageFolder": "hacker-apps",
@@ -77,13 +77,13 @@
     "term": "2018",
     "description": "Building tools for administrators to monitor and manage users accounts in construction projects.",
     "type": "Internship",
-    "companyDescription": "voo",
+    "companyDescription": "PlanGrid offers construction productivity software for field workers to store, view, and share blueprints. The software also enables stakeholders to work together throughout the project life cycle.",
     "platform": [
       "Web",
       "Mobile"
     ],
     "duration": "2 Months",
-    "myRole": "As a lead designer, I worked with the product manager to gather requirements and participated in design critiques to get design feedback. I also ran a usability inspection to test each variation of my design. In the end, I wrote a design spec to hand off the project to a team of remote developers.",
+    "myRole": "I worked with a PM to gather requirements, defined users flow, and designed the interfaces. I also ran a usability inspection to test each variation of my design.",
     "results": "High-fidelity wireframes ready for developers to implement.",
     "url": "/projects/account-management/",
     "imageFolder": "account-management",

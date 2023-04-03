@@ -24,56 +24,17 @@ export default class CustomFormBuilderPage extends React.Component<
       >
         <Container>
           <Row className="justify-content-center">
-            <Col lg="4">
-              <h3>Overview</h3>
-            </Col>
-            <Col lg="8">
-              <p>
-                Autodesk acquired PlanGrid in 2018, but it still continues
-                providing cloud-based solutions to increase productivity in the
-                construction industry.
-              </p>
-              <p>
-                I was a{" "}
-                <span className={sharedStyles.bold}>
-                  product design intern{" "}
-                </span>
-                on <span className={sharedStyles.bold}>Field Reports</span>, a
-                tool for users to create, submit, and review construction
-                reports.
-              </p>
-              <p>
-                I spent 6 weeks working with a product manager, designers,
-                researchers, and developers to examine form creation process and
-                design a{" "}
-                <span className={sharedStyles.bold}>custom form builder</span>{" "}
-                feature.
-              </p>
-              <p>
-                My research and design initiatives{" "}
-                <span className={sharedStyles.bold}>provided a foundation</span>{" "}
-                for the team to{" "}
-                <span className={sharedStyles.bold}>
-                  successfully launched the feature
-                </span>{" "}
-                in early 2020.
-              </p>
-            </Col>
-          </Row>
-
-          <Row className="justify-content-center">
-            <Col lg="4">
+            <Col lg="6">
               <h3>Context</h3>
-            </Col>
-            <Col lg="8">
+
               <p>
                 Because construction work is complex and high-risk,
                 documentation of processes and progress is crucial. There are
                 many types of forms, but Daily Report is the most used ones.
               </p>
               <p>
-                Daily Report provides details of daily activities &amp; events
-                at a worksite. It contains information such as
+                Daily Report provides details of daily activities and events at
+                a worksite. It contains information such as
                 <ul>
                   <li>weather condition</li>
                   <li>work log</li>
@@ -84,10 +45,8 @@ export default class CustomFormBuilderPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="4">
+            <Col lg="6">
               <h3>Current Field Reports</h3>
-            </Col>
-            <Col lg="8">
               <p>
                 PlanGrid offers 2 ways to create reports &mdash; using a
                 built-in daily report feature or upload your own PDF report.
@@ -104,12 +63,12 @@ export default class CustomFormBuilderPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="6" className={sharedStyles.creamBg}>
+            <Col lg="4" className={sharedStyles.creamBg}>
               <p>
                 <span className={sharedStyles.bold}>Built-in Daily Report</span>
                 <br />
                 Select components to set up a report.
-                <div className="text-center">
+                {/* <div className="text-center"> */}
                   <ImageBox
                     src={this.getImageUrl("DR.jpg")}
                     alt=""
@@ -123,39 +82,35 @@ export default class CustomFormBuilderPage extends React.Component<
                     alt=""
                     className="img-fluid"
                   />
-                </div>
+                {/* </div> */}
               </p>
             </Col>
-            <Col lg="6" className={sharedStyles.creamBg}>
+            <Col lg={{ size: 4, offset: 1 }} className={sharedStyles.creamBg}>
               <p>
                 <span className={sharedStyles.bold}>Custom PDF Upload</span>
                 <br />
                 Drop a PDF file to upload.
-                <div className="text-center">
                   <ImageBox
                     src={this.getImageUrl("PDF.jpg")}
                     alt=""
                     className="img-fluid"
                   />
-                  <p>
-                    Once uploaded, the system generates a fillable PDF report.
-                  </p>
-                  <ImageBox
-                    src={this.getImageUrl("PDF1.jpg")}
-                    alt=""
-                    className="img-fluid"
-                  />
-                </div>
+                <p>
+                  Once uploaded, the system generates a fillable PDF report.
+                </p>
+                <ImageBox
+                  src={this.getImageUrl("PDF1.jpg")}
+                  alt=""
+                  className="img-fluid"
+                />
               </p>
             </Col>
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="4">
+            <Col lg="6">
               <h3>Research</h3>
-            </Col>
-            <Col lg="8">
-              <p>
+                          <p>
                 Syncing with the product manager helped me grasp a big picture
                 of the, but I still didn’t have enough details to solve the
                 problem.{" "}
@@ -169,10 +124,8 @@ export default class CustomFormBuilderPage extends React.Component<
                 satisfaction level &amp; pain points of the current process.
               </p>
               <p>
-                <span className={sharedStyles.topicRight}>
-                  Recruiting Participants
-                </span>
-                <br />I worked with{" "}
+                <b>Recruiting Participants</b>
+                                  <br />I worked with{" "}
                 <OutboundLink
                   href="https://www.linkedin.com/in/kimberley-pita"
                   target="_blank"
@@ -184,9 +137,9 @@ export default class CustomFormBuilderPage extends React.Component<
                 research.
               </p>
               <p>
-                <span className={sharedStyles.topicRight}>
-                  Research Methods
-                </span>
+                {/* <span className={sharedStyles.topicRight}> */}
+                  <b>Research Methods</b>
+                {/* </span> */}
                 <br /> I adopted a user-centered design method of{" "}
                 <span className={sharedStyles.bold}>contextual inquiry</span> to
                 reveal the underlying work structure of the form creation
@@ -226,7 +179,7 @@ export default class CustomFormBuilderPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="12" className={sharedStyles.creamBg}>
+            <Col lg="6" className={sharedStyles.creamBg}>
               <p>
                 <span className={sharedStyles.bold}>
                   A summary of the current form creation workflow
@@ -372,13 +325,10 @@ export default class CustomFormBuilderPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="4">
+            <Col lg="6">
               <h3>
-                Designing &amp; <br />
-                Concept Testing
-              </h3>
-            </Col>
-            <Col lg="8">
+                Designing Concepts
+                              </h3>
               <p>
                 With learnings and findings from user research, I explored
                 potential designs and prototyped 3 different concepts. I
@@ -395,7 +345,7 @@ export default class CustomFormBuilderPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="12" className={sharedStyles.creamBg}>
+            <Col lg="8" className={sharedStyles.creamBg}>
               <Row>
                 <Col lg="6">
                   <div className="text-center">
@@ -451,7 +401,7 @@ export default class CustomFormBuilderPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="12" className={sharedStyles.creamBg}>
+            <Col lg="8" className={sharedStyles.creamBg}>
               <Row>
                 <Col lg="6">
                   <div className="text-center">
@@ -486,7 +436,7 @@ export default class CustomFormBuilderPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="12" className={sharedStyles.creamBg}>
+            <Col lg="8" className={sharedStyles.creamBg}>
               <Row>
                 <Col lg="6">
                   <div className="text-center">
@@ -521,13 +471,11 @@ export default class CustomFormBuilderPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="4">
+            <Col lg="6">
               <h3>
-                Concept Testing/ <br />
-                Conclusion
+                Concept Testing & Results
               </h3>
-            </Col>
-            <Col lg="8">
+          
               <p>
                 Overall, users found concept #2 (Item-by-item) to suit their
                 needs the most. The design of concept #2 provided
@@ -553,10 +501,8 @@ export default class CustomFormBuilderPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="4">
+            <Col lg="6">
               <h3>Final Design</h3>
-            </Col>
-            <Col lg="8">
               <p>
                 From the above conclusion, concept #2 was chosen as a final
                 design. I revised the prototype and made it a high-fidelity
@@ -571,7 +517,7 @@ export default class CustomFormBuilderPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="12" className={sharedStyles.creamBg}>
+            <Col lg="8" className={sharedStyles.creamBg}>
               <p>
                 <span className={sharedStyles.bold}>
                   {" "}
@@ -590,7 +536,7 @@ export default class CustomFormBuilderPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="12" className={sharedStyles.creamBg}>
+            <Col lg="8" className={sharedStyles.creamBg}>
               <p>
                 <span className={sharedStyles.bold}>
                   {" "}
