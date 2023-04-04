@@ -63,11 +63,11 @@ export default class CustomFormBuilderPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="4" className={sharedStyles.creamBg}>
+            <Col lg="3">
               <p>
                 <span className={sharedStyles.bold}>Built-in Daily Report</span>
                 <br />
-                Select components to set up a report.
+                Set up a report.
                 {/* <div className="text-center"> */}
                   <ImageBox
                     src={this.getImageUrl("DR.jpg")}
@@ -85,7 +85,7 @@ export default class CustomFormBuilderPage extends React.Component<
                 {/* </div> */}
               </p>
             </Col>
-            <Col lg={{ size: 4, offset: 1 }} className={sharedStyles.creamBg}>
+            <Col lg={{ size: 3}}>
               <p>
                 <span className={sharedStyles.bold}>Custom PDF Upload</span>
                 <br />
@@ -193,8 +193,8 @@ export default class CustomFormBuilderPage extends React.Component<
             </Col>
           </Row>
 
-          <Row>
-            <Col lg="6" className={sharedStyles.creamBg}>
+          <Row className="justify-content-center">
+            <Col lg="6" >
               <p>
                 <span className={sharedStyles.bold}> Paper Form</span>
                 <br />A traditional way to create forms. Companies try to move
@@ -225,7 +225,10 @@ export default class CustomFormBuilderPage extends React.Component<
                 Costly to print
               </p>
             </Col>
-            <Col lg="6" className={sharedStyles.creamBg}>
+            </Row>
+
+            <Row className="justify-content-center">
+            <Col lg="6">
               <p>
                 <span className={sharedStyles.bold}>Excel Form</span>
                 <br />
@@ -257,8 +260,9 @@ export default class CustomFormBuilderPage extends React.Component<
                 High effort to transfer data from paper forms
               </p>
             </Col>
-
-            <Col lg="6" className={sharedStyles.creamBg}>
+            </Row>
+            <Row className="justify-content-center">
+            <Col lg="6">
               <p>
                 <span className={sharedStyles.bold}>PDF Form</span>
                 <br />
@@ -290,7 +294,9 @@ export default class CustomFormBuilderPage extends React.Component<
                 Requires additional software to complete the process
               </p>
             </Col>
-            <Col lg="6" className={sharedStyles.creamBg}>
+            </Row>
+            <Row className="justify-content-center">
+            <Col lg="6">
               <p>
                 <span className={sharedStyles.bold}>PlanGrid Native Form</span>
                 <br />
@@ -345,7 +351,7 @@ export default class CustomFormBuilderPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="8" className={sharedStyles.creamBg}>
+            <Col lg="8">
               <Row>
                 <Col lg="6">
                   <div className="text-center">
@@ -401,7 +407,7 @@ export default class CustomFormBuilderPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="8" className={sharedStyles.creamBg}>
+            <Col lg="8" >
               <Row>
                 <Col lg="6">
                   <div className="text-center">
@@ -436,7 +442,7 @@ export default class CustomFormBuilderPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="8" className={sharedStyles.creamBg}>
+            <Col lg="8" >
               <Row>
                 <Col lg="6">
                   <div className="text-center">
@@ -517,7 +523,7 @@ export default class CustomFormBuilderPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="8" className={sharedStyles.creamBg}>
+            <Col lg="6" >
               <p>
                 <span className={sharedStyles.bold}>
                   {" "}
@@ -536,7 +542,7 @@ export default class CustomFormBuilderPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="8" className={sharedStyles.creamBg}>
+            <Col lg="6">
               <p>
                 <span className={sharedStyles.bold}>
                   {" "}

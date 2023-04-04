@@ -20,7 +20,7 @@ export class ProjectCard extends React.Component<ProjectCardProps, {}> {
         data-sal-delay="200"
         data-sal-easing="ease-out-back"
       >
-        <Col md="6">
+        <Col md="6" lg="6">
           <h3 className={styles.projectTitle}>{this.props.project.name}</h3>
           <div className={styles.term}>
             {this.props.project.company} / {this.props.project.term}
@@ -36,7 +36,7 @@ export class ProjectCard extends React.Component<ProjectCardProps, {}> {
           </Link>
         </Col>
 
-        <Col md="6">
+        <Col md="6" lg={{size:5, offset:1}}>
           <Link to={this.props.project.url}>
             <img
               className={`img-fluid ${styles.thumbnailImage}`}

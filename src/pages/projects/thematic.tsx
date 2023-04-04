@@ -155,7 +155,7 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="3" className={sharedStyles.creamBg}>
+            <Col lg="3">
               <p>
                 <span className={sharedStyles.green}>
                   <AiOutlineCheckCircle />
@@ -173,7 +173,7 @@ export default class ThematicPage extends React.Component<
                 />
               </div>
             </Col>
-            <Col lg={{ size: 3, offset: 1 }} className={sharedStyles.creamBg}>
+            <Col lg={{ size: 3 }}>
               <p>
                 <span className={sharedStyles.red}>
                   <AiOutlineCloseCircle />
@@ -223,7 +223,7 @@ export default class ThematicPage extends React.Component<
           <Row className="justify-content-center">
             <Col
               lg="3"
-              className={`pb-0 ${sharedStyles.creamBg} ${sharedStyles.figureNoMarginBottom}`}
+              className={`pb-0 ${sharedStyles.figureNoMarginBottom}`}
             >
               <p>
                 <span className={sharedStyles.bold}> Selecting Themes</span>
@@ -240,8 +240,8 @@ export default class ThematicPage extends React.Component<
               </div>
             </Col>
             <Col
-              lg={{ size: 3, offset: 1 }}
-              className={`pb-0 ${sharedStyles.creamBg} ${sharedStyles.figureNoMarginBottom}`}
+              lg={{ size: 3 }}
+              className={`pb-0 ${sharedStyles.figureNoMarginBottom}`}
             >
               <p>
                 <span className={sharedStyles.bold}>Unselecting Themes</span>
@@ -288,7 +288,7 @@ export default class ThematicPage extends React.Component<
           <Row className="justify-content-center">
             <Col
               lg="4"
-              className={`pb-0 ${sharedStyles.creamBg} ${sharedStyles.figureNoMarginBottom}`}
+              className={`pb-0 ${sharedStyles.figureNoMarginBottom}`}
             >
               <p>
                 <span className={sharedStyles.bold}>Selecting Themes</span>
@@ -305,7 +305,7 @@ export default class ThematicPage extends React.Component<
             </Col>
             <Col
               lg="4"
-              className={`pb-0 ${sharedStyles.creamBg} ${sharedStyles.figureNoMarginBottom}`}
+              className={`pb-0 ${sharedStyles.figureNoMarginBottom}`}
             >
               <p>
                 <span className={sharedStyles.bold}>Unselecting Themes</span>
@@ -322,7 +322,7 @@ export default class ThematicPage extends React.Component<
             </Col>
             <Col
               lg="4"
-              className={`pb-0 ${sharedStyles.creamBg} ${sharedStyles.figureNoMarginBottom}`}
+              className={`pb-0  ${sharedStyles.figureNoMarginBottom}`}
             >
               <p>
                 <span className={sharedStyles.bold}>Viewing Information</span>
@@ -359,7 +359,7 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="4" className={sharedStyles.creamBg}>
+            <Col lg="4" >
               <p>
                 <span className={sharedStyles.bold}> Design #1 </span>
                 <br />
@@ -374,7 +374,7 @@ export default class ThematicPage extends React.Component<
                 />
               </div>
             </Col>
-            <Col lg={{ size: 4 }} className={sharedStyles.creamBg}>
+            <Col lg={{ size: 4 }}>
               <p>
                 <span className={sharedStyles.bold}> Design #2</span>
                 <br />
@@ -388,7 +388,7 @@ export default class ThematicPage extends React.Component<
                 />
               </div>
             </Col>
-            <Col lg={{ size: 4 }} className={sharedStyles.creamBg}>
+            <Col lg={{ size: 4 }}>
               <p>
                 <span className={sharedStyles.bold}>Design #3</span>
                 <br />
@@ -453,7 +453,7 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="6" className={sharedStyles.creamBg}>
+            <Col lg="6" >
               <p>
                 Tapping additional themes after reaching the limit will trigger
                 an alert box. The message in the box will let the users know

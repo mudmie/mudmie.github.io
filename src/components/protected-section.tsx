@@ -33,7 +33,15 @@ const passwordHashCookieName = "ProjectHash";
 
 // To create one, use https://www.xorbin.com/tools/sha256-hash-calculator
 const allowedHashes = [
+  "18c4cff343e1341cc3b42debdc726fe6aff0e1cc8c3790108a8c76f1c141d866", // hello24
   "62d62d8d9a98a24452b8414e5546d7f9516cfe542c01ba965494387c71f0d388", // hello29
+  "b8bf1a14e8a081cb982f19bc85f91645763efbb4082977085607afb7247bc30d", // hello39
+  "a43da1face8364a17470b39ad51fe000c93c5a39141fe1c9558d3bedeb45baa3", // hello45
+  "ae47e2f8b7c94d47d309a1f3925177d536829d2fb8865d2ebd446eb23ef9b7b3", // hello49
+  "f825f420d21f99a6963b3d0dd6122b1f0a0b34976d8595a0f4de86a2ecf262a0", // hello59 
+  "f90a55adfaf69f553093bf6746512d04df3e45816fcac76914bb2a9fb0d9e8c1", // hello65
+  "a7d92f43e9e90cea0dd1728315ffa4820d18083c57e5239adebf6c1b3b77b475", // hello99
+
 ];
 
 export class ProtectedSection extends React.Component<
