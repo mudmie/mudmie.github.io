@@ -11,10 +11,10 @@
     ],
     "duration": "6 Weeks",
     "myRole": "As a lead designer on the case scheduling team, I led the design of the Comments & Document Upload features from discovery to launch.",
-    "results": "The feature adoption increased by 185% — 15 health systems signed contracts case scheduling module to their workflow.",
+    "results": "The feature adoption increased by about 175%. The number of customers who signed contract to adopt this feature went up from 9 to 25.",
     "url": "/projects/scheduling/",
     "imageFolder": "scheduling",
-    "isProtected": true,
+    "isProtected": false,
     "isEnabled": true
   },
   {

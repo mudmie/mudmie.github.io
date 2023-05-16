@@ -52,7 +52,7 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
             >
               <p className={styles.aboutPara}>
                 A Seattle-based product designer with experience designing B2B
-                and B2C products in healthcare, fintech, construction & more.{" "}
+                and B2C products in health tech, fintech, construction tech & more.{" "}
               </p>
               {/* Social Media Links */}
               {/* <SocialMediaLinks separator="NEW_LINE" isDarkBackground={true} /> */}
