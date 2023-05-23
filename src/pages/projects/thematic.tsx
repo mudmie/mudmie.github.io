@@ -491,7 +491,59 @@ export default class ThematicPage extends React.Component<
                 beneficial to the users in the future.
               </p>
             </Col>
+            {/* <Col lg="12">
+              <div className="text-center">
+                <ImageBox
+                  src={this.getImageUrl("../asterisk.svg")}
+                  alt=""
+                  className="img-fluid"
+                />
+              </div>
+            </Col> */}
+          </Row>          
+          {/* <Row className="justify-content-center">
+            <Col lg="12">
+              <h1>Other things I designed at Jitta Wealth</h1>
+            </Col>
           </Row>
+          <Row className="justify-content-center">
+            <Col md="6" lg="6">
+              <h3>Project Name</h3>
+              <p>
+                Brandi believes photos are metaphors, making the abstract
+                concrete and mystifying the mundane. They believe photography is
+                a conversation between the photographer, the subject, and those
+                who will view these images for years to come. Brandi relishes in
+                adding to the archive of humanity.
+              </p>
+            </Col>
+            <Col md="6" lg={{ size: 5, offset: 1 }}>
+              <ImageBox
+                src={this.getImageUrl("sample.png")}
+                alt=""
+                className="img-fluid"
+              />
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col md="6" lg="6">
+              <h3>Project Name</h3>
+              <p>
+                Brandi believes photos are metaphors, making the abstract
+                concrete and mystifying the mundane. They believe photography is
+                a conversation between the photographer, the subject, and those
+                who will view these images for years to come. Brandi relishes in
+                adding to the archive of humanity.
+              </p>
+            </Col>
+            <Col md="6" lg={{ size: 5, offset: 1 }}>
+              <ImageBox
+                src={this.getImageUrl("sample.png")}
+                alt=""
+                className="img-fluid"
+              />
+            </Col>
+          </Row> */}
         </Container>
       </ProjectLayout>
     );

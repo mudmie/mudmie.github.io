@@ -5,6 +5,9 @@ h1 {
   font-weight: 600;
   margin: 16px 0 16px 0;
 }
+h2.others{
+  padding-bottom: 24px;
+}
 .term {
   font-family: $body-font;
   font-weight: 400;
@@ -50,6 +53,19 @@ h1 {
 }
 .red {
   color: #d7737d;
+}
+
+.asterisk {
+  width: 32px;
+  @media (min-width: 576px) {
+    width: 40px;
+  }
+  @media (min-width: 992px) {
+    width: 48px;
+  }
+  @media (min-width: 1440px) {
+    width: 56px;
+  }
 }
 
 .learning {

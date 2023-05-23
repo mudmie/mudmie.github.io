@@ -58,7 +58,6 @@ export default class ThematicPage extends React.Component<
             </Col>
           </Row>
 
-
           <Row className="justify-content-center">
             <Col lg="8">
               <div className="text-center">
@@ -337,9 +336,9 @@ export default class ThematicPage extends React.Component<
                   all users poitned out the explicit menu options and could
                   easily switch to the comment features
                 </b>
-                . Based on the test results and feedback received, I decided to 
-                discard the side navigation concenpt and instead use the existing 
-                tab component in the final design.
+                . Based on the test results and feedback received, I decided to
+                discard the side navigation concenpt and instead use the
+                existing tab component in the final design.
               </p>
             </Col>
           </Row>
@@ -353,7 +352,122 @@ export default class ThematicPage extends React.Component<
                 />
               </div>
             </Col>
+            <Col lg="12">
+              <div className="text-center">
+                <ImageBox
+                  src={this.getImageUrl("../asterisk.svg")}
+                  alt=""
+                  className="img-fluid"
+                />
+              </div>
+            </Col>
           </Row>
+
+          <Row className="justify-content-center">
+            <Col lg="12">
+              <h2 className={sharedStyles.others}>Other things I've designed at LeanTaaS</h2>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col md="6">
+              <h3>Design System</h3>
+              <p>
+                Working collaboratively with designers and engineers to create
+                component libraries and develop the company's first design
+                system.
+              </p>
+            </Col>
+            <Col md="6" lg={{ size: 5, offset: 1 }}>
+              <ImageBox
+                src={this.getImageUrl("ds.png")}
+                alt=""
+                className="img-fluid"
+              />
+            </Col>
+
+          </Row>
+          <Row className="justify-content-center">
+            <Col md="6">
+              <h3> Case Coordination Tool</h3>
+              <p>
+                Designing a customizable table for various roles to oversee and
+                manage surgical cases. Users can filter the table, rearrange,
+                show or hide columns, and edit information directly in the
+                table.
+              </p>
+            </Col>
+            <Col md="6" lg={{ size: 5, offset: 1 }} >
+              <ImageBox
+                src={this.getImageUrl("case-list.gif")}
+                alt=""
+                className="img-fluid"
+              />
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col md="6">
+              <h3>Analytics dashboard</h3>
+              <p>
+                Translating datasets form Tableau and designing data
+                visualizations for case length accuracy. This information allows
+                hospital management to optimize the scheduled surgery time.
+              </p>
+            </Col>
+            <Col md="6" lg={{ size: 5, offset: 1 }}>
+              <ImageBox
+                src={this.getImageUrl("data.png")}
+                alt=""
+                className="img-fluid"
+              />
+            </Col>
+          </Row>
+          {/* <Row className="justify-content-center">
+            <Col md="4" lg="4">
+              <ImageBox
+                src={this.getImageUrl("sample.png")}
+                alt=""
+                className="img-fluid"
+              />
+              <h3>Project Name</h3>
+              <p>
+                Brandi believes photos are metaphors, making the abstract
+                concrete and mystifying the mundane. They believe photography is
+                a conversation between the photographer, the subject, and those
+                who will view these images for years to come. Brandi relishes in
+                adding to the archive of humanity.
+              </p>
+            </Col>
+            <Col md="4" lg="4">
+              <ImageBox
+                src={this.getImageUrl("sample.png")}
+                alt=""
+                className="img-fluid"
+              />
+              <h3>Project Name</h3>
+              <p>
+                Brandi believes photos are metaphors, making the abstract
+                concrete and mystifying the mundane. They believe photography is
+                a conversation between the photographer, the subject, and those
+                who will view these images for years to come. Brandi relishes in
+                adding to the archive of humanity.
+              </p>
+            </Col>
+            <Col md="4" lg="4">
+              <ImageBox
+                src={this.getImageUrl("sample.png")}
+                alt=""
+                className="img-fluid"
+              />
+              <h3>Project Name</h3>
+              <p>
+                Brandi believes photos are metaphors, making the abstract
+                concrete and mystifying the mundane. They believe photography is
+                a conversation between the photographer, the subject, and those
+                who will view these images for years to come. Brandi relishes in
+                adding to the archive of humanity.
+              </p>
+            </Col>
+          </Row> */}
         </Container>
       </ProjectLayout>
     );
