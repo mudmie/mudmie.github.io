@@ -6,7 +6,7 @@
   "dependencies": {
     "@types/sha.js": "^2.4.0",
     "bootstrap": "^5.2.3",
-    "gatsby": "^5.8.0",
+    "gatsby": "^5.9.1",
     "gatsby-plugin-image": "^3.8.0",
     "gatsby-plugin-hotjar": "^1.1.1",
     "gatsby-plugin-react-helmet": "^6.8.0",
