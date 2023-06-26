@@ -51,7 +51,7 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
               // data-sal-easing="ease-out-back"
             >
               <p className={styles.aboutPara}>
-                A Seattle-based product designer with experience designing B2B
+                A product designer with experience designing B2B
                 and B2C products in health tech, fintech, construction tech & more.{" "}
               </p>
               {/* Social Media Links */}
