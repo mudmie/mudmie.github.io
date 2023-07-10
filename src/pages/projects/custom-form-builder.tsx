@@ -552,12 +552,35 @@ export default class CustomFormBuilderPage extends React.Component<
                 If assigned to a form, users will be able to fill out the form
                 on both web app &amp; tablets. They will see a list of questions
                 with a pre-defined response type specified by the form creator.
-              </p>
+                <br />
+                <br />
+
+<span className={sharedStyles.bold}>
+                For iOS 
+                </span>
               <ImageBox
-                src={this.getImageUrl("final-submitter.png")}
+                src={this.getImageUrl("ios.png")}
                 alt=""
                 className="img-fluid"
               />
+              <span className={sharedStyles.bold}>
+                For Android 
+                </span>
+              <ImageBox
+                src={this.getImageUrl("Android.png")}
+                alt=""
+                className="img-fluid"
+              />
+              <span className={sharedStyles.bold}>
+                For Windows 
+                </span>
+              <ImageBox
+                src={this.getImageUrl("Windows.png")}
+                alt=""
+                className="img-fluid"
+              />
+                            </p>
+
             </Col>
           </Row>
         </Container>
