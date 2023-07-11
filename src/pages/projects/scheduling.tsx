@@ -23,7 +23,7 @@ export default class ThematicPage extends React.Component<
         mainImage={this.props.data.mainImage}
       >
         <Container>
-          <Row className="justify-content-center">
+          {/* <Row className="justify-content-center">
             <Col lg="6">
               <h3>Context</h3>
               <p>
@@ -36,7 +36,7 @@ export default class ThematicPage extends React.Component<
                 patient information to the hospitals.
               </p>
             </Col>
-          </Row>
+          </Row> */}
 
           <Row className="justify-content-center">
             <Col lg="6">
@@ -52,14 +52,14 @@ export default class ThematicPage extends React.Component<
               </p>
               <p>
                 One of our KPIs was to{" "}
-                <b>increase case scheduling faeature adoption rate</b> by
+                <b>increase case scheduling faeture adoption rate</b> by
                 providing more the functionalities to the existing product.
               </p>
             </Col>
           </Row>
-
+{/* 
           <Row className="justify-content-center">
-            <Col lg="8">
+            <Col lg="6">
               <div className="text-center">
                 <ImageBox
                   src={this.getImageUrl("current-product.png")}
@@ -68,30 +68,36 @@ export default class ThematicPage extends React.Component<
                 />
               </div>
             </Col>
-          </Row>
+          </Row> */}
 
           <Row className="justify-content-center">
             <Col lg="6">
               <h3>Research & Discovery</h3>
 
               <p>
-                I <b>interviewed</b> 10+ groups of clinic, hospital, and
+                I shadowed and interviewed 10+ groups of clinic, hospital, and
                 pre-admission schedulers to understand their worlflows, needs,
-                and pain points. I also <b>shadowed</b> {""}
-                schedulers onsite to observe how they use our products and
-                interact with different roles.
+                and pain points. 
               </p>
-              <p>
+              {/* <p>
                 Through this process, I learned that{" "}
                 <b>surgery scheduling is much more complex</b>
                 {""} than I had originally thought. Our{" "}
                 <b>current product only covers a portion</b> of the entire
                 workflow.
+              </p> */}
+ <p>
+                Through this process, I learned that{" "} majority of the pain
+                points in surgery scheduling came from {" "}
+                <b>
+                  manual activities, coordination difficulties, duplicated work,
+                  and delays caused by missing information.{" "}
+                </b>
               </p>
             </Col>
           </Row>
 
-          <Row className="justify-content-center">
+          {/* <Row className="justify-content-center">
             <Col lg="6">
               <h3>Mapping User Journey</h3>
 
@@ -127,11 +133,11 @@ export default class ThematicPage extends React.Component<
                   the use of multiple software applications
                 </li>
               </ul> */}
-            </Col>
-          </Row>
+            {/* </Col>
+          </Row> */} 
 
-          <Row className="justify-content-center">
-            <Col lg="10">
+          {/* <Row className="justify-content-center">
+            <Col lg="6">
               <div className="text-center">
                 <ImageBox
                   src={this.getImageUrl("journey-map.png")}
@@ -140,7 +146,7 @@ export default class ThematicPage extends React.Component<
                 />
               </div>
             </Col>
-          </Row>
+          </Row> */}
 
           {/* <Row className="justify-content-center">
             <Col lg="6" className={sharedStyles.creamBg}>
@@ -205,7 +211,7 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col lg="6">
               <div className="text-center">
                 <ImageBox
                   src={this.getImageUrl("workflow.png")}
@@ -343,7 +349,7 @@ export default class ThematicPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="12">
+            <Col lg="8">
               <div className="text-center">
                 <ImageBox
                   src={this.getImageUrl("doc-upload-final.png")}
