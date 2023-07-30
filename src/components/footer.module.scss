@@ -1,4 +1,5 @@
 @import "../styles/_colors.scss";
+@import "../styles/_fonts.scss";
 
 html {
   .footer {
@@ -7,15 +8,41 @@ html {
 }
 
 .section {
-  background: $cauliflower-color;
+  background: $almost-black-color;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @media (min-width: 768px) {
+    padding: 32px 56px;
+  }
+  @media (min-width: 1400px) {
+    padding: 32px 96px;
+  }
 }
-.container {
+
+
+.footer-left {
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: $heading-font;
+  color: $offwhite-color;
+  padding-bottom: 16px;
+  // padding: 0 0 24px 0;
+  @media (min-width: 576px) {
+    padding-bottom: 0;
+  }
 }
-.footer-row {
- min-height: 100px;
-}
-.footer-col {
-  text-align: center;
-  font-weight: 700;
-  font-size: 16px;
+.footer-right {
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: $heading-font;
+  color: $offwhite-color;
+  // padding: 0;
+  @media (min-width: 576px) {
+    text-align: right;
+  }
 }

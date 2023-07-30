@@ -10,9 +10,12 @@ import {
   NavbarToggler,
   NavbarBrand,
   Container,
+  Row,
+  Col,
 } from "reactstrap";
 import { RESUME_FILE_NAME } from "./constants";
 import * as styles from "./header.module.scss";
+import ProgressBar from "react-scroll-progress-bar";
 
 export interface HeaderProps {
   isDarkMode: boolean;
@@ -65,13 +68,14 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
     } else {
       togglerButtonText = (
         <span>
-          <FaBars /> menu
+          <FaBars /> MENU
         </span>
       );
     }
     return (
       <header>
         <Navbar
+          container={false}
           className={styles.navbar}
           light={!this.props.isDarkMode}
           dark={this.props.isDarkMode}
@@ -83,74 +87,95 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
           data-sal-easing="ease"
           data-sal-once
         >
-          <Link
-            to="/"
-            className="navbar-brand"
-            onClick={() => {
-              this.collapseNav();
-            }}
-          >
-            <div className={styles.brand}>
-              <img
-                src={withPrefix("/images/logo.svg")}
-                className={styles.logo}
-              />
-            </div>
-          </Link>
-          <NavbarToggler className={styles.navbarToggler} onClick={this.toggle}>
-            {togglerButtonText}
-          </NavbarToggler>
-
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
+          <Container className={styles.navContainer}>
+            <Row className="align-items-center">
+              <Col lg="2" xs="6">
                 <Link
-                  className={`nav-link ${styles.navLink}`}
                   to="/"
+                  className={`navbar-brand ${styles.navbarBrand}`}
                   onClick={() => {
                     this.collapseNav();
                   }}
                 >
-                  Home
+                  <div className={styles.brand}>
+                    <img
+                      src={withPrefix("/images/new-logo.svg")}
+                      className={styles.logo}
+                    />
+                  </div>
                 </Link>
-              </NavItem>
-              <NavItem>
-                <Link
-                  className={`nav-link ${styles.navLink}`}
-                  to="/#projects"
-                  onClick={() => {
-                    this.collapseNav();
-                  }}
+              </Col>
+              <Col xs="6" className="d-md-none text-end">
+                <NavbarToggler
+                  className={styles.navbarToggler}
+                  onClick={this.toggle}
                 >
-                  Projects
-                </Link>
-              </NavItem>
-              <NavItem>
-                <Link
-                  className={`nav-link ${styles.navLink}`}
-                  to="/about"
-                  onClick={() => {
-                    this.collapseNav();
-                  }}
+                  {togglerButtonText}
+                </NavbarToggler>
+              </Col>
+              <Col>
+                <Collapse
+                  isOpen={this.state.isOpen}
+                  navbar
+                  className="justify-content-end"
                 >
-                  About
-                </Link>
-              </NavItem>
+                  <Nav navbar>
+                    <NavItem>
+                      <Link
+                        className={`nav-link ${styles.navLink}`}
+                        to="/"
+                        onClick={() => {
+                          this.collapseNav();
+                        }}
+                      >
+                        Home
+                      </Link>
+                    </NavItem>
+                    <NavItem>
+                      <Link
+                        className={`nav-link ${styles.navLink}`}
+                        to="/#projects"
+                        onClick={() => {
+                          this.collapseNav();
+                        }}
+                      >
+                        Projects
+                      </Link>
+                    </NavItem>
+                    <NavItem>
+                      <Link
+                        className={`nav-link ${styles.navLink}`}
+                        to="/about"
+                        onClick={() => {
+                          this.collapseNav();
+                        }}
+                      >
+                        About
+                      </Link>
+                    </NavItem>
 
-              <NavItem>
-                <OutboundLink
-                  href={withPrefix(RESUME_FILE_NAME)}
-                  className={`nav-link ${styles.navLink}`}
-                  target="_blank"
-                  onClick={() => {
-                    this.collapseNav();
-                  }}
-                >
-                  Resume
-                </OutboundLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
+                    <NavItem>
+                      <OutboundLink
+                        href="https://read.cv/mudmie"
+                        // href={withPrefix(RESUME_FILE_NAME)}
+                        className={`nav-link ${styles.navLink}`}
+                        target="_blank"
+                        onClick={() => {
+                          this.collapseNav();
+                        }}
+                      >
+                        Resume
+                      </OutboundLink>
+                    </NavItem>
+                  </Nav>
+                </Collapse>
+              </Col>
+            </Row>
+          </Container>
+          <div className={styles.scrollProgress}>
+            {" "}
+            <ProgressBar bgcolor="#FC7E55" height="10" />
+          </div>
         </Navbar>
       </header>
     );

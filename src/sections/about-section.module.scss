@@ -2,92 +2,58 @@
 @import "../styles/_fonts.scss";
 
 .section {
-  background-color: $ocean-color;
-  padding-top: 100px;
+  background-color: $beige-color;
+  // background: url('../../static/images/noise.png') $green-color;
+  // background-size: cover;
+  padding: 160px 0;
+  @media (min-width: 768px) {
+    padding: 180px 0;
+  }
+  @media (min-width: 1400px) {
+    padding: 200px 0;
+  }
 }
 
-.container {
-  padding-bottom: 100px;
-  // background: url("../../static/images/glow_bg.png");
-  // background-size: 75%;
-  // background-repeat: no-repeat;
-  // background-position: 100% 50%;
+.about-heading {
+  font-size: 32px;
+  font-weight: 600;
+  color: $almost-black-color;
+
+  @media (min-width: 576px) {
+    font-size: 40px;
+  }
+  @media (min-width: 992px) {
+    font-size: 48px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 56px;
+  }
+}
+
+.asterisk {
+  width: 32px;
+  @media (min-width: 576px) {
+    width: 40px;
+  }
+  @media (min-width: 992px) {
+    width: 48px;
+  }
+  @media (min-width: 1440px) {
+    width: 56px;
+  }
 }
 
 .about-para {
-  color: $cauliflower-color;
-}
-
-.row-about {
-  @media (orientation: landscape) {
-  min-height: 60vh;
+  color: $almost-black-color;
+  font-family: $heading-font;
+  font-size: 20px;
+  @media (min-width: 576px) {
+    font-size: 28px;
   }
-}
-
-.col-about {
-  flex-grow: 1;
   @media (min-width: 992px) {
-    flex-grow: inherit;
+    font-size: 32px;
   }
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
-
-  &::after {
-    @media (min-width: 992px) {
-      content: " ";
-      display: block;
-      border-left: 1px solid $cauliflower-color;
-      height: 280px;
-      margin-top: 30px;
-      left: 0;
-      width: 20px;
-    }
-  }
-}
-.about-heading {
-  font-size: 32px;
-  color: $cauliflower-color;
-  @media (min-width: 414px) {
-    font-size: 40px;
-  }
-  @media (min-width: 768px) {
-    font-size: 64px;
-  }
-  @media (min-width: 1024px) {
-    font-size: 64px;
-  }
-  @media (min-width: 1440px) {
-    font-size: 72px;
-  }
-}
-.subheading {
-  max-width: 86%;
-}
-
-.col-info {
-  position: relative;
-  margin-bottom: 50px;
-  a {
-    &,
-    &:visited,
-    &:active {
-      color: $cauliflower-color;
-    }
-    &:hover {
-      color: $cauliflower-color;
-    }
-  }
-
-  &::before {
-    @media (min-width: 992px) {
-      content: " ";
-      display: block;
-      border-left: 1px solid $cauliflower-color;
-      height: 300px;
-      bottom: 0;
-      right: 0;
-      width: 20px;
-    }
+  @media (min-width: 1200px) {
+    font-size: 36px;
   }
 }

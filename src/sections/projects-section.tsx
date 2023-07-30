@@ -42,16 +42,21 @@ export class ProjectsSection extends React.Component<
         <section className={styles.sectionHeader}>
           <Container className={styles.container}>
             <a id={this.props.id} className={sharedStyles.sectionAnchor} />
-            <Row>
-              <Col
+            <Row >
+              <Col lg="12"
                 data-sal="slide-up"
                 data-sal-duration="400"
                 data-sal-delay="600"
                 data-sal-easing="ease-out-back"
               >
-                <h2 className={styles.sectionHeading}>Featured Projects</h2>
+                <h2 className={styles.sectionHeading}>Featured Projects
+                <img
+                  src={withPrefix("/images/star.svg")}
+                  className={styles.star}
+                /></h2>
               </Col>
-            </Row>
+              
+                          </Row>
           </Container>
         </section>
         {this.props.projects
@@ -59,13 +64,11 @@ export class ProjectsSection extends React.Component<
           .map((proj, i) => (
             <section
               className={
-                i % 2 == 0
-                  ? styles.sectionProjectEven
-                  : styles.sectionProjectOdd
+                styles.sectionProject + (i == 0 ? " " + styles.first : "")
               }
               key={proj.name}
             >
-              <Container>
+              <Container className={styles.container}>
                 <ProjectCard project={proj} />
               </Container>
             </section>

@@ -3,6 +3,7 @@ export interface Project {
   company: string;
   term: string;
   description: string;
+  companyDescription: string;
   type: string;
   platform: string[];
   duration: string;

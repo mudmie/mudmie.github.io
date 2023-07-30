@@ -9,7 +9,6 @@ import { StaticImage } from "gatsby-plugin-image";
 import { Dash } from "../components/dash";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import { SocialMediaLinks } from "../components/social-media-links";
-import { FaRegSmile } from "react-icons/fa";
 import { RESUME_FILE_NAME } from "../components/constants";
 import { BsArrowUpRight } from "react-icons/bs";
 
@@ -41,16 +40,17 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               data-sal-easing="ease-out-back"
             >
               <Col lg="4">
-                <h2 className={styles.hello}>Hello, I’m Mudmie.</h2>
+                <h2 className={styles.hello}>
+                  I'm Mudmie,
+                  <br />a product designer.
+                </h2>
               </Col>
               <Col lg="8">
                 <p>
-                  I'm a Seattle-based prdocut designer with experience designing
-                  both B2B & B2C products across multiple industries.
-                </p>
-                <p>
-                  I combine system thinking and user-centered design to craft
-                  product experience that make people's lives easier.
+                  With a background in engineering, I approach problem solving
+                  from a holistic perspective and combine system thinking with
+                  user-centered design to craft product experience that make
+                  people's lives easier.
                 </p>
               </Col>
             </Row>
@@ -74,10 +74,10 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               <Col lg="8" md="6" className="mb-3">
                 <h3 className={styles.moreOfMe}>More of me.</h3>
 
-                <p>
-                  I knew from the beginning I had to get into the
-                  University of Waterloo because of its co-op program, but I’ll
-                  admit that I chose{" "}
+                <p className={styles.content}>
+                  I knew from the beginning I had to get into the University of
+                  Waterloo because of its co-op program, but I’ll admit that I
+                  chose{" "}
                   <OutboundLink
                     href="https://uwaterloo.ca/systems-design-engineering/about-systems-design-engineering/what-systems-design-engineering"
                     target="_blank"
@@ -89,20 +89,21 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                   put a huge emphasis on human-computer interaction, which
                   turned out to be something I really enjoyed.
                 </p>
-                <p>
-                  Now, as a product designer, I found myself excited when I get
-                  to learn about people’s workflow, understanding their
+                <p className={styles.content}>
+                  Now, as a product designer, I found myself excited when learning about people’s workflow, listening to their
                   problems, and using my multidisciplinary knowledge to craft
                   design solutions that improve their experience.
                 </p>
-                <h3 className={styles.moreOfMe}>Getting Personal.</h3>
                 <p>
+                </p>
+                <h3 className={styles.moreOfMe}>Getting Personal.</h3>
+                <p className={styles.content}>
                   I was born and raised in Bangkok, but I spend most time living
                   in the U.S. and Canada. I love traveling and eating good food
                   — sushi, fried chicken, and matcha are my top 3! These days
                   I'm working on my Korean, so k-dramas are essential.
                 </p>
-                <p>
+                <p className={styles.content}>
                   Oh, I also have a plan to adopt a Shiba Inu, but my mom told
                   me to take care of myself first.
                 </p>
@@ -120,14 +121,14 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               data-sal-easing="ease-out-back"
             >
               <Col lg="4" md="6" className="align-self-center">
-                <h3 className={styles.designExperience}>Design Experience.</h3>
+                <h3 className={styles.designExperience}>Design Experience</h3>
               </Col>
               <Col lg="8" md="6" className={styles.experience}>
                 <table className={styles.experienceTable}>
                   <tbody>
                     <tr>
                       <td>
-                        <span className={styles.experienceName}>LeanTaaS </span>
+                        <span className={styles.experienceName}>LeanTaaS</span>
                         ,{" "}
                         <span className={styles.experienceType}>Full-time</span>
                       </td>
@@ -153,7 +154,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                           Hack the North
                         </span>
                         ,{" "}
-                        <span className={styles.experienceType}>Community</span>
+                        <span className={styles.experienceType}>Volunteer</span>
                       </td>
                       <td className={styles.experiencePeriod}>
                         Mar 2019 – Feb 2020

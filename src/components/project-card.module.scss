@@ -1,25 +1,73 @@
 @import "../styles/_colors.scss";
 @import "../styles/_projects.scss";
+@import "../styles/_fonts.scss";
 
 .row {
-  padding-top: 75px;
-  padding-bottom: 75px;
-
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media (min-width: 576px) {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
 }
-.project-title{
+.project-title {
   margin: 0;
   color: $project-title-color;
+  font-size: 20px;
+  @media (min-width: 576px) {
+    font-size: 24px;
+  }
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+  @media (min-width: 1400px) {
+    font-size: 28px;
+  }
 }
 
-.project-description{
-  @media (min-width: 1024px) {
-    margin:32px 0 32px 0;
-    }
+.term {
+  color: $almost-black-color;
+  font-size: 12px;
+  font-family: $heading-font;
+  padding-top: 4px;
+
+  @media (min-width: 576px) {
+    font-size: 14px;
+  }
+  @media (min-width: 1400px) {
+    font-size: 16px;
+  }
+}
+
+.project-description {
+  font-size: 14px;
+  @media (min-width: 576px) {
+    font-size: 16px;
+  }
+  @media (min-width: 992px) {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  @media (min-width: 1400px) {
+    font-size: 18px;
+  }
 }
 .case-study-button {
-  text-decoration: none !important;
+  color: $blue-color;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: underline;
+  @media (min-width: 576px) {
+    font-size: 16px;
+  }
+  @media (min-width: 1400px) {
+    font-size: 18px;
+  }
+  // // span {
+  // //   text-decoration: underline !important;
+  // }
 
-  @include cta-button();
+  // @include cta-button();
   // padding: 10px;
   // cursor: url('../../static/images/click-cursor.svg') 22 22, auto;
 
@@ -29,4 +77,20 @@
   //   transition-duration: .5s;
   //   text-decoration: none;
   // }
+  &:hover {
+    color: $coral-color;
+  }
+}
+
+.arrow-icon {
+  stroke-width: 1.5px;
+  margin-top: -3.1px;
+  margin-left: 4px;
+}
+
+.thumbnail-image {
+  padding-top: 32px;
+  @media (min-width: 768px) {
+    padding-top: 0px;
+  }
 }

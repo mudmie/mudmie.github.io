@@ -18,21 +18,22 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
     return (
       <>
         <section className={styles.sectionImage}>
-          <Container fluid={true} className={styles.header}>
-            {/* <Row className="justify-content-center mt-4 mb-4">
-            <Col lg={PROJECT_BODY_COLUMN} className="text-center">
-              <h1 className={styles.company}>
-                {this.props.currentProject.company}
-              </h1>
-              <h2 className={styles.title}>
-                {this.props.currentProject.name} /{" "}
-                {this.props.currentProject.term}
-              </h2>
+          {/* <Container className={styles.header} fluid={true}> */}
+          <Row className="justify-content-center">
+            <Col lg="12" className="main">
+              <GatsbyImage
+                image={getImage(this.props.mainImage)}
+                alt="main project image"
+              />
             </Col>
-          </Row> */}
+          </Row>
+          {/* </Container> */}
+        </section>
 
-            <Row className="justify-content-center mt-4 mb-4">
-              <Col lg="12" className="text-center mb-3">
+        <section className={styles.summarySection}>
+          <Container className={styles.header}>
+            <Row className="justify-content-center">
+              <Col lg="6" className="mb-3">
                 {/* <img
                   src={withPrefix(
                     `/images/${this.props.currentProject.imageFolder}/main.png`
@@ -41,20 +42,25 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
                   className="img-fluid"
                 /> */}
                 <h1 className={styles.projectTitle}>
-                  {this.props.currentProject.company}
+                  {this.props.currentProject.name}
                 </h1>
-                <div>{this.props.currentProject.term}</div>
+                <div className={styles.companyTerm}>
+                  {this.props.currentProject.company} /{" "}
+                  {this.props.currentProject.term}
+                </div>
               </Col>
-              <Col lg="12">
-                {/* <Img
-                  alt="main project image"
-                  fluid={this.props.mainImage}
-                  className="background-theme-color"
-                /> */}
-                <GatsbyImage
-                  image={getImage(this.props.mainImage)}
-                  alt="main project image"
-                />
+              <Col lg="6">
+                <p className={styles.projectIntro}>
+                  {this.props.currentProject.companyDescription}
+                </p>
+                <p className={styles.projectIntro}>
+                  <b>My Roles</b> <br />
+                  {this.props.currentProject.myRole}
+                </p>
+                <p className={styles.projectIntro}>
+                  {" "}
+                  <b>Results</b> <br /> {this.props.currentProject.results}
+                </p>
               </Col>
             </Row>
           </Container>

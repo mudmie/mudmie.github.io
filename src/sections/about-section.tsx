@@ -22,40 +22,40 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
         <Container className={styles.container}>
           <a id={this.props.id} className={sharedStyles.sectionAnchor} />
           <Row
-            className={`justify-content-between align-items-center ${styles.rowAbout}`}
+            className={`justify-content-center align-items-center ${styles.rowName}`}
           >
             <Col
-              lg="8"
-              data-sal="slide-up"
-              data-sal-duration="400"
-              data-sal-delay="200"
-              data-sal-easing="ease-out-back"
-              className={`align-self-end ${styles.colAbout}`}
+              lg="12"
+              // data-sal="slide-up"
+              // data-sal-duration="400"
+              // data-sal-delay="200"
+              // data-sal-easing="ease-out-back"
+              // className={`align-self-end ${styles.colAbout}`}
             >
-              <div className={styles.aboutDiv}>
-                <h1 className={styles.aboutHeading}>
-                  Mudmie
-                  <br />
-                  Chuthamsatid
-                </h1>
-                <img
-                  className={`${styles.subheading}`}
-                  src={this.getImageUrl("product-designer.svg")}
-                />
-              </div>
+              {/* <div className={styles.aboutDiv}> */}
+              <h1 className={styles.aboutHeading}>Hello, I'm Mudmie.</h1>
+              <img
+                className={`${styles.asterisk}`}
+                src={this.getImageUrl("asterisk.svg")}
+              />
+              {/* </div> */}
             </Col>
+          </Row>
+          <Row>
             <Col
-              lg="4"
-              className={`align-self-end ${styles.colInfo}`}
-              data-sal="slide-down"
-              data-sal-duration="400"
-              data-sal-delay="200"
-              data-sal-easing="ease-out-back"
+              lg="10"
+              // className={`align-self-end ${styles.colInfo}`}
+              // data-sal="slide-down"
+              // data-sal-duration="400"
+              // data-sal-delay="200"
+              // data-sal-easing="ease-out-back"
             >
               <p className={styles.aboutPara}>
-                A seattle-based product designer with experiences designing B2B and B2C products across multiple industries. 
+                A product designer with experience designing B2B
+                and B2C products in health tech, fintech, construction tech & more.{" "}
               </p>
-              <SocialMediaLinks separator="NEW_LINE" />
+              {/* Social Media Links */}
+              {/* <SocialMediaLinks separator="NEW_LINE" isDarkBackground={true} /> */}
             </Col>
           </Row>
         </Container>

@@ -1,74 +1,73 @@
 @import "../styles/_colors.scss";
 @import "../styles/_fonts.scss";
 
-// @mixin project-theme($primary-color, $secondary-color) {
-//   h1,
-//   h2,
-//   h3 {
-//     color: $primary-color;
-//   }
-//   h4 {
-//     color: $secondary-color;
-//   }
-//   hr {
-//     border-top-color: $secondary-color;
-//   }
-//   :global .background-theme-color {
-//     background-color: $secondary-color;
-//   }
-//   :global .btn {
-//     color: $primary-color;
-//     border-color: $primary-color;
-
-//     &:hover,
-//     &:active {
-//       color: #fff;
-//       background-color: $secondary-color;
-//     }
-//   }
-// }
-
 html {
   .project-page {
     h1 {
       font-weight: 600;
       margin-bottom: 0px;
-      font-size: 48px;
-      color: $cauliflower-color;
+      font-size: 32px;
+      color: $almost-black-color;
       text-transform: none;
+      @media (min-width: 576px) {
+        font-size: 40px;
+      }
+      @media (min-width: 992px) {
+        font-size: 48px;
+      }
     }
     h2 {
-      font-size: 24px;
+      font-size: 32px;
+      font-weight: 600;
+      color: $almost-black-color;
+      margin: 0 !important;
+      @media (min-width: 576px) {
+        font-size: 40px;
+      }
+      @media (min-width: 1400px) {
+        font-size: 48px;
+      }
     }
+
     h3 {
-      font-size: 22px;
-      margin: 20px 0 5px 0;
-      font-weight: bold;
-      color: $ocean-color;
-      font-family: $body-font !important;
-      text-transform: uppercase;
-      
+      font-size: 20px;
+      margin-top: 16px;
+      margin-bottom: 0px;
+      font-family: $body-font;
+      font-weight: 600;
+      color: $almost-black-color;
+      @media (min-width: 576px) {
+        font-size: 24px;
+      }
+      @media (min-width: 1400px) {
+        font-size: 28px;
+      }
     }
+
     h4 {
       font-size: 20px;
       margin-top: 0px;
       margin-bottom: 0px;
     }
-    background-color: $cauliflower-color;
+
+    background-color: $beige-color;
     :global .btn {
-      border-color: $taupe-color;
 
       &:hover,
       &:active {
         color: #fff;
-        background-color: $cream-color;
+        background-color: $almost-black-color;
       }
     }
-    p{
-      font-weight: 300;
-      font-size: 20px;
-
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      @media (min-width: 576px) {
+        font-size: 16px;
+      }
+      @media (min-width: 1400px) {
+        font-size: 18px;
+      }
     }
-    // @include project-theme($ocean-color, $mustard-color);
   }
 }

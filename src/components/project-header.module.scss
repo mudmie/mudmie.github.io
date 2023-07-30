@@ -3,22 +3,37 @@
 
 html {
   .header {
-  }
-
+    min-height: 360px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @media (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;    }
+}
 
   .company-term {
-    margin-top: 10px;
-    font-weight: normal;
-  }
-
-  .company {
-
+    font-family: $heading-font;
+    @media (min-width: 992px) {
+      margin-top: 8px;  }
   }
 }
-.project-title {
+
+.project-title{
+  font-size: 32px;
   
 }
+.project-intro{
+  padding-bottom: 16px;
+}
+
+.summary-section {
+  background-color: $beige-color;
+  color: $almost-black-color;
+  box-shadow: inset 0px -3px 0px #191919;
+}
+
+
 .section-image {
-  background-color: $ocean-color;
+  background-color: $almost-black-color;
   padding-top: 80px;
 }

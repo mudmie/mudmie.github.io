@@ -22,7 +22,7 @@ export default class Layout extends React.Component<LayoutProps, {}> {
           <meta name="keywords" content="Product Designer, UX Designer, User Experience Designer, UI Designer, University of Waterloo, Waterloo, Seattle" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-          <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&amp;family=PT+Serif:ital@1&amp;family=Syne:wght@400;600&amp;display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sora:wght@400;600&display=swap" rel="stylesheet"/>
           <link
             rel="apple-touch-icon"
             sizes="180x180"

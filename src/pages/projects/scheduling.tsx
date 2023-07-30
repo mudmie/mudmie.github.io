@@ -23,84 +23,132 @@ export default class ThematicPage extends React.Component<
         mainImage={this.props.data.mainImage}
       >
         <Container>
-          <Row className="justify-content-center">
-            <Col lg="4">
-              <h3>Overview</h3>
-            </Col>
-            <Col lg="8">
-              <p>
-                <span className={sharedStyles.topicRight}>Company</span>
-                <br />
-                LeanTaas offers a range of solutions from analytics dashboard,
-                surgical scheduling, and staff management tools to optimize
-                healthcare operations.
-              </p>
-              <p>
-                <span className={sharedStyles.topicRight}>
-                  My Role &amp; Project
-                </span>
-                <br />I partnered with PMs to discover problems and plan the
-                product roadmap. I led the design of the{" "}
-                <span className={sharedStyles.bold}>
-                  {" "}
-                  Comments and Document Upload features
-                </span>
-                {""} from research to prototyping, and testing.
-              </p>
-              <p>
-                <span className={sharedStyles.topicRight}>Result</span>
-                <br />
-                185% increase in feature adoption — 15 health systems signed
-                contracts to integrate the case scheduling module into their
-                workflow.{" "}
-              </p>
-            </Col>
-          </Row>
-
-          <Row className="justify-content-center">
-            <Col lg="4">
+          {/* <Row className="justify-content-center">
+            <Col lg="6">
               <h3>Context</h3>
-            </Col>
-            <Col lg="8">
               <p>
-                In the US, patients get diagnosed at clinics then visit
-                hospitals for medical procedures. Since clinics typically don't
-                have access to electronic health record (EHR), they rely on
-                phone and fax to shcdule surgeries.
+                In the US, clinics diagnose patients and schedule surgery
+                appointments at hospitals using phone and fax.
               </p>
               <p>
-                Hospitals have adopted LeanTaaS scheduling tool to enable their
-                partnered clinics to request surgery appointment online.
-                However, clinics still have to manually fax documents containing
-                protected health information (PHI) to the hospital.
+                Many clinics have adopted LeanTaaS to send surgery requests
+                online, but they still have to manually fax documents containing
+                patient information to the hospitals.
+              </p>
+            </Col>
+          </Row> */}
+
+          <Row className="justify-content-center">
+            <Col lg="6">
+              <h3> The Problem & Goal</h3>
+              <p>
+                Case Scheduling was introduced as an add-on feature for
+                healthcare providers to create, manage, send, and receive
+                patient records electronically.{" "}
+                <b>
+                  However, not many customers sign up for this add-on feature,
+                  likely due to its limited functionality.{" "}
+                </b>
+              </p>
+              <p>
+                One of our KPIs was to{" "}
+                <b>increase case scheduling faeture adoption rate</b> by
+                providing more the functionalities to the existing product.
+              </p>
+            </Col>
+          </Row>
+{/* 
+          <Row className="justify-content-center">
+            <Col lg="6">
+              <div className="text-center">
+                <ImageBox
+                  src={this.getImageUrl("current-product.png")}
+                  alt=""
+                  className="img-fluid"
+                />
+              </div>
+            </Col>
+          </Row> */}
+
+          <Row className="justify-content-center">
+            <Col lg="6">
+              <h3>Research & Discovery</h3>
+
+              <p>
+                I shadowed and interviewed 10+ groups of clinic, hospital, and
+                pre-admission schedulers to understand their worlflows, needs,
+                and pain points. 
+              </p>
+              {/* <p>
+                Through this process, I learned that{" "}
+                <b>surgery scheduling is much more complex</b>
+                {""} than I had originally thought. Our{" "}
+                <b>current product only covers a portion</b> of the entire
+                workflow.
+              </p> */}
+ <p>
+                Through this process, I learned that{" "} majority of the pain
+                points in surgery scheduling came from {" "}
+                <b>
+                  manual activities, coordination difficulties, duplicated work,
+                  and delays caused by missing information.{" "}
+                </b>
               </p>
             </Col>
           </Row>
 
-          <Row className="justify-content-center">
-            <Col lg="4">
-              <h3>Current product</h3>
-            </Col>
-            <Col lg="8">
-              <p>
-                To improve the process and avoid PHI leaks, case management tool
-                is introduced as an add-on feature for healthcare providers to
-                create, manage, send, and receive patient records
-                electronically. Unfortunately, not a lot of customers sign up
-                for this add-on feature.
-              </p>
-              <p className={sharedStyles.pin}>
-                {" "}
-                <span className={sharedStyles.bold}>Problem & Goal</span>
-                <br />
-                The low adoption rate is likely due to the feature’s limited
-                functionality, and we want to increase feature adoption rate by
-                adding more functionalities to this add-on feature.
-              </p>
-            </Col>
-          </Row>
+          {/* <Row className="justify-content-center">
+            <Col lg="6">
+              <h3>Mapping User Journey</h3>
 
-          <Row className="justify-content-center">
+              <p>
+                I collaborated with the PMs to create a user journey map based
+                on our research findings. This enabled our team to evaluate user
+                experiences, pain points, and opportunities in each step of the
+                workflow.
+              </p>
+              <p>
+                We discovered through this exercise that majority of the pain
+                points in surgery scheduling came from{" "}
+                <b>
+                  manual activities, coordination difficulties, duplicated work,
+                  and delays caused by missing information.{" "}
+                </b>
+              </p>
+              {/* <ul>
+                <li>
+                  <b>Manual and tedious activities</b> such as data collection
+                  and phone calls
+                </li>
+                <li>
+                  <b>Coordination difficulties</b> between different
+                  stakeholders
+                </li>
+                <li>
+                  Work interuptions or{" "}
+                  <b>delays caused by communication or missing information</b>
+                </li>
+                <li>
+                  <b>Duplicated work</b> due to non-standardized workflow and
+                  the use of multiple software applications
+                </li>
+              </ul> */}
+            {/* </Col>
+          </Row> */} 
+
+          {/* <Row className="justify-content-center">
+            <Col lg="6">
+              <div className="text-center">
+                <ImageBox
+                  src={this.getImageUrl("journey-map.png")}
+                  alt=""
+                  className="img-fluid"
+                />
+              </div>
+            </Col>
+          </Row> */}
+
+          {/* <Row className="justify-content-center">
             <Col lg="6" className={sharedStyles.creamBg}>
               <p>
                 <span className={sharedStyles.bold}>
@@ -135,156 +183,83 @@ export default class ThematicPage extends React.Component<
                 />
               </div>
             </Col>
-          </Row>
+          </Row> */}
 
           <Row className="justify-content-center">
-            <Col lg="4">
-              <h3>Research & Discovery</h3>
-            </Col>
-            <Col lg="8">
-              <p>
-                <span className={sharedStyles.topicRight}>Onsite Visits</span>
-                <br />
-                Since I'm completely new to the healthcare industry, I vistied
-                multiple clinics and hospitals to learn about our users and
-                their daily workflow. I shadowed schedulers in various
-                departments to see how they use our products and interact with
-                different roles.
-              </p>
-              <p>
-                <span className={sharedStyles.topicRight}> Interview</span>
-                <br />I conducted user interviews both in-person and online with
-                10+ groups of clinic, hospital, and pre-admission schedulers.
-                Through these interviews, I was able to learn about their
-                workflows, needs, and pain points.
-              </p>
-              <p className={sharedStyles.pin}>
-                {" "}
-                <span className={sharedStyles.bold}>Learnings</span>
-                <br />
-                Surgery scheduling process is way more complicated than what I
-                understood. Our software only covers a portion of the entire
-                workflow.
-              </p>
-            </Col>
-          </Row>
-
-          <Row className="justify-content-center">
-            <Col lg="12" className={sharedStyles.creamBg}>
-              <p>
-                <span className={sharedStyles.bold}>User Journey Map</span>
-                <br />
-                Developed after putting together findings from the research &
-                discovery process to evaluate user experiences in each step of
-                their workflow.
-              </p>
-              <div className="text-center">
-                <ImageBox
-                  src={this.getImageUrl("journey-map.png")}
-                  alt=""
-                  className="img-fluid"
-                />
-              </div>
-            </Col>
-          </Row>
-          <Row className="justify-content-center">
-            <Col lg="4">
+            <Col lg="6">
               <h3>Roadmap Planning</h3>
-            </Col>
-            <Col lg="8">
               <p>
-                I simplified a complex journey map into a single workflow
-                diagram and partnered with the PMs to plan the visions for our
-                product.
+                Our long-term vision is to develop{" "}
+                <b> patient care coordination software</b> {""}
+                that streamlines all activites from patient experience to day-of
+                surgery tasks.
+              </p>
+              <p>
+                To add immediate value, our short-term vision focuses on {""}
+                <b>
+                  reducing manual process and improving coordination between
+                  roles
+                </b>
+                .
+              </p>
+              <p>
+                After brainstorming potential features with the PMs and
+                validating the ideas with our users, we prioritized Comments
+                feature for Q2, 2022 and Document upload feature for Q1, 2023.
               </p>
             </Col>
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="12" className={sharedStyles.creamBg}>
-              <p>
-                <span className={sharedStyles.bold}>Long-term Vision</span>
-                <br />
-                Ultimately, we want to build patient care coordination software
-                for healthcare providers by synchronizing all activities
-                including insurance management, scheduling surgery and lab
-                tests, vendor coordination, and day-of-surgery tasks.{" "}
-              </p>
-              <ImageBox
-                src={this.getImageUrl("simplified.png")}
-                alt=""
-                className="img-fluid"
-              />
+            <Col lg="6">
+              <div className="text-center">
+                <ImageBox
+                  src={this.getImageUrl("workflow.png")}
+                  alt=""
+                  className="img-fluid"
+                />
+              </div>
             </Col>
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="12" className={sharedStyles.creamBg}>
-              <p>
-                <span className={sharedStyles.bold}>Short-term planning</span>
-                <br />
-                To add immediate value to the existing add-on feature, we
-                decided to focus on improving communication and digitizing
-                manual work in the scheduling process.
-              </p>
-              <ImageBox
-                src={this.getImageUrl("milestone.png")}
-                alt=""
-                className="img-fluid"
-              />
-            </Col>
-          </Row>
-
-          <Row className="justify-content-center">
-            <Col lg="4">
+            <Col lg="6">
               <h3>Comments Feature</h3>
-            </Col>
-            <Col lg="8">
-              <p>
-                Our research revealed that it's a burden for both clinic and OR
-                schedulers to provide updates and communicate via phone and
-                email. Picking up phone calls distracts and interupts their
-                workflows. The informtion or requests received over phone calls
-                and email can also be missed or forgotten easily.
-              </p>
 
               <p>
-                In the ideation phase, I considered two different features: a
-                chat box and a comment theread.
+                Our research and validation showed that{" "}
+                <b>
+                  schedulers find it burdensome to rely on phone calls for
+                  communication
+                </b>
+                . {""}
+                They not only distract them from their current tasks, but also
+                increase theur metal workload as they have to simultaneously
+                process information while performing other tasks.
               </p>
+              <p>
+                In the ideation phase, I considered two different features:{" "}
+              </p>
+              <ul>
+                <li>
+                  <b>Chat box</b> provides a fast and efficient way for users to
+                  communicate. Our users also reported to be familiar with other
+                  chat box products available in the market.
+                </li>
+                <li>
+                  <b>Comment thread</b> can be attached to objects like case
+                  form, making it easy for users to refer to relevant
+                  information.
+                </li>
+              </ul>
             </Col>
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="6" className={sharedStyles.creamBg}>
-              <p>
-                <span className={sharedStyles.bold}>Concept A - Chat Box</span>
-                <br />
-                Chat box can provide fast and efficient way for user to
-                communicate, just like making phone calls. Users can also send
-                over any files to the other party.
-              </p>
+            <Col lg="8">
               <div className="text-center">
                 <ImageBox
-                  src={this.getImageUrl("chatbox.png")}
-                  alt=""
-                  className="img-fluid"
-                />
-              </div>
-            </Col>
-            <Col lg="6" className={sharedStyles.creamBg}>
-              <p>
-                <span className={sharedStyles.bold}>
-                  Concept B - Comment Thread
-                </span>
-                <br />
-                Comment threads might not be the quickest communication tool,
-                but they can be attached to objects like case form, making it
-                easy for users to refer to relevant information.
-              </p>
-              <div className="text-center">
-                <ImageBox
-                  src={this.getImageUrl("comment-thread.png")}
+                  src={this.getImageUrl("chatbox-thread.png")}
                   alt=""
                   className="img-fluid"
                 />
@@ -293,107 +268,212 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="4"></Col>
-            <Col lg="8">
-              <p className={sharedStyles.pin}>
-                {" "}
-                <span className={sharedStyles.bold}>Decision</span>
-                <br />I moved forward with the comment thread concept after
-                learning that users didn't expect immediate responses. Users
-                also mentioned the importance of easily identifying object (case
-                form) associated with their conversation with the other party.
-              </p>
-            </Col>
-          </Row>
-          <Row className="justify-content-center">
-            <Col lg="12" className={sharedStyles.creamBg}>
+            <Col lg="6">
               <p>
-                <span className={sharedStyles.bold}>Final Design</span>
-                <br />
-                During the design process, I considered including the activites
-                in the thread and consolidating request status in the drawer,
-                but because of limited engineering resources, we didn't proceed
-                with the implementation of these proposal.
-                <br />
-                <br />
-                In the final design, a comment thread is implemeted as part of
-                the case form, making it convenient for users to connect the
-                information in the case and the thread.
+                When presented with both options, the{" "}
+                <b>majority of users preferred the comment thread</b> option.
+                Users didn’t expect immediate replies in everyday situation, but
+                rather emphasized the importance of being able to identify
+                objects associated with the comments and having visibility into
+                the thread.
               </p>
-              <ImageBox
-                src={this.getImageUrl("comment-final.png")}
-                alt=""
-                className="img-fluid"
-              />
             </Col>
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="4">
+            <Col lg="8">
+              <div className="text-center">
+                <ImageBox
+                  src={this.getImageUrl("comment-final.png")}
+                  alt=""
+                  className="img-fluid"
+                />
+              </div>
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center">
+            <Col lg="6">
               <h3>Document Upload Feature</h3>
-            </Col>
-            <Col lg="8">
               <p>
-                While Comments feature helps reduce the amount of back-and-forth
-                phone calls in the scheduling process, users still need to
-                manually fax documents to various hospital departments.
+                During our research,{" "}
+                <b>
+                  document upload was the second most requested feature by our
+                  users
+                </b>{" "}
+                as there are so many documents and paperwork involved in surgery
+                scheduling process.
+              </p>
+              <p>
+                Since I already introduced the drawer when designing the
+                comments feture, I continued experimenting using the same
+                component to handle the upload functionality.
               </p>
             </Col>
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="12" className={sharedStyles.creamBg}>
+            <Col lg="8">
+              <div className="text-center">
+                <ImageBox
+                  src={this.getImageUrl("doc-upload-options.png")}
+                  alt=""
+                  className="img-fluid"
+                />
+              </div>
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center">
+            <Col lg="6">
               <p>
-                <span className={sharedStyles.bold}>Early design</span>
-                <br />I continued experimenting using a side dreawer as a
-                component to handle upload funcnationality since I already
-                introduced that pattern when designing the Comments feature.
+                I conducted usability testing on the document upload feature
+                with side navigation with 7 schedulers.{" "}
+                <b>
+                  While all of them could succesfully upload the document, three
+                  struggled when asked to view or post a comment.
+                </b>{" "}
+                Some of them even asked if the feature had been removed as they
+                didn't see it on the screen.
               </p>
+              <p>
+                When presented with the other prototype,{" "}
+                <b>
+                  all users poitned out the explicit menu options and could
+                  easily switch to the comment features
+                </b>
+                . Based on the test results and feedback received, I decided to
+                discard the side navigation concenpt and instead use the
+                existing tab component in the final design.
+              </p>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="8">
+              <div className="text-center">
+                <ImageBox
+                  src={this.getImageUrl("doc-upload-final.png")}
+                  alt=""
+                  className="img-fluid"
+                />
+              </div>
+            </Col>
+            <Col lg="12">
+              <div className="text-center">
+                <ImageBox
+                  src={this.getImageUrl("../asterisk.svg")}
+                  alt=""
+                  className="img-fluid"
+                />
+              </div>
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center">
+            <Col lg="12">
+              <h2 className={sharedStyles.others}>Other things I've designed at LeanTaaS</h2>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col md="6">
+              <h3>Design System</h3>
+              <p>
+                Working collaboratively with designers and engineers to create
+                component libraries and develop the company's first design
+                system.
+              </p>
+            </Col>
+            <Col md="6" lg={{ size: 5, offset: 1 }}>
               <ImageBox
-                src={this.getImageUrl("upload-early.png")}
+                src={this.getImageUrl("ds.png")}
+                alt=""
+                className="img-fluid"
+              />
+            </Col>
+
+          </Row>
+          <Row className="justify-content-center">
+            <Col md="6">
+              <h3> Case Coordination Tool</h3>
+              <p>
+                Designing a customizable table for various roles to oversee and
+                manage surgical cases. Users can filter the table, rearrange,
+                show or hide columns, and edit information directly in the
+                table.
+              </p>
+            </Col>
+            <Col md="6" lg={{ size: 5, offset: 1 }} >
+              <ImageBox
+                src={this.getImageUrl("case-list.gif")}
                 alt=""
                 className="img-fluid"
               />
             </Col>
           </Row>
-
           <Row className="justify-content-center">
-            <Col lg="4"></Col>
-            <Col lg="8">
-              <p className={sharedStyles.pin}>
-                {" "}
-                <span className={sharedStyles.bold}>Usability Testing</span>
-                <br />I tested the prototype with schedulers, asking them to
-                show me how they would perform certain tasks. Overall, users
-                found the upload experience to be straightforward and was able
-                to perform the upload task.
-                <p>
-                  However, users didn't notice the side navigation at all. Many
-                  of them asked immediately if the Comments feature disappear
-                  and when tasked to switch to the Comments tab, 80% of the
-                  participants didn't know how to proceed.
-                </p>
+            <Col md="6">
+              <h3>Analytics dashboard</h3>
+              <p>
+                Translating datasets form Tableau and designing data
+                visualizations for case length accuracy. This information allows
+                hospital management to optimize the scheduled surgery time.
               </p>
             </Col>
-          </Row>
-
-          <Row className="justify-content-center">
-            <Col lg="12" className={sharedStyles.creamBg}>
-              <p>
-                <span className={sharedStyles.bold}>Final design</span>
-                <br />I also recevied similar feedback from other desginers on
-                the discoverbility issue of the side navigation. As a result, I
-                got rid of the side navigation when the drawer and replace it
-                with tabs for users to navigate between each page inside the
-                drawer.
-              </p>
+            <Col md="6" lg={{ size: 5, offset: 1 }}>
               <ImageBox
-                src={this.getImageUrl("upload-final.png")}
+                src={this.getImageUrl("data.png")}
                 alt=""
                 className="img-fluid"
               />
             </Col>
           </Row>
+          {/* <Row className="justify-content-center">
+            <Col md="4" lg="4">
+              <ImageBox
+                src={this.getImageUrl("sample.png")}
+                alt=""
+                className="img-fluid"
+              />
+              <h3>Project Name</h3>
+              <p>
+                Brandi believes photos are metaphors, making the abstract
+                concrete and mystifying the mundane. They believe photography is
+                a conversation between the photographer, the subject, and those
+                who will view these images for years to come. Brandi relishes in
+                adding to the archive of humanity.
+              </p>
+            </Col>
+            <Col md="4" lg="4">
+              <ImageBox
+                src={this.getImageUrl("sample.png")}
+                alt=""
+                className="img-fluid"
+              />
+              <h3>Project Name</h3>
+              <p>
+                Brandi believes photos are metaphors, making the abstract
+                concrete and mystifying the mundane. They believe photography is
+                a conversation between the photographer, the subject, and those
+                who will view these images for years to come. Brandi relishes in
+                adding to the archive of humanity.
+              </p>
+            </Col>
+            <Col md="4" lg="4">
+              <ImageBox
+                src={this.getImageUrl("sample.png")}
+                alt=""
+                className="img-fluid"
+              />
+              <h3>Project Name</h3>
+              <p>
+                Brandi believes photos are metaphors, making the abstract
+                concrete and mystifying the mundane. They believe photography is
+                a conversation between the photographer, the subject, and those
+                who will view these images for years to come. Brandi relishes in
+                adding to the archive of humanity.
+              </p>
+            </Col>
+          </Row> */}
         </Container>
       </ProjectLayout>
     );

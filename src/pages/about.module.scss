@@ -2,53 +2,78 @@
 @import "../styles/_fonts.scss";
 @import "../styles/_projects.scss";
 
-.section-1,
 .section-3 {
-  background-color: $ocean-color;
-  color: $cauliflower-color;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  color: $almost-black-color;
+  background-color: $beige-color;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  box-shadow: inset 0px 3px 0px #191919;
+
+  // @media (min-width: 768px) {
+  //   padding-left:56px;
+  //   padding-right:56px;
+  //   }
+  // @media (min-width: 1400px) {
+  //     padding-left: 96px;
+  //     padding-right: 96px;
+  //   }
 }
 .section-1 {
-  padding-top: 120px;
+  padding-top: 160px;
+  padding-bottom: 48px;
+  background-color: $beige-color;
+  color: $almost-black-color;
+
 }
 .section-2 {
-  background-color: $cauliflower-color;
-  padding-top: 50px;
+  background-color: $beige-color;
+  padding-top: 32px;
 }
 
+
 .hello {
-  color: $cauliflower-color;
-  font-size: 24px;
+  color: $almost-black-color;
+  font-size: 20px;
   text-transform: uppercase;
+  margin-bottom: 0px;
+  @media (min-width: 576px) {
+    font-size: 24px;
+  }
 }
+
 .more-of-me {
-  color: $taupe-color;
+  color: $almost-black-color;
   text-transform: uppercase;
+  font-size: 20px;
+  padding-top: 32px;
+  margin-bottom: 8px;
+  @media (min-width: 576px) {
+    font-size: 24px;
+  }
+  @media (min-width: 768px) {
+    padding-top: 0;
+  }
+
+}
+.content{
+  padding-bottom: 16px;
+  margin:0;
 }
 
 .design-experience {
-  color: $cauliflower-color;
+  color: $almost-black-color;
   text-transform: uppercase;
-}
-
-.about h2 {
-  color: $brick-color;
   font-size: 20px;
-
-  @media (min-width: 414px) {
+  @media (min-width: 576px) {
     font-size: 24px;
   }
-  @media (min-width: 1024px) {
-    font-size: 32px;
+}
+
+.experience{
+  padding-top: 8px;
+  @media (min-width: 768px) {
+    padding-top: 0;
   }
-}
-
-.smile {
-  text-align: center;
-}
-
-.experience {
 }
 
 .experience-table {
@@ -69,20 +94,6 @@
   
   .experience-period {
     font-weight: 400;
-    color: $taupe-color;
+    font-size: 12px;
   }
-}
-
-.resume-button {
-  @include cta-button();
-}
-
-@mixin border($side) {
-  border-#{$side}: $section-divider;
-}
-.border-right {
-  @include border(right);
-}
-.border-bottom {
-  @include border(bottom);
 }

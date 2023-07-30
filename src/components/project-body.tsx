@@ -16,7 +16,7 @@ export interface ProjectBodyProps {
 export class ProjectBody extends React.Component<ProjectBodyProps, {}> {
   public render() {
     return (
-      <div>
+      <div className={styles.projectBody}>
         <Container>
           {/* <Row className="justify-content-center">
             <Col lg={PROJECT_BODY_COLUMN}>

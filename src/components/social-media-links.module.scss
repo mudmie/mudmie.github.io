@@ -2,17 +2,29 @@
 @import "../styles/_fonts.scss";
 
 .social-media {
-  flex-shrink: 0; 
+  flex-shrink: 0;
 }
 
-// .linked-in {
-//   &:hover {
-//     color: #0077b5;
+// .dark-background {
+//   .linked-in,
+//   .email {
+//     color: $offwhite-color;
+//     text-decoration: underline;
 //   }
 // }
 
-// .instagram {
-//   &:hover {
-//     color: #c32aa3;
-//   }
-// }
+.linked-in, .email {
+  padding: 8px 0;
+  font-family: $body-font !important;
+
+  &:hover {
+    color: $coral-color;
+  }
+}
+
+.arrow-icon {
+  stroke-width: 1.5px;
+  margin-top: -3.1px;
+  margin-left: 4px;
+}
+

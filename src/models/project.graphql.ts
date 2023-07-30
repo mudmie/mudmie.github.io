@@ -6,6 +6,7 @@ export const projectFields = graphql`
       node {
         name
         company
+        companyDescription
         term
         description
         type

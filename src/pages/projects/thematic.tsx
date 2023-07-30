@@ -18,60 +18,27 @@ export default class ThematicPage extends React.Component<
   public render() {
     return (
       <ProjectLayout
-        allProjects={this.props.data.allProjects.edges.map(e => e.node)}
+        allProjects={this.props.data.allProjects.edges.map((e) => e.node)}
         currentProject={this.props.data.project.edges[0].node}
         mainImage={this.props.data.mainImage}
       >
         <Container>
           <Row className="justify-content-center">
-            <Col lg="4">
-              <h3>Overview</h3>
-            </Col>
-            <Col lg="8">
+            <Col lg="6">
+              <h3>Business Goals</h3>
               <p>
-                <span className={sharedStyles.topicRight}>Company</span>
-                <br />
-                Jitta Wealth is a fintech startup that aims to help investors
-                create better returns through simple investment methods. It
-                offers automated investment services to its users.
-              </p>
-              <p>
-                <span className={sharedStyles.topicRight}>
-                  My Role &amp; Project
-                </span>
-                <br />
-                As a lead product designer, I worked with cross-functional teams
-                to design mobile interfaces &amp; experiences for{" "}
-                <span className={sharedStyles.bold}>Thematic Investment</span>,
-                an investment product for users to invest in sectors of their
-                interests.
-              </p>
-              <p>
-                <span className={sharedStyles.topicRight}>Result</span>
-                <br />
-                The company's total assets under management (AUM) went up over
-                60% within the first 3 months after the product launched.
-              </p>
-            </Col>
-          </Row>
-          <Row className="justify-content-center">
-            <Col lg="4">
-              <h3>The Goal</h3>
-            </Col>
-            <Col lg="8">
-              <p>
-                The goal of this project was to increase the AUM from new and
-                existing customers by introducing a new investment product that
-                automated investment across sectors of interest.
+                We wanted to <b>increase the AUM</b> as growth is crucial to
+                success for any startups. Our goal was to{" "}
+                <b>attract both new and existing customers</b> to our investment
+                platform by introducing a new investment product that allowed
+                users to customize portfolios based on their interests.
               </p>
             </Col>
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="4">
+            <Col lg="6">
               <h3>The Users</h3>
-            </Col>
-            <Col lg="8">
               <p>
                 Due to limited time and resources, I wasn’t able to run formal
                 user research sessions. I instead partnered up with Customer
@@ -94,7 +61,9 @@ export default class ThematicPage extends React.Component<
                       alt=""
                       className="img-fluid"
                     />
-                    <span className={`text-center d-inline-block mt-2 ${sharedStyles.bold}`}>
+                    <span
+                      className={`text-center d-inline-block mt-2 ${sharedStyles.bold}`}
+                    >
                       Experienced Investors
                     </span>
                   </div>
@@ -120,7 +89,9 @@ export default class ThematicPage extends React.Component<
                       alt=""
                       className="img-fluid"
                     />
-                    <span className={`text-center d-inline-block mt-2 ${sharedStyles.bold}`}>
+                    <span
+                      className={`text-center d-inline-block mt-2 ${sharedStyles.bold}`}
+                    >
                       Novice Investors
                     </span>
                   </div>
@@ -141,7 +112,7 @@ export default class ThematicPage extends React.Component<
                 </Col>
               </Row>
               <p>
-                <span className={sharedStyles.topicRight}>Targeted Users</span>
+                <b>Targeted Users</b>
                 <br />
                 Working with the Data team to look into user dempgraphics, I
                 learned that novice investors like students and coroporate
@@ -152,14 +123,8 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="4">
-              <h3>
-                Design/
-                <br />
-                First Iteration
-              </h3>
-            </Col>
-            <Col lg="8">
+            <Col lg="6">
+              <h3>Design: First Iteration</h3>
               <p>
                 With time and technical constraints, I focused on examining
                 existing product flow &amp; components and reusing them as much
@@ -174,7 +139,7 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="12" className={sharedStyles.creamBg}>
+            <Col lg="6" className={sharedStyles.creamBg}>
               <p>
                 <span className={sharedStyles.bold}>
                   HTA chart showing steps required for the users to open an
@@ -190,7 +155,7 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="6" className={sharedStyles.creamBg}>
+            <Col lg="3">
               <p>
                 <span className={sharedStyles.green}>
                   <AiOutlineCheckCircle />
@@ -208,7 +173,7 @@ export default class ThematicPage extends React.Component<
                 />
               </div>
             </Col>
-            <Col lg="6" className={sharedStyles.creamBg}>
+            <Col lg={{ size: 3 }}>
               <p>
                 <span className={sharedStyles.red}>
                   <AiOutlineCloseCircle />
@@ -229,14 +194,9 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="4">
-              <h3>
-                Design/
-                <br />
-                Second Iteration
-              </h3>
-            </Col>
-            <Col lg="8">
+            <Col lg="6">
+              <h3>Design: Second Iteration</h3>
+
               {/* <Col lg={{ size: 6, offset: 1 }}> */}
               <p>
                 Knowing that users seek information when making investment
@@ -262,8 +222,8 @@ export default class ThematicPage extends React.Component<
 
           <Row className="justify-content-center">
             <Col
-              lg="5"
-              className={`pb-0 ${sharedStyles.creamBg} ${sharedStyles.figureNoMarginBottom}`}
+              lg="3"
+              className={`pb-0 ${sharedStyles.figureNoMarginBottom}`}
             >
               <p>
                 <span className={sharedStyles.bold}> Selecting Themes</span>
@@ -280,8 +240,8 @@ export default class ThematicPage extends React.Component<
               </div>
             </Col>
             <Col
-              lg={{ size: 5, offset: 1 }}
-              className={`pb-0 ${sharedStyles.creamBg} ${sharedStyles.figureNoMarginBottom}`}
+              lg={{ size: 3 }}
+              className={`pb-0 ${sharedStyles.figureNoMarginBottom}`}
             >
               <p>
                 <span className={sharedStyles.bold}>Unselecting Themes</span>
@@ -300,14 +260,8 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="4">
-              <h3>
-                Design/
-                <br />
-                Third Iteration
-              </h3>
-            </Col>
-            <Col lg="8">
+            <Col lg="6">
+              <h3>Design: Third Iteration</h3>
               <p>
                 I got feedback from the CEO that some users might want to select
                 the themes without reading the information. For example, a
@@ -334,7 +288,7 @@ export default class ThematicPage extends React.Component<
           <Row className="justify-content-center">
             <Col
               lg="4"
-              className={`pb-0 ${sharedStyles.creamBg} ${sharedStyles.figureNoMarginBottom}`}
+              className={`pb-0 ${sharedStyles.figureNoMarginBottom}`}
             >
               <p>
                 <span className={sharedStyles.bold}>Selecting Themes</span>
@@ -351,7 +305,7 @@ export default class ThematicPage extends React.Component<
             </Col>
             <Col
               lg="4"
-              className={`pb-0 ${sharedStyles.creamBg} ${sharedStyles.figureNoMarginBottom}`}
+              className={`pb-0 ${sharedStyles.figureNoMarginBottom}`}
             >
               <p>
                 <span className={sharedStyles.bold}>Unselecting Themes</span>
@@ -368,7 +322,7 @@ export default class ThematicPage extends React.Component<
             </Col>
             <Col
               lg="4"
-              className={`pb-0 ${sharedStyles.creamBg} ${sharedStyles.figureNoMarginBottom}`}
+              className={`pb-0  ${sharedStyles.figureNoMarginBottom}`}
             >
               <p>
                 <span className={sharedStyles.bold}>Viewing Information</span>
@@ -386,14 +340,8 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="4">
-              <h3>
-                Third Iteration/
-                <br />
-                Continued
-              </h3>
-            </Col>
-            <Col lg="8">
+            <Col lg="6">
+              <h3>Third Iteration: Continued</h3>
               <p>
                 Since the users could select up to 5 themes, the system must
                 prevent them from selecting additional ones. I was focusing on
@@ -411,7 +359,7 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="4" className={sharedStyles.creamBg}>
+            <Col lg="4" >
               <p>
                 <span className={sharedStyles.bold}> Design #1 </span>
                 <br />
@@ -426,7 +374,7 @@ export default class ThematicPage extends React.Component<
                 />
               </div>
             </Col>
-            <Col lg={{ size: 4 }} className={sharedStyles.creamBg}>
+            <Col lg={{ size: 4 }}>
               <p>
                 <span className={sharedStyles.bold}> Design #2</span>
                 <br />
@@ -440,7 +388,7 @@ export default class ThematicPage extends React.Component<
                 />
               </div>
             </Col>
-            <Col lg={{ size: 4 }} className={sharedStyles.creamBg}>
+            <Col lg={{ size: 4 }}>
               <p>
                 <span className={sharedStyles.bold}>Design #3</span>
                 <br />
@@ -456,10 +404,9 @@ export default class ThematicPage extends React.Component<
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="4">
+            <Col lg="6">
               <h3>Testing</h3>
-            </Col>
-            <Col lg="8">
+
               <p>
                 I ran a usability inspection to test the effectiveness of the
                 design options and found that
@@ -485,10 +432,8 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="4">
+            <Col lg="6">
               <h3>Final Design</h3>
-            </Col>
-            <Col lg="8">
               <p className={sharedStyles.pin}>
                 {" "}
                 <span className={sharedStyles.bold}>Decision #4</span>
@@ -508,8 +453,7 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="4"></Col>
-            <Col lg="8" className={sharedStyles.creamBg}>
+            <Col lg="6" >
               <p>
                 Tapping additional themes after reaching the limit will trigger
                 an alert box. The message in the box will let the users know
@@ -526,14 +470,10 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="4">
+            <Col lg="6">
               <h3>In the Future</h3>
-            </Col>
-            <Col lg="8">
               <p>
-                <span className={sharedStyles.topicRight}>
-                  Growing List of Themes
-                </span>
+                <b> Growing List of Themes</b>
                 <br />
                 The feature was launched with 10 themes. Now, there are 16
                 themes available and the list is likely to continue growing in
@@ -543,9 +483,7 @@ export default class ThematicPage extends React.Component<
                 mobile app.
               </p>
               <p>
-                <span className={sharedStyles.topicRight}>
-                  Paradox of Choice
-                </span>
+                <b>Paradox of Choice</b>
                 <br />
                 As more themes become available, some users may experience a
                 paradox of choice. Having a "smart theme" option with
@@ -553,7 +491,59 @@ export default class ThematicPage extends React.Component<
                 beneficial to the users in the future.
               </p>
             </Col>
+            {/* <Col lg="12">
+              <div className="text-center">
+                <ImageBox
+                  src={this.getImageUrl("../asterisk.svg")}
+                  alt=""
+                  className="img-fluid"
+                />
+              </div>
+            </Col> */}
+          </Row>          
+          {/* <Row className="justify-content-center">
+            <Col lg="12">
+              <h1>Other things I designed at Jitta Wealth</h1>
+            </Col>
           </Row>
+          <Row className="justify-content-center">
+            <Col md="6" lg="6">
+              <h3>Project Name</h3>
+              <p>
+                Brandi believes photos are metaphors, making the abstract
+                concrete and mystifying the mundane. They believe photography is
+                a conversation between the photographer, the subject, and those
+                who will view these images for years to come. Brandi relishes in
+                adding to the archive of humanity.
+              </p>
+            </Col>
+            <Col md="6" lg={{ size: 5, offset: 1 }}>
+              <ImageBox
+                src={this.getImageUrl("sample.png")}
+                alt=""
+                className="img-fluid"
+              />
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col md="6" lg="6">
+              <h3>Project Name</h3>
+              <p>
+                Brandi believes photos are metaphors, making the abstract
+                concrete and mystifying the mundane. They believe photography is
+                a conversation between the photographer, the subject, and those
+                who will view these images for years to come. Brandi relishes in
+                adding to the archive of humanity.
+              </p>
+            </Col>
+            <Col md="6" lg={{ size: 5, offset: 1 }}>
+              <ImageBox
+                src={this.getImageUrl("sample.png")}
+                alt=""
+                className="img-fluid"
+              />
+            </Col>
+          </Row> */}
         </Container>
       </ProjectLayout>
     );

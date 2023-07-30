@@ -33,13 +33,12 @@ html {
     font-family: $heading-font;
     font-size: 24px;
     color: $h2-text-color;
-    text-transform: uppercase;
   }
 
   h3{
     font-family: $heading-font;
     font-weight: 600;
-    color: $black-color;
+    color: $almost-black-color;
     font-size: 20px;
     margin: 0 0 8px 0;
 
@@ -57,11 +56,17 @@ html {
     color: $body-text-color;
     font-weight: 400;
     font-size: 14px;  
-  
-      @media (min-width: 1024px) {
-      font-size: 20px;
+    @media (min-width: 576px) {
+      font-size: 16px;
+      }
+      @media (min-width: 1400px) {
+      font-size: 18px;
       }
   } 
+
+  li{
+    padding: 4px 0;
+  }
 
   &.full-height, body.full-height, .full-height {
     height: 100%
@@ -95,21 +100,28 @@ html {
 
   .navbar-light .navbar-nav {
     .nav-link {
-      color: $cauliflower-color;
+      color: $almost-black-color;
       text-decoration: none !important;
-      &:focus,
+      text-transform: uppercase;
+      font-family: $heading-font;
+      font-weight: 600;
       &:hover {
-        font-weight: 700;
-        color: $nav-text-color;
+        font-weight: 600;
+        color: $coral-color;
         text-decoration: underline !important;
-
       }
+      &:focus{
+        color: $almost-black-color;
+        text-decoration: underline !important;
+        font-weight: 600;
+      }
+
     }
   }
 
   b,
   strong {
-    font-weight: 700;
+    font-weight: 600;
   }
 
   h1 {
@@ -125,15 +137,20 @@ html {
   }
   a {
     color: $link-color;
-    text-decoration: underline;
   }
   a:focus,
   a:hover{
   // a:visited {
-    color: $link-color;
+    color: $coral-color;
   }
 
   .highlight {
     box-shadow: $highlight-color 0px -0.6em inset;
+  }
+
+  .container {
+    @media (max-width: 575px) {
+      --bs-gutter-x: 3.0rem;
+    }
   }
 }
