@@ -103,10 +103,6 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                   — sushi, fried chicken, and matcha are my top 3! These days
                   I'm working on my Korean, so k-dramas are essential.
                 </p>
-                <p className={styles.content}>
-                  Oh, I also have a plan to adopt a Shiba Inu, but my mom told
-                  me to take care of myself first.
-                </p>
               </Col>
             </Row>
           </Container>
