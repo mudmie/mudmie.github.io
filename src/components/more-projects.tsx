@@ -29,7 +29,7 @@ export class MoreProjects extends React.Component<MoreProjectsProps, {}> {
           </Col>
         </Row>
         {this.props.projects
-          .filter((proj) => proj.name != this.props.currentProject.name)
+          .filter((proj) => proj.name != this.props.currentProject.name && proj.isEnabled)
           .slice(0, NUM_PROJECTS)
           .map((proj) => this.projectRow(proj))}
       </Container>
