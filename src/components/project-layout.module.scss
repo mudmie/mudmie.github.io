@@ -50,6 +50,11 @@ html {
       margin-bottom: 0px;
     }
 
+    padding-top: 55px; // Nav height
+    @media (min-width: 768px) {
+      padding-top: 72px; // Nav height
+
+    }
     background-color: $almost-white-color;
     :global .btn {
 
