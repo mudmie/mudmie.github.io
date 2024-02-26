@@ -18,7 +18,7 @@ export class Footer extends React.Component {
             </Col>
             <Col sm="6" className={`${styles.footerRight}`}>
               Let's get in touch!
-             <SocialMediaLinks separator=" " isDarkBackground={false} />
+              <SocialMediaLinks separator="NEW_LINE" isDarkBackground={false} />
             </Col>
           </Row>
         </Container>
