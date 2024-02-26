@@ -259,7 +259,7 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="3">
+            <Col lg="3" className="mb-2 mb-lg-0">
               <div className={sharedStyles.contentContainerSmall}>
                 <p>
                   <b>Increase efficiency</b>
@@ -267,7 +267,7 @@ export default class ThematicPage extends React.Component<
                 <p>Reduce task completion time from 5 minutes to 3 minutes</p>
               </div>
             </Col>
-            <Col lg="3">
+            <Col lg="3" className="mb-2 mb-lg-0">
               <div className={sharedStyles.contentContainerSmall}>
                 <p>
                   <b>Improve customer satisfaction</b>
@@ -334,25 +334,35 @@ export default class ThematicPage extends React.Component<
 
                   <p>
                     While users need to differentiate between individual and
-                    shared blocks, <u>they don't need to distinguish between the
-                    service line and group blocks</u>. I combined service line and
-                    group blocks into one category and removed the set alert
-                    feature from this calendar to simplify the experience.
+                    shared blocks,{" "}
+                    <u>
+                      they don't need to distinguish between the service line
+                      and group blocks
+                    </u>
+                    . I combined service line and group blocks into one category
+                    and removed the set alert feature from this calendar to
+                    simplify the experience.
                   </p>
 
                   <Row className="justify-content-between">
                     <Col lg="6">
+                    <p className="mb-0">
+                      <b>Before</b>
+                    </p>
                       <ImageBox
                         src={this.getImageUrl("color-labels.png")}
-                        alt="Before – 7 concepts and colors in the UI"
+                        alt="7 concepts and colors in the UI"
                         className="img-fluid"
                       />
                     </Col>
 
                     <Col lg="6">
+                    <p className="mb-0">
+                      <b>After</b>
+                    </p>
                       <ImageBox
                         src={this.getImageUrl("reduced-colors.png")}
-                        alt="After – 5 concepts and colors in the UI"
+                        alt="5 concepts and colors in the UI"
                         className="img-fluid"
                       />
                     </Col>
@@ -393,15 +403,14 @@ export default class ThematicPage extends React.Component<
                     </Col>
                   </Row>
                   <p>
-                    I proposed and verified the
-                    feasibility of{" "}
+                    I proposed and verified the feasibility of{" "}
                     <u>
                       consolidating the availability of blocks belonging to the
                       same service line or group
                     </u>
-                    . This removes unnecessary complexity from the
-                    users and streamlines visualization in the calendar, making
-                    it easier to take appropriate actions.
+                    . This removes unnecessary complexity from the users and
+                    streamlines visualization in the calendar, making it easier
+                    to take appropriate actions.
                   </p>
 
                   {/* <p>
@@ -425,28 +434,33 @@ export default class ThematicPage extends React.Component<
                   </Row>
 
                   <p>
-                    I further simplified
-                    the UI by{" "}
+                    I further simplified the UI by{" "}
                     <u>
-                      removing scheduled cases of other surgeons in
-                      the shared blocks
+                      removing scheduled cases of other surgeons in the shared
+                      blocks
                     </u>{" "}
-                    from the calendar, as users mentioned they didn't
-                    need to see the information in this step.
+                    from the calendar, as users mentioned they didn't need to
+                    see the information in this step.
                   </p>
                   <Row className="justify-content-between">
                     <Col lg="6">
+                    <p className="mb-0">
+                      <b>Before</b>
+                    </p>
                       <ImageBox
                         src={this.getImageUrl("color-labels.png")}
-                        alt="Before – Cluttered UI before the redesign"
+                        alt="Cluttered UI before the redesign"
                         className="img-fluid"
                       />
                     </Col>
 
                     <Col lg="6">
+                    <p className="mb-0">
+                      <b>After</b>
+                    </p>
                       <ImageBox
                         src={this.getImageUrl("final-reduction.png")}
-                        alt="After – Cleaner UI after the redesign"
+                        alt="Cleaner UI after the redesign"
                         className="img-fluid"
                       />
                     </Col>
@@ -486,107 +500,173 @@ export default class ThematicPage extends React.Component<
                   className={`${sharedStyles.contentContainerLeftAlign} mb-4`}
                 >
                   <p className={sharedStyles.almostBlackP}>
-                    <b>Week vs. Month Calendar</b>
+                    <b>Weekly vs. Monthly Calendar</b>
                   </p>
                   <p>
-                    Finding availability is a critical step for our users to
-                    complete their tasks. Unfortunately, the week-view calendar
-                    in the existing tool cannot provide a comprehensive overview
-                    of availability at a glance, resulting in an inefficient
-                    workflow and other issues outlined in Problem 1.
+                    The existing week-view calendar cannot offer an immediate
+                    overview of availability, which prevents users from quickly
+                    achieving their goals.
                   </p>
                   <p>
-                    In contrast, a month-view calendar can be a promising design
-                    option for this use case. It offers a high-level perspective
-                    of availabilities, allowing users to promptly access the
-                    information they need to select a desired date for a surgery
-                    appointment.
+                    To address this issue, I designed a month-view calendar that
+                    would project a high-level availability to the users,
+                    enabling them to quickly select a surgery date and complete
+                    their task.
                   </p>
                   <Row className="justify-content-center">
                     <Col lg="6">
+                    <p className="mb-0">
+                      <b>Weekly Calendar</b>
+                    </p>
                       <div className="text-left">
                         <ImageBox
-                          src={this.getImageUrl("workflow.png")}
-                          alt="Week view option (existing)"
+                          src={this.getImageUrl("week-view-new.png")}
+                          alt="Week-view Calendar"
                           className="img-fluid"
-                          showCaption={true}
+                          showCaption={false}
                         />
                       </div>
+                      <p>
+                        I explored designs for weekly calendar but couldn't
+                        solve the existing Problems. After all, it{" "}
+                        <u>was not</u> the best option for finding availability.
+                      </p>
                     </Col>
                     <Col lg="6">
+                    <p className="mb-0">
+                      <b>Montly Calendar</b>
+                    </p>
                       <div className="text-left">
                         <ImageBox
-                          src={this.getImageUrl("workflow.png")}
-                          alt="✅ Month view (proposal)"
+                          src={this.getImageUrl("month-view-new.png")}
+                          alt="Month-view Calendar (proposal)"
                           className="img-fluid"
-                          showCaption={true}
+                          showCaption={false}
                         />
                       </div>
+                      <p>
+                        ✅ Monthly calendar addresses the Problems well and is
+                        ideal for projecting overall availability and showing
+                        minimal information.
+                      </p>
                     </Col>
                   </Row>
                 </div>
 
+                <div
+                  className={`${sharedStyles.contentContainerLeftAlign} mb-4`}
+                >
+                  <p className={sharedStyles.almostBlackP}>
+                    <b>Vertical vs. Horizontal Layout</b>
+                  </p>
+                  <p>
+                    After selecting a desired date, users will land on a
+                    day-view calendar where they can see their schedule and
+                    finalize the request. The existing design has many
+                    visualization and readability issues, which will be
+                    addressed in this step.{" "}
+                  </p>
+                  <p>
+                    I only considered a vertical layout in the first design
+                    iteration. I started exploring a horizontal layout after
+                    keeping running into the readability issue with the vertical
+                    layout when the schedule got complex.
+                  </p>
+                  <Row className="justify-content-center">
+                    <Col lg="6">
+                    <p className="mb-0">
+                      <b>Verical Layout</b>
+                    </p>
+                      <div className="text-left">
+                        <ImageBox
+                          src={this.getImageUrl("vertical.png")}
+                          alt="Verical Layout Day-view Calendar"
+                          className="img-fluid"
+                          showCaption={false}
+                        />
+                      </div>
+                      <p>
+                        I refreshed the vertical layout design. Although many
+                        issues were already addressed previously, I still ran
+                        into readability issues with busy and complex schedules.
+                      </p>
+                    </Col>
+                    <Col lg="6">
+                    <p className="mb-0">
+                      <b>Horizotal Layout</b>
+                    </p>
+                      <div className="text-left">
+                        <ImageBox
+                          src={this.getImageUrl("horizontal.png")}
+                          alt="Horizontal Layout Day-view Calendar"
+                          className="img-fluid"
+                          showCaption={false}
+                        />
+                      </div>
+                      <p>
+                        ✅ I designed the horizontal layout from scratch. This
+                        layout handles complex schedule well and improves the
+                        readability.
+                      </p>
+                    </Col>
+                  </Row>
+                </div>
+              </div>
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center">
+            <Col lg="10 mt-4">
+              <div className={sharedStyles.sectionContainer}>
+                <h6 className={sharedStyles.categoryText}>
+                  Validating the Design
+                </h6>
+                <h3 className={sharedStyles.titleText}>
+                  Getting Feedback & Testing
+                </h3>
+                <p>
+                  Because this is a big project, I put a lot of emphasis on the
+                  iterative design process. I broke the project down into
+                  smaller parts, validated my designs, and collected customer
+                  feedback throughout the process.
+                </p>
+
                 <p className={sharedStyles.almostBlackP}>
-                  <b>Week vs. Month Calendar</b>
+                  <b>Pendo In-App Survey</b>
                 </p>
                 <p className="mt-2">
-                  Finding availability is a critical step for our users to
-                  complete their tasks. Unfortunately, the week-view calendar in
-                  the existing tool cannot provide a comprehensive overview of
-                  availability at a glance, resulting in an inefficient workflow
-                  and other issues outlined in Problem 1.{" "}
+                  I utilized the Pendo In-App Survey to get feedback on simple
+                  concepts from a smaller group of customers. Before redesigning
+                  the entire calendar, I made smaller design changes (time
+                  selector) and gathered user feedback through this survey.
                 </p>
 
                 <p>
-                  In contrast, a month-view calendar can be a promising design
-                  option for this use case. It offers a high-level perspective
-                  of availabilities, allowing users to promptly access the
-                  information they need to select a desired date for a surgery
-                  appointment.{" "}
+                  This same method was also used to validate that customers would benefit 
+                  from finding time in the montly view calendar > weekly view calendar.
                 </p>
 
                 <Row className="justify-content-center">
-                  <Col lg="6">
-                    <div className="text-left">
-                      <ImageBox
-                        src={this.getImageUrl("workflow.png")}
-                        alt="Week view option (existing)"
-                        className="img-fluid"
-                        showCaption={true}
-                      />
-                    </div>
-                  </Col>
-                  <Col lg="6">
-                    <div className="text-left">
-                      <ImageBox
-                        src={this.getImageUrl("workflow.png")}
-                        alt="✅ Month view (proposal)"
-                        className="img-fluid"
-                        showCaption={true}
-                      />
-                    </div>
+                  <Col lg="10" className="text-center">
+                    <ImageBox
+                      src={this.getImageUrl("pendo-survey.png")}
+                      alt="Example - Pendo Survey"
+                      className="img-fluid"
+                      showCaption={true}
+                    />
                   </Col>
                 </Row>
+
+                
                 <p className={sharedStyles.almostBlackP}>
-                  <b>
-                    Displaying Information in the Month Calendar (Options &
-                    Iterations){" "}
-                  </b>
+                  <b>User Interview & Usability Testing</b>
                 </p>
-                <p className="mt-2">Lorem</p>
-
-                <Row className="justify-content-center">
-                  <Col lg="10">
-                    <div className="text-center">
-                      <ImageBox
-                        src={this.getImageUrl("workflow.png")}
-                        alt="Finding availability week by week in the existing experience"
-                        className="img-fluid"
-                        showCaption={true}
-                      />
-                    </div>
-                  </Col>
-                </Row>
+                <p className="mt-2">
+                  Most of my designs are validated and tested through this method. 
+                  I'd present a prototype either in-person or in an online meeting and ask users to describe what they saw and explain how they would use the product.
+                  For this project, I used this method to test the block consolidation idea as well as the final prototype.
+                </p>
+                
               </div>
             </Col>
           </Row>
@@ -610,7 +690,7 @@ export const pageQuery = graphql`
     project: allProjectsJson(filter: { url: { eq: $path } }) {
       ...ProjectFields
     }
-    mainImage: file(relativePath: { eq: "scheduling/main.png" }) {
+    mainImage: file(relativePath: { eq: "surgery-scheduling-calendar/main.png" }) {
       ...ProjectMainImageSizes
     }
   }
