@@ -21,6 +21,18 @@
   }
 }
 
+.featured-project-text{
+  font-size: 20px;
+  margin-bottom: 0;
+  padding-bottom: 12px;
+
+  @media (min-width: 576px) {
+    font-size: 24px;
+  }
+
+
+}
+
 .section-project {
   border-top: 1px solid $almost-black-color;
 }

@@ -6,6 +6,7 @@ import { Container, Col, Row } from "reactstrap";
 import * as styles from "./about.module.scss";
 import { ImageSharp } from "../models/image-sharp";
 import { StaticImage } from "gatsby-plugin-image";
+import { HiArrowUpRight } from "react-icons/hi2";
 import { Dash } from "../components/dash";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import { SocialMediaLinks } from "../components/social-media-links";
@@ -41,16 +42,16 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
             >
               <Col lg="4">
                 <h2 className={styles.hello}>
-                  I'm Mudmie,
+                  Hellio, I'm Mudmie 👋
                   <br />a product designer.
                 </h2>
               </Col>
               <Col lg="8">
                 <p>
-                  With a background in engineering, I approach problem solving
+                  With my background in engineering, I approach problem solving
                   from a holistic perspective and combine system thinking with
-                  user-centered design to craft product experience that make
-                  people's lives easier.
+                  user-centered design to simplify complexity and craft product
+                  experience that make lives easier.
                 </p>
               </Col>
             </Row>
@@ -83,25 +84,24 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                     target="_blank"
                   >
                     Systems Design Engineering
+                    <HiArrowUpRight />
                   </OutboundLink>{" "}
-                  because the name sounded cool. I mean, who doesn’t wanna
-                  design their own systems? I later discovered that my program
-                  put a huge emphasis on human-computer interaction, which
-                  turned out to be something I really enjoyed.
+                  because the name sounded cool 🙃 <br />
                 </p>
                 <p className={styles.content}>
-                  Now, as a product designer, I found myself excited when learning about people’s workflow, listening to their
-                  problems, and using my multidisciplinary knowledge to craft
-                  design solutions that improve their experience.
+                  Now, as a product designer, I found myself excited when
+                  learning about people’s workflow, listening to their problems,
+                  and using my multidisciplinary knowledge to craft design
+                  solutions that improve their experience.
                 </p>
-                <p>
-                </p>
+                <p></p>
                 <h3 className={styles.moreOfMe}>Getting Personal.</h3>
                 <p className={styles.content}>
-                  I was born and raised in Bangkok, but I spend most time living
-                  in the U.S. and Canada. I love traveling and eating good food
-                  — sushi, fried chicken, and matcha are my top 3! These days
-                  I'm working on my Korean, so k-dramas are essential.
+                  I was born in Bangkok, but I've been spending most of my time in the
+                  U.S. and Canada since high school. Other than design stuff,
+                  you can ask me about food and traveling — I can tell you about
+                  my experience eating sushi at Jiro in Tokyo or help you find good
+                  flight deals 🤫
                 </p>
               </Col>
             </Row>
@@ -124,8 +124,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                   <tbody>
                     <tr>
                       <td>
-                        <span className={styles.experienceName}>LeanTaaS</span>
-                        ,{" "}
+                        <span className={styles.experienceName}>LeanTaaS</span>,{" "}
                         <span className={styles.experienceType}>Full-time</span>
                       </td>
                       <td className={styles.experiencePeriod}>

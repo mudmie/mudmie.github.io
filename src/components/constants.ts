@@ -1,1 +1,1 @@
-export const RESUME_FILE_NAME = "/mudmie-resume2023.pdf";
+export const RESUME_FILE_NAME = "/mudmie-resume2024.pdf";

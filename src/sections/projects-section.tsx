@@ -12,6 +12,7 @@ import {
 import { Project } from "../models/project";
 import * as styles from "./projects-section.module.scss";
 import * as sharedStyles from "./sections.module.scss";
+import { HiArrowDown } from "react-icons/hi2";
 import { Link, withPrefix } from "gatsby";
 import { FaLock } from "react-icons/fa";
 import { ProjectCard } from "../components/project-card";
@@ -49,7 +50,9 @@ export class ProjectsSection extends React.Component<
                 data-sal-delay="600"
                 data-sal-easing="ease-out-back"
               >
-                <h2 className={styles.sectionHeading}>Featured Projects
+                <h2 className={styles.featuredProjectText}>Featured Projects <span className={sharedStyles.red}>
+                          <HiArrowDown />
+                        </span>
                 {/* <img
                   src={withPrefix("/images/star.svg")}
                   className={styles.star}
