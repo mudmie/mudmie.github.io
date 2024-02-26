@@ -17,14 +17,17 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
   public render() {
     return (
       <>
-        <section className={styles.sectionImage}>
+        <section>
           {/* <Container className={styles.header} fluid={true}> */}
           <Row className="justify-content-center">
-            <Col lg="12" className="main">
+            <Col lg="10">
+              <div className={styles.sectionImage}>
               <GatsbyImage
                 image={getImage(this.props.mainImage)}
                 alt="main project image"
               />
+              </div>
+              
             </Col>
           </Row>
           {/* </Container> */}
@@ -33,7 +36,7 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
         <section className={styles.summarySection}>
           <Container className={styles.header}>
             <Row className="justify-content-center">
-              <Col lg="6" className="mb-3">
+              <Col lg="7" className="mb-3">
                 {/* <img
                   src={withPrefix(
                     `/images/${this.props.currentProject.imageFolder}/main.png`
@@ -45,21 +48,21 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
                   {this.props.currentProject.name}
                 </h1>
                 <div className={styles.companyTerm}>
-                  {this.props.currentProject.company} /{" "}
+                  {this.props.currentProject.company},{" "}
                   {this.props.currentProject.term}
                 </div>
               </Col>
-              <Col lg="6">
+              <Col lg="5">
                 <p className={styles.projectIntro}>
                   {this.props.currentProject.companyDescription}
                 </p>
                 <p className={styles.projectIntro}>
-                  <b>My Roles</b> <br />
+                  <b>My Roles</b>  — {""}
                   {this.props.currentProject.myRole}
                 </p>
                 <p className={styles.projectIntro}>
                   {" "}
-                  <b>Results</b> <br /> {this.props.currentProject.results}
+                  <b>Results</b> — {""} {this.props.currentProject.results}
                 </p>
               </Col>
             </Row>

@@ -2,7 +2,7 @@ import * as React from "react";
 import { Project } from "../models/project";
 import { Link, withPrefix } from "gatsby";
 import { Row, Col, Container } from "reactstrap";
-import { HiArrowUpRight } from "react-icons/hi2";
+import { HiArrowRight } from "react-icons/hi2";
 import * as styles from "./more-projects.module.scss";
 import { PROJECT_BODY_COLUMN } from "./project-layout";
 
@@ -43,13 +43,13 @@ export class MoreProjects extends React.Component<MoreProjectsProps, {}> {
           <Col lg="9" md="6" sm="6">
             <div className={styles.projectTitle}>{project.name}</div>
             <div className={styles.projectDescription}>
-              {project.company} / {project.term}
+              {project.company}, {project.term}
             </div>
           </Col>
           <Col lg="3" md="6" sm="6" className={styles.viewCaseStudyCol}>
             <Link to={project.url} className={styles.viewCaseStudyButton}>
               <span>View Case Study</span>
-              <HiArrowUpRight className={styles.arrowIcon} />
+              <HiArrowRight className={styles.arrowIcon} />
             </Link>
           </Col>
         </Row>

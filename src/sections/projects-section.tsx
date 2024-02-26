@@ -50,10 +50,11 @@ export class ProjectsSection extends React.Component<
                 data-sal-easing="ease-out-back"
               >
                 <h2 className={styles.sectionHeading}>Featured Projects
-                <img
+                {/* <img
                   src={withPrefix("/images/star.svg")}
                   className={styles.star}
-                /></h2>
+                /> */}
+                </h2>
               </Col>
               
                           </Row>

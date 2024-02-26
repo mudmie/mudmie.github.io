@@ -15,18 +15,18 @@
 }
 
 .about-heading {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 600;
   color: $almost-black-color;
 
   @media (min-width: 576px) {
-    font-size: 40px;
+    font-size: 32px;
   }
   @media (min-width: 992px) {
-    font-size: 48px;
+    font-size: 40px;
   }
   @media (min-width: 1440px) {
-    font-size: 56px;
+    font-size: 48px;
   }
 }
 

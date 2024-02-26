@@ -32,8 +32,16 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
               // data-sal-easing="ease-out-back"
               // className={`align-self-end ${styles.colAbout}`}
             >
-              <h1 className={styles.aboutHeading}>Untangling complex systems and crafting product experience that makes lives easier. <span className={styles.aboutPara}> Mudmie is a product designer who has designed B2B & B2C products in health tech, fintech, construction tech, and more.</span></h1>
-                       </Col>
+              <h1 className={styles.aboutHeading}>
+                Untangling complex systems and crafting product experience that
+                makes lives easier.{" "}
+                <span className={styles.aboutPara}>
+                  {" "}
+                  Mudmie is a product designer solving B2B & B2C
+                  problems in health tech, fintech, and construction tech.
+                </span>
+              </h1>
+            </Col>
           </Row>
           <Row>
             <Col
@@ -51,6 +59,7 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
               <SocialMediaLinks separator="NEW_LINE" isDarkBackground={true} />
             </Col>
           </Row>
+          
         </Container>
       </section>
     );

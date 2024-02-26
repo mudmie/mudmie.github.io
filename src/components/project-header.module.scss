@@ -13,17 +13,20 @@ html {
 
   .company-term {
     font-family: $heading-font;
+    color: $light-grey-color;
     @media (min-width: 992px) {
       margin-top: 8px;  }
   }
 }
 
 .project-title{
-  font-size: 32px;
+  font-size: 32px !important;
   
 }
 .project-intro{
   padding-bottom: 16px;
+  color: $almost-black-color;
+
 }
 
 .summary-section {
@@ -35,5 +38,7 @@ html {
 
 .section-image {
   background-color: $dark-beige-color;
-  padding-top: 80px;
+  border-radius: 8px;
 }
+
+

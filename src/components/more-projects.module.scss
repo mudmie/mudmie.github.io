@@ -12,7 +12,7 @@
   }
 }
 .project-description {
-  color: $almost-black-color;
+  color: $light-grey-color;
   font-family: $heading-font;
   font-size: 12px;
   font-family: $heading-font;
@@ -44,10 +44,6 @@
 }
 
 .view-case-study-button {
-  color: $blue-color;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-decoration: underline;
   @media (min-width: 576px) {
     font-size: 16px;
   }

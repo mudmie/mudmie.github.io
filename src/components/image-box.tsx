@@ -39,7 +39,7 @@ export class ImageBox extends React.Component<ImageBoxProps, ImageBoxState> {
             onClick={this.toggleModal}
           />
           {this.props.showCaption === false ? null : (
-            <figcaption className={`text-center ${styles.imgCaption}`}>
+            <figcaption className={`text-left ${styles.imgCaption}`}>
               {this.props.alt}
             </figcaption>
           )}

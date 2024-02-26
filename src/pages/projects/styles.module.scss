@@ -16,6 +16,75 @@ h2.others{
   text-transform: none;
 }
 
+.section-container{
+  background-color: $light-beige-color;
+  padding: 32px;
+}
+
+.content-container-small{
+  background-color: $light-beige-color;
+  padding: 16px;
+  text-align: center;
+}
+
+.content-container{
+  background-color: $dark-beige-color;
+  padding: 16px;
+  text-align: center;
+}
+
+.content-container-left-align{
+  background-color: $dark-beige-color;
+  padding: 8px 24px;
+  text-align: left;
+}
+
+.category-text{
+  text-transform: uppercase;
+  color: $coral-color;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0 !important;
+  padding-bottom: 4px;
+}
+
+.title-text{
+  margin-top: 0 !important;
+}
+
+
+
+.highlight-text{
+  padding: 56px 0;
+  font-weight: 400;
+  font-size: 28px !important;
+  text-align: center;
+  line-height: 150%;
+}
+
+.image-text{
+  margin:0;
+  color: $light-grey-color;
+}
+
+.grey-text{ 
+  color: $light-grey-color;
+}
+
+.almost-black-p{
+  color: $almost-black-color;
+  margin-bottom: 0;
+}
+
+p, li{
+  color: $dark-grey-color;
+}
+
+.list-left-align{
+  text-align: left !important;
+}
+
+
 // .topicRight {
 //   font-family: $body-font;
 //   font-weight: 600;
