@@ -27,25 +27,17 @@ export default class ThematicPage extends React.Component<
             <Col lg="10">
               <div className={sharedStyles.sectionContainer}>
                 <h6 className={sharedStyles.categoryText}>Context</h6>
-                <h3 className={sharedStyles.titleText}>
-                  What happened? Why is this project important?
-                </h3>
+                <h3 className={sharedStyles.titleText}>Situation of Concern</h3>
                 <p>
-                  The scheduling tool is one of the company's core products and
-                  used by 1000+ clinic and operating room (OR) schedulers to
+                  The scheduling tool is a core product for the company, used by
+                  over 1000+ clinic and operating room (OR) schedulers to
                   coordinate surgery scheduling.
                 </p>
                 <p>
-                  In early 2022, LeanTaaS launched a new workflow to support
-                  wider use cases in surgery scheduling. However, onboarding
-                  users to this new workflow has been challenging as many of
-                  them found it difficult and inefficient compared to the
-                  previous workflow.
-                </p>
-                <p>
-                  By 2023, the scheduling team decided to revisit the workflow
-                  to improve customer satisfaction and reduce company resources
-                  spent on training and supporting the users.
+                  Since the launch in late 2021, onboarding users to this new
+                  workflow has been challenging. As a result, the team decided
+                  to revisit the workflow to improve customer satisfaction and
+                  reduce resources spent on training and support.
                 </p>
               </div>
             </Col>
@@ -70,12 +62,12 @@ export default class ThematicPage extends React.Component<
                 <h6 className={sharedStyles.categoryText}>Research</h6>
                 <h3 className={sharedStyles.titleText}>The Users</h3>
                 <p>
-                  <b>Clinic Schedulers are the primary user</b> of this tool.
+                  <u>Clinic Schedulers are the primary user</u> of this tool.
                   They work with doctors, patients, and OR schedulers at
                   hospitals to coordinate surgery appointments.{" "}
                 </p>
                 <p>
-                  I conducted an <b>ethnographic research </b> involving onsite
+                  I conducted an <u>ethnographic research</u> involving onsite
                   shadowing and user interviews, leading to an identification of
                   the following characteristics of this user group:.
                 </p>
@@ -142,24 +134,18 @@ export default class ThematicPage extends React.Component<
                 <h3 className={sharedStyles.titleText}>
                   Problem 1 – Finding available time takes too long{" "}
                 </h3>
-                <p>Quantitative data revealed that, on average,</p>
-                <ul>
-                  <li>
-                    users spent nearly 5 minutes to complete the task
-                    (successfully submit a request for a surgery appointment)
-                  </li>
-                  <li>
-                    it took 1.5 minutes for users to just select a desired
-                    appointment date
-                  </li>
-                </ul>
                 <p>
-                  I also learned from my research that surgeries are typically
-                  scheduled a month in advance. Having to navigate through the
-                  calendar week by week and waiting for the data to load
-                  significantly slowed down users. The example below shows how
-                  time consuming it could be for users keep clicking until they
-                  find an available time (blue colored block).
+                  The data revealed that, on average,{" "}
+                  <u>users spend almost 5 minutes to complete the task</u>. They
+                  spent an average of 1.5 minute alone to select a desired
+                  appointment date.
+                </p>
+
+                <p>
+                  From interviews, users typically schedule surgeries a month in
+                  advance. Having to <u> navigate week by week </u> and{" "}
+                  <u> waiting for the data to load </u> while trying to find
+                  availability <u>significantly slows them down</u>.
                 </p>
 
                 <Row className="justify-content-center">
@@ -167,7 +153,7 @@ export default class ThematicPage extends React.Component<
                     <div className="text-center">
                       <ImageBox
                         src={this.getImageUrl("current-finding-time.gif")}
-                        alt="Finding availability week by week in the existing experience"
+                        alt="Finding availability (blue block) in the existing experience"
                         className="img-fluid"
                         showCaption={true}
                       />
@@ -192,19 +178,15 @@ export default class ThematicPage extends React.Component<
                   explore the tool due to fear of making mistakes.
                 </p>
                 <p>
-                  After running a heuristic evaluation, it became evident that
-                  the existing interfaces were cluttered and lacked a structured
-                  workflow, making it particularly challenging for users with
-                  limited tech proficiency.
-                </p>
-
-                <p>
-                  The workflow was designed to have users input search
-                  parameters to find available time before selecting their
-                  preferred type of time to schedule surgery. However, the
-                  existing design requires the users to process information from
-                  right to left, which runs counter to our natural inclination
-                  to read from left to right.{" "}
+                  The workflow expects users to input search parameters to find
+                  available time before selecting the time type. However, the
+                  existing design requires users to process information right to
+                  left,{" "}
+                  <u>
+                    contradicting our natural inclination to read from left to
+                    right
+                  </u>
+                  .
                 </p>
 
                 <Row className="justify-content-center">
@@ -212,7 +194,7 @@ export default class ThematicPage extends React.Component<
                     <div className="text-center">
                       <ImageBox
                         src={this.getImageUrl("messy-screen.png")}
-                        alt="Workflow and eye movements in the existing experience"
+                        alt="Cluttered UI and lack of structured workflow in the existing design"
                         className="img-fluid"
                         showCaption={true}
                       />
@@ -231,19 +213,20 @@ export default class ThematicPage extends React.Component<
                   Problem 3 – Poor readability and visualization{" "}
                 </h3>
                 <p>
-                  Surgery schedules, especially at academic or larger hospitals,
-                  can be very chaotic. While this existing UI captured the
-                  complex schedule, it failed to provide users with easy access
-                  to the necessary information at a glance.
+                  Surgery schedules can be very chaotic, and the existing design
+                  &nbsp;
+                  <u>
+                    fails to provide easy access to the necessary information
+                  </u>{" "}
+                  at a glance.
                 </p>
 
                 <p>
-                  Even though users can hover over each item to view additional
-                  information, this interaction can be cumbersome. Due to the
-                  small size of each item, it often requires extra effort to
-                  accurately hover over the intended item. Moreover, it's easy
-                  to move away from the focused item, causing the tooltip to
-                  disappear.
+                  Even though users can rely on hover interaction to view
+                  additional information, it{" "}
+                  <u>requires extra effort to accurately hover</u> over the
+                  intended item because of its small size. The tooltip will also
+                  disappear when users move away from the focused item.
                 </p>
 
                 <Row className="justify-content-center">
@@ -326,14 +309,10 @@ export default class ThematicPage extends React.Component<
                   Reducing Cognitive Workload{" "}
                 </h3>
                 <p>
-                  There are two types of time allocations in surgery scheduling:
-                  open time and block time.
-                  <ul>
-                    <li> Open time is available first-come, first-served </li>
-                    <li>
-                      Block time is allocated to specific individuals or groups
-                    </li>
-                  </ul>
+                  Open time and block time are two common types of time
+                  allocation in surgery scheduling. Open time is first-come,
+                  first served while block time is allocated to a specific
+                  individual or group.
                 </p>
 
                 <div
@@ -344,32 +323,21 @@ export default class ThematicPage extends React.Component<
                   </p>
 
                   <p>
-                    The existing tool organizes block times into individual,
-                    service line, and group blocks. It also incorporates
-                    scheduled surgeries and a 'set alert' function. This
-                    approach results in <u>seven concepts and colors</u> in the
-                    UI, leading to{" "}
+                    The existing tool categorizes block times into individual,
+                    service line, and group blocks. Scheduled surgeries and a
+                    'set alert' function are also visible.{" "}
                     <u>
-                      visual clutter and overwhelming users with cognitive load
-                    </u>{" "}
-                    and contributing to Problem 2 (lack of clear guidance in
-                    UI/Workflow).
+                      These visual clutters overwhelm users with cognitive load
+                    </u>
+                    .
                   </p>
 
                   <p>
-                    Based on my research, clinic schedulers prioritize block
-                    times before open time. They differentiate between
-                    individual and shared blocks, but the{" "}
-                    <u>
-                      distinction between service line and group blocks isn't
-                      crucial
-                    </u>
-                    . To simplify the interface and reduce information overload,{" "}
-                    <u>
-                      I combined service line and group blocks into one category
-                      and removed the set alert feature
-                    </u>{" "}
-                    from this calendar.
+                    While users need to differentiate between individual and
+                    shared blocks, <u>they don't need to distinguish between the
+                    service line and group blocks</u>. I combined service line and
+                    group blocks into one category and removed the set alert
+                    feature from this calendar to simplify the experience.
                   </p>
 
                   <Row className="justify-content-between">
@@ -402,7 +370,7 @@ export default class ThematicPage extends React.Component<
                     rooms for shared blocks. While this room-specific
                     information is crucial for hospital schedulers, clinic
                     schedulers are more concerned with finding available time
-                    slots for scheduling surgeries.
+                    slots.
                   </p>
                   <p>
                     However,{" "}
@@ -410,12 +378,6 @@ export default class ThematicPage extends React.Component<
                     Without knowing the room information, how are the clinic
                     schedulers supposed to make a decision on which one of these
                     blocks they should select?
-                  </p>
-                  <p>
-                    This UI results in the issue outlined in Problem 3 (Poor
-                    Readability and Visualization), causing confusion for our
-                    users when trying to determine which item to select for
-                    scheduling.
                   </p>
 
                   <Row className="justify-content-center">
@@ -431,13 +393,13 @@ export default class ThematicPage extends React.Component<
                     </Col>
                   </Row>
                   <p>
-                    To reduce complexity, I proposed and verified the
+                    I proposed and verified the
                     feasibility of{" "}
                     <u>
                       consolidating the availability of blocks belonging to the
                       same service line or group
                     </u>
-                    . This consolidation removes unnecessary complexity for the
+                    . This removes unnecessary complexity from the
                     users and streamlines visualization in the calendar, making
                     it easier to take appropriate actions.
                   </p>
@@ -463,13 +425,13 @@ export default class ThematicPage extends React.Component<
                   </Row>
 
                   <p>
-                    After consolidating the shared blocks, I further simplified
+                    I further simplified
                     the UI by{" "}
                     <u>
-                      removing scheduled cases that belong to other surgeons in
+                      removing scheduled cases of other surgeons in
                       the shared blocks
                     </u>{" "}
-                    from this level of calendar as users mentioned they didn't
+                    from the calendar, as users mentioned they didn't
                     need to see the information in this step.
                   </p>
                   <Row className="justify-content-between">
@@ -515,10 +477,54 @@ export default class ThematicPage extends React.Component<
                 </h3>
                 <p>
                   While the effort above helped simplify the complexity and the
-                  visualization, it still didn't solve all the Problems
-                  mentioned in the beginning of the case study. Below are other
-                  design decisions I made to address those problems.{" "}
+                  visualization, it still didn't solve all the idenified
+                  Problems. Below are other design decisions I made to address
+                  those problems.{" "}
                 </p>
+
+                <div
+                  className={`${sharedStyles.contentContainerLeftAlign} mb-4`}
+                >
+                  <p className={sharedStyles.almostBlackP}>
+                    <b>Week vs. Month Calendar</b>
+                  </p>
+                  <p>
+                    Finding availability is a critical step for our users to
+                    complete their tasks. Unfortunately, the week-view calendar
+                    in the existing tool cannot provide a comprehensive overview
+                    of availability at a glance, resulting in an inefficient
+                    workflow and other issues outlined in Problem 1.
+                  </p>
+                  <p>
+                    In contrast, a month-view calendar can be a promising design
+                    option for this use case. It offers a high-level perspective
+                    of availabilities, allowing users to promptly access the
+                    information they need to select a desired date for a surgery
+                    appointment.
+                  </p>
+                  <Row className="justify-content-center">
+                    <Col lg="6">
+                      <div className="text-left">
+                        <ImageBox
+                          src={this.getImageUrl("workflow.png")}
+                          alt="Week view option (existing)"
+                          className="img-fluid"
+                          showCaption={true}
+                        />
+                      </div>
+                    </Col>
+                    <Col lg="6">
+                      <div className="text-left">
+                        <ImageBox
+                          src={this.getImageUrl("workflow.png")}
+                          alt="✅ Month view (proposal)"
+                          className="img-fluid"
+                          showCaption={true}
+                        />
+                      </div>
+                    </Col>
+                  </Row>
+                </div>
 
                 <p className={sharedStyles.almostBlackP}>
                   <b>Week vs. Month Calendar</b>
