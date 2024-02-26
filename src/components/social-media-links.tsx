@@ -30,11 +30,9 @@ export class SocialMediaLinks extends React.Component<
             href="https://www.linkedin.com/in/mudmie"
             target="_blank"
           >
-            <br/>
             LinkedIn
             <HiArrowUpRight className={styles.arrowIcon} />
           </OutboundLink>
-          {this.getSeparator()}
         </span>
       </div>
     );
@@ -44,6 +42,6 @@ export class SocialMediaLinks extends React.Component<
     if (this.props.separator == "NEW_LINE") {
       return <br />;
     }
-    return <span> {this.props.separator} </span>;
+    return <span>{this.props.separator}</span>;
   }
 }

@@ -3,11 +3,8 @@ import { Col, Container, Row } from "reactstrap";
 import * as styles from "./about-section.module.scss";
 import * as sharedStyles from "./sections.module.scss";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
-import Img from "gatsby-plugin-image";
 import { withPrefix, Link } from "gatsby";
-import { ImageSharp } from "../models/image-sharp";
 import { SocialMediaLinks } from "../components/social-media-links";
-import { FaRegSmile } from "react-icons/fa";
 export interface AboutSectionProps {
   id: string;
 }
@@ -26,11 +23,11 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
           >
             <Col
               lg="12"
-              // data-sal="slide-up"
-              // data-sal-duration="400"
-              // data-sal-delay="200"
-              // data-sal-easing="ease-out-back"
-              // className={`align-self-end ${styles.colAbout}`}
+            // data-sal="slide-up"
+            // data-sal-duration="400"
+            // data-sal-delay="200"
+            // data-sal-easing="ease-out-back"
+            // className={`align-self-end ${styles.colAbout}`}
             >
               <h1 className={styles.aboutHeading}>
                 Untangling complex systems and crafting product experience that
@@ -46,20 +43,19 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
           <Row>
             <Col
               lg="10"
-              // className={`align-self-end ${styles.colInfo}`}
-              // data-sal="slide-down"
-              // data-sal-duration="400"
-              // data-sal-delay="200"
-              // data-sal-easing="ease-out-back"
+            // className={`align-self-end ${styles.colInfo}`}
+            // data-sal="slide-down"
+            // data-sal-duration="400"
+            // data-sal-delay="200"
+            // data-sal-easing="ease-out-back"
             >
               {/* <p className={styles.aboutPara}>
               Mudmie is a product designer who has designed B2B & B2C products in health tech, fintech, construction tech, and more.
               </p> */}
               {/* Social Media Links */}
-              <SocialMediaLinks separator="NEW_LINE" isDarkBackground={true} />
+              <SocialMediaLinks separator="&nbsp;&nbsp;&nbsp;&nbsp;" isDarkBackground={true} />
             </Col>
           </Row>
-          
         </Container>
       </section>
     );
