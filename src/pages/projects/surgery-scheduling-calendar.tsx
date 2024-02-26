@@ -69,7 +69,7 @@ export default class ThematicPage extends React.Component<
                 <p>
                   I conducted an <u>ethnographic research</u> involving onsite
                   shadowing and user interviews, leading to an identification of
-                  the following characteristics of this user group:.
+                  the following characteristics of this user group:
                 </p>
 
                 <Row className="justify-content-between">
