@@ -53,7 +53,7 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
               Mudmie is a product designer who has designed B2B & B2C products in health tech, fintech, construction tech, and more.
               </p> */}
               {/* Social Media Links */}
-              <SocialMediaLinks separator="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" isDarkBackground={true} />
+              <SocialMediaLinks separator="&nbsp;&nbsp;&nbsp;&nbsp;" isDarkBackground={true} />
             </Col>
           </Row>
         </Container>
