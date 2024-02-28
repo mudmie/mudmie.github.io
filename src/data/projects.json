@@ -106,6 +106,6 @@
     "url": "/projects/hacker-apps/",
     "imageFolder": "hacker-apps",
     "isProtected": false,
-    "isEnabled": true
+    "isEnabled": false
   }
 ]

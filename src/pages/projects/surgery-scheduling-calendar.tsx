@@ -21,9 +21,10 @@ export default class ThematicPage extends React.Component<
         allProjects={this.props.data.allProjects.edges.map((e) => e.node)}
         currentProject={this.props.data.project.edges[0].node}
         mainImage={this.props.data.mainImage}
+        mainImageOverrideUri={"/images/surgery-scheduling-calendar/main.gif"}
       >
         <Container>
-          <Row className="justify-content-center">
+          {/* <Row className="justify-content-center">
             <Col lg="10">
               <div className={sharedStyles.sectionContainer}>
                 <h6 className={sharedStyles.categoryText}>Context</h6>
@@ -41,7 +42,7 @@ export default class ThematicPage extends React.Component<
                 </p>
               </div>
             </Col>
-          </Row>
+          </Row> */}
 
           <Row className="justify-content-center">
             <Col lg="7">
@@ -615,7 +616,7 @@ export default class ThematicPage extends React.Component<
             </Col>
           </Row>
 
-          <Row className="justify-content-center">
+          {/* <Row className="justify-content-center">
             <Col lg="10 mt-4">
               <div className={sharedStyles.sectionContainer}>
                 <h6 className={sharedStyles.categoryText}>
@@ -669,7 +670,7 @@ export default class ThematicPage extends React.Component<
                 
               </div>
             </Col>
-          </Row>
+          </Row> */}
         </Container>
       </ProjectLayout>
     );

@@ -12,6 +12,7 @@ export interface ProjectLayoutProps {
   allProjects: Project[];
   currentProject: Project;
   mainImage?: any;
+  mainImageOverrideUri?: string;
   children: any;
 }
 
@@ -34,6 +35,7 @@ export class ProjectLayout extends React.Component<ProjectLayoutProps, {}> {
               allProjects={this.props.allProjects}
               currentProject={this.props.currentProject}
               mainImage={this.props.mainImage}
+              mainImageOverrideUri={this.props.mainImageOverrideUri}
             />
             <ProjectBody project={this.props.currentProject}>
               {this.props.children}

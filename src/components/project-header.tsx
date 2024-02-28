@@ -12,6 +12,7 @@ export interface ProjectHeaderProps {
   allProjects: Project[];
   currentProject: Project;
   mainImage: ImageSharp;
+  mainImageOverrideUri?: string;
 }
 export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
   public render() {
@@ -19,17 +20,19 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
       <>
         <section>
           {/* <Container className={styles.header} fluid={true}> */}
-          <Row className="justify-content-center">
-            <Col lg="10">
               <div className={styles.sectionImage}>
-              <GatsbyImage
-                image={getImage(this.props.mainImage)}
-                alt="main project image"
-              />
+                {this.props.mainImageOverrideUri ? (
+                  <img
+                    src={this.props.mainImageOverrideUri}
+                    className="img-fluid"
+                  />
+                ) : (
+                  <GatsbyImage
+                    image={getImage(this.props.mainImage)}
+                    alt="main project image"
+                  />
+                )}
               </div>
-              
-            </Col>
-          </Row>
           {/* </Container> */}
         </section>
 
@@ -57,7 +60,7 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
                   {this.props.currentProject.companyDescription}
                 </p>
                 <p className={styles.projectIntro}>
-                  <b>My Roles</b>  — {""}
+                  <b>My Roles</b> — {""}
                   {this.props.currentProject.myRole}
                 </p>
                 <p className={styles.projectIntro}>
