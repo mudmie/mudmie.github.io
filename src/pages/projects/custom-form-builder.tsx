@@ -604,12 +604,11 @@ export default class CustomFormBuilderPage extends React.Component<
           <Row className="justify-content-center">
             <Col lg="7">
               <h4 className={sharedStyles.highlightText}>
-                Concept 2 was choosen as a concept for the final design.
                 <span className={sharedStyles.greyText}>
                   {" "}
-                  I revised the concept and turned it into high-fidelity
-                  mockups.
-                </span>{" "}
+                  I revised and turned {""}
+                </span>
+                Concept 2 into high-fidelity mockups.
               </h4>
             </Col>
           </Row>

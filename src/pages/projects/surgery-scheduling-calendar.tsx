@@ -347,23 +347,23 @@ export default class ThematicPage extends React.Component<
 
                   <Row className="justify-content-between">
                     <Col lg="6">
-                    <p className="mb-0">
-                      <b>Before</b>
-                    </p>
+                      <p className="mb-0">
+                        <b>Before</b>
+                      </p>
                       <ImageBox
                         src={this.getImageUrl("color-labels.png")}
-                        alt="7 concepts and colors in the UI"
+                        alt="7 information types and colors in the UI"
                         className="img-fluid"
                       />
                     </Col>
 
                     <Col lg="6">
-                    <p className="mb-0">
-                      <b>After</b>
-                    </p>
+                      <p className="mb-0">
+                        <b>After</b>
+                      </p>
                       <ImageBox
                         src={this.getImageUrl("reduced-colors.png")}
-                        alt="5 concepts and colors in the UI"
+                        alt="5 information types and colors in the UI"
                         className="img-fluid"
                       />
                     </Col>
@@ -445,9 +445,9 @@ export default class ThematicPage extends React.Component<
                   </p>
                   <Row className="justify-content-between">
                     <Col lg="6">
-                    <p className="mb-0">
-                      <b>Before</b>
-                    </p>
+                      <p className="mb-0">
+                        <b>Before</b>
+                      </p>
                       <ImageBox
                         src={this.getImageUrl("color-labels.png")}
                         alt="Cluttered UI before the redesign"
@@ -456,9 +456,9 @@ export default class ThematicPage extends React.Component<
                     </Col>
 
                     <Col lg="6">
-                    <p className="mb-0">
-                      <b>After</b>
-                    </p>
+                      <p className="mb-0">
+                        <b>After</b>
+                      </p>
                       <ImageBox
                         src={this.getImageUrl("final-reduction.png")}
                         alt="Cleaner UI after the redesign"
@@ -516,9 +516,9 @@ export default class ThematicPage extends React.Component<
                   </p>
                   <Row className="justify-content-center">
                     <Col lg="6">
-                    <p className="mb-0">
-                      <b>Weekly Calendar</b>
-                    </p>
+                      <p className="mb-0">
+                        <b>Weekly Calendar</b>
+                      </p>
                       <div className="text-left">
                         <ImageBox
                           src={this.getImageUrl("week-view-new.png")}
@@ -534,9 +534,9 @@ export default class ThematicPage extends React.Component<
                       </p>
                     </Col>
                     <Col lg="6">
-                    <p className="mb-0">
-                      <b>Montly Calendar</b>
-                    </p>
+                      <p className="mb-0">
+                        <b>Montly Calendar</b>
+                      </p>
                       <div className="text-left">
                         <ImageBox
                           src={this.getImageUrl("month-view-new.png")}
@@ -575,9 +575,9 @@ export default class ThematicPage extends React.Component<
                   </p>
                   <Row className="justify-content-center">
                     <Col lg="6">
-                    <p className="mb-0">
-                      <b>Verical Layout</b>
-                    </p>
+                      <p className="mb-0">
+                        <b>Verical Layout</b>
+                      </p>
                       <div className="text-left">
                         <ImageBox
                           src={this.getImageUrl("vertical.png")}
@@ -593,9 +593,9 @@ export default class ThematicPage extends React.Component<
                       </p>
                     </Col>
                     <Col lg="6">
-                    <p className="mb-0">
-                      <b>Horizotal Layout</b>
-                    </p>
+                      <p className="mb-0">
+                        <b>Horizotal Layout</b>
+                      </p>
                       <div className="text-left">
                         <ImageBox
                           src={this.getImageUrl("horizontal.png")}
@@ -691,7 +691,9 @@ export const pageQuery = graphql`
     project: allProjectsJson(filter: { url: { eq: $path } }) {
       ...ProjectFields
     }
-    mainImage: file(relativePath: { eq: "surgery-scheduling-calendar/main.png" }) {
+    mainImage: file(
+      relativePath: { eq: "surgery-scheduling-calendar/main.png" }
+    ) {
       ...ProjectMainImageSizes
     }
   }
