@@ -63,12 +63,12 @@ export default class ThematicPage extends React.Component<
                 <h6 className={sharedStyles.categoryText}>Research</h6>
                 <h3 className={sharedStyles.titleText}>The Users</h3>
                 <p>
-                  <u>Clinic Schedulers are the primary user</u> of this tool.
+                  <u>Clinic Schedulers are the primary users</u> of this tool.
                   They work with doctors, patients, and OR schedulers at
                   hospitals to coordinate surgery appointments.{" "}
                 </p>
                 <p>
-                  I conducted an <u>ethnographic research</u> involving onsite
+                  I conducted <u>ethnographic research</u> involving onsite
                   shadowing and user interviews, leading to an identification of
                   the following characteristics of this user group:
                 </p>
@@ -136,10 +136,9 @@ export default class ThematicPage extends React.Component<
                   Problem 1 – Finding available time takes too long{" "}
                 </h3>
                 <p>
-                  The data revealed that, on average,{" "}
-                  <u>users spend almost 5 minutes to complete the task</u>. They
-                  spent an average of 1.5 minute alone to select a desired
-                  appointment date.
+                  On average, users spend almost 5 minutes to complete the task.
+                  They spent an average of{" "}
+                  <u>1.5 minutes just to select a desired appointment date.</u>
                 </p>
 
                 <p>
@@ -170,11 +169,11 @@ export default class ThematicPage extends React.Component<
               <div className={sharedStyles.sectionContainer}>
                 <h6 className={sharedStyles.categoryText}>Research</h6>
                 <h3 className={sharedStyles.titleText}>
-                  Problem 2 – Workflow/UI lacks of clear guidance{" "}
+                  Problem 2 – Workflow/UI lacks clear guidance{" "}
                 </h3>
                 <p>
                   Users struggled with the existing experience. During onsite
-                  visits, I observed many user staring at the screen and not
+                  visits, I observed many users staring at the screen and not
                   knowing how to proceed. Some hesitated to click around and
                   explore the tool due to fear of making mistakes.
                 </p>
@@ -214,8 +213,7 @@ export default class ThematicPage extends React.Component<
                   Problem 3 – Poor readability and visualization{" "}
                 </h3>
                 <p>
-                  Surgery schedules can be very chaotic, and the existing design
-                  &nbsp;
+                  Surgery schedules can be very chaotic, and the existing design{" "}
                   <u>
                     fails to provide easy access to the necessary information
                   </u>{" "}
@@ -273,7 +271,7 @@ export default class ThematicPage extends React.Component<
                 <p>
                   <b>Improve customer satisfaction</b>
                 </p>
-                <p>Reduce number of support tickets by 50% </p>
+                <p>Reduce the number of support tickets by 50% </p>
               </div>
             </Col>
             <Col lg="3">
@@ -312,7 +310,7 @@ export default class ThematicPage extends React.Component<
                 <p>
                   Open time and block time are two common types of time
                   allocation in surgery scheduling. Open time is first-come,
-                  first served while block time is allocated to a specific
+                  first-served while block time is allocated to a specific
                   individual or group.
                 </p>
 
@@ -320,7 +318,7 @@ export default class ThematicPage extends React.Component<
                   className={`${sharedStyles.contentContainerLeftAlign} mt-4`}
                 >
                   <p className={sharedStyles.almostBlackP}>
-                    <b>Reducing infomation types and colors</b>
+                    <b>Reducing information types and colors</b>
                   </p>
 
                   <p>
@@ -474,8 +472,8 @@ export default class ThematicPage extends React.Component<
           <Row className="justify-content-center">
             <Col lg="7">
               <h4 className={sharedStyles.highlightText}>
-                <span className={sharedStyles.greyText}> Some keys </span>{" "}
-                design decisions{" "}
+                <span className={sharedStyles.greyText}> Some key</span> design
+                decisions{" "}
                 <span className={sharedStyles.greyText}> I made 🧐 </span>{" "}
               </h4>
             </Col>
@@ -492,7 +490,7 @@ export default class ThematicPage extends React.Component<
                 </h3>
                 <p>
                   While the effort above helped simplify the complexity and the
-                  visualization, it still didn't solve all the idenified
+                  visualization, it still didn't solve all the identified
                   Problems. Below are other design decisions I made to address
                   those problems.{" "}
                 </p>
@@ -535,7 +533,7 @@ export default class ThematicPage extends React.Component<
                     </Col>
                     <Col lg="6">
                       <p className="mb-0">
-                        <b>Montly Calendar</b>
+                        <b>Monthly Calendar</b>
                       </p>
                       <div className="text-left">
                         <ImageBox
@@ -570,13 +568,13 @@ export default class ThematicPage extends React.Component<
                   <p>
                     I only considered a vertical layout in the first design
                     iteration. I started exploring a horizontal layout after
-                    keeping running into the readability issue with the vertical
-                    layout when the schedule got complex.
+                    running into the readability issue with the vertical layout
+                    when the schedule got complex.
                   </p>
                   <Row className="justify-content-center">
                     <Col lg="6">
                       <p className="mb-0">
-                        <b>Verical Layout</b>
+                        <b>Vertical Layout</b>
                       </p>
                       <div className="text-left">
                         <ImageBox
@@ -594,7 +592,7 @@ export default class ThematicPage extends React.Component<
                     </Col>
                     <Col lg="6">
                       <p className="mb-0">
-                        <b>Horizotal Layout</b>
+                        <b>Horizontal Layout</b>
                       </p>
                       <div className="text-left">
                         <ImageBox
@@ -606,7 +604,7 @@ export default class ThematicPage extends React.Component<
                       </div>
                       <p>
                         ✅ I designed the horizontal layout from scratch. This
-                        layout handles complex schedule well and improves the
+                        layout handles complex schedules well and improves
                         readability.
                       </p>
                     </Col>

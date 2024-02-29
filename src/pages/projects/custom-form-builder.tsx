@@ -65,7 +65,7 @@ export default class CustomFormBuilderPage extends React.Component<
               <div className={sharedStyles.sectionContainer}>
                 <h6 className={sharedStyles.categoryText}>Context</h6>
                 <h3 className={sharedStyles.titleText}>
-                  The Problem – the existing report tool is inefficient{" "}
+                  The Problems & The Existing Tool{" "}
                 </h3>
                 <p>
                   Currently, PlanGrid offers 2 ways to create reports — using a

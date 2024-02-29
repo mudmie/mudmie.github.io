@@ -24,12 +24,7 @@ export class ProjectCard extends React.Component<ProjectCardProps, {}> {
             {this.props.project.company}, {this.props.project.term}
           </div>
 
-          {/* <h3 className={styles.projectTitle}>{this.props.project.name}</h3> */}
           <h3 className={styles.projectTitle}>{this.props.project.name}<span className={styles.projectDescriptionNew}> — {this.props.project.description} </span></h3>
-
-          {/* <p className={styles.projectDescriptionNew}>
-            {this.props.project.description} / {this.props.project.company}, {this.props.project.term}
-          </p> */}
 
           <Link to={this.props.project.url} className={styles.caseStudyButton}>
             Read Case Study
