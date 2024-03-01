@@ -73,12 +73,10 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                 />
               </Col>
               <Col lg="8" md="6" className="mb-3">
-                <h3 className={styles.moreOfMe}>More of me.</h3>
+                <h3 className={styles.moreOfMe}>More About me.</h3>
 
-                <p className={styles.content}>
-                  I knew from the beginning I had to get into the University of
-                  Waterloo because of its co-op program, but I’ll admit that I
-                  chose{" "}
+                <p>
+                I graduated from {" "}
                   <OutboundLink
                     href="https://uwaterloo.ca/systems-design-engineering/about-systems-design-engineering/what-systems-design-engineering"
                     target="_blank"
@@ -86,22 +84,15 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                     Systems Design Engineering
                     <HiArrowUpRight />
                   </OutboundLink>{" "}
-                  because the name sounded cool 🙃 <br />
+                  at the University of Waterloo, where I also studied human-computer interaction (HCI) and cognitive ergonomics.
                 </p>
-                <p className={styles.content}>
-                  Now, as a product designer, I found myself excited when
-                  learning about people’s workflow, listening to their problems,
-                  and using my multidisciplinary knowledge to craft design
-                  solutions that improve their experience.
+                <p>
+                I find myself excited when learning about people’s workflow, listening to their problems, and using my multidisciplinary knowledge to craft design solutions that improve their experience. 
                 </p>
-                <p></p>
-                <h3 className={styles.moreOfMe}>Getting Personal.</h3>
-                <p className={styles.content}>
-                  I was born in Bangkok, but I've been spending most of my time in the
-                  U.S. and Canada since high school. Other than design stuff,
-                  you can ask me about food and traveling — I can tell you about
-                  my experience eating sushi at Jiro in Tokyo or help you find good
-                  flight deals 🤫
+                <p>
+                  Other than design stuff, you can ask me about food and
+                  traveling — I can tell you about my experience eating sushi at
+                  Jiro in Tokyo or help you find good flight deals 🤫
                 </p>
               </Col>
             </Row>
