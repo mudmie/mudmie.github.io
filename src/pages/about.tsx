@@ -42,7 +42,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
             >
               <Col lg="4">
                 <h2 className={styles.hello}>
-                  Hellio, I'm Mudmie 👋
+                  Hello, I'm Mudmie 👋
                   <br />a product designer.
                 </h2>
               </Col>
