@@ -18,6 +18,24 @@
     "isEnabled": true
   },
   {
+    "name": "Dashboard ",
+    "company": "LeanTaaS",
+    "term": "2023",
+    "description": "reducing training effort and making scheduling easier",
+    "companyDescription": "LeanTaaS offers B2B software solutions that optimize healthcare operations. Its scheduling platform allows clinics and hospitals to coordinate surgeries.",
+    "type": "Full-time",
+    "platform": [
+      "Mobile"
+    ],
+    "duration": "6 Weeks",
+    "myRole": "I led end-to-end design and research of the surgery scheduling tool and collaborated with product, engineering, and customer success teams to strategize releases.",
+    "results": "Users completed their tasks 30% faster; support tickets and in-person training decreased by half.",
+    "url": "/projects/analytics-dashboard/",
+    "imageFolder": "analytics-dashboard",
+    "isProtected": false,
+    "isEnabled": true
+  },
+  {
     "name": "Surgery Scheduling",
     "company": "LeanTaaS",
     "term": "2023",

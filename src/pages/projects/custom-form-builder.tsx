@@ -193,7 +193,7 @@ export default class CustomFormBuilderPage extends React.Component<
                     href="https://www.linkedin.com/in/kimberley-pita"
                     target="_blank"
                   >
-                    Kim
+                    Kim Pita
                   </OutboundLink>
                   , a research intern, to recruit 10 companies (small, medium,
                   large-sized &amp; government-based) to participate in the user
@@ -475,7 +475,7 @@ export default class CustomFormBuilderPage extends React.Component<
                   </Col>
                 </Row>
                 <Row className="justify-content-center">
-                  <Col lg="12" className="mb-2 mb-4">
+                  <Col lg="12" className="mb-4">
                     <div className={sharedStyles.contentContainerLeftAlign}>
                       <Row className="justify-content- center">
                         <Col lg="6">
