@@ -13,6 +13,7 @@ export interface ProjectLayoutProps {
   currentProject: Project;
   mainImage?: any;
   mainImageOverrideUri?: string;
+  disableHeader: boolean;
   children: any;
 }
 
@@ -31,12 +32,14 @@ export class ProjectLayout extends React.Component<ProjectLayoutProps, {}> {
             currentProject={this.props.currentProject}
             isProtected={this.props.currentProject.isProtected}
           >
-            <ProjectHeader
-              allProjects={this.props.allProjects}
-              currentProject={this.props.currentProject}
-              mainImage={this.props.mainImage}
-              mainImageOverrideUri={this.props.mainImageOverrideUri}
-            />
+            {!this.props.disableHeader && (
+              <ProjectHeader
+                allProjects={this.props.allProjects}
+                currentProject={this.props.currentProject}
+                mainImage={this.props.mainImage}
+                mainImageOverrideUri={this.props.mainImageOverrideUri}
+              />
+            )}
             <ProjectBody project={this.props.currentProject}>
               {this.props.children}
             </ProjectBody>

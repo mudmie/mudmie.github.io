@@ -21,33 +21,29 @@
   }
 }
 
+.row {
+  padding-top: 56px;
+  padding-bottom: 56px;
+  @media (min-width: 576px) {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+}
+
 .featured-project-text{
   font-size: 20px;
   margin-bottom: 0;
   padding-bottom: 12px;
 
   @media (min-width: 576px) {
-    font-size: 24px;
+    font-size: 28px;
   }
-
-
 }
 
 .section-project {
-  border-top: 1px solid $almost-black-color;
+  border-top: 2px solid $almost-black-color;
 }
 
 .section-project.first .container {
   border-top: none;
-}
-
-.star {
-  display: none;
-
-  @media (min-width: 576px) {
-    display: inline;
-    width: 48px;
-    margin-left: 8px;
-    margin-top: 0;
-  }
 }

@@ -1,6 +1,7 @@
 @import "../styles/_colors.scss";
 @import "../styles/_fonts.scss";
 
+//inactive code
 html {
   .header {
     min-height: 360px;
@@ -11,36 +12,71 @@ html {
       padding-bottom: 32px;
     }
   }
+}
 
-  .company-term {
-    font-family: $heading-font;
-    color: $light-grey-color;
-    @media (min-width: 992px) {
-      margin-top: 8px;
-    }
+// for project overview
+.project-overview {
+  background-color: $almost-white-color;
+  color: $almost-black-color;
+  border-bottom: 2px solid $almost-black-color;
+  margin-top: 16px;
+  @media (min-width: 992px) {
+    margin-top: 32px;
+  }
+}
+
+.company-term {
+  font-family: $heading-font;
+  color: $light-grey-color;
+  font-size: 14px;
+  @media (min-width: 992px) {
+    font-size: 16px;
   }
 }
 
 .project-title {
   font-size: 24px;
-  @media (min-width: 576px) {
+  border-bottom: 2px solid $almost-black-color;
+  padding-bottom: 16px;
+
+  @media (min-width: 768px) {
     font-size: 28px;
     margin-top: 8px;
   }
 }
-.project-intro {
-  padding-bottom: 16px;
+
+.project-intro-title {
   color: $almost-black-color;
+  font-weight: 600 !important;
+  margin: 0px;
+  @media (min-width: 992px) {
+    margin-top: 20px;
+  }
 }
 
-.summary-section {
-  background-color: $almost-white-color;
+.project-intro-body {
   color: $almost-black-color;
-  box-shadow: inset 0px -3px 0px #191919;
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 
 .section-image {
   background-color: $dark-beige-color;
   text-align: center;
-  padding: 16px 16px 0 16px  ;
+  padding: 16px 16px 0px 16px;
+  margin: 16px 0;
+
+  @media (min-width: 992px) {
+    margin-top: 28px;
+  }
+}
+
+.read-full-case-study-text {
+  font-size: 20px !important;
+  padding: 16px 0 8px 0;
+
+  @media (min-width: 768px) {
+    font-size: 24px !important;
+    padding: 32px 0 12px 0;
+  }
 }

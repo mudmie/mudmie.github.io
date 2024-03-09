@@ -16,13 +16,16 @@ export default class ThematicPage extends React.Component<
   {}
 > {
   public render() {
+    var currentProject = this.props.data.project.edges[0].node;
     return (
       <ProjectLayout
         allProjects={this.props.data.allProjects.edges.map((e) => e.node)}
         currentProject={this.props.data.project.edges[0].node}
         mainImage={this.props.data.mainImage}
         mainImageOverrideUri={"/images/surgery-scheduling-calendar/main.gif"}
+        disableHeader={false}
       >
+        
         <Container>
           {/* <Row className="justify-content-center">
             <Col lg="10">
@@ -164,7 +167,7 @@ export default class ThematicPage extends React.Component<
             </Col>
           </Row>
 
-          <Row className="justify-content-center mt-4">
+          <Row className="justify-content-center">
             <Col lg="10">
               <div className={sharedStyles.sectionContainer}>
                 <h6 className={sharedStyles.categoryText}>Research</h6>
@@ -205,7 +208,7 @@ export default class ThematicPage extends React.Component<
             </Col>
           </Row>
 
-          <Row className="justify-content-center mt-4">
+          <Row className="justify-content-center">
             <Col lg="10">
               <div className={sharedStyles.sectionContainer}>
                 <h6 className={sharedStyles.categoryText}>Research</h6>
@@ -258,7 +261,7 @@ export default class ThematicPage extends React.Component<
           </Row>
 
           <Row className="justify-content-center">
-            <Col lg="3" className="mb-2 mb-lg-0">
+            <Col lg="3">
               <div className={sharedStyles.contentContainerSmall}>
                 <p>
                   <b>Increase efficiency</b>
@@ -266,7 +269,7 @@ export default class ThematicPage extends React.Component<
                 <p>Reduce task completion time from 5 minutes to 3 minutes</p>
               </div>
             </Col>
-            <Col lg="3" className="mb-2 mb-lg-0">
+            <Col lg="3">
               <div className={sharedStyles.contentContainerSmall}>
                 <p>
                   <b>Improve customer satisfaction</b>
@@ -479,7 +482,7 @@ export default class ThematicPage extends React.Component<
             </Col>
           </Row>
 
-          <Row className="justify-content-center mt-4">
+          <Row className="justify-content-center">
             <Col lg="10">
               <div className={sharedStyles.sectionContainer}>
                 <h6 className={sharedStyles.categoryText}>

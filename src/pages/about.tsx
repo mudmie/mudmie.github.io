@@ -31,65 +31,37 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
         <Helmet>
           <title>About me</title>
         </Helmet>
+
         <section className={styles.section1}>
           <Container>
-            <Row
-              className={`justify-content-center align-items-center`}
-              data-sal="slide-up"
-              data-sal-duration="400"
-              data-sal-delay="200"
-              data-sal-easing="ease-out-back"
-            >
-              <Col lg="4">
-                <h2 className={styles.hello}>
-                  Hello, I'm Mudmie 👋
-                  <br />a product designer.
-                </h2>
-              </Col>
-              <Col lg="8">
-                <p>
-                  With my background in engineering, I approach problem solving
-                  from a holistic perspective and combine system thinking with
-                  user-centered design to simplify complexity and craft product
-                  experience that make lives easier.
-                </p>
-              </Col>
-            </Row>
-          </Container>
-        </section>
-        <section className={styles.section2}>
-          <Container>
-            <Row
-              className={`justify-content-center pt-3`}
-              data-sal="slide-up"
-              data-sal-duration="400"
-              data-sal-delay="600"
-              data-sal-easing="ease-out-back"
-            >
-              <Col lg="4" md="6" className="align-self-end text-center">
+            <Row className="justify-content-center align-items-end">
+              <Col sm="6" lg="4">
                 <StaticImage
-                  src="../../static/images/Mudmie.png"
+                  src="../../static/images/me.png"
                   alt="Picture of Mudmie"
                 />
               </Col>
-              <Col lg="8" md="6" className="mb-3">
-                <h3 className={styles.moreOfMe}>More About me.</h3>
 
-                <p>
-                I graduated from {" "}
-                  <OutboundLink
-                    href="https://uwaterloo.ca/systems-design-engineering/about-systems-design-engineering/what-systems-design-engineering"
-                    target="_blank"
-                  >
-                    Systems Design Engineering
-                    <HiArrowUpRight />
-                  </OutboundLink>{" "}
-                  at the University of Waterloo, where I also studied human-computer interaction (HCI) and cognitive ergonomics.
+              <Col sm="6" lg="6">
+                <p className={styles.aboutMain}>
+                  Hi, I'm Mudmie 👋 I've been designing since 2018. My engineering background makes me good at
+                  breaking down complexity and working with tradeoffs. I can
+                  also code front-end 👀
                 </p>
-                <p>
-                I find myself excited when learning about people’s workflow, listening to their problems, and using my multidisciplinary knowledge to craft design solutions that improve their experience. 
+              </Col>
+            </Row>
+
+            <Row className="justify-content-center align-items-end">
+              <Col sm="12" lg="10">
+                <p className={styles.aboutSecondary}>
+                  I graduated from Systems Design Engineering at the University
+                  of Waterloo, where I also studied human-computer interaction
+                  (HCI). I enjoy hearing stories from users and collaborating
+                  with teams to brainstorm ideas. I apply my multidisciplinary
+                  knowledge to push for design solutions that create impacts for
+                  businesses and users.
                 </p>
-                <p>
+                <p className={styles.aboutSecondary}>
                   Other than design stuff, you can ask me about food and
                   traveling — I can tell you about my experience eating sushi at
                   Jiro in Tokyo or help you find good flight deals 🤫
@@ -98,6 +70,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
             </Row>
           </Container>
         </section>
+
         <section className={styles.section3}>
           <Container>
             <Row
@@ -107,10 +80,10 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               data-sal-delay="200"
               data-sal-easing="ease-out-back"
             >
-              <Col lg="4" md="6" className="align-self-center">
+              <Col lg="4" md="5" className="align-self-center">
                 <h3 className={styles.designExperience}>Design Experience</h3>
               </Col>
-              <Col lg="8" md="6" className={styles.experience}>
+              <Col lg="8" md="5" className={styles.experience}>
                 <table className={styles.experienceTable}>
                   <tbody>
                     <tr>

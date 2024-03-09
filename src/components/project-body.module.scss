@@ -2,8 +2,11 @@
 @import "../styles/_projects.scss";
 
 .project-body{
-  padding-top: 16px ;
+  padding-top: 24px ;
+  @media (min-width: 768px) {
+    padding: 32px;
+  }
   @media (min-width: 992px) {
-    padding: 24px; 
+    padding: 56px;
   }
 }

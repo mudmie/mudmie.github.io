@@ -43,40 +43,41 @@ export class ProjectsSection extends React.Component<
         <section className={styles.sectionHeader}>
           <Container className={styles.container}>
             <a id={this.props.id} className={sharedStyles.sectionAnchor} />
-            <Row >
-              <Col lg="12"
+            <Row>
+              <Col
+                lg="12"
                 data-sal="slide-up"
                 data-sal-duration="400"
                 data-sal-delay="600"
                 data-sal-easing="ease-out-back"
               >
-                <h2 className={styles.featuredProjectText}>Featured Projects <span className={sharedStyles.red}>
-                          <HiArrowDown />
-                        </span>
-                {/* <img
-                  src={withPrefix("/images/star.svg")}
-                  className={styles.star}
-                /> */}
+                <h2 className={styles.featuredProjectText}>
+                  Featured Projects{" "}
+                  <span className={sharedStyles.red}>
+                    <HiArrowDown />
+                  </span>
                 </h2>
               </Col>
-              
-                          </Row>
+            </Row>
           </Container>
         </section>
-        {this.props.projects
-          .filter((proj) => proj.isEnabled)
-          .map((proj, i) => (
-            <section
-              className={
-                styles.sectionProject + (i == 0 ? " " + styles.first : "")
-              }
-              key={proj.name}
+        <section className={styles.sectionProject + " " + styles.first}>
+          <Container className={styles.container}>
+            <Row
+              className={`${styles.row} gx-5`}
+              data-sal="fade"
+              data-sal-duration="400"
+              data-sal-delay="200"
+              data-sal-easing="ease-out-back"
             >
-              <Container className={styles.container}>
-                <ProjectCard project={proj} />
-              </Container>
-            </section>
-          ))}
+              {this.props.projects
+                .filter((proj) => proj.isEnabled)
+                .map((proj, i) => (
+                  <ProjectCard project={proj} key={proj.name} />
+                ))}
+            </Row>
+          </Container>
+        </section>
       </>
     );
   }
