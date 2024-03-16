@@ -6,7 +6,7 @@ import { Container, Col, Row } from "reactstrap";
 import * as styles from "./about.module.scss";
 import { ImageSharp } from "../models/image-sharp";
 import { StaticImage } from "gatsby-plugin-image";
-import { HiArrowUpRight } from "react-icons/hi2";
+import { HiArrowDown, HiArrowUpRight } from "react-icons/hi2";
 import { Dash } from "../components/dash";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import { SocialMediaLinks } from "../components/social-media-links";
@@ -37,6 +37,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
             <Row className="justify-content-center align-items-end">
               <Col sm="6" lg="4">
                 <StaticImage
+                  className={styles.picture}
                   src="../../static/images/me.png"
                   alt="Picture of Mudmie"
                 />
@@ -44,9 +45,10 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
 
               <Col sm="6" lg="6">
                 <p className={styles.aboutMain}>
-                  Hi, I'm Mudmie 👋 I've been designing since 2018. My engineering background makes me good at
+                  Hi, I'm Mudmie 👋 I create designs that communicate well and
+                  drive impact. My engineering background makes me good at
                   breaking down complexity and working with tradeoffs. I can
-                  also code front-end 👀
+                  also code front-end.
                 </p>
               </Col>
             </Row>
@@ -54,11 +56,11 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
             <Row className="justify-content-center align-items-end">
               <Col sm="12" lg="10">
                 <p className={styles.aboutSecondary}>
-                  I graduated from Systems Design Engineering at the University
-                  of Waterloo, where I also studied human-computer interaction
-                  (HCI). I enjoy hearing stories from users and collaborating
-                  with teams to brainstorm ideas. I apply my multidisciplinary
-                  knowledge to push for design solutions that create impacts for
+                  I pursue a career in design because I enjoy combining creative
+                  and engineering approaches to solve problems and finding ways
+                  to balance business, user, and engineering needs. I apply my
+                  multidisciplinary knowledge to work with cross-functional
+                  teams and push for design solutions that create impacts for
                   businesses and users.
                 </p>
                 <p className={styles.aboutSecondary}>
@@ -70,75 +72,95 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
             </Row>
           </Container>
         </section>
-
+        <section className={styles.section2}>
+          <Container className={styles.container}>
+            <Row className="justify-content-center">
+              <Col
+                lg="10"
+                data-sal="slide-up"
+                data-sal-duration="400"
+                data-sal-delay="600"
+                data-sal-easing="ease-out-back"
+              >
+                <h2 className={styles.designExperienceText}>
+                  Design Experience
+                  {/* <span className={sharedStyles.red}> */}
+                  <HiArrowDown />
+                  {/* </span> */}
+                </h2>
+              </Col>
+            </Row>
+          </Container>
+        </section>
         <section className={styles.section3}>
           <Container>
             <Row
-              className="justify-content-center mt-3"
+              className="justify-content-center"
               data-sal="fade"
               data-sal-duration="400"
               data-sal-delay="200"
               data-sal-easing="ease-out-back"
             >
-              <Col lg="4" md="5" className="align-self-center">
-                <h3 className={styles.designExperience}>Design Experience</h3>
-              </Col>
-              <Col lg="8" md="5" className={styles.experience}>
+              <Col lg="10" className={styles.experience}>
                 <table className={styles.experienceTable}>
                   <tbody>
                     <tr>
                       <td>
-                        <span className={styles.experienceName}>LeanTaaS</span>,{" "}
-                        <span className={styles.experienceType}>Full-time</span>
+                        <span className={styles.experienceTitle}>
+                          Product Designer, LeanTaaS
+                        </span>{" "}
                       </td>
                       <td className={styles.experiencePeriod}>
-                        Oct 2021 - Present
+                        Oct 2021 - Present, Full-time
+                      </td>
+                      <td className={styles.experienceDescription}>
+                        Leading end-to-end design and research for a B2B SaaS
+                        surgery scheduling and analytics platform
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <span className={styles.experienceName}>
-                          Jitta Wealth
-                        </span>
-                        ,{" "}
-                        <span className={styles.experienceType}>Full-time</span>
+                        <span className={styles.experienceTitle}>
+                          Product Designer, Jitta Wealth
+                        </span>{" "}
                       </td>
                       <td className={styles.experiencePeriod}>
-                        Jun 2020 - May 2021
+                        Jun 2020 - May 2021, Full-time
+                      </td>
+                      <td className={styles.experienceDescription}>
+                        2<sup>nd</sup> design hire; led the design of a wealth
+                        management mobile app and launched 0-1 products and
+                        features
                       </td>
                     </tr>
+
                     <tr>
-                      <td className={styles.experienceName}>
-                        <span className={styles.experienceName}>
-                          Hack the North
-                        </span>
-                        ,{" "}
-                        <span className={styles.experienceType}>Volunteer</span>
+                      <td>
+                        <span className={styles.experienceTitle}>
+                          Product Design Intern, Autodesk
+                        </span>{" "}
                       </td>
                       <td className={styles.experiencePeriod}>
-                        Mar 2019 – Feb 2020
+                        May - Aug 2019, Internship
+                      </td>
+                      <td className={styles.experienceDescription}>
+                        Researched form creation process and
+                        designed a two-sided custom report platform for construction enterprise
                       </td>
                     </tr>
+
                     <tr>
-                      <td className={styles.experienceName}>
-                        <span className={styles.experienceName}>Autodesk</span>,{" "}
-                        <span className={styles.experienceType}>
-                          Internship
-                        </span>
+                      <td>
+                        <span className={styles.experienceTitle}>
+                          Product Design Intern, PlanGrid
+                        </span>{" "}
                       </td>
                       <td className={styles.experiencePeriod}>
-                        May 2019 – Aug 2019
+                        Sep - Dec 2018, Internship
                       </td>
-                    </tr>
-                    <tr>
-                      <td className={styles.experienceName}>
-                        <span className={styles.experienceName}>PlanGrid</span>,{" "}
-                        <span className={styles.experienceType}>
-                          Internship
-                        </span>
-                      </td>
-                      <td className={styles.experiencePeriod}>
-                        Sep 2018 – Dec 2018
+                      <td className={styles.experienceDescription}>
+                        Designed account management portal to increase access
+                        control for IT-admin personnel
                       </td>
                     </tr>
                   </tbody>

@@ -3,8 +3,15 @@
 @import "../styles/_projects.scss";
 
 .section-1 {
-  padding-top: 144px;
-  padding-bottom: 48px;
+  padding-top: 72px;
+  padding-bottom: 40px;
+  background-color: $almost-white-color;
+  @media (min-width: 768px) {
+    padding-top: 108px;
+  }
+}
+
+.section-2 {
   background-color: $almost-white-color;
 }
 
@@ -13,7 +20,7 @@
   background-color: $almost-white-color;
   padding-top: 24px;
   padding-bottom: 24px;
-  box-shadow: inset 0px 3px 0px #191919;
+  border-top: 2px solid $almost-black-color;
 }
 
 .about-main {
@@ -38,13 +45,14 @@
     font-size: 24px;
   }
 }
-.design-experience {
-  color: $almost-black-color;
-  text-transform: uppercase;
-  font-size: 20px;
 
-  @media (min-width: 576px) {
-    font-size: 24px;
+.design-experience-text {
+  font-size: 20px;
+  margin-bottom: 0;
+  padding-bottom: 12px;
+
+  @media (min-width: 768px) {
+    font-size: 28px;
   }
 }
 
@@ -55,6 +63,10 @@
   }
 }
 
+.picture {
+  border-radius: 20px;
+}
+
 .experience-table {
   width: 100%;
   td {
@@ -62,18 +74,31 @@
   }
   tr {
     display: block;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
-  .experience-name {
-    font-weight: 700;
-  }
-  .experience-type {
-    font-weight: 400;
+  .experience-title {
+    font-weight: 600;
+    font-size: 16px;
+    @media (min-width: 768px) {
+      font-size: 18px;
+    }
   }
 
   .experience-period {
     font-weight: 400;
     color: $light-grey-color;
-    font-size: 12px;
+    font-size: 16px;
+    @media (min-width: 768px) {
+      font-size: 18px;
+    }
+  }
+  .experience-description {
+    font-weight: 400;
+    color: $almost-black-color;
+    font-size: 16px;
+    padding-top: 8px;
+    @media (min-width: 768px) {
+      font-size: 18px;
+    }
   }
 }

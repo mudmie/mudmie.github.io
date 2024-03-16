@@ -11,12 +11,16 @@ export class Footer extends React.Component {
         <Container className={styles.container}>
           <Row className={styles.footerRow}>
             <Col xs="6" className={`${styles.footerLeft}`}>
-              Designed & coded 
-              <br />by Mudmie 2024.
+              Designed & coded
+              <br />
+              by Mudmie 2024 ✨
             </Col>
             <Col xs="6" className={`${styles.footerRight}`}>
-              Let's connect!
-              <SocialMediaLinks separator="&nbsp;&nbsp;&nbsp;&nbsp;" isDarkBackground={false} />
+              Let's connect 👀
+              <SocialMediaLinks
+                separator="&nbsp;&nbsp;&nbsp;&nbsp;"
+                isDarkBackground={false}
+              />
             </Col>
           </Row>
         </Container>
