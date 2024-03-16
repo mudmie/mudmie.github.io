@@ -108,6 +108,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                       <td>
                         <span className={styles.experienceTitle}>
                           Product Designer, LeanTaaS
+                        
                         </span>{" "}
                       </td>
                       <td className={styles.experiencePeriod}>
@@ -144,8 +145,9 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                         May - Aug 2019, Internship
                       </td>
                       <td className={styles.experienceDescription}>
-                        Researched form creation process and
-                        designed a two-sided custom report platform for construction enterprise
+                        Researched form creation process and designed a
+                        two-sided custom report platform for construction
+                        enterprise
                       </td>
                     </tr>
 
