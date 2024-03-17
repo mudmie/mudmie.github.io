@@ -60,7 +60,7 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                   and engineering approaches to solve problems and finding ways
                   to balance business, user, and engineering needs. I apply my
                   multidisciplinary knowledge to work with cross-functional
-                  teams and push for design solutions that create impacts for
+                  teams and craft design solutions that create impacts for
                   businesses and users.
                 </p>
                 <p className={styles.aboutSecondary}>
