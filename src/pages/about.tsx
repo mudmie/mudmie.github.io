@@ -129,10 +129,9 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                         Jun 2020 - May 2021, Full-time
                       </td>
                       <td className={styles.experienceDescription}>
-                        2<sup>nd</sup> design hire; led the design of a wealth
-                        management mobile app and launched 0-1 products and
-                        features
-                      </td>
+                        2<sup>nd</sup> design hire; led the design and launched a wealth
+                        management mobile app from 0-1
+                                              </td>
                     </tr>
 
                     <tr>
