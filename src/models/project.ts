@@ -7,6 +7,7 @@ export interface Project {
   type: string;
   platform: string[];
   duration: string;
+  team: string[];
   myRole: string;
   results: string;
   url: string;

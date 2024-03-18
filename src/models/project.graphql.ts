@@ -12,6 +12,7 @@ export const projectFields = graphql`
         type
         platform
         duration
+        team
         myRole
         results
         url

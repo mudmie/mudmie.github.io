@@ -22,7 +22,7 @@ export default class ThematicPage extends React.Component<
         allProjects={this.props.data.allProjects.edges.map((e) => e.node)}
         currentProject={this.props.data.project.edges[0].node}
         mainImage={this.props.data.mainImage}
-        mainImageOverrideUri={"/images/surgery-scheduling-calendar/main.gif"}
+        // mainImageOverrideUri={"/images/surgery-scheduling-calendar/main.gif"}
         disableHeader={false}
       >
         

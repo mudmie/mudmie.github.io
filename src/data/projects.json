@@ -7,11 +7,16 @@
     "companyDescription": "LeanTaaS offers B2B software solutions that optimize healthcare operations. Its scheduling platform allows clinics and hospitals to coordinate surgeries.",
     "type": "Full-time",
     "platform": [
-      "Mobile"
+      "Web"
     ],
-    "duration": "6 Weeks",
+    "duration": "5 months",
     "myRole": "I led end-to-end design and research of the surgery scheduling tool and collaborated with product, engineering, and customer success teams to strategize releases.",
-    "results": "Users completed their tasks 30% faster; support tickets and in-person training decreased by half.",
+    "results": "Users completed their tasks 30% faster; support tickets and in-person training decreased by 50%.",
+    "team":[
+      "Product manager",
+      "FE & BE engineers",
+      "Customer sucess team"
+    ], 
     "url": "/projects/surgery-scheduling-calendar/",
     "imageFolder": "surgery-scheduling-calendar",
     "isProtected": false,
@@ -20,20 +25,26 @@
   {
     "name": "Dashboard ",
     "company": "LeanTaaS",
-    "term": "2023",
+    "term": "2022",
     "description": "reducing training effort and making scheduling easier",
     "companyDescription": "LeanTaaS offers B2B software solutions that optimize healthcare operations. Its scheduling platform allows clinics and hospitals to coordinate surgeries.",
     "type": "Full-time",
     "platform": [
+      "Web",
       "Mobile"
     ],
-    "duration": "6 Weeks",
+    "duration": "1 month",
     "myRole": "I led end-to-end design and research of the surgery scheduling tool and collaborated with product, engineering, and customer success teams to strategize releases.",
     "results": "Users completed their tasks 30% faster; support tickets and in-person training decreased by half.",
+    "team":[
+      "Product manager",
+      "FE & BE engineers ",
+      "Data scientist"
+    ],
     "url": "/projects/analytics-dashboard/",
     "imageFolder": "analytics-dashboard",
     "isProtected": false,
-    "isEnabled": true
+    "isEnabled": false
   },
   {
     "name": "Surgery Scheduling",
@@ -48,6 +59,11 @@
     "duration": "6 Weeks",
     "myRole": "I led end-to-end design and research of the scheduling tool and worked with PMs & engineers to launch various features, including Comments & Document Upload.",
     "results": "The feature adoption increased by about 175%. The number of customers who signed contract to adopt this feature went up from 9 to 25.",
+    "team":[
+      "Product manager",
+      "FE & BE engineers ",
+      "Data scientist"
+    ],
     "url": "/projects/scheduling/",
     "imageFolder": "scheduling",
     "isProtected": false,
@@ -63,9 +79,16 @@
     "platform": [
       "Mobile"
     ],
-    "duration": "6 Weeks",
+    "duration": "1 month",
     "myRole": "I worked directly with the CEO and a cross-functional team to define product requirements, design mobile interfaces & experiences, and hand off the design to the engineering team. ",
     "results": "The company's total assets under management (AUM) went up over 60% within the first 3 months after the product launched.",
+    "team":[
+      "CEO",
+      "Product manager",
+      "Engineers",
+      "Marketing team",
+      "Data scientist"
+    ],
     "url": "/projects/thematic/",
     "imageFolder": "thematic",
     "isProtected": false,
@@ -79,11 +102,17 @@
     "type": "Internship",
     "companyDescription": "PlanGrid provides cloud-based solutions to increase productivity in the construnction industry. It became a part of Autodesk Construction Cloud after the acquisition in 2018.",
     "platform": [
-      "Web"
+      "Web",
+      "Tablet (native iOS, Android, Windows)"
     ],
-    "duration": "2 Months",
+    "duration": "2 months",
     "myRole": "I was a product design intern on Field Reports, a tool for users to create, submit, and review construction reports. I worked with a PM and researchers to examine form creation process and designed a custom form builder feature.",
     "results": "My research and design initiatives provided a foundation for the team to successfully launch the feature in early 2020.",
+    "team":[
+      "Product manager",
+      "Engineers ",
+      "Researchers"
+    ],
     "url": "/projects/custom-form-builder/",
     "imageFolder": "custom-form-builder",
     "isProtected": false,
@@ -100,9 +129,14 @@
       "Web",
       "Mobile"
     ],
-    "duration": "2 Months",
+    "duration": "2 months",
     "myRole": "I worked with a PM to gather requirements, defined users flow, and designed the interfaces. I also ran a usability inspection to test each variation of my design.",
     "results": "High-fidelity wireframes ready for developers to implement.",
+    "team":[
+      "Product manager",
+      "Engineers ",
+      "Researchers"
+    ],
     "url": "/projects/account-management/",
     "imageFolder": "account-management",
     "isProtected": false,
