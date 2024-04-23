@@ -2,7 +2,7 @@
   {
     "name": "Revamping calendar designs to streamline complex surgery scheduling ",
     "company": "LeanTaaS",
-    "term": "2023",
+    "term": "2023-2024",
     "description": "reducing training effort and making scheduling easier",
     "companyDescription": "LeanTaaS offers B2B software solutions that optimize healthcare operations. Its scheduling platform allows clinics and hospitals to coordinate surgeries.",
     "type": "Full-time",
@@ -23,19 +23,18 @@
     "isEnabled": true
   },
   {
-    "name": "Dashboard ",
+    "name": "Creating data visualization for analytics dashboard to optimize OR utilization",
     "company": "LeanTaaS",
     "term": "2022",
     "description": "reducing training effort and making scheduling easier",
-    "companyDescription": "LeanTaaS offers B2B software solutions that optimize healthcare operations. Its scheduling platform allows clinics and hospitals to coordinate surgeries.",
-    "type": "Full-time",
+    "companyDescription": "LeanTaaS offers B2B software solutions that optimize healthcare operations. Its analytics platform provides insights for hospital management teams to maximize operating room (OR) utilization.",
     "platform": [
       "Web",
       "Mobile"
     ],
     "duration": "1 month",
-    "myRole": "I led end-to-end design and research of the surgery scheduling tool and collaborated with product, engineering, and customer success teams to strategize releases.",
-    "results": "Users completed their tasks 30% faster; support tickets and in-person training decreased by half.",
+    "myRole": "I worked with the product manager and data analyst team to define scope and gather data. I led the design and user testing sessions and later collaborated with engineers through implementation.",
+    "results": "Over 70% of analytics users actively use this dashboard every month.",
     "team":[
       "Product manager",
       "FE & BE engineers ",
@@ -44,12 +43,12 @@
     "url": "/projects/analytics-dashboard/",
     "imageFolder": "analytics-dashboard",
     "isProtected": false,
-    "isEnabled": false
+    "isEnabled": true
   },
   {
-    "name": "Surgery Scheduling",
+    "name": "Launching comments and document upload features from 0-1",
     "company": "LeanTaaS",
-    "term": "2023",
+    "term": "202",
     "description": "Designing and researching comments & document upload features to elevate the functionalities of surgery scheduling software.",
     "companyDescription": "LeanTaaS offers software solutions that help optimize healthcare operation, ranging from analytics dashboard, surgery scheduling, to staff management tools.",
     "type": "Full-time",
@@ -67,10 +66,10 @@
     "url": "/projects/scheduling/",
     "imageFolder": "scheduling",
     "isProtected": false,
-    "isEnabled": false
+    "isEnabled": true
   },
   {
-    "name": "Designed a new investment tool that increased company AUM by $200M",
+    "name": "Designing a new investment tool that increased company AUM by $200M",
     "company": "Jitta Wealth",
     "term": "2020",
     "description": "launching Thematic Investment from zero-to-one",
@@ -95,7 +94,7 @@
     "isEnabled": true
   },
   {
-    "name": "Researched and designed custom form builder for construction professionals ",
+    "name": "Researching and designing custom form builder for construction professionals ",
     "company": "Autodesk (PlanGrid)",
     "term": "2019",
     "description": "adding flexibility to form creation process",
@@ -140,7 +139,7 @@
     "url": "/projects/account-management/",
     "imageFolder": "account-management",
     "isProtected": false,
-    "isEnabled": true
+    "isEnabled": false
   },
   {
     "name": "Crafted a comic-themed application portal for Canada’s largest hackathon",

@@ -69,7 +69,7 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
                     />
                   )}
                 </div>
-                <Row className={styles.detailTable}>
+                {/* <Row className={styles.detailTable}>
                   <Col xs="4" lg="4" className="pe-0 ps-0">
                     <p className={styles.tableHeader}>Timeline</p>
                     <p className={styles.tableBody}>
@@ -102,7 +102,7 @@ export class ProjectHeader extends React.Component<ProjectHeaderProps, {}> {
                       </ul>
                     </p>
                   </Col>
-                </Row>
+                </Row> */}
               </Col>
 
               <Col lg="4" className="order-lg-1">

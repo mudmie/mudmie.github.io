@@ -348,7 +348,7 @@ export default class ThematicPage extends React.Component<
               </p>
             </Col>
           </Row>
-          <Row className="justify-content-center">
+          {/* <Row className="justify-content-center">
             <Col lg="8">
               <div className="text-center">
                 <ImageBox
@@ -426,54 +426,8 @@ export default class ThematicPage extends React.Component<
                 className="img-fluid"
               />
             </Col>
-          </Row>
-          {/* <Row className="justify-content-center">
-            <Col md="4" lg="4">
-              <ImageBox
-                src={this.getImageUrl("sample.png")}
-                alt=""
-                className="img-fluid"
-              />
-              <h3>Project Name</h3>
-              <p>
-                Brandi believes photos are metaphors, making the abstract
-                concrete and mystifying the mundane. They believe photography is
-                a conversation between the photographer, the subject, and those
-                who will view these images for years to come. Brandi relishes in
-                adding to the archive of humanity.
-              </p>
-            </Col>
-            <Col md="4" lg="4">
-              <ImageBox
-                src={this.getImageUrl("sample.png")}
-                alt=""
-                className="img-fluid"
-              />
-              <h3>Project Name</h3>
-              <p>
-                Brandi believes photos are metaphors, making the abstract
-                concrete and mystifying the mundane. They believe photography is
-                a conversation between the photographer, the subject, and those
-                who will view these images for years to come. Brandi relishes in
-                adding to the archive of humanity.
-              </p>
-            </Col>
-            <Col md="4" lg="4">
-              <ImageBox
-                src={this.getImageUrl("sample.png")}
-                alt=""
-                className="img-fluid"
-              />
-              <h3>Project Name</h3>
-              <p>
-                Brandi believes photos are metaphors, making the abstract
-                concrete and mystifying the mundane. They believe photography is
-                a conversation between the photographer, the subject, and those
-                who will view these images for years to come. Brandi relishes in
-                adding to the archive of humanity.
-              </p>
-            </Col>
           </Row> */}
+          
         </Container>
       </ProjectLayout>
     );

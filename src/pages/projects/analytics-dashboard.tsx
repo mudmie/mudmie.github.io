@@ -406,7 +406,7 @@ export const pageQuery = graphql`
     project: allProjectsJson(filter: { url: { eq: $path } }) {
       ...ProjectFields
     }
-    mainImage: file(relativePath: { eq: "hacker-apps/main.png" }) {
+    mainImage: file(relativePath: { eq: "analytics-dashboard/main.png" }) {
       ...ProjectMainImageSizes
     }
   }

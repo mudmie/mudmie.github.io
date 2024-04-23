@@ -25,7 +25,6 @@ export default class ThematicPage extends React.Component<
         // mainImageOverrideUri={"/images/surgery-scheduling-calendar/main.gif"}
         disableHeader={false}
       >
-        
         <Container>
           {/* <Row className="justify-content-center">
             <Col lg="10">
@@ -613,6 +612,142 @@ export default class ThematicPage extends React.Component<
                     </Col>
                   </Row>
                 </div>
+              </div>
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center">
+            <Col lg="10">
+              <div className={sharedStyles.sectionContainer}>
+                <h6 className={sharedStyles.categoryText}>Design</h6>
+                <h3 className={sharedStyles.titleText}>Final Design </h3>
+                <p>
+                  The project became complex and large due to all of the
+                  problems presented earlier. As a result, I collaborated
+                  closely with the product manager and engineers to finalize the
+                  scope for the first release.
+                </p>
+
+                <Row className="justify-content-center">
+                  <Col lg="10">
+                    <div className="text-center">
+                      <ImageBox
+                        src={this.getImageUrl("calendar-final.gif")}
+                        alt="Designs and Interactions in the Final Design"
+                        className="img-fluid"
+                        showCaption={true}
+                      />
+                    </div>
+                  </Col>
+                </Row>
+
+                <Row className="justify-content-center">
+                  <Col lg="12" className="mb-4">
+                    <div className={sharedStyles.contentContainerLeftAlign}>
+                      <Row className="justify-content- center">
+                        <Col lg="6">
+                          <ImageBox
+                            src={this.getImageUrl("final-month.png")}
+                            alt="Average view and total case filter"
+                            className="img-fluid"
+                            showCaption={false}
+                          />
+                        </Col>
+                        <Col lg="6">
+                          <p className="mb-0">
+                            <b>Month view availability</b>
+                          </p>
+                          <p className="mt-2">
+                            Month view provides a high-level availability,
+                            making it quicker for users to find available time.
+                            The screen also looks less cluttered, reducing
+                            information clutters and cognitive workload for the
+                            users.
+                          </p>
+                          <p className="mb-0">
+                            <b>Left to right workflow</b>
+                          </p>
+                          <p className="mt-2">
+                            The search drawer got moved to the left since it's
+                            the first item users interact with on this page.
+                            This workflow makes it more natural to our nature to
+                            process information from left to right.
+                          </p>
+                        </Col>
+                      </Row>
+                    </div>
+                  </Col>
+                </Row>
+
+                {/* <Row className="justify-content-center">
+                  <Col lg="12" className="mb-4">
+                    <div className={sharedStyles.contentContainerLeftAlign}>
+                      <Row className="justify-content- center">
+                        <Col lg="6">
+                          <ImageBox
+                            src={this.getImageUrl("export.png")}
+                            alt="Image, PDF, and CSV files"
+                            className="img-fluid"
+                            showCaption={false}
+                          />
+                        </Col>
+                        <Col lg="6">
+                          <p className="mb-0">
+                            <b>Left to right workflow</b>
+                          </p>
+                          <p className="mt-2">
+                            Users can export, share, or download the report from
+                            the dashboard in various formats, including image,
+                            PDF, and CSV.
+                          </p>
+                        </Col>
+                      </Row>
+                    </div>
+                  </Col>
+                </Row> */}
+
+                <Row className="justify-content-center">
+                  <Col lg="12">
+                    <div className={sharedStyles.contentContainerLeftAlign}>
+                      <Row className="justify-content- center">
+                        <Col lg="6">
+                          <ImageBox
+                            src={this.getImageUrl("vertical-layout.png")}
+                            alt="Integration with case form for scheduling workflow"
+                            showCaption={false}
+                            className="img-fluid"
+                          />
+                        </Col>
+
+                        <Col lg="6">
+                          <p className="mb-0">
+                            <b>Vertical layout</b>
+                          </p>
+                          <p className="mt-2">
+                            While horizontal layout could handle complex
+                            schedule better, it'll take a lot more effort for
+                            engineers to implement. Given the time constraint,
+                            we decided to proceed with the vertical layout.
+                          </p>
+                          <p className="mb-0">
+                            <b>Day-view visualization revamp</b>
+                          </p>
+                          <p className="mt-2">
+                            To avoid the readability issue, I worked very
+                            closely with the engineers to revamp the day view
+                            visualization.
+                          </p>
+                          <p>
+                            Each type of time is drawn into its column with the
+                            width divided equally using a number of the total
+                            columns. This approach ensures a clean UI that is
+                            easy for users to read and understand.{" "}
+ .                          </p>
+                        </Col>
+                      </Row>
+                    </div>
+                  </Col>
+                </Row>
               </div>
             </Col>
           </Row>

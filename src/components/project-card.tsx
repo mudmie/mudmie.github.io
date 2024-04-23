@@ -22,11 +22,14 @@ export class ProjectCard extends React.Component<ProjectCardProps, {}> {
       <Col lg="6">
         <Link to={this.props.project.url} className={styles.projectCardLink}>
           <div className={styles.projectCardContainer}>
+          <div className={styles.projectTitleContainer}>
+
             <div className={styles.term}>
               {this.props.project.company}, {this.props.project.term}
             </div>
 
             <h3 className={styles.projectTitle}>{this.props.project.name}</h3>
+            </div>
 
             <img
               className={`img-fluid ${styles.thumbnailImage}`}

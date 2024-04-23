@@ -66,13 +66,11 @@ html {
   @media (min-width: 1200px) {
     margin-right: 0;
   }
-
 }
 
 .section-image {
   background-color: $dark-beige-color;
   text-align: center;
-  padding: 16px 16px 0px 16px;
   margin-top: 8px;
 
   @media (min-width: 992px) {
@@ -83,40 +81,36 @@ html {
 }
 
 .detail-table {
-  margin:0;
+  margin: 0;
   @media (min-width: 992px) {
     margin-left: 32px;
     padding: 0;
   }
 
-  .table-header{
+  .table-header {
     border-bottom: 1px solid $almost-black-color;
     font-weight: 600;
     color: $almost-black-color;
     margin-bottom: 0;
   }
 
-  .table-body{
+  .table-body {
     color: $almost-black-color;
     margin-top: 8px;
     margin-bottom: 0;
   }
-  
 }
 
 .team-list {
   list-style-type: none;
   padding-left: 0px;
   margin-bottom: 0;
-  
+
   li {
     padding: 0;
     color: $almost-black-color;
-
   }
 }
-
-
 
 .read-full-case-study-text {
   font-size: 20px !important;
