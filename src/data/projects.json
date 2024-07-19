@@ -66,7 +66,7 @@
     "url": "/projects/scheduling/",
     "imageFolder": "scheduling",
     "isProtected": false,
-    "isEnabled": true
+    "isEnabled": false
   },
   {
     "name": "Designing a new investment tool that increased company AUM by $200M",
