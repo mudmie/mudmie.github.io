@@ -124,7 +124,7 @@ export default class ThematicPage extends React.Component<
                 “we need to improve the usability...”{" "}
                 <span className={sharedStyles.greyText}>
                   {" "}
-                  — but why and how?{" "}
+                  — but what were the issues and the root causes?{" "}
                 </span>{" "}
               </h4>
             </Col>
@@ -135,12 +135,12 @@ export default class ThematicPage extends React.Component<
               <div className={sharedStyles.sectionContainer}>
                 <h6 className={sharedStyles.categoryText}>Research</h6>
                 <h3 className={sharedStyles.titleText}>
-                  Problem 1 – Finding available time takes too long{" "}
+                  Problem 1 – Difficult to search for available time{" "}
                 </h3>
                 <p>
-                  On average, users spend almost 5 minutes to complete the task.
-                  They spent an average of{" "}
-                  <u>1.5 minutes just to select a desired appointment date.</u>
+                  On average, users spend almost 5 minutes to complete their
+                  task, starting from the moment they search for available time
+                  until they finalize and submit the surgery request.{" "}
                 </p>
 
                 <p>
@@ -171,31 +171,25 @@ export default class ThematicPage extends React.Component<
               <div className={sharedStyles.sectionContainer}>
                 <h6 className={sharedStyles.categoryText}>Research</h6>
                 <h3 className={sharedStyles.titleText}>
-                  Problem 2 – Workflow/UI lacks clear guidance{" "}
+                  Problem 2 – Cluttered interface and confusing workflow{" "}
                 </h3>
                 <p>
-                  Users struggled with the existing experience. During onsite
-                  visits, I observed many users staring at the screen and not
-                  knowing how to proceed. Some hesitated to click around and
-                  explore the tool due to fear of making mistakes.
-                </p>
-                <p>
-                  The workflow expects users to input search parameters to find
-                  available time before selecting the time type. However, the
-                  existing design requires users to process information right to
-                  left,{" "}
+                  Users had a difficult time{" "}
                   <u>
-                    contradicting our natural inclination to read from left to
-                    right
-                  </u>
-                  .
+                    processing overwhelming information and figuring out what to
+                    do next{" "}
+                  </u>{" "}
+                  because of the cluttered UI. During onsite visits, I observed
+                  many users staring at the screen and not knowing how to
+                  proceed. Some hesitated to click around and explore the tool
+                  due to fear of making mistakes.
                 </p>
 
                 <Row className="justify-content-center">
-                  <Col lg="12">
+                  <Col lg="10">
                     <div className="text-center">
                       <ImageBox
-                        src={this.getImageUrl("messy-screen.png")}
+                        src={this.getImageUrl("cluttered-ui.png")}
                         alt="Cluttered UI and lack of structured workflow in the existing design"
                         className="img-fluid"
                         showCaption={true}
@@ -224,10 +218,13 @@ export default class ThematicPage extends React.Component<
 
                 <p>
                   Even though users can rely on hover interaction to view
-                  additional information, it{" "}
-                  <u>requires extra effort to accurately hover</u> over the
-                  intended item because of its small size. The tooltip will also
-                  disappear when users move away from the focused item.
+                  additional information,{" "}
+                  <u>
+                    extra effort is required to hover the intended item
+                    accurately
+                  </u>{" "}
+                  because of its small size. The tooltip will also disappear
+                  when users move away from the focused item.
                 </p>
 
                 <Row className="justify-content-center">
@@ -253,7 +250,7 @@ export default class ThematicPage extends React.Component<
                 <span className={sharedStyles.greyText}>
                   {" "}
                   — we want to streamline the scheduling workflow and achieve
-                  the following outcomes:{" "}
+                  the following outcomes...{" "}
                 </span>{" "}
               </h4>
             </Col>
@@ -265,7 +262,7 @@ export default class ThematicPage extends React.Component<
                 <p>
                   <b>Increase efficiency</b>
                 </p>
-                <p>Reduce task completion time from 5 minutes to 3 minutes</p>
+                <p>Reduce task completion time from 5 minutes to 2.5 minutes</p>
               </div>
             </Col>
             <Col lg="3">
@@ -291,11 +288,9 @@ export default class ThematicPage extends React.Component<
           <Row className="justify-content-center">
             <Col lg="7">
               <h4 className={sharedStyles.highlightText}>
-                Displaying lots of information in the most simple way{" "}
-                <span className={sharedStyles.greyText}>
-                  {" "}
-                  was the biggest design challenge.{" "}
-                </span>{" "}
+                <span className={sharedStyles.greyText}> Some key</span> design
+                decisions{" "}
+                <span className={sharedStyles.greyText}> I made 🧐 </span>{" "}
               </h4>
             </Col>
           </Row>
@@ -304,180 +299,46 @@ export default class ThematicPage extends React.Component<
             <Col lg="10">
               <div className={sharedStyles.sectionContainer}>
                 <h6 className={sharedStyles.categoryText}>
-                  Solving The Problems
+                  Solving the Problems
                 </h6>
                 <h3 className={sharedStyles.titleText}>
-                  Reducing Cognitive Workload{" "}
+                  Quick fix - increasing affordance{" "}
                 </h3>
                 <p>
-                  Open time and block time are two common types of time
-                  allocation in surgery scheduling. Open time is first-come,
-                  first-served while block time is allocated to a specific
-                  individual or group.
+                  I learned from my research that scheduling took a lot of time
+                  because users were confused by the interface and struggled to
+                  understand what actions they needed to take to complete their
+                  tasks.
                 </p>
 
-                <div
-                  className={`${sharedStyles.contentContainerLeftAlign} mt-4`}
-                >
-                  <p className={sharedStyles.almostBlackP}>
-                    <b>Reducing information types and colors</b>
-                  </p>
+                <p>
+                  To mitigate the usability issues, I proposed a quick fix to
+                  the team to eliminate the cluttered interface and increase the
+                  affordance of the time selection control.
+                </p>
 
-                  <p>
-                    The existing tool categorizes block times into individual,
-                    service line, and group blocks. Scheduled surgeries and a
-                    'set alert' function are also visible.{" "}
-                    <u>
-                      These visual clutters overwhelm users with cognitive load
-                    </u>
-                    .
-                  </p>
+                <p>
+                  In the new design, I replaced the dropdown with a button
+                  component for the time selection control to better signal the
+                  users that they could select one of the time options to
+                  finalize the surgery start time. I also decluttered the UI by
+                  displaying only the item associated with the selected time
+                  option.
+                </p>
 
-                  <p>
-                    While users need to differentiate between individual and
-                    shared blocks,{" "}
-                    <u>
-                      they don't need to distinguish between the service line
-                      and group blocks
-                    </u>
-                    . I combined service line and group blocks into one category
-                    and removed the set alert feature from this calendar to
-                    simplify the experience.
-                  </p>
-
-                  <Row className="justify-content-between">
-                    <Col lg="6">
-                      <p className="mb-0">
-                        <b>Before</b>
-                      </p>
+                <Row className="justify-content-center">
+                  <Col lg="10">
+                    <div className="text-center">
                       <ImageBox
-                        src={this.getImageUrl("color-labels.png")}
-                        alt="7 information types and colors in the UI"
+                        src={this.getImageUrl("quick-fix.png")}
+                        alt="Fixing the cluttered UI & low affordance component "
                         className="img-fluid"
+                        showCaption={true}
                       />
-                    </Col>
-
-                    <Col lg="6">
-                      <p className="mb-0">
-                        <b>After</b>
-                      </p>
-                      <ImageBox
-                        src={this.getImageUrl("reduced-colors.png")}
-                        alt="5 information types and colors in the UI"
-                        className="img-fluid"
-                      />
-                    </Col>
-                  </Row>
-                </div>
-
-                <div
-                  className={`${sharedStyles.contentContainerLeftAlign} mt-3`}
-                >
-                  <p className={sharedStyles.almostBlackP}>
-                    <b>Eliminating unnecessary complexity</b>
-                  </p>
-                  <p>
-                    Academic and larger hospitals often reserve multiple OR
-                    rooms for shared blocks. While this room-specific
-                    information is crucial for hospital schedulers, clinic
-                    schedulers are more concerned with finding available time
-                    slots.
-                  </p>
-                  <p>
-                    However,{" "}
-                    <u>the existing system displays each block per OR room</u>.
-                    Without knowing the room information, how are the clinic
-                    schedulers supposed to make a decision on which one of these
-                    blocks they should select?
-                  </p>
-
-                  <Row className="justify-content-center">
-                    <Col lg="12">
-                      <div className="text-center">
-                        <ImageBox
-                          src={this.getImageUrl("avaialbility-and-room.png")}
-                          alt="Display of block per room in the existing system"
-                          className="img-fluid"
-                          showCaption={true}
-                        />
-                      </div>
-                    </Col>
-                  </Row>
-                  <p>
-                    I proposed and verified the feasibility of{" "}
-                    <u>
-                      consolidating the availability of blocks belonging to the
-                      same service line or group
-                    </u>
-                    . This removes unnecessary complexity from the users and
-                    streamlines visualization in the calendar, making it easier
-                    to take appropriate actions.
-                  </p>
-
-                  {/* <p>
-                  <b>Note - </b>the image below is only for demonstrating the
-                  idea of consolidating availability and how it would reflect in
-                  the visualization of the calendar compared to the existing
-                  visualization in the previous image.
-                </p> */}
-
-                  <Row className="justify-content-center">
-                    <Col lg="12">
-                      <div className="text-center">
-                        <ImageBox
-                          src={this.getImageUrl("consolidate-availability.png")}
-                          alt="Removing complexity by consolidating availability of the same block"
-                          className="img-fluid"
-                          showCaption={true}
-                        />
-                      </div>
-                    </Col>
-                  </Row>
-
-                  <p>
-                    I further simplified the UI by{" "}
-                    <u>
-                      removing scheduled cases of other surgeons in the shared
-                      blocks
-                    </u>{" "}
-                    from the calendar, as users mentioned they didn't need to
-                    see the information in this step.
-                  </p>
-                  <Row className="justify-content-between">
-                    <Col lg="6">
-                      <p className="mb-0">
-                        <b>Before</b>
-                      </p>
-                      <ImageBox
-                        src={this.getImageUrl("color-labels.png")}
-                        alt="Cluttered UI before the redesign"
-                        className="img-fluid"
-                      />
-                    </Col>
-
-                    <Col lg="6">
-                      <p className="mb-0">
-                        <b>After</b>
-                      </p>
-                      <ImageBox
-                        src={this.getImageUrl("final-reduction.png")}
-                        alt="Cleaner UI after the redesign"
-                        className="img-fluid"
-                      />
-                    </Col>
-                  </Row>
-                </div>
+                    </div>
+                  </Col>
+                </Row>
               </div>
-            </Col>
-          </Row>
-
-          <Row className="justify-content-center">
-            <Col lg="7">
-              <h4 className={sharedStyles.highlightText}>
-                <span className={sharedStyles.greyText}> Some key</span> design
-                decisions{" "}
-                <span className={sharedStyles.greyText}> I made 🧐 </span>{" "}
-              </h4>
             </Col>
           </Row>
 
@@ -491,10 +352,10 @@ export default class ThematicPage extends React.Component<
                   Designing the right calendar{" "}
                 </h3>
                 <p>
-                  While the effort above helped simplify the complexity and the
-                  visualization, it still didn't solve all the identified
-                  Problems. Below are other design decisions I made to address
-                  those problems.{" "}
+                  While quick fixes can address some usability issues, they
+                  can't solve all major pain points. As a result, I started
+                  exploring different ways to make scheduling faster and easier
+                  for our users.
                 </p>
 
                 <div
@@ -555,7 +416,7 @@ export default class ThematicPage extends React.Component<
                 </div>
 
                 <div
-                  className={`${sharedStyles.contentContainerLeftAlign} mb-4`}
+                  className={`${sharedStyles.contentContainerLeftAlign}`}
                 >
                   <p className={sharedStyles.almostBlackP}>
                     <b>Vertical vs. Horizontal Layout</b>
@@ -622,10 +483,8 @@ export default class ThematicPage extends React.Component<
                 <h6 className={sharedStyles.categoryText}>Design</h6>
                 <h3 className={sharedStyles.titleText}>Final Design </h3>
                 <p>
-                  The project became complex and large due to all of the
-                  problems presented earlier. As a result, I collaborated
-                  closely with the product manager and engineers to finalize the
-                  scope for the first release.
+                  I collaborated closely with the product manager and engineers
+                  to finalize the scope for the first release.
                 </p>
 
                 <Row className="justify-content-center">
@@ -633,7 +492,7 @@ export default class ThematicPage extends React.Component<
                     <div className="text-center">
                       <ImageBox
                         src={this.getImageUrl("calendar-final.gif")}
-                        alt="Designs and Interactions in the Final Design"
+                        alt="Design and interactions in the final design"
                         className="img-fluid"
                         showCaption={true}
                       />
@@ -658,53 +517,18 @@ export default class ThematicPage extends React.Component<
                             <b>Month view availability</b>
                           </p>
                           <p className="mt-2">
-                            Month view provides a high-level availability,
-                            making it quicker for users to find available time.
-                            The screen also looks less cluttered, reducing
-                            information clutters and cognitive workload for the
-                            users.
-                          </p>
-                          <p className="mb-0">
-                            <b>Left to right workflow</b>
-                          </p>
-                          <p className="mt-2">
-                            The search drawer got moved to the left since it's
-                            the first item users interact with on this page.
-                            This workflow makes it more natural to our nature to
-                            process information from left to right.
+                            The month view offers a high-level overview of
+                            availability, allowing users to quickly find
+                            available times. I also revamped the information
+                            architecture and visual components of the new design
+                            to reduce information clutter and cognitive
+                            workload.
                           </p>
                         </Col>
                       </Row>
                     </div>
                   </Col>
                 </Row>
-
-                {/* <Row className="justify-content-center">
-                  <Col lg="12" className="mb-4">
-                    <div className={sharedStyles.contentContainerLeftAlign}>
-                      <Row className="justify-content- center">
-                        <Col lg="6">
-                          <ImageBox
-                            src={this.getImageUrl("export.png")}
-                            alt="Image, PDF, and CSV files"
-                            className="img-fluid"
-                            showCaption={false}
-                          />
-                        </Col>
-                        <Col lg="6">
-                          <p className="mb-0">
-                            <b>Left to right workflow</b>
-                          </p>
-                          <p className="mt-2">
-                            Users can export, share, or download the report from
-                            the dashboard in various formats, including image,
-                            PDF, and CSV.
-                          </p>
-                        </Col>
-                      </Row>
-                    </div>
-                  </Col>
-                </Row> */}
 
                 <Row className="justify-content-center">
                   <Col lg="12">
@@ -727,22 +551,14 @@ export default class ThematicPage extends React.Component<
                             While horizontal layout could handle complex
                             schedule better, it'll take a lot more effort for
                             engineers to implement. Given the time constraint,
-                            we decided to proceed with the vertical layout.
-                          </p>
-                          <p className="mb-0">
-                            <b>Day-view visualization revamp</b>
-                          </p>
-                          <p className="mt-2">
-                            To avoid the readability issue, I worked very
-                            closely with the engineers to revamp the day view
-                            visualization.
+                            my team decided to proceed with the vertical layout.
                           </p>
                           <p>
-                            Each type of time is drawn into its column with the
-                            width divided equally using a number of the total
-                            columns. This approach ensures a clean UI that is
-                            easy for users to read and understand.{" "}
- .                          </p>
+                            To avoid readability issues, I clearly labeled and
+                            organized information on the page. I also worked
+                            closely with the engineers to ensure a smooth
+                            implementation of the new day view visualization.
+                          </p>
                         </Col>
                       </Row>
                     </div>
@@ -752,61 +568,77 @@ export default class ThematicPage extends React.Component<
             </Col>
           </Row>
 
-          {/* <Row className="justify-content-center">
-            <Col lg="10 mt-4">
+          <Row className="justify-content-center">
+            <Col lg="10">
               <div className={sharedStyles.sectionContainer}>
-                <h6 className={sharedStyles.categoryText}>
-                  Validating the Design
-                </h6>
-                <h3 className={sharedStyles.titleText}>
-                  Getting Feedback & Testing
-                </h3>
+                <h6 className={sharedStyles.categoryText}>Design</h6>
+                <h3 className={sharedStyles.titleText}>Future Improvements </h3>
                 <p>
-                  Because this is a big project, I put a lot of emphasis on the
-                  iterative design process. I broke the project down into
-                  smaller parts, validated my designs, and collected customer
-                  feedback throughout the process.
+                  After launching the first version, I was able to gather user
+                  feedback and identify areas for future improvements.
                 </p>
 
-                <p className={sharedStyles.almostBlackP}>
-                  <b>Pendo In-App Survey</b>
-                </p>
-                <p className="mt-2">
-                  I utilized the Pendo In-App Survey to get feedback on simple
-                  concepts from a smaller group of customers. Before redesigning
-                  the entire calendar, I made smaller design changes (time
-                  selector) and gathered user feedback through this survey.
-                </p>
+                <div
+                  className={`${sharedStyles.contentContainerLeftAlign} mb-4`}
+                >
+                  <p className={sharedStyles.almostBlackP}>
+                    <b>Adding a scheduled case tag</b>
+                  </p>
+                  <p>
+                    Users often try to schedule surgery on the same day that the
+                    surgeon already has another surgery. To help the users make
+                    faster decisions when selecting a surgery date, I added a
+                    tag that displays the number of scheduled cases on each
+                    calendar date.
+                  </p>
 
-                <p>
-                  This same method was also used to validate that customers would benefit 
-                  from finding time in the montly view calendar > weekly view calendar.
-                </p>
+                  <Row className="justify-content-center">
+                    <Col lg="10">
+                      <div className="text-center">
+                        <ImageBox
+                          src={this.getImageUrl("scheduled-tag.png")}
+                          alt="Vertical Layout Day-view Calendar"
+                          className="img-fluid"
+                          showCaption={true}
+                        />
+                      </div>
+                    </Col>
+                  </Row>
+                </div>
 
-                <Row className="justify-content-center">
-                  <Col lg="10" className="text-center">
-                    <ImageBox
-                      src={this.getImageUrl("pendo-survey.png")}
-                      alt="Example - Pendo Survey"
-                      className="img-fluid"
-                      showCaption={true}
-                    />
-                  </Col>
-                </Row>
+                <div
+                  className={`${sharedStyles.contentContainerLeftAlign}`}
+                >
+                  <p className={sharedStyles.almostBlackP}>
+                    <b>Scrollable calendar</b>
+                  </p>
+                  <p>
+                  In the first version, the month calendar only displayed dates until the end of the month. Users had to use a month picker at the top of the page to switch to a new month, which could slow them down, especially when it was close to the end of the month with only a few days left. 
+                  </p>
 
-                
-                <p className={sharedStyles.almostBlackP}>
-                  <b>User Interview & Usability Testing</b>
-                </p>
-                <p className="mt-2">
-                  Most of my designs are validated and tested through this method. 
-                  I'd present a prototype either in-person or in an online meeting and ask users to describe what they saw and explain how they would use the product.
-                  For this project, I used this method to test the block consolidation idea as well as the final prototype.
-                </p>
-                
+                  <p>
+                  To make the user experience more seamless, I designed a scrollable calendar so users can continue browsing available times in the future without having to click to switch months.
+                  </p>
+
+                  <Row className="justify-content-center">
+                    <Col lg="10">
+                      <div className="text-center">
+                        <ImageBox
+                          src={this.getImageUrl("scrollable-calendar.gif")}
+                          alt="Scrollable month calendar"
+                          className="img-fluid"
+                          showCaption={true}
+                        />
+                      </div>
+                    </Col>
+                  </Row>
+                </div>
+
               </div>
             </Col>
-          </Row> */}
+          </Row>
+
+          {/* page container */}
         </Container>
       </ProjectLayout>
     );
