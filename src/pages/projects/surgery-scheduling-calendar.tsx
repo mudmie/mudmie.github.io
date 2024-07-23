@@ -597,7 +597,7 @@ export default class ThematicPage extends React.Component<
                       <div className="text-center">
                         <ImageBox
                           src={this.getImageUrl("scheduled-tag.png")}
-                          alt="Vertical Layout Day-view Calendar"
+                          alt="Adding tag displaying the number of scheduled case(s)"
                           className="img-fluid"
                           showCaption={true}
                         />
