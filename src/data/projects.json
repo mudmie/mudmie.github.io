@@ -19,7 +19,7 @@
     ], 
     "url": "/projects/surgery-scheduling-calendar/",
     "imageFolder": "surgery-scheduling-calendar",
-    "isProtected": false,
+    "isProtected": true,
     "isEnabled": true
   },
   {
@@ -42,7 +42,7 @@
     ],
     "url": "/projects/analytics-dashboard/",
     "imageFolder": "analytics-dashboard",
-    "isProtected": false,
+    "isProtected": true,
     "isEnabled": true
   },
   {
