@@ -678,7 +678,7 @@ export default class CustomFormBuilderPage extends React.Component<
                   <Row className="justify-content-center text-center">
                     <Col lg="8">
                       <ImageBox
-                        src={this.getImageUrl("ios.png")}
+                        src={this.getImageUrl("iOS.png")}
                         alt="Form Submission Experience for iOS"
                         className="img-fluid"
                       />
