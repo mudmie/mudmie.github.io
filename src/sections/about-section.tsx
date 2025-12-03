@@ -34,8 +34,8 @@ export class AboutSection extends React.Component<AboutSectionProps, {}> {
                 makes lives easier.{" "}
                 <span className={styles.aboutPara}>
                   {" "}
-                  Mudmie is a product designer solving B2B & B2C
-                  problems in health tech, fintech, and construction tech.
+                  Currently design @ Ashby. Previously solving B2B & B2C
+                  problems in health tech & fintech.
                 </span>
               </h1>
             </Col>
