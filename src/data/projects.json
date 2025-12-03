@@ -65,7 +65,7 @@
     ],
     "url": "/projects/scheduling/",
     "imageFolder": "scheduling",
-    "isProtected": false,
+    "isProtected": true,
     "isEnabled": false
   },
   {
