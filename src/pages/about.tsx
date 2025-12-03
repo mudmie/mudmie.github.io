@@ -104,6 +104,20 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
               <Col lg="10" className={styles.experience}>
                 <table className={styles.experienceTable}>
                   <tbody>
+                  <tr>
+                      <td>
+                        <span className={styles.experienceTitle}>
+                          Product Designer, Ashby
+                        
+                        </span>{" "}
+                      </td>
+                      <td className={styles.experiencePeriod}>
+                        Sep 2024 - Present, Full-time
+                      </td>
+                      <td className={styles.experienceDescription}>
+                      Designing an all-in-one recruiting platform; Currently improving scheduling tools and building new AI features for recruiting teams
+                      </td>
+                    </tr>
                     <tr>
                       <td>
                         <span className={styles.experienceTitle}>
@@ -112,10 +126,10 @@ export default class AboutPage extends React.Component<AboutPageProps, {}> {
                         </span>{" "}
                       </td>
                       <td className={styles.experiencePeriod}>
-                        Oct 2021 - Present, Full-time
+                        Oct 2021 - Sep 2024, Full-time
                       </td>
                       <td className={styles.experienceDescription}>
-                        Leading end-to-end design and research for a B2B SaaS
+                        Led end-to-end design and research for a B2B SaaS
                         surgery scheduling and analytics platform
                       </td>
                     </tr>
